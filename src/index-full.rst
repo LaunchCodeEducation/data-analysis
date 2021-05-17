@@ -6,6 +6,7 @@ Chapters
    :name: fulltoc
 
    chapters/introduction/index
+   chapters/how-programs-work/index
 
 .. toctree::
 

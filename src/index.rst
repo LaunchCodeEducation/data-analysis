@@ -7,6 +7,7 @@ Chapters
    :name: chapterstoc
 
    chapters/introduction/index
+   chapters/how-programs-work/index
 
 .. toctree::
 
