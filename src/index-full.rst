@@ -2,9 +2,10 @@ Chapters
 ========
 
 .. toctree::
-   :numbered:
    :maxdepth: 1
-   :name: chapterstoc
+   :name: fulltoc
+
+   chapters/data-and-variables/index
 
 .. toctree::
 
