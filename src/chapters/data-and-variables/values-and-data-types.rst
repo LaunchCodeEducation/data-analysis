@@ -14,7 +14,7 @@ Data can be stored in a program in a variety of ways. The most basic unit of dat
 
 .. _def-value:
 
-.. _typeof:
+.. _type:
 
 A **value** is a specific piece of data, such as a word or a number. Some examples are ``5``, ``5.2``, and ``"Hello, World!"``.
 
@@ -29,7 +29,7 @@ letters. Strings must be enclosed in either single or double quotes.
 
 .. index:: ! integer, ! float
 
-.. index:: ! typeof
+.. index:: ! type
 
 If you are not sure what data type a value falls into, you can use ``type()``.
 
@@ -46,9 +46,9 @@ If you are not sure what data type a value falls into, you can use ``type()``.
 
    ::
 
-      string
-      int
-      float
+      <class 'str'>
+      <class 'int'>
+      <class 'float'>
 
 Python reports that the data type of ``"Hello, World!"`` is ``string``, while the data types of ``17`` and ``3.14`` are ``int`` and ``float``, respectively.
 
@@ -78,7 +78,7 @@ Run the following code to find out.
       :slug: Data-TypesPython
 
       print(type("17"))
-      print(typeof "3.2");
+      print(type("3.2"))
 
 
 .. admonition:: Question
@@ -100,8 +100,8 @@ quotes (``"``).
 
    ::
 
-      string
-      string
+      <class 'str'>
+      <class 'str'>
 
 Double-quoted strings can contain single quotes inside them, as in ``"Bruce's beard"``, and single quoted strings can have double quotes inside them, as in ``'The knights who say "Ni!"'``.
 
@@ -158,7 +158,7 @@ Notice that the values are separated by spaces when they are displayed.
       3.4 hello 45
 
 Remember not to put commas or spaces in your integers, no matter how big they are.
-Also revisit what we said in the chapter :ref:`how-programs-work`: formal languages are strict, the notation is concise, and even the smallest change might mean something quite different from what you intend.
+Also revisit what we said in the chapter :ref:`how-programs-work`: programming languages can be strict, the notation is concise, and even the smallest change might mean something quite different from what you intend.
 
 Type Systems
 ------------

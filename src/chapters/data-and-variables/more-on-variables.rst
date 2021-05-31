@@ -26,12 +26,6 @@ For example, suppose that we are writing a to-do list web application, named
 "Get It Done!" The title of the application might appear in multiple places,
 such as the title bar and the main page header.
 
-.. figure:: figures/get-it-done.png
-   :alt: A to-do list web application with application name in the title bar and main header.
-   :height: 300px
-
-   An example to-do list web application
-
 We might store the name of our application in a variable so that it can be
 referenced anywhere we want to display the application name.
 

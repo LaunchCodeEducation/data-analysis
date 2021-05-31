@@ -181,10 +181,10 @@ When more than one operator appears in an expression, the order of evaluation de
    .. sourcecode:: py
       :linenos:
 
-      // the right-most ** operator is applied first
+      # the right-most ** operator is applied first
       print(2 ** 3 ** 2)
 
-      // use parentheses to force the order you want
+      # use parentheses to force the order you want
       print((2 ** 3) ** 2)
 
    **Console Output**
@@ -205,10 +205,10 @@ Check Your Understanding
 
       16 - 2 * 5 / 3 + 1
 
-   #. 14
-   #. 24
-   #. 3
-   #. 13.666666666666666
+   a. 14
+   b. 24
+   c. 3
+   d. 13.666666666666666
 
 .. admonition:: Question
 
@@ -226,7 +226,7 @@ Check Your Understanding
 
       2 ** 2 ** 3 * 3
 
-   #. 768
-   #. 128
-   #. 12
-   #. 256
+   a. 768
+   b. 128
+   c. 12
+   d. 256

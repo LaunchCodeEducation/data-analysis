@@ -36,6 +36,8 @@ Appendices
    :maxdepth: 1
    :name: appendicestoc
 
+   appendices/exercise-solutions/index
+   
 .. toctree::
    :hidden:
 

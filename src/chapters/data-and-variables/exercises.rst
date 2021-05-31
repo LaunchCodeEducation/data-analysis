@@ -60,8 +60,7 @@ A. **Declare and assign variables**
 
 #. **Print out the type of each variable**
 
-   For each variable you declared in part A, use the ``type()``
-   operator to print its type to the console, one item per line.
+   For each variable you declared in part A, use ``type()`` to print its type to the console, one item per line.
 
    Click "Run" (in repl.it) and verify that your code works before moving to part C.
 

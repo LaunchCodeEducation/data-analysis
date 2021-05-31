@@ -15,6 +15,16 @@ A common example is when a program receives input from a user or a file.
 In this situation, numeric data may be passed to the program as strings.
 
 **Type conversion** is the process of converting a variable of one type to another type. In Python, we can do this using either **implicit type conversion** or **explicit type conversion**.
+
+Implicit type conversion is when Python converts a variable to a different type without any extra effort from us as programmers.
+For example, if you add a variable of type ``int`` and a variable of type ``float`` together, the resulting sum is a float.
+With implicit type conversion, Python will always convert to a larger data type so no data is lost. 
+
+.. admonition:: Note
+
+   If you try to add an integer and a string together, you may notice that Python cannot convert the result to a data type. 
+   While implicity type conversion is a handy trick, it doesn't work in every scenario!
+
 Explicit type conversion uses functions such as ``int()``, ``str()``, and ``float()`` to convert variables of one type to another.
 
 The ``int()`` function can take a string and turn it into an integer. Let us see this in action:
@@ -48,7 +58,7 @@ What happens if we attempt to convert a string to an integer, and the string doe
 
    ::
 
-      ValueError
+      ValueError: invalid literal for int() with base 10: '23bottles'
 
 This example shows that a string has to be a syntactically legal number for conversion to go as expected.
 Examples of such strings are ``"34"`` or ``"-2.5"``.

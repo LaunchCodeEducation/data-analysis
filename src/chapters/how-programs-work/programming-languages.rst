@@ -1,8 +1,6 @@
 Programming Languages
 ======================
 
-   "Computer, scan the surface for lifeforms."
-
    "Hey Siri, what movies are playing nearby?"
 
 Even though today's tech makes it seem like computers understand spoken

@@ -19,7 +19,7 @@ in a variable, and then print a personalized greeting using ``print()``.
 Variables to the rescue!
 
 Requesting Data
-----------------
+---------------
 
 .. index:: ! input
 
@@ -97,11 +97,11 @@ Check Your Understanding
       :linenos:
 
       info = input("Please enter your age: ")
-      //The user enters 25.
+      # The user enters 25.
 
       print(type(info))
 
-   #. ``string``
-   #. ``number``
-   #. ``info``
-   #. ``25``
+   a. ``string``
+   b. ``number``
+   c. ``info``
+   d. ``25``
