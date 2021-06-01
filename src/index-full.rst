@@ -21,6 +21,8 @@ Studios
    :maxdepth: 1
    :name: studiostoc
 
+   chapters/data-and-variables/studio
+
 Assignments
 ===========
 

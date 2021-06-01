@@ -41,9 +41,9 @@ C. **Calculate a space mission!**
 
       .. _data-and-variables-exercise-solutionsC2:
 
-      .. sourcecode:: js
+      .. sourcecode:: py
 
-         let hoursToMars = milesToMars / shuttleSpeedMph;
+         hoursToMars = milesToMars / shuttleSpeedMph
 
    #. Finally, declare a variable and assign it the value of days to Mars. In
       order to get the days it will take to reach Mars, you need to divide the

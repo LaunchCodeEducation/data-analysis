@@ -15,3 +15,4 @@ Data and Variables
    other-operators
    input
    exercises
+   studio
