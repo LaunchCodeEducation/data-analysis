@@ -64,9 +64,16 @@ ones. Python allows us to combine expressions by using the ``and`` operator.
 Run the following code and examine the output. Try each of the ``name``
 suggestions to see how they change the output.
 
-.. raw:: html
+.. replit::
+   :slug: AndOperator
+   :linenos:
 
-   <iframe height="400px" width="100%" src="https://repl.it/@launchcode/Explore-logical-and?lite=true" scrolling="no" frameborder="no" allowtransparency="true"></iframe>
+   name = 'Bob' # Other names to try: 'Username', 'Rumpelstiltskin'
+
+   print(name)
+   print('Longer than 5 characters: ', len(name)>5)
+   print('Shorter than 10 characters: ', len(name)<10)
+   print('len(name) > 5 and len(name) < 10: ', len(name)>5 and len(name)<10)
 
 A compound expression returns only ONE boolean value, which depends on the
 results from BOTH of the smaller comparisons.
@@ -137,9 +144,15 @@ to be true for the overall result to be ``True``.
 Let's look at another code example. Change the value of ``num`` to see when
 each combined expression returns ``True``.
 
-.. raw:: html
+.. replit::
+   :slug: OrOperator
+   :linenos:
+   
+   num = 5
 
-   <iframe height="350px" width="100%" src="https://repl.it/@launchcode/Explore-logical-or?lite=true" scrolling="no" frameborder="no" allowtransparency="true"></iframe>
+   print(num > 0 or num < 10)
+   print(7 > num or num == 3)
+   print(num*5 > 100 or 'dog' == 'cat')
 
 Using ``num = 5``, lines 2 and 4 both return ``True`` because at least one of
 the two comparisons is ``True``. Line 6 returns ``False`` because both of the
@@ -239,15 +252,10 @@ Check Your Understanding
 
       4 < 3 or 2 < 3
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> <code class="pre">True</code></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <code class="pre">False</code></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <code class="pre">"True"</code></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <code class="pre">"False"</code></li>
-      </ol>
-      <p id="Q1"></p>
+   a. ``True``
+   b. ``False``
+   c. ``"True"``
+   d. ``"False"``
 
 .. Answer = a
 
@@ -256,30 +264,22 @@ Check Your Understanding
    What is the correct Python expression for checking to see if a number
    stored in the variable ``num`` is between 0 and 5.
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <code class="pre">num > 0 and < 5</code></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <code class="pre">num > 0 or < 5</code></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> <code class="pre">num > 0 and num < 5</code></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <code class="pre">num > 0 or num < 5</code></li>
-      </ol>
-      <p id="Q2"></p>
+   a. ``num > 0 and < 5``
+   b. ``num > 0 or < 5``
+   c. ``num > 0 and num < 5``
+   d. ``num > 0 or num < 5``
 
 .. Answer = c
 
 .. admonition:: Question
 
    Predict if each of the following expressions evaluates to ``True`` or
-   ``False``. Click on each one to check your answers.
+   ``False``.
 
-   .. raw:: html
+   a. ``12 * 2 == 24``
+   b. ``'dog' == 'cat or 'dog' == 'Dog'``
+   c. ``12%2 == 0 and len('flower') < 6``
+   d. ``'a' in 'xyz' and len('flower') >= 6 or 5 + 5 == 10``
 
-      <ol type="a">
-         <li onclick="revealTrueFalse('resultA', true)"><code class="pre">12 * 2 == 24</code> <span id="resultA"></span></li>
-         <li onclick="revealTrueFalse('resultB', false)"><code class="pre">'dog' == 'cat or 'dog' == 'Dog'</code> <span id="resultB"></span></li>
-         <li onclick="revealTrueFalse('resultC', false)"><code class="pre">12%2 == 0 and len('flower') < 6</code> <span id="resultC"></span></li>
-         <li onclick="revealTrueFalse('resultD', true)"><code class="pre">'a' in 'xyz' and len('flower') >= 6 or 5 + 5 == 10</code> <span id="resultD"></span></li>
-      </ol>
 
 .. Answer = True, False, False, True

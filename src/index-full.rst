@@ -5,6 +5,9 @@ Chapters
    :maxdepth: 2
    :name: fulltoc
 
+   chapters/booleans-and-conditionals/index
+   chapters/loops/index
+
 .. toctree::
 
    genindex
@@ -15,6 +18,8 @@ Studios
 .. toctree::
    :maxdepth: 1
    :name: studiostoc
+
+   chapters/loops/studio
 
 Assignments
 ===========
@@ -29,3 +34,5 @@ Appendices
 .. toctree::
    :maxdepth: 1
    :name: appendicestoc
+
+   appendices/exercise-solutions/index

@@ -82,22 +82,29 @@ appears.
    #. Four spaces are preferred
    #. Indentation must be consistent within a code block.
 
-Try It!
-^^^^^^^
+.. admonition:: Try It!
 
-In the editor below, try the following:
+   Try the following:
 
-#. Run the code as-is.
-#. Assign ``num`` a positive value, then re-run the code.
-#. Indent line 6 to match line 4, then re-run the code. How did the output
-   change?
-#. Change the condition to print a message when ``num`` is positive.
-#. **Advanced:** Use the :ref:`modulus operator <modulo>` (``%``) in line 3 in
-   order to print a message when ``num`` is even.
+   #. Run the code as-is.
+   #. Assign ``num`` a positive value, then re-run the code.
+   #. Indent line 6 to match line 4, then re-run the code. How did the output
+      change?
+   #. Change the condition to print a message when ``num`` is positive.
+   #. **Advanced:** Use the :ref:`modulus operator <modulo>` (``%``) in line 3 in
+      order to print a message when ``num`` is even.
 
-.. raw:: html
+   .. replit::
+      :slug: IfStatements
+      :linenos:
 
-   <iframe src="https://trinket.io/embed/python3/13c5ed88ed" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0"></iframe>
+      num = -10
+
+      if num < 0:
+         print("Oops!", num, "is too small!")
+
+      print("Indentation matters!")
+
 
 ``else`` Clause
 ---------------
@@ -111,15 +118,23 @@ message to change based on the value of ``num``?
 Adding an **else clause** to an ``if`` statement allows us to include code that
 runs when the condition is ``False``.
 
-.. admonition:: Example
+.. admonition:: Try It!
 
    #. Run the following code as-is and examine the output.
    #. Change line 2 to ``book_status = 'overdue'`` and run the code again.
    #. How does the output change?
 
-   .. raw:: html
+   .. replit::
+      :slug: ElseClauses
+      :linenos:
 
-      <iframe height="400px" width="100%" src="https://repl.it/@launchcode/Else-clause?lite=true" scrolling="no" frameborder="yes" allowtransparency="true"></iframe>
+      book_title = 'Little Fires Everywhere'
+      book_status = ''
+
+      if book_status == 'overdue':
+         print(book_title + ' is overdue!')
+      else:
+         print('No overdue books!')
 
 This structure is known as an **if/else statement**, and it allows our program
 to **branch**. The flow of the program takes one of two paths when it reaches a
@@ -148,34 +163,23 @@ Use the code below to answer the following questions:
 
 .. admonition:: Question
 
-   What message gets printed if the user enters ``"Aahliyah"`` as their username?
+   What message gets printed if the user enters ``"Aaliyah"`` as their username?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> Invalid username.</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> Welcome, name!</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> Welcome, Aahliyah!</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> Nothing is printed.</li>
-      </ol>
-      <p id="Q1"></p>
+   a. Invalid username.
+   b. Welcome, name!
+   c. Welcome, Aaliyah!
+   d. Nothing is printed.
 
 .. Answer = a
 
 .. admonition:: Question
 
-      Assume that you replace line 3 with ``if len(name) < 5:``. When would
-      ``Invalid username`` get printed?
+   Assume that you replace line 3 with ``if len(name) < 5:``. When would ``Invalid username`` get printed?
 
-      .. raw:: html
-
-         <ol type="a">
-            <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> For any name with 4 characters or less</li>
-            <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> For any name with 5 characters or less</li>
-            <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> For any name with 4 characters or more</li>
-            <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> For any name with 5 characters or more</li>
-         </ol>
-         <p id="Q2"></p>
+   a. For any name with 4 characters or less
+   b. For any name with 5 characters or less
+   c. For any name with 4 characters or more
+   d. For any name with 5 characters or more
 
 .. Answer = d
 
@@ -184,14 +188,9 @@ Use the code below to answer the following questions:
    If you want to print the welcome message for any username SHORTER than 20
    characters, how should you change line 3?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> <code class="pre">if len(name) > 20:</code></li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> <code class="pre">if len(name) >= 20:</code></li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, true)"> <code class="pre">if len(name) < 20:</code></li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> <code class="pre">if len(name) <= 20:</code></li>
-      </ol>
-      <p id="Q3"></p>
+   a. ``if len(name) > 20:``
+   b. ``if len(name) >= 20:``
+   c. ``if len(name) < 20:``
+   d. ``if len(name) <= 20:``
 
 .. Answer: c

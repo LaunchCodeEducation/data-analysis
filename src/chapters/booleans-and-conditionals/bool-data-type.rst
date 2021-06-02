@@ -6,11 +6,25 @@ how programming languages represent *true* and *false*.
 
 .. admonition:: Example
 
-   Run the following code and examine the output:
+   If we run the following code, we would see in the following output.
 
-   .. raw:: html
+   .. sourcecode:: Python
+      :linenos:
 
-      <iframe height="400px" width="100%" src="https://repl.it/@launchcode/TF-Data-Type?lite=true" scrolling="no" frameborder="yes" allowtransparency="true"></iframe>
+      print('dog' == 'cat')
+      print(3 < 4)
+      print(3 > 10)
+      print('dog' != 'cat')
+
+   **Console Output**
+
+   ::
+
+      False
+      True
+      False
+      True
+
 
 In the code above, we make four *comparisons* and then print the results to the
 console. Python evaluates each comparison as being either ``True`` or
@@ -32,20 +46,32 @@ Identify ``True`` and ``False``
 Recall that the ``type()`` function tells us the data type of what's inside
 the ``()``.
 
-Run the code below to identify the data type for ``True`` and ``False``.
+.. sourcode:: Python
+   :linenos:
 
-.. raw:: html
+   print(3 < 4)
+   print(type(3 < 4))
 
-   <iframe height="400px" width="100%" src="https://repl.it/@launchcode/Bool-Data-Type?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+   print('dog' == 'cat')
+   print(type('dog' == 'cat'))
 
-Hmm! In the previous chapter, we learned about three data types---``int``,
+**Console Output**
+
+::
+
+   True
+   <class 'bool'>
+   False
+   <class 'bool'>
+
+In the previous chapter, we learned about three data types---``int``,
 ``float``, and ``string``. The first two deal with numbers, while ``string``
 deals with collections of characters.
 
 .. index:: ! boolean, ! bool, data type
 
-To this, we will add the data type ``bool``, which stands for
-**boolean value**.
+We can now add the data type ``bool``, which stands for
+**boolean value**, to our list.
 
 Boolean Values
 --------------

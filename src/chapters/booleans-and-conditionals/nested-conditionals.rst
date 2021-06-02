@@ -58,11 +58,19 @@ conditional determines whether or not to consider the second.
    Run this code several times and choose different values for ``entry`` (even,
    odd, positive, negative) to prove that it works as desired. Nice, huh?
 
-   .. raw:: html
+   .. replit::
+      :slug: NestedConditionalsExample01
+      :linenos:
 
-      <iframe height="400px" width="100%" src="https://repl.it/@launchcode/LCHS-Positive-and-Even?lite=true" scrolling="no" frameborder="no" allowtransparency="true"></iframe>
+      entry = int(input('Enter a whole number: '))
 
-   Try removing the indentation for lines 6 & 7 to see how the output changes!
+      if entry%2 == 0 :
+         print("EVEN!")
+
+      if entry > 0:
+         print("POSITIVE")
+
+      # Try removing the indentation for lines 6 & 7 to see how the output changes!
 
 Notice that when we put one conditional inside another, the body of the nested
 conditional is indented by two levels rather than one. In Python, the indentation 
@@ -83,11 +91,21 @@ Let's take nesting a step further by including ``else`` clauses:
    #. ``kale``
    #. ``rutabaga``
 
-   .. raw:: html
+   .. replit::
+      :slug: NestedConditionalsExample02
+      :linenos:
 
-      <iframe height="500px" width="100%" src="https://repl.it/@launchcode/LCHS-Nested-Conditionals?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      word = input('Please enter a word: ')
 
-   **DISCOVER**: Run the program to check your predictions.
+      if len(word) == 4:
+         print("What did your mom tell you about using 4-letter words?")
+      else:
+         if len(word) < 4:
+            print("You can think of a longer word than that!")
+         else:
+            print("Excellent word!")
+
+   Run the program to check your predictions.
 
 .. admonition:: Tip
 
@@ -98,7 +116,6 @@ This diagram shows the *flow of control* for this program:
 .. figure:: figures/nested-control-flow.png
    :height: 350px
    :alt: A diagram showing how the flow of a program branches based on the value of the condition in a nested if-else statement.
-
 
 Check Your Understanding
 ------------------------
@@ -116,15 +133,10 @@ Check Your Understanding
          if num % 2 == 1:
             print("odd")
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> The code won't run due to invalid syntax.</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> odd</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> even</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> The code runs but doesn't print anything.</li>
-      </ol>
-      <p id="Q1"></p>
+   a. The code won't run due to invalid syntax.
+   b. odd
+   c. even
+   d. The code runs but doesn't print anything.
 
 .. Answer = d
 
@@ -150,14 +162,9 @@ Check Your Understanding
          else:
             print("Clean your bathroom anyway!")
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> Both of you agree!</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> You two need to work this out.</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> Stop arguing and work it out.</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> Clean your bathroom anyway!</li>
-      </ol>
-      <p id="Q2"></p>
+   a. Both of you agree!
+   b. You two need to work this out.
+   c. Stop arguing and work it out.
+   d. Clean your bathroom anyway!
 
 .. Answer = b

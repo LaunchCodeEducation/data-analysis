@@ -63,14 +63,27 @@ two values and get the same the result.  If ``num == 7`` is ``True``, then
 ``7 == num`` is also ``True``. However, an assignment statement is NOT
 symmetric: ``num = 7`` works while ``7 = num`` does not.
 
-Try It!
-^^^^^^^
+.. admonition:: Try It!
 
-Use the simple code editor below to explore flipping an assignment statement:
+	.. replit::
+		:slug: Boolean-Expressions
+		:linenos:
 
-.. raw:: HTML
+		# Run the code as-is first.
+		name = 'Cynthia'
+		other_name = 'Rose'
 
-   <iframe src="https://trinket.io/embed/python3/5aa76a426e" width="100%" height="356" frameborder="1" marginwidth="0" marginheight="0"></iframe>
+		print(name, other_name, name == other_name)
+
+		name = other_name
+
+		print(name, other_name)
+
+		# Replace the assignment statement on line 7 with other_name = name.
+		# Does the output change?
+
+		# Does name = other_name behave the same way as other_name = name?
+		# What happens when you try print(name = other_name)?
 
 Other Comparisons
 -----------------
@@ -173,14 +186,10 @@ Check Your Understanding
 
    Which of the following are boolean expressions? Select ALL that apply.
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><span id = "a" onclick="highlight('a', true)">3 <= 4</span></li>
-         <li><span id = "b" onclick="highlight('b', false)">3 + 4</span></li>
-         <li><span id = "c" onclick="highlight('c', true)">"DogCat" == "dog" + "cat"</span></li>
-         <li><span id = "d" onclick="highlight('d', false)">"False"</span></li>
-         <li><span id = "e" onclick="highlight('e', false)">text = 'Rutabagas!'</span></li>
-      </ol>
+	a. ``3 <= 4``
+	b. ``3 + 4``
+	c. ``"DogCat" == "dog" + "cat"``
+	d. ``"False"``
+	e. ``text = 'Rutabagas!'``
 
 .. Answers = a and c.

@@ -15,3 +15,4 @@ Repeating Things With Loops
    infinite-loops
    terminating-loops
    exercises
+   studio

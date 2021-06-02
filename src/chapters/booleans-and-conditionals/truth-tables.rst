@@ -171,21 +171,17 @@ Check Your Understanding
 
 .. admonition:: Question
 
-   Assume we have 3 boolean expressions (A, B, and C). Which combinations of
-   values (A/B/C) will make the expression ``A or B and C`` evaluate to
-   ``True``? Click ALL that apply.
+	Assume we have 3 boolean expressions (A, B, and C). Which combinations of
+	values (A/B/C) will make the expression ``A or B and C`` evaluate to
+	``True``? 
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><span id = "a" onclick="highlight('a', true)">True / True / True</span></li>
-         <li><span id = "b" onclick="highlight('b', true)">False / True / True</span></li>
-         <li><span id = "c" onclick="highlight('c', true)">True / False / True</span></li>
-         <li><span id = "d" onclick="highlight('d', true)">True / True / False</span></li>
-         <li><span id = "e" onclick="highlight('e', false)">False / False / True</span></li>
-         <li><span id = "f" onclick="highlight('f', false)">False / True / False</span></li>
-         <li><span id = "g" onclick="highlight('g', true)">True / False / False</span></li>
-         <li><span id = "h" onclick="highlight('h', false)">False / False / False</span></li>
-      </ol>
+	a. True / True / True
+	b. False / True / True
+	c. True / False / True
+	d. True / True / False
+	e. False / False / True
+	f. False / True / False
+	g. True / False / False
+	h. False / False / False
 
 .. Answers = a, b, c, d, g
