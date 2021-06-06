@@ -46,7 +46,7 @@ Identify ``True`` and ``False``
 Recall that the ``type()`` function tells us the data type of what's inside
 the ``()``.
 
-.. sourcode:: Python
+.. sourcecode:: Python
    :linenos:
 
    print(3 < 4)

@@ -65,7 +65,7 @@ symmetric: ``num = 7`` works while ``7 = num`` does not.
 
 .. admonition:: Try It!
 
-	.. replit::
+	.. replit:: py
 		:slug: Boolean-Expressions
 		:linenos:
 

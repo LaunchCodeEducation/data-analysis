@@ -163,9 +163,12 @@ in a different string.
       time it changes, and this allows us to see how the accumulator pattern
       works as the loop repeats.
 
-   .. raw:: html
+   .. replit:: 
+      :slug: AccumulatorPattern01
+      :linenos:
 
-      <iframe height="500px" width="100%" src="https://repl.it/@launchcode/LCHS-Accumulator-Practice-1?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true"></iframe>
+      # Follow the instructions in the text to build this program!
+      some_text = "bookkeeper anteater"
 
 Properly done, the program should build up ``only_vowels`` as follows:
 
@@ -274,9 +277,18 @@ total.
    Run the program below several times using different values for ``total`` and
    ``decrease_by``
 
-   .. raw:: html
+   .. replit::
+      :slug: AccumulatorPattern02
+      :linenos:
 
-      <iframe height="400px" width="100%" src="https://repl.it/@launchcode/LCHS-Accumulator-Practice-2?lite=true" scrolling="no" frameborder="yes" allowtransparency="true"></iframe>
+      # The accumulator pattern can also decrease a running total!
+      total = 1000
+      decrease_by = 25
+
+      for step in range(10):
+         total -= decrease_by
+
+      print(total)
 
 .. admonition:: Tip
 
@@ -304,15 +316,10 @@ Use this code sample to answer the following questions:
 
    What does the program print?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> 0</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> 2</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> 5</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> 10</li>
-      </ol>
-      <p id="Q1"></p>
+   a. 0
+   b. 2
+   c. 5
+   d. 10
 
 .. Answer = d
 
@@ -321,15 +328,10 @@ Use this code sample to answer the following questions:
    What will print if you put ``total = 0`` inside the for loop but before
    ``total += 2``?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> 0</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> 2</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> 5</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> 10</li>
-      </ol>
-      <p id="Q2"></p>
+   a. 0
+   b. 2
+   c. 5
+   d. 10
 
 .. Answer = b
 

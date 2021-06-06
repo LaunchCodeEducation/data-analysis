@@ -64,7 +64,7 @@ ones. Python allows us to combine expressions by using the ``and`` operator.
 Run the following code and examine the output. Try each of the ``name``
 suggestions to see how they change the output.
 
-.. replit::
+.. replit:: py
    :slug: AndOperator
    :linenos:
 
@@ -144,7 +144,7 @@ to be true for the overall result to be ``True``.
 Let's look at another code example. Change the value of ``num`` to see when
 each combined expression returns ``True``.
 
-.. replit::
+.. replit:: py
    :slug: OrOperator
    :linenos:
    

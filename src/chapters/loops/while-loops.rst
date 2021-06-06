@@ -136,9 +136,16 @@ Do the following in the editor below:
 #. Run the program to verify that it prints ``abcdefgh`` when
    ``num_letters = 8``.
 
-.. raw:: html
+.. replit:: py
+   :slug: WhileLoop
+   :linenos:
 
-   <iframe height="500px" width="100%" src="https://repl.it/@launchcode/LCHS-Rewrite-for-as-while?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true"></iframe>
+   # Follow the instructions in the text to rewrite a for loop a while loop.
+   letters = 'abcdefghijklmnopqrstuvwxyz'
+   while_string = ''
+   num_letters = 8
+
+   print(while_string)
 
 Input Validation
 ----------------
@@ -162,9 +169,17 @@ best fit. Let’s look at one example of this.
    invalid numbers, the loop continues to iterate. As soon as the user chooses
    a valid number, the loop ends.
 
-   .. raw:: html
+   .. replit:: py
+      :slug: InputValidation
+      :linenos:
 
-      <iframe height="450px" width="100%" src="https://repl.it/@launchcode/LCHS-While-Input-Validation?lite=true" scrolling="no" frameborder="no" allowtransparency="true"></iframe>
+      num_choice = 0
+
+      while num_choice <= 0:
+         num_choice = int(input('Choose a positive number: '))
+         if num_choice <= 0:
+            print('Invalid number')
+
 
 This example shows the additional flexibility provided by ``while`` loops.
 ``for`` loops iterate a specific number of times, but in this case we have no
@@ -247,28 +262,19 @@ Check Your Understanding
       while len(username) <= 5:
          username = input("Enter a username: ")
 
-   .. raw:: html
-      
-         <ol type="a">
-            <li><span id = "Option a" onclick="highlight('Option a', false)">"Bob3"</span></li>
-            <li><span id = "Option b" onclick="highlight('Option b', true)">"Anaconda"</span></li>
-            <li><span id = "Option c" onclick="highlight('Option c', true)">"Willmore Crane Hastings III"</span></li>
-            <li><span id = "Option d" onclick="highlight('Option d', false)">"Sally"</span></li>
-            <li><span id = "Option e" onclick="highlight('Option e', true)">"LaunchCode"</span></li>
-         </ol>
+   a. "Bob3"
+   b. "Anaconda"
+   c. "Willmore Crane Hastings III"
+   d. "Sally"
+   e. "LaunchCode"
 
 .. admonition:: Question
 
    If you know the maximum number of times you need a loop to repeat, either
    ``for`` or ``while`` will work, but which option is the *better* choice?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> <strong style="color:#419f6a">while</strong> loop</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, true)"> <strong style="color:#419f6a">for</strong> loop</li>
-      </ol>
-      <p id="Q3"></p>
+   a. ``while`` loop
+   b. ``for`` loop
 
 .. Answer = b
 
@@ -281,13 +287,8 @@ Check Your Understanding
 
    Which type of loop should you use to write the program?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, true)"> <strong style="color:#419f6a">while</strong> loop</li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> <strong style="color:#419f6a">for</strong> loop</li>
-      </ol>
-      <p id="Q4"></p>
+   a. ``while`` loop
+   b. ``for`` loop 
 
 .. Answer = a
 
@@ -299,12 +300,7 @@ Check Your Understanding
 
    Which type of loop should you use to write the program?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q5" autocomplete="off" onclick="evaluateMC(name, false)"> <strong style="color:#419f6a">while</strong> loop</li>
-         <li><input type="radio" name="Q5" autocomplete="off" onclick="evaluateMC(name, true)"> <strong style="color:#419f6a">for</strong> loop</li>
-      </ol>
-      <p id="Q5"></p>
+   a. ``while`` loop
+   b. ``for``
 
 .. Answer = b

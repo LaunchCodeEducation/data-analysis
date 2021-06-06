@@ -7,4 +7,5 @@ Exercise Solutions
    :maxdepth: 1
 
    booleans-and-conditionals
+   loops
    

@@ -7,9 +7,16 @@ works. Then make one of these changes, and run the program again:
 #. Remove or comment out ``num += 1``.
 #. Replace the ``+=`` operator with ``-=``.
 
-   .. raw:: html
+   .. replit::
+      :slug: InfiniteLoop
+      :linenos:
 
-      <iframe height="400px" width="100%" src="https://repl.it/@launchcode/LCHS-Infinite-While-Loop?lite=true" scrolling="no" frameborder="yes" allowtransparency="true"></iframe>
+      # Be careful what you type!
+      num = 0
+
+      while num < 21:
+         print(num)
+         num += 1      # -= anyone?
 
 Yikes! What happened? The program just keeps running!
 
@@ -74,17 +81,6 @@ These mistakes set up a situation where the ending condition cannot be reached.
    need to be very deliberate and think very hard about how to make it happen.
    You are unlikely to create one by accident.
 
-Fun Fact
---------
-
-Infinite loops are such an established part of programming that Apple even
-made one the address of its California campus.
-
-.. figure:: figures/infinite-loop-street.jpg
-   :alt: Apple campus, 1 Infinite Loop, Cupertino, CA 95014
-   
-   1 Infinite Loop, Cupertino, CA
-
 Check Your Understanding
 ------------------------
 
@@ -105,13 +101,8 @@ Check Your Understanding
 
       print(answer)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> <strong style="color:#419f6a">num</strong> starts at 10 and increases by 1 each time through the loop, so it will always be positive.</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <strong style="color:#419f6a">answer</strong> starts at 1 and increases by <strong style="color:#419f6a">num</strong> each time, so it will always be positive.</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> You cannot compare <strong style="color:#419f6a">num</strong> to 0 in a <strong style="color:#419f6a">while</strong> loop. You must compare it to another variable.</li>
-      </ol>
-      <p id="Q1"></p>
+   a. ``num`` starts at 10 and increases by 1 each time through the loop, so it will always be positive.
+   b. ``answer`` starts at 1 and increases by ``num`` each time, so it will always be positive.
+   c. You cannot compare ``num`` to 0 in a ``while`` loop. You must compare it to another variable.
 
 .. Answer = a

@@ -94,7 +94,7 @@ appears.
    #. **Advanced:** Use the :ref:`modulus operator <modulo>` (``%``) in line 3 in
       order to print a message when ``num`` is even.
 
-   .. replit::
+   .. replit:: py
       :slug: IfStatements
       :linenos:
 
@@ -124,7 +124,7 @@ runs when the condition is ``False``.
    #. Change line 2 to ``book_status = 'overdue'`` and run the code again.
    #. How does the output change?
 
-   .. replit::
+   .. replit:: py
       :slug: ElseClauses
       :linenos:
 

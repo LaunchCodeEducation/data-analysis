@@ -58,7 +58,7 @@ conditional determines whether or not to consider the second.
    Run this code several times and choose different values for ``entry`` (even,
    odd, positive, negative) to prove that it works as desired. Nice, huh?
 
-   .. replit::
+   .. replit:: py
       :slug: NestedConditionalsExample01
       :linenos:
 
@@ -91,7 +91,7 @@ Let's take nesting a step further by including ``else`` clauses:
    #. ``kale``
    #. ``rutabaga``
 
-   .. replit::
+   .. replit:: py
       :slug: NestedConditionalsExample02
       :linenos:
 

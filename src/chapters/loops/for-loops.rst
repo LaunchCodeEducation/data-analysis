@@ -1,67 +1,31 @@
 ``for`` Loops
 =============
 
-If you were to instruct your pet turtle to draw a square in the sand, your
-commands would quickly become quite tedious. You must tell your pet to move
-then turn, move then turn, etc. four times. If you want your turtle to draw a
-hexagon, an octagon, or a polygon with 42 sides, it would be a nightmare to
-repeat all the commands!
+.. index::
+   single: loop; for
+   single: iteration; definite
 
-.. admonition:: Example
+.. index:: ! for loop
 
-   Turtle statements for drawing a square:
-
-   .. sourcecode:: python
-      :linenos:
-
-      import turtle
-
-      pet = turtle.Turtle()
-
-      pet.forward(50)
-      pet.left(90)
-      pet.forward(50)
-      pet.left(90)
-      pet.forward(50)
-      pet.left(90)
-      pet.forward(50)
-      pet.left(90)
-
-   Note: If you have not practiced with turtles in class yet, check out the
-   :ref:`Python Turtles <turtle-guide>` appendix.
-
-Time to use iteration! The first Python iteration tool we will learn
-is the ``for`` loop. 
+The ``for`` loop is the first Python tool for iteration that we will explore. A **for loop** is typically used for **definite iteration**. Definite iteration is the process of repeating a specific task with a specific data set. When a ``for`` loop begins it can usually be determined exactly how many times it will execute: once for each item in the data set.
 
 ``for`` Loop Syntax
 -------------------
 
 .. index::
-   single: loop; for
+   single: for loop; syntax
 
-.. index:: ! for loop
+We have already seen the basic syntax of a ``for`` loop.
 
-A **for loop** repeats a specific set of code statements a specific number of
-times. When a ``for`` loop begins, we must declare exactly how many times it
-will run.
+.. sourcecode:: python
+   :linenos:
 
-Play around with the basic syntax of a ``for`` loop.
+   for num in range(51):
+      print(num)
 
-.. admonition:: Try It
+This program prints the integers 0 through 50, one number per line. In the language of definite iteration, we say that the loop has a data set of 0-50, and its action is to print a value to the console.
 
-   This program prints the integers 0 through 20, one number per line.
-
-   .. raw:: html
-
-      <iframe src="https://trinket.io/embed/python3/f5e2eaec5c?runOption=run" width="100%" height="400" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
-   #. What do you notice about the numbers printed in the console vs. the
-      value inside ``range()``?
-   #. Try changing the value inside ``range()``. What values throw an error?
-   #. What happens when you indent line 4 to match line 2?
-
-Let's break down the syntax piece by piece, so we can begin to understand how
-``for`` loops are structured.
+Let's break down this syntax piece by piece, so we can begin to understand how ``for`` loops are structured.
 
 .. index::
    single: for loop; variable
@@ -173,15 +137,10 @@ Check Your Understanding
 
    How does python know what lines are contained in the loop body?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> The lines are indented by the same amount from the <strong style="color:#419f6a">for</strong> statement.</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> There is always exactly one line in the loop body.</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> The loop body ends with an empty line.</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> The loop body ends at the next <strong style="color:#419f6a">for</strong> statement.</li>
-      </ol>
-      <p id="Q1"></p>
+   a. The lines are indented by the same amount from the ``for`` statement.
+   b. There is always exactly one line in the loop body.
+   c. The loop body ends with an empty line.
+   d. The loop body ends at the next ``for`` statement.
 
 .. Answer = a.
 
@@ -195,15 +154,10 @@ Check Your Understanding
       for number in range(10):
          print("I have", 12 - number, "cookies. I'm going to eat one!")
    
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> 1</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> 9</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> 10</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> 12</li>
-      </ol>
-      <p id="Q2"></p>
+   a. 1
+   b. 9
+   c. 10
+   d. 12
 
 .. Answer = c.
 
@@ -212,15 +166,10 @@ Check Your Understanding
    For the code above, what is the value of ``number`` the *third* time Python
    executes the loop?
    
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> 1</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, true)"> 2</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> 3</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> 4</li>
-      </ol>
-      <p id="Q3"></p>
+   a. 1
+   b. 2
+   c. 3
+   d. 4
 
 .. Answer = b.
 
@@ -228,14 +177,9 @@ Check Your Understanding
 
    For the same code, what is the LAST line printed by the program?
    
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> <code class="pre">I have 2 cookies. I'm going to eat one!</code></li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, true)"> <code class="pre">I have 3 cookies. I'm going to eat one!</code></li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> <code class="pre">I have 10 cookies. I'm going to eat one!</code></li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> <code class="pre">I have 12 cookies. I'm going to eat one!</code></li>
-      </ol>
-      <p id="Q4"></p>
-
+   a. ``I have 2 cookies. I'm going to eat one!``
+   b. ``I have 3 cookies. I'm going to eat one!``
+   c. ``I have 10 cookies. I'm going to eat one!``
+   d. ``I have 12 cookies. I'm going to eat one!``
+   
 .. Answer = b.

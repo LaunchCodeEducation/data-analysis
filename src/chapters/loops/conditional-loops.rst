@@ -19,28 +19,38 @@ Run the following code samples to see how each one behaves.
 
 .. admonition:: Examples
 
-   .. raw:: html
+   .. sourcecode:: python
+      :linenos:
 
-      <iframe height="450px" width="100%" src="https://repl.it/@launchcode/LCHS-Loops-with-Conditions-1?lite=true" scrolling="no" frameborder="yes" allowtransparency="true"></iframe>
+      num = 13
+
+      for number in range(num):
+         if number%3 == 0:
+            print(number, "is divisible by 3.")
+         else:
+            print(number, "is NOT divisible by 3.")
 
    In this first loop, the text displayed in the console depends on whether the
    condition ``number%3 == 0`` returns ``True``. If ``number`` is evenly
    divisible by 3, then line 5 runs. Otherwise, line 7 runs.
 
-   .. raw:: html
-      
-      <iframe height="450px" width="100%" src="https://repl.it/@launchcode/LCHS-Loops-with-Conditions-2?lite=true" scrolling="no" frameborder="yes" allowtransparency="true"></iframe>
+   .. sourcecode:: python
+      :linenos:
+
+      text = 'Coding ROCKS!'
+      num_vowels = 0
+
+      for char in text:
+         if char in 'aeiou':
+            num_vowels += 1
+
+      print(text, "contains", num_vowels, "lowercase vowels.")
 
    In the second loop, the condition ``char in 'aeiou'`` returns ``True`` if
    the value of ``char`` matches any part of the string. When this happens,
    ``num_vowels`` gets increased by 1 (line 6). ``Coding ROCKS!`` contains 2
    lowercase vowels, so line 6 only runs 2 times. For every other character in
    the string, the line gets skipped.
-
-.. admonition:: Try It!
-
-   How could you make the second program count both lowercase and uppercase
-   vowels?
 
 Looping ``if``
 --------------
