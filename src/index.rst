@@ -6,6 +6,8 @@ Chapters
    :maxdepth: 1
    :name: chapterstoc
 
+   chapters/errors-and-debugging/index
+
 .. toctree::
 
    genindex
