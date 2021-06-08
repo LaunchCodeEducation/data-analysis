@@ -102,7 +102,7 @@ C. **Write conditional expressions to satisfy the safety rules.**
    .. sourcecode:: py
       :linenos:
 
-      if !crewStatus or computerStatusCode != 200 or !spaceSuitsOn:
+      if crewStatus != True or computerStatusCode != 200 or !spaceSuitsOn:
          print("WARNING. Not ready")
       else:
          print("all systems go")
