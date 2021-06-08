@@ -91,8 +91,6 @@ appears.
    #. Indent line 6 to match line 4, then re-run the code. How did the output
       change?
    #. Change the condition to print a message when ``num`` is positive.
-   #. **Advanced:** Use the :ref:`modulus operator <modulo>` (``%``) in line 3 in
-      order to print a message when ``num`` is even.
 
    .. replit:: py
       :slug: IfStatements

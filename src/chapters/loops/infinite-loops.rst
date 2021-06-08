@@ -7,7 +7,7 @@ works. Then make one of these changes, and run the program again:
 #. Remove or comment out ``num += 1``.
 #. Replace the ``+=`` operator with ``-=``.
 
-   .. replit::
+   .. replit:: py
       :slug: InfiniteLoop
       :linenos:
 
@@ -65,21 +65,6 @@ These mistakes set up a situation where the ending condition cannot be reached.
    In this case, the update statement is correct (line 5), but the error occurs
    in line 4. Instead of using ``total`` in the boolean expression, we used
    ``start_value``, which never gets updated in the loop.
-
-.. admonition:: Example
-
-   Here's an example of an infinite ``for`` loop in Python:
-
-   .. sourcecode:: python
-      :linenos:
-
-      # NOPE! Nothing to see here!
-
-   Well. That's nice.
-   
-   Although it *is* possible to create an infinite ``for`` loop in Python, you
-   need to be very deliberate and think very hard about how to make it happen.
-   You are unlikely to create one by accident.
 
 Check Your Understanding
 ------------------------

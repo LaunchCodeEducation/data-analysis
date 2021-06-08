@@ -33,7 +33,7 @@ the loop variable ``num`` would take values of 1, 2, 3, and 4.
 
    Run the following code to see how using different start and stop values effects the output.
 
-   .. replit::
+   .. replit:: py
       :slug: StartAndStop
       :linenos:
 
@@ -95,7 +95,7 @@ following:
 #. Print the numbers from -3 to -10.
 #. Print by 3's from 15 to -21.
 
-.. replit::
+.. replit:: py
    :slug: RangeOptions
    :linenos:
 
@@ -163,7 +163,7 @@ type will be included in the loop. With the negative stop values in tasks 5 and
    Run the following program. Enter different words to see how the behavior
    changes.
 
-   .. replit::
+   .. replit:: py
       :slug: RangeExpressions
       :linenos:
 

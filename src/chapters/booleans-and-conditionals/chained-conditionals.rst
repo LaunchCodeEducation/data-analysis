@@ -250,7 +250,7 @@ Check Your Understanding
 
    Which of the following code blocks gives the same result?
 
-   #. .. sourcecode:: python
+   a. .. sourcecode:: python
          :lineno-start: 2
 
          if num < 0:
@@ -259,7 +259,7 @@ Check Your Understanding
             print(num, "is a positive number")
          else:
             print(num, "is 0")
-   #. .. sourcecode:: python
+   b. .. sourcecode:: python
          :lineno-start: 2
 
          if num < 0:
@@ -268,7 +268,7 @@ Check Your Understanding
             print(num, "is a positive number")
          else:
             print(num, "is 0")
-   #. .. sourcecode:: python
+   c. .. sourcecode:: python
          :lineno-start: 2
 
          if num < 0:
@@ -277,9 +277,5 @@ Check Your Understanding
             print(num, "is a positive number")
          else:
             print(num, "is 0")
-
-   a. Code sample 1
-   b. Code sample 2
-   c. Code sample 3
 
 .. Answer = b

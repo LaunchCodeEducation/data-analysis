@@ -16,12 +16,11 @@ Exercises: Loops
 WAIT!!!  Why type "Repetition is a good thing," four times when we can code
 a better result?  How about printing the phrase 100 times instead?
 
-.. sourcecode:: js
+.. sourcecode:: py
    :linenos:
 
-    for (let i = 0; i < 100; i++){
-        console.log("Repetition is a good thing.");
-    }
+    for i in range(101):
+        print("Repetition is a good thing.")
 
 Loops simplify repetitive tasks!
 

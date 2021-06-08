@@ -184,7 +184,7 @@ Check Your Understanding
 
 .. admonition:: Question
 
-   Which of the following are boolean expressions? Select ALL that apply.
+	Which of the following are boolean expressions? Select ALL that apply.
 
 	a. ``3 <= 4``
 	b. ``3 + 4``
