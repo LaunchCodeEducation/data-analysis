@@ -24,25 +24,6 @@ Functions Make Your Code More Readable
 
 Writing a function to do a specific job allows us to put a name on that job.
 
-Consider our ``is_palindrome`` example from the previous page:
-
-.. sourcecode:: python
-   :linenos:
-
-   def reverse_string(a_string):
-      letters_list = list(a_string)
-      letters_list.reverse()
-      return ''.join(letters_list)
-
-   def is_palindrome(orig_string):
-      return orig_string == reverse_string(orig_string)
-
-The ``reverse_string`` function does exactly what its name says. It takes a
-string and reverses the order of the characters.
-
-The logic within ``is_palindrome`` is also clear. Line 7 tells us, *a string is
-a palindrome if it is equal to its reverse*.
-
 Functions Reduce Complexity
 ---------------------------
 
@@ -63,7 +44,7 @@ Writing a function to do one job makes it easy to reuse that code within a
 program. It ALSO allows us to share that job across files and even different
 projects.
 
-Now that we coded ``reverse_string`` ONCE, we can reuse it whenever we need to
+Now that we coded ``make_sandwich`` ONCE, we can reuse it whenever we need to
 flip a string.
 
 We will explore this idea in the :ref:`Modules chapter <modules-index>`.

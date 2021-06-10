@@ -36,7 +36,7 @@ For our sandwich function, the answers might look like this:
    * - Parameters
      - bread, filling, condiments
    * - Parameter names and types
-     - ``bread_type`` (string), ``filling_type`` (string), ``condiments`` (list of strings)
+     - ``bread_type`` (string), ``filling_type`` (string), ``condiment`` (string)
    * - Return Value
      - The finished sandwich
    * - Return Type
@@ -61,13 +61,13 @@ Here's an outline for our sandwich function:
 .. sourcecode:: python
    :linenos:
 
-   def make_sandwich(bread_type, filling_type, condiments):
+   def make_sandwich(bread_type, filling_type, condiment):
 
       # TODO: make a sandwich with the given ingredients
 
       return # TODO: Send back a sandwich object
    
-   make_sandwich('this', 'is', ['a', 'practice', 'call'])
+   make_sandwich('this', 'is', 'practice')
 
 Doing this step before writing the body makes sure we aren't
 leaving off the ``:`` or forgetting to define a parameter.

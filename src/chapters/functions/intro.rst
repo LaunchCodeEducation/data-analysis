@@ -1,151 +1,109 @@
 Introduction
 ============
 
-Recall how we used a turtle object to draw a square:
+You have been using functions throughout your learning so far, without receiving a full explanation of how functions work.
+This chapter focuses explicitly on the details of how functions work, how they can be used, and how you can create functions of your own.
+
+.. index:: ! function, method
+
+A **function** is a reusable, callable piece of code. Like variables, functions often have names (though the next chapter shows us that we can create functions without names).
+
+You have already become familiar with several functions:
+
+- ``print()``
+- The type conversion functions: ``int()``, ``float()``, and ``str()``
+
+Each of the functions we have used works in the same way.
+By typing the function's name, followed by parentheses, we can *call* the function, resulting in an action being carried out.
+Sometimes, as with ``print()``, we can provide input data between the parentheses, which the function will use to carry out its action.
 
 .. admonition:: Example
 
-   .. sourcecode:: python
-      :linenos:
+   The function ``print()`` prints the provided value or values (the input data).
 
-      import turtle
+   .. sourcecode:: py
 
-      bob = turtle.Turtle()
+      print("Hello, World!")
 
-      side_length = 75
-      for side in range(4):
-         bob.forward(side_length)
-         bob.left(90)
+   **Console Output**
 
-   To draw a square, we need to create a turtle and specify the length of one 
-   side. The ``for`` loop runs, and our turtle does its job.
+   ::
 
-   .. figure:: figures/turtle-square.gif
-      :alt: A gif showing a Python turtle drawing a square.
+      Hello, World!
 
-What if we have several different turtles on the screen, and we want each one
-to draw a square? We could copy and paste the ``for`` loop once for each
-turtle, but we would need to update the ``forward`` and ``left`` statements to
-match the turtle names.
+This is an example of a function receiving *input*. Functions may also provide
+*output*. For example, the type conversion functions give back the result of
+converting a value.
 
 .. admonition:: Example
 
-   .. sourcecode:: python
+   Type conversion functions *return* a value, that can be used by the calling code. Often, we store the return value of a function in a variable.
+
+   .. sourcecode:: py
       :linenos:
 
-      import turtle
+      num = int("42")
+      print("The variable num is of type", type(num), "and has value", num)
 
-      bob = turtle.Turtle()
-      wonder = turtle.Turtle()
-      im_really_a_tortoise = turtle.Turtle()
+   **Console Output**
 
-      # Turtle color, shape, speed, and location code...
+   ::
 
-      side_length = 50
-      for side in range(4):
-         bob.forward(side_length)
-         bob.left(90)
+      The variable num is of type number and has value 42
 
-      side_length = 75
-      for side in range(4):
-         wonder.forward(side_length)
-         wonder.left(90)
+.. index:: encapsulation
 
-      side_length = 100
-      for side in range(4):
-         im_really_a_tortoise.forward(side_length)
-         im_really_a_tortoise.left(90)
+Functions are extremely powerful.
+They allow us to repeat actions without repeating each individual step of code that the actions are built from.
+By grouping actions together, functions allow us to be removed from the details of what they are actually doing.
 
-   This is inefficient!
+When we want to print a message to the console using ``print()``, we don't have to know what the console is, or how a string can be displayed on it.
+The behavior is wrapped up within the function itself. This is an example of a broader programming concept known as **encapsulation**.
+Encapsulation is the process of packaging up code in a reusable way, without the programmer needing to be concerned with how it works.
 
-   .. figure:: figures/3-turtle-squares.gif
-      :alt: A gif showing a three Python turtles drawing one square each.
+.. index::
+   single: function; machine
 
-Instead of copying, pasting, and then editing the loop once for each turtle, it
-would be nice if we could use the SAME lines of code over and over again.
+.. _function-machine:
 
-*Functions* allow us to do this!
+A commonly-used analogy for describing the concept of a function is that of a machine that takes input, carries out an action, and gives back a result. This is known as the **function machine** analogy.
 
-What is a Function?
--------------------
+.. figure:: figures/function-machine.png
+   :alt: A "function machine," consisting of a box which takes inputs, and from which output emerges.
 
-.. index:: ! function
+   The function machine
 
-A **function** is a reusable piece of code, and it consists of a series of
-statements that belong together. Like variables, we assign functions
-names. By *calling* a function name, we tell Python to run that block of code
-when we need it.
+If we want to use a function, we must provide it with some input. It carries
+out an action on that input and returns a result. The action occurs within the
+function, or "inside the machine". If we know the purpose of a function, we
+simply provide it with input and receive the output. The rest is up to the
+machine itself.
 
-You used a function when you wrote your first Python program:
+.. note::
 
-.. sourcecode:: Python
+   You may notice that a function like ``print`` doesn't seem to return
+   anything. We will soon learn that *every* function returns a value, regardless
+   of whether or not that value is used, or is even useful.
 
-   print('Hello, World!')
-
-To display information in the console, the ``print`` function follows a
-detailed set of instructions to convert the values inside the parentheses to symbols
-on the screen. We do not see these steps, but we execute them every time we use
-the function.
-
-For the three-turtle example above, imagine we create a function named
-``draw_square``. We could put the ``for`` loop inside this function, and then
-run the function once for each turtle. This allows us to use the same lines of
-code for each turtle instead of writing multiple copies of the
-instructions.
+The programming concept of a function is very similar to the concept of a mathematical function. For example, in high school algebra you learned about functions like ``y = 4x + 7``. These functions used a mathematical input (``x``) and carried out a procedure to return a numerical result (``y``).
 
 .. admonition:: Example
 
-   .. sourcecode:: python
-      :linenos:
+   Consider the following mathematical function:
 
-      import turtle
+   ::
 
-      bob = turtle.Turtle()
-      wonder = turtle.Turtle()
-      im_really_a_tortoise = turtle.Turtle()
+      f(x) = x² + 4x - 2
 
-      # Turtle color, shape, speed, and location code...
-      # draw_square function definition ...
+   We can *call* the function by giving it a specific *input*:
 
-      draw_square(bob, 50)
-      draw_square(wonder, 75)
-      draw_square(im_really_a_tortoise, 100)
-   
-   Each time we run the ``draw_square`` function, we tell Python which turtle
-   to use as well as the value for ``side_length``.
+   ::
 
-When you wrote your ``'Hello, World!'`` program, we skipped the full
-explanation of how functions work. You are now ready to learn those details,
-as well as how functions can be used and how to create your own.
+      f(3) = 3² + 4*3 - 2 = 9 + 12 - 2 = 19
 
-Function Control Flow
----------------------
+   The number 19 is the *output*.
 
-.. index:: ! control flow
-
-The **control flow** of a program is the order in which the statements are
-executed. Normal control flow runs from the top to the bottom of a file.
-However, we have seen how :ref:`conditionals <conditional-control-flow>` and
-:ref:`loops <for-loop-control-flow>` alter the flow of a program by
-adding branches or repeated steps in the top-to-bottom running of the code.
-
-Functions create blocks of code that remain separate from the main flow of a
-program. Think of these like complete, but separate, programs that sit off to
-the side of the main branch. When we *call* a function, the main program
-passes control to the separate branch. When the function completes its job, it
-returns control to the main program at the point just after the call was made.
-
-.. figure:: figures/function-control-flow.png
-   :alt: Diagram showing the program flow as it moves from the main branch to the function code.
-   :width: 65%
-
-Once a program finishes with a conditional or a loop, that code is done. The
-statements in a function, however, can be used again and again at different
-points in the program.
-
-.. figure:: figures/function-control-flow-2.png
-   :alt: Diagram showing the program flow as it moves between the main branch and the function code multiple times.
-   :width: 50%
+Functions also allow us to keep our code DRY, a concept that you learned about :ref:`when we introduced loops <dry-code>`. If we want to do the same basic task 17 times across a program, we can reduce code repetition by writing one function and calling it 17 times.
 
 Check Your Understanding
 ------------------------

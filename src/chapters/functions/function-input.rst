@@ -3,8 +3,7 @@ Function Input
 
 Earlier in this chapter, we used the image of the
 :ref:`function machine <function-machine>`, noting that the machine takes
-*input* and provides *output*. Let's take a closer look at what we send in and
-what we get out of a function.
+*input* and provides *output*. Let's take a closer look at what we send in to the function.
 
 Arguments and Parameters
 ------------------------
@@ -93,9 +92,15 @@ no arguments?
 
    What error messages do you see?
 
-   .. raw:: html
+   .. replit:: py
+      :slug: ArgumentParameterMismatch
+      :linenos:
 
-      <iframe height="400px" width="100%" src="https://repl.it/@launchcode/Argument-Parameter-Mismatch?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      def say_hello(name):
+         print("Hello, {0}!".format(name))
+
+      say_hello("RBG")
+      # Try calling the say_hello function with either no arguments or more than one argument.
 
 In this example, we receive a ``TypeError`` message each time we call the
 ``say_hello`` function with the wrong number of arguments. As defined in line
@@ -162,15 +167,10 @@ Check Your Understanding
 
       string_repeater('Bob')
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> "BobBob"</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> Nothing (no output)</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> repeated</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> The value of a_string</li>
-      </ol>
-      <p id="Q1"></p>
+   a. "BobBob"
+   b. Nothing (no output)
+   c. repeated
+   d. The value of a_string
 
 .. Answer = a
 

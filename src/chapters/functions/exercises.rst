@@ -1,163 +1,68 @@
+.. _exercises-functions:
+
 Exercises: Functions
 ====================
 
-If your teacher added you to a :ref:`Trinket course <trinket-course-assignments>`, complete the exercises
-there.
+To solve problems with code, you need to be able to break large
+problems into small ones. Usually, these smaller problems will take the form of
+functions that are used to solve the larger problem. Therefore, to solve problems with code, 
+you need to be skilled at writing functions. And to master
+functions, you need to write a *lot* of them.
 
-Otherwise, use the links below to code in your own free account.
+These exercises ask you to write many relatively small functions, which
+combine to form larger, more complicated ones.
 
-.. admonition:: Note
+At the end, you will be able to create strings of shapes, like this nifty
+diamond:
 
-   The code editors embedded in the exercises all include a link to repl.it in
-   the upper right corner. For the matching Trinkets, click these links:
+::
 
-   #. `Exercises 1 & 2 <https://trinket.io/python/312522b320?showInstructions=true>`__
-   #. `Exercise 3 <https://trinket.io/python/497b5293b3?showInstructions=true>`__
-   #. `Exercise 4 <https://trinket.io/python/accbf508b3>`__
-   #. `Exercise 5 <https://trinket.io/python/6e523d6464>`__
-   #. `Exercises 6 - 8 <https://trinket.io/python/531698b16b?showInstructions=true>`__
+       #
+      ###
+     #####
+    #######
+   #########
+   #########
+    #######
+     #####
+      ###
+       #
 
-.. _functions-turtle-exercises:
+There is no starter code for these exercises, so create a new Python project
+at `repl.it <https://repl.it/login>`__ to get started.
 
-Part A: More Turtles
---------------------
+Rectangles
+----------
 
-#. Use a loop and the ``draw_square`` function we wrote
-   :ref:`in this chapter <draw-square-code>` to draw the image shown below.
-   Make each side 30 units long, and note that the turtle moves away from the
-   last square.
-   
-   (Check the :ref:`Turtle Appendix <turtle-guide>` if you need to review the
-   turtle methods).
+A. Write a function ``make_line(size)`` that returns a line with exactly ``size``
+   hashes.
 
-   .. figure:: figures/exercise-1-image.png
-      :alt: Image showing 5 squares evenly spaced in a row, with the turtle off to the right of the last shape.
+   .. sourcecode:: py
 
-   .. raw:: html
-
-      <iframe height="600px" width="100%" src="https://repl.it/@launchcode/Functions-Exercise-1?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-#. In the editor above, define a new function called ``draw_polygon`` that
-   takes 3 parameters---a turtle object, a number of sides, and the length of
-   each side. Place the new function in the lines before
-   ``bob = turtle.Turtle()``.
-
-   *Hint*: You drew polygons as part of the 
-   :ref:`Turtle Project <draw-polygon>` in the Loops chapter.
-
-   After you finish coding the function, replace the ``draw_square`` function
-   call in the loop with ``draw_polygon`` to produce a row of shapes.
-
-   .. figure:: figures/exercise-2-image.png
-      :alt: Image showing 5 identical shapes evenly spaced in a row, with the turtle off to the right of the last shape.
-
-      Two possible outcomes from using ``draw_polygon``.
-
-   .. admonition:: Try It!
-
-      Just for fun, modify your loop code to produce shapes with different
-      colors, sizes, or sides.
-
-      .. figure:: figures/exercise-2b-image.png
-         :alt: Images showing three rows of shapes with different: 1) colors, 2) sizes, 3) number of sides.
-
-#. Write a function called ``draw_sprite`` that draws a figure like the one
-   shown below. The function needs parameters for the turtle, the number of
-   legs, and the length of the legs.
-
-   .. figure:: figures/exercise-3-image.png
-      :alt: Image showing a sprite with 7 legs and the turtle shape at the center.
-   
-   Call the function to create a sprite with 10 legs of length 115.
-
-   .. raw:: html
-
-      <iframe height="550px" width="100%" src="https://repl.it/@launchcode/Functions-Exercise-3?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-   .. admonition:: Try It!
-
-      Add a parameter to ``draw_polygon`` called ``fancy_corners``. If
-      ``True``, then the function should call ``draw_sprite`` at each corner of
-      the shape. Make the sprite legs half the length of each side.
-
-      .. figure:: figures/exercise-3b-image.png
-         :alt: Image showing a sprite with 7 legs and the turtle shape at the center.
-         :scale: 80%
-
-Part B: Return Values
----------------------
-
-4. Write a ``shift_case`` function that takes a single string parameter and
-   returns a different string. The function should loop through the string and
-   change uppercase characters to lowercase, and lowercase to uppercase.
-
-   For example, for the argument ``'Hello, World!'``, the function returns
-   ``'hELLO, wORLD!'``.
-
-   .. raw:: html
-
-      <iframe height="500px" width="100%" src="https://repl.it/@launchcode/Functions-Exercise-4?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-#. Write a ``calculate_average`` function that uses a list of numbers as the
-   parameter. The function should find and return the average of the numbers
-   from the list. Use the ``round()`` function to return an average rounded
-   to one decimal place.
-
-   Sample results:
-
-   a. num_list = [2, 7, 6], average = 5.0
-   b. num_list = [20, 17, 46, 8], average = 22.8
-   c. num_list = [0, 3.33, 44, 50, 63, 70.9, 75.2, 83.2], average = 48.7
-
-   .. admonition:: Note
-
-      average = (sum of the elements in list) / (number of elements in list)
-
-   .. raw:: html
-
-      <iframe height="500px" width="100%" src="https://repl.it/@launchcode/Functions-Exercise-5?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-#. Write a function ``make_line(num_chars, symbol)`` that returns a line with
-   exactly ``num_chars`` symbols. ``num_chars`` will be an integer, and
-   ``symbol`` will be a character. Note that the function must *RETURN* a
-   string, not print it!
-
-   If the function call does not provide an argument for ``symbol``, use the
-   default character ``'#'``.
-
-   .. sourcecode:: python
-
-      print(make_line(5, 'T'))
-      print(make_line(8))
+      print(make_line(5))
 
    **Console Output**
 
    ::
 
-      TTTTT
-      ########
-   
-   .. raw:: html
+      #####
 
-      <iframe height="500px" width="100%" src="https://repl.it/@launchcode/Functions-Exercise-6?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+   :ref:`Check your solution <functions-exercise-solutionsA>`. 
 
-#. In the editor above, add a function called ``make_rectangle`` that returns a
-   rectangle string with a given width, height, and symbol. The function should
-   NOT print each row of the rectangle. Instead, it must return a single string
-   that contains the entire rectangle shape.
+#. Write a function called ``makeSquare(size)`` that returns a ``size`` by
+   ``size`` string of hashes. The function should NOT print each row of the
+   square. Instead, it must return a single string that contains the entire
+   shape.
+
+   .. admonition:: Tip
    
-   .. admonition:: Tips
-   
-      #. Call your ``make_line`` function to create each row of the rectangle
-         string.
+      #. Call your ``makeLine`` function to create each row of the square.
       #. The newline character, ``\n``, will be helpful to you.
       #. Do NOT include a newline character at the end of your string.
-      #. Use ``'#'`` as the default symbol.
 
-   .. sourcecode:: python
+   .. sourcecode:: js
 
-      print(make_rectangle(5, 3))
-      print(make_rectangle(2, 4, '*'))
+      console.log(makeSquare(5));
 
    **Console Output**
 
@@ -166,58 +71,131 @@ Part B: Return Values
       #####
       #####
       #####
-      **
-      **
-      **
-      **
+      #####
+      #####
 
-#. In the same editor, code a ``make_square`` function that calls
-   ``make_rectangle``. The function should behave something like this:
+   .. admonition:: Warning
 
-   .. sourcecode:: python
+      For each of the shape exercises, do not include a newline character at
+      the very end of your string. While the final ``\n`` might not be
+      noticeable for the simpler shapes, including it will make life harder for
+      you toward the end of the exercises.
 
-      print(make_square(4))
-      print(make_square(3, 'Rutabaga'))
+#. Write a function ``makeRectangle(width, height)`` that returns a
+   rectangle with the given width and height. Use your ``makeLine`` function to
+   do this.
+
+   .. sourcecode:: js
+
+      console.log(makeRectangle(5, 3));
 
    **Console Output**
 
    ::
 
-      ####
-      ####
-      ####
-      ####
-      RutabagaRutabagaRutabaga
-      RutabagaRutabagaRutabaga
-      RutabagaRutabagaRutabaga
+      #####
+      #####
+      #####
 
-Bonus Exercises
----------------
+   :ref:`Check your solution <functions-exercise-solutionsC>`. 
 
-#. Add a ``draw_spiral`` function to one of the turtle editors to produce
-   either of the following shapes. *Hint*: The function needs a turtle, an
-   angle, a starting line length and the number of lines to draw.
 
-   .. figure:: figures/turtle-spirals.png
-      :alt: Image showing two spiral shapes produced by the ``draw_spiral`` function.
+#. Now, go back and rewrite ``makeSquare`` to use ``makeRectangle``.
 
-      The spiral on the left uses an angle of 90°, while the one on the right
-      uses an angle of 89°.
+Triangles
+---------
 
-#. Add functions to the editor in part B, exercise 6 to produce any of the
-   following shapes:
+E. Write a function ``makeDownwardStairs(height)`` that prints the staircase
+   pattern shown below, with the given height. Use your ``makeLine`` function
+   to do this.
+
+   .. sourcecode:: js
+
+      console.log(makeDownwardStairs(5));
+
+   **Console Output**
 
    ::
 
-      #                       ##
-      ##                     ####
-      ###                   ######
-      ####                 ########
-      #####               ##########
+      #
+      ##
+      ###
+      ####
+      #####
 
-      #
-      ##
-      ###
-      ###
-      ##
-      #
+   :ref:`Check your solution <functions-exercise-solutionsE>`.
+
+
+F. Write a function ``makeSpaceLine(numSpaces, numChars)`` that returns a line
+   with exactly the specified number of spaces, followed by the
+   specified number of hashes, followed again by ``numSpaces`` more spaces.
+
+   .. sourcecode:: js
+
+      console.log(makeSpaceLine(3, 5));
+
+   **Console Output**
+
+   ::
+
+      ___#####___
+
+   .. note:: We have inserted underscores to represent spaces, so they are visible in the output. Don't do this in your code.
+
+G. Write a function ``makeIsoscelesTriangle(height)`` that returns a triangle
+   of the given height.
+
+   .. sourcecode:: js
+
+      console.log(makeIsoscelesTriangle(5));
+
+   **Console Output**
+
+   ::
+
+          #
+         ###
+        #####
+       #######
+      #########
+
+   .. tip:: Consider the top line of the triangle to be level 0, the next to be line 1, and so on. Then line ``i`` is a space-line with ``height - i - 1`` spaces and ``2 * i + 1`` hashes.
+
+   :ref:`Check your solution <functions-exercise-solutionsG>`.
+
+Diamonds
+---------
+
+H. Write a function ``makeDiamond(height)`` that returns a diamond where the
+   triangle formed by the *top* portion has the given height.
+
+   .. sourcecode:: js
+
+      console.log(makeDiamond(5));
+
+   **Console Output**
+
+   ::
+
+          #
+         ###
+        #####
+       #######
+      #########
+      #########
+       #######
+        #####
+         ###
+          #
+
+   .. tip::
+
+      Consider what happens if you create a triangle and reverse it using
+      :ref:`our reverse function <reverse_func>`.
+
+Bonus Mission
+--------------
+
+Refactor your functions so that they take a single character as a parameter,
+and draw the shapes with that character instead of always using ``'#'``. Make
+the new parameter optional, with default value ``'#'``.

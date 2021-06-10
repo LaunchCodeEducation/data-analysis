@@ -41,9 +41,18 @@ returns a new string without hyphens, ``-``.
    #. On line 9, add ``print(without_hyphens)`` and run the program one more
       time. You should receive an error message.
 
-   .. raw:: html
+   .. replit:: py
+      :slug: FunctionScope
+      :linenos:
 
-      <iframe height="500px" width="100%" src="https://repl.it/@launchcode/Scope-Example?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      def remove_hyphens(str_with_hyphens):
+         without_hyphens = str_with_hyphens.replace('-', '')
+
+         return without_hyphens
+
+      phone_number = "555-555-5555"
+      no_hyph_number = remove_hyphens(phone_number)
+      print(no_hyph_number)
 
 In step 1, the function ``remove_hyphens`` behaves as expected. It takes the
 argument ``"555-555-5555"``, removes the ``"-"`` symbols, and returns the
