@@ -49,7 +49,7 @@ A. Write a function ``make_line(size)`` that returns a line with exactly ``size`
 
    :ref:`Check your solution <functions-exercise-solutionsA>`. 
 
-#. Write a function called ``makeSquare(size)`` that returns a ``size`` by
+#. Write a function called ``make_square(size)`` that returns a ``size`` by
    ``size`` string of hashes. The function should NOT print each row of the
    square. Instead, it must return a single string that contains the entire
    shape.
