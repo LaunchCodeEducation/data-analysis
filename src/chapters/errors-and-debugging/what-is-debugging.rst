@@ -49,14 +49,9 @@ Check Your Understanding
 
    Debugging is:
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> finding all the errors in the program.</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> fixing all the errors in the program.</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> finding and fixing all the errors in the program.</li>
-      </ol>
-      <p id="Q1"></p>
+   a. finding all the errors in the program.
+   b. fixing all the errors in the program.
+   c. finding and fixing all the errors in the program.
 
 .. Answer = c
 

@@ -110,7 +110,7 @@ brown, variables might be white, and numbers green. This useful feature gives
 us a quick, visual way to identify syntax errors.
 
 For example, here is a screenshot of our flawed code taken within an
-`editor at repl.it <https://repl.it/@launchcode/LCHS-Syntax-Highlighting-Example>`__.
+`editor at repl.it <https://repl.it/@launchcode/SyntaxHighlightingDebugging>`__.
 
 .. figure:: figures/syntax-highlighting.png
    :alt: A screenshot with two lines of code. The highlighting is different than expected because of syntax errors.

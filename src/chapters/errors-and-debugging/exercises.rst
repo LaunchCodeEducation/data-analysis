@@ -10,17 +10,10 @@ well with others is to recognize their effort and what they did correctly.
 Throwing away all of their code just because you would do it differently is NOT
 a helpful strategy.
 
-.. admonition:: Note
-
-   If your teacher added you to a :ref:`Trinket course <trinket-course-assignments>`, complete the exercises
-   there.
-
-   Otherwise, use the links below to code in your own free account.
-
 Find and Fix Syntax Errors
 --------------------------
 
-The following code sample contains 3 syntax errors.
+This `code sample <https://replit.com/@launchcode/DebuggingExercises01>`__ contains 3 syntax errors.
 
 #. Before making any changes, run the code as-is to generate the first error
    message.
@@ -31,69 +24,42 @@ The following code sample contains 3 syntax errors.
 #. Repeat steps 2 and 3 until you fix all of the bugs and the program runs
    successfully.
 
-.. admonition:: Example
-
-   This program asks the user to enter an index value, and then it gives the
-   letter from an alphabet string that has that index.
-
-   .. raw:: html
-
-      <iframe height="750px" width="100%" src="https://repl.it/@launchcode/LCHS-Debugging-Exercise-1?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
 Find and Fix Runtime Errors
 ---------------------------
 
-The following code sample contains 3 runtime errors.
+This `code sample <https://replit.com/@launchcode/DebuggingExercises02>`__ contains 3 runtime errors.
 
 #. Before making any changes, run the code as-is to generate the first error
    message.
 #. Follow the same process you used above to fix the runtime errors. Note that
    syntax highlighting does NOT show all possible runtime errors.
 
-.. admonition:: Example
-
-   .. raw:: html
-
-      <iframe height="750px" width="100%" src="https://repl.it/@launchcode/LCHS-Debugging-Exercise-2?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
 Solve Logic Errors
 ------------------
 
-#. The following code contains two logic errors.  When given a student's score
+#. This `code <https://replit.com/@launchcode/DebuggingExercises03>`__ contains two logic errors.  When given a student's score
    on an exam, the program *should* convert the points earned into a
    percentage (points earned / points possible * 100). Find and fix the errors
    so that the program gives the correct result.
 
-   .. admonition:: Example
+   *Tip*: Use the following data to test the program and your fix.
 
-      *Tip*: Use the following data to test the program and your fix.
+   a. ``points_earned = 8``, ``points_possible = 10``, Correct answer =
+      ``80.0%``
+   b. ``points_earned = 11``, ``points_possible = 15``, Correct answer ≈
+      ``73.33333333333333%``
+   c. ``points_earned = 23.4``, ``points_possible = 25``, Correct answer =
+      ``93.6%``
 
-      a. ``points_earned = 8``, ``points_possible = 10``, Correct answer =
-         ``80.0%``
-      b. ``points_earned = 11``, ``points_possible = 15``, Correct answer ≈
-         ``73.33333333333333%``
-      c. ``points_earned = 23.4``, ``points_possible = 25``, Correct answer =
-         ``93.6%``
-
-      .. raw:: html
-      
-         <iframe height="500px" width="100%" src="https://repl.it/@launchcode/LCHS-Debugging-Exercise-3?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-#. The next program should convert a student's percentage into a letter grade.
+#. This `program <https://replit.com/@launchcode/DebuggingExercises04>`__ should convert a student's percentage into a letter grade.
    The code follows a simple 10-point scale and allows for decimal results:
 
    A: 100% - 90%, B: 89 - 80, C: 79 - 70, D: 69 - 60, F: Any score under 60%.
 
-   .. admonition:: Example
+   Be sure to test all the *edge cases*. For example, 80% is a ``B``, but
+   79.99...% is a ``C``.
 
-      Be sure to test all the *edge cases*. For example, 80% is a ``B``, but
-      79.99...% is a ``C``.
-
-      .. raw:: html
-
-         <iframe height="700px" width="100%" src="https://repl.it/@launchcode/LCHS-Debugging-Exercise-4?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-#. The last code sample checks if a username is valid, but it's not working yet.
+#. The last `code sample <https://replit.com/@launchcode/DebuggingExercises05>`__ checks if a username is valid, but it's not working yet.
    Add ``print`` statements as directed to find and fix the logic errors.
 
    Username rules:
@@ -108,8 +74,6 @@ Solve Logic Errors
    b. ``"CoderGirl"`` should be invalid (no number).
    c. ``"rut*baga8"`` should be invalid (illegal symbol).
    d. ``"This1IsTooLong"`` should be invalid (too long).
-
-.. admonition:: Example
 
    #. On line 10, add ``print(is_valid)`` to check if the conditional on line
       8 correctly assigns ``True`` and ``False`` based on the length of the
@@ -149,10 +113,6 @@ Solve Logic Errors
          character in the username. Modify the code to preserve any ``False``
          result.
       b. There are at least two quick ways to accomplish this.
-
-   .. raw:: html
-   
-      <iframe height="700px" width="100%" src="https://repl.it/@launchcode/LCHS-Debugging-Exercise-5?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
    *Bonus fix*: The loop runs after the length check passes *or* fails. How can
    we make it so that the loop runs only *if* the length test passes?

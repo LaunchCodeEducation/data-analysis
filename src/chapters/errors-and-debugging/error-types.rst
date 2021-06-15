@@ -80,9 +80,15 @@ However, you will get good at quickly finding syntax errors.
 
    Find the syntax errors in the program.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: SyntaxErrors
+      :linenos:
 
-      <iframe height="400px" width="100%" src="https://repl.it/@launchcode/LCHS-Syntax-Error-Example?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      # Run the code to generate an error message.
+      # Find and fix only ONE syntax error at a time.
+
+      day = "Wednesday'
+      print(day
 
    #. What syntax errors did you find?
    #. What was the error message provided by Python in each case?
@@ -122,9 +128,21 @@ Common runtime errors include:
    Continue this process until no more error messages appear. Fix only one
    error at a time.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: RuntimeErrors
+      :linenos: 
 
-      <iframe height="600px" width="100%" src="https://repl.it/@launchcode/LCHS-Runtime-Error-Examples?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      # Run the program to generate an error message.
+      # Fix only ONE error at a time, and re-run the program after each fix.
+
+      first_Name = "Jack"
+      word = 'Rutabaga'
+      number = 25
+
+      print(first_name)
+      print(word[25])
+      print(number/0)
+      print(number > word)
 
    Make a note of name (e.g. ``IndexError``) given to each of the runtime
    errors you find in the code. Also notice that the error message gives you
@@ -221,37 +239,22 @@ Check Your Understanding
 
    Trying to use a variable that has not been defined.
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> syntax error</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> runtime error</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> logic error</li>
-      </ol>
-      <p id="Q1"></p>
+   a. syntax error
+   b. runtime error
+   c. logic error
    
    Leaving off a close parenthesis, ``)``, when calling ``print``.
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> syntax error</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> runtime error</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> logic error</li>
-      </ol>
-      <p id="Q2"></p>
+   a. syntax error
+   b. runtime error
+   c. logic error
    
    Using the formula ``seconds = minutes * 6`` to calculate the number of
    seconds from a number of minutes.
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> syntax error</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> runtime error</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, true)"> logic error</li>
-      </ol>
-      <p id="Q3"></p>
+   a. syntax error
+   b. runtime error
+   c. logic error
 
 .. Answers = b, a, c
 
@@ -260,14 +263,9 @@ Check Your Understanding
    Look back at the first logic error example. Which of the following would
    NOT correct the error?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> In line 3, use <span style="color:#419f6a; font-weight: bold">if num%2 != 0:</span></li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> In line 3, use <span style="color:#419f6a; font-weight: bold">if num%2 == 1:</span></li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> Switch the odd/even words in the print statements.</li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, true)"> In line 1, use <span style="color:#419f6a; font-weight: bold">num = 26</span></li>
-      </ol>
-      <p id="Q4"></p>
+   a. In line 3, use ``if num%2 != 0:``
+   b. In line 3, use ``if num%2 == 1:``
+   c. Switch the odd/even words in the print statements.
+   d. In line 1, use ``num = 26``
 
 .. Answer = d

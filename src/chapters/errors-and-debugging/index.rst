@@ -11,3 +11,5 @@ Errors and Debugging
    how-to-avoid-debugging
    asking-good-questions
    exercises
+   studio
+   
