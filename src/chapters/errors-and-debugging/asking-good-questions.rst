@@ -45,9 +45,3 @@ Where have you looked for an answer?
 **Good:** "I Googled 'python list index out of range error' and found a
 question on StackOverflow that seemed similar to mine. I tried that solution,
 but it didn't fix my problem."
-
-.. figure:: figures/debugging.png
-   :alt: A comic with the caption, "If debugging is the process
-         of removing software bugs, then programming must be the process of
-         putting them in."
-   :width: 40%

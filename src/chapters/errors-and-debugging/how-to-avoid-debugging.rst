@@ -62,10 +62,6 @@ produces an "Ah ha" moment, and you think of something new to try.
 
 There is NO shame in asking for help. The duck won't judge.
 
-.. figure:: figures/talk-to-the-duck.jpg
-   :alt: A coder talking to a rubber duck.
-   :width: 50%
-
 Practice Makes Better
 ---------------------
 
@@ -80,7 +76,3 @@ Here are some links that offer advice for some common issues:
 #. `I’ve got a big hairy expression, and it doesn’t do what I expect <https://runestone.academy/runestone/books/published/thinkcspy/Appendices/errorsAndDebug.html#i-ve-got-a-big-hairy-expression-and-it-doesn-t-do-what-i-expect>`__
 #. `I’m really, really stuck and I need help <https://runestone.academy/runestone/books/published/thinkcspy/Appendices/errorsAndDebug.html#i-m-really-really-stuck-and-i-need-help>`__
 #. `Rubber duck debugging <https://en.wikipedia.org/wiki/Rubber_duck_debugging>`__
-
-.. figure:: figures/rubber-duck.jpg
-   :alt: A rubber duck.
-   :width: 25%
