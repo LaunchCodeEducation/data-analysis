@@ -7,6 +7,7 @@ Chapters
 
    chapters/booleans-and-conditionals/index
    chapters/loops/index
+   chapters/errors-and-debugging/index
 
 .. toctree::
 
