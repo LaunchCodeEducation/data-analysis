@@ -6,6 +6,8 @@ Chapters
    :maxdepth: 1
    :name: chapterstoc
 
+   chapters/booleans-and-conditionals/index
+   chapters/loops/index
    chapters/errors-and-debugging/index
 
 .. toctree::
@@ -18,6 +20,8 @@ Studios
 .. toctree::
    :maxdepth: 1
    :name: studiostoc
+
+   chapters/loops/studio
 
 Assignments
 ===========
@@ -32,6 +36,8 @@ Appendices
 .. toctree::
    :maxdepth: 1
    :name: appendicestoc
+
+   appendices/exercise-solutions/index
 
 .. toctree::
    :hidden:
