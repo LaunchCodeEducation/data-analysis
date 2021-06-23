@@ -20,9 +20,14 @@ those ideas.
    
    Run the code to see the output, then complete the *Try It* suggestions.
 
-   .. raw:: html
+   .. replit:: Python
+      :slug: StringIterationExample
+      :linenos:
 
-      <iframe height="450px" width="100%" src="https://repl.it/@launchcode/LCHS-String-Iteration-Example-Index?lite=true" scrolling="no" frameborder="yes" allowtransparency="true"></iframe>
+      name = 'LaunchCode'
+
+      for index in range(len(name)):
+         print(name[index])
 
    Since ``len(name)`` is 10, the loop executes once for each of the values 0 to
    9, assigning them in turn to the loop variable ``index``.
@@ -51,9 +56,16 @@ automatically iterate over those characters.
    Run the following code to see the output, then complete the *Try It*
    suggestions.
 
-   .. raw:: html
+   .. replit:: Python
+      :slug: StringIterationExampleChars
+      :linenos:
 
-      <iframe height="450px" width="100%" src="https://repl.it/@launchcode/LCHS-String-Iteration-Example-chars?lite=true" scrolling="no" frameborder="yes" allowtransparency="true"></iframe>
+      fruit = 'Bananas'
+      fruit_copy = ''
+
+      for char in fruit:
+         fruit_copy += char
+         print(char, fruit_copy)
 
    The loop variable ``char`` is automatically reassigned each character in the
    string stored by ``fruit``. This approach is called *iteration by item*.
@@ -90,15 +102,10 @@ Check Your Understanding
       for index in range(len(text)):
          print(text[index])
       
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">'l'</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">'o'</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">','</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">' '</span></li>
-      </ol>
-      <p id="Q1"></p>
+   a. ``'l'``
+   b. ``'o'``
+   c. ``','``
+   d. ``' '``
 
 .. Answer = b
 
@@ -114,16 +121,11 @@ Check Your Understanding
 
       for char in text:
          print(char)
-      
-   .. raw:: html
 
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">'l'</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">'o'</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">','</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">' '</span></li>
-      </ol>
-      <p id="Q2"></p>
+   a. ``'l'``
+   b. ``'o'``
+   c. ``','``
+   d. ``' '``
 
 .. Answer = b
 
@@ -133,16 +135,12 @@ Check Your Understanding
    loop backwards through all of the characters in the string? Select ALL
    options that work.
 
-   .. raw:: html
-      
-      <ol type="a">
-         <li><span id = "a" onclick="highlight('a', false)">for index in range(len(my_dream_car)):</span></li>
-         <li><span id = "b" onclick="highlight('b', false)">for index in range(-1, -len(my_dream_car), -1):</span></li>
-         <li><span id = "c" onclick="highlight('c', true)">for index in range(len(my_dream_car)-1, -1, -1):</span></li>
-         <li><span id = "d" onclick="highlight('d', true)">for index in range(-1, -len(my_dream_car)-1, -1):</span></li>
-         <li><span id = "e" onclick="highlight('e', false)">for char in my_dream_car:</span></li>
-         <li><span id = "f" onclick="highlight('f', false)">for char in -my_dream_car:</span></li>
-      </ol>
+   a. ``for index in range(len(my_dream_car)):``
+   b. ``for index in range(-1, -len(my_dream_car), -1):``
+   c. ``for index in range(len(my_dream_car)-1, -1, -1):``
+   d. ``for index in range(-1, -len(my_dream_car)-1, -1):``
+   e. ``for char in my_dream_car:``
+   f. ``for char in -my_dream_car:``
 
 .. Answers = c & d
 

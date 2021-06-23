@@ -108,15 +108,10 @@ Check Your Understanding
 
    Given ``language = 'Python'``, what does ``language[1:5]`` return?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">"Pyth"</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">"Pyt"</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">"yth"</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">"ytho"</span></li>
-      </ol>
-      <p id="Q1"></p>
+   a. ``"Pyth"``
+   b. ``"Pyt"``
+   c. ``"yth"``
+   d. ``"ytho"``
 
 .. Answer: d
 

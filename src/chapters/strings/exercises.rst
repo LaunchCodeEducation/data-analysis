@@ -1,15 +1,10 @@
 Exercises: Strings
 ==================
 
-.. admonition:: Note
-
-   If your teacher added you to a :ref:`Trinket course <trinket-course-assignments>`, complete the exercises
-   there.
-
-   Otherwise, use the links below to code in your own free account.
-   
 Part One: Bracket Notation
 --------------------------
+
+Code part 1, steps 2 and 3 at `repl.it <https://replit.com/@launchcode/StringsExercisesPart1-2and3>`__.
 
 #. Identify the result for each of the following statements:
 
@@ -40,12 +35,6 @@ Part One: Bracket Notation
       prints ``tomatootamot``. (If you want to be fancy, include the ``|``
       character to make the output look almost like a mirrored image: ``tomato | otamot``). 
 
-.. admonition:: Note
-
-   Code part 1, steps 2 and 3 at
-   `repl.it <https://repl.it/@launchcode/LCHS-Strings-Exercises-Part-1-2-and-3>`__
-   or `Trinket <https://trinket.io/python/84ea5aa0f9?showInstructions=true>`__.
-
 Part Two: String Methods and Operations
 ---------------------------------------
 
@@ -63,8 +52,7 @@ Part Two: String Methods and Operations
       ``find()`` method or the ``in`` operator to check if ``num`` contains a
       decimal point).
 
-      `Code it at repl.it <https://repl.it/@launchcode/LCHS-Strings-Exercises-Part-2-1>`__, or
-      `Code it at Trinket <https://trinket.io/python/4381e7f741?showInstructions=true>`__
+      `Code it at repl.it <https://replit.com/@launchcode/StringsExercisesPart2-1>`__.
 
 #. Given ``word = 'bag'``:
 
@@ -85,8 +73,7 @@ Part Two: String Methods and Operations
    
    e. Try other words besides ``'bag'``!
 
-      `Code it at repl.it <https://repl.it/@launchcode/LCHS-Strings-Exercises-Part-2-2>`__, or
-      `Code it at Trinket <https://trinket.io/python/3d9aa1cac1?showInstructions=true>`__.
+      `Code it at repl.it <https://replit.com/@launchcode/StringsExercisesPart2-2>`__.
 
 #. Consider a string that represents a strand of DNA:
    ``dna = " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT    "``. There
@@ -112,8 +99,7 @@ Part Two: String Methods and Operations
 
 .. admonition:: Note
 
-   Code part 2, steps 3 & 4 at `repl.it <https://repl.it/@launchcode/LCHS-Strings-Exercises-Part-2-3-and-4>`__
-   or at `Trinket <https://trinket.io/python3/71f52d00c7?showInstructions=true>`__.
+   Code part 2, steps 3 & 4 at `repl.it <https://replit.com/@launchcode/StringsExercisesPart2-3and4>`__.
 
 Part Three: String Formatting
 -----------------------------
@@ -126,8 +112,7 @@ Part Three: String Formatting
    b. Print the string, ``"Here is my word 3 times: ___/___/___, and here is my
       number squared: ___."``
 
-      Code it at `repl.it <https://repl.it/@launchcode/LCHS-Strings-Exercises-Part-3-1>`__ or
-      `Trinket <https://trinket.io/python/40b4bd19fb?showInstructions=true>`__
+      Code it at `repl.it <https://replit.com/@launchcode/StringsExercisesPart3-1>`__.
 
 #. For part 2, exercise 4, use an f-string to print the output
    ``"The DNA string is ___ characters long and contains ___ genes."`` Fill in

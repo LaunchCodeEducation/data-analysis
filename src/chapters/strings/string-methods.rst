@@ -136,15 +136,10 @@ Review the content and then answer the following questions.
       text.strip('!P')
       print(text)
    
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> Pythqn rocks</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> ythqn rqcks</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> ythqn rqcks!</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> Python rocks!</li>
-      </ol>
-      <p id="Q1"></p>
+   a. Pythqn rocks
+   b. ythqn rqcks
+   c. ythqn rqcks!
+   d. Python rocks!
 
 .. Answer: d
 
@@ -160,15 +155,10 @@ Review the content and then answer the following questions.
 
       print(trimmed)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">"  The LaunchCode Foundation "</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">"The LaunchCode Foundation"</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">"TheLaunchCodeFoundation"</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">" The LaunchCode Foundation"</span></li>
-      </ol>
-      <p id="Q2"></p>
+   a. ``"  The LaunchCode Foundation "``
+   b. ``"The LaunchCode Foundation"``
+   c. ``"TheLaunchCodeFoundation"``
+   d. ``" The LaunchCode Foundation"``
 
 .. Answer: b
 
@@ -177,15 +167,10 @@ Review the content and then answer the following questions.
    Given ``word = "Rutabaga"``, what is the value returned by
    ``word.lower().strip('r').find('t')``?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">'utabaga'</span></li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> 2</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, true)"> 1</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">'t'</span></li>
-      </ol>
-      <p id="Q3"></p>
+   a. ``'utabaga'``
+   b. ``2``
+   c. ``1``
+   d. ``'t'``
 
 .. Answer: c
 

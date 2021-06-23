@@ -21,9 +21,16 @@ Let's see how we can use the ``type()`` function to check for a string.
 
 .. admonition:: Example
 
-   .. raw:: html
+   .. replit:: Python
+      :slug: StringConditionalsPractice
+      :linenos:
 
-      <iframe height="500px" width="100%" src="https://repl.it/@launchcode/LCHS-String-Conditionals-Practice?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true"></iframe>
+      my_var = 42
+
+      if type(my_var) == str:
+         print("The value '{0}' is a string.".format(my_var))
+      else:
+         print("The value {0} is NOT a string.".format(my_var))
 
    Run the program with each of the following values for ``my_var``:
 
@@ -143,9 +150,20 @@ substring of another.
    This example uses the ``in`` operator to decide when to increase the value
    of ``vowel_count``.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: CountingVowelsPractice
+      :linenos:
 
-      <iframe height="600px" width="100%" src="https://repl.it/@launchcode/LCHS-Conting-Vowels-Example?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true"></iframe>
+      # Make the check for vowels case-insensitive.
+      text = "Armadillos or anteaters"
+      vowels = 'aeiou'
+      vowel_count = 0
+
+      for char in text:
+         if char in vowels:
+            vowel_count += 1
+
+      print(f"'{text}' contains {vowel_count} vowels.")
 
    #. The program does not quite work yet. There are 9 vowels in
       ``'Armadillos or anteaters'``, but the code does not count the capital
@@ -199,13 +217,8 @@ Evaluate whether the following expressions are ``True`` or ``False``:
 
       "dog" < "doghouse"
 
-   .. raw:: html
-   
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">True</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">False</span></li>
-      </ol>
-      <p id="Q1"></p>
+   a. ``True``
+   b. ``False``
 
 .. Answer = True
 
@@ -215,13 +228,8 @@ Evaluate whether the following expressions are ``True`` or ``False``:
 
       "dog" < "Dog"
 
-   .. raw:: html
-   
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">True</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">False</span></li>
-      </ol>
-      <p id="Q2"></p>
+   a. ``True``
+   b. ``False``
 
 .. Answer = False
 
@@ -230,14 +238,9 @@ Evaluate whether the following expressions are ``True`` or ``False``:
    .. sourcecode:: Python
 
       "dog" < "Doghouse"
-   
-   .. raw:: html
-   
-      <ol type="a">
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">True</span></li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">False</span></li>
-      </ol>
-      <p id="Q3"></p>
+
+   a. ``True``
+   b. ``False``
 
 .. Answer = False
 
@@ -247,13 +250,8 @@ Evaluate whether the following expressions are ``True`` or ``False``:
 
       "app" in "Happy"
 
-   .. raw:: html
-   
-      <ol type="a">
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">True</span></li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">False</span></li>
-      </ol>
-      <p id="Q4"></p>
+   a. ``True``
+   b. ``False``
 
 .. Answer = True 
 
@@ -262,17 +260,12 @@ Evaluate whether the following expressions are ``True`` or ``False``:
    For which of the following would ``text.upper() == text`` return
    ``True``?
 
-   .. raw:: html
-   
-      <ol type="a">
-         <li><input type="radio" name="Q5" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">text = 'Stop Yelling!'</span></li>
-         <li><input type="radio" name="Q5" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">text = 'STOP YELLING!'</span></li>
-         <li><input type="radio" name="Q5" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">text = 'stop yelling!'</span></li>
-         <li><input type="radio" name="Q5" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">text = 'STOP YELLINg!'</span></li>
-         <li><input type="radio" name="Q5" autocomplete="off" onclick="evaluateMC(name, false)"> All return <span style="color:#419f6a; font-weight: bold">True</span></li>
-         <li><input type="radio" name="Q5" autocomplete="off" onclick="evaluateMC(name, false)"> None return <span style="color:#419f6a; font-weight: bold">True</span></li>
-      </ol>
-      <p id="Q5"></p>
+   a. ``text = 'Stop Yelling!'``
+   b. ``text = 'STOP YELLING!'``
+   c. ``text = 'stop yelling!'``
+   d. ``text = 'STOP YELLINg!'``
+   e. All return ``True``
+   f. None return ``True``
 
 .. Answer = b
 

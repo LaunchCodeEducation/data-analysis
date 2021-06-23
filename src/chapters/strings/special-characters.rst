@@ -48,9 +48,13 @@ newline and tab characters, respectively. A **newline** represents tapping the
       print statement.
 
 
-   .. raw:: html
+   .. replit:: python
+      :slug: SpecialCharacterPractice
+      :linenos:
 
-      <iframe height="400px" width="100%" src="https://repl.it/@launchcode/LCHS-Special-Character-Practice?lite=true" scrolling="no" frameborder="yes" allowtransparency="true"></iframe>
+      # Use the special characters for newline and tab to produce the indented, multi-line output shown in the instructions.
+
+      print('Use newline and tab characters to create this output with a single print statement.')
 
 .. _unicode:
 
@@ -88,16 +92,11 @@ Check Your Understanding
    Which of the options below prints ``'Special'`` and ``'characters'`` on
    separate lines?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">print('Special\ncharacters')</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">print('Special/ncharacters')</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">print('Special', 'characters')</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">print('Special\tcharacters')</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">print('Special/tcharacters')</span></li>
-      </ol>
-      <p id="Q1"></p>
+   a. ``print('Special\ncharacters')``
+   b. ``print('Special/ncharacters')``
+   c. ``print('Special', 'characters')``
+   d. ``print('Special\tcharacters')``
+   e. ``print('Special/tcharacters')``
    
 .. Answer = a
 

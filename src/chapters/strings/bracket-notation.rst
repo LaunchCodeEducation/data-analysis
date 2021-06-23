@@ -53,9 +53,15 @@ at position [2] we have the letter ``'h'``.
    clicking *Run*. Remember that with zero-based indexing, the *first*
    character always has an index value of ``0``.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: BracketPracticeStrings
+      :linenos:
 
-      <iframe height="400px" width="100%" src="https://repl.it/@launchcode/LCHS-Bracket-Practice-Strings?lite=true" scrolling="no" frameborder="yes" allowtransparency="true"></iframe>
+      this_string = 'Zero-based indexing!'
+      
+      print(this_string[3])
+
+      print('Alphabet soup'[5])
 
    Now try the following:
 
@@ -145,7 +151,7 @@ Note that when we move from right to left, the index values start with ``-1``.
 Try It!
 ^^^^^^^
 
-Return to the :ref:`editor above <string-index-try-it>` and do the following:
+Return to the :ref:`repl above <string-index-try-it>` and do the following:
 
 #. Use a negative index to print the character ``'x'`` from the string
    ``Zero-based indexing!``
@@ -161,15 +167,10 @@ Check Your Understanding
 
    If ``phrase = 'Code for fun'``, then ``phrase[2]`` evaluates to:
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">'o'</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">'d'</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">'for'</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">'fun'</span></li>
-      </ol>
-      <p id="Q1"></p>
+   a. ``'o'``
+   b. ``'d'``
+   c. ``'for'``
+   d. ``'fun'``
 
 .. Answer = b
 
@@ -178,14 +179,10 @@ Check Your Understanding
    Which of the following returns ``True`` given ``my_str = 'index'``?  Choose
    ALL correct answers.
 
-   .. raw:: html
-      
-      <ol type="a">
-         <li><span id = "a" onclick="highlight('a', false)">my_str[2] == 'n'</span></li>
-         <li><span id = "b" onclick="highlight('b', true)">my_str[4] == 'x'</span></li>
-         <li><span id = "c" onclick="highlight('c', false)">my_str[6] == ' '</span></li>
-         <li><span id = "d" onclick="highlight('d', true)">my_str[0] == 'i'</span></li>
-      </ol>
+   a. ``my_str[2] == 'n'``
+   b. ``my_str[4] == 'x'``
+   c. ``my_str[6] == ' '``
+   d. ``my_str[0] == 'i'``
 
 .. Answers = b & d
 
@@ -199,15 +196,10 @@ Check Your Understanding
       phrase = "Python rocks!"
       print(phrase[len(phrase) - 9])
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">'o'</span></li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">'t'</span></li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">'n'</span></li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">'c'</span></li>
-      </ol>
-      <p id="Q3"></p>
+   a. ``'o'``
+   b. ``'t'``
+   c. ``'n'``
+   d. ``'c'``
 
 .. Answer = a
 
@@ -216,15 +208,10 @@ Check Your Understanding
    Given ``my_str = 'ABC DEF GHI'``, which of the following
    expressions returns ``'F'``?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">my_str[-3]</span></li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">my_str[-4]</span></li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">my_str[-5]</span></li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">my_str[-6]</span></li>
-      </ol>
-      <p id="Q4"></p>
+   a. ``my_str[-3]``
+   b. ``my_str[-4]``
+   c. ``my_str[-5]``
+   d. ``my_str[-6]``
 
 .. Answer = c
 

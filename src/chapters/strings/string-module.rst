@@ -75,9 +75,21 @@ Try It!
 Run the following code to see the values assigned to each ``string`` module
 constant:
 
-.. raw:: html
+.. replit:: python
+   :slug: StringModuleIntro
+   :linenos:
 
-   <iframe height="650px" width="100%" src="https://repl.it/@launchcode/LCHS-String-Module-Intro?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true"></iframe>
+   import string
+
+   print(string.ascii_lowercase)
+   print(string.ascii_uppercase)
+   print(string.ascii_letters)
+   print(string.digits)
+   print(string.punctuation)
+
+   my_string = '*'
+   if my_string in string.ascii_lowercase:
+      print("'{0}' is a lowercase letter.".format(my_string))
 
 Now try this:
 
@@ -113,16 +125,12 @@ Check Your Understanding
    Which of the following expressions evaluate to ``True``? Click each option
    to check your prediction.
 
-   .. raw:: html
-      
-      <ol type="a">
-         <li><span id = "a" onclick="revealTrueFalse('resultA', false)">'a' in string.ascii_uppercase</span> <span id="resultA"></li>
-         <li><span id = "b" onclick="revealTrueFalse('resultB', true)">'Q' in string.ascii_letters</span> <span id="resultB"></li>
-         <li><span id = "c" onclick="revealTrueFalse('resultC', false)">'334' in string.digits</span> <span id="resultC"></li>
-         <li><span id = "d" onclick="revealTrueFalse('resultD', false)">' ' in string.punctuation</span> <span id="resultD"></li>
-         <li><span id = "e" onclick="revealTrueFalse('resultE', true)">'$' in string.punctuation</span> <span id="resultE"></li>
-         <li><span id = "f" onclick="revealTrueFalse('resultF', true)">'abc' in 'abcdefghijklmnopqrstuvwxyz'</span> <span id="resultF"></li>
-         <li><span id = "g" onclick="revealTrueFalse('resultG', false)">'eo' in 'aeiou'</span> <span id="resultG"></li>
-      </ol>
+   a. ``'a' in string.ascii_uppercase``
+   b. ``'Q' in string.ascii_letters``
+   c. ``'334' in string.digits``
+   d. ``' ' in string.punctuation``
+   e. ``'$' in string.punctuation``
+   f. ``'abc' in 'abcdefghijklmnopqrstuvwxyz'``
+   g. ``'eo' in 'aeiou'``
 
 .. Answers = b, e, f

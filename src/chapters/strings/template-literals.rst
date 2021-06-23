@@ -122,9 +122,19 @@ with the next value inside ``format()``.
    #. Use four or more ``{}`` inside ``output`` and run the program. What
       happens?
 
-   .. raw:: html
-   
-      <iframe height="550px" width="100%" src="https://repl.it/@launchcode/LCHS-format-Practice?lite=true" scrolling="no" frameborder="yes" allowtransparency="true"></iframe>
+   .. replit:: python
+      :slug: FormatPractice
+      :linenos:
+
+      my_string = 'Hello'
+      my_number = 3
+      my_expression = my_string * my_number
+
+      output = '''This is my_string: "{}". 
+      This is a my_number: {}.
+      This is the length of my_string * my_number: {}'''
+
+      print(output.format(my_string, my_number, len(my_expression)))
 
 .. admonition:: Note
 
@@ -283,6 +293,17 @@ Check Your Understanding
 
    Feel free to use either ``.format()`` or an f-string.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: MadLibConceptCheck
+      :linenos:
 
-      <iframe height="700px" width="100%" src="https://repl.it/@launchcode/LCHS-Mad-Lib-Exercise?lite=true" scrolling="no" frameborder="yes" allowtransparency="true"></iframe>
+      # Refactor the string concatenation to use either .format() or an f-string instead.
+      plural_noun = ''
+      name = ''
+      verb = ''
+      adjective = ''
+      color = ''
+
+      mad_lib = "Python provides a "+ color +" collection of tools — including " + adjective + " syntax and " + plural_noun + " — that allows "+ name +" to "+ verb +" with strings."
+
+      print(mad_lib)
