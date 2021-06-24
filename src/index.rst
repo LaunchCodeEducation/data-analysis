@@ -8,6 +8,8 @@ Chapters
    
    chapters/booleans-and-conditionals/index
    chapters/loops/index
+   chapters/strings/index
+   chapters/lists/index
    chapters/functions/index
 
 .. toctree::
