@@ -9,6 +9,7 @@ Chapters
    chapters/loops/index
    chapters/strings/index
    chapters/lists/index
+   chapters/errors-and-debugging/index
    chapters/functions/index
 
 .. toctree::
