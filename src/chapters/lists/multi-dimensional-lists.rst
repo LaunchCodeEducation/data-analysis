@@ -167,9 +167,12 @@ In the editor below, do the following:
 
          print('--------------')
 
-.. raw:: html
+.. replit:: python
+   :slug: MultiDimensionalLists
+   :linenos:
 
-   <iframe height="550px" width="100%" src="https://repl.it/@launchcode/LCHS-Multi-dimensional-Lists?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true"></iframe>
+   id_number_lists = [ [111, 222, 333], [987, 654], [1010, 1100, 0, 1] ]
+   new_nums = [1138, 42, 5]
 
 Beyond Two Dimensional lists
 -----------------------------
@@ -195,15 +198,10 @@ Use the following list to answer the questions:
 
    Which of the following will access the name ``"Jones"``?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">data[0][0]</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">data[0][1]</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">data[1][0]</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">data[1][1]</span></li>
-      </ol>
-      <p id="Q1"></p>
+   a. ``data[0][0]``
+   b. ``data[0][1]``
+   c. ``data[1][0]``
+   d. ``data[1][1]``
 
 .. Answer = c
 
@@ -211,14 +209,9 @@ Use the following list to answer the questions:
 
    How would you add ``"dance"`` to the first nested list?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">data.append('dance')</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">data[0].append('dance')</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">data[1].append('dance')</span></li>
-      </ol>
-      <p id="Q2"></p>
+   a. ``data.append('dance')``
+   b. ``data[0].append('dance')``
+   c. ``data[1].append('dance')``
 
 .. Answer = b
 

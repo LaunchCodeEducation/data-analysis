@@ -71,9 +71,15 @@ at ``-1`` for the last element in the list.
    #. What happens if you use an index value larger than the number of elements
       in the list?
 
-   .. raw:: html
+   .. replit:: Python
+      :slug: AccessingListElements
+      :linenos:
 
-      <iframe height="400px" width="100%" src="https://repl.it/@launchcode/LCHS-Accessing-List-Elements?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true"></iframe>
+      # Practice adding new elements to the list, and use bracket notation to print single elements from the list.
+      my_list = ["Python"]
+
+      print(my_list)
+      print(my_list[0])
 
 Check Your Understanding
 ------------------------
@@ -82,13 +88,8 @@ Check Your Understanding
 
    List elements must all be the same data type.
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> True</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> False</li>
-      </ol>
-      <p id="Q1"></p>
+   a. True
+   b. False
 
 .. Answer = b
 
@@ -103,15 +104,10 @@ Check Your Understanding
       classes = ["Chemistry, US History, Intro To Coding"]
       teachers = ["Cortez", "Holmes", "Bracey"]
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> 1 and 3</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> 3 and 1</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> 3 and 3</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> 1 and 1</li>
-      </ol>
-      <p id="Q2"></p>
+   a. 1 and 3
+   b. 3 and 1
+   c. 3 and 3
+   d. 1 and 1
 
 .. Answer = a
 
@@ -125,15 +121,10 @@ Check Your Understanding
       a_list = ["Hello", 42, True, 3.14]
       print(a_list[2])
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">Hello</span></li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">42</span></li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">True</span></li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">3.14</span></li>
-      </ol>
-      <p id="Q3"></p>
+   a. ``Hello``
+   b. ``42``
+   c. ``True``
+   d. ``3.14``
 
 .. Answer = c
 

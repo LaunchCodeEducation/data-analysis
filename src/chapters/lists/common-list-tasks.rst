@@ -203,9 +203,17 @@ selected elements to different lists.
       or a vowel.
    #. Print the lists after the loop to check your work.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: AccumulatorList
+      :linenos:
 
-      <iframe height="500px" width="100%" src="https://repl.it/@launchcode/LCHS-List-Accumulator?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true"></iframe>
+      strings = ['apple', 'banana', '1-to-1', '@launchcode', 'everyone can code', ':-)', '4EVR']
+      vowel_start = []
+      digit_start = []
+      other_start = []
+
+      # Add your loop here:
+
 
    **Expected Results**
 
@@ -301,15 +309,10 @@ Check Your Understanding
       
       print(my_list)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> []</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> [0, 1, 2, 3, 4, 5, 6]</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> [0, 2, 4, 6]</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> [1, 3, 5]</li>
-      </ol>
-      <p id="Q1"></p>
+   a. []
+   b. [0, 1, 2, 3, 4, 5, 6]
+   c. [0, 2, 4, 6]
+   d. [1, 3, 5]
 
 .. Answer = c
 
@@ -326,15 +329,10 @@ Check Your Understanding
       
       print(my_list)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> [8, 2, 7, 4, 10]</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> [8, 4, 7, 2, 10]</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> [10, 4, 7, 2, 8]</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> [8, 2, 10, 4, 7]</li>
-      </ol>
-      <p id="Q2"></p>
+   a. [8, 2, 7, 4, 10]
+   b. [8, 4, 7, 2, 10]
+   c. [10, 4, 7, 2, 8]
+   d. [8, 2, 10, 4, 7]
 
 .. Answer = d
 
@@ -357,14 +355,9 @@ Check Your Understanding
       
       print(some_letters)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, true)"> ['b', 'k', 'k', 'p', 'r']</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> ['o', 'o', 'e', 'e', 'e']</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> ['bkkpr']</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> ['ooeee']</li>
-      </ol>
-      <p id="Q3"></p>
+   a. ['b', 'k', 'k', 'p', 'r']
+   b. ['o', 'o', 'e', 'e', 'e']
+   c. ['bkkpr']
+   d. ['ooeee']
 
 .. Answer = a

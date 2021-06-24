@@ -107,15 +107,10 @@ As you answer these questions, follow the links in the table above as needed.
       string_list.sort()
       print(string_list)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> ['350', '23', '47', 'Tech', 'coder']</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> ['coder', 'Tech', '23', '47', '350']</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> ['23', '47', '350', 'coder', 'Tech']</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> ['23', '350', '47', 'Tech', 'coder']</li>
-      </ol>
-      <p id="Q1"></p>
+   a. ['350', '23', '47', 'Tech', 'coder']
+   b. ['coder', 'Tech', '23', '47', '350']
+   c. ['23', '47', '350', 'coder', 'Tech']
+   d. ['23', '350', '47', 'Tech', 'coder']
 
 .. Answer = d
 
@@ -124,16 +119,11 @@ As you answer these questions, follow the links in the table above as needed.
    Which statement converts the string ``text = 'Coding students rock!'`` into
    the list ``['Coding', 'students', 'rock!']``?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">text.join()</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">text.split()</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">text.join("")</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">text.split("")</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">list(text)</span></li>
-      </ol>
-      <p id="Q2"></p>
+   a. ``text.join()``
+   b. ``text.split()``
+   c. ``text.join("")``
+   d. ``text.split("")``
+   e. ``list(text)``
 
 .. Answer = b
 
@@ -151,15 +141,11 @@ As you answer these questions, follow the links in the table above as needed.
       selected_items.sort()
       print(selected_items)
 
-   .. raw:: html
 
-      <ol type="a">
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, true)"> ['chips', 'cucumbers', 'edamame']</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> ['chips', 'cucumbers', 'edamame', 'milk']</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> ['apples', 'chips', 'edamame']</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> ['apples', 'chips', 'cucumbers', 'edamame']</li>
-      </ol>
-      <p id="Q3"></p>
+   a. ['chips', 'cucumbers', 'edamame']
+   b. ['chips', 'cucumbers', 'edamame', 'milk']
+   c. ['apples', 'chips', 'edamame']
+   d. ['apples', 'chips', 'cucumbers', 'edamame']
 
 .. Answer = a
 
@@ -175,14 +161,9 @@ As you answer these questions, follow the links in the table above as needed.
       a_list.append(False)
       print(a_list)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> [4, 2, 8, 6, 5, False, True]</li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, true)"> [4, 2, 8, 6, 5, True, False]</li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> [True, False, 4, 2, 8, 6, 5]</li>
-      </ol>
-      <p id="Q4"></p>
+   a. [4, 2, 8, 6, 5, False, True]
+   b. [4, 2, 8, 6, 5, True, False]
+   c. [True, False, 4, 2, 8, 6, 5]
 
 .. Answer = b
 
@@ -198,14 +179,9 @@ As you answer these questions, follow the links in the table above as needed.
       a_list.insert(0, False)
       print(a_list)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q5" autocomplete="off" onclick="evaluateMC(name, true)"> [False, 4, 2, True, 8, 6, 5]</li>
-         <li><input type="radio" name="Q5" autocomplete="off" onclick="evaluateMC(name, false)"> [4, False, True, 2, 8, 6, 5]</li>
-         <li><input type="radio" name="Q5" autocomplete="off" onclick="evaluateMC(name, false)"> [False, 2, True, 6, 5]</li>
-      </ol>
-      <p id="Q5"></p>
+   a. [False, 4, 2, True, 8, 6, 5]
+   b. [4, False, True, 2, 8, 6, 5]
+   c. [False, 2, True, 6, 5]
 
 .. Answer = a
 
@@ -221,14 +197,9 @@ As you answer these questions, follow the links in the table above as needed.
       a_list.pop()
       print(a_list)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q6" autocomplete="off" onclick="evaluateMC(name, false)"> [4, 8, 6]</li>
-         <li><input type="radio" name="Q6" autocomplete="off" onclick="evaluateMC(name, false)"> [2, 6, 5]</li>
-         <li><input type="radio" name="Q6" autocomplete="off" onclick="evaluateMC(name, true)"> [4, 2, 6]</li>
-      </ol>
-      <p id="Q6"></p>
+   a. [4, 8, 6]
+   b. [2, 6, 5]
+   c. [4, 2, 6]
 
 .. Answer = c
 

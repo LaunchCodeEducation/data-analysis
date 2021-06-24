@@ -135,9 +135,18 @@ same thing, but it also allows us to clone a portion of the original list.
    Run the following program to confirm that, as written, changes made to
    either ``list_a`` or ``list_b`` affect the other.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: CloningLists
+      :linenos:
 
-      <iframe height="500px" width="100%" src="https://repl.it/@launchcode/LCHS-Cloning-Lists?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true"></iframe>
+      # Try to make list_a and list_b independent of each other.
+      list_a = [10, 33, 8, -2]
+      list_b = list_a
+      print(list_a, list_b)
+
+      list_b.sort()           # Sort list_b.
+      list_a.append('hello')  # Add a new element to list_a.
+      print(list_a, list_b)   # Hmmm...
 
    #. In line 2, use the ``copy()`` method on ``list_a``. Rerun the program to
       confirm that changes made to one list do NOT affect the other.
@@ -150,13 +159,8 @@ Check Your Understanding
 
    The syntax ``list_a = list_b`` creates a(n) ____.
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> alias</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> clone</li>
-      </ol>
-      <p id="Q1"></p>
+   a. alias
+   b. clone
 
 .. Answer = a
 
@@ -164,13 +168,8 @@ Check Your Understanding
 
    Changes made to a(n) ____ will NOT affect the original.
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> alias</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> clone</li>
-      </ol>
-      <p id="Q2"></p>
+   a. alias
+   b. clone
 
 .. Answer = b
 
@@ -186,13 +185,8 @@ Check Your Understanding
       list_b[3] = 999
       print(list_a)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> [4, 2, 8, 6, 5]</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, true)"> [4, 2, 8, 999, 5]</li>
-      </ol>
-      <p id="Q3"></p>
+   a. [4, 2, 8, 6, 5]
+   b. [4, 2, 8, 999, 5]
 
 .. Answer = b
 

@@ -4,18 +4,10 @@ Exercises: Lists
 The following actions will teach you how to add, remove, modify, and
 rearrange list elements.
 
-.. admonition:: Note
-
-   If your teacher added you to a :ref:`Trinket course <trinket-course-assignments>`, complete the exercises
-   there.
-
-   Otherwise, use the links below to code in your own free account.
-
 Part One: Adding and Removing Items
 -----------------------------------
 
-*Part 1 starter code*: `repl.it <https://repl.it/@launchcode/LCHS-List-Exercises-Part-1#main.py>`__
-or `Trinket <https://trinket.io/python/73e566dac1?showInstructions=true>`__.
+*Part 1 starter code*: `repl.it <https://replit.com/@launchcode/ListExercises01>`__.
 
 #. Create a list called ``adding_practice`` with a single entry: ``273.15``.
    Use the ``append`` method to add the following elements to the list one at a
@@ -53,8 +45,7 @@ or `Trinket <https://trinket.io/python/73e566dac1?showInstructions=true>`__.
 Part Two: Slices & Methods
 --------------------------
 
-*Part 2 starter code*: `repl.it <https://repl.it/@launchcode/LCHS-List-Exercises-Part-2#main.py>`__
-or `Trinket <https://trinket.io/python/0c8b175f1c?showInstructions=true>`__.
+*Part 2 starter code*: `repl.it <https://replit.com/@launchcode/ListExercises02>`__.
 
 #. Using the slice syntax ``list_name[start : end]`` you can either insert,
    replace, or remove items from a list. Review the
@@ -92,8 +83,7 @@ or `Trinket <https://trinket.io/python/0c8b175f1c?showInstructions=true>`__.
 Part Three: Split, List, and Join
 ---------------------------------
 
-*Part 3 starter code*: `repl.it <https://repl.it/@launchcode/LCHS-List-Exercises-Part-3#main.py>`__
-or `Trinket <https://trinket.io/python/b010aba314?showInstructions=true>`__.
+*Part 3 starter code*: `repl.it <https://replit.com/@launchcode/ListExercises03>`__.
 
 #. The ``split`` method converts a string into a list, while the ``join``
    method does the opposite.
@@ -116,8 +106,7 @@ or `Trinket <https://trinket.io/python/b010aba314?showInstructions=true>`__.
 Part Four: Multi-dimensional Lists
 ----------------------------------
 
-*Part 4 starter code*: `repl.it <https://repl.it/@launchcode/LCHS-List-Exercises-Part-4#main.py>`__
-or `Trinket <https://trinket.io/python/f7573d922f?showInstructions=true>`__.
+*Part 4 starter code*: `repl.it <https://replit.com/@launchcode/ListExercises04>`__.
 
 #. Lists can hold different data types, even other lists! A
    *multi-dimensional list* is one with entries that are also lists.

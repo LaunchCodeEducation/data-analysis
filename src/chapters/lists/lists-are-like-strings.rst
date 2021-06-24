@@ -59,9 +59,15 @@ single list.
    #. Does the ``*`` operator change the original list? To check, print
       ``second_list`` again after your code from step 5.
 
-   .. raw:: html
+   .. replit:: Python
+      :slug: ListConcatenation
+      :linenos:
 
-      <iframe height="500px" width="100%" src="https://repl.it/@launchcode/LCHS-List-Concatentation?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true"></iframe>
+      # Follow the instructions to see how the '+' and '*' operators affect lists.
+      first_list = [3, 7, 5, 1, 7]
+      second_list = [6, 3, 9]
+
+      # Add your print statements here:
 
 ``in`` and ``not in``
 ---------------------
@@ -77,9 +83,16 @@ depending on if the value matches an element.
    Run this program to see the results returned by the ``in`` and ``not in``
    operators.
 
-   .. raw:: html
+   .. replit:: Python
+      :slug: InAndNotInList
+      :linenos: 
 
-      <iframe height="500px" width="100%" src="https://repl.it/@launchcode/LCHS-in-and-not-in-List-Example?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true"></iframe>
+      fruit = ["apple", "orange", "banana", "cherry", "tomato", "bell pepper"]
+
+      print('apple' in fruit)       # 'apple' is an element in the list.
+      print('pear' in fruit)        # 'pear' is NOT in the list.
+      print('nana' in fruit)        # The string 'nana' is NOT an element in the list.
+      print('carrot' not in fruit)  # 'carrot' is missing from the list, so 'not in' returns True.
 
    Note that even though the substring ``'nana'`` is present in ``'banana'``,
    the result of line 5 is still ``False``. In this case, the ``in`` operator
@@ -150,15 +163,10 @@ Check Your Understanding
       a_list = [4, 2, 8, 6, 5, 4]
       print(a_list[3])
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> 2</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> 8</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> 6</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> 5</li>
-      </ol>
-      <p id="Q1"></p>
+   a. 2
+   b. 8
+   c. 6
+   d. 5
 
 .. Answer = c
 
@@ -167,15 +175,10 @@ Check Your Understanding
    Given ``num_list = [8, 6, 7, 5, 3, 0, 9]``, what does ``num_list[2:5]``
    return?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> [7, 5, 3]</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> [7, 5, 3, 0]</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> [6, 7, 5]</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> [6, 7, 5, 3]</li>
-      </ol>
-      <p id="Q2"></p>
+   a. [7, 5, 3]
+   b. [7, 5, 3, 0]
+   c. [6, 7, 5]
+   d. [6, 7, 5, 3]
 
 .. Answer = a
 
@@ -189,15 +192,10 @@ Check Your Understanding
       a_list = [4, 2, 8]
       print(a_list * 2)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> [4, 4, 2, 2, 8, 8]</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, true)"> [4, 2, 8, 4, 2, 8]</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> [8, 4, 16]</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> The code throws an error.</li>
-      </ol>
-      <p id="Q3"></p>
+   a. [4, 4, 2, 2, 8, 8]
+   b. [4, 2, 8, 4, 2, 8]
+   c. [8, 4, 16]
+   d. The code throws an error.
 
 .. Answer = b
 
@@ -206,16 +204,12 @@ Check Your Understanding
    Given ``fruit = ["apple", "orange", "banana", "cherry", "tomato", "bell pepper"]``,
    which of the following statements return ``True``? Select ALL that apply.
 
-   .. raw:: html
-      
-      <ol type="a">
-         <li><span id = "a" onclick="highlight('a', false)">apples in fruit</span></li>
-         <li><span id = "b" onclick="highlight('b', false)">pepper in fruit</span></li>
-         <li><span id = "c" onclick="highlight('c', true)">banana in fruit[:3]</span></li>
-         <li><span id = "d" onclick="highlight('d', false)">tomato in fruit[1:4]</span></li>
-         <li><span id = "e" onclick="highlight('e', true)">broccoli not in fruit</span></li>
-         <li><span id = "f" onclick="highlight('f', true)">orange not in fruit[2:]</span></li>
-      </ol>
+   a. apples in fruit
+   b. pepper in fruit
+   c. banana in fruit[:3]
+   d. tomato in fruit[1:4]
+   e. broccoli not in fruit
+   f. orange not in fruit[2:]
 
 .. Answers = c, e, f
 

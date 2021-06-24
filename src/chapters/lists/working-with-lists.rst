@@ -187,9 +187,12 @@ Try It!
    #. Practice using the slice operator to insert, remove, or replace one or
       more elements from ``conjunctions``.
    
-   .. raw:: html
+   .. replit:: python
+      :slug: MutatingLists
+      :linenos:
 
-      <iframe height="400px" width="100%" src="https://repl.it/@launchcode/LCHS-Mutating-Lists?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true"></iframe>
+      # Follow the listed steps (pun intended) to change one or more elements:
+      conjunctions = ['and', 'nor', 'yet', 'for', 'or', 'but', 'so']
 
 Check Your Understanding
 ------------------------
@@ -205,15 +208,10 @@ Check Your Understanding
       a_list[2] = True
       print(a_list)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> [4, 2, True, 8, 6, 5, 4]</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> [4, True, 2, 8, 6, 5, 4]</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> [4, 2, True, 6, 5, 4]</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> [4, True, 8, 6, 5, 4]</li>
-      </ol>
-      <p id="Q1"></p>
+   a. [4, 2, True, 8, 6, 5, 4]
+   b. [4, True, 2, 8, 6, 5, 4]
+   c. [4, 2, True, 6, 5, 4]
+   d. [4, True, 8, 6, 5, 4]
 
 .. Answer = c
 
@@ -230,16 +228,11 @@ Check Your Understanding
 
    What values should we use for ``start_index`` and ``end_index``?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> [0 : 0]</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> [0 : 1]</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> [1 : 1]</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> [0 : ]</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> [ : 1]</li>
-      </ol>
-      <p id="Q2"></p>
+   a. [0 : 0]
+   b. [0 : 1]
+   c. [1 : 1]
+   d. [0 : ]
+   e. [ : 1]
 
 .. Answer = a
 

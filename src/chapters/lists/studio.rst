@@ -1,17 +1,17 @@
-Studio: Strings and Arrays
+Studio: Strings and lists
 ==========================
 
 Strings are **ordered collections** of *characters*, which are strings of
 length 1. The characters in a string can be accessed using
 **bracket notation**.
 
-Arrays are ordered collections of items, which can be strings, numbers,
-other arrays, etc. The items/elements/entries stored in an array can be
+lists are ordered collections of items, which can be strings, numbers,
+other lists, etc. The items/elements/entries stored in an list can be
 accessed using bracket notation.
 
-Strings are **immutable**, whereas arrays can be changed.
+Strings are **immutable**, whereas lists can be changed.
 
-Strings and arrays have **properties** and **methods** that allow us to easily
+Strings and lists have **properties** and **methods** that allow us to easily
 perform some useful actions.
 
 String Modification
@@ -28,41 +28,41 @@ c. Add validation to your code to deal with user inputs that are longer than the
    word. In such cases, default to moving 3 characters. Also, the template
    literal should note the error.
 
-`Code it at repl.it <https://repl.it/@launchcode/StringandArrayStudio01>`__
+`Code it at repl.it <https://replit.com/@launchcode/StringAndListStudio01>`__
 
-Array and String Conversion
+List and String Conversion
 ----------------------------
 
 The ``split`` and ``join`` methods convert back and forth between strings
-and arrays. Use **delimiters** as reference points to split a string into an
-array, then modify the array and convert it back to a printable string.
+and lists. Use **delimiters** as reference points to split a string into an
+list, then modify the list and convert it back to a printable string.
 
 a. For a given string, use the ``includes`` method to check to see if the
    words are separated by commas (``,``), semicolons (``;``) or just spaces.
-b. If the string uses commas to separate the words, ``split`` it into an array,
-   reverse the entries, and then ``join`` the array into a new comma separated
+b. If the string uses commas to separate the words, ``split`` it into an list,
+   reverse the entries, and then ``join`` the list into a new comma separated
    string. For example, ``"up,to,code,fun"`` becomes ``"fun,code,to,up"``.
 c. If the string uses semicolons to separate the words, ``split`` it into an
-   array, alphabetize the entries, and then ``join`` the array into a new
+   list, alphabetize the entries, and then ``join`` the list into a new
    hyphen separated string. For example, ``"up;to;code;fun"`` becomes
    ``"code-fun-to-up"``.
-d. If the string uses spaces to separate the words, ``split`` it into an array,
-   reverse alphabetize the entries, and then ``join`` the array into a new
+d. If the string uses spaces to separate the words, ``split`` it into an list,
+   reverse alphabetize the entries, and then ``join`` the list into a new
    space separated string. For example, ``"to code up fun"`` becomes
    ``"up to fun code"``.
 e. *Consider*: What if the string uses 'comma spaces' (, ) to separate the
    list? Modify your code to produce the same result as part "b", making sure
    that the extra spaces are NOT part of the final string.
 
-`Code it at repl.it <https://repl.it/@launchcode/StringandArrayStudio02>`__
+`Code it at repl.it <https://replit.com/@launchcode/StringAndListStudio02>`__
 
-Bonus Mission: Multi-dimensional Arrays
----------------------------------------
+Bonus Mission: Multi-dimensional Lists
+--------------------------------------
 
-Arrays can store other arrays!
+lists can store other lists!
 
 a. The cargo hold in our shuttle contains several smaller storage spaces. Use
-   ``split`` to convert the following strings into four cabinet arrays.
+   ``split`` to convert the following strings into four cabinet lists.
    Alphabetize the contents of each cabinet.
 
    i. ``"water bottles, meal packs, snacks, chocolate"``
@@ -70,7 +70,7 @@ a. The cargo hold in our shuttle contains several smaller storage spaces. Use
    iii. ``"parrots, cats, moose, alien eggs"``
    iv. ``"blankets, pillows, eyepatches, alarm clocks"``
 
-b. Initialize a ``cargoHold`` array and add the cabinet arrays to it. Print
+b. Initialize a ``cargoHold`` list and add the cabinet lists to it. Print
    ``cargoHold`` to verify its structure.
 c. Query the user to select a cabinet (0-3) in the ``cargoHold``.
 d. Use bracket notation and a template literal to display the contents of
@@ -81,4 +81,4 @@ e. *Bonus to the Bonus*: Modify the code to query the user for BOTH a cabinet in
    if the cabinet contains the selected item, then print ``"Cabinet ____
    DOES/DOES NOT contain ____."``
 
-`Code it at repl.it <https://repl.it/@launchcode/StringandArrayStudio03>`__
+`Code it at repl.it <https://replit.com/@launchcode/StringAndListStudio03>`__

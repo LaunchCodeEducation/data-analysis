@@ -107,9 +107,13 @@ mutable data type and an immutable one.
       the empty string. Try connecting the words with a hyphen, a comma, a
       space, and a comma-space to see which one looks best when printed.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: SplitAndJoin
+      :linenos:
 
-      <iframe height="500px" width="100%" src="https://repl.it/@launchcode/LCHS-Split-and-Join?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true"></iframe>
+      # Follow the given instructions to code a program that produces an alphebetized string.
+      tools = "hammer, screwdriver, pliers, drill, clamp"
+      sorted_string = ''
 
    *Question*: Did the program change the original ``tools`` string? What can
    you do to find out?
@@ -173,9 +177,20 @@ a list of *characters*.
       ``''.join(char_list)``.
    #. Print ``rev_other``.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: ListAndJoin
+      :linenos:
 
-      <iframe height="650px" width="100%" src="https://repl.it/@launchcode/LCHS-List-and-Join?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true"></iframe>
+      text = 'Taco Cat'
+      other_text = 'Python ROCKS!'
+
+      # Reverse a string with a loop:
+      rev_text = ''
+      for char in text:
+      rev_text = char + rev_text
+      print(rev_text)
+
+      # Reverse a string with list & join:
 
    Note that the ``print`` statement on line 12 is not needed for this
    technique to work. We just use it so see what the ``list()`` function
@@ -198,15 +213,10 @@ Check Your Understanding
          initials += name[0]
       print(initials)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> Poe</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> EdgarAllanPoe</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> EAP</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> William Shakespeare</li>
-      </ol>
-      <p id="Q1"></p>
+   a. Poe
+   b. EdgarAllanPoe
+   c. EAP
+   d. William Shakespeare
 
 .. Answer = c
 
