@@ -5,11 +5,12 @@ Chapters
    :numbered:
    :maxdepth: 1
    :name: chapterstoc
-
+   
    chapters/booleans-and-conditionals/index
    chapters/loops/index
    chapters/strings/index
    chapters/lists/index
+   chapters/functions/index
 
 .. toctree::
 
