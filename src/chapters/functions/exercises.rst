@@ -56,13 +56,13 @@ A. Write a function ``make_line(size)`` that returns a line with exactly ``size`
 
    .. admonition:: Tip
    
-      #. Call your ``makeLine`` function to create each row of the square.
+      #. Call your ``make_line`` function to create each row of the square.
       #. The newline character, ``\n``, will be helpful to you.
       #. Do NOT include a newline character at the end of your string.
 
-   .. sourcecode:: js
+   .. sourcecode:: py
 
-      console.log(makeSquare(5));
+      print(make_square(5))
 
    **Console Output**
 
@@ -81,13 +81,13 @@ A. Write a function ``make_line(size)`` that returns a line with exactly ``size`
       noticeable for the simpler shapes, including it will make life harder for
       you toward the end of the exercises.
 
-#. Write a function ``makeRectangle(width, height)`` that returns a
-   rectangle with the given width and height. Use your ``makeLine`` function to
+#. Write a function ``make_rectangle(width, height)`` that returns a
+   rectangle with the given width and height. Use your ``make_line`` function to
    do this.
 
-   .. sourcecode:: js
+   .. sourcecode:: py
 
-      console.log(makeRectangle(5, 3));
+      print(make_rectangle(5, 3))
 
    **Console Output**
 
@@ -100,18 +100,18 @@ A. Write a function ``make_line(size)`` that returns a line with exactly ``size`
    :ref:`Check your solution <functions-exercise-solutionsC>`. 
 
 
-#. Now, go back and rewrite ``makeSquare`` to use ``makeRectangle``.
+#. Now, go back and rewrite ``make_square`` to use ``make_rectangle``.
 
 Triangles
 ---------
 
-E. Write a function ``makeDownwardStairs(height)`` that prints the staircase
-   pattern shown below, with the given height. Use your ``makeLine`` function
+E. Write a function ``make_downward_stairs(height)`` that prints the staircase
+   pattern shown below, with the given height. Use your ``make_line`` function
    to do this.
 
-   .. sourcecode:: js
+   .. sourcecode:: py
 
-      console.log(makeDownwardStairs(5));
+      print(make_downward_stairs(5))
 
    **Console Output**
 
@@ -126,13 +126,13 @@ E. Write a function ``makeDownwardStairs(height)`` that prints the staircase
    :ref:`Check your solution <functions-exercise-solutionsE>`.
 
 
-F. Write a function ``makeSpaceLine(numSpaces, numChars)`` that returns a line
+F. Write a function ``make_space_line(numSpaces, numChars)`` that returns a line
    with exactly the specified number of spaces, followed by the
-   specified number of hashes, followed again by ``numSpaces`` more spaces.
+   specified number of hashes, followed again by ``num_spaces`` more spaces.
 
-   .. sourcecode:: js
+   .. sourcecode:: py
 
-      console.log(makeSpaceLine(3, 5));
+      print(make_space_line(3, 5));
 
    **Console Output**
 
@@ -142,12 +142,12 @@ F. Write a function ``makeSpaceLine(numSpaces, numChars)`` that returns a line
 
    .. note:: We have inserted underscores to represent spaces, so they are visible in the output. Don't do this in your code.
 
-G. Write a function ``makeIsoscelesTriangle(height)`` that returns a triangle
+G. Write a function ``make_isosceles_triangle(height)`` that returns a triangle
    of the given height.
 
-   .. sourcecode:: js
+   .. sourcecode:: py
 
-      console.log(makeIsoscelesTriangle(5));
+      print(make_isosceles_triangle(5))
 
    **Console Output**
 
@@ -166,12 +166,12 @@ G. Write a function ``makeIsoscelesTriangle(height)`` that returns a triangle
 Diamonds
 ---------
 
-H. Write a function ``makeDiamond(height)`` that returns a diamond where the
+H. Write a function ``make_diamond(height)`` that returns a diamond where the
    triangle formed by the *top* portion has the given height.
 
-   .. sourcecode:: js
+   .. sourcecode:: py
 
-      console.log(makeDiamond(5));
+      print(make_diamond(5))
 
    **Console Output**
 

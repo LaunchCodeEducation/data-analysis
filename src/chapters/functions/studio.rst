@@ -1,19 +1,19 @@
 Studio: Functions
 ==================
 
-The ``reverse`` method flips the order of the elements within an array.
+The ``reverse`` method flips the order of the elements within an list.
 However, ``reverse`` does not affect the digits or characters within those
 elements.
 
 .. admonition:: Example
 
-   .. sourcecode:: js
+   .. sourcecode:: py
       :linenos:
 
-      let arr = ['hello', 'world', 123, 'orange'];
+      fun_list = ['hello', 'world', 123, 'orange']
 
-      arr.reverse()
-      console.log(arr);
+      fun_list.reverse()
+      print(fun_list)
 
    **Console Output**
 
@@ -21,16 +21,16 @@ elements.
 
       ['orange', 123, 'world', 'hello']
 
-What if we wanted the reversed array to be
+What if we wanted the reversed list to be
 ``['egnaro', 321, 'dlrow', 'olleh']``?
 
 Let's have some fun by creating a process that reverses BOTH the order of the
-entries in an array AND the order of characters within the individual elements.
+entries in an list AND the order of characters within the individual elements.
 
 Remember that a function should perform only one task. To follow this best
-practice, we will solve the array reversal by defining two functions - one that
+practice, we will solve the list reversal by defining two functions - one that
 reverses the characters in a string (or the digits in a number) and one that
-flips the order of entries in the array.
+flips the order of entries in the list.
 
 Reverse Characters
 -------------------
@@ -39,19 +39,19 @@ Reverse Characters
    :ref:`reverses the characters in a string <reverse-a-string>` using the
    ``split`` and ``join`` methods. Let's rebuild that function now.
 
-   a. Define the function as ``reverseCharacters``. Give it one parameter, which will
+   a. Define the function as ``reverse_characters``. Give it one parameter, which will
       be the string to reverse.
-   b. Within the function, ``split`` the string into an array, then reverse the
-      array.
+   b. Within the function, ``split`` the string into an list, then reverse the
+      list.
    c. Use ``join`` to create the reversed string and *return* that string from the
       function.
    d. Below the function, define and initialize a variable to hold a string.
-   e. Use ``console.log(reverseCharacters(myVariableName));`` to call the function and verify
+   e. Use ``print(reverse_characters(my_variable_name))`` to call the function and verify
       that it correctly reverses the characters in the string.
    f. *Optional*: Use method chaining to reduce the lines of code within the
       function.
 
-`Code exercises 1 - 3 at repl.it <https://repl.it/@launchcode/FunctionsExercises03-05>`__
+`Code exercises 1 - 3 at repl.it <https://repl.it/@launchcode/FunctionsStudio01-03>`__
 
 .. admonition:: Tip
 
@@ -65,17 +65,17 @@ Reverse Characters
 Reverse Digits
 ---------------
 
-2. The ``reverseCharacters`` function works great on strings, but what if the
+2. The ``reverse_characters`` function works great on strings, but what if the
    argument passed to the function is a number? Using
-   ``console.log(reverseCharacters(1234));`` results in an error, since
+   ``print(reverse_characters(1234))`` results in an error, since
    ``split`` only works on strings (TRY IT). When passed a number, we want the
    function to return a number with all the digits reversed (e.g. 1234 converts
    to 4321 and NOT the string ``"4321"``).
 
-   a. Add an ``if`` statement to ``reverseCharacters`` to check the ``typeof`` the
+   a. Add an ``if`` statement to ``reverse_characters`` to check the ``type`` the
       parameter.
-   b. If ``typeof`` is 'string', return the reversed string as before.
-   c. If ``typeof`` is 'number', convert the parameter to a string, reverse the
+   b. If ``type`` is 'string', return the reversed string as before.
+   c. If ``type`` is 'integer', convert the parameter to a string, reverse the
       characters, then convert it back into a number.
    d. Return the reversed number.
    e. Be sure to print the result returned by the function to verify that your code
@@ -95,15 +95,15 @@ Complete Reversal
 ------------------
 
 3. Now we are ready to finish our complete reversal process. Create a new
-   function with one parameter, which is the array we want to change. The
+   function with one parameter, which is the list we want to change. The
    function should:
 
-   a. Define and initialize an empty array.
-   b. Loop through the old array.
-   c. For each element in the old array, call ``reverseCharacters`` to flip the
+   a. Define and initialize an empty list.
+   b. Loop through the old list.
+   c. For each element in the old list, call ``reverse_characters`` to flip the
       characters or digits.
-   d. Add the reversed string (or number) to the array defined in part 'a'.
-   e. Return the final, reversed array.
+   d. Add the reversed string (or number) to the list defined in part 'a'.
+   e. Return the final, reversed list.
    f. *Be sure to print the results from each test case in order to verify your
       code*.
 
@@ -129,14 +129,14 @@ Bonus Missions
 4. Define a function with one parameter, which will be a string. The function
    must do the following:
 
-   a. Have a clear, descriptive name like ``funPhrase``.
+   a. Have a clear, descriptive name like ``fun_phrase``.
    b. Retrieve only the last character from strings with lengths of 3 or less.
    c. Retrieve only the first 3 characters from strings with lengths larger
       than 3.
    d. Use a template literal to return the phrase ``We put the '___' in '___'.``
       Fill the first blank with the modified string, and fill the second blank
       with the original string.
-   e. `Build your function at repl.it <https://repl.it/@launchcode/FunctionsExercises01>`__.
+   e. `Build your function at repl.it <https://replit.com/@launchcode/FunctionsStudio-Bonus01>`__.
 
 #. Now test your function:
 
@@ -154,7 +154,7 @@ Bonus Missions
    d. If only one argument is passed to the function, then the shape is a
       square. Modify your code to deal with this case.
    e. Use a template literal to print, "The area is ____ cm^2."
-   f. `Code the area function at repl.it <https://repl.it/@launchcode/FunctionsExercises02>`__.
+   f. `Code the area function at repl.it <https://replit.com/@launchcode/FunctionsStudio-Bonus02>`__.
 
 .. admonition:: Tip
 

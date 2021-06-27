@@ -113,9 +113,20 @@ change its value creates problems.
 
             phone_number = '1234'
 
-   .. raw:: html
+   .. replit:: py
+      :slug: ScopeExample02
+      :linenos: 
 
-      <iframe height="550px" width="100%" src="https://repl.it/@launchcode/Scope-Example-2?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      def remove_hyphens(str_with_hyphens):
+         without_hyphens = str_with_hyphens.replace('-', '')
+
+         print(phone_number)
+         return without_hyphens
+
+      phone_number = "555-555-5555"
+      no_hyph_number = remove_hyphens(phone_number)
+      print(no_hyph_number)
+      print(phone_number)
 
 In step 1, even though ``phone_number`` is defined outside the function, it is
 still visible within the function. When ``remove_hyphens`` is called and
@@ -193,13 +204,8 @@ Check Your Understanding
       num = 42
       print(is_even(43))
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> True</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> False</li>
-      </ol>
-      <p id="Q1"></p>
+   a. True
+   b. False
 
 .. Answer = b
 

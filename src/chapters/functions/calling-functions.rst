@@ -16,6 +16,13 @@ The general syntax for calling a function is:
 
    function_name(input values)
 
+You have already become familiar with several Python functions:
+
+- ``print()``
+- ``len()``
+- Type conversion functions like ``int()``, ``str()``, and ``list()``
+- String and list methods, such as ``find()`` or ``reverse()``.
+
 Every function works in the same way. By typing the function's name, followed by
 parentheses, we *call* the function. This results in an action being carried
 out.
