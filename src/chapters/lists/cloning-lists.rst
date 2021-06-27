@@ -104,7 +104,7 @@ with one variable affect the other!
 Because the same list has two different names, we say that it is **aliased**.
 Changes made with one alias affect the other.
 
-.. figure:: ./figures/list-var-ref.png
+.. figure:: figures/list-var-ref.png
    :alt: Diagram showing that the variables ``list_a`` and ``list_b`` point to the same memory location.
 
    ``list_a`` and ``list_b`` both point to the same list.

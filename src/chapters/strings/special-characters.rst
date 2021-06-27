@@ -35,7 +35,7 @@ newline and tab characters, respectively. A **newline** represents tapping the
 
 .. admonition:: Try It!
 
-   Modify the code in the editor below to produce this output:
+   Modify the code in Replit below to produce this output:
 
    ::
 

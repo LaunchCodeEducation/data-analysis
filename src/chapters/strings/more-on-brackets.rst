@@ -97,7 +97,7 @@ those strings elsewhere in the program.
 
 .. admonition:: Note
 
-   **BIG IDEA**!!! Notice that taking two slices from the string ``'carrot'``
+   Notice that taking two slices from the string ``'carrot'``
    did NOT change the string itself. We will explore this idea in the next
    section.
 

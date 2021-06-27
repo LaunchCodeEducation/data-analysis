@@ -147,7 +147,7 @@ The index values in the new list begin at 0.
 Try It!
 ^^^^^^^
 
-In the :ref:`(in/not in) editor above <in-not-in-editor>`, add slices to check
+In the :ref:`(in/not in) Replit above <in-not-in-editor>`, add slices to check
 only a portion of the ``fruit`` list (e.g. ``print("apple" in fruit[2:4])``).
 
 Check Your Understanding

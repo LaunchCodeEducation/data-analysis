@@ -40,6 +40,8 @@ Appendices
    :maxdepth: 1
    :name: appendicestoc
 
+   appendices/string-methods/index
+   appendices/list-methods/index
    appendices/exercise-solutions/index
 
 .. toctree::

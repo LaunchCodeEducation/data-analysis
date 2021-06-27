@@ -179,7 +179,7 @@ Try It!
 
 .. admonition:: Example
 
-   In the editor below:
+   In the Replit below:
 
    #. Change a single value inside ``conjunctions``.
    #. Use ``del`` to remove a single value from ``conjunctions``.

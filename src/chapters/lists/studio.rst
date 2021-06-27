@@ -59,7 +59,7 @@ e. *Consider*: What if the string uses 'comma spaces' (, ) to separate the
 Bonus Mission: Multi-dimensional Lists
 --------------------------------------
 
-lists can store other lists!
+Lists can store other lists!
 
 a. The cargo hold in our shuttle contains several smaller storage spaces. Use
    ``split`` to convert the following strings into four cabinet lists.

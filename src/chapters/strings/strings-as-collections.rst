@@ -88,9 +88,6 @@ A string that contains no characters, called the **empty string**, is still
 considered a string. It simply contains zero characters and is represented by
 ``''`` or ``""`` (two single or two double quotes with nothing in between).
 
-We used an empty string before, when we practiced the
-:ref:`accumulator pattern <accumulator-pattern>`.
-
 Quote Reminder
 --------------
 
