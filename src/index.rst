@@ -5,10 +5,13 @@ Chapters
    :numbered:
    :maxdepth: 1
    :name: chapterstoc
-
+   
    chapters/booleans-and-conditionals/index
    chapters/loops/index
+   chapters/strings/index
+   chapters/lists/index
    chapters/errors-and-debugging/index
+   chapters/functions/index
 
 .. toctree::
 
@@ -37,6 +40,8 @@ Appendices
    :maxdepth: 1
    :name: appendicestoc
 
+   appendices/string-methods/index
+   appendices/list-methods/index
    appendices/exercise-solutions/index
 
 .. toctree::
