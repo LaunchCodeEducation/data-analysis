@@ -24,6 +24,7 @@ Studios
    :name: studiostoc
 
    chapters/loops/studio
+   chapters/dictionaries/studio
 
 Assignments
 ===========
