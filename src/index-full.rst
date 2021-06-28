@@ -24,6 +24,9 @@ Studios
    :name: studiostoc
 
    chapters/loops/studio
+   chapters/lists/studio
+   chapters/errors-and-debugging/studio
+   chapters/functions/studio
 
 Assignments
 ===========
@@ -31,6 +34,9 @@ Assignments
 .. toctree::
    :maxdepth: 1
    :name: assignmentstoc
+
+   assignments/hello-world
+   assignments/candidate-quiz
 
 Appendices
 ==========
