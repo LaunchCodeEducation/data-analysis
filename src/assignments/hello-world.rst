@@ -108,14 +108,14 @@ the program prints just ``"Hello"``. Remember, your task is to to modify the out
 when run, ``"Hello world!"`` is printed. 
 
 Take a look at the ``hello.py`` file. This is the only file in your starter code that needs changing.
-You'll see a structure called a ``function``, along with a final ``module.exports`` line. We haven't learned 
+You'll see a structure called a ``function``. We haven't learned 
 about either of these items yet - but we will! If you are so compelled, google these terms to get a brief introduction.
 If you are not compelled, you don't need to know what they do for the purposes of this class until later lessons.
 
 .. admonition:: Tip
 
-   Set a timer for 5 mins and google search "JavaScript functions" or "JavaScript module.exports". Or look these
-   items up directly on `W3Schools <https://www.w3schools.com/>`__ or `MDN <https://developer.mozilla.org/en-US/>`__.
+   Set a timer for 5 mins and google search "Python functions". Or look these
+   items up directly on `W3Schools <https://www.w3schools.com/>`__ or `Python documentation <https://docs.python.org>`__.
    When the timer is up, write down whatever you have found interesting or most salient from your search.
    
    Although you won't start learning about these terms in this book until later on, getting into the habit of 
@@ -124,10 +124,10 @@ If you are not compelled, you don't need to know what they do for the purposes o
    This may not be the only place where this book leaves you with more questions than answers and getting answers 
    from the world wide web is how every developer spends their time.
 
-Back inside of ``hello.js``, you should recognize a string on this line: ``return "Hello!";``.
+Back inside of ``hello.py``, you should recognize a string on this line: ``return "Hello!"``.
 
 ``return`` is another keyword related to functions that we have not yet covered. For now, know that 
-``return`` behaves like a surrogate for ``console.log()``. So anything inside of the string that follows it
+``return`` behaves like a surrogate for ``print()``. So anything inside of the string that follows it
 will be printed when your application is run.
 
 .. admonition:: Tip
@@ -159,7 +159,7 @@ change?". A **commit message** is a note about what you have changed in your cod
 
    Click on the text box and write a message that conveys what you have changed in the code.
 
-A good commit message in this case would be something like: "Added my personal solution", or "Updated hello.js
+A good commit message in this case would be something like: "Added my personal solution", or "Updated hello.py
 to print 'hello world!'".
 
 Hit the *commit & push* button. Voila - your solution is submitted (pushed) to the GitHub graders.
@@ -211,7 +211,7 @@ When you see a green check, your code passes and you are all finished with the a
 
 .. admonition:: Note
 
-   If your program is outputting "Hello world!", but you are still not seeing a green check mark, make sure you did not edit any file other than ``hello.js``.
+   If your program is outputting "Hello world!", but you are still not seeing a green check mark, make sure you did not edit any file other than ``hello.py``.
    An accidental space or extra character can cause problems with Github Classroom's grading.
    To double check that you have not done so, you can click on the 7-digit code next to the check mark or x.
-   This will bring up which files have been changed and any changes made. If any other files other than ``hello.js`` were changed, make sure to undo the changes in Repl.it and commit to Github.
+   This will bring up which files have been changed and any changes made. If any other files other than ``hello.py`` were changed, make sure to undo the changes in Repl.it and commit to Github.
