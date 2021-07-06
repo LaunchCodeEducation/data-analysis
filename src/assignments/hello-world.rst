@@ -5,7 +5,7 @@
 Assignment #0: Hello World
 ==========================
 
-Your first assignment is mostly an exercise in following instructions. We'll ask you to modify
+THis assignment is mostly an exercise in following instructions. We'll ask you to modify
 an existing program so that, when run, the program prints "Hello world!".
 
 Programming jobs often require you to get familiar with, or at least make 
@@ -23,10 +23,9 @@ Requirements
 ------------
 
 #. Sign up for a GitHub account.
-#. Sign up for a Repl.it account.
 #. Open and accept the GitHub classroom assignment invitation.
-#. Change the code in Repl.it.
-#. Commit the code in Repl.it.
+#. Change the code in Visual Studio Code.
+#. Commit the code in Visual Studio Code.
 #. Make sure your assignment passes the test.
 
 GitHub
