@@ -34,12 +34,6 @@ GitHub
 If you haven't done so already, create a 
 `GitHub account <https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home>`__.
 
-Repl.it
-~~~~~~~
-
-If you haven't already done so, create a 
-`Repl.it account <https://Repl.it/signup>`__.
-
 
 Assignment Invitation
 ~~~~~~~~~~~~~~~~~~~~~
@@ -78,22 +72,7 @@ When you refresh and your assignment repository has been created, this is what y
 .. figure:: figures/gh-classroom-ready-assignment.png
    :alt: A GitHub Classroom assignment has been created.
 
-   Your assignment code can now be accessed either via Repl.it or GitHub.
-
-We recommend you first open the GitHub assignment repository page before hitting 
-the *Work in Repl.it* button. When you open your GitHub assignment repository,
-you will see the same *Work in Repl.it* button.
-
-.. figure:: figures/github-work-in-replit.png
-   :alt: A *Work in Repl.it* button on a GitHub assignment.
-
-   We recommend that you access the assignment Repl.it via the GitHub repository.
-
-.. admonition:: Note
-
-   The first time you use the *Work in Repl.it* button, i.e. for this assignment, you will need to authorize your Repl.it account to
-   work with your GitHub account. If you are prompted to do so, follow the steps to 
-   link your accounts.
+   Your assignment code can now be accessed either via GitHub.
 
 Hello world!
 ~~~~~~~~~~~~
