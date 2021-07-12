@@ -1,5 +1,5 @@
-Installation Instructions
-=========================
+Setting Up Software for this Class
+==================================
 
 .. toctree::
    :maxdepth: 1

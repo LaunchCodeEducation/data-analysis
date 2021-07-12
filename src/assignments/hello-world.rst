@@ -199,41 +199,44 @@ Files that have been staged will appear under *Staged Changes*:
 
 Above the files, write a commit message in the text field that prompts "Message".
 A **commit message** is a note about what you have changed in your code.
-When you are satisfied with your message, hit command enter if you are a mac user or control enter for windows users.
-After you do so, you will notice that there are no more changes in the sidebar. 
-Now, you need to push your code to the remote repository on Github. This action will send your code to be autograded.
-There are three dots at the top of the version control tab. 
-
 A good commit message in this case would be something like: "Added my personal solution", or "Updated hello.py
 to print 'hello world!'".
+When you are satisfied with your message, hit *⌘+Enter* if you are a Mac user or *CTRL+Enter* for Windows users.
+After you do so, you will notice that there are no more changes in the sidebar. This is because we have completed making a commit!
 
-Hit the *commit & push* button. Voila - your solution is submitted (pushed) to the GitHub graders.
+.. admonition:: Note
+
+   A commit in Git tracks files changed, the actual changes made within each file, and your note as to what you changed.
+   If you ever want to revisit an older version of the file, you simply have to look through the commit history of the repository.
+
+If you went over to look at your repository on Github, you wouldn't see any changes. This is because after we make a commit, we need to *push* that commit to the remote repository on Github.
+When you push your code, Github will also run the autograder and update your repo's status as either passing or failing.
+Above the box where you entered your commit message, you should see a button with three horizontal dots. Clicking on this button opens a menu with a variety of Git actions.
+Select *Push* to send your code to Github. 
 
 Check Your Solution
 ~~~~~~~~~~~~~~~~~~~
 
-Once you've committed your work, head to Github to see that your solution passes the tests.
+Now that you have committed and pushed your work, head to Github to see that your solution passes the tests.
 
-If you left your repository page open in your browser, simply return to the browser and reload the page. 
+.. admonition:: Note
+
+   If you left the page open, you may have to reload the page to see your recent commit.
 
 If your solution passes the grading requirements, you will see a green check mark near your latest commit.
-
-.. TODO: Replace screenshot
 
 .. figure:: figures/github-passing-commit.png
    :alt: A GitHub repo with a passing commit.
 
-   The latest commit message on this assignment is "removed a comma from my solution". The green check to 
+   The latest commit message on this assignment is "Edited return string". The green check to 
    the right of the message indicates that the solution passed.
 
 If your solution does not pass, you will see a red ``x`` in its place.
 
-.. TODO: Replace screenshot
-
 .. figure:: figures/github-failing-commit.png
    :alt: A GitHub repo with a failing commit.
 
-   The latest commit, "added a comma to my solution" does not pass the grading requirements.
+   The latest commit, "Possible solution" does not pass the grading requirements.
 
 A red ``x`` can always be corrected by repeating the previous steps. These are:
 
@@ -242,10 +245,10 @@ A red ``x`` can always be corrected by repeating the previous steps. These are:
 #. Run the program to visually ensure that ``"Hello world!"`` is printed,
 #. Commit and push your changes.
 
-You may make any number of commits to your solution. You won't lose points for pushing *commit and push* many times.
+You may make any number of commits to your solution. You won't lose points for committing and pushing many times.
 In fact, each assignment is worth only 1 point.
 In most cases, you won't need to *commit and push* more than once, however. You can verify that your code runs 
-we expect by running it and seeing the proper ``"Hello world!"`` message printed.
+as expected by running it and seeing the proper ``"Hello world!"`` message printed.
 
 In some cases, you may see a yellow dot grading status instead of the green check or red ``x``. This is fine and 
 just means that GitHub is currently building your solution. It will often resolve to either a check or ``x`` after 
