@@ -44,15 +44,13 @@ Assignment Invitation
 
 .. admonition:: Tip
 
-   Before starting on any assignment, make sure you are signed into both your Github and Repl.it accounts!
+   Before starting on any assignment, make sure you are signed into your Github account!
 
 In your Canvas classroom, click on the Assignment 0 link to accept your invitation to start coding 
 your assignment solution.
 
 Once you open the assignment invitation, if you are already logged in to your GitHub account, 
 you will see a screen like this:
-
-.. TODO: Replace screenshot
 
 .. figure:: figures/gh-classroom-accept-assignment.png
    :alt: A GitHub Classroom assignment acceptance page.
@@ -68,8 +66,6 @@ are interrupted from the rest of the setup process.
 Once you have accepted and hit the green button, the next page you will see looks 
 something like this:
 
-.. TODO: Replace screenshot
-
 .. figure:: figures/gh-classroom-create-assignment.png
    :alt: A GitHub Classroom assignment creation page.
 
@@ -77,64 +73,96 @@ something like this:
 
 When you refresh and your assignment repository has been created, this is what you should see:
 
-.. TODO: Replace screenshot
-
 .. figure:: figures/gh-classroom-ready-assignment.png
    :alt: A GitHub Classroom assignment has been created.
 
    Your assignment code can now be accessed via GitHub.
 
-To get started coding, open a new window in Visual Studio Code. Under the source control tab, click clone repository.
+If you click on the link on the Github classroom page, you will be redirected to your assignment repository. 
+Your assignment repository will look something like this page:
 
-.. TODO: Add screenshot
+.. figure:: figures/gh-assignment-repository.png
+   :alt: Github repository page
 
-On the repository page, click clone and copy the url under the HTTPS tab. 
+The first step to opening up your assignment code and starting your work is to *clone* your repository.
 
-.. TODO: Add screenshot
+.. admonition:: Note
 
-Paste the URL into the clone repository bar at the top of the screen.
+   Git is a programming language used by many companies to track changes to projects and share projects between team members as part of a process called version control. 
+   Github is the biggest online hub for storing code and the workflow of submitting your assignments is all done with Git. Cloning an online repository to your computer is just one of those steps.
+   While at the beginning of class, Git and Github may seem like just one way for you to save and share your assignment code with course staff, these workflows are going to serve you well for a career in tech.
+   Many companies even look at job candidate's Github profiles to see not only their work, but also how often they are working on code!
 
-.. TODO: Add screenshot
+To clone your repository, you need the HTTPS link for your repository. Click on the *Clone* button on the repository page and copy the link!
 
-Authorize Github to open the folder. *This might take several confirmations, but it is okay!*
+.. figure:: figures/gh-clone-repo-button.png
+   :alt: Highlighting the HTTPS link in the pop-up when the Clone button is clicked.
 
-.. TODO: Add screenshot
+To get started coding, open a new window in Visual Studio Code.
 
-Once the application is loaded, you should see the files in the file tree!
+.. figure:: figures/vsc-new-window.png
+   :alt: An empty code editor window with no projects loaded.
 
-.. TODO: Add screenshot
+Under the source control tab in the side bar, click *Clone Repository*.
+
+.. figure:: figures/vsc-source-control-clone.png
+   :alt: The source control tab is open, revealing an option to clone a repository.
+
+When you click on *Clone Repository*, a bar appears at the top where you can paste in the URL you copied from Github.
+
+.. figure:: figures/vsc-paste-clone-url.png
+   :alt: User copies their Github URL into Visual Studio Code
+
+When you do this, you will have to select where you want to clone your project. Make sure you select where your coursework is stored!
+
+.. admonition:: Note
+
+   Thoughout this process, you may have to authorize the connection between Github and Visual Studio Code.
+
+Once the application is loaded, you should see the files in the file tree on the side!
+
+.. figure:: figures/vsc-fully-loaded-project.png
+   :alt: A code editor with all the necessary files!
 
 Hello world!
 ~~~~~~~~~~~~
 
-Once you have accepted the assignment, have a look around the various files and get curious about what this 
+Once you have loaded the assignment, have a look around the various files and get curious about what this 
 code does.
 Don't be afraid to look - just don't edit any of this code just yet.
 
-After you have done some exploring, use the Repl.it *Run* button to run the program. To begin with, 
-the program prints just ``"Hello"``. Remember, your task is to to modify the output of this program so that,
+.. admonition:: Warning
+
+   If you have not installed the required Python extension, this next section will not work!
+
+After you have done some exploring, open the *Run and Debug* on the sidebar. 
+
+.. figure:: figures/vsc-run-and-debug.png
+   :alt: Run and Debug menu in Visual Studio Code
+
+*Run and Debug* will be where you go when you want to run your work and see how it is shaping up.
+You may want to make sure you have ``index.py`` open so when you click on on the *Run and Debug* option, you can easily search for *Python File Debug currently active file*.
+
+.. figure:: figures/vsc-run-and-debug-select.png
+   :alt: Top bar with option to run current file selected.
+
+When you run the file, a window pops up at the bottom of the screen with the output.
+
+.. figure:: figures/vsc-run-and-debug-output.png
+   :alt: Output from running the code in index.py
+
+To begin with, the program prints just ``"Hello"``. Remember, your task is to to modify the output of this program so that,
 when run, ``"Hello world!"`` is printed. 
 
-.. TODO: Fix this section
-
 Take a look at the ``hello.py`` file. This is the only file in your starter code that needs changing.
-You'll see a structure called a ``function``. We haven't learned 
-about either of these items yet - but we will! If you are so compelled, google these terms to get a brief introduction.
-If you are not compelled, you don't need to know what they do for the purposes of this class until later lessons.
 
-.. admonition:: Tip
+.. admonition:: Note
 
-   Set a timer for 5 mins and google search "Python functions". Or look these
-   items up directly on `W3Schools <https://www.w3schools.com/>`__ or `Python documentation <https://docs.python.org>`__.
-   When the timer is up, write down whatever you have found interesting or most salient from your search.
-   
-   Although you won't start learning about these terms in this book until later on, getting into the habit of 
-   exploring code and google searching topics helps to get you into the developer mindset. 
+   Depending on where you are at in the reading for this class, you may not have covered functions before.
+   You do not need to understand the ins and outs of functions to complete this assignment.
+   For now focus on editing the string on the line with the word ``return``.
 
-   This may not be the only place where this book leaves you with more questions than answers and getting answers 
-   from the world wide web is how every developer spends their time.
-
-Back inside of ``hello.py``, you should recognize a string on this line: ``return "Hello!"``.
+Inside of ``hello.py``, you should recognize a string on this line: ``return "Hello!"``.
 
 ``return`` is another keyword related to functions that we have not yet covered. For now, know that 
 ``return`` behaves like a surrogate for ``print()``. So anything inside of the string that follows it
@@ -149,18 +177,26 @@ will be printed when your application is run.
 
 With all of this in mind, modify the string on that line so that ``"Hello world!"`` is printed. 
 
-To run the program 
+Then run the program again to see your changes! 
 
 Commit Your Changes
 ~~~~~~~~~~~~~~~~~~~
 
-Now that your program prints ``"Hello world!"``, you'll commit your code. Committing your code is part of 
-a process called version control, which we'll get into in a later lesson. For now, go to the sidebar in your Visual Studio Code
-window and click on the version control icon. 
+Now that your program prints ``"Hello world!"``, you'll commit your code. Committing your code is just another part of the version control process.
+For now, go to the sidebar in your Visual Studio Code window and click on the source control icon. 
 
-.. TODO: Add screenshot
+.. figure:: figures/vsc-source-control-changes.png
+   :alt: Source control with changed files that are highlighted.
 
-When you have opened the version control tab, click on the plus side on the file that you just changed. This will add the file to the staged changes tab.
+Any files that have been changed are highlighted under *Changes*. Next, we need to stage these files for a commit.
+This just means that we want to confirm before moving forward that these files are the ones that we want to commit.
+If you changed ``index.py``, you would NOT want to stage that file and instead would want to go back and undo any changes you made.
+To stage your changed files for a commit, click on the plus sign next to *Changes* to stage all files or hover over a specific file and click on the plus sign next to the file name to stage just one file.
+Files that have been staged will appear under *Staged Changes*:
+
+.. figure:: figures/vsc-source-control-staged-changes.png
+   :alt: Source control with staged files highlighted.
+
 Above the files, write a commit message in the text field that prompts "Message".
 A **commit message** is a note about what you have changed in your code.
 When you are satisfied with your message, hit command enter if you are a mac user or control enter for windows users.
