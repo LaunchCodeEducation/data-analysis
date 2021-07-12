@@ -51,8 +51,7 @@ remember. Given ``print(7 + 2)``, the output would be ``9``.
 Now explore the following code, which prompts the user for two numbers and then
 prints their sum:
 
-.. replit:: py
-   :slug: InputExamples02Py
+.. sourcecode:: python
    :linenos:
 
    num1 = input("Enter a number: ")

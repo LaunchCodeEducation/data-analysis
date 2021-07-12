@@ -51,33 +51,40 @@ functions.
 
 Features to note:
 
-#. **File panel and menus**: Allows you to add extensions, update settings, and
+#. **File panel and menus**: On the left, this panel allows you to add extensions, update settings, and
    add, open, or delete files.
-#. **Editor panel**: Your code goes here. Click on a file to open it in the
-   editor. For most new projects, an ``index`` file will be created and opened
+#. **Editor panel**: You write your code in this top panel. Click on a file to open it in the
+   editor. For most new projects, a ``main.py`` file will be created and opened
    by default.
 #. **Console panel**: Any output produced by your code will appear in this
-   panel. The console also displays error messages, test results, and other
+   panel below the editor. The console also displays error messages, test results, and other
    information.
-#. **Fork button**: If you are viewing someone else's project, you can *fork*
-   the content (4) and store a copy of that project to your own account. This
-   allows you to edit the files without changing the originals, and it lets
-   you use other programmers' work (with permission) to enhance your own.
-#. **Run button**: Executes any code written in the ``index`` file.
-#. **Managing projects**: When logged into Repl.it, you can create a new
-   project, view saved projects, or share your projects.
+#. **Run button**: Executes any code written in the ``main`` file using the "Run" button at top center.
+#. **Collaborate**: Use the "Invite" button at top right to share your projects 
+   with other classmates or your TAs for coding collaboration and troubleshooting.
 
 .. admonition:: Note
 
-   The workspace shown above uses the "dark" theme (light text on a black
-   background). If you prefer the reverse (dark text on a white background),
-   click the gear icon and select the "light" theme.
+   The workspace shown above uses the "light" theme (dark text on a white
+   background). If you prefer the reverse (light text on a dark background),
+   click the gear icon and select the "dark" theme.
 
 Begin Your Coding Journey
 -------------------------
 
 Follow this `Hello World link <https://repl.it/@launchcode/HelloWorldPy>`__ to
 open a prepared workspace for your first program.
+
+.. admonition:: Note
+
+   .. figure:: figures/replit-fork.png
+      :alt: View of a replit created by another user. Includes a 'Fork' button.
+
+   **Fork button**: If you are viewing someone else's project, you can *fork*
+   the content (top right) and store a copy of that project to your own account. This
+   allows you to edit the files without changing the originals, and it lets
+   you use other programmers' work (with permission) to enhance your own.
+
 
 On line 2 of the editor, type:
 
@@ -119,7 +126,7 @@ targets. Learning comes through experience, and you WILL learn all the details
 behind ``print`` soon.
 
 Once you finish practicing (and hopefully making some mistakes), you will have
-a pretty good idea of how the ``console.log`` function in JavaScript works.
+a pretty good idea of how the ``print()`` function in Python works.
 
 .. admonition:: Try It
 

@@ -49,7 +49,7 @@ Two Special Characters
 -----------------------
 
 One final observation for all of the examples above is that each time we use
-``console.log``, a **newline** is inserted after the printed content. Think of
+``print()``, a **newline** is inserted after the printed content. Think of
 a newline as the same as hitting the Enter or Return key on your keyboard. The
 cursor moves to the beginning of the next line.
 
