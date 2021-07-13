@@ -9,6 +9,12 @@ Chapters
    chapters/how-programs-work/index
    chapters/how-to-write-code/index
    chapters/data-and-variables/index
+   chapters/booleans-and-conditionals/index
+   chapters/loops/index
+   chapters/strings/index
+   chapters/lists/index
+   chapters/errors-and-debugging/index
+   chapters/functions/index
 
 .. toctree::
 
@@ -22,6 +28,10 @@ Studios
    :name: studiostoc
 
    chapters/data-and-variables/studio
+   chapters/loops/studio
+   chapters/lists/studio
+   chapters/errors-and-debugging/studio
+   chapters/functions/studio
 
 Assignments
 ===========
@@ -37,4 +47,6 @@ Appendices
    :maxdepth: 1
    :name: appendicestoc
 
+   appendices/string-methods/index
+   appendices/list-methods/index
    appendices/exercise-solutions/index
