@@ -107,7 +107,7 @@ Repl.it is used for:
 .. admonition:: Tip
 
    You never have to click save when using Repl.it. Repl.it automatically 
-	saves your code on their servers.
+   saves your code on their servers.
 
 .. _github-classroom:
 
