@@ -40,41 +40,34 @@ In `Canvas <https://learn.launchcode.org/>`__, **Graded Assignment #1: Candidate
 GitHub Classroom assignment invitation link. Refer back to the GitHub Classroom instructions from
 **Graded Assignment #0: Hello World** for submission instructions.
 
-
 Part 1: Minimum Viable Quiz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.1 ``candidateName``
-~~~~~~~~~~~~~~~~~~~~~
+1.1 ``candidate_name``
+~~~~~~~~~~~~~~~~~~~~~~
 
-a. Ask for the candidate's name. Look for ``TODO 1.1a`` in the starter code. 
-   On the line below this TODO comment, define a variable called ``candidateName``
-   with an initial value of the empty string.
+a. Ask for the candidate's name. Look for ``TODO 1.1`` in the starter code. 
+   On the line below this TODO comment, prompt the user for their name and store the value in a variable called ``candidate_name``.
 
-#. Look for ``TODO 1.1b``. Inside of the function ``askForName()``, write code
-   asking the user to enter their name into the program and store the value as
-   ``candidateName``.
-
-#. Look for ``TODO 1.1c``. Underneath it, write a message to the console greeting 
+#. Look for ``TODO 1.1b``. Underneath it, write a message to the console greeting 
    the user using the name they just provided.
-
 
 1.2 Single Question Quiz
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 a. Ask the user to answer a single quiz question. Look for ``TODO 1.2a``.
-   Below the TODO comment, define variables called ``question``, ``correctAnswer``,
-   and ``candidateAnswer``.
+   Below the TODO comment, assign the variables called ``question``, ``correct_answer``,
+   and ``candidate_answer``.
 
-   - ``question`` should be initialized to the following string: ``"Who was the first American woman in space? "``.
+   - ``question`` should be assigned the following string: ``"Who was the first American woman in space? "``.
 
    .. admonition:: Tip
 
       Note the trailing space at the end of this string is required. 
 
-   - ``correctAnswer`` should be initialized to ``"Sally Ride"``.
+   - ``correct_answer`` should be initialized to ``"Sally Ride"``.
 
-   - ``candidateAnswer`` will initially be set to the empty string.
+   - ``candidate_answer`` will initially be set to the empty string.
 
 #. Find ``TODO 1.2b``. Using your question variable, display the question and prompt the candidate for 
    their answer. Store their response in one of the variables you defined just above.
@@ -94,7 +87,7 @@ Now that your small app is working, expand it to deal with multiple questions.
 This time, you only have one ``TODO`` item in the starter code. You will need
 to determine which lines need to be modified.
 
-#. Define ``questions`` and ``correctAnswers`` variables as arrays. Use the table below to fill these arrays.
+#. Define ``questions`` and ``correct_answers`` variables as arrays. Use the table below to fill these arrays.
 #. Replace your code from ``TODO 1.2b`` with a loop that programmatically asks each question in the array and stores 
    the user's responses.
 #. Replace the basic feedback from ``TODO 1.2c`` with a template literal that displays each of the candidate's responses in 
@@ -123,7 +116,7 @@ to determine which lines need to be modified.
 
 .. admonition:: Warning
 
-   Keep the questions and correct answers stored in this exact order.
+   Keep the questions and correct answers stored in this exact order. Feel free to copy-paste the questions and correct answers from the table to help avoid extraneous autograding errors.
 
 Part 3: Grade the Quiz
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -141,7 +134,7 @@ Your task here is to:
 Some tips:
 
 #. Checking for the correct answer should be case insensitive (e.g. "Orbit" is the same as "orbit").
-#. Somewhere below ``TODO 1.2c`` you should see a variable declaration for ``grade``. Use this to calculate the candidate's
+#. Somewhere below ``TODO 1.2c`` you should see a variable called ``grade``. Use this to calculate the candidate's
    score.
 #. To calculate the candidate's percentage, use the equation:
 
