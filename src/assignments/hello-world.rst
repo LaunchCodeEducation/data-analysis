@@ -140,6 +140,11 @@ After you have done some exploring, open the *Run and Debug* on the sidebar.
 .. figure:: figures/vsc-run-and-debug.png
    :alt: Run and Debug menu in Visual Studio Code
 
+.. admonition:: Tip
+
+   This sidebar is called the activity panel. If yours doesn"t appear automatically, 
+   open it from *View -> Appearance -> Show Activity Bar*.
+
 *Run and Debug* will be where you go when you want to run your work and see how it is shaping up.
 You may want to make sure you have ``index.py`` open so when you click on on the *Run and Debug* option, you can easily search for *Python File Debug currently active file*.
 
