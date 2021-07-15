@@ -12,7 +12,8 @@ Installing Python
 
 The first thing you need to code in Python is Python itself!
 
-To install Python, use the links on `Python's website <https://www.python.org/downloads/>` to download Python 3.9.6. Make sure that you are downloading the appropriate version for your operating system!
+To install Python, use the links on `Python's website <https://www.python.org/downloads/>`__ to download Python. Make sure that you are downloading the appropriate version for your operating system.
+At the time of writing, the latest version of Python avaialble for download is 3.9.
 
 .. admonition:: Note
 

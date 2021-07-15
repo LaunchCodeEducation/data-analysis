@@ -5,12 +5,12 @@
 Assignment #0: Hello World
 ==========================
 
-THis assignment is mostly an exercise in following instructions. We'll ask you to modify
+This assignment is mostly an exercise in following instructions. We'll ask you to modify
 an existing program so that, when run, the program prints "Hello world!".
 
 Programming jobs often require you to get familiar with, or at least make 
-use of, additional technologies. Here, you'll be using a few web applications, like GitHub and Repl.it, 
-to write your code, run it, save it, and submit your assignment.
+use of, additional technologies. Here, you'll be using GitHub to save your code and 
+submit your assignment.
 
 So while the coding task may appear straightforward, you'll be introduced to a set of instructions, 
 or **workflow**, that is important for the rest of your success in this class.
@@ -58,7 +58,7 @@ you will see a screen like this:
    Clicking on the assignment link in Canvas takes you to this page.
 
 Before you hit the green *Accept the Assignment* button, write down the name of the
-assignment repository. In this case, that would be: "assignment-0-sample-assignment-LCStudent-Carly".
+assignment repository. In this case, that would be: "assignment-0-hello-world-steutermans".
 A **repository** is a Github term for a folder of code.
 Having the repository name written somewhere will ensure you can access your assignment code if you 
 are interrupted from the rest of the setup process.
@@ -133,7 +133,7 @@ Don't be afraid to look - just don't edit any of this code just yet.
 
 .. admonition:: Warning
 
-   If you have not installed the required Python extension, this next section will not work!
+   If you have not installed the :ref:`required Python extension <vsc-python-extension>`, this next section will not work!
 
 After you have done some exploring, open the *Run and Debug* on the sidebar. 
 

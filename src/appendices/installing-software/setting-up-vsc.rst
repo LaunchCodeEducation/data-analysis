@@ -27,6 +27,8 @@ Change the default to Git Bash.
 
 Now every time you open the terminal, it will default to bash!
 
+.. _vsc-python-extension:
+
 Extensions and Themes
 ---------------------
 
@@ -38,13 +40,13 @@ Required Extensions
 
 For this class, you will need to add the following extensions to Visual Studio Code:
 
-#. `Python <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`
+#. `Python <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`__
 
    .. admonition:: Note
 
       In order for this extension to work properly, you need to have followed the steps to :ref:`install Python <python-system-install>` on your machine.
 
-#. `Github Pull Requests and Issues <https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github>`
+#. `Github Pull Requests and Issues <https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github>`__
 
    .. admonition:: Note
 
