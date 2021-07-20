@@ -108,9 +108,25 @@ code editor below, begin with the following:
 
 #. Run the program several times to make sure it responds correctly.
 
-.. raw:: html
+.. replit:: python
+   :slug: DictionarySearch
+   :linenos:
 
-   <iframe src="https://trinket.io/embed/python3/70490b181d" width="100%" height="600" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+   phone_book = {
+      'Abby': '555-5081', 
+      'Mike': '555-5515', 
+      'Daniel': '555-5037', 
+      'Kimberly': '555-5509', 
+      'Jt': '555-5198',
+      'Becky' : '555-5162',
+      'Gordon' : '555-5299',
+      'James' : '555-5837'
+   }
+
+   name = input("Enter a name: ").lower().capitalize()
+
+   # Code the first if/else block here:
+
 
 **Now expand the program:**
 

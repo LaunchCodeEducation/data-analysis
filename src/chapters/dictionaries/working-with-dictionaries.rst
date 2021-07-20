@@ -139,9 +139,20 @@ Try It!
    #. Use ``del`` to remove the ``'Odd choice'`` key/value pair.
    #. Fix the misspelling in the ``'teachher'`` key.
    
-   .. raw:: html
+   .. replit:: python
+      :slug: DictionaryOperations
+      :linenos:
 
-      <iframe src="https://trinket.io/embed/python3/c860584b5b" width="100%" height="350" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      favorite_ic_flavors = {
+         'Mom' : 'vanilla',
+         'Jerry' : 'Cherry Garcia',
+         'Ben' : 'Chocolate Fudge Brownie',
+         'Jenny' : 'Mint Chocolate Chip',
+         'Odd choice' : 'pickled mango',
+         'teachher' : 'Rocky Road'
+      }
+
+      print(favorite_ic_flavors)
 
 Check Your Understanding
 ------------------------
@@ -157,14 +168,9 @@ Check Your Understanding
    What value does ``len(pet_population)`` return? (*Hint*: Try it in the
    code editor above).
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> 3</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> 6</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> 40</li>
-      </ol>
-      <p id="Q1"></p>
+   a. 3
+   b. 6
+   c. 40
 
 .. Answer = a
 
@@ -177,15 +183,10 @@ Check Your Understanding
 
       pet_population['birds'] = 5
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> Throw an error message because <span style="color:#419f6a; font-weight: bold">pet_population</span> does not contain a <span style="color:#419f6a; font-weight: bold">'birds'</span> key.</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> Add the <span style="color:#419f6a; font-weight: bold">'birds' : 5</span> key/value pair to the dictionary.</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> Add five <span style="color:#419f6a; font-weight: bold">'birds'</span> keys to the dictionary.</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> Replace the <span style="color:#419f6a; font-weight: bold">'dogs'</span> key with <span style="color:#419f6a; font-weight: bold">'birds'</span>.</li>
-      </ol>
-      <p id="Q2"></p>
+   a. Throw an error message because ``pet_population`` does not contain a ``'birds'`` key.
+   b. Add the ``'birds' : 5`` key/value pair to the dictionary.
+   c. Add five ``'birds'`` keys to the dictionary.
+   d. Replace the ``'dogs'`` key with ``'birds'``.
 
 .. Answer = b
 
@@ -202,15 +203,10 @@ Check Your Understanding
 
       print(pet_population['mice'])
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> 0</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> 5</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> 10</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, true)"> 15</li>
-      </ol>
-      <p id="Q3"></p>
+   a. 0
+   b. 5
+   c. 10
+   d. 15
 
 .. Answer = d
 
@@ -220,15 +216,10 @@ Check Your Understanding
    of the following shows the correct syntax for setting the value of the
    ``'elephants'`` key to zero?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">pet_population['elephants'] = 0</span></li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">pet_population['elephants'] = ''</span></li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">del pet_population['elephants']</span></li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">pet_population[2] = 0</span></li>
-      </ol>
-      <p id="Q4"></p>
+   a. ``pet_population['elephants'] = 0``
+   b. ``pet_population['elephants'] = ''``
+   c. ``del pet_population['elephants']``
+   d. ``pet_population[2] = 0``
 
 .. Answer = a
 

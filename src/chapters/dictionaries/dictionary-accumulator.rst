@@ -62,9 +62,19 @@ Let's play with a couple of examples to practice this.
       character from ``vowels``, and its value is how often that letter occurs
       in the ``guide`` string.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: DictionaryAccumulator01
+      :linenos:
 
-      <iframe src="https://trinket.io/embed/python3/67ba69e3aa" width="100%" height="300" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      guide = "Far out in the uncharted backwaters of the unfashionable end of the Western Spiral arm of the galaxy lies a small, unregarded yellow sun."
+      games = "When I wake up, the other side of the bed is cold. My finger’s stretch out, seeking Prim’s warmth but finding only the rough canvas cover. She must have had bad dreams and climbed in with mother. Of course she did. This is the day of the reaping."
+      vowels = 'aeiou'
+
+      vowel_counts = {}
+      for vowel in vowels:
+         vowel_counts[vowel] = guide.count(vowel)
+
+      print(vowel_counts)
 
    **Now try:**
 
@@ -89,9 +99,22 @@ The next example combines the elements of two lists into a single dictionary.
    Feel free to add your own words to each list! However, be sure to keep both
    lists the same length.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: DictionaryAccumulator02
+      :linenos:
 
-      <iframe src="https://trinket.io/embed/python3/8ec43b09a7" width="100%" height="350" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      english_words = ['hello', 'your', 'there', 'stop', 'yes']
+      pirate_words = ['ahoy', 'yer', 'yonder', 'avast', 'aye']
+
+      # Create an empty 'translation' dictionary.
+      eng_to_pirate = {}  
+
+      # We need to use index values to pull items from both lists.
+      for index in range(len(english_words)):   
+         eng_to_pirate[english_words[index]] = pirate_words[index]
+
+      print(eng_to_pirate)
+      print(eng_to_pirate['hello'].upper() + "!")
 
    **Note the following:**
 
@@ -181,15 +204,10 @@ Check Your Understanding
 
       print(total)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">0</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">25</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">45</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">60</span></li>
-      </ol>
-      <p id="Q1"></p>
+   a. ``0``
+   b. ``25``
+   c. ``45``
+   d. ``60``
 
 .. Answer = c
 
@@ -216,15 +234,10 @@ Check Your Understanding
    which of the following is the correct syntax for adding the key/value
    pairs to ``ticket_holders``?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">ticket_holders[index] = ticket_numbers[index]</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">ticket_holders[names[index]] = ticket_numbers[index]</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">ticket_holders[key] = ticket_numbers[value]</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">ticket_holders[key] = value</span></li>
-      </ol>
-      <p id="Q2"></p>
+   a. ``ticket_holders[index] = ticket_numbers[index]``
+   b. ``ticket_holders[names[index]] = ticket_numbers[index]``
+   c. ``ticket_holders[key] = ticket_numbers[value]``
+   d. ``ticket_holders[key] = value``
 
 .. Answer = b
 

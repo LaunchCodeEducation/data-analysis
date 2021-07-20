@@ -70,9 +70,22 @@ item.
    #. Run the code again to see how ``len()`` counts the entries for each
       collection.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: DictionaryMethods01
+      :linenos:
 
-      <iframe src="https://trinket.io/embed/python3/365aeba063" width="100%" height="350" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      text = "What does the fox say?"
+         words = ['What', 'does', 'the', 'fox', 'say?']
+         state_capitals = {
+         'MO' : 'Jefferson City',
+         'CA' : 'Sacramento',
+         'TX' : 'Austin',
+         'HI' : 'Honolulu'
+      }
+
+      print(len(text))
+      print(len(words))
+      print(len(state_capitals))
 
 ``max()`` and ``min()`` provide similar results for dictionaries as they do for
 strings and lists. By default, the functions return the largest or smallest KEY
@@ -103,9 +116,20 @@ looking for a largest/smallest key or value.
    #. What happens if you use the ``.items()`` method instead of ``.keys()`` or
       ``.values()``?
 
-   .. raw:: html
+   .. replit:: python
+      :slug: DictionaryMethods02
+      :linenos:
 
-      <iframe src="https://trinket.io/embed/python3/8b94b60af4" width="100%" height="350" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      num_animals = {
+         'lions' : 3,
+         'tigers' : 2,
+         'bears' : 8,
+         'pigeons' : 3000,
+         'snakes' : 37,
+         'Koalas' : 3
+      }
+
+      # Code your four print statements here:
 
 Check Your Understanding
 ------------------------
@@ -125,14 +149,9 @@ As you answer these questions, follow the links given in the
       removed = num_animals.pop('elephants')
       print(removed)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> elephants</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> 23</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> {"cats":12, "dogs":6, "bears":20}</li>
-      </ol>
-      <p id="Q1"></p>
+   a. elephants
+   b. 23
+   c. {"cats":12, "dogs":6, "bears":20}
 
 .. Answer = b
 
@@ -147,15 +166,10 @@ As you answer these questions, follow the links given in the
 
       print(min(num_animals))
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> bears</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> dogs</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> 6</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> 20</li>
-      </ol>
-      <p id="Q2"></p>
+   a. bears
+   b. dogs
+   c. 6
+   d. 20
 
 .. Answer = a
 
@@ -173,15 +187,10 @@ As you answer these questions, follow the links given in the
       
       print(key_list[3])
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> cats</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> dogs</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, true)"> elephants</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> bears</li>
-      </ol>
-      <p id="Q3"></p>
+   a. cats
+   b. dogs
+   c. elephants
+   d. bears
 
 .. Answer = c
 

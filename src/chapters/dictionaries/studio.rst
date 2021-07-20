@@ -1,4 +1,4 @@
-Project: Mad Dictionaries
+Studio: Mad Dictionaries
 =========================
 
 Let's use dictionaries to play Mad-Libs!
@@ -9,13 +9,7 @@ Let's use dictionaries to play Mad-Libs!
    `here <https://en.wikipedia.org/wiki/Mad_Libs#Format>`__, and then play a
    few `short samples <http://www.madlibs.com/>`__ with your friends.
 
-If your teacher added you to a :ref:`Trinket course <trinket-course-assignments>`, login to your account
-to access the starter code and complete the project.
-
-Otherwise, use the links below to code in your own free account.
-
-#. `Trinket code <https://trinket.io/python/7bc12cbed1?runOption=run&showInstructions=true>`__
-#. `repl.it code <https://repl.it/@launchcode/LCHS-Dictionary-Project-Mad-Libs>`__
+Fork the starter code in `Replit <https://repl.it/@launchcode/DictionaryStudio>`__
 
 The code runs, but it does not really do anything. Your job is to build three
 functions that ask the player questions and complete a Mad-Lib.

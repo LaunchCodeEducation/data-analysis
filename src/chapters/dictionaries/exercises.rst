@@ -1,23 +1,10 @@
 Exercises: Dictionaries
 =======================
 
-If your teacher added you to a :ref:`Trinket course <trinket-course-assignments>`, login to your account
-to access the starter code for each exercise.
-
-Otherwise, use the links below to code in your own free account.
-
-.. admonition:: Note
-
-   The code editors embedded in the exercises all include a *Remix* button in
-   the upper right corner which will save the code to your Trinket account. For
-   the matching repl.it code, click these links:
-
-   #. `Part A <https://repl.it/@launchcode/LCHS-Dictionary-Exercises-Part-A>`__
-   #. `Parts B and C <https://repl.it/@launchcode/LCHS-Dictionary-Exercises-Parts-B-and-C>`__
-   #. `Parts D and E <https://repl.it/@launchcode/LCHS-Dictionary-Exercises-Parts-D-and-E>`__
-
 Part A: Search a Dictionary
 ---------------------------
+
+Fork the starter code on `Replit <https://replit.com/@launchcode/DictionaryExercises01#main.py>`__.
 
 The ``flavors`` dictionary contains entries that pair different ice cream
 flavors with their cost per scoop. Your job is to do the following:
@@ -40,12 +27,10 @@ flavors with their cost per scoop. Your job is to do the following:
    run to make sure your function correctly identifies the most expensive ice
    cream flavor.
 
-.. raw:: html
-
-   <iframe src="https://trinket.io/embed/python3/e377c26043" width="100%" height="600" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
 Part B: Keys from a Collection
 ------------------------------
+
+Fork the starter code on `Replit <https://replit.com/@launchcode/DictionaryExercises02#main.py>`__.
 
 Use the accumulator pattern to add new key/value pairs to an empty dictionary.
 
@@ -55,14 +40,10 @@ Use the accumulator pattern to add new key/value pairs to an empty dictionary.
    in the dictionary.
 #. For the value of each key, assign a random integer from 100-500.
 
-   .. admonition:: Tip
+   .. admonition:: Note
 
       We are not worried about giving two people the same ticket number in this
       exercise. However, for a real event we would want to prevent this.
-
-      Check out the :ref:`Unique Dictionary Values <unique-dict-values>`
-      section in the ``Random Module`` appendix if you would like to avoid
-      repeats in the values.
 
 #. Return the new dictionary.
 #. In ``main()``, call the ``assign_tickets`` function and assign the result to
@@ -74,10 +55,6 @@ should look something like:
 ::
 
    {'Caleb': 192, 'Naomi': 490, 'Owen': 465, 'Ava': 248, 'Aaron': 421, 'Lydia': 306}
-
-.. raw:: html
-
-   <iframe src="https://trinket.io/embed/python/494766d553" width="100%" height="500" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Part C: Modify Values
 ---------------------
@@ -110,6 +87,8 @@ calling the ``fix_tickets`` function.
 Part D: Counting Characters
 ---------------------------
 
+Fork the starter code on `Replit <https://replit.com/@launchcode/DictionaryExercises03#main.py>`__.
+
 Write a function called ``character_count`` that counts how many times each
 character appears in a string.
 
@@ -138,10 +117,6 @@ Be sure to print the returned dictionary to check your code.
 
    #. ``"Python ROCKS!"`` returns ``{'p': 1, 'y': 1, 't': 1, 'h': 1, 'o': 2, 'n': 1, ' ': 1, 'r': 1, 'c': 1, 'k': 1, 's': 1, '!': 1}``.
    #. ``"Balloons, bookkeepers, and bubbles."`` returns ``{'b': 5, 'a': 2, 'l': 3, 'o': 4, 'n': 2, 's': 3, ',': 2, ' ': 3, 'k': 2, 'e': 4, 'p': 1, 'r': 1, 'd': 1, 'u': 1, '.': 1}``.
-
-.. raw:: html
-
-   <iframe src="https://trinket.io/embed/python/86e403e1a1" width="100%" height="550" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 Part E: Use a List to Sort Key/Value Output
 -------------------------------------------

@@ -11,6 +11,7 @@ Chapters
    chapters/lists/index
    chapters/errors-and-debugging/index
    chapters/functions/index
+   chapters/dictionaries/index
 
 .. toctree::
 
@@ -42,4 +43,5 @@ Appendices
 
    appendices/string-methods/index
    appendices/list-methods/index
+   appendices/dictionary-methods/index
    appendices/exercise-solutions/index

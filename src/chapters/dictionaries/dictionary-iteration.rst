@@ -55,10 +55,39 @@ loop, the variable ``value`` gets assigned a new value each iteration.
 
    Run the following program to see how iterating through a dictionary works.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: DictionaryIteration01
+      :linenos:
 
-      <iframe src="https://trinket.io/embed/python3/2062905b4b" width="100%" height="550" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-   
+      comics = {
+         'Gary Larson' : 'The Far Side',
+         'Terri Libenson' : 'Pajama Diaries',
+         'Hilary B. Price' : 'Rhymes with Orange',
+         'Jim Toomey' : "Sherman's Lagoon"
+      }
+
+      # Iterate by keys.
+      print("Here are the keys from the comics dictionary:")
+      for key in comics.keys():
+         print(key)
+
+      # Iterate by values.
+      print("\nHere are the values from the comics dictionary:")
+      for value in comics.values():
+         print(value)
+
+      # Access both keys and values.
+      print("\nHere are the key/value pairs from the comics dictionary:")
+      for key in comics.keys():
+         print(f"Key: {key}, Value: {comics[key]}")
+
+      # Change the dictionary values.
+      print("\nUse a loop to change all of the values:")
+      for key in comics.keys():
+         comics[key] = comics[key].upper()
+
+      print(comics)
+
    Try adding or removing key/value pairs to change the output.
 
 Note that on lines 21 and 26, we access each value in the dictionary by using
@@ -73,9 +102,20 @@ value each time the loop repeats.
 
    Run the following program to see how Python deals with a missing method.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: DictionaryIteration02
+      :linenos:
 
-      <iframe src="https://trinket.io/embed/python3/1f17f7d307" width="100%" height="300" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      comics = {
+         'Gary Larson' : 'The Far Side',
+         'Terri Libenson' : 'Pajama Diaries',
+         'Hilary B. Price' : 'Rhymes with Orange',
+         'Jim Toomey' : "Sherman's Lagoon"
+      }
+
+      # What gets printed if we don't attach .keys() or .values() to comics?
+      for data in comics:
+         print(data)
 
 Aha! By default, Python iterates through a dictionary by using the key names.
 
@@ -156,9 +196,25 @@ dictionary. Instead, we will use a list, which can be sorted.
       ``grocery_bill.keys()``. Run the program again so see the alphabetical
       result.
    
-   .. raw:: html
+   .. replit:: python
+      :slug: DictionaryIteration03
+      :linenos:
 
-      <iframe src="https://trinket.io/embed/python/b2243c8d8c?runOption=run" width="100%" height="450" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      #!/bin/python3
+      grocery_bill = {
+         'bananas' : 1.77,
+         'pears' : 6.97,
+         'broccoli' : 1.98,
+         'cheese' : 5.99,
+         'soy milk' : 6.99,
+         'orange juice' : 5.49,
+         'eggs' : 1.98,
+         'carrots' : 2.99
+      }
+
+      for key in grocery_bill.keys():
+         print("{0}: {1}".format(key, grocery_bill[key]))
+
 
    Note that we do not need to change the final ``print`` statement. It still
    uses the loop variable ``key``, but in this case it takes elements from the
@@ -196,15 +252,10 @@ Check Your Understanding
 
    What is the value of ``comics[key]`` the *third* time through the loop?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">'Wiley Miller'</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">'Bill Watterson'</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">'Non Sequitur'</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">'Calvin and Hobbs'</span></li>
-      </ol>
-      <p id="Q1"></p>
+   a. ``'Wiley Miller'``
+   b. ``'Bill Watterson'``
+   c. ``'Non Sequitur'``
+   d. ``'Calvin and Hobbs'``
 
 .. Answer = c
 

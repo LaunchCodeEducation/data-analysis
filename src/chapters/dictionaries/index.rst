@@ -1,7 +1,7 @@
 .. _dictionaries-index:
 
-Python Dictionaries
-===================
+Python Dictionaries and Tuples
+==============================
 
 .. toctree::
    :maxdepth: 3
@@ -12,6 +12,5 @@ Python Dictionaries
    dictionary-iteration
    dictionary-accumulator
    search-a-dictionary
-   pirate-translator
    exercises
    studio

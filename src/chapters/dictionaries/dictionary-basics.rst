@@ -49,9 +49,7 @@ updates, her number might not be at position ``5`` anymore.
 
 It would be nice if we could access a phone number by the *name of who it
 belongs to* instead of by index. Maybe something like ``phone_numbers['Mom']``
-instead of ``phone_numbers[5]``. 
-
-   Oh, wait! That's what dictionary keys do!
+instead of ``phone_numbers[5]``. That is why we would use a dictionary for our address book!
 
 *Lists* order data from left to right, which is great. However, the index
 values 0, 1, 2... do NOT tell us what the data actually represents. Index ``0``
@@ -165,9 +163,22 @@ instead.
    #. Add at least two key/value pairs to ``animal_info``, then add brackets
       in line 12 to print each of the new values. (Use line 10 as an example).
    
-   .. raw:: html
+   .. replit:: py
+      :slug: DictionaryBasics
+      :linenos: 
 
-      <iframe src="https://trinket.io/embed/python3/5379d382bc?runOption=run" width="100%" height="350" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      student = {
+         'name' : 'Maria',
+         'id_number' : 1234,
+         'scores' : [90, 95, 88]
+      }
+
+      animal_info = {}
+
+      print(student)
+      print(student['name'])
+
+      print(animal_info)
 
    Next:
 
@@ -215,13 +226,8 @@ Check Your Understanding
 
    A dictionary is an unordered collection of key/value pairs.
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> True</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> False</li>
-      </ol>
-      <p id="Q1"></p>
+   a. True
+   b. False
 
 .. Answer = a
 
@@ -229,13 +235,8 @@ Check Your Understanding
 
    In a dictionary, two *keys* may have the same name.
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> True</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> False</li>
-      </ol>
-      <p id="Q2"></p>
+   a. True
+   b. False
 
 .. Answer = b
 
@@ -250,15 +251,10 @@ Check Your Understanding
 
       print(pet_population["dogs"])
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> 12</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, true)"> 6</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> 23</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> dogs</li>
-      </ol>
-      <p id="Q3"></p>
+   a. 12
+   b. 6
+   c. 23
+   d. dogs
 
 .. Answer = b
 
@@ -276,15 +272,10 @@ Check Your Understanding
 
       print(pet_population)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> {'cats' : 12, 'cats' : 8}</li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> {'cats' : 8}</li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, true)"> {'cats' : 12}</li>
-         <li><input type="radio" name="Q4" autocomplete="off" onclick="evaluateMC(name, false)"> {'cats' : 20}</li>
-      </ol>
-      <p id="Q4"></p>
+   a. {'cats' : 12, 'cats' : 8}
+   b. {'cats' : 8}
+   c. {'cats' : 12}
+   d. {'cats' : 20}
 
 .. Answer = c
 
