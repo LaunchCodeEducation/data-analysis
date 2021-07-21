@@ -47,7 +47,9 @@ projects.
 Now that we coded ``make_sandwich`` ONCE, we can reuse it whenever we need to
 flip a string.
 
-We will explore this idea in the :ref:`Modules chapter <modules-index>`.
+.. TODO: Add reference back to Modules chapter
+
+We will explore this idea in the Modules chapter.
 
 Functions Save Millions of Lives Every Day
 ------------------------------------------

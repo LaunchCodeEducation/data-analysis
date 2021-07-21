@@ -1,5 +1,7 @@
 .. _exercises-functions:
 
+.. TODO: Check exercise solutions
+
 Exercises: Functions
 ====================
 
@@ -46,8 +48,6 @@ A. Write a function ``make_line(size)`` that returns a line with exactly ``size`
    ::
 
       #####
-
-   :ref:`Check your solution <functions-exercise-solutionsA>`. 
 
 #. Write a function called ``make_square(size)`` that returns a ``size`` by
    ``size`` string of hashes. The function should NOT print each row of the
@@ -97,9 +97,6 @@ A. Write a function ``make_line(size)`` that returns a line with exactly ``size`
       #####
       #####
 
-   :ref:`Check your solution <functions-exercise-solutionsC>`. 
-
-
 #. Now, go back and rewrite ``make_square`` to use ``make_rectangle``.
 
 Triangles
@@ -123,9 +120,6 @@ E. Write a function ``make_downward_stairs(height)`` that prints the staircase
       ####
       #####
 
-   :ref:`Check your solution <functions-exercise-solutionsE>`.
-
-
 F. Write a function ``make_space_line(numSpaces, numChars)`` that returns a line
    with exactly the specified number of spaces, followed by the
    specified number of hashes, followed again by ``num_spaces`` more spaces.
@@ -140,7 +134,9 @@ F. Write a function ``make_space_line(numSpaces, numChars)`` that returns a line
 
       ___#####___
 
-   .. note:: We have inserted underscores to represent spaces, so they are visible in the output. Don't do this in your code.
+   .. admonition:: Note
+   
+      We have inserted underscores to represent spaces, so they are visible in the output. Don't do this in your code.
 
 G. Write a function ``make_isosceles_triangle(height)`` that returns a triangle
    of the given height.
@@ -159,9 +155,9 @@ G. Write a function ``make_isosceles_triangle(height)`` that returns a triangle
        #######
       #########
 
-   .. tip:: Consider the top line of the triangle to be level 0, the next to be line 1, and so on. Then line ``i`` is a space-line with ``height - i - 1`` spaces and ``2 * i + 1`` hashes.
-
-   :ref:`Check your solution <functions-exercise-solutionsG>`.
+   .. admonition:: Tip
+   
+      Consider the top line of the triangle to be level 0, the next to be line 1, and so on. Then line ``i`` is a space-line with ``height - i - 1`` spaces and ``2 * i + 1`` hashes.
 
 Diamonds
 ---------
@@ -188,10 +184,12 @@ H. Write a function ``make_diamond(height)`` that returns a diamond where the
          ###
           #
 
-   .. tip::
+.. TODO: Check functions chapter for reverse function.
+
+   .. admonition:: Tip
 
       Consider what happens if you create a triangle and reverse it using
-      :ref:`our reverse function <reverse_func>`.
+      our reverse function.
 
 Bonus Mission
 --------------

@@ -85,6 +85,8 @@ Run the following code to find out.
 
    What is the data type of the values ``"17"`` and ``"3.2"``?
 
+.. _quote-reminder:
+
 Strings in Python can be enclosed in either single quotes (``'``) or double
 quotes (``"``).
 
