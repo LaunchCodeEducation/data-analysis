@@ -95,10 +95,10 @@ One of the key features of variables that we have discussed so far is their
 ability to change value. We can create a variable with one value, and then
 reassign it to another value.  
 
-One problem with this approach is that an unwitting programmer might change the
+A possible problem with this approach is that an unwitting programmer might change the
 value of that same variable later in the program, causing unexpected outcomes.
 
-One way to avoid this is by creating **constant** variables.
+An easy way to avoid this is by creating **constant** variables.
 Constant variables are initialized once and not able to be changed later throughout the program.
 No matter how hard you may try.
 
