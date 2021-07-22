@@ -131,30 +131,9 @@ Once you have loaded the assignment, have a look around the various files and ge
 code does.
 Don't be afraid to look - just don't edit any of this code just yet.
 
-.. admonition:: Warning
-
-   If you have not installed the :ref:`required Python extension <vsc-python-extension>`, this next section will not work!
-
 After you have done some exploring, open the *Run and Debug* on the sidebar. 
-
-.. figure:: figures/vsc-run-and-debug.png
-   :alt: Run and Debug menu in Visual Studio Code
-
-.. admonition:: Tip
-
-   This sidebar is called the activity panel. If yours doesn"t appear automatically, 
-   open it from *View -> Appearance -> Show Activity Bar*.
-
-*Run and Debug* will be where you go when you want to run your work and see how it is shaping up.
-You may want to make sure you have ``index.py`` open so when you click on on the *Run and Debug* option, you can easily search for *Python File Debug currently active file*.
-
-.. figure:: figures/vsc-run-and-debug-select.png
-   :alt: Top bar with option to run current file selected.
-
-When you run the file, a window pops up at the bottom of the screen with the output.
-
-.. figure:: figures/vsc-run-and-debug-output.png
-   :alt: Output from running the code in index.py
+Run the code in ``index.py``.
+If you need a refresher on how to do this, check out the section on :ref:`Testing Your Installation <running-vsc>` to go through running your code in Visual Studio Code step-by-step.
 
 To begin with, the program prints just ``"Hello"``. Remember, your task is to to modify the output of this program so that,
 when run, ``"Hello world!"`` is printed. 
