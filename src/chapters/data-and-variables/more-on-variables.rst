@@ -5,78 +5,6 @@ The previous section covered creating, evaluating, and reassigning variables.
 This section will cover some additional, more nuanced topics related to
 variables.
 
-Creating Constants
-------------------
-
-One of the key features of variables that we have discussed so far is their
-ability to change value. We can create a variable with one value, and then
-reassign it to another value.
-
-.. sourcecode:: py
-   :linenos:
-
-   programmingLanguage = "JavaScript"
-   programmingLanguage = "Python"
-
-In some situations, we want to create variables that cannot change value. Many
-programming languages, including Python, provide mechanisms for programmers
-to make variables that are constant.
-
-For example, suppose that we are writing a to-do list web application, named
-"Get It Done!" The title of the application might appear in multiple places,
-such as the title bar and the main page header.
-
-We might store the name of our application in a variable so that it can be
-referenced anywhere we want to display the application name.
-
-.. sourcecode:: py
-
-   appName = "Get It Done!"
-
-This allows us to simply refer to the ``appName`` variable any time we want to
-use it throughout our application. If we change the name of the application, we
-only have to change one line of code, where the ``appName`` variable is
-initialized.
-
-One problem with this approach is that an unwitting programmer might change the
-value of ``appName`` later in the code, leading to inconsistent references to
-the application name. In other words, the title bar and main page header could
-reference different names.
-
-.. index:: ! constant
-
-.. index::
-   pair: variable; constant
-
-Capitalizing the entire variable name ensures that the value of the variable cannot be changed later on.
-
-.. sourcecode:: py
-
-   APP_NAME = "Get It Done!"
-
-Such an unchangeable variable is known as a **constant**, since its value is
-just that.
-
-How does Python prevent a programmer from changing the value of a constant?
-Let's find out. Try running the following code in an editor. What happens?
-
-.. admonition:: Example
-
-   .. sourcecode:: py
-      :linenos:
-
-      APP_NAME = "Get It Done"
-      APP_NAME = "Best TODO application Ever!"
-
-   **Console Output**
-
-   ::
-
-      TypeError: Assignment to constant variable.
-
-As we've seen with other examples---such as trying to declare a variable twice,
-using incorrect syntax, or failing to enclose strings in quotes--- Python
-prevents undesired code from executing by throwing an error.
 
 Naming Variables
 ----------------
@@ -159,6 +87,25 @@ With improved variable names, it now becomes clear that the program is calculati
    
    When considering program readability, think about whether or not your code will make sense to another programmer. It is not enough for code to be readable by only the programmer that originally wrote it.
 
+
+Creating Constants
+------------------
+
+One of the key features of variables that we have discussed so far is their
+ability to change value. We can create a variable with one value, and then
+reassign it to another value.  
+
+One problem with this approach is that an unwitting programmer might change the
+value of that same variable later in the program, causing unexpected outcomes.
+
+One way to avoid this is by creating **constant** variables.
+Constant variables are initialized once and not able to be changed later throughout the program.
+No matter how hard you may try.
+
+We will explore constant variables later in this course.  
+For now, we suggest being aware of your variable names so you don't accidentally reassign them.
+
+
 Keywords
 --------
 
@@ -180,4 +127,5 @@ Attempting to use a keyword for anything other than it's intended use will resul
    Most code editors will highlight keywords in a different color than variables or other parts of your code. This serves as a visual cue that a given word is a keyword, and can help prevent mistakes.
 
 We will not provide the full list of keywords at this time, but rather point them out as we learn about each of them. If you are curious, the `full list is available at W3Schools <https://www.w3schools.com/python/python_ref_keywords.asp>`_.
+
 
