@@ -61,9 +61,17 @@ designing and coding the class easier.
       names for any properties you think belong with a *cat* object. Two
       examples have already been given.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: CreatingClasses01
+      :linenos:
 
-      <iframe src="https://trinket.io/embed/python/15b49a8e24?toggleCode=true&runOption=run" width="100%" height="350" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      # Make a list of property names that we can use to describe a cat:
+      '''
+      name
+      age
+
+
+      '''
 
    Add at least two more property names to the editor, but feel free to go
    crazy!
@@ -144,9 +152,15 @@ help set up that discussion.
 
    Use the instructions and editor below to complete the ``__init__`` method:
 
-   .. raw:: html
+   .. replit:: python
+      :slug: CreatingClasses02
+      :linenos:
 
-      <iframe src="https://trinket.io/embed/python/c0190790e6?runOption=run" width="100%" height="350" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      #!/bin/python3
+      class Cat:
+         def __init__(self):
+            # Assign values for the object properties:
+            self.name = 'Coach'
 
    #. To assign a value to a property, the syntax is:
 
@@ -271,15 +285,10 @@ The questions below refer to a class called ``Car``.
    If we call the class with ``my_car = Car('Chevy', 'Astro', 1985, 'gray', 20)``,
    what is output by ``print(my_car.model)``?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> my_car</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> Chevy</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> Astro</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> 1985</li>
-      </ol>
-      <p id="Q1"></p>
+   a. my_car
+   b. Chevy
+   c. Astro
+   d. 1985
 
 .. Answer = c
 
@@ -289,15 +298,10 @@ The questions below refer to a class called ``Car``.
    property values, what is the result of the expressions
    ``my_car == other_car`` and ``my_car.year == other_car.year``?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> True/True</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> False/True</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> True/False</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> False/False</li>
-      </ol>
-      <p id="Q2"></p>
+   a. True/True
+   b. False/True
+   c. True/False
+   d. False/False
 
 .. Answer = b
 
@@ -306,15 +310,10 @@ The questions below refer to a class called ``Car``.
    What happens if we call the class with ``my_car = Car('Tesla', 'Model S',
    2020, 'blue')``?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> The <span style="color:#419f6a; font-weight: bold">mpg</span> property is assigned a value of 0.</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> The <span style="color:#419f6a; font-weight: bold">mpg</span> property is assigned the empty string.</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, false)"> The <span style="color:#419f6a; font-weight: bold">mpg</span> property is not added to the <span style="color:#419f6a; font-weight: bold">my_car</span> object.</li>
-         <li><input type="radio" name="Q3" autocomplete="off" onclick="evaluateMC(name, true)"> The program crashes and displays an error message.</li>
-      </ol>
-      <p id="Q3"></p>
+   a. The ``mpg`` property is assigned a value of 0.
+   b. The ``mpg`` property is assigned the empty string.
+   c. The ``mpg`` property is not added to the ``my_car`` object.
+   d. The program crashes and displays an error message.
 
 .. Answer = d
 

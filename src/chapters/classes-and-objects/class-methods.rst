@@ -23,10 +23,18 @@ ideas about what a ``Cat`` object should *do*.
    section, you should see your list of properties in the editor below. If not,
    don't worry! You can still record your method ideas.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: ClassMethods01
+      :linenos:
 
-      <iframe src="https://trinket.io/embed/python/15b49a8e24?toggleCode=true&runOption=run" width="100%" height="350" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-   
+      # Make a list of property names that we can use to describe a cot:
+      '''
+      name
+      age
+
+
+      '''
+
    Take a moment to think of some cat behaviors that we want our objects to
    have.
    
@@ -97,9 +105,17 @@ take the ``age`` property of a ``Cat`` object and make it larger.
    #. No return statement is needed for this method. It takes the current value
       of the ``age`` property and increases it by 1.
 
-   .. raw:: html
+   .. replit:: python
+      :slug:
+      :linenos:
 
-      <iframe src="https://trinket.io/embed/python3/6431d81de9" width="100%" height="300" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      class Cat:
+         def __init__(self, name, age):
+            self.name = name
+            self.age = age
+
+         def increase_age(self):
+            self.age += 1
 
    Now do the following:
 
@@ -137,9 +153,33 @@ current mood.
 
    Examine the code below, then run the program.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: ClassMethods03
+      :linenos:
 
-      <iframe src="https://trinket.io/embed/python3/becfc4eae4" width="100%" height="500" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      class Cat:
+         def __init__(self, name, age):
+            self.name = name
+            self.age = age
+         
+         def increase_age(self, increase = 1):
+            self.age += increase
+         
+         def make_noise(self, mood):
+            if mood.lower() == 'hungry':
+               noise = "Meow!"
+            elif mood.lower() == 'angry':
+               noise = "HISS!"
+            else:
+               noise = "Purr!"
+            
+            return noise
+
+      cat_1 = Cat('Garfield', 42)
+      cat_2 = Cat('Socks', 5)
+
+      cat_1.make_noise('hungry')
+      cat_2.make_noise('happy')
 
    Notice that no output appears in the console when we run the program. This
    is because the code contains no ``print`` statements! The ``make_noise()``
@@ -249,15 +289,10 @@ Check Your Understanding
       fern.grow(True)
       print(fern.height)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> 5</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> 6</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> Your plant is healthy.</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> You're killing your plant!</li>
-      </ol>
-      <p id="Q1"></p>
+   a. 5
+   b. 6
+   c. Your plant is healthy.
+   d. You're killing your plant!
 
 .. Answer = a
 
@@ -274,14 +309,9 @@ Check Your Understanding
       sticky.grow(True)
       sticky.grow(True)
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> 108</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> 106</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> 105</li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> 104</li>
-      </ol>
-      <p id="Q2"></p>
+   a. 108
+   b. 106
+   c. 105
+   d. 104
 
 .. Answer = c

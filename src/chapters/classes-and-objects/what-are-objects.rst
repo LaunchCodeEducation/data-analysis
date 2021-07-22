@@ -72,21 +72,6 @@ string as data and return a new string. Examples include ``.upper()`` and
 Since strings contain both properties and methods (data and behaviors), they
 are objects.
 
-Another example of a Python object is a turtle.
-
-.. sourcecode:: Python
-
-   bob = turtle.Turtle()
-
-Properties for the ``bob`` object include its color, speed, pen size, shape,
-and location on the screen. Each of these bits of data tells us something about
-the object. Methods include actions like ``.forward()`` and ``.circle()``.
-
-Anything related to the appearance or behavior of a turtle on the screen is
-included with every turtle object. We do not need to define a ``left()``
-function to rotate a turtle. The code for that behavior is part of the object
-itself.
-
 Objects Organize Related Code
 -----------------------------
 
@@ -116,9 +101,8 @@ turtle objects.
    string object.
 
 Objects help us by keeping related code in one place. For example, the method
-``.sort()`` makes sense for a list, but not for a turtle. Thus, every ``list``
-object contains the code to rearrange the elements, but ``turtle`` objects do
-not.
+``.sort()`` makes sense for a list, but may not make sense for other objects. Thus, every ``list``
+object contains the code to rearrange the elements, but other objects do not.
 
 If we define a new ``elephant`` type of object, then that kind of object only
 contains code to deal with elephant data and elephant behaviors. Any code not
@@ -133,15 +117,11 @@ Check Your Understanding
    following are *properties* for this kind of object, and which ones are
    *methods*? (Answer in your head before clicking each option).
 
-   .. raw:: html
-
-      <ol type="a">
-         <li onclick="revealBinaryAnswer('A', true)">size <span id="A"></span></li>
-         <li onclick="revealBinaryAnswer('B', false)">chew_flowers <span id="B"></span></li>
-         <li onclick="revealBinaryAnswer('C', false)">invade_garden <span id="C"></span></li>
-         <li onclick="revealBinaryAnswer('D', true)">age <span id="D"></span></li>
-         <li onclick="revealBinaryAnswer('E', false)">run <span id="E"></span></li>
-         <li onclick="revealBinaryAnswer('F', true)">color <span id="F"></span></li>
-      </ol>
+   a. size
+   b. chew_flowers
+   c. invade_garden
+   d. age
+   e. run
+   f. color
 
 .. Properties = a, d, f; Methods = b, c, e.

@@ -5,17 +5,22 @@ Let's return to the ``type()`` function for a moment. It returns the data type
 for the argument inside the parentheses, and we can print this information to
 the console.
 
-.. admonition:: Try It!
+The code below prints the data types for several different values.
 
-   Run the program and examine the output. The code prints the data types for
-   several different values.
+.. sourcecode:: python
+   :linenos:
 
-   .. raw:: html
+   #!/bin/python3
 
-      <iframe src="https://trinket.io/embed/python/32a1f77e44" width="100%" height="300" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+   print(type(12))
+   print(type("Hello, World!"))
+   print(type(['dog', 'cat', 'fish', 3.14]))
 
-   Try adding new ``print`` statements to include at least two more data types
-   in the console.
+::
+
+   <class 'int'>
+   <class 'str'>
+   <class 'list'>
 
 Note how each data type gets reported after the word ``class``.
 
@@ -36,7 +41,7 @@ the ``str`` class, but it CAN use all of the available ``list`` methods.
 
 Python defines many classes for us and makes them available for our use. In
 each of the previous chapters, we've studied some of the ready-made
-classes, like ``int, str, float, bool, list, dict, Turtle``.
+classes, like ``int``, ``str``, ``float``, ``bool``, ``list``, and ``dict``.
 
 Objects Have a Data Type
 ------------------------

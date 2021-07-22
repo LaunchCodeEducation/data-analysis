@@ -56,8 +56,10 @@ statements we need to check. We can focus on the object that deals with that
 task instead of having to search through all of our code to find the faulty
 ``input`` statements and/or function calls.
 
+.. TODO: Check modules chapter
+
 Using objects sounds similar to what we did in the
-:ref:`Modules chapter <modules-index>`. However, unlike the external module
+Modules chapter. However, unlike the external module
 files, objects are created as they are needed and *only when the program runs*.
 
 Objects Copy Real World Thinking
@@ -170,27 +172,8 @@ Check Your Understanding
 
    Which of the following refers to the *properties* of an object?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> behaviors of the object</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> actions the object can take</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> data describing the object</li>
-      </ol>
-      <p id="Q1"></p>
-
-.. raw:: html
-
-   <script type="text/JavaScript">
-      function evaluateMC(id, correct) {
-         if (correct) {
-            document.getElementById(id).innerHTML = 'Yep!';
-            document.getElementById(id).style.color = 'blue';
-         } else {
-            document.getElementById(id).innerHTML = "Nope! This refers to the object's methods.";
-            document.getElementById(id).style.color = 'red';
-         }
-      }
-   </script>   
+   a. behaviors of the object
+   b. actions the object can take
+   c. data describing the object
   
 .. Answer = c

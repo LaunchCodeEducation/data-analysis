@@ -1,4 +1,4 @@
-Project: Classes and Objects
+Studio: Classes and Objects
 ============================
 
 Now its time to design a new class of robots. These objects will all be able to
@@ -9,15 +9,10 @@ Let's create a class to handle new cleaning crew candidates!
 Before You Start
 ----------------
 
-If your teacher added you to a :ref:`Trinket course <trinket-course-assignments>`, login to your
-account to access the starter code for this project.
+.. admonition:: Tip
 
-Otherwise, use the links below to copy the starter code.
-
-#. `Trinket code <https://trinket.io/python/7b69aa933c>`__ (*Remix* before
-   getting started).
-#. `Repl.it code <https://repl.it/@launchcode/LCHS-Classes-Project-starter-code>`__
-   (*Fork* before getting started).
+   We always encourage you to use local development at every opportunity. However, sometimes computers and software fail and we would rather you spend your studio time coding!
+   If your computer is not cooperating with cloning your repo from Github, you can fork the starter code for the studio on `Replit <https://replit.com/@launchcode/ClassesStudio#main.py>`__.
 
 Part 1: Add Class Properties and ``__str__`` Method
 ---------------------------------------------------
@@ -75,11 +70,13 @@ if the candidate should be added to the cleaning team.
 Calculating the Test Average
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. TODO: Check reference to round function
+
 #. Define an ``average()`` method. It only needs the ``self`` parameter.
 #. To find the average, add up the entries from ``self.scores``, then divide
    the sum by the number of scores in the list.
 #. To make the average easier to look at,
-   :ref:`round it to 1 decimal place <round-function>`, then return the result
+   round it to 1 decimal place, then return the result
    from the method.
 
 Check your code by evaluating and printing Shiny's average test score

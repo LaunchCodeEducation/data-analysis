@@ -1,10 +1,10 @@
+.. TODO: Review this page
+
 Using Objects in Functions
 ==========================
 
 Just like any other data type, we can send an object to a function as an input
-value. We did this in the :ref:`Function Exercises <functions-turtle-exercises>`
-when we passed a turtle object to the ``draw_square`` and ``draw_sprite``
-functions.
+value. 
 
 .. admonition:: Example
 
@@ -82,8 +82,10 @@ used ``print(dog_1.name)`` after calling ``make_puppy``, we would see
 ``parent_1`` is NOT a new ``Dog`` object. Instead, it is a new label that
 points to the same set of data as ``dog_1``.
 
+.. TODO: Check reference
+
 We saw similar behavior with both :ref:`lists <cloning-lists>` and
-:ref:`dictionaries <dictionary-copy-example>`.
+dictionaries.
 
 Check Your Understanding
 ------------------------

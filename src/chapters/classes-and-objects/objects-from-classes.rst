@@ -27,9 +27,21 @@ the *values* for the properties may differ between objects.
    Let's use a ``Student`` class to create two objects. Run the following
    program an examine the output.
 
-   .. raw:: Html
+   .. replit:: python
+      :slug: UsingClasses
+      :linenos:
 
-      <iframe src="https://trinket.io/embed/python3/56e2b29d76" width="100%" height="300" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      class Student:
+         def __init__(self, name, grade, id_number):
+            self.name = name
+            self.grade_level = grade
+            self.id = id_number
+   
+      dan = Student('Dan', 10, 5234)
+      jessi = Student('Jessi', 12, 3333)
+      
+      print(type(dan), type(jessi))
+      print(dan.id, jessi.id)
 
 In lines 7 and 8, we call the ``Student`` class twice and pass in different
 sets of arguments, creating the objects ``dan`` and ``jessi``.
@@ -55,25 +67,6 @@ properties and values as described in the
 
    Note that line 15 adds the ``act_score`` property to the ``jessi`` object,
    but this change does NOT affect any other objects created with ``Student``.
-
-.. admonition:: Note
-
-   Did you ever wonder why we needed to type "turtle" 3 times to create a new
-   turtle object? Now that we know how to call a class, we can see why this is
-   necessary!
-
-   .. sourcecode:: python
-      :linenos:
-
-      import turtle
-
-      bob = turtle.Turtle()
-
-   #. Line 1 imports the ``turtle`` module, which contains all the code related
-      to these objects AND the class for making them.
-   #. Line 3 tells the program, *Look in the* ``turtle`` *module and call the*
-      ``Turtle()`` *class*. The class code executes, creates a new ``turtle``
-      object, and assigns it to the variable ``bob``.
 
 Default Property Values
 ^^^^^^^^^^^^^^^^^^^^^^^

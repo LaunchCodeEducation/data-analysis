@@ -16,9 +16,23 @@ and methods.
    Run the program to see how the ``print`` function displays the ``dog_1`` and
    ``dog_2`` objects.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: PrintingObjects01
+      :linenos:
 
-      <iframe height="700px" width="100%" src="https://repl.it/@launchcode/LCHS-Printing-Objects?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      class Dog:
+         def __init__(self, name, age, cute = True):
+            self.name = name
+            self.age = age
+            self.is_cute = cute
+         
+         def speak(self, repeat = 1):
+            return "Bark! "*repeat
+
+      dog_1 = Dog('Spot', 6)
+      dog_2 = Dog('Fleas', 2)
+      print(dog_1)
+      print(dog_2)
 
 Instead of giving us the information stored in each object, we see an output
 similar to ``<__main__.Dog object at 0x7fa1a167c4c0>``. Despite the weird look,
@@ -81,10 +95,26 @@ that contains the properties as key/value paris.
 
    Run the program below and examine the output.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: PrintingObjects02
+      :linenos:
 
-      <iframe src="https://trinket.io/embed/python3/5fc55baeb8" width="100%" height="400" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      class Dog:
+         def __init__(self, name, age, cute = True):
+            self.name = name
+            self.age = age
+            self.is_cute = cute
+         
+         def speak(self, repeat = 1):
+            return "Bark! "*repeat
 
+         def __str__(self):
+            output = "Name of dog: {0}, Age of dog: {1} years"
+            return output.format(self.name, self.age)
+
+      dog_1 = Dog('Spot', 6)
+      dog_data = vars(dog_1)
+      print(dog_data)
 
    #. Line 14 creates a new ``Dog`` object and assigns it to ``dog_1``.
    #. ``vars(dog_1)`` returns a dictionary and assigns it to ``dog_data``. Each
@@ -92,14 +122,18 @@ that contains the properties as key/value paris.
       ``Dog`` class.
    #. Line 16 prints the ``dog_data`` dictionary.
    
+.. TODO: Check reference
+
    Note: We could easily iterate through the ``dog_data`` dictionary by keys,
-   values, or both as we saw :ref:`here <dictionary-iteration>`.
+   values, or both as we saw here <dictionary-iteration>.
 
 Property and Method Names
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. TODO: Check reference
+
 Back in the Modules chapter, we learned how to use the
-:ref:`dir() function <dir-function>` to collect and display the names for all
+dir() function to collect and display the names for all
 of the items in a module. We can use this function again for an object.
 
 .. admonition:: Try It!

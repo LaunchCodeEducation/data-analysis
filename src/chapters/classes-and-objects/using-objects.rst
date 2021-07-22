@@ -34,9 +34,29 @@ parentheses ``()``.
    and ``age``. Follow the instructions below the editor to practice using dot
    notation with an object.
 
-   .. raw:: html
+   .. replit:: python
+      :slug: ObjectsIntro01
+      :linenos:
 
-      <iframe src="https://trinket.io/embed/python/0b67de0e64" width="100%" height="450" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      #!/bin/python3
+      from make_pet import Dog
+
+      # Create a new object called dog. 
+      # We will study how this works later in the chapter.
+      dog = Dog()
+
+      print(dog.name) # Return and print the value for name.
+
+      pet_age = dog.age # Assign the age value to pet_age.
+      print(pet_age)
+
+
+
+      print(dog.name, dog.age)
+
+
+
+      # print(dog.breed, dog.is_cute)
 
    #. Run the program as-is to see how the dot notation on lines 8 and 10
       accesses and *returns* the property values.
@@ -67,9 +87,11 @@ parentheses ``()``.
          Fleas 6
          mutt True
 
+.. TODO: Check reference to dictionaries
+
 .. admonition:: Tip
 
-   Object properties work like the :ref:`key/value pairs <key-value-pair>` in a
+   Object properties work like the key/value pairs in a
    dictionary. Each property name acts as a label that points to a specific
    piece of data (the value).
 
@@ -152,6 +174,21 @@ In this example, the ``dog`` object includes three methods called ``speak``,
 #. On line 16, call the ``increase_age`` method, which requires an integer
    as an argument. Print the ``age`` property again to check the result.
 
-.. raw:: html
+.. replit:: python
+   :slug: ObjectsIntro02
+   :linenos:
 
-   <iframe src="https://trinket.io/embed/python/c709bc556a" width="100%" height="400" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+   #!/bin/python3
+   from make_pet import Dog
+
+   # Create a new object called dog. 
+   # We will study how this works later in the chapter.
+   dog = Dog()
+
+   # Call the speak method here:
+
+
+   # Call the fetch method here:
+
+
+   # Complete steps 4 & 5 here:

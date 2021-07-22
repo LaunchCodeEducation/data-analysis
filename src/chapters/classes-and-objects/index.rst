@@ -15,6 +15,5 @@ Classes and Objects
    class-methods
    printing-objects
    objects-with-functions
-   inheritance
    exercises
    studio

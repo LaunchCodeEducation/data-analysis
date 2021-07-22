@@ -5,18 +5,7 @@ In these exercises, you will create a ``Robot`` class and use it to create
 four ``Robot`` objects. You will also practice writing functions that display
 information about the objects and race them against each other.
 
-.. admonition:: Note
-
-   If your teacher added you to a :ref:`Trinket course <trinket-course-assignments>`, login to your
-   account to access the starter code for each exercise.
-
-   Otherwise, use the links below to copy the starter code.
-
-   #. `Trinket starter code <https://trinket.io/python/b3c2b6e9ff>`__ (*Remix*
-      before getting started).
-   #. `Repl.it starter code <https://repl.it/@launchcode/LCHS-Classes-Exercises>`__
-      (*Fork* before getting started).
-
+To start, fork the starter code on `Replit <https://replit.com/@launchcode/ClassesExercises#main.py>`__.
 Part 1: Create a New Class
 --------------------------
 
@@ -50,13 +39,15 @@ Add Properties to ``Robot``
 Add Methods to ``Robot``
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. TODO: Check Module reference
+
 #. Below ``__init__``, define a second method called ``move()``. This method
    should:
 
    #. Only take the ``self`` parameter.
    #. Generate a random number of steps (1 - 10) for the object to take. The
       range should include ``1`` and ``10`` as options. *Hint*: The ``randint``
-      function is described in the :ref:`Random Module <pick-random-number>`
+      function is described in the Random Module
       section.
    #. Increase the ``distance`` property by the number of steps.
    #. Return the random number of steps.
