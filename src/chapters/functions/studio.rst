@@ -35,8 +35,10 @@ flips the order of entries in the list.
 Reverse Characters
 -------------------
 
+.. TODO: Check this reference.
+
 1. In the *composing functions* section, we examined a function that
-   :ref:`reverses the characters in a string <reverse-a-string>` using the
+   reverses the characters in a string using the
    ``split`` and ``join`` methods. Let's rebuild that function now.
 
    a. Define the function as ``reverse_characters``. Give it one parameter, which will

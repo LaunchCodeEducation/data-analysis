@@ -198,7 +198,7 @@ The difference between a parameter and an argument is the same as that between a
 Arguments Are Optional
 ----------------------
 
-A function may be defined with several parameters, or with no parameters at all. Even if a function is defined with parameters, JavaScript will not complain if the function is called *without* specifying the value of each parameter.
+A function may be defined with several parameters, or with no parameters at all. Even if a function is defined with parameters, Python will not complain if the function is called *without* specifying the value of each parameter.
 
 .. admonition:: Example
 

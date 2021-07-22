@@ -6,6 +6,10 @@ Chapters
    :maxdepth: 1
    :name: chapterstoc
    
+   chapters/introduction/index
+   chapters/how-programs-work/index
+   chapters/how-to-write-code/index
+   chapters/data-and-variables/index
    chapters/booleans-and-conditionals/index
    chapters/loops/index
    chapters/strings/index
@@ -24,6 +28,7 @@ Studios
    :maxdepth: 1
    :name: studiostoc
 
+   chapters/data-and-variables/studio
    chapters/loops/studio
    chapters/lists/studio
    chapters/errors-and-debugging/studio
