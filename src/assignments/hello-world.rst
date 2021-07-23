@@ -195,8 +195,13 @@ After you do so, you will notice that there are no more changes in the sidebar. 
 
 If you went over to look at your repository on Github, you wouldn't see any changes. This is because after we make a commit, we need to *push* that commit to the remote repository on Github.
 When you push your code, Github will also run the autograder and update your repo's status as either passing or failing.
-Above the box where you entered your commit message, you should see a button with three horizontal dots. Clicking on this button opens a menu with a variety of Git actions.
+Above the box where you entered your commit message, you should see a button with three horizontal dots (ellipsis). Clicking on this button opens a menu with a variety of Git actions.
 Select *Push* to send your code to Github. 
+
+.. figure:: figures/gh-vsc-push.png
+   :alt: Menu drops down once user clicks on the ellipsis
+
+   Once you click on the ellipsis, a dropdown menu appears.  Select push.
 
 Check Your Solution
 ~~~~~~~~~~~~~~~~~~~
