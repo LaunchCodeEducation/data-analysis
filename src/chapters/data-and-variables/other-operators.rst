@@ -34,7 +34,7 @@ Let's compare ``+`` used with numbers to ``+`` used with strings.
       2
       11
 
-This example demonstrates that **the operator + behaves differently based on the data type of its operands.**
+This example demonstrates that **the operator** ``+`` **behaves differently based on the data type of its operands.**
 
 .. admonition:: Warning
    
