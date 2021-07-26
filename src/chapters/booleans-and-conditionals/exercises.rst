@@ -55,9 +55,9 @@ A. **Assign the following variables for our space shuttle**
       else:
          print("engines are off")
 
-`Code exercises C & D here <https://repl.it/@launchcode/ConditionalsExercises02Py>`__.
+   `Code exercises C & D here <https://repl.it/@launchcode/ConditionalsExercises02Py>`__.
 
-C. **Write conditional expressions to satisfy the safety rules.** 
+#. **Write conditional expressions to satisfy the safety rules.** 
 
    Use the variables defined from the table above to satisfy the rules listed below.
 
@@ -107,9 +107,9 @@ C. **Write conditional expressions to satisfy the safety rules.**
       else:
          print("all systems go")
 
-`Code exercises E & F here <https://repl.it/@launchcode/ConditionalsExercises03Py>`__.
+   `Code exercises E & F here <https://repl.it/@launchcode/ConditionalsExercises03Py>`__.
 
-E. **Monitor the shuttle's fuel status.**
+#. **Monitor the shuttle's fuel status.**
 
    Implement the checks below using ``if`` / ``elif`` / ``else``
    statements. Order is important when working with conditionals, and the
@@ -169,7 +169,7 @@ E. **Monitor the shuttle's fuel status.**
 
    :ref:`Check your solution <booleans-and-conditionals-exercise-solutionsE>`
 
-6. **Final bit of fun!**
+#. **Final bit of fun!**
 
    The shuttle should only launch if the fuel tank is full and the engine check
    is OK. *However*, let's establish an override command to ignore any warnings
