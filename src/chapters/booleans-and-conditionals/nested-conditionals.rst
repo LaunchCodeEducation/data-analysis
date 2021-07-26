@@ -25,7 +25,7 @@ Our first attempt at a solution might look like this:
    if entry%2 == 0:
       print("EVEN!")
 
-   if entry > 0:
+if entry > 0:
       print("POSITIVE")
 
 **Console Output**
@@ -66,9 +66,8 @@ conditional determines whether or not to consider the second.
 
       if entry%2 == 0 :
          print("EVEN!")
-
-      if entry > 0:
-         print("POSITIVE")
+         if entry > 0:
+            print("POSITIVE")
 
       # Try removing the indentation for lines 6 & 7 to see how the output changes!
 
