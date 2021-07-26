@@ -101,6 +101,11 @@ Some of most commonly-used operators are the **arithmetic operators**, which car
      - ``3 ** 2`` returns ``9``
 
        ``5 ** -1`` returns ``0.2``
+   * - Floor Division (``//``)
+     - Returns the integral or whole number version of the quotient.
+     - ``7 // 2`` returns ``3``
+
+       ``5 // -10`` returns ``-1``
    
 .. index:: ! modulus, ! %
 
