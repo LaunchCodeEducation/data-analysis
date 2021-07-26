@@ -25,8 +25,8 @@ Our first attempt at a solution might look like this:
    if entry%2 == 0:
       print("EVEN!")
 
-if entry > 0:
-      print("POSITIVE")
+   if entry > 0:
+         print("POSITIVE")
 
 **Console Output**
 
