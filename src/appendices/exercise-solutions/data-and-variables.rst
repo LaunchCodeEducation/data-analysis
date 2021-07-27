@@ -5,8 +5,6 @@
 Exercise Solutions: Data and Variables
 ======================================
 
-
-
 A. **Declare and assign variables**
 
    Declare and assign a variable for each item in the list.
@@ -14,14 +12,13 @@ A. **Declare and assign variables**
    .. sourcecode:: py
       :linenos:
 
-      shuttleName = 'Determination'
-      shuttleSpeedMph = 17500
-      distanceToMarsKm = 225000000
-      distanceToMoonKm = 38400
-      milesPerKilometer = 0.621
+      shuttle_name = 'Determination'
+      shuttle_speed_mph = 17500
+      distance_to_mars_km = 225000000
+      distance_to_moon_km = 38400
+      MILES_PER_KM = 0.621
 
    :ref:`Back to the exercises <exercises-data-and-variables-partA>`
-
 
 
 C. **Calculate a space mission!**
@@ -36,7 +33,7 @@ C. **Calculate a space mission!**
 
       .. sourcecode:: py
 
-         milesToMars = kilometersToMars * milesPerKilometer
+         miles_to_mars = kilometers_to_mars * MILES_PER_KM
 
       .. _data-and-variables-exercise-solutionsC2:
 
@@ -46,7 +43,7 @@ C. **Calculate a space mission!**
 
       .. sourcecode:: py
 
-         hoursToMars = milesToMars / shuttleSpeedMph
+         hours_to_mars = miles_to_mars / shuttle_speed_mph
 
       .. _data-and-variables-exercise-solutionsC3:
 
@@ -56,7 +53,7 @@ C. **Calculate a space mission!**
 
       .. sourcecode:: py
 
-         daysToMars = hoursToMars / 24
+         days_to_mars = hours_to_mars / 24
 
    :ref:`Back to the exercises <exercises-data-and-variables-partC>`
 
@@ -71,9 +68,9 @@ E. **Now calculate a trip to the Moon**
    .. sourcecode:: py
       :linenos:
 
-      milesToMoon = kilometersToMoon * milesPerKilometer
-      hoursToMoon = milesToMoon / shuttleSpeedMph
-      daysToMoon = hoursToMoon / 24
-      print(shuttleName + " will take " + daysToMoon + " days to reach the Moon.")
+      miles_to_moon = kilometers_to_moon * MILES_PER_KM
+      hours_to_moon = miles_to_moon / shuttle_speed_mph
+      days_to_moon = hours_to_moon / 24
+      print(shuttle_name + " will take " + days_to_moon + " days to reach the Moon.")
 
    :ref:`Back to the exercises <exercises-data-and-variables-partE>`
