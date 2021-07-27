@@ -277,7 +277,7 @@ Check Your Understanding
    ``False``.
 
    a. ``12 * 2 == 24``
-   b. ``'dog' == 'cat or 'dog' == 'Dog'``
+   b. ``'dog' == 'cat' or 'dog' == 'Dog'``
    c. ``12%2 == 0 and len('flower') < 6``
    d. ``'a' in 'xyz' and len('flower') >= 6 or 5 + 5 == 10``
 
