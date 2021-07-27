@@ -198,7 +198,7 @@ in the string (5 times). Similarly, ``for value in range(10)`` repeats 10
 times, with ``value`` assigned the numbers 0 - 9.
 
 Even when we use variables in ``range(start, stop, step)``, these variables
-store specific vales. Python knows *exactly* how many times to repeat the loop
+store specific values. Python knows *exactly* how many times to repeat the loop
 body, and this is called **definite iteration**. The starting and ending points
 of are set inside the ``for`` statement.
 
@@ -268,6 +268,8 @@ Check Your Understanding
    d. "Sally"
    e. "LaunchCode"
 
+.. answer = b., c. e.
+
 .. admonition:: Question
 
    If you know the maximum number of times you need a loop to repeat, either
@@ -301,6 +303,6 @@ Check Your Understanding
    Which type of loop should you use to write the program?
 
    a. ``while`` loop
-   b. ``for``
+   b. ``for`` loop
 
 .. Answer = b
