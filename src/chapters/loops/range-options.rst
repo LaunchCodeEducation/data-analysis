@@ -26,6 +26,13 @@ Instead of ``range(value)``, a more detailed version of the keyword is
 ``range(start_value, end_value)``. The starting value is included in the
 counting for the loop, but the end value is NOT.
 
+.. admonition:: Syntax Example
+
+   .. sourcecode:: py
+
+      for num in range (start_value, end_value):
+         # do something...
+
 If we replaced line 1 in the code above with ``for num in range(1, 5)``, then
 the loop variable ``num`` would take values of 1, 2, 3, and 4.
 
@@ -56,6 +63,13 @@ by 2 units instead of 1.
 
 To make this happen, we need to add one more value inside ``range``. This is
 called the **step value**, ``range(start_value, end_value, step_value)``.
+
+.. admonition:: Syntax Example
+
+   .. sourcecode:: py
+
+      for num in range(start_value, end_value, step_value):
+         # do something ...
 
 .. admonition:: Examples
 
@@ -112,25 +126,21 @@ Use Variables in ``range``
 
 To make a ``for`` loop run, we must tell Python exactly how many times we want
 the loop body to repeat. However, sometimes this number changes each time the
-program runs. Variables to the rescue!
+program runs. Variables to the rescue!  
+Whenever possible, use *variables* instead of specific numbers inside ``range()``.
 
-.. admonition:: Tip
+.. admonition:: Try It
 
-   Whenever possible, use *variables* instead of specific numbers inside
-   ``range()``.
+   Let's try printing a ``for`` loop using the following variables to set the range.
 
-Paste these statements into the editor above (before the loop), and use the
-variable names in ``range``:
+   .. replit:: py
+      :slug: RangeAndVariables
 
-.. sourcecode:: Python
-   :linenos:
+      start_value = int(input("Enter the FIRST number to print: "))
+      end_value = int(input("Enter the LAST number to print: "))
+      step_value = int(input("Enter the step value for the loop: "))
 
-   start_value = int(input("Enter the FIRST number to print: "))
-   end_value = int(input("Enter the LAST number to print: "))
-   step_value = int(input("Enter the step value for the loop: "))
 
-Repeat each of the items in the :ref:`Try It <range-tryit>` section above. Enter the start, stop, and step values to print the
-desired output.
 
 .. admonition:: Warning
 
@@ -150,15 +160,32 @@ Use Expressions in ``range``
 Not only can we use variables inside ``range``, we can also use *expressions*,
 which we practiced in the :ref:`Data and Variables <expressions>` chapter.
 
-For the program above, replace the ``for`` statement with this:
+.. admonition:: Try It!
 
-.. sourcecode:: Python
+   .. replit:: py
+      :slug: RangeAndExpressions01
 
-   for num in range(start_value, end_value+1, step_value):
+      for num in range(start_value, end_value+1, step_value):
 
-For tasks 1 - 4, the expression ``end_value + 1`` makes sure that the value we
-type will be included in the loop. With the negative stop values in tasks 5 and
-6, we need to use ``end_value - 1``.
+The ``end_value`` above, will add ``1`` to the inital ``end_value``. 
+By adding to your ``end_value``, will increase loops that have a positive, or increasing, ``step_value``.
+
+With the negative ``end_values``, or decreasing ``step_values``, adding to your ``end_value``
+may actually shorten the length of your final loop.  
+
+In order to extend a negative range, try reducing your ``end_value``.
+By reducing, or subtracting, from your ``end_value`` you will extend loops involving negative 
+numbers or negative ``step_values``.  In turn, this will shorten
+loops between positive numbers, or with positive ``step_values``.
+
+.. admonition:: Try It!
+
+   .. replit:: py
+      :slug: RangeAndExpressions02
+
+      for num in range(start_value, end_value-1, step_value):
+
+Expressions are not limited to standard arithmetic operators.
 
 .. admonition:: Try It
 
