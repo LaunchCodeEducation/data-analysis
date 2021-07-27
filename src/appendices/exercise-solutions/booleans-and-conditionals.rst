@@ -10,12 +10,12 @@ A. **Assign the following variables for our space shuttle.**
    .. sourcecode:: py
       :linenos:
 
-      engineIndicatorLight = "red blinking"
-      spaceSuitsOn = True
-      shuttleCabinReady = True
-      crewStatus = spaceSuitsOn and shuttleCabinReady
-      computerStatusCode = 200
-      shuttleSpeed = 15000
+      engine_indicator_light = "red blinking"
+      space_suits_on = True
+      shuttle_cabin_ready = True
+      crew_status = space_suits_on and shuttle_cabin_ready
+      computer_status_code = 200
+      shuttle_speed = 15000
 
    :ref:`Back to the exercises <exercises-booleans-and-conditionals>`
 
@@ -26,7 +26,7 @@ C. **Write conditional expressions to satisfy the safety rules.**
       .. sourcecode:: py
          :linenos:
 
-         if crewStatus:
+         if crew_status:
             print("Crew Ready")
          else:
             print("Crew Not Ready")
@@ -36,9 +36,9 @@ C. **Write conditional expressions to satisfy the safety rules.**
       .. sourcecode:: py
          :linenos:
 
-         if computerStatusCode == 200:
+         if computer_status_code == 200:
             print("Please stand by. Computer is rebooting.")
-         elif computerStatusCode == 400:
+         elif computer_status_code == 400:
             print("Success! Computer online.")
          else:
             print("ALERT: Computer offline!")
@@ -48,9 +48,9 @@ C. **Write conditional expressions to satisfy the safety rules.**
       .. sourcecode:: py
          :linenos:
 
-         if shuttleSpeed > 17500:
+         if shuttle_speed > 17500:
             print("ALERT: Escape velocity reached!")
-         elif shuttleSpeed < 8000:
+         elif shuttle_speed < 8000:
             print("ALERT: Cannot maintain orbit!")
          else:
             print("Stable speed.")
@@ -64,15 +64,15 @@ E. **Monitor the shuttle's fuel status.**
    .. sourcecode:: py
       :linenos:
 
-      if fuelLevel < 1000 or engineTemperature > 3500 or engineIndicatorLight == "red blinking":
+      if fuel_level < 1000 or engine_temperature > 3500 or engine_indicator_light == "red blinking":
          print("ENGINE FAILURE IMMINENT!")
-      elif fuelLevel <= 5000 or engineTemperature > 2500:
+      elif fuel_level <= 5000 or engine_temperature > 2500:
          print("Check fuel level. Engines running hot.")
-      elif fuelLevel > 20000 and engineTemperature <= 2500:
+      elif fuel_level > 20000 and engine_temperature <= 2500:
          print("Full tank. Engines good.")
-      elif fuelLevel > 10000 and engineTemperature <= 2500:
+      elif fuel_level > 10000 and engine_temperature <= 2500:
          print("Fuel level above 50%. Engines good.")
-      elif fuelLevel > 5000 and engineTemperature <= 2500:
+      elif fuel_level > 5000 and engine_temperature <= 2500:
          print("Fuel level above 25%. Engines good.")
       else:
          print("Fuel and engine status pending...")
