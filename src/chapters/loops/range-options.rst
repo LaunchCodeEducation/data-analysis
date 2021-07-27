@@ -45,6 +45,8 @@ the loop variable ``num`` would take values of 1, 2, 3, and 4.
 
 Now, what if we want to count DOWN from one value to another or change the loop variable by more than a single unit each iteration?
 
+.. index:: ! step value range 
+
 Set a Step Value
 ----------------
 
@@ -53,7 +55,7 @@ Suppose we want our loop variable to only be a set of even numbers (e.g. 0, 2,
 by 2 units instead of 1.
 
 To make this happen, we need to add one more value inside ``range``. This is
-called the *step value*, ``range(start_value, end_value, step_value)``.
+called the **step value**, ``range(start_value, end_value, step_value)``.
 
 .. admonition:: Examples
 
