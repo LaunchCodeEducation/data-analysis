@@ -75,10 +75,11 @@ the altitude the shuttle reaches.
    .. sourcecode:: py
       :linenos:
 
-      let output = `The shuttle gained an altitude of ${altitude} km.`;
+      print("The shuttle gained an altitude of", altitude, "km.";
 
       if altitude >= 2000:
-        output += " Orbit achieved!"
+        print("Orbit achieved!")
+
 
 
 :ref:`Back to the exercises <exercises-loops>`.
