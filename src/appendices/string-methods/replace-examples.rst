@@ -25,7 +25,7 @@ found in ``string_name``, then the original string gets returned.
          
       print('Replace the spaces'.replace(' ', '-'))
       print(pets.replace('dog', 'cat'))
-      print(pets.replace('zebra', 'anaconda')
+      print(pets.replace('zebra', 'anaconda'))
 
    **Console Output**
 
