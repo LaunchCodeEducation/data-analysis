@@ -15,7 +15,9 @@ For each iteration, the variable ``num`` took on a new value (0, 1, 2, or 3).
 
 What if we wanted the loop to use the sequence 1, 2, 3, 4 instead?
 
-Set Start and End Values
+.. index:: ! start value ! stop value
+
+Set Start and Stop Values
 ------------------------
 
 Whenever we use ``range(value)`` in a ``for`` statement, Python always begins
@@ -23,14 +25,14 @@ counting with 0. To start counting at a different number, we need to include
 that value inside the ``()`` in addition to a stop value.
 
 Instead of ``range(value)``, a more detailed version of the keyword is
-``range(start_value, end_value)``. The starting value is included in the
-counting for the loop, but the end value is NOT.
+``range(start_value, stop_value)``. The starting value is included in the
+counting for the loop, but the stop value is NOT.
 
-.. admonition:: Syntax Example
+.. admonition:: Syntax Example for Start and Stop Values
 
    .. sourcecode:: py
 
-      for num in range (start_value, end_value):
+      for num in range (start_value, stop_value):
          # do something...
 
 If we replaced line 1 in the code above with ``for num in range(1, 5)``, then
@@ -50,9 +52,10 @@ the loop variable ``num`` would take values of 1, 2, 3, and 4.
          print("Hello" * num)
    
 
-Now, what if we want to count DOWN from one value to another or change the loop variable by more than a single unit each iteration?
+Now, what if we want to count DOWN from one value to another or change the 
+loop variable by more than a single unit each iteration?
 
-.. index:: ! step value range 
+.. index:: ! step value 
 
 Set a Step Value
 ----------------
@@ -62,13 +65,13 @@ Suppose we want our loop variable to only be a set of even numbers (e.g. 0, 2,
 by 2 units instead of 1.
 
 To make this happen, we need to add one more value inside ``range``. This is
-called the **step value**, ``range(start_value, end_value, step_value)``.
+called the **step value**.
 
-.. admonition:: Syntax Example
+.. admonition:: Syntax Example for Adding a Step Value
 
    .. sourcecode:: py
 
-      for num in range(start_value, end_value, step_value):
+      for num in range(start_value, stop_value, step_value):
          # do something ...
 
 .. admonition:: Examples
@@ -94,7 +97,7 @@ called the **step value**, ``range(start_value, end_value, step_value)``.
 
 .. admonition:: Note
 
-   For ``range()``, the start and step values are OPTIONAL.
+   For ``range()``, the start and stop values are OPTIONAL.
 
 .. _range-tryit:
 
@@ -137,19 +140,19 @@ Whenever possible, use *variables* instead of specific numbers inside ``range()`
       :slug: RangeAndVariables
 
       start_value = int(input("Enter the FIRST number to print: "))
-      end_value = int(input("Enter the LAST number to print: "))
+      stop_value = int(input("Enter the LAST number to print: "))
       step_value = int(input("Enter the step value for the loop: "))
 
 
 
 .. admonition:: Warning
 
-   A common mistake for new coders is to forget that the end value in
+   A common mistake for new coders is to forget that the stop value in
    ``range`` is NOT assigned to the loop variable at any time.
 
 After you pasted in the ``input`` statements and ran the program, did you have
 to type ``0, 6, 1`` to get the numbers 0 - 5 to show in the console? The
-``input`` statement implies that we want our typed end value to show up, but
+``input`` statement implies that we want our typed stop value to show up, but
 using the variable in ``range`` skips that number.
 
 How do we fix this?
@@ -165,16 +168,16 @@ which we practiced in the :ref:`Data and Variables <expressions>` chapter.
    .. replit:: py
       :slug: RangeAndExpressions01
 
-      for num in range(start_value, end_value+1, step_value):
+      for num in range(start_value, stop_value+1, step_value):
 
-The ``end_value`` above, will add ``1`` to the inital ``end_value``. 
-By adding to your ``end_value``, will increase loops that have a positive, or increasing, ``step_value``.
+The ``stop_value`` above, will add ``1`` to the inital ``stop_value``. 
+By adding to your ``stop_value``, will increase loops that have a positive, or increasing, ``step_value``.
 
-With the negative ``end_values``, or decreasing ``step_values``, adding to your ``end_value``
+With the negative ``stop_values``, or decreasing ``step_values``, adding to your ``stop_value``
 may actually shorten the length of your final loop.  
 
-In order to extend a negative range, try reducing your ``end_value``.
-By reducing, or subtracting, from your ``end_value`` you will extend loops involving negative 
+In order to extend a negative range, try reducing your ``stop_value``.
+By reducing, or subtracting, from your ``stop_value`` you will extend loops involving negative 
 numbers or negative ``step_values``.  In turn, this will shorten
 loops between positive numbers, or with positive ``step_values``.
 
@@ -183,7 +186,7 @@ loops between positive numbers, or with positive ``step_values``.
    .. replit:: py
       :slug: RangeAndExpressions02
 
-      for num in range(start_value, end_value-1, step_value):
+      for num in range(start_value, stop_value-1, step_value):
 
 Expressions are not limited to standard arithmetic operators.
 
