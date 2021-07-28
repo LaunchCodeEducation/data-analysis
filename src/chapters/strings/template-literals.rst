@@ -173,8 +173,10 @@ alarm bells in our heads. There is a shorter way.
 
 .. index:: ! indices
 
-We can include index values inside of the curly braces ``{}``. These **indices** (a plural of index)
+We can include index values inside of the curly braces ``{}``. 
+These **indices** (a plural of index)
 refer to the items inside ``format()``, and the indexes begin with 0.
+Zero-based counting strikes again!
 
 .. admonition:: Example
 
