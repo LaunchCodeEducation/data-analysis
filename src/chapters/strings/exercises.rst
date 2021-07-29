@@ -3,8 +3,10 @@
 Exercises: Strings
 ==================
 
-The exercises have been broken up into three parts.  
-Most sections have replit starter code provided.
+The exercises have been broken up into three parts. 
+There are *five* replit pages with starter code for you to fork. 
+Most sections have replit starter code provided.  
+You should see links to your starter code below the exercise steps.
 
 Part One: Bracket Notation
 --------------------------
@@ -198,3 +200,9 @@ The following code sample works, but it can be improved.
    The text, 'Don't Panic' contains 11 characters.
 
 :ref:`Check Your Solutions<strings-exercise-solutions3.2>`
+
+Submitting Your work
+--------------------
+
+Phew! That was a lot of work and a lot of replits.  
+Quick completion (sanity) check: You should have *five* replit pages once you finished the Template Literal exercises.

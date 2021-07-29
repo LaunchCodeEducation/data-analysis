@@ -140,10 +140,10 @@ with the next value inside ``format()``.
 
    Python fills the empty braces ``{}`` from left to right through the string,
    and it uses the values given in ``format`` from left to right as well.
-
-   A mismatch between the number of braces in the string and the number of
-   values in ``format`` will NOT throw an error. However, the output will not
-   look the way you want.
+   
+   If you are missing a brace, any input you expected to see might be in an different spot.
+   With too many braces, an error will be thrown and a message will pop up.
+   Either way, the output will not be what you expected.  
 
 Index Values with ``format()``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
