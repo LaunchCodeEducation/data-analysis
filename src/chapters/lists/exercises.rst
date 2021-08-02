@@ -130,3 +130,8 @@ Part Four: Multi-dimensional Lists
       contains the element lists, and the second level holds the
       name/symbol/mass values. **Experiment!** Create a 3-dimensional list and
       print out one entry from each level in the list.
+
+Submitting Your Work
+---------------------
+
+You should have four replits by the end of your exercises.  Submit them via your canvas page.
