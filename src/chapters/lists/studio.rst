@@ -1,11 +1,11 @@
-Studio: Strings and lists
+Studio: Strings and Lists
 ==========================
 
 Strings are **ordered collections** of *characters*, which are strings of
 length 1. The characters in a string can be accessed using
 **bracket notation**.
 
-lists are ordered collections of items, which can be strings, numbers,
+Lists are ordered collections of items, which can be strings, numbers,
 other lists, etc. The items/elements/entries stored in an list can be
 accessed using bracket notation.
 
@@ -37,7 +37,7 @@ The ``split`` and ``join`` methods convert back and forth between strings
 and lists. Use **delimiters** as reference points to split a string into an
 list, then modify the list and convert it back to a printable string.
 
-a. For a given string, use the ``includes`` method to check to see if the
+a. For a given string, use the ``in`` method to check to see if the
    words are separated by commas (``,``), semicolons (``;``) or just spaces.
 b. If the string uses commas to separate the words, ``split`` it into an list,
    reverse the entries, and then ``join`` the list into a new comma separated
@@ -83,8 +83,6 @@ e. *Bonus to the Bonus*: Modify the code to query the user for BOTH a cabinet in
 
 `Code it at repl.it <https://replit.com/@launchcode/StringAndListStudio03>`__
    
-   *Part 3 is completely optional.*
-
 
 Submitting Your Work
 ---------------------
