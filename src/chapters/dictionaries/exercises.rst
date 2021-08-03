@@ -9,19 +9,29 @@ Fork the starter code on `Replit <https://replit.com/@launchcode/DictionaryExerc
 The ``flavors`` dictionary contains entries that pair different ice cream
 flavors with their cost per scoop. Your job is to do the following:
 
+.. _dictionaries-exercises-A1:
+
 #. Write a function called ``return_cost`` that takes a dictionary and flavor
    choice as parameters.
    
    a. The function searches the dictionary for the flavor and returns its cost.
    b. If the flavor is not in the dictionary, return a value of ``0``.
 
+   :ref:`Check your solution <dictionaries-exercise-solutions-A1>`
+
 #. After coding the ``return_cost`` function, run the program and examine the
    output. Make sure your function behaves as expected before moving to the
    next step. Don't forget to assign different strings to the ``choice``
    variable! 
+
+.. _dictionaries-exercises-A3:
+   
 #. Write a function called ``fanciest_flavor`` that takes a dictionary as a
    parameter. The function should return the key name for the most expensive
    choice in the dictionary.
+
+   :ref:`Check your solution <dictionaries-exercise-solutions-A3>`
+
 #. Uncomment the 3 indicated lines in ``main()``, then run the program several
    times and examine the output. Change the prices in ``flavors`` after each
    run to make sure your function correctly identifies the most expensive ice
@@ -34,10 +44,18 @@ Fork the starter code on `Replit <https://replit.com/@launchcode/DictionaryExerc
 
 Use the accumulator pattern to add new key/value pairs to an empty dictionary.
 
+.. _dictionaries-exercises-B1:
+
 #. Write a function called ``assign_tickets`` that takes a list of names as a
    parameter.
+
+   :ref:`Check your solution <dictionaries-exercise-solutions-B1>`
+
 #. The function should take each name from the list and use it to create a key
    in the dictionary.
+
+.. _dictionaries-exercises-B3:
+
 #. For the value of each key, assign a random integer from 100-500.
 
    .. admonition:: Note
@@ -45,9 +63,16 @@ Use the accumulator pattern to add new key/value pairs to an empty dictionary.
       We are not worried about giving two people the same ticket number in this
       exercise. However, for a real event we would want to prevent this.
 
+   :ref:`Check your solution <dictionaries-exercise-solutions-B3>`
+
 #. Return the new dictionary.
+
+.. _dictionaries-exercises-B5:
+
 #. In ``main()``, call the ``assign_tickets`` function and assign the result to
    a ``ticket_holders`` variable.
+
+   :ref:`Check your solution <dictionaries-exercise-solutions-B5>`
 
 Print ``ticket_holders`` to check that your code works as expected. Your output
 should look something like:
@@ -63,6 +88,8 @@ Oh no! Ticket numbers 100-199 were supposed to be held back for VIPs. You need
 to reassign tickets to anyone who was given one of the reserved seats. Use the
 editor in part B as you update your code.
 
+.. _dictionaries-exercises-C:
+
 Call the function ``fix_tickets``, and use ``ticket_holders`` as the argument.
 The ``fix_tickets`` function should:
 
@@ -73,6 +100,8 @@ The ``fix_tickets`` function should:
    to the key.
 #. Unless you cloned the dictionary, there is no need to return the updated
    collection.
+
+:ref:`Check your solution <dictionaries-exercise-solutions-C>`
 
 To check your code, be sure to print ``ticket_holders`` before and after
 calling the ``fix_tickets`` function.
@@ -88,6 +117,8 @@ Part D: Counting Characters
 ---------------------------
 
 Fork the starter code on `Replit <https://replit.com/@launchcode/DictionaryExercises03#main.py>`__.
+
+.. _dictionaries-exercises-D:
 
 Write a function called ``character_count`` that counts how many times each
 character appears in a string.
@@ -105,6 +136,8 @@ The function should:
 
 #. Return the completed ``counts`` dictionary and assign it to a ``results``
    variable in ``main()``.
+
+:ref:`Check your solution <dictionaries-exercise-solutions-D>`
 
 The counting should be *case-insensitive*. For example, ``'a'`` and ``'A'``
 both count as the same letter.
@@ -124,6 +157,8 @@ Part E: Use a List to Sort Key/Value Output
 Now display the character count result in a cleaner way. Update your code in
 the part D editor.
 
+.. _dictionaries-exercises-E1:
+
 #. In the ``main()`` function, loop through the ``results`` dictionary and
    print each key/value pair on its own line. For ``"B-A-L-L-O-O-N-S!"``, the
    output would be:
@@ -141,8 +176,14 @@ the part D editor.
       !: 1
 
    Be sure your output includes the introductory sentence.
+
+   :ref:`Check your solution <dictionaries-exercise-solutions-E1>`
+
 #. Modify your code to print a key/value pair ONLY IF the character is a
    letter.
+
+.. _dictionaries-exercises-E3:
+
 #. Modify your code again, but this time display the character counts in
    alphabetical order.
    
@@ -150,6 +191,8 @@ the part D editor.
       ``results`` dictionary.
    b. Sort the list, then use a loop to print the key/value pairs, one pair
       per line.
+
+   :ref:`Check your solution <dictionaries-exercise-solutions-E3>`
 
 The final output for ``"B-A-L-L-O-O-N-S!"`` should be:
 

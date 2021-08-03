@@ -12,5 +12,6 @@ Python Dictionaries and Tuples
    dictionary-iteration
    dictionary-accumulator
    search-a-dictionary
+   additional-collections
    exercises
    studio

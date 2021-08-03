@@ -8,4 +8,5 @@ Exercise Solutions
 
    booleans-and-conditionals
    loops
+   dictionaries
    
