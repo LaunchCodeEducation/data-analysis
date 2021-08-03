@@ -128,7 +128,8 @@ Part Four: Multi-dimensional Lists
       ``element_26``.
    #. ``table`` is an example of a *2-dimensional list*. The first "level"
       contains the element lists, and the second level holds the
-      name/symbol/mass values. **Experiment!** Create a 3-dimensional list and
+      name/symbol/mass values.  
+   #. **Optional:** Create a 3-dimensional list and
       print out one entry from each level in the list.
 
 Submitting Your Work
