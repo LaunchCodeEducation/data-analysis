@@ -101,13 +101,12 @@ Some of most commonly-used operators are the **arithmetic operators**, which car
      - ``3 ** 2`` returns ``9``
 
        ``5 ** -1`` returns ``0.2``
-   * - Increment (``++``)
-     - Adds one to its operand. If used before the operand (``++x``), returns the value of its operand after adding one; if used after the operand (``x++``), returns the value of its operand before adding one.
-     - If ``x`` is ``2``, then ``++x`` sets ``x`` to ``3`` and returns ``3``, whereas ``x++`` returns ``2`` and, only then, sets ``x`` to ``3``
-   * - Decrement (``--``)
-     - Subtracts one from its operand. The return value is analogous to that for the increment operator.
-     - If ``x`` is ``2``, then ``--x`` sets ``x`` to ``1`` and returns ``1``, whereas ``x--`` returns ``2`` and, only then, sets ``x`` to ``1``
+   * - Floor Division (``//``)
+     - Returns the integral or whole number version of the quotient.
+     - ``7 // 2`` returns ``3``
 
+       ``5 // -10`` returns ``-1``
+   
 .. index:: ! modulus, ! %
 
 While the **modulus operator** (``%``) is common in programming, it is not used much
