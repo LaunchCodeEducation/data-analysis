@@ -84,19 +84,41 @@ Your assignment repository will look something like this page:
 .. figure:: figures/gh-assignment-repository.png
    :alt: Github repository page
 
-The first step to opening up your assignment code and starting your work is to *clone* your repository.
+The first step to opening up your assignment code and starting your work is to *clone* 
+your repository.  In order to do this, click on the button labeled ``Code``.
+
 
 .. admonition:: Note
 
-   Git is a programming language used by many companies to track changes to projects and share projects between team members as part of a process called version control. 
-   Github is the biggest online hub for storing code and the workflow of submitting your assignments is all done with Git. Cloning an online repository to your computer is just one of those steps.
-   While at the beginning of class, Git and Github may seem like just one way for you to save and share your assignment code with course staff, these workflows are going to serve you well for a career in tech.
-   Many companies even look at job candidate's Github profiles to see not only their work, but also how often they are working on code!
+   Git is a programming language used by many companies to track changes to projects 
+   and share projects between team members as part of a process called **version control**. 
+   Github is the biggest online hub for storing code and the workflow of 
+   submitting your assignments is all done with Git. 
+   Cloning an online repository to your computer is just one of those steps.
+   
+   While at the beginning of class, Git and Github may seem like just one way for you to 
+   save and share your assignment code with course staff, these workflows are going to 
+   serve you well for a career in tech.
+   Many companies even look at job candidate's Github profiles to see not only their work, 
+   but also how often they are working on code!
 
-To clone your repository, you need the HTTPS link for your repository. Click on the *Clone* button on the repository page and copy the link!
+Once you clicked the ``Code`` button a menu will dropdown.
+To clone your repository, you need the HTTPS link for your repository. 
+Click on the *Clone* button on the repository page and copy the link!
+
+.. admonition:: Tip!
+
+   If you are not sure if you selected the HTTPS clone code, 
+   look at the url you are asked to copy.
+   The HTTPS will start with "https:..." 
+   If something else is starting the code in the box, try clicking on the HTTPS above the 
+   box holding the url.
 
 .. figure:: figures/gh-clone-repo-button.png
    :alt: Highlighting the HTTPS link in the pop-up when the Clone button is clicked.
+
+   After clicking on the green ``Code`` box, the menu dropped down.  
+   There is an orange line under the HTTPS indicating that the item to copy is an https link.
 
 To get started coding, open a new window in Visual Studio Code.
 
@@ -105,8 +127,11 @@ To get started coding, open a new window in Visual Studio Code.
 
 Under the source control tab in the side bar, click *Clone Repository*.
 
+
 .. figure:: figures/vsc-source-control-clone.png
    :alt: The source control tab is open, revealing an option to clone a repository.
+
+   The source control icon, is a branching line, each end terminated in circle.
 
 When you click on *Clone Repository*, a bar appears at the top where you can paste in the URL you copied from Github.
 
