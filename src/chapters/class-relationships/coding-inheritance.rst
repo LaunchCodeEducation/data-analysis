@@ -56,7 +56,7 @@ Cats, Tigers, and Housecats, Oh My!
 -----------------------------------
 
 With the general syntax down, let's code some cat classes. On the previous page, we talked about how we might use inheritance to set up some cat classes.
-Let's take a look at how we could use ``super()`` and ``pass`` to set up our cat classes.
+Let's take a look at how we could use ``super()`` to set up our cat classes.
 
 .. sourcecode:: python
    :linenos:

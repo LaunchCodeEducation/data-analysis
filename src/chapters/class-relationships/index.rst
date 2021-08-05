@@ -6,5 +6,6 @@ Relationships Between Classes
 
    inheritance-intro
    coding-inheritance
+   encapsulation
    exercises
    studio

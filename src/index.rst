@@ -17,6 +17,7 @@ Chapters
    chapters/errors-and-debugging/index
    chapters/functions/index
    chapters/classes-and-objects/index
+   chapters/class-relationships/index
 
 .. toctree::
 
