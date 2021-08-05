@@ -16,6 +16,7 @@ Chapters
    chapters/lists/index
    chapters/errors-and-debugging/index
    chapters/functions/index
+   chapters/git/index
 
 .. toctree::
 
@@ -51,6 +52,9 @@ Appendices
    appendices/string-methods/index
    appendices/list-methods/index
    appendices/exercise-solutions/index
+   appendices/git/stash
+   appendices/git/workflows
+   appendices/installing-software/index
 
 .. toctree::
    :hidden:
