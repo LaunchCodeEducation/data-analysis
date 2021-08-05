@@ -15,6 +15,7 @@ Chapters
    chapters/lists/index
    chapters/errors-and-debugging/index
    chapters/functions/index
+   chapters/modules/index
 
 .. toctree::
 
