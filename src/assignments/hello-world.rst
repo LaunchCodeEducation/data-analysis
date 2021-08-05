@@ -125,6 +125,19 @@ To get started coding, open a new window in Visual Studio Code.
 .. figure:: figures/vsc-new-window.png
    :alt: An empty code editor window with no projects loaded.
 
+.. figure:: figures/vsc-icons.png
+   :alt: Close up of VSC icons
+
+   **Visual Studio Icons 101**: 1) This is the current file in your view.  
+   2) **Explorer**: here you will find your file tree.
+   3) **Search**: search for specific elements within your files.  
+   4) **Source Control**:  This visually tracks and stores your changes in your branch.
+   5) **Run and Debug**: This runs your code.  
+   6) **Extensions**: This is where you can view any of the extensions you add to you code editor.  
+   7) **GitHub**: A quick menu for checking on your local and remote development.
+
+
+
 Under the source control tab in the side bar, click *Clone Repository*.
 
 

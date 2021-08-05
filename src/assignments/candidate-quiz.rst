@@ -15,15 +15,16 @@ you to create a quick quiz to help select the best candidates.
 
 Requirements
 ------------
+#. Use functions to complete the following:
 
-#. Ask the candidate (user) to enter their name
-#. Use a loop to ask five questions, one at a time, to the candidate
-#. Collect the candidate's answers
-#. Check those answers for accuracy (case insensitive equality check)
-#. Calculate the candidate's overall percentage
-#. Determine if the candidate did well enough to enter our program (need >= 80%
-   to pass)
-#. Display the results.
+   #. Ask the candidate (user) to enter their name
+   #. Use a loop to ask five questions, one at a time, to the candidate
+   #. Collect the candidate's answers
+   #. Check those answers for accuracy (case insensitive equality check)
+   #. Calculate the candidate's overall percentage
+   #. Determine if the candidate did well enough to enter our program (need >= 80%
+      to pass)
+   #. Display the results.
 
 Take It Step by Step
 --------------------
@@ -122,9 +123,7 @@ to determine which lines need to be modified.
 Part 3: Grade the Quiz
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Finally, calculate the candidate's score and print the results. There are no ``TODOs`` in this section, 
-just be sure to only modify code that you have written, or add code. Don't remove anything in the file 
-that you haven't written. Doing so may cause your program to behave unexpectedly - and we might not be able to grade it!
+Finally, calculate the candidate's score and print the results. There are no ``TODOs`` in this section.
 
 Your task here is to:
 
