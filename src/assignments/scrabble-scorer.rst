@@ -26,7 +26,7 @@ Requirements
 #. Write an ``initial_prompt()`` function that asks a user to input a word.
 #. Have the program return a score for the word using ``old_scrabble_scorer()``.
 #. Add additional scoring algorithms and store them in the ``scoring_algorithms`` list.
-#. Create a ``transform()`` function that takes in the ``old_point_structure``
+#. Create a ``transform()`` function that takes in the ``OLD_POINT_STRUCTURE``
    object and returns a ``new_point_structure`` object.
 #. Use the ``run_program()`` function to serve as the starting point for your
    program.
@@ -34,7 +34,7 @@ Requirements
 Starter Code
 ------------
 
-Follow your Canvas instructions for creating your solution repository from the tempalte starter application.
+Follow your Canvas instructions for creating your solution repository from the template starter application.
 
 You only need to code in one file here, ``scrabble-scorer.py``. Within this Python
 file are the starts of all of the functions and data sctructures you need to write your 
@@ -60,7 +60,7 @@ A) Initial Prompt
 ^^^^^^^^^^^^^^^^^
 
 #. Modify the provided ``initial_prompt()`` function to prompt the user to enter a word to score. The function should return 
-   the text inputed by the user.
+   the text inputted by the user.
 #. Use the ``old_scrabble_scorer()`` function provided to score the word provided by the user. To do this,
    invoke ``old_scrabble_scorer()`` inside of the final function in the file, ``run_program()``. 
    ``old_scrabble_scorer()`` will take the return value of ``initial_prompt()``.
@@ -90,9 +90,9 @@ B) Add and Organize Scoring Algorithms
 
 Your job here is to write two other scoring algorithms for the Scrabble player.
 
-#. ``simple_score``: Define a function that takes a word as a parameter and
+#. ``simple_scorer``: Define a function that takes a word as a parameter and
    returns a numerical score. Each letter within the word is worth 1 point.
-#. ``vowel_bonus_score``: Define a function that takes a word as a parameter and
+#. ``vowel_bonus_scorer``: Define a function that takes a word as a parameter and
    returns a score. Each vowel within the word is worth 3 points, and each
    consonant is worth 1 point.
 
@@ -154,7 +154,7 @@ three scoring algorithms and convey that information to the user.
 
          .. sourcecode:: python
 
-            // Simple scoring
+            # Simple scoring
             print("algorithm name: ", scoring_algorithms[0]["name"])
             scoring_function = scoring_algorithms[0]["scorer_function"]
             print(scoring_function("Python"))
@@ -187,12 +187,12 @@ C) Transform Scrabble Scoring
 
 Currently, the software contains the data structure below for the traditional
 Scrabble scoring algorithm. Take a few moments to review how the
-``old_point_structure`` dictionary relates a point value to a letter.
+``OLD_POINT_STRUCTURE`` dictionary relates a point value to a letter.
 
 .. sourcecode:: python
    :linenos:
 
-   const old_point_structure = {
+   OLD_POINT_STRUCTURE = {
       1: ['A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T'],
       2: ['D', 'G'],
       3: ['B', 'C', 'M', 'P'],
@@ -200,15 +200,15 @@ Scrabble scoring algorithm. Take a few moments to review how the
       5: ['K'],
       8: ['J', 'X'],
       10: ['Q', 'Z']
-   };
+   }
 
-The *keys* of ``old_point_structure`` are the Scrabble points, and the
+The *keys* of ``OLD_POINT_STRUCTURE`` are the Scrabble points, and the
 *values* are lists of letters. All letters in the list have the Scrabble
 point value equal to the key. For example, ``'A'`` and ``'R'`` are worth 1,
 ``'K'`` is worth 5, and ``'J'`` is worth 8.
 
 To find the point value for a letter with the old format, the program must
-iterate over each key in ``old_point_structure`` and then check if the letter is
+iterate over each key in ``OLD_POINT_STRUCTURE`` and then check if the letter is
 inside the list paired with that key. *This search within a search is
 inefficient*.
 
@@ -258,8 +258,8 @@ Transform the Object
 ~~~~~~~~~~~~~~~~~~~~
 
 #. Write the rest of the ``transform()`` function. It will need to take a dictionary object 
-   as a parameter - specifically the ``old_point_structure`` object. Calling
-   ``transform(old_point_structure)`` will return a dictionary with *lowercase*
+   as a parameter - specifically the ``OLD_POINT_STRUCTURE`` object. Calling
+   ``transform(OLD_POINT_STRUCTURE)`` will return a dictionary with *lowercase*
    letters as keys. The value for each key will be the points assigned to that
    letter.
 
@@ -268,10 +268,10 @@ Transform the Object
       a. Recall that ``for...in`` loops iterate over the keys within a dictionary.
       b. If you need a reminder of how to assign new key/value pairs, review the
          relevant section in the ``Objects`` chapter.
-      c. To access the letter lists within ``old_point_structure``, use bracket
-         notation (``old_point_structure[key]``).
+      c. To access the letter lists within ``OLD_POINT_STRUCTURE``, use bracket
+         notation (``OLD_POINT_STRUCTURE[key]``).
       d. To access a particular element within a letter list, add a second set of
-         brackets (``old_point_structure[key][index]``), or assign the list to a
+         brackets (``OLD_POINT_STRUCTURE[key][index]``), or assign the list to a
          variable and use ``variableName[index]``.
 
          .. admonition:: Examples
@@ -279,10 +279,10 @@ Transform the Object
             .. sourcecode:: Python
                :linenos:
 
-               print("Letters with score '4':", old_point_structure[4]);
-               print("3rd letter within the key '4' list:", old_point_structure[4][2]);
+               print("Letters with score '4':", OLD_POINT_STRUCTURE[4]);
+               print("3rd letter within the key '4' list:", OLD_POINT_STRUCTURE[4][2]);
 
-               letters = old_point_structure[8];
+               letters = OLD_POINT_STRUCTURE[8];
                print("Letters with score '8':", letters);
                print("2nd letter within the key '8' list:", letters[1]);
 
@@ -298,7 +298,7 @@ Transform the Object
 
 
 #. Create a new variable called ``new_point_structure`` underneath your ``transform()`` function. 
-   Assign the value of ``new_point_structure`` to be the result ``transform(old_point_structure)``.
+   Assign the value of ``new_point_structure`` to be the result ``transform(OLD_POINT_STRUCTURE)``.
 
 
    .. admonition:: Warning 
@@ -322,7 +322,7 @@ Transform the Object
 
    .. admonition:: Tip
 
-      ``old_scrabble_scorer()`` uses ``old_point_structure`` and returns a score for each letter in a word. You'll want to write
+      ``old_scrabble_scorer()`` uses ``OLD_POINT_STRUCTURE`` and returns a score for each letter in a word. You'll want to write
       ``scrabble_scorer()`` to use ``new_point_structure`` and return a cumulative score for the whole word entered.
 
 Test Words
@@ -330,7 +330,7 @@ Test Words
 
 Here are some words you can use to test your code:
 
-#. ``Python`` = 24 points using Scrabble, 10 using Simple Score, and 16
+#. ``Python`` = 14 points using Scrabble, 6 using Simple Score, and 8
    using Bonus Vowels.
 #. ``Scrabble`` = 14 points using Scrabble, 8 using Simple Score, and 12 using
    Bonus Vowels.
