@@ -1,0 +1,86 @@
+Putting Inhheritance into Practice
+==================================
+
+Now that we know what inheritance is, let's look at how we code parent and child classes.
+
+When setting up parent and child classes, we may first think about what behaviors belong in the parent class and which are specific to child classes.
+Let's say we create a class called ``ParentClass``:
+
+.. sourcecode:: python
+   :linenos:
+
+   class ParentClass:
+      def __init__(self, a):
+         self.a = a
+
+      def important_method():
+         print("This is an important method")
+
+If we do not want to add any additional properties and/or methods to a child class, we will use the ``pass`` keyword when setting up the child class.
+
+.. sourcecode:: python
+   :linenos:
+
+   class ChildClass(ParentClass):
+      pass
+
+``ChildClass`` is now set up to inherit all the properties and methods of ``ParentClass``. This means we could call ``important_method()`` if we needed to.
+
+.. sourcecode:: python
+   :linenos:
+
+   x = ChildClass(5)
+   x.important_method()
+
+In most cases, you may want to add an additional property or method to the child class. In this case, first we need to set up the constructor for the child class with an additional property, ``b``.
+
+.. sourcecode:: python
+   :linenos:
+
+   class ChildClass(ParentClass):
+      def __init__(self, a, b):
+         ParentClass.__init__(self, a)
+         self.b = b
+
+We can also use the ``super()`` function to pass the parent class's constructor to the child class.
+
+.. sourcecode:: python
+   :linenos:
+
+   class ChildClass(ParentClass):
+      def __init__(self, a, b):
+         super().__init__(a)
+         self.b = b
+
+Cats, Tigers, and Housecats, Oh My!
+-----------------------------------
+
+With the general syntax down, let's code some cat classes. On the previous page, we talked about how we might use inheritance to set up some cat classes.
+Let's take a look at how we could use ``super()`` and ``pass`` to set up our cat classes.
+
+.. sourcecode:: python
+   :linenos:
+
+   class Felidae:
+      def __init__(self):
+         self.claws = "retractable"
+
+   class Panthera(Felidae):
+      def __init__(self):
+         super().__init__(self)
+         self.roar = "loud"
+
+   class Tiger(Panthera):
+      def __init__(self):
+         super().__init__(self)
+         self.has_stripes = True
+
+   class Felis(Felidae):
+      def __init__(self):
+         super().__init__(self)
+         self.pupils = "vertical"
+   
+   class Housecat(Felis):
+      def __init__(self):
+         super().__init__(self)
+         self.personality = "judgemental"
