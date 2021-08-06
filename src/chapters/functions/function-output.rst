@@ -174,7 +174,9 @@ The easiest way to talk about the difference between arguments and parameters is
 
    The function ``hello`` takes a single value, which we expect to be a person's name, and returns a message that greets that person. 
 
-   .. sourcecode:: py
+   ..TODO: this is getting parsed as python when 'py' is specified. whats going on here?
+
+   .. sourcecode:: js
       :linenos:
 
       def hello(name):
@@ -182,7 +184,7 @@ The easiest way to talk about the difference between arguments and parameters is
 
       print(hello("Lamar"))
 
-   **Console Output**
+   **Output**
 
    ::
 
@@ -202,7 +204,9 @@ A function may be defined with several parameters, or with no parameters at all.
 
 .. admonition:: Example
 
-   .. sourcecode:: py
+   .. TODO: not parsed as python using 'py'. I think the string substitution syntax needs to be python-iified
+
+   .. sourcecode:: js
       :linenos:
 
       def hello(name):
@@ -210,7 +214,7 @@ A function may be defined with several parameters, or with no parameters at all.
 
       print(hello())
 
-   **Console Output**
+   **Output**
 
    ::
 
@@ -231,7 +235,9 @@ If your function will not work properly without one or more of its parameters de
 
    This example modifies the ``hello`` function to use a default value for ``name``. If ``name`` is not defined when ``hello`` is called, it will use the default value.
 
-   .. sourcecode:: py
+   .. TODO: not parsed as python using 'py'. I think the string substitution syntax needs to be python-iified
+   
+   .. sourcecode:: javascript
       :linenos:
 
       def hello(name = "World"):
