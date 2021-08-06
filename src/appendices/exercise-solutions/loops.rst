@@ -72,10 +72,12 @@ the altitude the shuttle reaches.
 
    a. If the altitude is 2000 km or higher, add "Orbit achieved!"
 
-   .. sourcecode:: py
+   .. TODO: translate to python. in JS now
+
+   .. sourcecode:: js
       :linenos:
 
-      let output = `The shuttle gained an altitude of ${altitude} km.`;
+      output = `The shuttle gained an altitude of ${altitude} km.`
 
       if altitude >= 2000:
         output += " Orbit achieved!"
