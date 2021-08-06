@@ -28,3 +28,10 @@ How to access variables in a module
 
 How to use Packages in Python
 -----------------------------
+
+grouping of modules
+
+Run a Python Package
+^^^^^^^^^^^^^^^^^^^^
+
+see https://realpython.com/python-modules-packages/#executing-a-module-as-a-script
