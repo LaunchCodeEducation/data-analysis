@@ -10,9 +10,17 @@ Let's turn to encapsulation.
 In object-oriented programming, classes and objects allow us to encapsulate, or isolate, data and behavior to only the parts of our program to which they are relevant.
 Restricting access allows us to expose only that data and behavior that we want others to be able to use.
 
-There are three levels of access when it comes to class members. Public members are meant to be accessible inside and outside the class.
-Protected members are meant to be accessible inside the class, but not outside the class. Private members are meant to be accessed inside the class, not outside the class, and should not be accessed by any base class.
+There are three levels of access when it comes to class members:
 
+#. **Public** members are meant to be accessible inside and outside the class and by child classes. In the last lesson, every property and method we created would be considered a public member.
+#. **Protected** members are meant to be accessible inside the class and to child classes, but not outside the class. 
+#. **Private** members are meant to be accessed inside the class, not outside the class, and should not be accessed by any base class.
+
+.. admonition:: Note
+
+   While Python programmers can designate members as protected or private, Python will still allow programmers to access members outside of classes.
+   As you progress further in your career, you will find additional ways to designate members as protected or private that will help prevent access outside of a class.
+   For now, focus on understanding why encapsulation is important!
 
 Protected Members
 -----------------
@@ -76,3 +84,28 @@ Let's expand our example above.
          print(self._b)
 
 While we can pass a value to ``__c``, we do not access it directly in ``ChildClass``.
+
+Check Your Understanding
+------------------------
+
+.. admonition:: Question
+
+   For this question, refer to the code block below.
+
+   .. sourcecode:: python
+      :linenos:
+
+      class Greeting:
+
+         def __init__(self):
+            self.name = "Jess"
+
+         def say_hello(self):
+            output = "Hello {}!"   
+            print(output.format(self.name))
+
+   What level of access would you give ``name``?
+
+   a. public
+   b. private
+   c. protected

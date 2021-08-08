@@ -23,6 +23,8 @@ If we wanted to program classes for our tiger and housecat, we would create a fe
 We would then create two classes for the panthera genus and the felis genus. We would create classes for the tiger and house cat species as well.
 The species classes would inherit properties and methods from the genus classes and the genus classes would inherit properties and methods from the family class.
 
+.. TODO: Redo this diagram for Python
+
 .. figure:: figures/inheritance.png
    :alt: Figure showing that panthera and felis inherit from felidae, tiger inherits from panthera, and housecat inherits from felis.
 
