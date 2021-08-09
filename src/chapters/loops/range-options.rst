@@ -18,7 +18,7 @@ What if we wanted the loop to use the sequence 1, 2, 3, 4 instead?
 .. index:: ! start value ! stop value
 
 Set Start and Stop Values
-------------------------
+-------------------------
 
 Whenever we use ``range(value)`` in a ``for`` statement, Python always begins
 counting with 0. To start counting at a different number, we need to include
@@ -97,7 +97,7 @@ called the **step value**.
 
 .. admonition:: Note
 
-   For ``range()``, the start and stop values are OPTIONAL.
+   For ``range()``, the start and step values are OPTIONAL.
 
 .. _range-tryit:
 
