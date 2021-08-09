@@ -6,7 +6,7 @@ Exercises: Strings
 The exercises have been broken up into three parts. 
 There are *five* replit pages with starter code for you to fork. 
 Most sections have replit starter code provided.  
-You should see links to your starter code below the exercise steps.
+You should see links to your starter code above the exercise steps.
 
 Part One: Bracket Notation
 --------------------------
@@ -26,6 +26,8 @@ Identify the result for each of the following statements:
 Bracket Notation Basics
 ^^^^^^^^^^^^^^^^^^^^^^^
 
+The starter code for this and the following part can be found at `repl.it <https://replit.com/@launchcode/StringsExercisesPart1-2and3>`__.
+
 Use bracket notation to:
 
 1. Print a slice of the first 12 characters from
@@ -35,8 +37,6 @@ Use bracket notation to:
 3. Print a slice of the middle 12 characters from the same string.
 
 :ref:`Check Your Solutions<strings-exercise-solutions1.2>`
-
-
 
 Looping Through a String
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -54,16 +54,13 @@ Use index values to loop *backwards* through a string:
 
 :ref:`Check Your Solutions<strings-exercise-solutions1.3>`
 
-.. admonition:: Tip: Starter Code
-
-   `Code it at repl.it <https://replit.com/@launchcode/StringsExercisesPart1-2and3>`__.
-
-
 Part Two: String Methods and Operations
 ---------------------------------------
 
 String Methods and Data Types
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`Code it at repl.it <https://replit.com/@launchcode/StringsExercisesPart2-1>`__.
 
 The ``len()`` function returns the number of characters in a string. However,
 the function will NOT give us the length of an integer. If ``num = 1001``,
@@ -81,12 +78,10 @@ then ``len(num)`` throws an error instead of returning ``4``.
 
 :ref:`Check Your Solutions<strings-exercise-solutions2.1>`
 
-.. admonition:: Tip: Starter Code
-
-   `Code it at repl.it <https://replit.com/@launchcode/StringsExercisesPart2-1>`__.
-
 Loops, Conditionals, and Strings! Oh my!
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`Code it at repl.it <https://replit.com/@launchcode/StringsExercisesPart2-2>`__.
 
 Given ``word = 'bag'``:
 
@@ -110,12 +105,10 @@ Given ``word = 'bag'``:
 
 :ref:`Check Your Solutions<strings-exercise-solutions2.2>`
 
-.. admonition:: Tip: Starter Code
-
-   `Code it at repl.it <https://replit.com/@launchcode/StringsExercisesPart2-2>`__.
-
 Method Chaining Fun with DNA
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+`Code it at repl.it <https://replit.com/@launchcode/StringsExercisesPart2-3and4>`__.
 
 Consider a string that represents a strand of DNA:
 ``dna = " TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT    "``. There
@@ -144,16 +137,13 @@ are some typos in the string that you need to fix:
 
 :ref:`Check Your Solutions<strings-exercise-solutions2.3>`
 
-.. admonition:: Tip: Starter Code
-
-   `Code it at repl.it <https://replit.com/@launchcode/StringsExercisesPart2-3and4>`__.
-
 Part Three: String Formatting
 -----------------------------
 
 Template Literals
 ^^^^^^^^^^^^^^^^^
 
+`Code it at repl.it <https://replit.com/@launchcode/StringsExercisesPart3-1>`__.
 
 Assign your favorite, school-appropriate number and word to two variables.
    
@@ -163,17 +153,10 @@ Assign your favorite, school-appropriate number and word to two variables.
 2. Print the string, ``"Here is my word 3 times: ___/___/___, and here is my
    number squared: ___."``
 
-
 :ref:`Check Your Solutions<strings-exercise-solutions3.1>`
-
-.. admonition:: Tip: Starter Code
-
-   `Code it at repl.it <https://replit.com/@launchcode/StringsExercisesPart3-1>`__.
 
 Debugging Practice
 ^^^^^^^^^^^^^^^^^^
-
-
 
 *No starter code for this one.*
 

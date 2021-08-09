@@ -138,12 +138,9 @@ Given ``word = 'bag'``:
     
    .. sourcecode:: python
 
-      #the below code will replace all vowels in a word
       for vowel in vowels:
-      new_word = word.replace("a", vowel).replace("e", vowel).replace("i", vowel).replace("o", vowel).replace("u", vowel)
-      print(new_word)
-
-
+         new_word = word.replace("a", vowel).replace("e", vowel).replace("i", vowel).replace("o", vowel).replace("u", vowel)
+         print(new_word)
 
 :ref:`Return to the exercises<strings-exercises>`
 
