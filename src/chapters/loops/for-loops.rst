@@ -7,7 +7,11 @@
 
 .. index:: ! for loop
 
-The ``for`` loop is the first Python tool for iteration that we will explore. A **for loop** is typically used for **definite iteration**. Definite iteration is the process of repeating a specific task with a specific data set. When a ``for`` loop begins it can usually be determined exactly how many times it will execute: once for each item in the data set.
+The ``for`` loop is the first Python tool for iteration that we will explore. 
+A **for loop** is typically used for **definite iteration**. 
+Definite iteration is the process of repeating a specific task with a specific data set. 
+When a ``for`` loop begins it can usually be determined exactly how many times it will execute: 
+once for each item in the data set.
 
 ``for`` Loop Syntax
 -------------------
@@ -23,22 +27,27 @@ We have already seen the basic syntax of a ``for`` loop.
    for num in range(51):
       print(num)
 
-This program prints the integers 0 through 50, one number per line. In the language of definite iteration, we say that the loop has a data set of 0-50, and its action is to print a value to the console.
+   print("Not in the loop!")
 
-Let's break down this syntax piece by piece, so we can begin to understand how ``for`` loops are structured.
+This program prints the integers 0 through 50, one number per line. 
+In the language of definite iteration, we say that the loop has a data set of 0-50, 
+and its action is to print a value to the console.
+
+Let's break down this syntax piece by piece, so we can begin to understand how ``for`` 
+loops are structured.
 
 .. index::
    single: for loop; variable
 
 #. In line 1, ``num`` is called the **loop variable**. Each time the loop
-   executes, ``num`` gets assigned a new value.
-#. Line 2 begins the loop body. The loop body is ALWAYS indented. The
-   indentation determines exactly what statements are “in the loop”. You saw
-   this when you indented line 4 to match line 2. Originally, line 4 was
-   outside of the loop and ran only once. By indenting line 4, it becomes part
-   of the loop body and gets repeated multiple times.
+   executes, ``num`` gets assigned a new value based on the number in the ``range``. 
+   In this example, ``num`` will be assigned a value 51 times, starting with 0 and ending at 50.
+   More on that later.
+#. Line 2 begins the loop body. The loop body is ALWAYS indented. 
+   The indentation determines exactly what statements are “in the loop”. 
+   In this example, we are printing each value of ``num`` as we loop through the set range.
 #. The *first* unindented line after the ``for`` statement marks the end of the
-   loop body.
+   loop body.  In this example, line 4 is not part of the loop.
 #. The loop body can contain any number of statements.
 #. The number of times the loop body runs depends on the value in ``range()``.
 
@@ -135,7 +144,7 @@ Check Your Understanding
 
 .. admonition:: Question
 
-   How does python know what lines are contained in the loop body?
+   How does Python know what lines are contained in the loop body?
 
    a. The lines are indented by the same amount from the ``for`` statement.
    b. There is always exactly one line in the loop body.
