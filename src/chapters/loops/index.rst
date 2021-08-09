@@ -1,3 +1,5 @@
+.. _loops:
+
 Repeating Things With Loops
 ===========================
 
