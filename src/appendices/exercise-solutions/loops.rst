@@ -1,7 +1,7 @@
 .. _loops-exercise-solutions:
 
 Exercise Solutions: Loops
-======================================
+==========================
 
 .. _loops-exercise-solutions1:
 

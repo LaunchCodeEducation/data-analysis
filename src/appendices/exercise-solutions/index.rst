@@ -10,4 +10,5 @@ Exercise Solutions
    booleans-and-conditionals
    loops
    strings
+   lists
    
