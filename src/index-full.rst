@@ -40,6 +40,8 @@ Assignments
    :maxdepth: 1
    :name: assignmentstoc
 
+   assignments/scrabble-scorer
+
 Appendices
 ==========
 
