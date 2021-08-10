@@ -43,7 +43,7 @@ As you become more comfortable with Git and begin to build larger projects on yo
 
 .. admonition:: Fun Fact
 
-   Some development teams will *only* work in feature branches. On these teams, developers are NOT allowed to make changes directly to the ``master`` branch. They must work in feature branches and create pull requests into ``master`` to add those changes to the main code base.
+   Some development teams will *only* work in feature branches. On these teams, developers are NOT allowed to make changes directly to the ``main`` branch. They must work in feature branches and create pull requests into ``main`` to add those changes to the main code base.
 
 In the workflow below, we use ``main`` to refer to the branch from which the feature branch is created (often ``master``) and ``feature`` to refer to the feature branch. Remember to use descriptive names for your branches.
 
@@ -66,9 +66,9 @@ This workflow is similar to the :ref:`single-dev-branch` workflow, only now you 
 #. Check status: ``git status``
 #. Stage changes: ``git add .``
 #. Commit changes: ``git commit -m "Added feature X"``
-#. Pull changes made by other: ``git pull origin master``
+#. Pull changes made by other: ``git pull origin main``
 #. Merge changes as necessary
-#. Push changes: ``git push origin master``
+#. Push changes: ``git push origin main``
 
 .. _team-feature:
 
@@ -77,7 +77,7 @@ Team / Feature Branches
 
 The workflow for a team of developers using feature branches combines the :ref:`team-single` and :ref:`single-feature` workflows. 
 
-In the workflow below, we use ``main`` to refer to the branch from which the feature branch is created (often ``master``) and ``feature`` to refer to the feature branch. Remember to use descriptive names for your branches.
+In the workflow below, we use ``main`` to refer to the branch from which the feature branch is created (often ``main``) and ``feature`` to refer to the feature branch. Remember to use descriptive names for your branches.
 
 #. Create a new branch. While in ``main`` create and move to the feature branch: ``git checkout -b feature``. OR if contributing to a branch made by a team member, fetch and checkout their existing branch: ``git fetch origin`` then ``git checkout feature``
 #. Follow the :ref:`team-single` workflow until work on the feature is complete.

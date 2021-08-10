@@ -19,7 +19,7 @@ The Situation
 
 We address the following situation: 
 
-- You have multiple branches in your local repository. For this tutorial, we'll work with ``master`` and ``feature`` branches. 
+- You have multiple branches in your local repository. For this tutorial, we'll work with ``main`` and ``feature`` branches. 
 - You are working in a given branch, and have saved some changes. 
 - Your changes have NOT been staged or committed.
 - You want to move your changes to another branch.
@@ -31,12 +31,12 @@ Using Git Stash
 
 Suppose you have a branch called ``feature`` that you want to work in.
 You've made some changes, and saved them, only to realize that you're in
-(Gasp!) the ``master`` branch.
+(Gasp!) the ``main`` branch.
 
 ::
 
    $ git status
-   On branch master
+   On branch main
    Changes not staged for commit:
      (use "git add <file>..." to update what will be committed)
      (use "git checkout -- <file>..." to discard changes in working directory)
@@ -67,7 +67,7 @@ Use ``git stash`` to put these changes off to the side for a moment.
 ::
 
    $ git stash
-   Saved working directory and index state WIP on master: 1da4892 Introduce render_template
+   Saved working directory and index state WIP on main: 1da4892 Introduce render_template
    HEAD is now at 1da4892 Introduce render_template
 
 Your message will differ, based on the most recent commit that you made
@@ -78,7 +78,7 @@ Note that your ``master`` branch is now “clean”.
 ::
 
    $ git status
-   On branch master
+   On branch main
    nothing to commit, working tree clean
 
 Now, safely switch to the ``feature`` branch.

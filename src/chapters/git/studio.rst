@@ -3,11 +3,6 @@
 Studio: Communication Log
 =========================
 
-.. admonition:: Note
-
-   If you have not installed :ref:`Visual Studio Code <vsc-install>` on your
-   computer yet, now would be the time to do so!
-
 Code Together
 -------------
 
