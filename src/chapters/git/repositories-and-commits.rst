@@ -105,3 +105,5 @@ Check Your Understanding
    #. ``git log``
    #. ``git status``
    #. ``git push``
+
+.. ans: b
