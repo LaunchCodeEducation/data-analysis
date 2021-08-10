@@ -90,5 +90,5 @@ Submitting Your Work
 You should have two replits, one for *String Modification* and one for *List and String Conversions*.
 Submit the links to your replits in your Canvas account for credit.
 
-If you did Part 3, submit that through your canvas as well.
+If you did Part 3, submit that through Canvas as well.
 

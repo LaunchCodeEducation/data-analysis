@@ -162,4 +162,4 @@ Part Four: Multi-dimensional Lists
 Submitting Your Work
 ---------------------
 
-You should have four replits by the end of your exercises.  Submit them via your canvas page.
+You should have four replits by the end of your exercises.  Submit them via Canvas.
