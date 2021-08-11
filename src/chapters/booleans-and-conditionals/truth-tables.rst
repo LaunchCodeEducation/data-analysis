@@ -51,9 +51,10 @@ false, then ``A and B`` is false.
       * - ``True``
         - ``True``
         - .. raw:: html
+          
+            <b id = "optionA" onclick="reveal('optionA')" style="opacity:0">True</b>
 
-             <b id = "optionA" onclick="reveal('optionA')" style="opacity:0">True</b>
-
+             
       * - ``True``
         - ``False``
         - .. raw:: html

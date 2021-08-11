@@ -45,6 +45,8 @@ exercises:
    * - Miles per kilometer
      - 0.621
 
+.. _exercises-data-and-variables-partA:
+
 The Exercises
 -------------
 
@@ -63,6 +65,9 @@ A. **Declare and assign variables**
    For each variable you declared in part A, use ``type()`` to print its type to the console, one item per line.
 
    Click "Run" (in repl.it) and verify that your code works before moving to part C.
+
+
+   .. _exercises-data-and-variables-partC:
 
 #. **Calculate a space mission!**
 
@@ -94,6 +99,8 @@ A. **Declare and assign variables**
    the shuttle name and the calculated time.
 
    Click "Run" (in repl.it) and verify that your code works before moving on.
+
+   .. _exercises-data-and-variables-partE:
 
 #. **Now calculate a trip to the Moon**
 

@@ -42,6 +42,7 @@ Assignments
 
    assignments/hello-world
    assignments/candidate-quiz
+   assignments/scrabble-scorer
 
 Appendices
 ==========
