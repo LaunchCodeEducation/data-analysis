@@ -128,7 +128,8 @@ To get started coding, open a new window in Visual Studio Code.
 .. figure:: figures/vsc-icons.png
    :alt: Close up of VSC icons
 
-   **Visual Studio Icons 101**: 1) This is the current file in your view.  
+   **Visual Studio Icons 101**: 
+   1) This is the current file in your view.  
    2) **Explorer**: here you will find your file tree.
    3) **Search**: search for specific elements within your files.  
    4) **Source Control**:  This visually tracks and stores your changes in your branch.
