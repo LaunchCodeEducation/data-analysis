@@ -135,7 +135,15 @@ To apply a method to one of the nested lists, the syntax is:
 Try It!
 ^^^^^^^
 
-In the editor below, do the following:
+Using the lists below in the text editor, work through the following challenge:
+
+.. replit:: python
+   :slug: MultiDimensionalLists
+   :linenos:
+
+   id_number_lists = [ [111, 222, 333], [987, 654], [1010, 1100, 0, 1] ]
+   new_nums = [1138, 42, 5]
+
 
 #. Append ``new_nums`` to ``id_number_lists``, and append the value ``444`` to
    the first list in ``id_number_lists``.
@@ -167,12 +175,6 @@ In the editor below, do the following:
 
          print('--------------')
 
-.. replit:: python
-   :slug: MultiDimensionalLists
-   :linenos:
-
-   id_number_lists = [ [111, 222, 333], [987, 654], [1010, 1100, 0, 1] ]
-   new_nums = [1138, 42, 5]
 
 Beyond Two Dimensional lists
 -----------------------------

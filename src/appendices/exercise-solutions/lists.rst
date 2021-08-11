@@ -1,29 +1,38 @@
-.. _exercises-lists:
+.. _lists-exercise-solutions:
 
-Exercises: Lists
-================
+Exercise Solutions: Lists
+=========================
 
-The following actions will teach you how to add, remove, modify, and
-rearrange list elements.
+.. _lists-exercise-solutions1:
 
 Part One: Adding and Removing Items
 -----------------------------------
 
-*Part 1 starter code*: `repl.it <https://replit.com/@launchcode/ListExercises01>`__.
+.. _lists-exercise-solutions1a:
 
 #. Create a list called ``adding_practice`` with a single entry: ``273.15``.
    Use the ``append`` method to add the following elements to the list one at a
    time. Print the list after each step to confirm the changes.
 
-   #. 42
-   #. "hello"
+   a. 42
 
-   :ref:`Check your solution <lists-exercise-solutions1a>`.
+   .. sourcecode:: python
 
-#. Use :ref:`concatenation <concatenating-lists>` to add these three items to
+      adding_practice.append(42)
+
+
+   :ref:`Back to the exercises <exercises-lists>`.
+
+#. Use concatenation to add these three items to
    the list all at once: ``[False, -4.6, '87']``.
 
-   :ref:`Check your solution <lists-exercise-solutions1b>`.
+   .. _lists-exercise-solutions1b:
+
+   .. sourcecode:: python
+
+      adding_practice += [False, -4.6, '87']
+
+   .. _lists-exercise-solutions1c:
 
 #. ``append``, ``insert``, ``pop``, and ``remove`` are used to add or remove
    elements from a list. *Bracket notation* can be used to modify any element
@@ -37,6 +46,11 @@ Part One: Adding and Removing Items
 
    #. Use bracket notation to replace ``'slinky'`` in the list with ``'space
       tether'``. Print the list to confirm the change.
+
+      .. sourcecode:: python
+
+         cargo_hold[5] = 'space tether'
+
    #. Remove the last item from the list with ``pop``. Print the element
       removed and the updated list.
    #. Remove the first item from the list with ``pop``. Print the element
@@ -45,20 +59,32 @@ Part One: Adding and Removing Items
       items ``1138`` and ``'20 meters'`` to the the list---the number at the
       start and the string at the end. Print the updated list to confirm the
       changes.
+
+      .. sourcecode:: python
+
+         cargo_hold.append('20 meters')
+         cargo_hold.insert(0, 1138) 
+
+
    #. ``remove`` the parrot from the cargo hold, then print the updated list.
    #. Use ``format()`` to print the final contents of the list and its length.
       ``"The list ___ contains ___ items."``
 
-   :ref:`Check your solution <lists-exercise-solutions1c>`.
+      .. sourcecode:: python
+
+         output = "The list {0} contains {1} items."
+         print(output.format(cargo_hold, len(cargo_hold)))
+
+
+   :ref:`Back to the exercises <exercises-lists>`.
+
+   .. _lists-exercise-solutions2a:
 
 Part Two: Slices & Methods
 --------------------------
 
-*Part 2 starter code*: `repl.it <https://replit.com/@launchcode/ListExercises02>`__.
-
 #. Using the slice syntax ``list_name[start : end]`` you can either insert,
-   replace, or remove items from a list. Review the
-   :ref:`List Slices <slicing-lists>` section if you need a syntax reminder.
+   replace, or remove items from a list. 
 
    Use slices to make the following changes to the final ``cargo_hold`` list
    from part 1. Be sure to print the list after each step to confirm your
@@ -71,7 +97,11 @@ Part Two: Slices & Methods
    #. Replace the elements at indexes 2 - 4 with the items ``'cat'``,
       ``'book'``, and ``'string cheese'``.
 
-   :ref:`Check your solution <lists-exercise-solutions2a>`.
+   .. sourcecode:: python
+
+      cargo_hold[2:5] = ['cat', 'book', 'string cheese'] 
+
+   :ref:`Back to the exercises <exercises-lists>`.
 
 #. Some methods---like ``append`` and ``pop``---alter the original list,
    while others do not. Use the lists
@@ -84,19 +114,30 @@ Part Two: Slices & Methods
    to see if taking a slice or using the ``reverse`` and ``sort`` methods
    changes the original list.
 
+   .. _lists-exercise-solutions2b:
+
    #. Print a slice of the last 3 items from ``supplies_1``. Does slice alter
       the original list? Verify this by printing ``supplies_1`` after taking
       the slice.
+
+      .. sourcecode:: python
+
+         print('Before slice:', supplies_1)
+         print('Slice:', supplies_1[-3:])
+         print('After slice:', supplies_1)
+         print("Conclusion: Taking a slice does NOT alter the original list!")
+
+
    #. ``reverse`` the first list, ``sort`` the second, and then print both
       lists. What is the difference between the two methods?
    #. Do ``reverse`` or ``sort`` alter the original lists?
 
-   :ref:`Check your solution <lists-exercise-solutions2b>`.
+   :ref:`Back to the exercises <exercises-lists>`.
+
+.. _lists-exercise-solutions3a:
 
 Part Three: Split, List, and Join
 ---------------------------------
-
-*Part 3 starter code*: `repl.it <https://replit.com/@launchcode/ListExercises03>`__.
 
 #. The ``split`` method converts a string into a list, while the ``join``
    method does the opposite.
@@ -106,28 +147,43 @@ Part Three: Split, List, and Join
       ``phrase.split('e')`` vs. ``list(phrase)``. What is the purpose of the
       argument inside the ``()``?
 
-      :ref:`Check your solution <lists-exercise-solutions3a>`.
+      .. sourcecode:: python
+
+         output = "Using {0}: {1}"
+         print(output.format('.split()', phrase.split()))
+         print(output.format(".split('e')", phrase.split('e')))
+         print(output.format('list()', list(phrase)))
+
 
    #. Given the list ``my_list = ['B', 'n', 'n', 5]``, see what happens when
       you print ``''.join(my_list)`` vs. ``'a'.join(my_list)`` vs.
       ``'_'.join(my_list)``. What is the purpose of the argument inside the
       ``()``?
+
+      .. _lists-exercise-solutions3b:
+
    #. We can take a string with *delimiters* (like commas) and convert it into
       a modifiable list. Try it! Split the string
       ``'water,space suits,food,plasma sword,batteries'`` at each comma,
       alphabetize the list with ``sort``, then combine the elements into a new
       string. Use a hyphen to join the elements together in the string.
-   
-      :ref:`Check your solution <lists-exercise-solutions3b>`.
-   
+
+      .. sourcecode:: python
+
+         items = cargo_hold.split(',')
+         items.sort()
+         new_string = '-'.join(items)
+         print(new_string)
+
+
    #. Do ``split``, ``list``, or ``join`` change the original string/list?
 
+   :ref:`Back to the exercises <exercises-lists>`.
 
+.. _lists-exercise-solutions4a:
 
 Part Four: Multi-dimensional Lists
 ----------------------------------
-
-*Part 4 starter code*: `repl.it <https://replit.com/@launchcode/ListExercises04>`__.
 
 #. Lists can hold different data types, even other lists! A
    *multi-dimensional list* is one with entries that are also lists.
@@ -142,16 +198,31 @@ Part Four: Multi-dimensional Lists
    #. Define the list ``table``, and use ``table.append(list_name)`` to add each
       of the element lists to it. Print ``table`` to see its structure.
 
-      :ref:`Check your solution <lists-exercise-solutions4a>`.
+      .. sourcecode:: python
+
+         table = []
+         table.append(element_1)
+         table.append(element_2)
+         table.append(element_26)
+
+      :ref:`Back to the exercises <exercises-lists>`.
 
    #. Use bracket notation to examine the difference between printing
       ``table[1]`` and ``table[1][1]``. Don't just nod your head! I want to
       HEAR you describe this difference. Go ahead, talk to your screen.
+   
+   .. _lists-exercise-solutions4b:
+   
    #. Using bracket notation and the ``table`` list, print the mass from
       ``element_1``, the name from ``element_2`` and the symbol from
       ``element_26``.
+      
+      .. sourcecode:: python
 
-      :ref:`Check your solution <lists-exercise-solutions4b>`.
+         output = "To get the {0} from {1}, the syntax is {2}. Result = {3}."
+         print(output.format('mass', 'element_1', 'table[0][2]', table[0][2]))
+
+      :ref:`Back to the exercises <exercises-lists>`.
 
    #. ``table`` is an example of a *2-dimensional list*. The first "level"
       contains the element lists, and the second level holds the
@@ -159,7 +230,5 @@ Part Four: Multi-dimensional Lists
    #. **Optional:** Create a 3-dimensional list and
       print out one entry from each level in the list.
 
-Submitting Your Work
----------------------
+      :ref:`Back to the exercises <exercises-lists>`.
 
-You should have four replits by the end of your exercises.  Submit them via Canvas.
