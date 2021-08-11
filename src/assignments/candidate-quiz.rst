@@ -15,15 +15,16 @@ you to create a quick quiz to help select the best candidates.
 
 Requirements
 ------------
+#. Use functions to complete the following:
 
-#. Ask the candidate (user) to enter their name
-#. Use a loop to ask five questions, one at a time, to the candidate
-#. Collect the candidate's answers
-#. Check those answers for accuracy (case insensitive equality check)
-#. Calculate the candidate's overall percentage
-#. Determine if the candidate did well enough to enter our program (need >= 80%
-   to pass)
-#. Display the results.
+   #. Ask the candidate (user) to enter their name
+   #. Use a loop to ask five questions, one at a time, to the candidate
+   #. Collect the candidate's answers
+   #. Check those answers for accuracy (case insensitive equality check)
+   #. Calculate the candidate's overall percentage
+   #. Determine if the candidate did well enough to enter our program (need >= 80%
+      to pass)
+   #. Display the results.
 
 Take It Step by Step
 --------------------
@@ -46,11 +47,12 @@ Part 1: Minimum Viable Quiz
 1.1 ``candidate_name``
 ~~~~~~~~~~~~~~~~~~~~~~
 
-a. Ask for the candidate's name. Look for ``TODO 1.1`` in the starter code. 
-   On the line below this TODO comment, prompt the user for their name and store the value in a variable called ``candidate_name``.
+a. Ask for the candidate's name. Look for ``TODO 1.1a`` in the starter code. 
+   On the line below this TODO comment, 
+   prompt the user for their name and store the value in a variable called ``candidate_name``.
 
 #. Look for ``TODO 1.1b``. Underneath it, write a message to the console greeting 
-   the user using the name they just provided.
+   the user using the name they just provided via your ``ask_for_name`` function.
 
 1.2 Single Question Quiz
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -87,8 +89,8 @@ Now that your small app is working, expand it to deal with multiple questions.
 This time, you only have one ``TODO`` item in the starter code. You will need
 to determine which lines need to be modified.
 
-#. Define ``questions`` and ``correct_answers`` variables as arrays. Use the table below to fill these arrays.
-#. Replace your code from ``TODO 1.2b`` with a loop that programmatically asks each question in the array and stores 
+#. Define ``questions`` and ``correct_answers`` variables as lists. Use the table below to fill these lists.
+#. Replace your code from ``TODO 1.2b`` with a loop that programmatically asks each question in the list and stores 
    the user's responses.
 #. Replace the basic feedback from ``TODO 1.2c`` with a template literal that displays each of the candidate's responses in 
    addition to the corresponding correct answers.
@@ -108,7 +110,7 @@ to determine which lines need to be modified.
    * - (5 + 3)/2 * 10 = ?
      - "40"
 
-   * - Given the array ``[8, 'Orbit', 'Trajectory', 45]``, what entry is at index 2?
+   * - Given the list ``[8, 'Orbit', 'Trajectory', 45]``, what entry is at index 2?
      - "Trajectory"
 
    * - What is the minimum crew size for the ISS?
@@ -121,9 +123,7 @@ to determine which lines need to be modified.
 Part 3: Grade the Quiz
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Finally, calculate the candidate's score and print the results. There are no ``TODOs`` in this section, 
-just be sure to only modify code that you have written, or add code. Don't remove anything in the file 
-that you haven't written. Doing so may cause your program to behave unexpectedly - and we might not be able to grade it!
+Finally, calculate the candidate's score and print the results. There are no ``TODOs`` in this section.
 
 Your task here is to:
 
@@ -163,7 +163,7 @@ passed the quiz.
    Your Answer: 45
    Correct Answer: 40
 
-   4) Given the array [8, "Orbit", "Trajectory", 45], what entry is at index 2?
+   4) Given the list [8, "Orbit", "Trajectory", 45], what entry is at index 2?
    Your Answer: trajectory
    Correct Answer: Trajectory
 

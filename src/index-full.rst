@@ -44,6 +44,7 @@ Assignments
    assignments/candidate-quiz
    assignments/scrabble-scorer
 
+
 Appendices
 ==========
 
