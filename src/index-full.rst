@@ -40,6 +40,8 @@ Assignments
    :maxdepth: 1
    :name: assignmentstoc
 
+   assignments/hello-world
+   assignments/candidate-quiz
    assignments/scrabble-scorer
 
 Appendices
@@ -49,6 +51,7 @@ Appendices
    :maxdepth: 1
    :name: appendicestoc
 
+   appendices/installing-software/index
    appendices/string-methods/index
    appendices/list-methods/index
    appendices/exercise-solutions/index
