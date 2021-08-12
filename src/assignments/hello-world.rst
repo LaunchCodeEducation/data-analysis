@@ -34,6 +34,10 @@ GitHub
 If you haven't done so already, create a 
 `GitHub account <https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home>`__.
 
+To store your work on Github, you will also need to set up Git on your machine.
+First, ensure that you have properly :ref:`set up your terminal <terminal-setupinstructions>`.
+Then, follow the steps to :ref:`install Git <git-install>`. 
+
 Visual Studio Code
 ~~~~~~~~~~~~~~~~~~
 
