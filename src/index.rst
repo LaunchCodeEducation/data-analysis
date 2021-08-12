@@ -9,6 +9,7 @@ Chapters
    chapters/introduction/index
    chapters/how-programs-work/index
    chapters/how-to-write-code/index
+   chapters/terminal/index
    chapters/data-and-variables/index
    chapters/booleans-and-conditionals/index
    chapters/loops/index
@@ -53,6 +54,7 @@ Appendices
    :name: appendicestoc
 
    appendices/installing-software/index
+   appendices/terminal-commands/index
    appendices/string-methods/index
    appendices/list-methods/index
    appendices/exercise-solutions/index
