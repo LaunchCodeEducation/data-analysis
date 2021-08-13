@@ -1,3 +1,5 @@
+.. _exercises-lists:
+
 Exercises: Lists
 ================
 
@@ -16,8 +18,13 @@ Part One: Adding and Removing Items
    #. 42
    #. "hello"
 
+   :ref:`Check your solution <lists-exercise-solutions1a>`.
+
 #. Use :ref:`concatenation <concatenating-lists>` to add these three items to
    the list all at once: ``[False, -4.6, '87']``.
+
+   :ref:`Check your solution <lists-exercise-solutions1b>`.
+
 #. ``append``, ``insert``, ``pop``, and ``remove`` are used to add or remove
    elements from a list. *Bracket notation* can be used to modify any element
    within a list. Starting with the ``cargo_hold`` list
@@ -42,6 +49,8 @@ Part One: Adding and Removing Items
    #. Use ``format()`` to print the final contents of the list and its length.
       ``"The list ___ contains ___ items."``
 
+   :ref:`Check your solution <lists-exercise-solutions1c>`.
+
 Part Two: Slices & Methods
 --------------------------
 
@@ -62,6 +71,8 @@ Part Two: Slices & Methods
    #. Replace the elements at indexes 2 - 4 with the items ``'cat'``,
       ``'book'``, and ``'string cheese'``.
 
+   :ref:`Check your solution <lists-exercise-solutions2a>`.
+
 #. Some methods---like ``append`` and ``pop``---alter the original list,
    while others do not. Use the lists
 
@@ -80,6 +91,8 @@ Part Two: Slices & Methods
       lists. What is the difference between the two methods?
    #. Do ``reverse`` or ``sort`` alter the original lists?
 
+   :ref:`Check your solution <lists-exercise-solutions2b>`.
+
 Part Three: Split, List, and Join
 ---------------------------------
 
@@ -92,6 +105,9 @@ Part Three: Split, List, and Join
       see what happens when you print ``phrase.split()`` vs.
       ``phrase.split('e')`` vs. ``list(phrase)``. What is the purpose of the
       argument inside the ``()``?
+
+      :ref:`Check your solution <lists-exercise-solutions3a>`.
+
    #. Given the list ``my_list = ['B', 'n', 'n', 5]``, see what happens when
       you print ``''.join(my_list)`` vs. ``'a'.join(my_list)`` vs.
       ``'_'.join(my_list)``. What is the purpose of the argument inside the
@@ -101,7 +117,12 @@ Part Three: Split, List, and Join
       ``'water,space suits,food,plasma sword,batteries'`` at each comma,
       alphabetize the list with ``sort``, then combine the elements into a new
       string. Use a hyphen to join the elements together in the string.
+   
+      :ref:`Check your solution <lists-exercise-solutions3b>`.
+   
    #. Do ``split``, ``list``, or ``join`` change the original string/list?
+
+
 
 Part Four: Multi-dimensional Lists
 ----------------------------------
@@ -120,13 +141,25 @@ Part Four: Multi-dimensional Lists
 
    #. Define the list ``table``, and use ``table.append(list_name)`` to add each
       of the element lists to it. Print ``table`` to see its structure.
+
+      :ref:`Check your solution <lists-exercise-solutions4a>`.
+
    #. Use bracket notation to examine the difference between printing
       ``table[1]`` and ``table[1][1]``. Don't just nod your head! I want to
       HEAR you describe this difference. Go ahead, talk to your screen.
    #. Using bracket notation and the ``table`` list, print the mass from
       ``element_1``, the name from ``element_2`` and the symbol from
       ``element_26``.
+
+      :ref:`Check your solution <lists-exercise-solutions4b>`.
+
    #. ``table`` is an example of a *2-dimensional list*. The first "level"
       contains the element lists, and the second level holds the
-      name/symbol/mass values. **Experiment!** Create a 3-dimensional list and
+      name/symbol/mass values.  
+   #. **Optional:** Create a 3-dimensional list and
       print out one entry from each level in the list.
+
+Submitting Your Work
+---------------------
+
+You should have four replits by the end of your exercises.  Submit them via Canvas.

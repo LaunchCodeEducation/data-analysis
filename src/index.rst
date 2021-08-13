@@ -6,6 +6,10 @@ Chapters
    :maxdepth: 1
    :name: chapterstoc
    
+   chapters/introduction/index
+   chapters/how-programs-work/index
+   chapters/how-to-write-code/index
+   chapters/data-and-variables/index
    chapters/booleans-and-conditionals/index
    chapters/loops/index
    chapters/strings/index
@@ -25,7 +29,11 @@ Studios
    :maxdepth: 1
    :name: studiostoc
 
+   chapters/data-and-variables/studio
    chapters/loops/studio
+   chapters/lists/studio
+   chapters/errors-and-debugging/studio
+   chapters/functions/studio
    chapters/dictionaries/studio
 
 Assignments
@@ -35,6 +43,10 @@ Assignments
    :maxdepth: 1
    :name: assignmentstoc
 
+   assignments/hello-world
+   assignments/candidate-quiz
+   assignments/scrabble-scorer
+
 Appendices
 ==========
 
@@ -42,6 +54,7 @@ Appendices
    :maxdepth: 1
    :name: appendicestoc
 
+   appendices/installing-software/index
    appendices/string-methods/index
    appendices/list-methods/index
    appendices/dictionary-methods/index

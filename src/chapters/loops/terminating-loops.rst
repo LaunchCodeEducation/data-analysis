@@ -13,7 +13,7 @@ the loop. Program flow then continues with the next line of code below the loop.
       :linenos:
 
       for iteration in range(42):
-         print('This is iteration number:', iteration+1).
+         print('This is iteration number:', iteration+1)
 
          if iteration > 4:
             break
