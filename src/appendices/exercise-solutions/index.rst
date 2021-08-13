@@ -11,4 +11,5 @@ Exercise Solutions
    loops
    strings
    lists
+   dictionaries
    
