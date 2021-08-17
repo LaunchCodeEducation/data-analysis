@@ -99,8 +99,8 @@ to the rescue!
 
 .. admonition:: Note
 
-   Recall that with ``range(start, end)``, the loop variable takes each value
-   from ``start`` up to but NOT including ``end``. This is why line 4 uses
+   Recall that with ``range(start, stop)``, the loop variable takes each value
+   from ``start`` up to but NOT including ``stop``. This is why line 4 uses
    ``range(1, num+1)``. We want to include the value of ``num`` as part of the
    iteration.
 

@@ -47,6 +47,8 @@ and it may contain any number of statements.
          total += increase_by
          print(total)
 
+      print("Not in the loop!")
+
 Control Flow
 ------------
 
@@ -89,8 +91,8 @@ This can be rewritten as a while loop:
 
 Instead of using the ``range`` function to produce the values for ``num``, we
 need to produce them ourselves in a ``while`` loop. To do this, *before*
-starting the loop, we create the variable ``num`` and assign it a value of
-``0``. Every iteration, line 5 increases ``num`` by 1. Eventually, ``num``
+starting the loop.  In this example, we create the variable ``num`` and assign it a value of
+``0`` in line 1. Every iteration, line 5 increases ``num`` by 1. Eventually, ``num``
 increases enough to make the condition ``num < 21`` false, and the loop ends.
 
 ``num`` plays the same role as the loop variable in the ``for`` loop, but we
@@ -198,7 +200,7 @@ in the string (5 times). Similarly, ``for value in range(10)`` repeats 10
 times, with ``value`` assigned the numbers 0 - 9.
 
 Even when we use variables in ``range(start, stop, step)``, these variables
-store specific vales. Python knows *exactly* how many times to repeat the loop
+store specific values. Python knows *exactly* how many times to repeat the loop
 body, and this is called **definite iteration**. The starting and ending points
 of are set inside the ``for`` statement.
 
@@ -268,6 +270,8 @@ Check Your Understanding
    d. "Sally"
    e. "LaunchCode"
 
+.. answer = b., c. e.
+
 .. admonition:: Question
 
    If you know the maximum number of times you need a loop to repeat, either
@@ -301,6 +305,6 @@ Check Your Understanding
    Which type of loop should you use to write the program?
 
    a. ``while`` loop
-   b. ``for``
+   b. ``for`` loop
 
 .. Answer = b

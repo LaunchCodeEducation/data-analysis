@@ -15,4 +15,8 @@ Data and Variables
    other-operators
    input
    exercises
+   
+.. toctree::
+   :hidden:
+
    studio

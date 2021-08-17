@@ -225,10 +225,10 @@ Check Your Understanding
       else:
          print("LaunchCode")
 
-      a. ``Launch``
-      b. ``Code``
-      c. ``Launch Code``
-      d. ``LaunchCode``
+   a. ``Launch``
+   b. ``Code``
+   c. ``Launch Code``
+   d. ``LaunchCode``
 
 .. Answer = a
 

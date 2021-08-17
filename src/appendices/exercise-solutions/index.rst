@@ -9,4 +9,7 @@ Exercise Solutions
    data-and-variables
    booleans-and-conditionals
    loops
+   strings
+   lists
+   dictionaries
    

@@ -8,7 +8,7 @@ that the loop *iterates over* the collection.
 Iterate by Index or Characters
 ------------------------------
 
-In the Loops chapter, we learned about iteration. The following examples illustrate two ways we can iterate over a string.
+In the :ref:`Loops chapter<loops>`, we learned about iteration. The following examples illustrate two ways we can iterate over a string.
 
 .. admonition:: Example
 

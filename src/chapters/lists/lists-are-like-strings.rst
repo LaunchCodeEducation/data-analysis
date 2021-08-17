@@ -18,7 +18,7 @@ The ``len()`` function also returns the length of a list (the number of elements
 
       letters = ['a', 'b', 'c', 'x', 'y', 'z']
 
-      print("The list {0} has {1} elements.".format(letters, len(letters))
+      print("The list {0} has {1} elements.".format(letters, len(letters)))
    
    **Console Output**
 
