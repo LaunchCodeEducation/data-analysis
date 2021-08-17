@@ -14,7 +14,7 @@ There are three levels of access when it comes to class members:
 
 #. **Public** members are meant to be accessible inside and outside the class and by child classes. In the last lesson, every property and method we created would be considered a public member.
 #. **Protected** members are meant to be accessible inside the class and to child classes, but not outside the class. 
-#. **Private** members are meant to be accessed inside the class, not outside the class, and should not be accessed by any base class.
+#. **Private** members are meant to be accessed inside the class, not outside the class, and should not be accessed by any child class.
 
 .. admonition:: Note
 
@@ -56,7 +56,7 @@ Let's take a look at ``ParentClass`` and ``ChildClass``.
 Because we put an underscore in front of ``b``, we designated ``b`` as protected. Now take a look at lines 19 and 20. 
 If you run this code, it would run without any errors.
 However, calling ``b`` outside of the class on line 19 is not appropriate.
-Instead, we should follow line 20 and call the ``print_info()`` method instead to print the value of ``b``.
+Instead, we should follow line 20 and call the ``print_info()`` method to print the value of ``b``.
 
 Private Members
 ---------------
