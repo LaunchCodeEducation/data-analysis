@@ -16,6 +16,9 @@ Chapters
    chapters/errors-and-debugging/index
    chapters/functions/index
    chapters/dictionaries/index
+   chapters/classes-and-objects/index
+   chapters/class-relationships/index
+   
 
 .. toctree::
 
@@ -34,6 +37,8 @@ Studios
    chapters/errors-and-debugging/studio
    chapters/functions/studio
    chapters/dictionaries/studio
+   chapters/classes-and-objects/studio
+   chapters/class-relationships/studio
 
 Assignments
 ===========
