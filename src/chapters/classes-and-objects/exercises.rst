@@ -6,6 +6,7 @@ four ``Robot`` objects. You will also practice writing functions that display
 information about the objects and race them against each other.
 
 To start, fork the starter code on `Replit <https://replit.com/@launchcode/ClassesExercises#main.py>`__.
+
 Part 1: Create a New Class
 --------------------------
 
