@@ -1,32 +1,32 @@
-.. _errors-and-debugging-exercises:
 
-Exercises: Errors and Debugging
-===============================
 
-Programmers spend a lot of time reviewing other people's code to help them find
-and fix bugs.
-
-Assume you are part of a team, and you must get the following code samples
-working. Do NOT just clear the editor and start from scratch! Part of working
-well with others is to recognize their effort and what they did correctly.
-Throwing away all of their code just because you would do it differently is NOT
-a helpful strategy.
+Exercises: Errors and Debugging Solutions
+=========================================
 
 Find and Fix Syntax Errors
 --------------------------
 
-This `code sample <https://replit.com/@launchcode/DebuggingExercises01>`__ contains 3 syntax errors.
+.. _errors-and-debugging-exercise-solutions-part1:
 
-#. Before making any changes, run the code as-is to generate the first error
-   message.
-#. Use the error message to fix the first bug. Do NOT change anything in the
-   code unless it involves fixing the first bug.
-#. After changing the code, run the program again. If there is another bug in
-   the program, you will see a different error message.
-#. Repeat steps 2 and 3 until you fix all of the bugs and the program runs
-   successfully.
+#. **Error 1: Line 6**  Correct syntax should look like this:
 
-:ref:`Check Your Solutions<errors-and-debugging-exercise-solutions-part1>`
+   ::
+
+      value = int(input("Enter an index value: "))
+#. **Error 2: Line 9** Correct syntax should look like this
+
+   ::
+
+      if value > len(alphabet):
+#. **Error 3: Line 12** Correct syntax should look like this:
+
+   ::
+
+       print("The letter at index {0} is '{1}'.".format(index, alphabet[index]))
+
+
+:ref:`Back to Exercises<errors-and-debugging-exercises>`
+
 
 Find and Fix Runtime Errors
 ---------------------------
