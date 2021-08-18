@@ -204,8 +204,8 @@ Check Your Understanding
       num = 42
       print(is_even(43))
 
-   a. True
-   b. False
+   a. ``True``
+   b. ``False``
 
 .. Answer = b
 
