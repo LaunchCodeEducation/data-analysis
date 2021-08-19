@@ -44,8 +44,7 @@ Writing a function to do one job makes it easy to reuse that code within a
 program. It ALSO allows us to share that job across files and even different
 projects.
 
-Now that we coded ``make_sandwich`` ONCE, we can reuse it whenever we need to
-flip a string.
+Now that we coded ``make_sandwich`` ONCE, we can reuse it whenever we need create a sandwich object.
 
 .. TODO: Add reference back to Modules chapter
 
