@@ -38,7 +38,7 @@ You will find the starter code `here <https://replit.com/@launchcode/FunctionsEx
 .. _exercises-functions-part1:
 
 Part 1: Rectangles
--------------------
+------------------
 
 A. Write a function ``make_line(size)`` that returns a line with exactly ``size``
    hashes.
