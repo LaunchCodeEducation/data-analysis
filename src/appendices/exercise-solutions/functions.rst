@@ -23,6 +23,8 @@ A. Write a function ``make_line(size)`` that returns a line with exactly ``size`
 
       #####
 
+   :ref:`Return to Exercises<exercises-functions-part1>`
+
    .. _exercises-functions-square:
 
 #. Write a function called ``make_square(size)`` that returns a ``size`` by
@@ -48,6 +50,8 @@ A. Write a function ``make_line(size)`` that returns a line with exactly ``size`
       #####
       #####
 
+   :ref:`Return to Exercises<exercises-functions-part1>`
+
    .. _exercises-functions-rectangle:
  
 #. Write a function ``make_rectangle(width, height)`` that returns a
@@ -71,6 +75,8 @@ A. Write a function ``make_line(size)`` that returns a line with exactly ``size`
       #####
       #####
       #####
+
+   :ref:`Return to Exercises<exercises-functions-part1>`
 
 Part 2:  Triangles
 ------------------
@@ -100,6 +106,8 @@ A. Write a function ``make_downward_stairs(height)`` that prints the staircase
       ####
       #####
 
+   :ref:`Return to Exercises<exercises-functions-part2>`
+
    .. _exercises-functions-space-line:
 
 #. Write a function ``make_space_line(numSpaces, numChars)`` that returns a line
@@ -126,6 +134,8 @@ A. Write a function ``make_downward_stairs(height)`` that prints the staircase
 
       ___#####___
 
+   :ref:`Return to Exercises<exercises-functions-part2>`
+
    .. _exercises-functions-triangle:
 
 #. Write a function ``make_isosceles_triangle(height)`` that returns a triangle
@@ -151,7 +161,8 @@ A. Write a function ``make_downward_stairs(height)`` that prints the staircase
        #######
       #########
 
-   
+   :ref:`Return to Exercises<exercises-functions-part2>`
+
 Part 3: Diamonds
 ----------------
 
@@ -194,6 +205,8 @@ A. Write a function ``make_diamond(height)`` that returns a diamond where the
       Consider what happens if you create a triangle and reverse it using
       our reverse function.
 
+:ref:`Return to Exercises<exercises-functions-part3>`
+
 Optional Mission
 ----------------
 
@@ -217,6 +230,8 @@ and draw the shapes with that character instead of always using ``'#'``.
 
    &&&&&&&&
 
+:ref:`Return to Exercises<exercises-functions-bonus>`
+
 Make the new parameter optional, with default value ``'#'``.
 
 .. sourcecode:: python
@@ -234,3 +249,5 @@ Make the new parameter optional, with default value ``'#'``.
 ::
 
    ########
+
+:ref:`Return to Exercises<exercises-functions-bonus>`

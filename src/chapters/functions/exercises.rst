@@ -35,6 +35,8 @@ Getting Started
 
 You will find the starter code `here <https://replit.com/@launchcode/FunctionsExercises>`_.
 
+.. _exercises-functions-part1:
+
 Part 1: Rectangles
 -------------------
 
@@ -105,6 +107,8 @@ A. Write a function ``make_line(size)`` that returns a line with exactly ``size`
 
 :ref:`Check Your Solution<exercises-functions-rectangle>`
 
+.. _exercises-functions-part2:
+
 Part 2:  Triangles
 ------------------
 
@@ -171,6 +175,8 @@ A. Write a function ``make_downward_stairs(height)`` that prints the staircase
 
    :ref:`Check Your Solution<exercises-functions-triangle>`
 
+.. _exercises-functions-part3:
+
 Part 3: Diamonds
 ----------------
 
@@ -204,6 +210,8 @@ A. Write a function ``make_diamond(height)`` that returns a diamond where the
       our reverse function.
 
    :ref:`Check Your Solution<exercises-functions-diamond>`
+
+.. _exercises-functions-bonus:
 
 Optional Mission
 ----------------
