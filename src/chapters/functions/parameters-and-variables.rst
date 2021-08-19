@@ -54,12 +54,12 @@ returns a new string without hyphens, ``-``.
       no_hyph_number = remove_hyphens(phone_number)
       print(no_hyph_number)
 
-In step 1, the function ``remove_hyphens`` behaves as expected. It takes the
+In *step 1*, the function ``remove_hyphens`` behaves as expected. It takes the
 argument ``"555-555-5555"``, removes the ``"-"`` symbols, and returns the
 result. Line 7 assigns that result to the variable ``no_hyph_number``, and line
 8 prints it to the console.
 
-In step 2, the ``print`` statement on line 3 shows us that the value of
+In *step 2*, the ``print`` statement on line 3 shows us that the value of
 ``phone_number`` has been assigned to the parameter ``str_with_hyphens``. Both
 variables are *visible* inside the function.
 
@@ -73,7 +73,7 @@ variables are *visible* inside the function.
    We will explain why later, but it is important that you recognize this
    warning now.
 
-In step 3, we receive an error message (``NameError: name 'without_hyphens' is
+In *step 3*, we receive an error message (``NameError: name 'without_hyphens' is
 not defined``) when we try to print ``without_hyphens`` on line 9.
 
 Line 7 calls ``remove_hyphens``, which returns ``without_hyphens`` with the
@@ -128,13 +128,13 @@ change its value creates problems.
       print(no_hyph_number)
       print(phone_number)
 
-In step 1, even though ``phone_number`` is defined outside the function, it is
+In *step 1*, even though ``phone_number`` is defined outside the function, it is
 still visible within the function. When ``remove_hyphens`` is called and
 ``print(phone_number)`` on line 4 runs, ``phone_number`` has the value
 ``"555-555-5555"``. This means that the scope of ``phone_number`` extends into
 the function ``remove_hyphens``.
 
-In step 2, we assign ``phone_number`` a value of ``'1234'`` in line 3. Now line
+In *step 2*, we assign ``phone_number`` a value of ``'1234'`` in line 3. Now line
 4 displays that new number in the console. However, line 10 still prints the
 *original* value ``555-555-5555``.
 
@@ -155,7 +155,7 @@ same name but different values. Yuck!
    .. sourcecode:: python
       :linenos:
    
-      def remove_hyphens(phone_number)
+      def remove_hyphens(phone_number):
          without_hyphens = phone_number.replace('-', '')
          return without_hyphens
 
@@ -204,8 +204,8 @@ Check Your Understanding
       num = 42
       print(is_even(43))
 
-   a. True
-   b. False
+   a. ``True``
+   b. ``False``
 
 .. Answer = b
 
