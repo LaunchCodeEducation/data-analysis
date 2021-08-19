@@ -51,6 +51,7 @@ For this class, you will need to add the following extensions to Visual Studio C
    .. admonition:: Note
 
       This extension requires you to authorize access to your Github account.
+      Use your Personal Access Token in place of your password.
 
 Optional Extensions
 ^^^^^^^^^^^^^^^^^^^
