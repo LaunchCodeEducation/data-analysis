@@ -64,7 +64,7 @@ Solve Logic Errors
    79.99...% is a ``C``.
 
 #. The last `code sample <https://replit.com/@launchcode/DebuggingExercises05>`__ checks if a username is valid, but it's not working yet.
-   Add ``print`` statements as directed to find and fix the logic errors.
+   Add ``print`` statements as directed below to find and fix the logic errors.
 
    Username rules:
 
