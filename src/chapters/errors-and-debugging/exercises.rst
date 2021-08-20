@@ -43,7 +43,8 @@ This `code sample <https://replit.com/@launchcode/DebuggingExercises02>`__ conta
 Solve Logic Errors
 ------------------
 
-#. This `code <https://replit.com/@launchcode/DebuggingExercises03>`__ contains two logic errors.  When given a student's score
+#. **Part 1: Calculate a Percentage** 
+   This `code <https://replit.com/@launchcode/DebuggingExercises03>`__ contains two logic errors.  When given a student's score
    on an exam, the program *should* convert the points earned into a
    percentage (points earned / points possible * 100). Find and fix the errors
    so that the program gives the correct result.
@@ -57,9 +58,10 @@ Solve Logic Errors
    c. ``points_earned = 23.4``, ``points_possible = 25``, Correct answer =
       ``93.6%``
 
-:ref:`Check Your Solutions<errors-and-debugging-exercise-solutions-part3a>`
+   :ref:`Check Your Solutions<errors-and-debugging-exercise-solutions-part3a>`
 
-#. This `program <https://replit.com/@launchcode/DebuggingExercises04>`__ should convert a student's percentage into a letter grade.
+#. **Part 2: Convert a Student's Percentage into a Letter Grade**
+   This `program <https://replit.com/@launchcode/DebuggingExercises04>`__ should convert a student's percentage into a letter grade.
    The code follows a simple 10-point scale and allows for decimal results:
 
    A: 100% - 90%, B: 89 - 80, C: 79 - 70, D: 69 - 60, F: Any score under 60%.
@@ -67,9 +69,10 @@ Solve Logic Errors
    Be sure to test all the *edge cases*. For example, 80% is a ``B``, but
    79.99...% is a ``C``.
 
-:ref:`Check Your Solutions<errors-and-debugging-exercise-solutions-part3b>`
+   :ref:`Check Your Solutions<errors-and-debugging-exercise-solutions-part3b>`
 
-#. The last `code sample <https://replit.com/@launchcode/DebuggingExercises05>`__ checks if a username is valid, but it's not working yet.
+#. **Part 3: Validating a Username**:
+   The last `code sample <https://replit.com/@launchcode/DebuggingExercises05>`__ checks if a username is valid, but it's not working yet.
    Add ``print`` statements as directed below to find and fix the logic errors.
 
    Username rules:
@@ -129,9 +132,9 @@ Solve Logic Errors
 
    :ref:`Check Your Solutions<errors-and-debugging-exercise-solutions-part3c>`
 
-   Submitting Your Work
-   --------------------
+Submitting Your Work
+--------------------
 
-   You should have five different replits at the end of these exercises.  
-   Submit the links through your Canvas page.
+You should have five different replits at the end of these exercises.  
+Submit the links through your Canvas page.
 
