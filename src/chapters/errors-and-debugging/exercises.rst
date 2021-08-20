@@ -124,7 +124,14 @@ Solve Logic Errors
          result.
       b. There are at least two quick ways to accomplish this.
 
-   *Bonus fix*: The loop runs after the length check passes *or* fails. How can
+   *Extra Challenge*: The loop runs after the length check passes *or* fails. How can
    we make it so that the loop runs only *if* the length test passes?
 
    :ref:`Check Your Solutions<errors-and-debugging-exercise-solutions-part3c>`
+
+   Submitting Your Work
+   --------------------
+
+   You should have five different replits at the end of these exercises.  
+   Submit the links through your Canvas page.
+
