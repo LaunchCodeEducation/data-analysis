@@ -1,5 +1,4 @@
 
-
 Exercises: Errors and Debugging Solutions
 =========================================
 
@@ -31,92 +30,84 @@ Find and Fix Syntax Errors
 Find and Fix Runtime Errors
 ---------------------------
 
-This `code sample <https://replit.com/@launchcode/DebuggingExercises02>`__ contains 3 runtime errors.
+.. _errors-and-debugging-exercise-solutions-part2:
 
-#. Before making any changes, run the code as-is to generate the first error
-   message.
-#. Follow the same process you used above to fix the runtime errors. Note that
-   syntax highlighting does NOT show all possible runtime errors.
+#. **Error 1: Line 2**:  One option for correct syntax could be this:
+
+   .. sourcecode:: python
+
+      print("The last letter in '{0}' is '{1}'".format(word, word[-1]))
+
+#. **Error 2: Line 5**:  What data type is user input?  What data type do you need?  Correct syntax could be this:
+
+   .. sourcecode:: python
+
+      second_num = int(input("Enter another whole number: "))
+
+#. **Error 3: Line 10**:  Correct the variable name typo
+
+   .. sourcecode:: python
+
+      print("\tProduct = {0}".format(first_num * second_num))
+
+:ref:`Back to Exercises<errors-and-debugging-exercises>`
 
 Solve Logic Errors
 ------------------
 
-#. This `code <https://replit.com/@launchcode/DebuggingExercises03>`__ contains two logic errors.  When given a student's score
-   on an exam, the program *should* convert the points earned into a
-   percentage (points earned / points possible * 100). Find and fix the errors
-   so that the program gives the correct result.
+#. **Part 1: Calculate a Percentage** 
 
-   *Tip*: Use the following data to test the program and your fix.
+   .. _errors-and-debugging-exercise-solutions-part3a:
 
-   a. ``points_earned = 8``, ``points_possible = 10``, Correct answer =
-      ``80.0%``
-   b. ``points_earned = 11``, ``points_possible = 15``, Correct answer ≈
-      ``73.33333333333333%``
-   c. ``points_earned = 23.4``, ``points_possible = 25``, Correct answer =
-      ``93.6%``
-
-#. This `program <https://replit.com/@launchcode/DebuggingExercises04>`__ should convert a student's percentage into a letter grade.
-   The code follows a simple 10-point scale and allows for decimal results:
-
-   A: 100% - 90%, B: 89 - 80, C: 79 - 70, D: 69 - 60, F: Any score under 60%.
-
-   Be sure to test all the *edge cases*. For example, 80% is a ``B``, but
-   79.99...% is a ``C``.
-
-#. The last `code sample <https://replit.com/@launchcode/DebuggingExercises05>`__ checks if a username is valid, but it's not working yet.
-   Add ``print`` statements as directed to find and fix the logic errors.
-
-   Username rules:
-
-   a. Must be 5 - 10 characters long.
-   b. Must only contain letters and numbers.
-   c. Must contain at least 1 digit.
-
-   Test names:
-
-   a. ``"Me2"`` should be invalid (too short).
-   b. ``"CoderGirl"`` should be invalid (no number).
-   c. ``"rut*baga8"`` should be invalid (illegal symbol).
-   d. ``"This1IsTooLong"`` should be invalid (too long).
-
-   #. On line 10, add ``print(is_valid)`` to check if the conditional on line
-      8 correctly assigns ``True`` and ``False`` based on the length of the
-      username. Be sure to run the program with all four test names. ``Me2``
-      and ``This1IsTooLong`` should return ``False``, while ``CoderGirl`` and
-      ``rut*baga8`` should return ``True``.
-
-      Is the conditional on line 8 doing its job correctly?
-   #. If ``is_valid`` is ``False``, then the program should reject the
-      username. The ``print`` statement on line 10 also lets you compare the
-      value of ``is_valid`` to the final result. For example:
-
-      ::
-
-         False
-         'Me2' is a valid username.
-
-      In this case, ``is_valid`` is ``False`` at line 10, but the username
-      still gets labeled as valid. This tells you that a logic error follows
-      line 10.
-   #. On line 18, add ``print(char, is_valid, has_digit)``. Make sure to indent
-      the statement the same amount as the ``else`` on line 16.
+   #. **Errors 1 and 2: Line 5**: Correct syntax could look like this:
 
       .. sourcecode:: python
-         :lineno-start: 16
 
-            else:
-               is_valid = True
-            print(char, is_valid, has_digit)
+         percentage = points_earned/points_possible * 100
 
-   #. Run the program again with all 4 test names. Note how the values of
-      ``is_valid`` and ``has_digit`` change each time the loop repeats. Use the
-      output to find and fix the logic error in the loop.
-   #. *Hints*:
+   .. _errors-and-debugging-exercise-solutions-part3b:      
 
-      a. The loop assigns ``is_valid`` to be ``True`` or ``False`` after every
-         character in the username. Modify the code to preserve any ``False``
-         result.
-      b. There are at least two quick ways to accomplish this.
+#. **Part 2: Convert a Student's Percentage into a Letter Grade**
+   
+   #. **Error 1: Lines 8, 10, 12, 14, & 16:** Fix the Letter Grades
 
-   *Bonus fix*: The loop runs after the length check passes *or* fails. How can
-   we make it so that the loop runs only *if* the length test passes?
+   #. **Error 2: Lines 7, 9, 11, 13**:  Change ``>`` or ``<`` to include the value as well.   You could also update the order of percentage ranges, too.
+      One solution could start like this:
+
+      .. sourcecode:: python
+
+         if score_percent >= 90:
+            letter_grade = 'A'
+         elif score_percent >= 80:
+            letter_grade = "B"
+         
+         # rest of code...
+
+.. _errors-and-debugging-exercise-solutions-part3c:
+
+#. **Part 3: Validating a Username**:
+
+   #. **Testing with** ``print()`` **statements**:  This is a demo, but syntax could look like this:
+
+      .. sourcecode:: python
+
+         if len(username) >= 5 and len(username) <= 10:  
+            is_valid = True
+
+         print(is_valid)  #testing with print is a easy way to check your work
+
+   #. **Error 1: Lines 13-18**:  Correct syntax could look like this.
+
+      .. sourcecode:: python
+
+         for char in username: 
+            if char in string.digits: 
+               has_digit = True
+            elif char not in string.ascii_letters:  
+               is_valid = False
+            # else:                 #else statement not needed
+               # is_valid = True 
+         
+         print(is_valid)
+
+:ref:`Back to Exercises<errors-and-debugging-exercises>`

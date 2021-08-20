@@ -38,6 +38,8 @@ This `code sample <https://replit.com/@launchcode/DebuggingExercises02>`__ conta
 #. Follow the same process you used above to fix the runtime errors. Note that
    syntax highlighting does NOT show all possible runtime errors.
 
+:ref:`Check Your Solutions<errors-and-debugging-exercise-solutions-part2>`
+
 Solve Logic Errors
 ------------------
 
@@ -55,6 +57,8 @@ Solve Logic Errors
    c. ``points_earned = 23.4``, ``points_possible = 25``, Correct answer =
       ``93.6%``
 
+:ref:`Check Your Solutions<errors-and-debugging-exercise-solutions-part3a>`
+
 #. This `program <https://replit.com/@launchcode/DebuggingExercises04>`__ should convert a student's percentage into a letter grade.
    The code follows a simple 10-point scale and allows for decimal results:
 
@@ -62,6 +66,8 @@ Solve Logic Errors
 
    Be sure to test all the *edge cases*. For example, 80% is a ``B``, but
    79.99...% is a ``C``.
+
+:ref:`Check Your Solutions<errors-and-debugging-exercise-solutions-part3b>`
 
 #. The last `code sample <https://replit.com/@launchcode/DebuggingExercises05>`__ checks if a username is valid, but it's not working yet.
    Add ``print`` statements as directed below to find and fix the logic errors.
@@ -120,3 +126,5 @@ Solve Logic Errors
 
    *Bonus fix*: The loop runs after the length check passes *or* fails. How can
    we make it so that the loop runs only *if* the length test passes?
+
+   :ref:`Check Your Solutions<errors-and-debugging-exercise-solutions-part3c>`
