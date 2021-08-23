@@ -11,7 +11,7 @@ inside the class, but outside of ``__init__``.
 Return to the Class Design
 --------------------------
 
-Earlier, we made a list of property names that we wanted to include in our
+:ref:`Earlier<brainstorm-properties>`, we made a list of property names that we wanted to include in our
 ``Cat`` class. We will repeat that process now, but this time we will record
 ideas about what a ``Cat`` object should *do*.
 
@@ -19,49 +19,17 @@ ideas about what a ``Cat`` object should *do*.
 
 .. admonition:: Try It!
 
-   If you saved your work from the :ref:`Design a New Class <brainstorm-properties>`
-   section, you should see your list of properties in the editor below. If not,
-   don't worry! You can still record your method ideas.
+   Let's return to the :ref:`Cat class program we started desiging<define-new-class>`.
 
-   .. replit:: python
-      :slug: ClassMethods01
-      :linenos:
-
-      # Make a list of property names that we can use to describe a cot:
-      '''
-      name
-      age
-
-
-      '''
-
+   Now we are going to add a few methods to our class.
    Take a moment to think of some cat behaviors that we want our objects to
    have.
    
-   #. Below the last triple quote line (``'''``) add a new comment:
-
-      .. sourcecode:: python
-
-         # Make a list of methods that describe cat behaviors:
-
-   #. On the next line, add another set of triple quotes (``'''``). Below this,
-      type some possible method names. Examples include ``make_noise()``,
-      ``increase_age()``, ``eat()``, or ``ignore_humans()``.
+   #. Some ideas to include could be ``make_noise()``, ``increase_age()``, ``eat()``, or ``ignore_humans()``.
    #. Include parentheses ``()`` with each name, but don't worry about setting
       parameters or coding anything yet.
-   #. Finish your list with another triple quote line.
 
-   Add at least three method names to the editor, but don't limit yourself to
-   the given examples. Include your own ideas!
-
-.. admonition:: Note
-
-   Why :ref:`triple quotes <quote-reminder>`? This syntax allows us to
-   break a single string over multiple lines in the editor. We use them
-   here to record our ideas but keep the editor from flagging an error.
-
-Now that we have some possible ``Cat`` actions, let's see how to turn them into
-code.
+Now that we have some possible ``Cat`` actions, let's see how to turn them into code.
 
 Define a New Method
 -------------------
@@ -80,6 +48,7 @@ To add a new method, the syntax is similar to a function definition:
 
 Note the following:
 
+#. Methods are defined *within* the class, but are spearate from the properties.
 #. The ``def`` keyword is used to define the new method.
 #. ``method_name`` follows the same
    :ref:`naming conventions <function-naming-rules>` we use for functions.
@@ -95,6 +64,13 @@ As mentioned above, methods can return a value or change a property value.
 Let's update our ``Cat`` class to include ``increase_age()``. This method will
 take the ``age`` property of a ``Cat`` object and make it larger.
 
+.. admonition:: Note
+
+   This walkthrough is using a new replit codebase.  
+   If you have your ``Cat`` program from before, you can make the same updates to your existing code.
+   If using your own code, be aware that your line numbers won't match up with the directions, 
+   but you should still be able to accomplish all the tasks in the directions. 
+
 .. admonition:: Try It!
 
    On line 6, we define a method to increase a cat's age by 1 year. Note the
@@ -106,7 +82,7 @@ take the ``age`` property of a ``Cat`` object and make it larger.
       of the ``age`` property and increases it by 1.
 
    .. replit:: python
-      :slug:
+      :slug: Creating_Classes-02-A
       :linenos:
 
       class Cat:
@@ -146,6 +122,8 @@ Return Values
 Next, let's add a method that *returns* a value when called. We will name it
 ``make_noise()``, and it will return the sound our cat makes based on its
 current mood.
+
+.. TODO:  pick up here -- check replits and condense directions
 
 .. _add-more-cat-methods:
 

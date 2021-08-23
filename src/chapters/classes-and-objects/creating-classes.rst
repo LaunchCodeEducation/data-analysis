@@ -44,8 +44,19 @@ Design a New Class
 
 Before we create a new class, we should begin by describing the objects that
 belong in that class. Take time to think about the properties and methods we
-want each object to have. Next, *write these ideas down*! Doing this will make
-designing and coding the class easier.
+want each object to have. Sometimes it helps to jot them down so you can sort our
+overall viability, functionality, usefulness, and any possible redundancies.  
+Taking a few minutes to organize your thoughts can help you build better classes.
+
+Another take away from planning out your classes before diving straigth ahead into code, 
+is that you can identify the minimal properties and methods needed for basic functionality.
+We call this creating a **minimum viable product**, or MVP.  
+A `minumum viable product <https://en.wikipedia.org/wiki/Minimum_viable_product>`_ is a working
+program or product that is sustained by the smallest codebase possible.
+
+This can be a great place to start.  
+When working with MVPs, you are creating a codebase that is easier to debug as you expand it.
+This can all help you pare down your code to what is really vital and what can be added or modified later.
 
 .. _brainstorm-properties:
 
@@ -60,17 +71,16 @@ designing and coding the class easier.
       We are already planning to use ``name`` and ``age``. 
       Think of at least two more property names to add to your class.
 
-Now let's convert our thoughts into code.
 
-.. admonition:: Tip
-
-   In this *design phase*, we want to include as many property names as we can.
+   In the *design phase*, we want to include as many property names as we can.
    
    When we start coding, we should keep things simple and build something small
    that works. We won't include all of our ideas right away.
    
    Once we have working code, we can always update it later to make the class
    more powerful.
+
+Now let's convert our thoughts into code.
 
 Define the New Class
 --------------------
@@ -125,6 +135,8 @@ The ``self`` parameter requires some explanation, and we will use an example to
 help set up that discussion.
 
 .. _assign-properties:
+
+.. _define-new-class:
 
 .. admonition:: Try It!
 
