@@ -62,6 +62,8 @@ Using objects sounds similar to what we did in the
 Modules chapter. However, unlike the external module
 files, objects are created as they are needed and *only when the program runs*.
 
+.. TODO: OPTIONAL: Objects are created as they are needed and *only* when the program *runs*.
+
 Objects Copy Real World Thinking
 --------------------------------
 
