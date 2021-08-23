@@ -132,11 +132,10 @@ that contains the properties as key/value paris.
 Property and Method Names
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. TODO: Check reference
-
-Back in the Modules chapter, we learned how to use the
-dir() function to collect and display the names for all
-of the items in a module. We can use this function again for an object.
+If you want a quick peek of what a an object contains, you can use the
+``dir()`` function to collect and display the names for all
+of the items in a given object.  This inbuilt function has a few quirks. 
+Let's walkthrough to see how to handle one of them.  
 
 .. admonition:: Try It!
 
@@ -149,7 +148,7 @@ of the items in a module. We can use this function again for an object.
          for item in dir(dog_1):
             print(item)
    
-   #. ``dir(dog_1)`` returns a list of the names for each method and property
+   #. ``dir(dog_1)`` returns a (rather long) list of the names for each method and property
       defined in the ``Dog`` class. This includes special methods like
       ``__init__`` and ``__str__``.
    #. *Tip*: To skip the special names, add a conditional to the loop to check
@@ -162,3 +161,5 @@ of the items in a module. We can use this function again for an object.
          for item in dir(dog_1):
             if '__' not in item:
                print(item)
+
+.. source: https://www.geeksforgeeks.org/python-dir-function/ 8-23-21
