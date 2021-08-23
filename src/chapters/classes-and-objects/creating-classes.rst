@@ -57,30 +57,8 @@ designing and coding the class easier.
    
    #. The values of the properties will allow us to tell the difference between
       animals, but for now just focus on coming up with a set of property names.
-   #. The editor below is NOT here to run code. Instead, use the space to add
-      names for any properties you think belong with a *cat* object. Two
-      examples have already been given.
-
-   .. replit:: python
-      :slug: CreatingClasses01
-      :linenos:
-
-      # Make a list of property names that we can use to describe a cat:
-      '''
-      name
-      age
-
-
-      '''
-
-   Add at least two more property names to the editor, but feel free to go
-   crazy!
-
-   If you are logged into your Trinket account, you can click the *Remix*
-   button to save your ideas. We will use this editor again on a later page.
-   Making your own copy will allow you to pick up where you left off. If you do
-   not have a Trinket account, copy and paste your list of method names into
-   something you can look at later.
+      We are already planning to use ``name`` and ``age``. 
+      Think of at least two more property names to add to your class.
 
 Now let's convert our thoughts into code.
 
@@ -138,7 +116,7 @@ For our ``Cat`` class, this looks like:
 
    class Cat:
       def __init__(self):
-         # Assignment statements...
+         # Assignment statements based on the properties you designed...
 
 The initializer method automatically runs whenever we call a class, and it
 assigns values to each property name.
@@ -153,14 +131,14 @@ help set up that discussion.
    Use the instructions and editor below to complete the ``__init__`` method:
 
    .. replit:: python
-      :slug: CreatingClasses02
+      :slug: CreatingClasses01-A
       :linenos:
 
-      #!/bin/python3
       class Cat:
          def __init__(self):
             # Assign values for the object properties:
-            self.name = 'Coach'
+            self.name = 'Louis'
+
 
    #. To assign a value to a property, the syntax is:
 
@@ -168,51 +146,51 @@ help set up that discussion.
 
          self.property_name = property_value
 
-      On line 5, ``self.name = 'Coach'`` assigns the value ``'Coach'`` to the
+      On line 4, ``self.name = 'Louis'`` assigns the value ``'Louis'`` to the
       property called ``name``.
-   #. On line 6, add the statement ``self.age = 2`` to assign the integer ``2``
+   #. On line 5, add the statement ``self.age = 2`` to assign the integer ``2``
       to the property called ``age``. Be sure to indent the statement to match
       line 5. This puts ``self.age = 2`` inside the ``init`` code block.
    #. Pick one of the properties you listed :ref:`earlier on this page <brainstorm-properties>`.
-      On line 7, assign a value to that property.
-   #. Paste the following code on lines 9 and 10. To keep the statements outside
+      On line 6, assign a value to that property.
+   #. Paste the following code on lines 8 and 9. To keep the statements outside
       of the class, do NOT indent them.
 
       .. sourcecode:: python
-         :lineno-start: 9
+         :lineno-start: 8
 
          cat_1 = Cat()
          print(cat_1.name, cat_1.age)
 
-   #. Line 9 creates a new object called ``cat_1``, and line 10 prints two of
+   #. Line 8 creates a new object called ``cat_1``, and line 9 prints two of
       its properties. Run the program to check your work. Properly done, the
       output should be:
 
       ::
 
-         Coach 2
+         Louis 2
       
-   #. Modify line 10 to print all three property values.
+   #. Modify line 9 to print all three property values.
    #. Finally, create another object called ``cat_2`` and print out its
       property values.
 
 Lets step through the final code:
 
-#. On line 9, ``Cat()`` calls the class to create a new object.
+#. On line 8, ``Cat()`` calls the class to create a new object.
 #. Control moves to line 1, and the class statements execute.
 #. The ``__init__`` method runs, and it assigns values to each of the
    properties included in the code block. This is where ``self`` plays a role.
 #. When we call a class, ``self`` takes on the *name of the new object*. When
    ``cat_1 = Cat()`` executes, ``self`` gets assigned the value ``cat_1``. So:
 
-   - ``self.name = 'Coach'`` evaluates as ``cat_1.name = 'Coach'``
+   - ``self.name = 'Louis'`` evaluates as ``cat_1.name = 'Louis'``
    - ``self.age = 2`` evaluates as ``cat_1.age = 2``
    - etc.
 
-#. After the ``__init__`` method finishes, control passes back to line 9, and
+#. After the ``__init__`` method finishes, control passes back to line 8, and
    the new object is assigned to the variable ``cat_1``.
 #. In this *Try It* example, the ``__init__`` method causes every new ``Cat``
-   object to start with a ``name`` of ``'Coach'``, an ``age`` of ``2``, and the
+   object to start with a ``name`` of ``'Louis'``, an ``age`` of ``2``, and the
    third property you defined.
 
 The program creates two cat objects, ``cat_1`` and ``cat_2``, that have the
