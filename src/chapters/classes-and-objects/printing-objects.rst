@@ -124,8 +124,10 @@ that contains the properties as key/value paris.
    
 .. TODO: Check reference
 
-   Note: We could easily iterate through the ``dog_data`` dictionary by keys,
-   values, or both as we saw here <dictionary-iteration>.
+.. admonition:: Note 
+   
+   We could easily iterate through the ``dog_data`` dictionary by keys,
+   values, or both as we saw :ref:`here <iterate-dictionary>`.
 
 Property and Method Names
 ^^^^^^^^^^^^^^^^^^^^^^^^^

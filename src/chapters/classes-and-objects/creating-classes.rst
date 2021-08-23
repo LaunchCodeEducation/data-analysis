@@ -52,7 +52,8 @@ Another take away from planning out your classes before diving straigth ahead in
 is that you can identify the minimal properties and methods needed for basic functionality.
 We call this creating a **minimum viable product**, or MVP.  
 A `minumum viable product <https://en.wikipedia.org/wiki/Minimum_viable_product>`_ is a working
-program or product that is sustained by the smallest codebase possible.
+program or product that is sustained by the smallest codebase possible.  
+This is also the same idea as the "`KISS Principle <https://en.wikipedia.org/wiki/KISS_principle>`_" 
 
 This can be a great place to start.  
 When working with MVPs, you are creating a codebase that is easier to debug as you expand it.
