@@ -1,3 +1,5 @@
+.. _errors-and-debugging-exercises:
+
 Exercises: Errors and Debugging
 ===============================
 
@@ -24,6 +26,8 @@ This `code sample <https://replit.com/@launchcode/DebuggingExercises01>`__ conta
 #. Repeat steps 2 and 3 until you fix all of the bugs and the program runs
    successfully.
 
+:ref:`Check Your Solutions<errors-and-debugging-exercise-solutions-part1>`
+
 Find and Fix Runtime Errors
 ---------------------------
 
@@ -34,10 +38,13 @@ This `code sample <https://replit.com/@launchcode/DebuggingExercises02>`__ conta
 #. Follow the same process you used above to fix the runtime errors. Note that
    syntax highlighting does NOT show all possible runtime errors.
 
+:ref:`Check Your Solutions<errors-and-debugging-exercise-solutions-part2>`
+
 Solve Logic Errors
 ------------------
 
-#. This `code <https://replit.com/@launchcode/DebuggingExercises03>`__ contains two logic errors.  When given a student's score
+#. **Part 1: Calculate a Percentage** 
+   This `code <https://replit.com/@launchcode/DebuggingExercises03>`__ contains two logic errors.  When given a student's score
    on an exam, the program *should* convert the points earned into a
    percentage (points earned / points possible * 100). Find and fix the errors
    so that the program gives the correct result.
@@ -51,7 +58,10 @@ Solve Logic Errors
    c. ``points_earned = 23.4``, ``points_possible = 25``, Correct answer =
       ``93.6%``
 
-#. This `program <https://replit.com/@launchcode/DebuggingExercises04>`__ should convert a student's percentage into a letter grade.
+   :ref:`Check Your Solutions<errors-and-debugging-exercise-solutions-part3a>`
+
+#. **Part 2: Convert a Student's Percentage into a Letter Grade**
+   This `program <https://replit.com/@launchcode/DebuggingExercises04>`__ should convert a student's percentage into a letter grade.
    The code follows a simple 10-point scale and allows for decimal results:
 
    A: 100% - 90%, B: 89 - 80, C: 79 - 70, D: 69 - 60, F: Any score under 60%.
@@ -59,8 +69,11 @@ Solve Logic Errors
    Be sure to test all the *edge cases*. For example, 80% is a ``B``, but
    79.99...% is a ``C``.
 
-#. The last `code sample <https://replit.com/@launchcode/DebuggingExercises05>`__ checks if a username is valid, but it's not working yet.
-   Add ``print`` statements as directed to find and fix the logic errors.
+   :ref:`Check Your Solutions<errors-and-debugging-exercise-solutions-part3b>`
+
+#. **Part 3: Validating a Username**:
+   The last `code sample <https://replit.com/@launchcode/DebuggingExercises05>`__ checks if a username is valid, but it's not working yet.
+   Add ``print`` statements as directed below to find and fix the logic errors.
 
    Username rules:
 
@@ -114,5 +127,14 @@ Solve Logic Errors
          result.
       b. There are at least two quick ways to accomplish this.
 
-   *Bonus fix*: The loop runs after the length check passes *or* fails. How can
+   *Extra Challenge*: The loop runs after the length check passes *or* fails. How can
    we make it so that the loop runs only *if* the length test passes?
+
+   :ref:`Check Your Solutions<errors-and-debugging-exercise-solutions-part3c>`
+
+Submitting Your Work
+--------------------
+
+You should have five different replits at the end of these exercises.  
+Submit the links through your Canvas page.
+

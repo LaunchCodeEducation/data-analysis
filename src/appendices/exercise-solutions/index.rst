@@ -11,6 +11,7 @@ Exercise Solutions
    loops
    strings
    lists
+   errors-and-debugging
    functions
    dictionaries
    
