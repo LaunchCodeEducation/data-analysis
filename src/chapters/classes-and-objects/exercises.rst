@@ -1,3 +1,5 @@
+.. _objects-and-classes-exercises:
+
 Exercises: Classes and Objects
 ==============================
 
@@ -6,6 +8,8 @@ four ``Robot`` objects. You will also practice writing functions that display
 information about the objects and race them against each other.
 
 To start, fork the starter code on `Replit <https://replit.com/@launchcode/ClassesExercises#main.py>`__.
+
+.. _objects-and-classes-exercises1A:
 
 Part 1: Create a New Class
 --------------------------
@@ -36,6 +40,10 @@ Add Properties to ``Robot``
    b. Use dot notation to ``print`` the values for each property.
    c. To check the default, call the class at least once WITHOUT including an
       argument for ``year``.
+
+:ref:`Check Your Solutions<add-properties>`
+
+.. _objects-and-classes-exercises1B:
 
 Add Methods to ``Robot``
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -71,8 +79,6 @@ Add Methods to ``Robot``
    #. Increase the ``distance`` property by the number of steps.
    #. Return the random number of steps.
 
-
-
 #. Add the ``__str__`` method to return a string of the object properties.
    ``print(robot_name)`` should produce something like:
 
@@ -92,7 +98,11 @@ Add Methods to ``Robot``
 
    a. ``print`` the ``Robot`` object to check the output.
    b. Use a loop to call the ``move()`` method several times. Inside the loop,
-      ``print`` the steps taken and the updated ``robot_name.distance`` value. 
+      ``print`` the steps taken and the updated ``robot_name.distance`` value.
+
+:ref:`Check Your Solutions<add-methods>` 
+
+.. _objects-and-classes-exercises2:
 
 Part 2: Create Objects
 ----------------------
@@ -115,6 +125,10 @@ Update Distances
 
 Use a loop to iterate through the ``robots`` list. For each object, assign a
 random value to the ``distance`` property, from ``1000`` to ``3000`` steps.
+
+:ref:`Check Your Solutions<update-distances>` 
+
+.. _objects-and-classes-exercises3:
 
 Part 3: Find Oldest Robot
 -------------------------
@@ -149,6 +163,10 @@ Print out a message describing the result:
 Fill in the blanks with the name of the robot, the year it was made, and its
 current number of steps.
 
+.. _objects-and-classes-exercises4:
+
+:ref:`Check Your Solutions<oldest-robot>` 
+
 Part 4: Robot Races
 -------------------
 
@@ -176,3 +194,5 @@ Within the function:
 *HINT*: There are a lot of different ways to approach this problem. One way
 that works well is to count how many times ``move()`` gets called in order to
 reach 30 steps.
+
+:ref:`Check Your Solutions<robot-race>` 
