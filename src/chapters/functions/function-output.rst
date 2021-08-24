@@ -11,7 +11,9 @@ Return Statements
    single: return
    single: return; value
 
-Some functions return values that are useful. In particular, the type conversion functions convert input to the specified data type and return the result---calling ``Number("3.14")`` returns the value ``3.14``.
+Some functions return values that are useful. 
+In particular, the type conversion functions convert input to the specified data type 
+and return the result---calling ``int("3.14")`` returns the integer value ``3.14``.
 
 Returning a Value
 ^^^^^^^^^^^^^^^^^
@@ -20,9 +22,9 @@ To return a value from functions that *we* create, we can use a **return stateme
 
 .. sourcecode:: py
 
-   return someVal
+   return some_val
 
-where ``someVal`` is any value.
+where ``some_val`` is any value.
 
 .. admonition:: Example
 
@@ -71,11 +73,11 @@ When a return statement executes, the function terminates, regardless of whether
    .. sourcecode:: py
       :linenos:
 
-      def pastThePointOfReturn():
+      def past_the_point_of_return():
          return "I'm done!"
          print("This will not be printed")
 
-      print(pastThePointOfReturn())
+      print(past_the_point_of_return())
 
    **Console Output**
 
@@ -159,99 +161,7 @@ This version of ``is_even`` is better than the first two, not because it is shor
 
 Most boolean functions can be written so that they return the value of a boolean expression, rather than explicitly returning ``True`` or ``False``. 
 
-Parameters and Arguments
--------------------------
 
-.. index::
-   single: function; argument
-   single: function; parameter
-
-Over the past few sections, we introduced two function-related concepts that are very similar, and are often confusing to distinguish: *arguments* and *parameters*. The difference between the two is subtle, so we will attempt to clear that up now.
-
-The easiest way to talk about the difference between arguments and parameters is by referring to an example.
-
-.. admonition:: Example
-
-   The function ``hello`` takes a single value, which we expect to be a person's name, and returns a message that greets that person. 
-
-   ..TODO: this is getting parsed as python when 'py' is specified. whats going on here?
-
-   .. sourcecode:: js
-      :linenos:
-
-      def hello(name):
-         return `Hello, ${name}!`
-
-      print(hello("Lamar"))
-
-   **Output**
-
-   ::
-
-      Hello, Lamar!
-
-
-In this example, ``name`` is a **parameter**. It is part of the function definition, and *behaves like a variable* that exists only within the function.
-
-The value ``"Lamar"`` that is used when we invoke the function on line 5 is an **argument**. It is a *specific value* that is used during the function call. 
-
-The difference between a parameter and an argument is the same as that between a variable and a value. A variable *refers to* a specific value, just like a parameter *refers to* a specific argument when a function is called. Like a value, an argument is a concrete piece of data.
-
-Arguments Are Optional
-----------------------
-
-A function may be defined with several parameters, or with no parameters at all. Even if a function is defined with parameters, Python will not complain if the function is called *without* specifying the value of each parameter.
-
-.. admonition:: Example
-
-   .. TODO: not parsed as python using 'py'. I think the string substitution syntax needs to be python-iified
-
-   .. sourcecode:: js
-      :linenos:
-
-      def hello(name):
-         return `Hello, ${name}!`
-
-      print(hello())
-
-   **Output**
-
-   ::
-
-      Hello, undefined!
-
-We defined ``hello`` to have one parameter, ``name``. When calling it, however, we did not provide any arguments. Regardless, the program ran without error.
-
-*Arguments are optional* when calling a function. When a function is called
-without specifying a full set of arguments, any parameters that are left
-without values will have the value ``undefined``.
-
-.. index::
-   single: function; default parameter
-
-If your function will not work properly without one or more of its parameters defined, then you should define a **default value** for these parameters. The default value can be provided next to the parameter name, after ``=``.
-
-.. admonition:: Example
-
-   This example modifies the ``hello`` function to use a default value for ``name``. If ``name`` is not defined when ``hello`` is called, it will use the default value.
-
-   .. TODO: not parsed as python using 'py'. I think the string substitution syntax needs to be python-iified
-   
-   .. sourcecode:: javascript
-      :linenos:
-
-      def hello(name = "World"):
-         return `Hello, ${name}!`
-
-      print(hello())
-      print(hello("Lamar"))
-
-   **Console Output**
-
-   ::
-
-      Hello, World!
-      Hello, Lamar!
 
 Check Your Understanding
 ------------------------
@@ -273,6 +183,13 @@ Check Your Understanding
 
       print(a)
 
+   #. 10
+   #. 12
+   #. 4
+   #. 16
+
+.. ans = 10
+
 .. admonition:: Question
 
    What does the following function *return*?
@@ -291,20 +208,4 @@ Check Your Understanding
    #. ``undefined``
    #. The value of ``Bob``
 
-.. admonition:: Question
-
-   What does the following code *output*?
-
-   .. sourcecode:: py
-      :linenos:
-
-      def repeater(str):
-         repeated = str + str
-         print(repeated)
-
-      repeater('Bob')
-
-   #. ``"BobBob"``
-   #. Nothing (no output)
-   #. ``undefined``
-   #. The value of ``Bob``
+.. ans = Nothing

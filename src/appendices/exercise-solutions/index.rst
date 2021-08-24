@@ -12,5 +12,6 @@ Exercise Solutions
    strings
    lists
    errors-and-debugging
+   functions
    dictionaries
    
