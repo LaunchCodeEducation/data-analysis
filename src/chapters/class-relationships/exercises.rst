@@ -1,3 +1,5 @@
+.. TODO: when i run the solutions in GL, it doesn't work.  sounds like a call for some new learning adventures! woo hoo! :)
+
 Exercises: Classes
 ===================
 

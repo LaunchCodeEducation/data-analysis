@@ -10,7 +10,9 @@ Polymorphism
 
 Let's put this concept into practice. If we have a ``Rectangle`` class, we might have a child class called ``Square``.
 
-.. sourcecode:: python
+.. TODO: update code blocks
+
+python
    :linenos:
 
    class Rectangle:
