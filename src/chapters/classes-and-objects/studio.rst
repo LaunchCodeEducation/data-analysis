@@ -79,6 +79,16 @@ Calculating the Test Average
    round it to 1 decimal place, then return the result
    from the method.
 
+   .. admonition:: Note
+
+      The ``round`` is an inbuilt Python function.  Syntax is as follows:
+
+      .. sourcecode:: python
+
+         round(numeric_value, num_digits)
+
+      This function was demonstated in the :ref:`Dictionaries chapter <round-function>`.
+
 Check your code by evaluating and printing Shiny's average test score
 (``92.7``).
 
@@ -107,8 +117,8 @@ a short trip to the recycling bin.
       Shiny scored an average of 92.7% (Accepted).
       DustVac scored an average of 71.7% (Maintenance).
 
-Part 4: Play a Bit
-------------------
+Optional Testing
+----------------
 
 Use the class methods to boost DustVac's status to ``Backup`` or higher. How
 many good tests will it take to reach ``Backup`` status? How many to reach
