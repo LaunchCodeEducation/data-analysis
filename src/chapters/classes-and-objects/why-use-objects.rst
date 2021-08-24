@@ -56,13 +56,7 @@ statements we need to check. We can focus on the object that deals with that
 task instead of having to search through all of our code to find the faulty
 ``input`` statements and/or function calls.
 
-.. TODO: Check modules chapter
-
-Using objects sounds similar to what we did in the
-Modules chapter. However, unlike the external module
-files, objects are created as they are needed and *only when the program runs*.
-
-.. TODO: OPTIONAL: Objects are created as they are needed and *only* when the program *runs*.
+Objects are created as they are needed and *only* when the program *runs*.
 
 Objects Copy Real World Thinking
 --------------------------------

@@ -87,12 +87,10 @@ parentheses ``()``.
          Fleas 6
          mutt True
 
-.. TODO: Check reference to dictionaries
-
 .. admonition:: Tip
 
    Object properties work like the key/value pairs in a
-   dictionary. Each property name acts as a label that points to a specific
+   dictionary. Each property name acts as a label (key) that points to a specific
    piece of data (the value).
 
 Calling Methods

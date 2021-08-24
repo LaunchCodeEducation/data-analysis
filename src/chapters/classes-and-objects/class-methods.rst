@@ -123,8 +123,6 @@ Next, let's add a method that *returns* a value when called. We will name it
 ``make_noise()``, and it will return the sound our cat makes based on its
 current mood.
 
-.. TODO:  pick up here -- check replits and condense directions
-
 .. _add-more-cat-methods:
 
 .. admonition:: Try It!

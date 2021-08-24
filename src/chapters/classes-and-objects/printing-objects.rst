@@ -122,8 +122,6 @@ that contains the properties as key/value paris.
       ``Dog`` class.
    #. Line 16 prints the ``dog_data`` dictionary.
    
-.. TODO: Check reference
-
 .. admonition:: Note 
    
    We could easily iterate through the ``dog_data`` dictionary by keys,

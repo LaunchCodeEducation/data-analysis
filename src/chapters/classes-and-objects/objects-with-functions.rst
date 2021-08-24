@@ -1,5 +1,3 @@
-.. TODO: Review this page
-
 Using Objects in Functions
 ==========================
 
@@ -8,7 +6,8 @@ value.
 
 .. admonition:: Example
 
-   .. sourcecode:: python
+   .. replit:: python
+      :slug: ObjectsInFunctions
       :linenos:
 
       import turtle
@@ -22,7 +21,7 @@ value.
 
       draw_square(bob, 40)
 
-   #. Line 8 creates a new ``Turtle`` object called ``bob``.
+   #. Line 8 creates a new ``Turtle`` object called ``bob`` by invoking the imported ``turtle module`` from line 1.
    #. Line 10 calls the ``draw_square`` function and passes ``bob`` and ``40``
       as arguments.
    #. After the function call, control passes to the ``draw_square`` function.
@@ -82,10 +81,8 @@ used ``print(dog_1.name)`` after calling ``make_puppy``, we would see
 ``parent_1`` is NOT a new ``Dog`` object. Instead, it is a new label that
 points to the same set of data as ``dog_1``.
 
-.. TODO: Check reference
-
 We saw similar behavior with both :ref:`lists <cloning-lists>` and
-dictionaries.
+:ref:`dictionaries<dictionary-copy-example>`.
 
 Check Your Understanding
 ------------------------

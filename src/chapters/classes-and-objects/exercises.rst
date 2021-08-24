@@ -48,10 +48,7 @@ Add Properties to ``Robot``
 Add Methods to ``Robot``
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. TODO: Check Module reference
-
-.. TODO: add more info re: randint function and usage (KISS) 
-   mod 101 https://docs.python.org/3/tutorial/modules.html -- 8/24/21
+.. source: https://docs.python.org/3/tutorial/modules.html -- 8/24/21
 
 #. Below ``__init__``, define a second method called ``move()``. This method
    should:

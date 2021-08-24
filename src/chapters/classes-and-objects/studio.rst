@@ -70,8 +70,6 @@ if the candidate should be added to the cleaning team.
 Calculating the Test Average
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. TODO: Check reference to round function
-
 #. Define an ``average()`` method. It only needs the ``self`` parameter.
 #. To find the average, add up the entries from ``self.scores``, then divide
    the sum by the number of scores in the list.

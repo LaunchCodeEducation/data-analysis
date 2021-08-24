@@ -78,8 +78,6 @@ belong with any other data type. How should Python group it?
 User Defined Classes
 --------------------
 
-.. TODO:  Modules referenced here
-
 Recall that Python gives us plenty of ready-made functions to help us code,
 like ``print()``, ``max()``, and ``sum()``. We can also import more functions
 from modules like we did with the :ref:`string module<string-module>`. 
