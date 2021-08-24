@@ -42,16 +42,36 @@ Add Methods to ``Robot``
 
 .. TODO: Check Module reference
 
+.. TODO: add more info re: randint function and usage (KISS) 
+   mod 101 https://docs.python.org/3/tutorial/modules.html -- 8/24/21
+
 #. Below ``__init__``, define a second method called ``move()``. This method
    should:
 
    #. Only take the ``self`` parameter.
    #. Generate a random number of steps (1 - 10) for the object to take. The
-      range should include ``1`` and ``10`` as options. *Hint*: The ``randint``
-      function is described in the Random Module
-      section.
+      range should include ``1`` and ``10`` as options. 
+
+      .. admonition:: Tip
+
+         We are going to use an inbuilt function from the ``random`` module called ``randint()``.
+         This function will select a value from a range that you provide.
+
+         The general syntax for module usage looks like this:
+
+         .. sourcecode:: python
+
+            module_name.item_name
+            
+            # in this instance, we will use the randint function like this:
+            random.randint(start_value, end_value)
+         
+         We will explore modules more in future lessons.
+            
    #. Increase the ``distance`` property by the number of steps.
    #. Return the random number of steps.
+
+
 
 #. Add the ``__str__`` method to return a string of the object properties.
    ``print(robot_name)`` should produce something like:

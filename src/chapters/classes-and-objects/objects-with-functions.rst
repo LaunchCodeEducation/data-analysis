@@ -27,7 +27,7 @@ value.
       as arguments.
    #. After the function call, control passes to the ``draw_square`` function.
       In line 3, ``turtle_name`` gets assigned the ``bob`` object.
-   #. The loop executes, and we see the turtle draw a square on the screen.
+   #. The loop executes, and we see the turtle (the arrow shape) draw a square on the screen.
 
 We can also set up a function to create a new object and return it to the main
 program.
@@ -92,32 +92,22 @@ Check Your Understanding
 
 .. admonition:: Question
 
-   Given ``bob = turtle.Turtle()``, which of the following shows the object
+   Given ``bob = Pet()``, which of the following shows the object
    ``bob`` used as an *argument*?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">draw_sprite(bob, 8, 40)</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">def draw_sprite(bob, num_legs, leg_length):</span></li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">return bob</span></li>
-      </ol>
-      <p id="Q1"></p>
+   a. ``feed_pet(bob, lettuce)``
+   b. ``def feed_pet(bob, lettuce):``
+   c. ``return bob``
 
 .. Answer = a
 
 .. admonition:: Question
 
-   Which of the following shows the object ``trtl_name`` used as a *parameter*?
+   Which of the following shows the object ``pet_name`` used as a *parameter*?
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">draw_polygon(trtl_name, 8, 40)</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, true)"> <span style="color:#419f6a; font-weight: bold">def draw_polygon(trtl_name, num_sides, side_length):</span></li>
-         <li><input type="radio" name="Q2" autocomplete="off" onclick="evaluateMC(name, false)"> <span style="color:#419f6a; font-weight: bold">return trtl_name</span></li>
-      </ol>
-      <p id="Q2"></p>
+   a. ``label_habitat(pet_name, climate, habitat_size)``
+   b. ``def label_habitat(pet_name, climate, habitat_size):``
+   c. ``return pet_name``
 
 .. Answer = b
 
