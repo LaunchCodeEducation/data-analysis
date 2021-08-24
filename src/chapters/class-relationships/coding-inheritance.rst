@@ -6,6 +6,8 @@ Now that we know what inheritance is, let's look at how we code parent and child
 When setting up parent and child classes, we may first think about what behaviors belong in the parent class and which are specific to child classes.
 Let's say we create a class called ``ParentClass``:
 
+.. TODO: update code; source: https://www.w3schools.com/python/python_inheritance.asp
+
 .. sourcecode:: python
    :linenos:
 
@@ -54,6 +56,8 @@ We can also use the ``super()`` function to pass the parent class's constructor 
 
 Cats, Tigers, and Housecats, Oh My!
 -----------------------------------
+
+.. TODO: update code, create replit, and short walkthrough for students
 
 With the general syntax down, let's code some cat classes. On the previous page, we talked about how we might use inheritance to set up some cat classes.
 Let's take a look at how we could use ``super()`` to set up our cat classes.

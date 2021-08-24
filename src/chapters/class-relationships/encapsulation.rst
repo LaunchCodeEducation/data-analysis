@@ -29,6 +29,8 @@ A protected member (property or method) should not be accessed outside of a clas
 To designate a member as protected, we need to add an underscore in front of the member's name.
 Let's take a look at ``ParentClass`` and ``ChildClass``.
 
+.. TODO: Update codeblock
+
 .. sourcecode:: python
    :linenos:
 
