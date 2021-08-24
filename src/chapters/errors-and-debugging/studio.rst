@@ -12,10 +12,24 @@ Requirements:
 #. If all checks be successful, print a countdown to the console followed by
    "Liftoff!"
 
+To get started, you need to clone the starter code from Github. Before you can do this, you need to fork it (as you would on Replit) to make your own personal copy.
+Go to the `remote repo <https://github.com/LaunchCodeEducation/errors-and-debugging-studio-data-analysis>`__ and click *Fork* in the upper righthand corner.
+In the resulting pop up, select to put the new repository under your personal Github profile.
+You can then clone the repository from your profile!
+
+.. admonition:: Note
+
+   If this process is not working for you, that is okay! While we want you to get the hang of forking and cloning remote repos, we also want you to focus on coding!
+   Please use the following repls if you need to.
+
+   #. `Syntax Errors <https://replit.com/@launchcode/DebuggingStudio01>`__
+   #. `Runtime Errors <https://replit.com/@launchcode/DebuggingStudio02>`__
+   #. `Logic Errors <https://replit.com/@launchcode/DebuggingStudio03>`__
+
 Fix Syntax Errors First
 -----------------------
 
-Find this code at `repl.it <https://replit.com/@launchcode/DebuggingStudio01>`__.
+Work on this portion of the studio in ``debuggingstudio01.py``.
 
 #. Run the following code as-is and examine the error message. Fix the mistake,
    and then re-run the code to check it.
@@ -63,7 +77,7 @@ Find this code at `repl.it <https://replit.com/@launchcode/DebuggingStudio01>`__
 Fix Runtime Errors Next
 -----------------------
 
-Fix this code at `repl.it <https://replit.com/@launchcode/DebuggingStudio02>`__.
+Work on this portion of the studio in ``debuggingstudio02.py``.
 
 #. Remember to examine the error message for clues about what went wrong. Pay
    close attention to any line numbers given in the message---these will help
@@ -113,7 +127,7 @@ but the program still does not work right. (Refer to the
 :ref:`Fixing Logic Errors <fixing-logic-errors>` section if you need to
 review).
 
-Fix this code at `repl.it <https://replit.com/@launchcode/DebuggingStudio03>`__.
+Work on this portion of the studio in ``debuggingstudio03.py``.
 
 #. First, run this sample code as-is and examine the output. Should the rocket
    have launched? Did it?
@@ -199,3 +213,5 @@ Fix this code at `repl.it <https://replit.com/@launchcode/DebuggingStudio03>`__.
 #. Almost done! Modify the final ``if/else`` block to print the countdown and
    ``"Liftoff!"`` if both the fuel check and ``launch_ready`` variables are
    ``True``. Print ``"Launch scrubbed"`` if either check fails.
+
+After you have completed the studio, remember to commit and push your work to the remote repo!
