@@ -32,6 +32,17 @@ practice, we will solve the list reversal by defining two functions - one that
 reverses the characters in a string (or the digits in a number) and one that
 flips the order of entries in the list.
 
+Fork and clone the starter code from the `remote repository <https://github.com/LaunchCodeEducation/functions-studio-data-analysis>`__ 
+
+.. admonition:: Note
+
+   If this process is not working for you, that is okay! While we want you to get the hang of forking and cloning remote repos, we also want you to focus on coding!
+   Please use the following repls if you need to.
+
+   #. `Parts 1-3 <https://repl.it/@launchcode/FunctionsStudio01-03>`__
+   #. `Bonus Mission 1 <https://replit.com/@launchcode/FunctionsStudio-Bonus01>`__
+   #. `Bonus Mission 2 <https://replit.com/@launchcode/FunctionsStudio-Bonus02>`__
+
 Reverse Characters
 -------------------
 
@@ -53,7 +64,7 @@ Reverse Characters
    f. *Optional*: Use method chaining to reduce the lines of code within the
       function.
 
-`Code exercises 1 - 3 at repl.it <https://repl.it/@launchcode/FunctionsStudio01-03>`__
+Work on parts 1-3 in ``functionsstudio01-03.py``.
 
 .. admonition:: Tip
 
@@ -138,7 +149,7 @@ Bonus Missions
    d. Use a template literal to return the phrase ``We put the '___' in '___'.``
       Fill the first blank with the modified string, and fill the second blank
       with the original string.
-   e. `Build your function at repl.it <https://replit.com/@launchcode/FunctionsStudio-Bonus01>`__.
+   e. Work on this function in ``functionsstudio-bonus01.py``.
 
 #. Now test your function:
 
@@ -156,7 +167,7 @@ Bonus Missions
    d. If only one argument is passed to the function, then the shape is a
       square. Modify your code to deal with this case.
    e. Use a template literal to print, "The area is ____ cm^2."
-   f. `Code the area function at repl.it <https://replit.com/@launchcode/FunctionsStudio-Bonus02>`__.
+   f. Work on this function in ``functionsstudio-bonus02.py``.
 
 .. admonition:: Tip
 
