@@ -4,9 +4,9 @@ Adding Methods to a Class
 Recall that methods are the specific actions that objects can take. Methods can
 either return a result, update property values, or both.
 
-So far, we have learned how to set property values inside the initialization
-method, ``__init__``. To assign methods to each new object, we must define them
-inside the class, but outside of ``__init__``.
+So far, we have learned how to set property values inside the ``constructor's __init__`` method. 
+To assign methods to each new object, we must define them
+inside the class, but outside of ``constructor``.
 
 Return to the Class Design
 --------------------------

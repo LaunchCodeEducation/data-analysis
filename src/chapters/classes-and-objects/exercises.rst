@@ -20,14 +20,14 @@ Below the ``import`` statement, define the ``Robot`` class.
 Add Properties to ``Robot``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Inside the class, define the ``__init__`` method. It should include
+#. Inside the class, define the ``constructor``. It should include
    parameters for ``self``, ``name``, ``mass``, and ``year``.
 #. Give a default value to ``year``.
 #. Assign the property values as described in the
    :ref:`Setting Property Values <set-property-values>` section.
-#. Add one more property called ``distance``. This will not need a parameter
-   in the ``__init__`` definition. Instead, every new ``Robot`` object will
-   start with a ``distance`` value of ``0``.
+#. Add one more property called ``distance``. 
+   This will not need to be included in the ``constructor``. 
+   Instead, every new ``Robot`` object will start with a ``distance`` value of ``0``.
 
 .. admonition:: Tip
 
@@ -50,7 +50,7 @@ Add Methods to ``Robot``
 
 .. source: https://docs.python.org/3/tutorial/modules.html -- 8/24/21
 
-#. Below ``__init__``, define a second method called ``move()``. This method
+#. Below the ``constructor``, define a method called ``move()``. This method
    should:
 
    #. Only take the ``self`` parameter.

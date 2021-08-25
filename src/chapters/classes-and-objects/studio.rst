@@ -17,7 +17,7 @@ Before You Start
 Part 1: Add Class Properties and ``__str__`` Method
 ---------------------------------------------------
 
-#. Declare a class called ``CrewCandidate`` with an ``__init__`` that takes
+#. Declare a class called ``CrewCandidate`` with a ``constructor`` that takes
    three parameters: ``name``, ``mass``, and ``scores``. Note that ``scores``
    will be a list of test results for the candidate's speed and accuracy.
 #. In ``main()``, create objects for the following candidates:
