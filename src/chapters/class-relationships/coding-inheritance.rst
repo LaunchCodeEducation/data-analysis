@@ -3,91 +3,154 @@ Putting Inheritance into Practice
 
 Now that we know what inheritance is, let's look at how we code parent and child classes.
 
-When setting up parent and child classes, we may first think about what behaviors belong in the parent class and which are specific to child classes.
-Let's say we create a class called ``ParentClass``:
+.. admonition:: Tip
+
+   Fun fact: A parent class may also be referred to as the **base** class or 
+   **super** class while child classes may be referred to as **derived** classes, **subclasses** or **subtypes**. 
+
+Design Your Classes
+-------------------
+
+As you think about classes and inheritance, it's important to remember how inheritance works.  
+A child class derives, extends or inherits a parent class.  
+
+When setting up parent and child classes, 
+we may first think about what behaviors belong in the parent class and which are specific to child classes.
+Let's say we create a class called ``Person`` that takes a single arguement and contains a single method.
 
 .. TODO: update code; source: https://www.w3schools.com/python/python_inheritance.asp
 
-.. sourcecode:: python
+.. admonition:: Example:
+
+   .. sourcecode:: python
+      :linenos:
+
+      # This is the parent class
+      class Person:
+         def __init__(self, name):
+            self.name = name
+         
+         def printname(self):
+            print(self.name)"
+
+      naomi = Person("Naomi")
+      namoi.printname()
+
+   **Console Output**
+
+   .. sourcecode:: python
+
+      Naomi
+
+Line 9, we create a new Person object and pass it a value of "Naomi".  In line 10, we call the ``printname`` 
+method, using the value we initially provided.  The console then prints "Naomi".
+Great! Our class is working.
+
+On to the child class, ``Employee``.  When we define ``Employee`` we pass it the ``Person`` class in parentheses.
+If we do not want to add any additional properties and/or methods 
+to a child class, we will use the ``pass`` keyword when setting up the child class.
+``pass`` is a null statement often used as a placeholder for code.  
+In this example, it is allowing us to create a new child class without any ``constructors`` or methods.
+
+.. admonition:: Example:
+
+   .. sourcecode:: python
+      :linenos:
+
+      class Employee(Person):
+         pass
+
+      # let's test if our inheritance syntax is sound
+      xin = Employee("Xin")
+      xin.printname()
+
+   **Console Output**
+
+   .. sourcecode:: python 
+
+      Xin
+
+When we call the ``Employee`` we see the output above.  
+Our initial syntax is functional, and ``Employee`` is now set 
+up to inherit all or selected the properties and methods of ``Person``. 
+
+However, in most cases, you may want to add an additional property or method to the child class. 
+
+Inheritance Syntax
+------------------
+
+If so, we first need to set up the constructor for the child class.  
+The syntax is the same as you would for any class.  
+Be sure to include any properties you need in the initial constructor.
+In this example, we are going to add id and year parameters.
+
+.. admonition:: Example
+
+   .. sourcecode:: python
+      :linenos:
+
+      class Employee(Person):
+	      def __init__(self, name, id_num, year):
+
+      xin = Employee("Xin")
+      xin.printname()
+         
+If we were to run our code now, it codes throws an AttributeError. 
+In line 1, we have to proper syntax for inheritance, 
+but within our class there are no instructions for how to use the parent class.
+We need to add code to let our child class know what to use from the parent class.
+
+The ``super()`` Function
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+The ``super()`` function is used to pull in the constuctor from a parent class to a child class.  
+This provides access to all properties and methods in the parent class. 
+
+.. admonition:: Note
+
+   If you recall, parent classes are also referred to as super classes, hence ``super()``.
+
+When using ``super().__init__()`` you need to include all the parameters in the parent's constructor except ``self``.
+The ``Person`` class takes a single parameter, ``name``.  
+When we use the ``super()`` function in the ``Employee`` class we need to make sure that the 
+parent class's constructor contains its parameters as well to allow access.
+
+.. replit:: python
+   :slug: InheritanceSuperSyntax
    :linenos:
 
-   class ParentClass:
-      def __init__(self, a):
-         self.a = a
+   class Person:
+      def __init__(self, name):
+         self.name = name
+      def printname(self):
+         print(self.name)
 
-      def important_method():
-         print("This is an important method")
 
-If we do not want to add any additional properties and/or methods to a child class, we will use the ``pass`` keyword when setting up the child class.
+   class Employee(Person):
+      def __init__(self, name, id_num, year):    # child class constructor
+         super().__init__(name)                  # parent class constructor added to child class definition
+         self.id_number = id_num                 # child class properties
+         self.years_employeed = year         
+      
+      def print_id_num(self):
+         print(self.id_number)
 
-.. sourcecode:: python
-   :linenos:
+Calling the Parent Constuctor Directly
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   class ChildClass(ParentClass):
-      pass
-
-``ChildClass`` is now set up to inherit all the properties and methods of ``ParentClass``. This means we could call ``important_method()`` if we needed to.
-
-.. sourcecode:: python
-   :linenos:
-
-   x = ChildClass(5)
-   x.important_method()
-
-In most cases, you may want to add an additional property or method to the child class. In this case, first we need to set up the constructor for the child class with an additional property, ``b``.
+We can also use the directly pass the parent class's constructor to the child class.
+In this instance, there are no parentheses after the ``Person`` and we add ``self`` to the parameter list.
+Output will be the same, it's just a matter of preference.
 
 .. sourcecode:: python
    :linenos:
-
-   class ChildClass(ParentClass):
-      def __init__(self, a, b):
-         ParentClass.__init__(self, a)
-         self.b = b
-
-We can also use the ``super()`` function to pass the parent class's constructor to the child class.
-
-.. sourcecode:: python
-   :linenos:
-
-   class ChildClass(ParentClass):
-      def __init__(self, a, b):
-         super().__init__(a)
-         self.b = b
-
-Cats, Tigers, and Housecats, Oh My!
------------------------------------
-
-.. TODO: update code, create replit, and short walkthrough for students
-
-With the general syntax down, let's code some cat classes. On the previous page, we talked about how we might use inheritance to set up some cat classes.
-Let's take a look at how we could use ``super()`` to set up our cat classes.
-
-.. sourcecode:: python
-   :linenos:
-
-   class Felidae:
-      def __init__(self):
-         self.claws = "retractable"
-
-   class Panthera(Felidae):
-      def __init__(self):
-         super().__init__(self)
-         self.roar = "loud"
-
-   class Tiger(Panthera):
-      def __init__(self):
-         super().__init__(self)
-         self.has_stripes = True
-
-   class Felis(Felidae):
-      def __init__(self):
-         super().__init__(self)
-         self.pupils = "vertical"
    
-   class Housecat(Felis):
-      def __init__(self):
-         super().__init__(self)
-         self.personality = "judgemental"
+   class Employee(Person):
+      def __init__(self, name, id_num, year)       
+         Person.__init__(self, name)            
+
+
+
 
 Check Your Understanding
 ------------------------
@@ -100,4 +163,67 @@ Check Your Understanding
    b. ``Wolf`` is a child class of ``Canis`` and a parent class to ``Carnivora``.
    c. ``Wolf`` is child class of ``Canis``, and ``Canis`` is a child class of ``Carnivora``.
    d. ``Wolf`` is child class of ``Canis``, and ``Canis`` is a parent class of ``Carnivora``.
+
+
+
+
+.. admonition:: Question
+
+   Use the following code block to answer the next two questions.
+
+   .. sourcecode:: python
+
+      class Felidae:
+         def __init__(self):
+         self.claws = "retractable"
+
+      class Panthera(Felidae):
+         def __init__(self):
+            super().__init__()
+            self.roar = "loud"
+
+      class Tiger(Panthera):
+         def __init__(self):
+            super().__init__()
+            self.has_stripes = True
+
+      class Felis(Felidae):
+         def __init__(self):
+            super().__init__()
+            self.pupils = "vertical"
+
+      class Housecat(Felis):
+         def __init__(self):
+            super().__init__()
+            self.personality = "judgemental"
+
+      lion = Felidae()   
+      leopard = Panthera()
+      tiger = Tiger()
+      sand_cat = Felis()
+      tabby_cat = Housecat()
+         
+.. admonition:: Question
+
+   Which object has access to the ``pupils`` attribute of the Felis class?
+
+   a. ``sand_cat`` only
+   b. ``sand_cat``, ``tiger``, and ``tabby_cat``
+   c. ``sand_cat`` and ``tabby_cat``
+   d. ``sand_cat``, ``lion``, ``tiger``
+
+   .. ans: c
+
+.. admonition:: Question
+
+   #. What is the order of inheritance of the ``Housecat`` class?  (moving from child to parent)
+
+   a. ``Housecat``, ``Felis``, ``Tiger``
+   b. ``Housecat``, ``Felis``, ``Felidae``
+   c. ``Housecat``, ``Felis``, ``Panthera``
+   d. ``Housecat``, ``Felidae``, ``Felis``
+
+   .. ans: b
+
+
 
