@@ -12,24 +12,24 @@ Restricting access allows us to expose only that data and behavior that we want 
 
 There are three levels of access when it comes to **class members** (the properties or methods of a class):
 
-#. **Public** members are meant to be accessible inside and outside the class and by child classes. 
-   Every class member we have work with so far would be considered a public member.
-#. **Protected** members are meant to be accessible inside the class and to child classes, but not outside the class. 
-#. **Private** members are meant to be accessed inside the class, not outside the class, and should not be accessed by any child class.
+#. ``public`` members are meant to be accessible inside and outside the class and by child classes. 
+   Every class member we have work with so far would be considered a ``public`` member.
+#. ``protected`` members are meant to be accessible inside the class and to child classes, but not outside the class. 
+#. ``private`` members are meant to be accessed inside the class, not outside the class, and should not be accessed by any child class.
 
 .. admonition:: Note
 
-   While Python programmers can designate members as protected or private, Python will still allow programmers to access members outside of classes.
-   As you progress further in your career, you will find additional ways to designate members as protected or private that will help prevent access outside of a class.
+   While Python programmers can designate members as ``protected`` or ``private``, Python will still allow programmers to access members outside of classes.
+   As you progress further in your career, you will find additional ways to designate members as ``protected`` or ``private`` that will help prevent access outside of a class.
    For now, focus on understanding *why* encapsulation is important!
 
-Protected Members
------------------
+``protected`` Members
+---------------------
 
 .. index:: ! protected member 
 
-A **protected member** should not be accessed outside of a class, but can be used inside the class.
-To designate a member as protected, we need to add an underscore in front of the member's name.
+A ``protected`` **member** should not be accessed outside of a class, but can be used inside the class.
+To designate a member as ``protected``, we need to add an underscore in front of the member's name.
 Let's take a look at ``Person`` and ``Employee`` again.
 
 .. TODO: Update codeblock
@@ -52,7 +52,6 @@ Let's take a look at ``Person`` and ``Employee`` again.
             self._id_number = id_num
             self.year = year
             
-
          def print_info(self):
             print(self.name, self._id_number)
 
@@ -67,18 +66,17 @@ Let's take a look at ``Person`` and ``Employee`` again.
       C-10
       Jose C-10
 
-
-
-Because we put an underscore in front of ``id_number``, we designated ``_id_number`` as protected. Now take a look at lines 19 and 20. 
+In line 11, we put an underscore in front of ``id_number``.  We have designated ``id_number`` ``protected``. 
+Now take a look at lines 18 and 19. 
 If you run this code, it would run without any errors.
-However, calling ``department`` outside of the class on line 19 is not appropriate.
+However, calling ``id_number`` outside of the class on line 18 is not appropriate.
 Instead, we should follow line 20 and call the ``print_info()`` method to print the value of ``id_number``.
 
-Private Members
----------------
+``private`` Members
+-------------------
 
-We have already seen private class members popping up in our code. 
-Private members are designated with a double underscore, ``__``.
+We have already seen ``private`` class members popping up in our code. 
+``private`` members are designated with a double underscore, ``__``.
 
 Let's expand our example above.
 
@@ -95,8 +93,8 @@ Let's expand our example above.
          def print_name(self):
             print(self.name)
 
-      def print_data(self):
-         print(self.__location)
+         def print_data(self):
+            print(self.__location)
 
       class Employee(Person):
          def __init__(self, name, id_num, year, location):
@@ -117,11 +115,11 @@ Let's expand our example above.
 
       St Louis
 
-We can access members in child class directly through the parent class.  
-In the example above, line 4 initializes the property ``__location`` as private.  
+Through the hierachy of classes, a child class can access members of the parent class directly. 
+As we did in the example above.  Line 4 initializes the property ``__location`` as ``private``.  
 The the method ``print_data`` found in line 9 uses prints value of ``__location``
 
-We are able to access the private property in the ``jose`` object by using the parent class method ``print_data`` in line 22.
+We are able to access the ``private`` property in the ``jose`` object by using the parent class method ``print_data`` in line 22.
 
 However, if we wanted to have the child class initialize this property, it will fail.
 
@@ -162,9 +160,9 @@ Check Your Understanding
 
    What level of access has been given to ``name``?
 
-   a. public
-   b. private
-   c. protected
+   a. ``public``
+   b. ``private``
+   c. ``protected``
 
    .. ans: c
 

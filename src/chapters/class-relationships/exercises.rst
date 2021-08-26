@@ -92,7 +92,6 @@ Declare an object of the ``Manual`` class for the following tome from the librar
    * - Whether the book has been discarded
      - No
 
-:ref:`Check Your Solutions<oop-part-3>`
 
 Part Four: Discard A Book
 -------------------------
@@ -101,7 +100,6 @@ One of the above books needs to be discarded. Call the appropriate method
 for that book to update the property. That way the crew can throw it into empty
 space to become debris.
 
-:ref:`Check Your Solutions<oop-part-4>`
 
 Part Five: Update the Number of Times Checked Out
 -------------------------------------------------
