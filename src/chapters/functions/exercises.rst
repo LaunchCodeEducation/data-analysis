@@ -1,7 +1,5 @@
 .. _exercises-functions:
 
-.. TODO: Check exercise solutions
-
 Exercises: Functions
 ====================
 
@@ -201,13 +199,6 @@ A. Write a function ``make_diamond(height)`` that returns a diamond where the
         #####
          ###
           #
-
-.. TODO: Check functions chapter for reverse function.
-
-   .. admonition:: Tip
-
-      Consider what happens if you create a triangle and reverse it using
-      our reverse function.
 
    :ref:`Check Your Solution<exercises-functions-diamond>`
 
