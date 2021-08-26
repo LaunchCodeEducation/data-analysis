@@ -14,4 +14,5 @@ Exercise Solutions
    errors-and-debugging
    functions
    dictionaries
+   class-relationships
    

@@ -18,8 +18,6 @@ When setting up parent and child classes,
 we may first think about what behaviors belong in the parent class and which are specific to child classes.
 Let's say we create a class called ``Person`` that takes a single arguement and contains a single method.
 
-.. TODO: update code; source: https://www.w3schools.com/python/python_inheritance.asp
-
 .. admonition:: Example:
 
    .. sourcecode:: python
@@ -43,10 +41,10 @@ Let's say we create a class called ``Person`` that takes a single arguement and 
       Naomi
 
 Line 9, we create a new ``Person`` object and pass it a value of "Naomi".  In line 10, we call the ``printname`` 
-method, using the value we initially provided.  The console then prints "Naomi".
-Great! Our class is working.
+method, using the value we initially provided.  The console then prints "Naomi" to the console.  So far our 
+``Person`` class is working.  Let's extend it to another class called ``Employee``.
 
-On to the child class, ``Employee``.  When we define ``Employee`` we pass it the ``Person`` class in parentheses.
+As we define ``Employee`` we pass it the ``Person`` class in parentheses (see line 1 below).
 If we do not want to add any additional properties and/or methods 
 to a child class, we will use the ``pass`` keyword when setting up the child class.
 ``pass`` is a null statement often used as a placeholder for code.  
@@ -79,9 +77,9 @@ However, in most cases, you may want to add an additional property or method to 
 Inheritance Syntax
 ------------------
 
-If so, we first need to set up the constructor for the child class.  
+If so, we first need to set up the ``constructor`` for the child class.  
 The syntax is the same as you would for any class.  
-Be sure to include any properties you need in the initial constructor.
+Be sure to include any properties you need in the initial ``constructor``.
 In this example, we are going to add ``id_num`` and ``year`` parameters.
 
 .. admonition:: Example
@@ -103,49 +101,58 @@ We need to add code to let our child class know what to use from the parent clas
 The ``super()`` Function
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-The ``super()`` function is used to pull in the constuctor from a parent class to a child class.  
+The ``super()`` function pulls in the ``constructor`` from a parent class to a child class.  
 This provides access to all properties and methods in the parent class. 
 
 .. admonition:: Note
 
    If you recall, parent classes are also referred to as super classes, hence ``super()``.
 
-In line 10, we called ``super().__init__(name)``.  ``name`` here is the parameter from the ``Person`` constructor.
-When using this syntax, you need to provide the parameters from the parent class's constructor, except ``self``.  
+In line 9 we called ``super().__init__(name)``.  ``name`` is the parameter from the ``Person`` ``constructor``.
+When using this syntax, you need to provide the parameters from the parent class's ``constructor``.  All of them except ``self``.  
 
-.. replit:: python
-   :slug: InheritanceSuperSyntax
-   :linenos:
+Whatever parameters the parent class extends to the child class must be in the child class's constructor.
 
-   class Person:
-      def __init__(self, name):
-         self.name = name
-      def printname(self):
-         print(self.name)
+.. admonition:: Example
 
+   .. replit:: python
+      :slug: InheritanceSuperSyntax
+      :linenos:
 
-   class Employee(Person):
-      def __init__(self, name, id_num, year):    # child class constructor
-         super().__init__(name)                  # parent class constructor added to child class definition
-         self.id_number = id_num                 # child class properties
-         self.years_employeed = year         
-      
-      def print_id_num(self):
-         print(self.id_number)
+      class Person:
+         def __init__(self, name):
+            self.name = name
+         def printname(self):
+            print(self.name)
+
+      class Employee(Person):
+         def __init__(self, name, id_num, year):
+            super().__init__(name)                  
+            self.id_number = id_num                
+            self.years_employeed = year         
+         
+         def print_id_num(self):
+            print(self.id_number)
+ 
+In line 9 the ``constructor`` from the ``Person`` class is added to the definition of ``Employee`` using ``super()``.  
+``Person`` has one parameter, ``name`` that it is extending to ``Employee``.  Due to this extension, ``name`` must be added
+to the ``Employee`` ``constructor``.
 
 Calling the Parent Constuctor Directly
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We can also use the directly pass the parent class's constructor to the child class.
+We can also use the directly pass the parent class's ``constructor`` to the child class.
 In this instance, there are no parentheses after the ``Person`` and we add ``self`` to the parameter list.
 Output will be the same, it's just a matter of preference.
 
-.. sourcecode:: python
-   :linenos:
-   
-   class Employee(Person):
-      def __init__(self, name, id_num, year)       
-         Person.__init__(self, name)            
+.. admonition:: Example
+
+   .. sourcecode:: python
+      :lineno-start: 7
+      
+      class Employee(Person):
+         def __init__(self, name, id_num, year)       
+            Person.__init__(self, name)            
 
 
 
@@ -169,11 +176,13 @@ Check Your Understanding
 
    Use the following code block to answer the next two questions.
 
-   .. sourcecode:: python
+   .. replit:: python
+      :slug: Cat-Inheritance
+      :linenos:
 
       class Felidae:
          def __init__(self):
-         self.claws = "retractable"
+            self.claws = "retractable"
 
       class Panthera(Felidae):
          def __init__(self):

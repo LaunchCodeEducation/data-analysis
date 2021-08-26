@@ -1,4 +1,4 @@
-.. TODO: when i run the solutions in GL, it doesn't work.  sounds like a call for some new learning adventures! woo hoo! :)
+.. _class-relationships:
 
 Exercises: Classes
 ===================
@@ -26,15 +26,22 @@ books get out of date. First, for a manual, the book must be thrown out if it
 is over 5 years old. Second, for a novel, the book should be thrown out if it
 has been checked out over 100 times.
 
-1. Construct three classes that hold the information needed by headquarters as
+Part One: Create Your Classes
+-----------------------------
+
+Construct three classes that hold the information needed by headquarters as
 properties. One class should be a ``Book`` class and two
 child classes of the ``Book`` class called ``Manual`` and ``Novel``. 
 Each class will contain two methods. One will be a constructor. The other one will either be in charge of disposal of the book or updating the property related to the number of times a book has been checked out.
 `Hint:` This means you need to read through the requirements for the problem and decide what should belong to ``Book`` and what should belong to the ``Novel`` and
 ``Manual`` classes. 
 
-2. Declare an object of the ``Novel`` class for the following tome from the
-library:
+:ref:`Check Your Solutions<oop-part-1>`
+
+Part Two: Create ``Novel`` Object
+---------------------------------
+
+Declare an object of the ``Novel`` class for the following tome from the library:
 
 .. list-table:: Novel
    :widths: auto
@@ -57,8 +64,12 @@ library:
    * - Whether the book has been discarded
      - No
 
-3. Declare an object of the ``Manual`` class for the following tome from the
-library:
+:ref:`Check Your Solutions<oop-part-2>`
+
+Part Three: Create ``Manual`` Object
+------------------------------------
+
+Declare an object of the ``Manual`` class for the following tome from the library:
 
 .. list-table:: Manual
    :widths: auto
@@ -81,10 +92,22 @@ library:
    * - Whether the book has been discarded
      - No
 
-4. One of the above books needs to be discarded. Call the appropriate method
+:ref:`Check Your Solutions<oop-part-3>`
+
+Part Four: Discard A Book
+-------------------------
+
+One of the above books needs to be discarded. Call the appropriate method
 for that book to update the property. That way the crew can throw it into empty
 space to become debris.
 
-5. The other book has been checked out 5 times since you first created the
+:ref:`Check Your Solutions<oop-part-4>`
+
+Part Five: Update the Number of Times Checked Out
+-------------------------------------------------
+
+The other book has been checked out 5 times since you first created the
 object. Call the appropriate method to update the number of times the book has
 been checked out.
+
+:ref:`Check Your Solutions<oop-part-5>`
