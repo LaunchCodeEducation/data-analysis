@@ -9,7 +9,12 @@ Let's use dictionaries to play Mad-Libs!
    `here <https://en.wikipedia.org/wiki/Mad_Libs#Format>`__, and then play a
    few `short samples <http://www.madlibs.com/>`__ with your friends.
 
-Fork the starter code in `Replit <https://repl.it/@launchcode/DictionaryStudio>`__
+Fork and clone the starter code from the `remote repository https://github.com/LaunchCodeEducation/dictionaries-studio-data-analysis>`__ 
+
+.. admonition:: Note
+
+   If this process is not working for you, that is okay! While we want you to get the hang of forking and cloning remote repos, we also want you to focus on coding!
+   Please use this `repl <https://repl.it/@launchcode/DictionaryStudio>`__ if you need to.
 
 The code runs, but it does not really do anything. Your job is to build three
 functions that ask the player questions and complete a Mad-Lib.
