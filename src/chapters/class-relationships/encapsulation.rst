@@ -12,7 +12,8 @@ Restricting access allows us to expose only that data and behavior that we want 
 
 There are three levels of access when it comes to **class members** (the properties or methods of a class):
 
-#. **Public** members are meant to be accessible inside and outside the class and by child classes. In the last lesson, every property and method we created would be considered a public member.
+#. **Public** members are meant to be accessible inside and outside the class and by child classes. 
+   Every class member we have work with so far would be considered a public member.
 #. **Protected** members are meant to be accessible inside the class and to child classes, but not outside the class. 
 #. **Private** members are meant to be accessed inside the class, not outside the class, and should not be accessed by any child class.
 
@@ -29,67 +30,116 @@ Protected Members
 
 A **protected member** should not be accessed outside of a class, but can be used inside the class.
 To designate a member as protected, we need to add an underscore in front of the member's name.
-Let's take a look at ``Person`` and ``Supervisor``.
+Let's take a look at ``Person`` and ``Employee`` again.
 
 .. TODO: Update codeblock
 
-.. sourcecode:: python
-   :linenos:
+.. admonition:: Example
 
-   class Person:
-      def __init__(self, name):
-         self.name = name
+   .. sourcecode:: python
+      :linenos:
 
-      def print_name(self):
-         print(self.name)
+      class Person:
+         def __init__(self, name):
+            self.name = name
 
-   class Supervisor(Person):
-      def __init__(self, name, department):
-         super().__init__(name)
-         self._department = department
+         def print_name(self):
+            print(self.name)
 
-      def print_info(self):
-         print(self.name)
-         print(self._department)
+      class Employee(Person):
+         def __init__(self, name, id_num, year):
+            super().__init__(name)
+            self._id_number = id_num
+            self.year = year
+            
+
+         def print_info(self):
+            print(self.name, self._id_number)
+
+      jose = Employee("Jose", "C-10", 4)
+      print(jose._id_number)
+      jose.print_info()
+   
+   **Console Output**
+
+   .. sourcecode:: bash
+
+      C-10
+      Jose C-10
 
 
-   jose = Supervisor("Jose", "C-10")
-   print(jose.department)
-   jose.print_info()
 
-Because we put an underscore in front of ``department``, we designated ``department`` as protected. Now take a look at lines 19 and 20. 
+Because we put an underscore in front of ``id_number``, we designated ``_id_number`` as protected. Now take a look at lines 19 and 20. 
 If you run this code, it would run without any errors.
 However, calling ``department`` outside of the class on line 19 is not appropriate.
-Instead, we should follow line 20 and call the ``print_info()`` method to print the value of ``department``.
+Instead, we should follow line 20 and call the ``print_info()`` method to print the value of ``id_number``.
 
 Private Members
 ---------------
 
-We have already seen private class members popping up in our code. Private members are designated with a double underscore, ``__``.
+We have already seen private class members popping up in our code. 
+Private members are designated with a double underscore, ``__``.
+
 Let's expand our example above.
 
-.. TODO:  pick up here
+.. admonition:: Example
 
-.. sourcecode:: python
-   :linenos:
+   .. sourcecode:: python
+      :linenos:
 
-   class Person:
-      def __init__(self, name, location):
-         self.name = name
-         self.__location = location
+      class Person:
+         def __init__(self, name, location):
+            self.name = name
+            self.__location = location
+
+         def print_name(self):
+            print(self.name)
 
       def print_data(self):
-         print(self.name, self.__location)
+         print(self.__location)
 
-   class ChildClass(ParentClass):
-      def __init__(self, a, b, c):
-         super().__init__(self, a, c)
-         self._b = b
+      class Employee(Person):
+         def __init__(self, name, id_num, year, location):
+            super().__init__(name, location)
+            self._id_number = id_num
+            self.year = year
 
-      def print_info(self):
-         print(self._b)
+         def print_info(self):
+            print(self.name, self._id_number, self.__location)
 
-While we can pass a value to ``__c``, we do not access it directly in ``ChildClass``.
+      jose = Employee("Jose", "C-10", 4, "St Louis")
+      jose.print_data()       # this method is from the parent class
+
+   
+   **Console Output**
+
+   ::
+
+      St Louis
+
+We can access members in child class directly through the parent class.  
+In the example above, line 4 initializes the property ``__location`` as private.  
+The the method ``print_data`` found in line 9 uses prints value of ``__location``
+
+We are able to access the private property in the ``jose`` object by using the parent class method ``print_data`` in line 22.
+
+However, if we wanted to have the child class initialize this property, it will fail.
+
+.. admonition:: Example
+
+   .. sourcecode:: python
+
+      jose = Employee("Jose", "C-10", 4, "St Louis")
+      jose.print_info()       # this method is from the child class
+
+   **Console Output**
+
+   :: 
+
+      AttributeError: 'Employee' object has no attribute '_Employee__location'
+
+While we can pass a value to ``__location``, we cannot access it with our  ``Employee`` class methods. 
+There is some privacy here, but as we saw in the previous example, if you use the parent class methods you can still get to this value.
 
 Check Your Understanding
 ------------------------
@@ -103,15 +153,35 @@ Check Your Understanding
 
       class Greeting:
 
-         def __init__(self):
-            self.name = "Jess"
+         def __init__(self, name):
+            self._name = "Jess"
 
          def say_hello(self):
-            output = "Hello {}!"   
+            output = "Hello, {0}!"   
             print(output.format(self.name))
 
-   What level of access would you give ``name``?
+   What level of access has been given to ``name``?
 
    a. public
    b. private
    c. protected
+
+   .. ans: c
+
+
+.. admonition:: Question
+
+   Using the code block above, what will the output be when we add the following code:
+
+   .. sourcecode:: python
+      :lineno-start: 10
+
+
+      belle.Greeting("Belle")
+      belle.say_hello()
+
+   a. An error will be thrown
+   b. Hello, Jess!
+   c. Hello, Belle
+
+   .. ans: a
