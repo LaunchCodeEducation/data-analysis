@@ -42,7 +42,7 @@ Let's say we create a class called ``Person`` that takes a single arguement and 
 
       Naomi
 
-Line 9, we create a new Person object and pass it a value of "Naomi".  In line 10, we call the ``printname`` 
+Line 9, we create a new ``Person`` object and pass it a value of "Naomi".  In line 10, we call the ``printname`` 
 method, using the value we initially provided.  The console then prints "Naomi".
 Great! Our class is working.
 
@@ -82,7 +82,7 @@ Inheritance Syntax
 If so, we first need to set up the constructor for the child class.  
 The syntax is the same as you would for any class.  
 Be sure to include any properties you need in the initial constructor.
-In this example, we are going to add id and year parameters.
+In this example, we are going to add ``id_num`` and ``year`` parameters.
 
 .. admonition:: Example
 
@@ -110,10 +110,8 @@ This provides access to all properties and methods in the parent class.
 
    If you recall, parent classes are also referred to as super classes, hence ``super()``.
 
-When using ``super().__init__()`` you need to include all the parameters in the parent's constructor except ``self``.
-The ``Person`` class takes a single parameter, ``name``.  
-When we use the ``super()`` function in the ``Employee`` class we need to make sure that the 
-parent class's constructor contains its parameters as well to allow access.
+In line 10, we called ``super().__init__(name)``.  ``name`` here is the parameter from the ``Person`` constructor.
+When using this syntax, you need to provide the parameters from the parent class's constructor, except ``self``.  
 
 .. replit:: python
    :slug: InheritanceSuperSyntax
@@ -194,7 +192,7 @@ Check Your Understanding
 
       class Housecat(Felis):
          def __init__(self):
-            super().__init__()
+            Felis.__init__(self)
             self.personality = "judgemental"
 
       lion = Felidae()   
@@ -205,7 +203,7 @@ Check Your Understanding
          
 .. admonition:: Question
 
-   Which object has access to the ``pupils`` attribute of the Felis class?
+   Which objects listed below have access to the ``pupils`` attribute of the Felis class?
 
    a. ``sand_cat`` only
    b. ``sand_cat``, ``tiger``, and ``tabby_cat``

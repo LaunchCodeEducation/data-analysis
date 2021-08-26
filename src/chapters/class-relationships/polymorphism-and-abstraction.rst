@@ -12,7 +12,7 @@ Let's put this concept into practice. If we have a ``Rectangle`` class, we might
 
 .. TODO: update code blocks
 
-python
+.. sourcecode:: python
    :linenos:
 
    class Rectangle:
