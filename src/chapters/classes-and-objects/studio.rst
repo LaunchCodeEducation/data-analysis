@@ -9,7 +9,9 @@ Let's create a class to handle new cleaning crew candidates!
 Before You Start
 ----------------
 
-.. admonition:: Tip
+Fork and clone the starter code from the `remote repository <https://github.com/LaunchCodeEducation/classes-studio-data-analysis>`__ 
+
+.. admonition:: Note
 
    We always encourage you to use local development at every opportunity. However, sometimes computers and software fail and we would rather you spend your studio time coding!
    If your computer is not cooperating with cloning your repo from Github, you can fork the starter code for the studio on `Replit <https://replit.com/@launchcode/ClassesStudio#main.py>`__.

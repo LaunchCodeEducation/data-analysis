@@ -9,7 +9,7 @@ Let's use dictionaries to play Mad-Libs!
    `here <https://en.wikipedia.org/wiki/Mad_Libs#Format>`__, and then play a
    few `short samples <http://www.madlibs.com/>`__ with your friends.
 
-Fork and clone the starter code from the `remote repository https://github.com/LaunchCodeEducation/dictionaries-studio-data-analysis>`__ 
+Fork and clone the starter code from the `remote repository <https://github.com/LaunchCodeEducation/dictionaries-studio-data-analysis>`__ 
 
 .. admonition:: Note
 
