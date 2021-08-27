@@ -231,7 +231,7 @@ Check Your Understanding
       for index in range(len(names)):
          # Assignment statement here.
 
-   which of the following is the correct syntax for adding the key/value
+   Which of the following is the correct syntax for adding the key/value
    pairs to ``ticket_holders``?
 
    a. ``ticket_holders[index] = ticket_numbers[index]``
