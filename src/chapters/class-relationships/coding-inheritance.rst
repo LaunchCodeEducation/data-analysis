@@ -3,9 +3,9 @@ Putting Inheritance into Practice
 
 Now that we know what inheritance is, let's look at how we code parent and child classes.
 
-.. admonition:: Tip
+.. admonition:: Fun Fact
 
-   Fun fact: A parent class may also be referred to as the **base** class or 
+   A parent class may also be referred to as the **base** class or 
    **super** class while child classes may be referred to as **derived** classes, **subclasses** or **subtypes**. 
 
 Design Your Classes
@@ -40,8 +40,8 @@ Let's say we create a class called ``Person`` that takes a single arguement and 
 
       Naomi
 
-Line 9, we create a new ``Person`` object and pass it a value of "Naomi".  In line 10, we call the ``printname`` 
-method, using the value we initially provided.  The console then prints "Naomi" to the console.  So far our 
+Line 9, we create a new ``Person`` object and pass it a value of ``"Naomi"``.  In line 10, we call the ``printname`` 
+method, using the value we initially provided.  The console then prints ``"Naomi"`` to t`he console.  So far our 
 ``Person`` class is working.  Let's extend it to another class called ``Employee``.
 
 As we define ``Employee`` we pass it the ``Person`` class in parentheses (see line 1 below).
@@ -68,7 +68,8 @@ In this example, it is allowing us to create a new child class without any ``con
 
       Xin
 
-When we call the ``Employee`` we see the output above.  
+When we call the ``Employee`` we see the output above. 
+``Employee`` worked just like ``Person``.
 Our initial syntax is functional, and ``Employee`` is now set 
 up to inherit all or selected the properties and methods of ``Person``. 
 
@@ -80,7 +81,8 @@ Inheritance Syntax
 If so, we first need to set up the ``constructor`` for the child class.  
 The syntax is the same as you would for any class.  
 Be sure to include any properties you need in the initial ``constructor``.
-In this example, we are going to add ``id_num`` and ``year`` parameters.
+In this example, we are going to add the following parameters: ``id_num``, ``department``, and 
+pass the following arguments to the ``xin`` object: ``12345`` and ``"Human Resources"``.
 
 .. admonition:: Example
 
@@ -88,30 +90,31 @@ In this example, we are going to add ``id_num`` and ``year`` parameters.
       :linenos:
 
       class Employee(Person):
-	      def __init__(self, name, id_num, year):
+	      def __init__(self, name, id_num, department):
 
-      xin = Employee("Xin")
+      xin = Employee("Xin", 12345, "Human Resources")
       xin.printname()
          
-If we were to run our code now, it codes throws an AttributeError. 
-In line 1, we have to proper syntax for inheritance, 
+If we were to run our code now, it codes throws an ``AttributeError``
+because there is no ``printname()`` method in the ``Employee`` class as it is written.
+In line 1, we have to proper syntax for the inheritance process, 
 but within our class there are no instructions for how to use the parent class.
 We need to add code to let our child class know what to use from the parent class.
 
 The ``super()`` Function
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-The ``super()`` function pulls in the ``constructor`` from a parent class to a child class.  
+The ``super()`` function pulls in the parent class ``constructor`` into a child class.  
 This provides access to all properties and methods in the parent class. 
 
 .. admonition:: Note
 
    If you recall, parent classes are also referred to as super classes, hence ``super()``.
 
-In line 9 we called ``super().__init__(name)``.  ``name`` is the parameter from the ``Person`` ``constructor``.
+In line 9 we called ``super().__init__(name)``.  The ``name`` is the parameter from the ``Person`` ``constructor``.
 When using this syntax, you need to provide the parameters from the parent class's ``constructor``.  All of them except ``self``.  
 
-Whatever parameters the parent class extends to the child class must be in the child class's constructor.
+Whatever parameters the parent class extends to the child class must also be in the child class's constructor.
 
 .. admonition:: Example
 
@@ -126,17 +129,22 @@ Whatever parameters the parent class extends to the child class must be in the c
             print(self.name)
 
       class Employee(Person):
-         def __init__(self, name, id_num, year):
+         def __init__(self, name, id_num, department):
             super().__init__(name)                  
             self.id_number = id_num                
-            self.years_employeed = year         
+            self.department = department         
          
          def print_id_num(self):
             print(self.id_number)
  
 In line 9 the ``constructor`` from the ``Person`` class is added to the definition of ``Employee`` using ``super()``.  
-``Person`` has one parameter, ``name`` that it is extending to ``Employee``.  Due to this extension, ``name`` must be added
-to the ``Employee`` ``constructor``.
+``Person`` has one parameter, ``name`` that it is extending to ``Employee``.   
+This extension will allow the ``Employee`` class to use any of the ``Person`` class methods, like ``printname()``.
+Due to this extension of functionality, ``name`` must be added to the ``Employee`` ``constructor`` as well.
+
+It may seem redundant at first, to have two (or more) ``constructors`` with duplicate parameters.
+Recall the purpose of the ``constructor``.  It will instantiate (or build) objects.  
+In order to build objects, all parameters are required, even if they are from a parent class.
 
 Calling the Parent Constuctor Directly
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -151,7 +159,7 @@ Output will be the same, it's just a matter of preference.
       :lineno-start: 7
       
       class Employee(Person):
-         def __init__(self, name, id_num, year)       
+         def __init__(self, name, id_num, department)       
             Person.__init__(self, name)            
 
 
