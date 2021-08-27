@@ -10,7 +10,7 @@ Polymorphism
 
 **Polymorphism** is an object-oriented mechanism that allows for objects of different types to be used in the same way.
 One example that you have already worked with is the ``len()`` function.  It is a function that we can use for both 
-lists and strings.  We can expand polymorphism to classes.  
+lists and strings.  We can expand polymorphism to classes, too.  
 
 When we are looking at a polymorphic class, you will observe that different classes may have methods with the same names.
 The purpose behind this all comes down to reusablitity
@@ -19,7 +19,8 @@ Let's put this concept into practice. If we have a ``Rectangle`` class, we might
 
 .. admonition:: Example
 
-   .. sourcecode:: python
+   .. replit:: python
+      :slug: Polymorphism
       :linenos:
 
       class Rectangle:
@@ -41,6 +42,11 @@ In both ``Square`` and ``Rectangle``, we have an ``area()`` function.
 Since ``height`` and ``width`` have the same value for a square, 
 we can find the area by squaring the value of ``height`` which is why we defined two separate functions under the same name.
 
+In short, we have created a method of the same name between classes.  
+This can simplify our code by cutting down on redundancy, 
+and can become a point of iteration between a group of related classes.
+
+
 .. index:: ! abstraction
 
 Abstraction
@@ -54,7 +60,7 @@ However, we don't want to instantiate a ``Cat`` object, because that is not very
 
 .. admonition:: Note
 
-   We will not be coding an abstract class, however, if you want to learn how to make an abstract class, check out the `documentation <https://docs.python.org/3/library/abc.html>`_.
+   We will not be coding an abstract class.  However, if you want to learn how to make an abstract class, check out the `documentation <https://docs.python.org/3/library/abc.html>`_.
 
 Check Your Understanding
 ------------------------
@@ -68,4 +74,4 @@ Check Your Understanding
    c. ``Principal``
    d. ``Personnel``
 
-   .. ans: d
+   .. ans: d: as it is the most broad title that a, b, and c could inherit from

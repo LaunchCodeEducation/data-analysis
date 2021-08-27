@@ -26,6 +26,8 @@ There are three levels of access when it comes to **class members** (the propert
 ``protected`` Members
 ---------------------
 
+.. TODO: add relpit link for protected members
+
 .. index:: ! protected member 
 
 A ``protected`` **member** should not be accessed outside of a class, but can be used inside the class.
@@ -34,7 +36,8 @@ Let's take a look at ``Person`` and ``Employee`` again.
 
 .. admonition:: Example
 
-   .. sourcecode:: python
+   .. replit:: python
+      :slug: ProtectedMembers
       :linenos:
 
       class Person:
@@ -45,15 +48,14 @@ Let's take a look at ``Person`` and ``Employee`` again.
             print(self.name)
 
       class Employee(Person):
-         def __init__(self, name, id_num, year):
+         def __init__(self, name, id_num):
             super().__init__(name)
             self._id_number = id_num
-            self.year = year
             
          def print_info(self):
             print(self.name, self._id_number)
 
-      jose = Employee("Jose", "C-10", 4)
+      jose = Employee("Jose", "C-10")
       print(jose._id_number)
       jose.print_info()
    
@@ -64,11 +66,12 @@ Let's take a look at ``Person`` and ``Employee`` again.
       C-10
       Jose C-10
 
-In line 11, we put an underscore in front of ``id_number``.  We have designated ``id_number`` ``protected``. 
-Now take a look at lines 18 and 19. 
+In line 11, we put an underscore in front of ``id_number``.  
+We have designated ``id_number`` as a ``protected`` member. 
+Now take a look at lines 17 and 18. 
 If you run this code, it would run without any errors.
-However, calling ``id_number`` outside of the class on line 18 is not appropriate.
-Instead, we should follow line 20 and call the ``print_info()`` method to print the value of ``id_number``.
+However, calling ``id_number`` outside of the class on line 17 is not appropriate.
+Instead, we should follow line 18 and call the ``print_info()`` method to print the value of ``id_number``.
 
 ``private`` Members
 -------------------
@@ -80,7 +83,8 @@ Let's expand our example above.
 
 .. admonition:: Example
 
-   .. sourcecode:: python
+   .. replit:: python
+      :slug: PrivateMembers
       :linenos:
 
       class Person:
@@ -95,15 +99,14 @@ Let's expand our example above.
             print(self.__location)
 
       class Employee(Person):
-         def __init__(self, name, id_num, year, location):
+         def __init__(self, name, id_num, location):
             super().__init__(name, location)
             self._id_number = id_num
-            self.year = year
 
          def print_info(self):
             print(self.name, self._id_number, self.__location)
 
-      jose = Employee("Jose", "C-10", 4, "St Louis")
+      jose = Employee("Jose", "C-10", "Web Development", "St Louis")
       jose.print_data()       # this method is from the parent class
 
    
@@ -117,7 +120,8 @@ Through the hierachy of classes, a child class can access members of the parent 
 As we did in the example above.  Line 4 initializes the property ``__location`` as ``private``.  
 The the method ``print_data`` found in line 9 uses prints value of ``__location``
 
-We are able to access the ``private`` property in the ``jose`` object by using the parent class method ``print_data`` in line 22.
+We are able to access the ``private`` property in the ``jose`` object by 
+using the parent class method ``print_data`` in line 21.
 
 However, if we wanted to have the child class initialize this property, it will fail.
 
@@ -125,7 +129,7 @@ However, if we wanted to have the child class initialize this property, it will 
 
    .. sourcecode:: python
 
-      jose = Employee("Jose", "C-10", 4, "St Louis")
+      jose = Employee("Jose", "C-10", "St Louis")
       jose.print_info()       # this method is from the child class
 
    **Console Output**

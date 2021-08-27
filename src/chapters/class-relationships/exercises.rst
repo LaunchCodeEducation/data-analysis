@@ -21,10 +21,10 @@ book.
 6. The number of times the book has been checked out.
 7. Whether the book has been discarded.
 
-Headquarters also needs you to track certain actions that you must perform when
-books get out of date. First, for a manual, the book must be thrown out if it
-is over 5 years old. Second, for a novel, the book should be thrown out if it
-has been checked out over 100 times.
+Headquarters also needs you to track certain actions that you must perform when books get out of date: 
+
+1. For a manual, the book must be thrown out if it is over 5 years old. 
+2. For a novel, the book should be thrown out if it has been checked out over 100 times.
 
 Part One: Create Your Classes
 -----------------------------
@@ -32,7 +32,9 @@ Part One: Create Your Classes
 Construct three classes that hold the information needed by headquarters as
 properties. One class should be a ``Book`` class and two
 child classes of the ``Book`` class called ``Manual`` and ``Novel``. 
-Each class will contain two methods. One will be a constructor. The other one will either be in charge of disposal of the book or updating the property related to the number of times a book has been checked out.
+Each class will contain two methods. One will be a ``constructor``. 
+The other one will either be in charge of disposal of the book or updating the property related to the number of times a book has been checked out.
+
 `Hint:` This means you need to read through the requirements for the problem and decide what should belong to ``Book`` and what should belong to the ``Novel`` and
 ``Manual`` classes. 
 
