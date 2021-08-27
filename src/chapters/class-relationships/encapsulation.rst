@@ -32,8 +32,6 @@ A ``protected`` **member** should not be accessed outside of a class, but can be
 To designate a member as ``protected``, we need to add an underscore in front of the member's name.
 Let's take a look at ``Person`` and ``Employee`` again.
 
-.. TODO: Update codeblock
-
 .. admonition:: Example
 
    .. sourcecode:: python
