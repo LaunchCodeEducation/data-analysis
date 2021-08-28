@@ -1,7 +1,7 @@
 What are Modules?
 =================
 
-In the last chapter, we learned that functions allow us to reuse the same block
+In the functions chapter, we learned that functions allow us to reuse the same block
 of code many times throughout a program. Once we create a useful function, we
 might find a use for it in other programs as well. We could easily copy and
 paste that function into new projects, but this leads to a couple of problems:
@@ -67,30 +67,12 @@ give the whole program new abilities.
 A List of Python Modules
 ------------------------
 
-Python comes with LOTS of modules, and we have already used one of these quite
-a bit---the ``turtle`` module. Once we *import* the module, we gain access to
+.. TODO: Add reference to previous module usage.
+
+Python comes with LOTS of modules, and we may have seen a few before when learning about strings. Once we *import* the module, we gain access to
 everything it contains.
 
-.. admonition:: Example
-
-   .. sourcecode:: Python
-      :linenos:
-
-      import turtle           # Allows us to use the turtle module
-
-      bob = turtle.Turtle()   # Create a turtle named bob
-
-      bob.forward(150)        # Move bob forward 150 pixels
-      bob.left(90)            # Turn bob left by 90 degrees
-      bob.circle(75)          # Draw a circle with a radius of 75 pixels
-
-In this example, we use several tools defined in the module---``Turtle()``,
-``forward()``, ``left()``, and ``circle()``.
-
-What if no one told us about ``turtle``? How would we know it exists? How
-would we know what it can do for us?
-
-The `Python Documentation <https://docs.python.org/3/>`__ site is an extremely
+How do we know what modules are available and whether or not those modules suit our needs? The `Python Documentation <https://docs.python.org/3/>`__ site is an extremely
 useful source of information. The site includes a list of all the standard
 modules that come with Python (called the
 `Global Module Index <https://docs.python.org/3/py-modindex.html>`__).
@@ -106,17 +88,10 @@ are available as part of the standard library.
    :alt: The Python Module Index page.
    :width: 50%
 
-Clicking on the ``turtle`` option opens a page that describes all of the
-tools the module contains.
-
-.. figure:: figures/turtle-graphics-page.png
-   :alt: The webpage that describes the Python turtle module. 
-   :width: 50%
-
 .. admonition:: Note
 
    For now, do not worry about wading through all of the possible modules. In
-   this book, we point out the most useful ones for beginning Python coders.
+   this book, we point out the most useful ones for beginning Python coders and data analysts.
 
    As your skills grow, you can explore other options on your own.
 
@@ -127,15 +102,10 @@ Check Your Understanding
 
    In Python a module is:
 
-   .. raw:: html
-
-      <ol type="a">
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, true)"> A file containing Python code for use in other Python programs.</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> A separate block of code within a program.</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> One line of code in a program.</li>
-         <li><input type="radio" name="Q1" autocomplete="off" onclick="evaluateMC(name, false)"> A file that contains information about functions in Python.</li>
-      </ol>
-      <p id="Q1"></p>
+   a. A file containing Python code for use in other Python programs.
+   b. A separate block of code within a program.
+   c. One line of code in a program.
+   d. A file that contains information about functions in Python.
 
 .. Answer = a
 

@@ -4,6 +4,9 @@ Modules
 .. toctree::
    :maxdepth: 3
 
-   introduction
    modules-intro
+   import-syntax
+   random-module
+   math-module
+   creating-modules.rst
    exercises

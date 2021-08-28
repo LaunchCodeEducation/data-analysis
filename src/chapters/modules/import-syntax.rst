@@ -12,7 +12,7 @@ The ``import`` Keyword
 Before we can use any of the items stored in a module, we must import it. The
 syntax for this is:
 
-.. index:: ! import, ! dot notation
+.. index:: ! import, dot notation
 
 .. index::
    single: module; import
@@ -23,10 +23,10 @@ syntax for this is:
 
 The **import** keyword tells Python to find the file called ``module_name`` and
 make it available for use in the program. For example, the statement
-``import turtle`` creates a new name, ``turtle``, which points to the module
-where all of the turtle data and functions are stored.
+``import string`` creates a new name, ``string``, which points to the module
+where all of the string data and functions are stored.
 
-.. admonition:: Warning
+.. admonition:: Tip
 
    Put all ``import`` statements in the very first lines of a program! This
    avoids runtime errors by importing all module items well before your code
@@ -41,24 +41,19 @@ name of the module with a variable or function name:
    module_name.function_name(arguments)   # Call function_name
 
 For example, we have used the ``string`` module to access a list of all the
-lowercase letters, and we have used the ``turtle`` module to draw a circle on
-the screen:
+lowercase letters:
 
 .. sourcecode:: Python
    :linenos:
 
    import string
-   import turtle
 
    print(string.ascii_lowercase)    # Prints abcdefghijklmnopqrstuvwxyz
-   turtle.circle(50)                # Draws a circle with a 50 pixel radius
 
-We can read these two examples of dot notation like this:
+We can read this example of dot notation like this:
 
 #. **Line 4** - In the ``string`` module, access the value for the variable
    ``ascii_lowercase``.
-#. **Line 5** - In the ``turtle`` module, call the function called ``circle``,
-   and send it the argument ``50``.
 
 .. admonition:: Note
 
@@ -99,9 +94,15 @@ up with a Google search. However, Python has a useful directory function,
    To make this output easier to read, we can use a loop to print the list
    one element per line.
 
-   .. raw:: html
+   .. replit:: py
+      :slug: Print-Module-Contents
+      :linenos:
 
-      <iframe height="450px" width="100%" src="https://repl.it/@launchcode/Print-Module-Contents?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      # Try running this code with different modules. Don't forget to change the module name in line 2 AND line 4!
+      import string
+
+      for item in dir(string):
+         print(item)
 
 .. admonition:: Tip
 
@@ -186,23 +187,3 @@ keyword as part of the ``import`` statement:
 
    import module_name as new_name
    from module_name import item_name as new_name
-
-Try It!
--------
-
-#. Using the clues in the code below, import the modules required to make
-   the program work:
-
-   .. raw:: html
-
-      <iframe height="550px" width="100%" src="https://repl.it/@launchcode/Import-Modules?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-   
-   *Challenge*: Modify the code to replace one ``import`` statement with
-   ``from module_name import function_name``.
-
-#. Using the clues in the code below, rename the ``turtle`` module to make
-   the code work:
-
-   .. raw:: html
-
-      <iframe height="600px" width="100%" src="https://repl.it/@launchcode/Rename-Turtle-Module?lite=true" scrolling="no" frameborder="yes" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>

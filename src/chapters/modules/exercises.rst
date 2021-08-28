@@ -15,8 +15,6 @@ use dir() to see available vars
 run package separately from index
 
 Create ex solns and add ~half to solutions appendix
-No Studio (lesson is coupled with GIT, a long studio)
-
 
 .. _modules-exercises:
 
