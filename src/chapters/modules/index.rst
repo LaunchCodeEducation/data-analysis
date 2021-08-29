@@ -10,3 +10,4 @@ Modules
    math-module
    creating-modules.rst
    exercises
+   todos-and-notes

@@ -1,21 +1,6 @@
 Exercises: Modules
 ==================
 
-Idea: create new python program from scratch, similar to Hello Messages in Java. 
-The program starts with index.py, two or three variables
-create new file that will be imported into index
-new file to contain 2-3 methods
-practice importing whole module into index
-import one var from module into index
-create new file with at least one variable
-import that new file into index as a renamed item, import a single item renamed
-create a package (aka a slightly dfferent program)
-bring package into index
-use dir() to see available vars
-run package separately from index
-
-Create ex solns and add ~half to solutions appendix
-
 .. _modules-exercises:
 
 Exercises: Modules
@@ -30,17 +15,7 @@ b. Calls functions based on the user's responses.
 Rather than coding all of the functions from scratch, you are going to use
 existing modules to help assemble your project.
 
-.. admonition:: Note
-
-   If your teacher added you to a :ref:`Trinket course <trinket-course-assignments>`,
-   complete the exercises there.
-
-   Otherwise, use the links below to code in your own free account.
-
-   #. Open this `Trinket <https://trinket.io/python/a579c40c9f>`__ and *Remix*
-      before getting started.
-   #. Open this `repl <https://repl.it/@launchcode/LCHS-Modules-Chapter-Exercises>`__
-      and *Fork* before getting started.
+Open this `repl <https://replit.com/@launchcode/Modules-Exercises#main.py>`__ and *Fork* before getting started.
 
 Import Module Code
 ------------------

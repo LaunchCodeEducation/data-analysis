@@ -64,6 +64,11 @@ simple helps with debugging, splitting up a large project into smaller pieces
 makes it easier to fix. We can also add more modules to the project to quickly
 give the whole program new abilities.
 
+.. index:: ! library
+
+A **library** in Python is a collection of modules designed to provide many different functions and variables for a specific purpose.
+Later in this book, we will take a look at how to use two common libraries for data analysis, NumPy and Pandas.
+
 A List of Python Modules
 ------------------------
 
