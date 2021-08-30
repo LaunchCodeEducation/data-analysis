@@ -1,6 +1,8 @@
 Exercise Solutions: Modules
 ===========================
 
+.. _import-module-code:
+
 Import Module Code
 ------------------
 
@@ -18,6 +20,10 @@ Import Module Code
 
       from display import print_all as display_results
 
+:ref:`Return to Exercises<modules-exercises>`
+
+.. _finish-new-module:
+
 Finish Coding A New Module
 --------------------------
 
@@ -33,8 +39,14 @@ Finish Coding A New Module
          random_element = random.choice(a_list)
          return random_element# Return the selected element
 
+:ref:`Return to Exercises<modules-exercises>`
+
+.. _finish-project-1:
+
 Finish the Project
 -------------------
+
+.. _finish-project-2:
 
 #. **Line 19**: Call ``display_results`` to print all of the tests and student
    scores. Be sure to pass in the correct arguments.
@@ -43,10 +55,13 @@ Finish the Project
 
       display_results(astronauts, test_titles, scores)
 
+
+
 3. **Line 27**: Call ``average_for_student`` (with the proper arguments) to
 print each astronaut's average score.
 
    .. sourcecode:: py
 
       avg = averages.average_for_student(astronaut_index,scores)
- 
+
+:ref:`Return to Exercises<modules-exercises>`

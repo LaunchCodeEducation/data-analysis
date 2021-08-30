@@ -27,6 +27,8 @@ Lucky you! Most of the functions you need are in the ``averages.py`` and
 #. Use the ``as`` keyword to rename the imported ``print_all`` function to
    ``display_results``.
 
+:ref:`Check Your Solutions<import-module-code>`
+
 Finish Coding A New Module
 --------------------------
 
@@ -42,6 +44,8 @@ Finish Coding A New Module
    If you add any loose statements in the ``random_select.py`` file, remember
    to place them into a ``main()`` function.
 
+:ref:`Check Your Solutions<finish-new-module>`
+
 Finish the Project
 -------------------
 
@@ -55,11 +59,17 @@ Now complete the project code.
 
 #. **Line 19**: Call ``display_results`` to print all of the tests and student
    scores. Be sure to pass in the correct arguments.
+
+   :ref:`Check Your Solutions<finish-project-1>`
+
 #. **Line 23**: Using dot notation, call ``average_for_test`` to print the
    class average for each test. Use ``title_index`` and ``scores`` as
    arguments.
 #. **Line 27**: Call ``average_for_student`` (with the proper arguments) to
    print each astronaut's average score.
+
+   :ref:`Check Your Solutions<finish-project-2>`
+
 #. **Line 30**: Call ``random_from_list`` to pick the next spacewalker from the
    ``astronauts`` list.
 
