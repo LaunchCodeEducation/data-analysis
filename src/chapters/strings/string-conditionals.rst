@@ -55,7 +55,7 @@ the different data types.  (*TRY IT*!)
 
    .. sourcecode:: Python
 
-      print("The value {0} is a {1} data type.".format(my_var, type(my_var))
+      print("The value {0} is a {1} data type.".format(my_var, type(my_var)))
 
 Comparing Strings
 -----------------

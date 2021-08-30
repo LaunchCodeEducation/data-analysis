@@ -1,8 +1,8 @@
 Functions Calling Other Functions
 =================================
 
-Once we define a function, we can call it on its own, as part of a conditional,
-or from inside of a loop.
+Once we define a function, we can call it on its own (line 5), as part of a conditional (line 7),
+or from inside of a loop (line 10).
 
 .. admonition:: Example
 
@@ -13,13 +13,13 @@ or from inside of a loop.
          return num*2
 
       integer = 8
-      my_function(integer)
+      double_number(integer)
 
       if integer > 5:
-         my_function(integer)
+         double_number(integer)
       
       for number in range(10):
-         my_function(number)
+         double_number(number)
 
 Even better, we can call one function from INSIDE another function.
 

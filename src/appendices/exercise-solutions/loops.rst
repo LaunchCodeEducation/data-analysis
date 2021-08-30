@@ -1,7 +1,7 @@
 .. _loops-exercise-solutions:
 
 Exercise Solutions: Loops
-======================================
+==========================
 
 .. _loops-exercise-solutions1:
 
@@ -47,12 +47,12 @@ the altitude the shuttle reaches.
    .. sourcecode:: py
       :linenos:
 
-      fuelLevel = 0
-      numAstronauts = 0
+      fuel_level = 0
+      num_astronauts = 0
       altitude = 0
 
-      while fuelLevel <= 5000 or fuelLevel > 30000: 
-         fuelLevel = int(input("Enter the starting fuel level: "))
+      while fuel_level <= 5000 or fuel_level > 30000: 
+         fuel_level = int(input("Enter the starting fuel level: "))
 
    c. Use a final loop to monitor the fuel status and the altitude of the
       shuttle. Each iteration, decrease the fuel level by 100 units for each
@@ -63,24 +63,22 @@ the altitude the shuttle reaches.
    .. sourcecode:: py
       :linenos:
 
-      while fuelLevel-100*numAstronauts >= 0:
+      while fuel_level-100*num_astronauts >= 0:
         altitude += 50
-        fuelLevel -= 100*numAstronauts
+        fuel_level -= 100*num_astronauts
 
 #. After the loops complete, output the result with the phrase, ``The shuttle
    gained an altitude of ___ km.``
 
    a. If the altitude is 2000 km or higher, add "Orbit achieved!"
 
-   .. TODO: translate to python. in JS now
-
-   .. sourcecode:: js
+   .. sourcecode:: py
       :linenos:
 
-      output = `The shuttle gained an altitude of ${altitude} km.`
+      output = "The shuttle gained an altitude of " + altitude + " km."
 
       if altitude >= 2000:
-        output += " Orbit achieved!"
-
+         output = output + " Orbit achieved!"
+         print(output)
 
 :ref:`Back to the exercises <exercises-loops>`.

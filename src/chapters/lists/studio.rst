@@ -1,11 +1,11 @@
-Studio: Strings and lists
+Studio: Strings and Lists
 ==========================
 
 Strings are **ordered collections** of *characters*, which are strings of
 length 1. The characters in a string can be accessed using
 **bracket notation**.
 
-lists are ordered collections of items, which can be strings, numbers,
+Lists are ordered collections of items, which can be strings, numbers,
 other lists, etc. The items/elements/entries stored in an list can be
 accessed using bracket notation.
 
@@ -14,8 +14,8 @@ Strings are **immutable**, whereas lists can be changed.
 Strings and lists have **properties** and **methods** that allow us to easily
 perform some useful actions.
 
-String Modification
--------------------
+Part 1: String Modification
+----------------------------
 
 Use string methods to convert a word into pseudo-pig latin.
 
@@ -30,14 +30,14 @@ c. Add validation to your code to deal with user inputs that are longer than the
 
 `Code it at repl.it <https://replit.com/@launchcode/StringAndListStudio01>`__
 
-List and String Conversion
-----------------------------
+Part 2: List and String Conversion
+----------------------------------
 
 The ``split`` and ``join`` methods convert back and forth between strings
 and lists. Use **delimiters** as reference points to split a string into an
 list, then modify the list and convert it back to a printable string.
 
-a. For a given string, use the ``includes`` method to check to see if the
+a. For a given string, use the ``in`` method to check to see if the
    words are separated by commas (``,``), semicolons (``;``) or just spaces.
 b. If the string uses commas to separate the words, ``split`` it into an list,
    reverse the entries, and then ``join`` the list into a new comma separated
@@ -56,8 +56,8 @@ e. *Consider*: What if the string uses 'comma spaces' (, ) to separate the
 
 `Code it at repl.it <https://replit.com/@launchcode/StringAndListStudio02>`__
 
-Bonus Mission: Multi-dimensional Lists
---------------------------------------
+Part 3: Optional Fun With Multi-dimensional Lists 
+-------------------------------------------------
 
 Lists can store other lists!
 
@@ -82,3 +82,13 @@ e. *Bonus to the Bonus*: Modify the code to query the user for BOTH a cabinet in
    DOES/DOES NOT contain ____."``
 
 `Code it at repl.it <https://replit.com/@launchcode/StringAndListStudio03>`__
+   
+
+Submitting Your Work
+---------------------
+
+You should have two replits, one for *String Modification* and one for *List and String Conversions*.
+Submit the links to your replits in your Canvas account for credit.
+
+If you did Part 3, submit that through Canvas as well.
+

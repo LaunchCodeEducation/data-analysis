@@ -1,7 +1,5 @@
 .. _exercises-functions:
 
-.. TODO: Check exercise solutions
-
 Exercises: Functions
 ====================
 
@@ -30,11 +28,15 @@ diamond:
       ###
        #
 
-There is no starter code for these exercises, so create a new Python project
-at `repl.it <https://repl.it/login>`__ to get started.
+Getting Started
+---------------
 
-Rectangles
-----------
+You will find the starter code `here <https://replit.com/@launchcode/FunctionsExercises>`_.
+
+.. _exercises-functions-part1:
+
+Part 1: Rectangles
+------------------
 
 A. Write a function ``make_line(size)`` that returns a line with exactly ``size``
    hashes.
@@ -81,6 +83,8 @@ A. Write a function ``make_line(size)`` that returns a line with exactly ``size`
       noticeable for the simpler shapes, including it will make life harder for
       you toward the end of the exercises.
 
+   :ref:`Check Your Solution<exercises-functions-square>`
+
 #. Write a function ``make_rectangle(width, height)`` that returns a
    rectangle with the given width and height. Use your ``make_line`` function to
    do this.
@@ -99,10 +103,14 @@ A. Write a function ``make_line(size)`` that returns a line with exactly ``size`
 
 #. Now, go back and rewrite ``make_square`` to use ``make_rectangle``.
 
-Triangles
----------
+:ref:`Check Your Solution<exercises-functions-rectangle>`
 
-E. Write a function ``make_downward_stairs(height)`` that prints the staircase
+.. _exercises-functions-part2:
+
+Part 2:  Triangles
+------------------
+
+A. Write a function ``make_downward_stairs(height)`` that prints the staircase
    pattern shown below, with the given height. Use your ``make_line`` function
    to do this.
 
@@ -120,7 +128,9 @@ E. Write a function ``make_downward_stairs(height)`` that prints the staircase
       ####
       #####
 
-F. Write a function ``make_space_line(numSpaces, numChars)`` that returns a line
+   :ref:`Check Your Solution<exercises-functions-stairs>`
+
+#. Write a function ``make_space_line(numSpaces, numChars)`` that returns a line
    with exactly the specified number of spaces, followed by the
    specified number of hashes, followed again by ``num_spaces`` more spaces.
 
@@ -138,7 +148,9 @@ F. Write a function ``make_space_line(numSpaces, numChars)`` that returns a line
    
       We have inserted underscores to represent spaces, so they are visible in the output. Don't do this in your code.
 
-G. Write a function ``make_isosceles_triangle(height)`` that returns a triangle
+   :ref:`Check Your Solution<exercises-functions-space-line>`
+
+#. Write a function ``make_isosceles_triangle(height)`` that returns a triangle
    of the given height.
 
    .. sourcecode:: py
@@ -159,10 +171,14 @@ G. Write a function ``make_isosceles_triangle(height)`` that returns a triangle
    
       Consider the top line of the triangle to be level 0, the next to be line 1, and so on. Then line ``i`` is a space-line with ``height - i - 1`` spaces and ``2 * i + 1`` hashes.
 
-Diamonds
----------
+   :ref:`Check Your Solution<exercises-functions-triangle>`
 
-H. Write a function ``make_diamond(height)`` that returns a diamond where the
+.. _exercises-functions-part3:
+
+Part 3: Diamonds
+----------------
+
+A. Write a function ``make_diamond(height)`` that returns a diamond where the
    triangle formed by the *top* portion has the given height.
 
    .. sourcecode:: py
@@ -184,16 +200,15 @@ H. Write a function ``make_diamond(height)`` that returns a diamond where the
          ###
           #
 
-.. TODO: Check functions chapter for reverse function.
+   :ref:`Check Your Solution<exercises-functions-diamond>`
 
-   .. admonition:: Tip
+.. _exercises-functions-bonus:
 
-      Consider what happens if you create a triangle and reverse it using
-      our reverse function.
-
-Bonus Mission
---------------
+Optional Mission
+----------------
 
 Refactor your functions so that they take a single character as a parameter,
 and draw the shapes with that character instead of always using ``'#'``. Make
 the new parameter optional, with default value ``'#'``.
+
+

@@ -9,5 +9,10 @@ Exercise Solutions
    data-and-variables
    booleans-and-conditionals
    loops
+   strings
+   lists
+   errors-and-debugging
+   functions
+   dictionaries
    modules
    
