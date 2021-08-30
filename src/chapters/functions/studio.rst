@@ -1,8 +1,8 @@
 Studio: Functions
 ==================
 
-The ``reverse`` method flips the order of the elements within an list.
-However, ``reverse`` does not affect the digits or characters within those
+The ``reverse`` :ref:`list method<list-reverse-example>` flips the order of the elements within an list.
+However, ``reverse`` does not affect the digits or characters *within* those
 elements.
 
 .. admonition:: Example
@@ -32,28 +32,48 @@ practice, we will solve the list reversal by defining two functions - one that
 reverses the characters in a string (or the digits in a number) and one that
 flips the order of entries in the list.
 
+.. TODO: review wording for local dev and replits
+
+Before You Start
+----------------
+
+.. admonition:: Tip
+
+   We always encourage you to use local development at every opportunity. 
+   However, sometimes computers and software fail and we would rather you 
+   spend your studio time coding! 
+   If your computer is not cooperating with cloning your repo from Github, 
+   you can fork the starter code for the studio on Replit.  
+
+   `Code exercises 1 - 3 at repl.it <https://repl.it/@launchcode/FunctionsStudio01-03>`__
+
+
+
+
+
 Reverse Characters
 -------------------
 
-.. TODO: Check this reference.
-
-1. In the *composing functions* section, we examined a function that
-   reverses the characters in a string using the
-   ``split`` and ``join`` methods. Let's rebuild that function now.
+1. In order to create this function, let's review some 
+   :ref:`string methods<string-methods-appendix>` and 
+   :ref:`list methods<list-method-appendix>` we learned about earlier. 
+   Using these built-in methods, we can create a function that will not
+   only reverse the order of elements, but the characters contained within each element.
 
    a. Define the function as ``reverse_characters``. Give it one parameter, which will
       be the string to reverse.
-   b. Within the function, ``split`` the string into an list, then reverse the
-      list.
-   c. Use ``join`` to create the reversed string and *return* that string from the
+   b. Within your function, use the ``list`` function to split the 
+      string into a list of individual characters.
+   c. ``reverse`` your new list.
+   d. Use ``join`` to create the reversed string and *return* that string from the
       function.
-   d. Below the function, define and initialize a variable to hold a string.
-   e. Use ``print(reverse_characters(my_variable_name))`` to call the function and verify
+   e. Create a variable of type string to test your new function.  (See suggestions below)
+   f. Use ``print(reverse_characters(my_variable_name))`` to call the function and verify
       that it correctly reverses the characters in the string.
-   f. *Optional*: Use method chaining to reduce the lines of code within the
+   g. *Optional*: Use method chaining to reduce the lines of code within the
       function.
 
-`Code exercises 1 - 3 at repl.it <https://repl.it/@launchcode/FunctionsStudio01-03>`__
+
 
 .. admonition:: Tip
 
@@ -68,7 +88,7 @@ Reverse Digits
 ---------------
 
 2. The ``reverse_characters`` function works great on strings, but what if the
-   argument passed to the function is a number? Using
+   argument passed to the function is a number type? Using
    ``print(reverse_characters(1234))`` results in an error, since
    ``split`` only works on strings (TRY IT). When passed a number, we want the
    function to return a number with all the digits reversed (e.g. 1234 converts
@@ -76,8 +96,8 @@ Reverse Digits
 
    a. Add an ``if`` statement to ``reverse_characters`` to check the ``type`` the
       parameter.
-   b. If ``type`` is 'string', return the reversed string as before.
-   c. If ``type`` is 'integer', convert the parameter to a string, reverse the
+   b. If ``type`` is ``str``, return the reversed string as before.
+   c. If ``type`` is ``int`` or  ``float``, convert the parameter to a string, reverse the
       characters, then convert it back into a number.
    d. Return the reversed number.
    e. Be sure to print the result returned by the function to verify that your code

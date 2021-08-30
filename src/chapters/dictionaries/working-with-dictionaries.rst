@@ -165,8 +165,7 @@ Check Your Understanding
 
       pet_population = {'cats' : 10, 'dogs' : 5, 'elephants' : 25}
    
-   What value does ``len(pet_population)`` return? (*Hint*: Try it in the
-   code editor above).
+   What value does ``len(pet_population)`` return?
 
    a. 3
    b. 6

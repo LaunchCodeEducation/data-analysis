@@ -32,7 +32,6 @@ Studios
    :maxdepth: 1
    :name: studiostoc
 
-   chapters/data-and-variables/studio
    chapters/loops/studio
    chapters/lists/studio
    chapters/errors-and-debugging/studio

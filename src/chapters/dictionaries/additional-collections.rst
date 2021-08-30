@@ -74,6 +74,10 @@ Check Your Understanding
    d. set
    e. tuple
 
+.. ans: c
+
 .. admonition:: Question
 
    True or false: tuples are immutable.
+
+.. ans: True
