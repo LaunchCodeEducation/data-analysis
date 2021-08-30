@@ -80,7 +80,8 @@ User Defined Classes
 
 Recall that Python gives us plenty of ready-made functions to help us code,
 like ``print()``, ``max()``, and ``sum()``. We can also import more functions
-from modules. However, these functions cannot do all the jobs we need. Our real
+from modules like we did with the :ref:`string module<string-module>`. 
+However, these functions cannot do all the jobs we need. Our real
 strength as programmers comes when we define our *own* functions. We can think
 about classes in a similar way.
 

@@ -17,7 +17,7 @@ Before You Start
 Part 1: Add Class Properties and ``__str__`` Method
 ---------------------------------------------------
 
-#. Declare a class called ``CrewCandidate`` with an ``__init__`` that takes
+#. Declare a class called ``CrewCandidate`` with a constructor that takes
    three parameters: ``name``, ``mass``, and ``scores``. Note that ``scores``
    will be a list of test results for the candidate's speed and accuracy.
 #. In ``main()``, create objects for the following candidates:
@@ -70,14 +70,22 @@ if the candidate should be added to the cleaning team.
 Calculating the Test Average
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. TODO: Check reference to round function
-
 #. Define an ``average()`` method. It only needs the ``self`` parameter.
 #. To find the average, add up the entries from ``self.scores``, then divide
    the sum by the number of scores in the list.
 #. To make the average easier to look at,
    round it to 1 decimal place, then return the result
    from the method.
+
+   .. admonition:: Note
+
+      The ``round`` is an built-in Python function.  Syntax is as follows:
+
+      .. sourcecode:: python
+
+         round(numeric_value, num_digits)
+
+      This function was demonstated in the :ref:`Dictionaries chapter <round-function>`.
 
 Check your code by evaluating and printing Shiny's average test score
 (``92.7``).
@@ -107,8 +115,8 @@ a short trip to the recycling bin.
       Shiny scored an average of 92.7% (Accepted).
       DustVac scored an average of 71.7% (Maintenance).
 
-Part 4: Play a Bit
-------------------
+Optional Testing
+----------------
 
 Use the class methods to boost DustVac's status to ``Backup`` or higher. How
 many good tests will it take to reach ``Backup`` status? How many to reach

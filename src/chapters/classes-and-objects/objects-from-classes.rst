@@ -59,7 +59,7 @@ properties and values as described in the
    Play around with :ref:`modifying and adding properties <object-properties>`
    inside and outside of the ``Student`` class.
 
-   #. Add a new property inside the ``__init__`` method.
+   #. Add a new property inside the constructor.
    #. On line 12, change the value of the ID number for ``dan``, then print the
       new information.
    #. On line 15, add the ``act_score`` property to ``jessi`` and assign it an
@@ -86,14 +86,14 @@ parameter as follows:
          self.grade_level = grade
          self.id = id_number
 
-Now if we call ``Student`` but leave out an ID number, the ``__init__`` method
+Now if we call ``Student`` but leave out an ID number, the constructor
 automatically assigns ``id`` a value of ``'Missing'``. If we include an
 argument for ``id_number``, then the default value is ignored.
 
 .. admonition:: Try It!
 
    Return to the example above and modify the ``Student`` class to use a
-   default value for one or more of the ``__init__`` parameters.
+   default value for one or more of the constructor parameters.
 
 Another Mental Image for Classes
 --------------------------------
@@ -102,7 +102,7 @@ Besides the cookie cutter idea, we can also think of a class as a *factory for
 making objects*. The ``Student`` class itself isn’t an instance of a student,
 but it contains all the tools to make student objects. Every time we call the
 class, we ask the factory to make a new object. As the object goes through the
-production line, the ``__init__`` method runs to get the object properly set
+production line, the constructor runs to get the object properly set
 up.
 
 The statement ``jessi = Student('Jessi', 12, 3333)`` essentially says,

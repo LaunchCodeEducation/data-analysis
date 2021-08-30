@@ -144,6 +144,8 @@ The next example combines the elements of two lists into a single dictionary.
 Accumulate with an Exiting Dictionary
 -------------------------------------
 
+.. _round-function:
+
 We can also use the accumulator pattern to perform an operation with the values
 in a dictionary.
 

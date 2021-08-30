@@ -26,6 +26,8 @@ Each time the loop body repeats, the loop variable (``character`` or
 
 We can do something similar with dictionaries.
 
+.. _iterate-dictionary:
+
 Loop by Keys or Values
 ----------------------
 
