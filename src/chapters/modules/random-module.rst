@@ -112,7 +112,7 @@ Select an Item from a Collection
 
 .. index:: ! choice()
 
-Another useful function from the ``random`` module is the **choice()**
+Another useful function from the ``random`` module is the ``choice()``
 function. It selects a random item from a string, list, or other collection.
 
 Run the following program several times to see how this works:

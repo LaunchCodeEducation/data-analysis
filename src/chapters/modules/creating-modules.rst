@@ -2,7 +2,6 @@
 
 Creating Modules
 ================
-
 Up until now, we have imported modules that are already part of the Python
 libraries. Now let's look at how to define our own modules and save them
 in a form we can use in other programs.
@@ -14,17 +13,17 @@ The first step in making a module is to decide which values and functions
 belong in that module. These should all perform similar tasks and/or be related
 to each other in some way.
 
-For example, let's assume we want to create a module called ``turtle_shapes``.
-Functions like ``draw_square``, ``draw_polygon``, and ``draw_sprite`` would be
+For example, let's assume we want to create a module called ``customer_totals``.
+Functions like ``calculate_tax``, ``calculate_total``, and ``caclulate_tip`` would be
 good choices to put in the module, but something like
-``calculate_average_grade`` definitely does NOT belong.
+``draw_shape`` definitely does NOT belong.
 
 The next step is to open a new file in our code editor and give it a name that:
 
 #. begins with a letter and contains only lowercase letters,
 #. is as short as possible but still descriptive,
 #. separates words with an underscore ``_``,
-#. ends with the extension ``.py`` (for example, ``turtle_shapes.py``).
+#. ends with the extension ``.py`` (for example, ``customer_totals.py``).
 
 .. admonition:: Note
 
@@ -40,8 +39,8 @@ to import the entire module or specific parts of it into another program:
 
 .. sourcecode:: Python
 
-   import fun_shapes
-   from fun_shapes import draw_polygon
+   import customer_totals
+   from customer_totals import calculate_tax
 
 Note that we do NOT need to include the ``.py`` extension when we import the
 module.

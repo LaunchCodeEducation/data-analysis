@@ -187,3 +187,26 @@ keyword as part of the ``import`` statement:
 
    import module_name as new_name
    from module_name import item_name as new_name
+
+Let's see how this works using the example above.
+
+.. admonition:: Example
+
+   Adding the ``as`` keyword:
+
+   .. sourcecode:: Python
+      :linenos:
+
+      import string as str
+
+      print(str.punctuation)
+      print(str.ascii_letters)
+   
+   **Console Output**
+
+   ::
+
+      !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+      abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+When using the ``as`` notation, notice the pattern is similar to that used in objects and classes.

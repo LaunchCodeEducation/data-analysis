@@ -7,7 +7,7 @@ Modules
    modules-intro
    import-syntax
    random-module
-   math-module
-   creating-modules.rst
+   statistics-module
+   creating-modules
    exercises
-   todos-and-notes
+

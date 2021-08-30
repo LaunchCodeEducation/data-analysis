@@ -1,6 +1,3 @@
-Exercises: Modules
-==================
-
 .. _modules-exercises:
 
 Exercises: Modules
