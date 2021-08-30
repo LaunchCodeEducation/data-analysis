@@ -11,7 +11,7 @@ functions, loops, logic, etc. In this book, we won't get into the principles
 behind OOP. However, we do need to take a closer look at the concept of
 *objects*.
 
-We have worked with objects many times already: turtle objects, string objects,
+We have worked with objects many times already: string objects,
 list objects, etc. However, we never explained what objects represent in
 Python.
 
@@ -77,8 +77,8 @@ Objects Organize Related Code
 
 All strings can use the same set of methods. However, if we try to use
 ``.upper()`` on an integer, list, or anything other than a string, Python
-throws an error message. Similarly, the ``.forward()`` method only works with
-turtle objects.
+throws an error message. Similarly, the ``.pop()`` method only works with
+list or dictionary objects.
 
 .. admonition:: Example
 
@@ -114,8 +114,7 @@ Check Your Understanding
 .. admonition:: Question
 
    Assume we create an object of type ``rabbit`` in our code. Which of the
-   following are *properties* for this kind of object, and which ones are
-   *methods*? (Answer in your head before clicking each option).
+   following are *methods* for this kind of object?
 
    a. size
    b. chew_flowers
@@ -124,4 +123,19 @@ Check Your Understanding
    e. run
    f. color
 
-.. Properties = a, d, f; Methods = b, c, e.
+.. Methods = b, c, e.
+
+
+.. admonition:: Question
+
+   In our object of type ``rabbit``, which of the
+   following represent possible *properties* for this object? 
+
+   a. size
+   b. chew_flowers
+   c. invade_garden
+   d. age
+   e. run
+   f. color
+
+.. Properties = a, d, f;

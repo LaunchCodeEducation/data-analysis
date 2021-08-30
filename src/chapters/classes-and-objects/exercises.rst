@@ -1,3 +1,5 @@
+.. _objects-and-classes-exercises:
+
 Exercises: Classes and Objects
 ==============================
 
@@ -6,6 +8,8 @@ four ``Robot`` objects. You will also practice writing functions that display
 information about the objects and race them against each other.
 
 To start, fork the starter code on `Replit <https://replit.com/@launchcode/ClassesExercises#main.py>`__.
+
+.. _objects-and-classes-exercises1A:
 
 Part 1: Create a New Class
 --------------------------
@@ -16,14 +20,14 @@ Below the ``import`` statement, define the ``Robot`` class.
 Add Properties to ``Robot``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Inside the class, define the ``__init__`` method. It should include
+#. Inside the class, define the constructor. It should include
    parameters for ``self``, ``name``, ``mass``, and ``year``.
 #. Give a default value to ``year``.
 #. Assign the property values as described in the
    :ref:`Setting Property Values <set-property-values>` section.
-#. Add one more property called ``distance``. This will not need a parameter
-   in the ``__init__`` definition. Instead, every new ``Robot`` object will
-   start with a ``distance`` value of ``0``.
+#. Add one more property called ``distance``. 
+   This will not need to be included in the constructor. 
+   Instead, every new ``Robot`` object will start with a ``distance`` value of ``0``.
 
 .. admonition:: Tip
 
@@ -37,19 +41,38 @@ Add Properties to ``Robot``
    c. To check the default, call the class at least once WITHOUT including an
       argument for ``year``.
 
+:ref:`Check Your Solutions<add-properties>`
+
+.. _objects-and-classes-exercises1B:
+
 Add Methods to ``Robot``
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. TODO: Check Module reference
+.. source: https://docs.python.org/3/tutorial/modules.html -- 8/24/21
 
-#. Below ``__init__``, define a second method called ``move()``. This method
+#. Below the constructor, define a method called ``move()``. This method
    should:
 
    #. Only take the ``self`` parameter.
    #. Generate a random number of steps (1 - 10) for the object to take. The
-      range should include ``1`` and ``10`` as options. *Hint*: The ``randint``
-      function is described in the Random Module
-      section.
+      range should include ``1`` and ``10`` as options. 
+
+      .. admonition:: Tip
+
+         We are going to use an built-in function from the ``random`` module called ``randint()``.
+         This function will select a value from a range that you provide.
+
+         The general syntax for module usage looks like this:
+
+         .. sourcecode:: python
+
+            module_name.item_name
+            
+            # in this instance, we will use the randint function like this:
+            random.randint(start_value, end_value)
+         
+         We will explore modules more in future lessons.
+            
    #. Increase the ``distance`` property by the number of steps.
    #. Return the random number of steps.
 
@@ -72,7 +95,11 @@ Add Methods to ``Robot``
 
    a. ``print`` the ``Robot`` object to check the output.
    b. Use a loop to call the ``move()`` method several times. Inside the loop,
-      ``print`` the steps taken and the updated ``robot_name.distance`` value. 
+      ``print`` the steps taken and the updated ``robot_name.distance`` value.
+
+:ref:`Check Your Solutions<add-methods>` 
+
+.. _objects-and-classes-exercises2:
 
 Part 2: Create Objects
 ----------------------
@@ -95,6 +122,10 @@ Update Distances
 
 Use a loop to iterate through the ``robots`` list. For each object, assign a
 random value to the ``distance`` property, from ``1000`` to ``3000`` steps.
+
+:ref:`Check Your Solutions<update-distances>` 
+
+.. _objects-and-classes-exercises3:
 
 Part 3: Find Oldest Robot
 -------------------------
@@ -129,6 +160,10 @@ Print out a message describing the result:
 Fill in the blanks with the name of the robot, the year it was made, and its
 current number of steps.
 
+.. _objects-and-classes-exercises4:
+
+:ref:`Check Your Solutions<oldest-robot>` 
+
 Part 4: Robot Races
 -------------------
 
@@ -156,3 +191,5 @@ Within the function:
 *HINT*: There are a lot of different ways to approach this problem. One way
 that works well is to count how many times ``move()`` gets called in order to
 reach 30 steps.
+
+:ref:`Check Your Solutions<robot-race>` 

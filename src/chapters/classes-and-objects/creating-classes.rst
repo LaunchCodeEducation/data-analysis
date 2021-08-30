@@ -44,8 +44,20 @@ Design a New Class
 
 Before we create a new class, we should begin by describing the objects that
 belong in that class. Take time to think about the properties and methods we
-want each object to have. Next, *write these ideas down*! Doing this will make
-designing and coding the class easier.
+want each object to have. Sometimes it helps to jot them down so you can sort our
+overall viability, functionality, usefulness, and any possible redundancies.  
+Taking a few minutes to organize your thoughts can help you build better classes.
+
+Another take away from planning out your classes before diving straigth ahead into code, 
+is that you can identify the minimal properties and methods needed for basic functionality.
+We call this creating a **minimum viable product**, or MVP.  
+A `minumum viable product <https://en.wikipedia.org/wiki/Minimum_viable_product>`_ is a working
+program or product that is sustained by the smallest codebase possible.  
+This is also the same idea as the "`KISS Principle <https://en.wikipedia.org/wiki/KISS_principle>`_" 
+
+This can be a great place to start.  
+When working with MVPs, you are creating a codebase that is easier to debug as you expand it.
+This can all help you pare down your code to what is really vital and what can be added or modified later.
 
 .. _brainstorm-properties:
 
@@ -57,42 +69,19 @@ designing and coding the class easier.
    
    #. The values of the properties will allow us to tell the difference between
       animals, but for now just focus on coming up with a set of property names.
-   #. The editor below is NOT here to run code. Instead, use the space to add
-      names for any properties you think belong with a *cat* object. Two
-      examples have already been given.
-
-   .. replit:: python
-      :slug: CreatingClasses01
-      :linenos:
-
-      # Make a list of property names that we can use to describe a cat:
-      '''
-      name
-      age
+      We are already planning to use ``name`` and ``age``. 
+      Think of at least two more property names to add to your class.
 
 
-      '''
-
-   Add at least two more property names to the editor, but feel free to go
-   crazy!
-
-   If you are logged into your Trinket account, you can click the *Remix*
-   button to save your ideas. We will use this editor again on a later page.
-   Making your own copy will allow you to pick up where you left off. If you do
-   not have a Trinket account, copy and paste your list of method names into
-   something you can look at later.
-
-Now let's convert our thoughts into code.
-
-.. admonition:: Tip
-
-   In this *design phase*, we want to include as many property names as we can.
+   In the *design phase*, we want to include as many property names as we can.
    
    When we start coding, we should keep things simple and build something small
    that works. We won't include all of our ideas right away.
    
    Once we have working code, we can always update it later to make the class
    more powerful.
+
+Now let's convert our thoughts into code.
 
 Define the New Class
 --------------------
@@ -124,12 +113,20 @@ and recommendations when defining a new class.
 Setting Property Values
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. index:: ! initializer method, ! __init__
+.. index:: ! initializer method, ! __init__ ! constructor
 
 Each new object contains a set of property values. To assign these values, our
-class must include an **initializer method**. This method is defined like any
-other function, but it always gets the special name ``__init__`` (two
+class must include an initializer method called the **constructor**. 
+This method is defined like any other function, 
+but it always gets the special name ``__init__`` (two
 underscores, then the letters, then two more underscores).
+
+The constructor is special because it stores all of the required properties for your class.
+Like any other function, it has parameters that will later be filled with specific arguments
+when you create new objects.
+This feature of classes makes them reusable and can keep your code DRY.
+
+Let's see how this works:
 
 For our ``Cat`` class, this looks like:
 
@@ -138,9 +135,9 @@ For our ``Cat`` class, this looks like:
 
    class Cat:
       def __init__(self):
-         # Assignment statements...
+         # Assignment statements based on the properties you designed...
 
-The initializer method automatically runs whenever we call a class, and it
+The constructor automatically runs whenever we call a class, and it
 assigns values to each property name.
 
 The ``self`` parameter requires some explanation, and we will use an example to
@@ -148,19 +145,21 @@ help set up that discussion.
 
 .. _assign-properties:
 
+.. _define-new-class:
+
 .. admonition:: Try It!
 
-   Use the instructions and editor below to complete the ``__init__`` method:
+   Use the instructions and editor below to complete the ``constructor``:
 
    .. replit:: python
-      :slug: CreatingClasses02
+      :slug: CreatingClasses01-A
       :linenos:
 
-      #!/bin/python3
       class Cat:
          def __init__(self):
             # Assign values for the object properties:
             self.name = 'Coach'
+
 
    #. To assign a value to a property, the syntax is:
 
@@ -168,23 +167,23 @@ help set up that discussion.
 
          self.property_name = property_value
 
-      On line 5, ``self.name = 'Coach'`` assigns the value ``'Coach'`` to the
-      property called ``name``.
-   #. On line 6, add the statement ``self.age = 2`` to assign the integer ``2``
+      On line 4, ``self.name = 'Coach'`` assigns the value ``'Coach'`` to the
+      property called ``name``.  
+   #. On line 5, add the statement ``self.age = 2`` to assign the integer ``2``
       to the property called ``age``. Be sure to indent the statement to match
-      line 5. This puts ``self.age = 2`` inside the ``init`` code block.
+      line 5. This puts ``self.age = 2`` inside the constructor code block.
    #. Pick one of the properties you listed :ref:`earlier on this page <brainstorm-properties>`.
-      On line 7, assign a value to that property.
-   #. Paste the following code on lines 9 and 10. To keep the statements outside
+      On line 6, assign a value to that property.
+   #. Paste the following code on lines 8 and 9. To keep the statements outside
       of the class, do NOT indent them.
 
       .. sourcecode:: python
-         :lineno-start: 9
+         :lineno-start: 8
 
          cat_1 = Cat()
          print(cat_1.name, cat_1.age)
 
-   #. Line 9 creates a new object called ``cat_1``, and line 10 prints two of
+   #. Line 8 creates a new object called ``cat_1``, and line 9 prints two of
       its properties. Run the program to check your work. Properly done, the
       output should be:
 
@@ -192,15 +191,15 @@ help set up that discussion.
 
          Coach 2
       
-   #. Modify line 10 to print all three property values.
+   #. Modify line 9 to print all three property values.
    #. Finally, create another object called ``cat_2`` and print out its
       property values.
 
 Lets step through the final code:
 
-#. On line 9, ``Cat()`` calls the class to create a new object.
+#. On line 8, ``Cat()`` calls the class to create a new object.
 #. Control moves to line 1, and the class statements execute.
-#. The ``__init__`` method runs, and it assigns values to each of the
+#. The constructor's ``__init__`` method runs, and it assigns values to each of the
    properties included in the code block. This is where ``self`` plays a role.
 #. When we call a class, ``self`` takes on the *name of the new object*. When
    ``cat_1 = Cat()`` executes, ``self`` gets assigned the value ``cat_1``. So:
@@ -209,11 +208,11 @@ Lets step through the final code:
    - ``self.age = 2`` evaluates as ``cat_1.age = 2``
    - etc.
 
-#. After the ``__init__`` method finishes, control passes back to line 9, and
+#. After the constructor finishes, control passes back to line 8, and
    the new object is assigned to the variable ``cat_1``.
-#. In this *Try It* example, the ``__init__`` method causes every new ``Cat``
+#. In this *Try It* example, the constructor causes every new ``Cat``
    object to start with a ``name`` of ``'Coach'``, an ``age`` of ``2``, and the
-   third property you defined.
+   third property you defined.  This is an example of a **default constructor**.
 
 The program creates two cat objects, ``cat_1`` and ``cat_2``, that have the
 same property values. Are the two objects the same? To answer this question,
@@ -226,11 +225,11 @@ the program again. Is the output ``True`` or ``False``?
    properties, they still represent *separate animals*. They might look and
    behave exactly the same, but they are different objects!
 
-Use Parameters with ``__init__``
---------------------------------
+Use Parameters with the constructor
+---------------------------------------
 
 Once we create ``cat_1`` and ``cat_2``, we can easily change the values for
-the ``name`` and ``age`` properties.
+the ``name`` and ``age`` properties. 
 
 .. sourcecode:: python
    
@@ -240,7 +239,7 @@ However, it would be better if we could assign these values when the objects
 are first created. Instead of giving *every* new ``Cat`` object the same name
 and age, we want to let these values vary from object to object.
 
-We do this by adding parameters to the ``__init__`` method:
+We do this by providing parameters to the constructor's ``__init__`` method.
 
 .. sourcecode:: python
    :linenos:
@@ -253,7 +252,7 @@ We do this by adding parameters to the ``__init__`` method:
 #. Modify the code in the :ref:`editor above <assign-properties>` to match
    this format. Leave the third property assignment alone for now.
 #. Run the program again. The statement ``cat_1 = Cat()`` should now throw an
-   error. By adding parameters to ``__init__``, Python expects values to be
+   error. By adding parameters to the constructor, Python expects values to be
    included when we call the class, but we did not provide any.
 #. Add arguments for a name and an age in the statement. For example,
    ``cat_1 = Cat('Nala', 4)``. Do the same for ``cat_2``, but use different
@@ -316,5 +315,3 @@ The questions below refer to a class called ``Car``.
    d. The program crashes and displays an error message.
 
 .. Answer = d
-
-
