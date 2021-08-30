@@ -17,7 +17,7 @@ Before You Start
 Part 1: Add Class Properties and ``__str__`` Method
 ---------------------------------------------------
 
-#. Declare a class called ``CrewCandidate`` with a ``constructor`` that takes
+#. Declare a class called ``CrewCandidate`` with a constructor that takes
    three parameters: ``name``, ``mass``, and ``scores``. Note that ``scores``
    will be a list of test results for the candidate's speed and accuracy.
 #. In ``main()``, create objects for the following candidates:
@@ -79,7 +79,7 @@ Calculating the Test Average
 
    .. admonition:: Note
 
-      The ``round`` is an inbuilt Python function.  Syntax is as follows:
+      The ``round`` is an built-in Python function.  Syntax is as follows:
 
       .. sourcecode:: python
 

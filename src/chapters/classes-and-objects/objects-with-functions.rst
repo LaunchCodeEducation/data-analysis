@@ -2,33 +2,7 @@ Using Objects in Functions
 ==========================
 
 Just like any other data type, we can send an object to a function as an input
-value. 
-
-.. admonition:: Example
-
-   .. replit:: python
-      :slug: ObjectsInFunctions
-      :linenos:
-
-      import turtle
-
-      def draw_square(turtle_name, side_length):
-         for side in range(4):
-            turtle_name.forward(side_length)
-            turtle_name.left(90)
-
-      bob = turtle.Turtle()
-
-      draw_square(bob, 40)
-
-   #. Line 8 creates a new ``Turtle`` object called ``bob`` by invoking the imported ``turtle module`` from line 1.
-   #. Line 10 calls the ``draw_square`` function and passes ``bob`` and ``40``
-      as arguments.
-   #. After the function call, control passes to the ``draw_square`` function.
-      In line 3, ``turtle_name`` gets assigned the ``bob`` object.
-   #. The loop executes, and we see the turtle (the arrow shape) draw a square on the screen.
-
-We can also set up a function to create a new object and return it to the main
+value. We can also set up a function to create a new object and return it to the main
 program.
 
 .. admonition:: Example

@@ -132,7 +132,7 @@ Property and Method Names
 
 If you want a quick peek of what a an object contains, you can use the
 ``dir()`` function to collect and display the names for all
-of the items in a given object.  This inbuilt function has a few quirks. 
+of the items in a given object.  This built-in function has a few quirks. 
 Let's walkthrough to see how to handle one of them.  
 
 .. admonition:: Try It!

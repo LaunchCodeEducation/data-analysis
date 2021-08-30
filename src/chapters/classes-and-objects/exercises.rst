@@ -20,13 +20,13 @@ Below the ``import`` statement, define the ``Robot`` class.
 Add Properties to ``Robot``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Inside the class, define the ``constructor``. It should include
+#. Inside the class, define the constructor. It should include
    parameters for ``self``, ``name``, ``mass``, and ``year``.
 #. Give a default value to ``year``.
 #. Assign the property values as described in the
    :ref:`Setting Property Values <set-property-values>` section.
 #. Add one more property called ``distance``. 
-   This will not need to be included in the ``constructor``. 
+   This will not need to be included in the constructor. 
    Instead, every new ``Robot`` object will start with a ``distance`` value of ``0``.
 
 .. admonition:: Tip
@@ -50,7 +50,7 @@ Add Methods to ``Robot``
 
 .. source: https://docs.python.org/3/tutorial/modules.html -- 8/24/21
 
-#. Below the ``constructor``, define a method called ``move()``. This method
+#. Below the constructor, define a method called ``move()``. This method
    should:
 
    #. Only take the ``self`` parameter.
@@ -59,7 +59,7 @@ Add Methods to ``Robot``
 
       .. admonition:: Tip
 
-         We are going to use an inbuilt function from the ``random`` module called ``randint()``.
+         We are going to use an built-in function from the ``random`` module called ``randint()``.
          This function will select a value from a range that you provide.
 
          The general syntax for module usage looks like this:
