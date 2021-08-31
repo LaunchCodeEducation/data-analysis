@@ -76,7 +76,7 @@ If you want to provide your own index, you can use the parameters of the ``Serie
 
 .. admonition:: Tip
    
-   Remebmer, when working with parameters the order of your arguments matters.
+   Remebmer: when working with parameters, the order of your arguments matters.
 
 
 The ``data`` and ``index`` Parameters
