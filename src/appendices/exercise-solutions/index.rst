@@ -14,9 +14,7 @@ Exercise Solutions
    errors-and-debugging
    functions
    dictionaries
-<<<<<<< HEAD
-   modules
-=======
    objects-and-classes
->>>>>>> main
+   modules
+
    

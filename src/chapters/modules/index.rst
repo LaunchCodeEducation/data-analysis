@@ -9,5 +9,6 @@ Modules
    random-module
    statistics-module
    creating-modules
+   module-libraries
    exercises
 
