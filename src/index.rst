@@ -20,6 +20,7 @@ Chapters
    chapters/dictionaries/index
    chapters/classes-and-objects/index
    chapters/class-relationships/index
+   chapters/files/index
    
 
 .. toctree::
