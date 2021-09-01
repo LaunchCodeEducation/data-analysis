@@ -1,8 +1,8 @@
 What is Data?
 =============
 
-What is Data?
--------------
+What is Data? KISS
+------------------
 #. Definition
    #. image of a data-set
 #. How/Why we want to be able to analyze it

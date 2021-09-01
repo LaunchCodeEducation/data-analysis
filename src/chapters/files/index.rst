@@ -6,7 +6,6 @@ File That Under "Data"
 
    data-intro
    files-intro
-   file-types-intro
    excel-files
    csv-files
    xml-files

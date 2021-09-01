@@ -10,3 +10,8 @@
    #. walkthrough opening
    #. manipulating -- common commands
    #. DEMO here:
+
+
+https://www.geeksforgeeks.org/xml-parsing-python/
+https://docs.python.org/3/library/xml.etree.elementtree.html
+

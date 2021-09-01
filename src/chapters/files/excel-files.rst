@@ -1,6 +1,8 @@
 Working with Excel Files
 =========================
 
+Spreadsheets 101
+
 #. What is excel {KISS}
 #. How does it look?
    #. image
