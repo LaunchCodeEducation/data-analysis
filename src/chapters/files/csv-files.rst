@@ -250,28 +250,3 @@ Check Your Understanding
    d. ``wr``
 
 .. ans: d
-
-
-
-
-
-
-Original Ideas
-----------------
-#. What is csv {KISS}
-#. How does it look?
-
-   #. image
-#. Common usages
-#. Guide to working with excel files (KISS - not the only way)
-
-   #. file endings 
-   #. walkthrough opening
-   #. manipulating -- common commands
-   #. DEMO here
-
-
-.. Resources:
-.. https://thispointer.com/python-read-a-csv-file-line-by-line-with-or-without-header/
-.. https://docs.python.org/3/tutorial/inputoutput.html
-.. https://docs.python.org/3/library/csv.html 
