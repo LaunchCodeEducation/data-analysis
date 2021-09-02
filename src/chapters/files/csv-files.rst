@@ -1,11 +1,9 @@
-.. TODO: GH code needed
-
 ``csv`` Files 
 =============
 
 
-A "Comma Separated Values" file or ``csv`` file is a text file with the values in each row separated by a deliminator.
-The most common deliminator is a comma, but can also be a semicolon or other character including a space.  It varies by the file.
+A "Comma Separated Values" file or ``csv`` file is a text file with the values in each row separated by a delimiter.
+The most common delimiter is a comma, but can also be a semicolon or other character including a space.  It varies by the file.
 Like a spreadsheet, the data is saved in rows.  These rows, or **records**, in ``csv`` files are designated by the start of a new line.  
 This type of file is commonly used for table data.  In fact, the data is presented in a format that resembles a table.
 
@@ -38,14 +36,12 @@ It also contains methods that we can use to write new ``csv`` files.
 Opening a ``csv`` File in an IDE
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. TODO: Create GH for the files
-
 .. admonition:: Note
 
    Before we touch any syntax, you will need a file to work with.  
    In this section, we will use this example ``csv`` file.
 
-   **LINK TO GH HERE**
+   You can `fork it here <https://github.com/LaunchCodeEducation/files-book-starter-code-data-analysis>`_.
 
    It is already part of the replit examples.  
 
@@ -86,14 +82,13 @@ In line 5, is initalizing a new variable, ``read_obj`` using the keyword ``as``.
 The keyword ``with`` is used to call the ``open`` function in the form of a code block that ends with ``:``.  
 We pass our ``file`` and the letter ``r`` to the ``open`` function.  More on ``r`` soon.
 
-..TODO:  using with has a special name -- note it here
-
 .. admonition:: Tip
    
    ``with`` is a keyword often used with files.  
-   It closes the files once we come to thethe end of the code block.
+   It closes the files once we come to the end of the code block. 
 
    When your code block is closed, you can no longer read or write to it.
+
 
 Reading the Data
 ^^^^^^^^^^^^^^^^
@@ -231,7 +226,7 @@ Check Your Understanding
 
 .. admonition:: Question
 
-   What is a deliminator in a ``csv`` file?
+   What is a delimiter in a ``csv`` file?
 
    a. The end of a line
    b. A comma
