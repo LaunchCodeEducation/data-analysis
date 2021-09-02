@@ -19,4 +19,3 @@ At the time of writing, the latest version of Python avaialble for download is 3
 
    If you are a Mac user, you already have a version of Python on your machine. This is likely Python 2.
    We will be using Python 3 throughout the class, but Mac users may find Python 2 popping up when using commands as it is the machine's default.
-   We will go over how to configure your machine to default to Python 3 later in the class.
