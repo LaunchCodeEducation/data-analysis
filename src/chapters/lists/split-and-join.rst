@@ -61,6 +61,7 @@ place between the list elements.
       words = ['Hello', 'how', 'are', 'you?']
       connector = '-'
       new_string = connector.join(words)
+      print(new_string)
       print(words)
 
       print('***'.join(words))
