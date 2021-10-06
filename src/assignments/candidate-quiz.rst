@@ -36,10 +36,6 @@ the code in a systematic way. The following is NOT the only way to complete
 this assignment, but it provides a framework for thinking through the project.
 
 
-Git Setup
----------
-Use :ref:`the Git appendix <git-setup>` to setup version control.
-
 Get the Starter Code
 --------------------
 
@@ -181,4 +177,10 @@ passed the quiz.
 .. admonition:: Note
 
    The output will vary slightly based on the candidate's answers to each question.
+
+Submitting Your Work
+--------------------
+
+When your program meets the requirements and the output looks roughly like the example above,
+you've finished your assignment and can submit the url to your repl.it in your Canvas assignment.
 
