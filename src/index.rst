@@ -48,9 +48,7 @@ Assignments
    :maxdepth: 1
    :name: assignmentstoc
 
-   assignments/hello-world
    assignments/candidate-quiz
-   assignments/scrabble-scorer
 
 Appendices
 ==========

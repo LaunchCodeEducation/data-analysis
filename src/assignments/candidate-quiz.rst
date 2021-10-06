@@ -15,6 +15,7 @@ you to create a quick quiz to help select the best candidates.
 
 Requirements
 ------------
+
 #. Use functions to complete the following:
 
    #. Ask the candidate (user) to enter their name
@@ -27,22 +28,25 @@ Requirements
    #. Display the results.
 
 Take It Step by Step
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
 When starting any project, it's best to approach it as a series of smaller,
 testable parts. The goal is to get simple parts working first and then expand
 the code in a systematic way. The following is NOT the only way to complete
 this assignment, but it provides a framework for thinking through the project.
 
-Get the Starter Code
-^^^^^^^^^^^^^^^^^^^^
 
-In `Canvas <https://learn.launchcode.org/>`__, **Graded Assignment #1: Candidate Testing** contains a 
-GitHub Classroom assignment invitation link. Refer back to the GitHub Classroom instructions from
-**Graded Assignment #0: Hello World** for submission instructions.
+Git Setup
+---------
+Use :ref:`the Git appendix <git-setup>` to setup version control.
+
+Get the Starter Code
+--------------------
+
+Fork `this repl.it <https://replit.com/@launchcode/candidate-testing-assignment-data-analysis>`__.
 
 Part 1: Minimum Viable Quiz
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------
 
 1.1 ``candidate_name``
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -83,7 +87,7 @@ a. Ask the user to answer a single quiz question. Look for ``TODO 1.2a``.
    Make sure your small app works properly before moving on to part 2.
 
 Part 2: Multiple Questions
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------
 
 Now that your small app is working, expand it to deal with multiple questions.
 This time, you only have one ``TODO`` item in the starter code. You will need
@@ -121,7 +125,7 @@ to determine which lines need to be modified.
    Keep the questions and correct answers stored in this exact order. Feel free to copy-paste the questions and correct answers from the table to help avoid extraneous autograding errors.
 
 Part 3: Grade the Quiz
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 Finally, calculate the candidate's score and print the results. There are no ``TODOs`` in this section.
 
@@ -142,7 +146,7 @@ Some tips:
 
 
 Example Output
-^^^^^^^^^^^^^^
+--------------
 
 The results output should include the candidate's name, the candidate's
 responses, the correct answers, the final percentage, and if the candidate
