@@ -182,3 +182,9 @@ passed the quiz.
 
    The output will vary slightly based on the candidate's answers to each question.
 
+Submitting Your Work
+--------------------
+
+When your program meets the requirements and the output looks roughly like the example above,
+you've finished your assignment and can submit the url to your repl.it in your Canvas assignment.
+
