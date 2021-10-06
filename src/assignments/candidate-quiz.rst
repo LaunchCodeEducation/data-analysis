@@ -36,10 +36,6 @@ the code in a systematic way. The following is NOT the only way to complete
 this assignment, but it provides a framework for thinking through the project.
 
 
-Git Setup
----------
-Use :ref:`the Git appendix <git-setup>` to setup version control.
-
 Get the Starter Code
 --------------------
 
