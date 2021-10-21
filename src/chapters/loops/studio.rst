@@ -58,7 +58,7 @@ Resources
 
 .. TODO: Revisit this booster rocket
 
-1. Best Practices: Learning to Code
+1. :ref:`Best Practices: Learning to Code <appendices/best-practices.rst>`.
 2. `The Power of Believing that You can Improve <https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve/>`_
 3. `What Having a "Growth Mindset" Actually Means <https://hbr.org/2016/01/what-having-a-growth-mindset-actually-means/>`_
 4. `Golden Rules of Goal Setting <https://www.mindtools.com/pages/article/newHTE_90.htm>`_
