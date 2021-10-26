@@ -57,6 +57,7 @@ Appendices
    :maxdepth: 1
    :name: appendicestoc
 
+   appendices/best-practices
    appendices/installing-software/index
    appendices/terminal-commands/index
    appendices/string-methods/index
