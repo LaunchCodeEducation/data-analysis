@@ -69,4 +69,3 @@ Appendices
    :hidden:
 
    index-full
-
