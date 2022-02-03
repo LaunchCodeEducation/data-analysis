@@ -1,3 +1,5 @@
+.. _class-platforms:
+
 Class Platforms
 ===============
 
