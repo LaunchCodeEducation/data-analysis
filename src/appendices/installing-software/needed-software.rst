@@ -1,4 +1,4 @@
-A Compendium of Class Technologies
+A Collection of Class Technologies
 ==================================
 
 .. list-table::
