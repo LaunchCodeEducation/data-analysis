@@ -4,8 +4,6 @@ Best Practices: Learning To Code
 
 .. _best-practices:
 
-.. include:: appendices/best-practices.rst
-
 For years, the education community has debated the best approach for
 *homework*. Should it be scored or not? What is the proper amount? Should
 it be even be assigned? Should it even be done at home?

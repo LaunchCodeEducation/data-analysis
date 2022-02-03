@@ -1,3 +1,5 @@
+.. _terminal-introduction:
+
 What is a terminal?
 ===================
 
