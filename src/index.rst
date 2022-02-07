@@ -48,9 +48,7 @@ Assignments
    :maxdepth: 1
    :name: assignmentstoc
 
-   assignments/hello-world
    assignments/candidate-quiz
-   assignments/scrabble-scorer
 
 Appendices
 ==========
@@ -59,6 +57,7 @@ Appendices
    :maxdepth: 1
    :name: appendicestoc
 
+   appendices/best-practices
    appendices/installing-software/index
    appendices/terminal-commands/index
    appendices/string-methods/index
@@ -70,4 +69,3 @@ Appendices
    :hidden:
 
    index-full
-

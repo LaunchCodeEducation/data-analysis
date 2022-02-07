@@ -1,3 +1,5 @@
+.. _class-platforms:
+
 Class Platforms
 ===============
 
@@ -18,7 +20,7 @@ and scores.
 Login to Canvas
 ^^^^^^^^^^^^^^^
 
-Access Canvas and the course materials at `<https://learn.launchcode.org/>`__.
+Access Canvas and the course materials at `<https://launchcode.instructure.com/>`__.
 To login, use your launchcode.org username and password, which are the same
 ones you used to apply for this class.
 

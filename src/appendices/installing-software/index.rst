@@ -4,7 +4,7 @@ Setting Up Software for this Class
 .. toctree::
    :maxdepth: 1
 
-   setting-up-python
+   needed-software   
    setting-up-terminal
    setting-up-git
-   setting-up-vsc
+   setting-up-anaconda

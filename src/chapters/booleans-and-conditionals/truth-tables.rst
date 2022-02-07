@@ -3,7 +3,6 @@ Truth Tables
 
 .. index:: ! truth table
 
-
 **Truth tables** help us understand how logical operators work by showing all
 of the possible return values. Let's look at the truth table for ``and``, which
 assumes we have two boolean expressions, ``A`` and ``B``.
