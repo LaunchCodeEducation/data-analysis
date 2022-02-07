@@ -3,15 +3,20 @@ Truth Tables
 
 .. index:: ! truth table
 
+
 **Truth tables** help us understand how logical operators work by showing all
 of the possible return values. Let's look at the truth table for ``and``, which
 assumes we have two boolean expressions, ``A`` and ``B``.
 
+Truth Table for ``and``
+-----------------------
+
 .. admonition:: Example
 
-   .. list-table:: Truth Table for ``and``
+   .. list-table:: 
       :widths: auto
       :header-rows: 1
+      :align: center
 
       * - A
         - B
@@ -34,44 +39,37 @@ and B is true, then ``A and B`` is true. The two middle rows show that if
 either A or B is false, then ``A and B`` is false. Finally, if both A and B are
 false, then ``A and B`` is false.
 
-.. admonition:: Try It!
+Truth Table for ``or``
+----------------------
 
-   Now take a look at the truth table for ``or``.
+.. admonition:: Example
 
-   #. PREDICT whether ``A or B`` should be ``True`` or ``False`` for each row.
-   #. Click in the empty spaces to check your answers.
-
-   .. list-table:: Truth Table for ``or``
+   .. list-table:: 
       :widths: auto
       :header-rows: 1
+      :align: center
 
       * - A
         - B
         - A ``or`` B
       * - ``True``
         - ``True``
-        - .. raw:: html
-          
-            <b id = "optionA" onclick="reveal('optionA')" style="opacity:0">True</b>
-
-             
+        - ``True``
       * - ``True``
         - ``False``
-        - .. raw:: html
-
-             <b id = "optionB" onclick="reveal('optionB')" style="opacity:0">True</b>
-
+        - ``True``
       * - ``False``
         - ``True``
-        - .. raw:: html
-
-             <b id = "optionC" onclick="reveal('optionC')" style="opacity:0">True</b>
-
+        - ``True``
       * - ``False``
         - ``False``
-        - .. raw:: html
+        - ``False``
 
-             <b id = "optionD" onclick="reveal('optionD')" style="opacity:0">False</b>
+Similar to the ``and`` talbe, if A or B are both true, then ``A or B`` is true.  
+However, the middle two rows show that if either A or B is false, then ``A or B`` still remains true. 
+This is very different from the ``and`` table.
+The last row shows that if both options are false, then the entire statement is false.  
+
 
 Order of Operations
 -------------------
@@ -102,6 +100,7 @@ Python always performs operations in a specific order:
    .. list-table:: Operator Order on: ``x * 5 >= 10 and y - 6 <= 20``
       :widths: auto
       :header-rows: 1
+      :align: center
 
       * - Action
         - Result
@@ -126,6 +125,7 @@ The following table lists operators in order of importance, from highest
 .. list-table:: Operator Order
    :widths: auto
    :header-rows: 1
+   :align: center
 
    * - Level
      - Category
