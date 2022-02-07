@@ -65,7 +65,7 @@ Truth Table for ``or``
         - ``False``
         - ``False``
 
-Similar to the ``and`` talbe, if A or B are both true, then ``A or B`` is true.  
+Similar to the ``and`` table, if A or B are both true, then ``A or B`` is true.  
 However, the middle two rows show that if either A or B is false, then ``A or B`` still remains true. 
 This is very different from the ``and`` table.
 The last row shows that if both options are false, then the entire statement is false.  
