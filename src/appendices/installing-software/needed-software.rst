@@ -1,3 +1,5 @@
+.. _software-collection:
+
 A Collection of Class Technologies
 ==================================
 

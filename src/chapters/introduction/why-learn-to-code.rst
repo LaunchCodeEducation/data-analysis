@@ -1,33 +1,24 @@
 Why Learn To Code?
 ==================
 
-How many times do you use a computer in a day? What do you use it for?
-Maybe you use one to check email and social media, to watch TV, and to even set
-an alarm for the next day. Computers and technology are *everywhere* in our
-society.
+Many might think that every data analyst's career starts with learning the ins and outs of spreadsheets, but spreadsheets are not the only way to start off on your journey.
+We start with learning to code for a few reasons. 
 
-With the rise of technology and computers, coding has risen as well.
-At its most basic level, coding is how humans communicate with computers.
-With code, humans tell computers to complete specific tasks and store specific
-information. Many would argue that due to the prevalence of computers, learning
-to code is vital to living in the 21st century. Writing and reading code is
-becoming a new form of literacy for today's world.
+First, as an analyst, every program you use is allowing you to communicate instructions to a machine.
+Whether it is writing Python code or using a drag-and-drop menu in Tableau, you are asking a machine to perform certain necessary tasks to help you achieve a goal.
+Code is the undercurrent of all of these programs. By learning to code first, you are learning the most universal aspect of all of the tools you will use throughout your career.
+With this particular knowledge, you will also be better prepared to adapt to the needs of your workplace.
+Not every company uses Tableau and Azure Data Studio. Some may insist you use a code-centric tool like Matplotlib for visualizations.
 
-As our needs change, technology changes to meet them.
-When we needed a way to talk to each other over long distances, we got phones.
-As our needs to communicate changed, our phones became portable.
-Then, we gained the ability to use our phones to send quick written messages to
-each other.
+Through learning to code, you will also gain confidence in handling errors.
+Errors come up when working with any software program and they also come up when handling data.
+All it can take is one typo to throw off your analysis of a dataset. 
 
-The technical skills required to make the phones of 20 years ago are not the
-same skills required to make a phone today. A career as a technologist,
-specifically as a programmer, is one of lifelong learning.
+You will also learn concepts that you will use throughout the course as you dive deeper into the world of data.
+One such concept is data types. 
+Without spoiling too much, data types matter immensely to data analysts.
+Datasets are not just numbers. 
+They can also holds names, dates, and other information of various different types and data analysts need to be able to work with all of the different types of data.
+No matter what tool you are using at the moment in the course or throughout your career, you will need to take into account data types when looking at a dataset.
 
-Learning to code is not only valuable and challenging, it is also fun.
-Every *EUREKA!* moment inspires us to keep going forward and to learn new
-things. You may find some concepts difficult to understand at first, but these
-will also be the skills you take the most pride in mastering. While the journey
-to learning to code is long and winding, it is also rewarding.
-
-From the moment that you write your first line of code, you are a programmer.
-We hope you enjoy the flight!
+Now that you are ready to learn how to code, let's focus in on why we are starting with Python.
