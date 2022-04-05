@@ -122,7 +122,7 @@ keyword.
       print("Hello, World!")
 
    Line 1 defines the function name and parameter. Lines 2 - 6 are part of the
-   function body. Line 8 is even with the ``def`` keyword, so it is NOT part of
+   function body. Line 89 is even with the ``def`` keyword, so it is NOT part of
    the ``add_list_numbers`` function.
 
 Defining vs. Calling
