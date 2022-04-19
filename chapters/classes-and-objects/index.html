@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13. Classes and Objects &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/js/jquery-1.11.0.min.js"></script>
+    <script src="../../_static/js/jquery-fix.js"></script>
+    <script src="../../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="../../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="13.1. What are Objects" href="what-are-objects.html" />
+    <link rel="prev" title="12.9. Studio: Mad Dictionaries" href="../dictionaries/studio.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li class="active"><span class="section-number">13. </span>Classes and Objects</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content ">
+
+    
+  <div class="section" id="classes-and-objects">
+<span id="classes-objects"></span><h1><span class="section-number">13. </span>Classes and Objects<a class="headerlink" href="#classes-and-objects" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="what-are-objects.html">13.1. What are Objects</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="what-are-objects.html#examples-of-objects">13.1.1. Examples of Objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="what-are-objects.html#objects-organize-related-code">13.1.2. Objects Organize Related Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="what-are-objects.html#check-your-understanding">13.1.3. Check Your Understanding</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="why-use-objects.html">13.2. Why Use Objects?</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="why-use-objects.html#a-shift-in-thinking">13.2.1. A Shift in Thinking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="why-use-objects.html#objects-copy-real-world-thinking">13.2.2. Objects Copy Real World Thinking</a><ol>
+<li class="toctree-l3"><a class="reference internal" href="why-use-objects.html#phones-as-objects">13.2.2.1. Phones as Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="why-use-objects.html#cooking-with-objects">13.2.2.2. Cooking with Objects</a></li>
+</ol>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="why-use-objects.html#check-your-understanding">13.2.3. Check Your Understanding</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="using-objects.html">13.3. Working With Objects</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="using-objects.html#object-properties">13.3.1. Object Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using-objects.html#calling-methods">13.3.2. Calling Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using-objects.html#methods-vs-functions">13.3.3. Methods vs. Functions</a><ol>
+<li class="toctree-l3"><a class="reference internal" href="using-objects.html#call-syntax">13.3.3.1. Call Syntax</a></li>
+<li class="toctree-l3"><a class="reference internal" href="using-objects.html#methods-are-object-specific">13.3.3.2. Methods are Object Specific</a></li>
+<li class="toctree-l3"><a class="reference internal" href="using-objects.html#try-it">13.3.3.3. Try It!</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="what-are-classes.html">13.4. Classes</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="what-are-classes.html#objects-have-a-data-type">13.4.1. Objects Have a Data Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="what-are-classes.html#user-defined-classes">13.4.2. User Defined Classes</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="creating-classes.html">13.5. Create a Class</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="creating-classes.html#what-classes-do">13.5.1. What Classes Do</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating-classes.html#design-a-new-class">13.5.2. Design a New Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating-classes.html#define-the-new-class">13.5.3. Define the New Class</a><ol>
+<li class="toctree-l3"><a class="reference internal" href="creating-classes.html#setting-property-values">13.5.3.1. Setting Property Values</a></li>
+</ol>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="creating-classes.html#use-parameters-with-the-constructor">13.5.4. Use Parameters with the constructor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating-classes.html#check-your-understanding">13.5.5. Check Your Understanding</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="objects-from-classes.html">13.6. Using a Class</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="objects-from-classes.html#create-new-objects">13.6.1. Create New Objects</a><ol>
+<li class="toctree-l3"><a class="reference internal" href="objects-from-classes.html#default-property-values">13.6.1.1. Default Property Values</a></li>
+</ol>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="objects-from-classes.html#another-mental-image-for-classes">13.6.2. Another Mental Image for Classes</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="class-methods.html">13.7. Adding Methods to a Class</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="class-methods.html#return-to-the-class-design">13.7.1. Return to the Class Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class-methods.html#define-a-new-method">13.7.2. Define a New Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class-methods.html#add-a-method-to-the-cat-class">13.7.3. Add a Method to the <code class="docutils literal notranslate"><span class="pre">Cat</span></code> Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class-methods.html#return-values">13.7.4. Return Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class-methods.html#add-your-own-method">13.7.5. Add Your Own Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class-methods.html#improving-make-noise">13.7.6. Improving <code class="docutils literal notranslate"><span class="pre">make_noise()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="class-methods.html#check-your-understanding">13.7.7. Check Your Understanding</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="printing-objects.html">13.8. More Object Details</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="printing-objects.html#printing-objects">13.8.1. Printing Objects</a><ol>
+<li class="toctree-l3"><a class="reference internal" href="printing-objects.html#the-str-method">13.8.1.1. The <code class="docutils literal notranslate"><span class="pre">__str__</span></code> Method</a></li>
+</ol>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="printing-objects.html#collect-all-property-values">13.8.2. Collect All Property Values</a><ol>
+<li class="toctree-l3"><a class="reference internal" href="printing-objects.html#property-and-method-names">13.8.2.1. Property and Method Names</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="objects-with-functions.html">13.9. Using Objects in Functions</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="objects-with-functions.html#object-scope">13.9.1. Object Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="objects-with-functions.html#check-your-understanding">13.9.2. Check Your Understanding</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="exercises.html">13.10. Exercises: Classes and Objects</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="exercises.html#part-1-create-a-new-class">13.10.1. Part 1: Create a New Class</a><ol>
+<li class="toctree-l3"><a class="reference internal" href="exercises.html#add-properties-to-robot">13.10.1.1. Add Properties to <code class="docutils literal notranslate"><span class="pre">Robot</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercises.html#add-methods-to-robot">13.10.1.2. Add Methods to <code class="docutils literal notranslate"><span class="pre">Robot</span></code></a></li>
+</ol>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="exercises.html#part-2-create-objects">13.10.2. Part 2: Create Objects</a><ol>
+<li class="toctree-l3"><a class="reference internal" href="exercises.html#update-distances">13.10.2.1. Update Distances</a></li>
+</ol>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="exercises.html#part-3-find-oldest-robot">13.10.3. Part 3: Find Oldest Robot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises.html#part-4-robot-races">13.10.4. Part 4: Robot Races</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="studio.html">13.11. Studio: Classes and Objects</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="studio.html#before-you-start">13.11.1. Before You Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="studio.html#part-1-add-class-properties-and-str-method">13.11.2. Part 1: Add Class Properties and <code class="docutils literal notranslate"><span class="pre">__str__</span></code> Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="studio.html#part-2-add-another-class-method">13.11.3. Part 2: Add Another Class Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="studio.html#part-3-add-more-methods">13.11.4. Part 3: Add More Methods</a><ol>
+<li class="toctree-l3"><a class="reference internal" href="studio.html#calculating-the-test-average">13.11.4.1. Calculating the Test Average</a></li>
+<li class="toctree-l3"><a class="reference internal" href="studio.html#determining-candidate-status">13.11.4.2. Determining Candidate Status</a></li>
+</ol>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="studio.html#optional-testing">13.11.5. Optional Testing</a></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="../dictionaries/studio.html"><span aria-hidden="true">&larr;</span> <span class="section-number">12.9. </span>Studio: Mad Dictionaries</a></li>
+        
+        
+        <li class="next"><a href="what-are-objects.html"><span class="section-number">13.1. </span>What are Objects <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../../_sources/chapters/classes-and-objects/index.rst.txt"
+     rel="nofollow">Page Source</a>
+</div>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
