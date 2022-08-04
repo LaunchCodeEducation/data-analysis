@@ -72,6 +72,7 @@ Appendices
    appendices/list-methods/index
    appendices/dictionary-methods/index
    appendices/exercise-solutions/index
+   appendices/jupyter-notebooks/index
 
 .. toctree::
    :hidden:
