@@ -67,9 +67,10 @@ Appendices
    appendices/best-practices
    appendices/installing-software/index
    appendices/terminal-commands/index
+   appendices/jupyter-notebooks/index
    appendices/string-methods/index
    appendices/list-methods/index
    appendices/dictionary-methods/index
    appendices/exercise-solutions/index
-   appendices/jupyter-notebooks/index
+   
    

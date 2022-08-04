@@ -142,7 +142,7 @@ The next example combines the elements of two lists into a single dictionary.
       ``eng_to_pirate`` dictionary.
 
 Accumulate with an Existing Dictionary
--------------------------------------
+--------------------------------------
 
 .. _round-function:
 
