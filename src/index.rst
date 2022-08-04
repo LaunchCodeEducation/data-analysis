@@ -74,6 +74,7 @@ Appendices
    appendices/exercise-solutions/index
    appendices/jupyter-notebooks/index
 
+   
 .. toctree::
    :hidden:
 
