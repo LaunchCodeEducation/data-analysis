@@ -25,7 +25,7 @@ take you to the repository page and will look something like this.
 In the upper right corner your will see the fork button, when you click it you will then see this:
 
 .. figure:: figures/forkrepo.png
-   :alt: A screenshot of where the fork button is on a Github repository.
+   :alt: A screenshot of what you see when you press the fork button on a Github repository.
 
 Choose your account and then you’ll see:
 
