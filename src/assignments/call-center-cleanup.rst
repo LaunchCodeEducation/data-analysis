@@ -60,7 +60,13 @@ throughout your analysis.
 Getting Started
 ---------------
 
-Fork `this GitHub repository <https://github.com/gildedgardenia/call-center-cleanup-assignment>`__. 
-and clone it to your computer. If you need a refresher on how to do this see Instruction 
-for Using Github w/Jupyter Notebooks.  Follow the instructions in the Call Center Cleanup.ipynb notebook to complete the assignment. 
+Fork `this GitHub repository <https://github.com/gildedgardenia/call-center-cleanup-assignment>`__
+and clone it to your computer. If you need a refresher on how to do this see 
+:ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`. Follow the 
+instructions in the Call Center Cleanup.ipynb notebook to complete the assignment. 
 
+Submitting Your Work
+--------------------
+
+When finished make sure to push your changes up to Github. Copy the link to your Github 
+repository and paste it into the submission box in Canvas and click submit.

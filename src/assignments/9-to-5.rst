@@ -2,3 +2,23 @@
 
 Assignment #3: 9 to 5
 =====================
+
+Your third graded assignment is due two weeks after the lesson 14, the fifth 
+and final SQL lesson, and it is designed to be completed over several sessions. 
+Do NOT put it off until the day before it is due! 
+
+Fork `this Github repository <https://github.com/codinglikeagirl42/Assignment3_9to5>`__. 
+and clone it to your computer. If you need a refresher on how to do this see 
+:ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`. 
+
+.. admonition:: Note
+
+   Instead of opening with Anaconda and Jupyter,  open Azure Data Studio, click on file 
+   and then open, navigate to where you cloned the GitHub repository on your computer. 
+   Open the notebook 9to5.ipynb and follow the instructions to complete the assignment. 
+
+Submitting Your Work
+--------------------
+
+When finished make sure to push your changes up to Github. Copy the link to your Github 
+repository and paste it into the submission box in Canvas and click submit.

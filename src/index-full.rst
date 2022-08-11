@@ -44,19 +44,14 @@ Assignments
 ===========
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :name: assignmentstoc
 
    assignments/candidate-quiz
    assignments/call-center-cleanup
    assignments/9-to-5
-   assignments/final-project-overview
-   assignments/final-project-part1
-   assignments/final-project-part2
-   assignments/final-project-part3
-   assignments/final-project-part4
-   assignments/final-project-part5
-
+   assignments/final-project
+   
 Appendices
 ==========
 
