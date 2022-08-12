@@ -68,5 +68,5 @@ instructions in the Call Center Cleanup.ipynb notebook to complete the assignmen
 Submitting Your Work
 --------------------
 
-When finished make sure to push your changes up to Github. Copy the link to your Github 
+When you are finished, make sure to push your changes up to Github. Copy the link to your Github 
 repository and paste it into the submission box in Canvas and click submit.
