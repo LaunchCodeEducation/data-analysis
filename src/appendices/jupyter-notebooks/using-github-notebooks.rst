@@ -37,7 +37,7 @@ Choose your account and then you'll see:
    :alt: A screenshot of what you'll see when the forking process is over.
 
 #. Notice that instead of CarlyLanglois/EDAExercises the repo has your name now .  
-#. Next step is to click on the Code button
+#. Next, click on the *Code* button.
 #. Copy the link to your repo (Clone)
 
 Next open the terminal on your computer and navigate to the folder where you will keep all your work for this class.  To make things easier I created a CoderGirl folder on my desktop.
