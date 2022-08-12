@@ -95,7 +95,7 @@ Now open your notebook in Jupyter Notebooks.
 After you have made changes to your notebook and saved them, you will want to push those changes back 
 up to github.
 
-In the terminal again navigate to your project. 
+In the terminal, navigate to your project. 
 
 .. admonition:: tip
   
