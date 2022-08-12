@@ -36,7 +36,7 @@ Choose your account and then you'll see:
 .. figure:: figures/forking2.png
    :alt: A screenshot of what you'll see when the forking process is over.
 
-#. Notice that instead of CarlyLanglois/EDAExercises the repo has your name now .  
+#. Notice that instead of CarlyLanglois/EDAExercises the repo has your name now.  
 #. Next, click on the *Code* button.
 #. Copy the link to your repo (Clone)
 
