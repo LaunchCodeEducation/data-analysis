@@ -93,7 +93,7 @@ I ran the following commands to navigate into and create a new folder(directory)
 Now open your notebook in Jupyter Notebooks.
 
 After you have made changes to your notebook and saved them, you will want to push those changes back 
-up to github.
+up to Github.
 
 In the terminal, navigate to your project. 
 
