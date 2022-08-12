@@ -138,7 +138,7 @@ Now when you check your github repository, you will see the update.
 
   See `this link <https://education.launchcode.org/intro-to-professional-web-dev/appendices/git/workflows.html>`__ for a more detailed explanation of Git.
 
-When you are ready to submit your assignment, copy the link to your repository on github and 
+When you are ready to submit your assignment, copy the link to your repository on Github and 
 paste it into the submission box in Canvas and hit submit.
 
 
