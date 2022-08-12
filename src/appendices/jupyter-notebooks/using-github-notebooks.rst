@@ -76,6 +76,10 @@ I ran the following commands to navigate into and create a new folder(directory)
     - Switch to Codergirl folder.
   * - git clone <github url> 
     - (paste link you copied earlier)
+  * - ls
+    - Ran ls to see if my project cloned
+  * - cd EDAExercises
+    - Switch into my new project folder
 
 .. figure:: figures/terminalcloning.png
    :alt: A screenshot of cloning a Github repo in terminal.
