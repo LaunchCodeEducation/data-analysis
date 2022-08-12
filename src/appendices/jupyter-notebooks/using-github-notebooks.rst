@@ -7,7 +7,7 @@ Welcome to Git!
 ---------------
 
 Git is the most common version control system used in the tech industry 
-today. After Assignment 1(submitted in Replit), you will submit your 
+today. After Assignment 1 (submitted in Replit), you will submit your 
 exercises, studios and assignments using Github.
 
 This will help your mentors access your code more easily and will help 
