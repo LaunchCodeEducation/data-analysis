@@ -20,7 +20,7 @@ When you click a link to the Git notebooks in the instructions, it will
 take you to the repository page and will look something like this.
 
 .. figure:: figures/gitrepo.png
-   :alt: A screenshot of where the fork button is on a Github repository.
+   :alt: The fork button on a Github repository.
 
 In the upper right corner your will see the fork button, when you click it 
 a pop-up with accounts to choose from appears:
@@ -28,19 +28,19 @@ a pop-up with accounts to choose from appears:
 .. figure:: figures/forkrepo.png
    :alt: A screenshot of a popup with github accounts.
 
-Choose your account and then you'll see:
+Choose your account:
 
 .. figure:: figures/forking1.png
-   :alt: A screenshot of the first screen you see after choosing your account.
+   :alt: Screen letting you know the forking process has started.
 
 .. figure:: figures/forking2.png
-   :alt: A screenshot of what you'll see when the forking process is over.
+   :alt: When the forking process is over your new repository page.
 
 #. Notice that instead of CarlyLanglois/EDAExercises the repo has your name now.  
 #. Next, click on the *Code* button.
 #. Copy the link to your repo.
 
-Next open the terminal on your computer and navigate to the folder where you will keep all your work for this class.  To make things easier I created a CoderGirl folder on my desktop.
+Next open the terminal on your computer and navigate to the folder where you will keep all your work for this class.  To make things easier I created a Women+ folder on my desktop.
 
 .. list-table:: Some command line prompts to help you:
   :align: left
@@ -48,15 +48,15 @@ Next open the terminal on your computer and navigate to the folder where you wil
 
   * - **Command**
     - **Description**
-  * - pwd
+  * - ``pwd``
     - Shows current directory, where you are.
-  * - ls
+  * - ``ls``
     - Lists everything in the current directory.
-  * - cd
+  * - ``cd``
     - Changes directory.
-  * - mkdir
+  * - ``mkdir``
     - Makes a new folder.
-  * - cd..
+  * - ``cd..``
     - cd space two period will take you one level up in the directory.
 
 I ran the following commands to navigate into and create a new folder(directory) for the assignment.
@@ -66,23 +66,23 @@ I ran the following commands to navigate into and create a new folder(directory)
   
   * - **Command Line Prompt**
     - **Reason Why**
-  * - pwd
+  * - ``pwd``
     - First I want to see where i was.
-  * - cd desktop
+  * - ``cd desktop``
     - Then switch directory to desktop.
-  * - ls
+  * - ``ls``
     - Ran ls to list contents.
-  * - cd Codergirl
-    - Switch to Codergirl folder.
-  * - git clone <github url> 
+  * - ``cd Women+``
+    - Switch to Women+ folder.
+  * - ``git clone <github url>``
     - (paste link you copied earlier)
-  * - ls
+  * - ``ls``
     - Ran ls to see if my project cloned
-  * - cd EDAExercises
+  * - ``cd EDAExercises``
     - Switch into my new project folder
 
 .. figure:: figures/terminalcloning.png
-   :alt: A screenshot of cloning a Github repo in terminal.
+   :alt: Cloning a Github repo in terminal.
 
 
 .. admonition:: Note
@@ -102,7 +102,7 @@ In the terminal, navigate to your project.
   Direct your attention to the photo below. In the top right-hand corner of your terminal window, you may notice that the current directory is displayed. This is a great way to easily check that you are in the right place! 
 
   .. figure:: figures/tipTerminal.png
-   :alt: A screenshot of terminal window showing location at the top.
+   :alt: Terminal window showing location of currant directory.
 
 There are three steps used to commit changes to your git repository and a final step to push up to your repository on github.
 
@@ -112,31 +112,31 @@ There are three steps used to commit changes to your git repository and a final 
   
   * - **Command Line Prompt**
     - **Reason Why**
-  * - git status
+  * - ``git status``
     - Gives us information about files that have been changed.
-  * - git add .
+  * - ``git add .``
     - Adds all the files that have changed to the commit, there is a space between add and the period(don't forget the period)
-  * - git commit -m “MESSAGE”
+  * - ``git commit -m “MESSAGE”``
     - Creates the new commit, the message should describe the changes made to the files.
-  * - git push
+  * - ``git push``
     - Pushes changes from your local repository up to your repository on GitHub.
-  * - git status
+  * - ``git status``
     - | Check to see your were successful. Should now say: 
       | Your branch is up to date with 'origin/master'. 
       | nothing to commit, working tree clean
 
 .. figure:: figures/firstcommit.png
-   :alt: A screenshot of a terminal window with a steps of a commit.
+   :alt: Terminal window executing the steps of a commit.
 
 
-Now when you check your github repository, you will see the update.
+When you check your github repository, you will see the update.
 
 .. figure:: figures/checkfirstcommit.png
-   :alt: A screenshot of Github repo with commit message.
+   :alt: Github repository with commit message.
 
 .. admonition:: note
 
-  See `this link <https://education.launchcode.org/intro-to-professional-web-dev/appendices/git/workflows.html>`__ for a more detailed explanation of Git.
+  For a more detailed explanation of Git, `use this link <https://education.launchcode.org/intro-to-professional-web-dev/appendices/git/workflows.html>`__.
 
 When you are ready to submit your assignment, copy the link to your repository on Github and 
 paste it into the submission box in Canvas and hit *Submit*.

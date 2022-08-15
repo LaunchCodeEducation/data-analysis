@@ -8,13 +8,14 @@ Overview of the Final Project
 
 The final project is an opportunity to showcase your analysis skills from EDA to 
 visualization and produce a project for your professional portfolio. The project 
-is broken into five checkpoints.
+is broken into five checkpoints and a final presentation.
 
 #. :ref:`Selecting your business issue and dataset<checkpoint1>`
 #. :ref:`EDA<checkpoint2>`
 #. :ref:`Cleaning data<checkpoint3>`
 #. :ref:`Manipulate, interpret, and visualize data<checkpoint4>`
 #. :ref:`Modelling data<checkpoint5>`
+#. :ref:`Final presentation<finalPresentation>`
 
 Examples of final projects to help you understand the requirements and complete your own.
 
@@ -34,15 +35,15 @@ climate change, local home prices, or average daily screen usage. The scale of y
 question can be as macro or as micro as you wish. 
 
 For inspiration, think about what brought you to this class in the first place. Is it to 
-get a new job? Maybe you’ll look for more Bureau of Labor datasets or ask a different 
-question of the Assignment 3 (9 to 5) data. Maybe you’ll want to dive into some data for 
-a field you’re interested in joining. Healthcare, finance, advertising, manufacturing, 
+get a new job? Maybe you'll look for more Bureau of Labor datasets or ask a different 
+question of the Assignment 3 (9 to 5) data. Maybe you'll want to dive into some data for 
+a field you're interested in joining. Healthcare, finance, advertising, manufacturing, 
 logistics, mapping, are just a few fields with growing need for analysts. You could also 
 just have a hobby that you want to learn more about, such as knitting or running. Choose 
 what fuels your interest. This can be an expansion or alternative analysis of a dataset 
-we’ve used in class so far.
+we've used in class so far.
 
-For some, your inspiration may come instead from doing a little data surfing. We’ve found most 
+For some, your inspiration may come instead from doing a little data surfing. We've found most 
 of the exercise and studio datasets from `Kaggle <https://www.kaggle.com/datasets>`__. 
 `Tableau <https://public.tableau.com/en-us/s/resources?qt-overview_resources=1#qt-overview_resources>`__ 
 lists some solid choices as well. You are not limited to just these resources for sourcing 
@@ -109,7 +110,7 @@ Before you submit your work, download the dataset to ensure that it will meet yo
 If your computer cannot download the dataset due to its size, try a similar dataset that 
 is smaller or download the individual files. Open up the file(s) using the default 
 application for your computer to see that there are in fact numbers in there and to see 
-how many rows are in the file so that you don’t run into an issue with Tableau later. 
+how many rows are in the file so that you don't run into an issue with Tableau later. 
 Tableau Public works best when the dataset is below 10 million rows.
 
 When you are confident in your choice, create a new document on your computer using your 
@@ -143,7 +144,7 @@ Submitting Your Work
 
 When finished with your EDA make sure to push your changes up to Github. Copy the link to your Github 
 repository and paste it into the submission box in Canvas for Graded Assignment #4: Checkpoint 2 
-and click submit.
+and click *Submit*.
 
 .. _checkpoint3:
 
@@ -179,7 +180,7 @@ Submitting Your Work
 
 When finished cleaning your data, make sure to push your changes up to Github including your 
 new cleaned dataset. Copy the link to your Github repository and paste it into the submission box 
-in Canvas for Graded Assignment #4: Checkpoint 3 and click submit.
+in Canvas for Graded Assignment #4: Checkpoint 3 and click *Submit*.
 
 .. _checkpoint4:
 
@@ -213,7 +214,7 @@ Submitting Your Work
 ~~~~~~~~~~~~~~~~~~~~
 
 When finished paste the link to your Tableau story into the submission box in Canvas for Graded 
-Assignment #4: Checkpoint 4 and click submit.
+Assignment #4: Checkpoint 4 and click *Submit*.
 
 .. _checkpoint5:
 
@@ -243,7 +244,11 @@ Submitting Your Work
 
 When finished with your linear regression model, make sure to push your changes up to Github. Copy the link to 
 your Github repository and paste it into the submission box in Canvas for Graded Assignment #4: Checkpoint 
-5 and click submit.
+5 and click *Submit*.
+
+.. _finalPresentation:
+
+:ref:`Back to Final Project Overview<finalProject>`
 
 Final Project Presentations
 ---------------------------
