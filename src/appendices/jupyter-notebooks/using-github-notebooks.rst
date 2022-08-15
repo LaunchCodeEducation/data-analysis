@@ -99,7 +99,7 @@ In the terminal, navigate to your project.
 
 .. admonition:: tip
   
-  Notice in the terminal photo below at the top labeled 1: Easy way to check you're in the right folder.
+  Direct your attention to the photo below. In the top right-hand corner of your terminal window, you may notice that the current directory is displayed. This is a great way to easily check that you are in the right place! 
 
   .. figure:: figures/tipTerminal.png
    :alt: A screenshot of terminal window showing location at the top.
