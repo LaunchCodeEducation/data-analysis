@@ -52,6 +52,12 @@ Assignments
    assignments/call-center-cleanup
    assignments/9-to-5
    assignments/final-project
+   assignments/fp-checkpoint1
+   assignments/fp-checkpoint2
+   assignments/fp-checkpoint3
+   assignments/fp-checkpoint4
+   assignments/fp-checkpoint5
+   assignments/fp-presentation
    
 Appendices
 ==========
