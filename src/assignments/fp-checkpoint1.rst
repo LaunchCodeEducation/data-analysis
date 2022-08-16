@@ -37,7 +37,7 @@ Here's what you should consider when sourcing your data:
 * Does it require a request process and will that prevent you from turning in your checkpoints on time?
 * If you do find a cool set of data that requires a lengthy request process, talk to your mentors. They may know about alternatives you can use.
 
-
+Examples of Checkpoint 1 can be found `here <https://github.com/LaunchCodeEducation/finalProjectDAExamples/tree/main/Checkpoint%201>`__.
 
 Kaggle Tips
 -----------

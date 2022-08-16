@@ -25,6 +25,8 @@ The following `article <https://medium.com/@kasiarachuta/importing-and-exporting
 will provide you with the syntax for this step. The rest of the checkpoints should be completed 
 using your cleaned data.
 
+Examples of completed Checkpoint 3 can be found `here <https://github.com/LaunchCodeEducation/finalProjectDAExamples/tree/main/Checkpoint%203>`__.
+
 Submitting Your Work
 --------------------
 
