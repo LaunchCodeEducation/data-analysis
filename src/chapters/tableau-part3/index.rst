@@ -1,11 +1,11 @@
-.. _intro-stats-data-modeling-index:
+.. _tableau-part3-index:
 
-Introduction to Statistics and Data Modeling
-============================================
+Tableau Part 3 - Dashboard Finesse, Calculations and Parameters
+===============================================================
 
 .. toctree::
    :maxdepth: 3
 
-   intro-stats-data-modeling
+   tableau-part3
    exercises
    studio

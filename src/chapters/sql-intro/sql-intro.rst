@@ -1,2 +1,2 @@
-SQL: Introduction and Azure Data Studio
-=======================================
+SQL Introduction - Azure Data Studio
+====================================

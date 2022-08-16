@@ -1,7 +1,7 @@
 .. _sql-intro-index:
 
-SQL: Introduction and Azure Data Studio
-=======================================
+SQL Introduction - Azure Data Studio
+====================================
 
 .. toctree::
    :maxdepth: 3

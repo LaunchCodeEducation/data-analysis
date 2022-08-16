@@ -1,7 +1,7 @@
 .. _sql-part2-index:
 
-SQL: Part 2 String and Date Functions
-=====================================
+SQL Part 2 - String and Date Functions
+======================================
 
 .. toctree::
    :maxdepth: 3

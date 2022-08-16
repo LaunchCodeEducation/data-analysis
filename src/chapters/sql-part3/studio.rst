@@ -1,2 +1,2 @@
-Studio: SQL Part 3 Joins
-========================
+Studio: SQL Part 3 - Joins
+==========================

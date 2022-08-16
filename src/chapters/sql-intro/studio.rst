@@ -1,2 +1,2 @@
-Studio: SQL Introduction and Azure Data Studio
-==============================================
+Studio: SQL Introduction - Azure Data Studio
+============================================

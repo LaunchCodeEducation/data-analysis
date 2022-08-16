@@ -1,2 +1,2 @@
-Exercises: SQL Introduction and Azure Data Studio
-=================================================
+Exercises: SQL Introduction - Azure Data Studio
+===============================================

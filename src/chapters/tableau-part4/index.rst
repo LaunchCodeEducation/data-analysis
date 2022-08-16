@@ -1,11 +1,11 @@
-.. _intro-stats-data-modeling-index:
+.. _tableau-part4-index:
 
-Introduction to Statistics and Data Modeling
-============================================
+Tableau Part 4 - Stories and Dates
+==================================
 
 .. toctree::
    :maxdepth: 3
 
-   intro-stats-data-modeling
+   tableau-part4
    exercises
    studio

@@ -1,2 +1,2 @@
-Exercises: SQL Part 3 Joins
-===========================
+Exercises: SQL Part 3 - Joins
+=============================

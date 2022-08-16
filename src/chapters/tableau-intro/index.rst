@@ -1,11 +1,11 @@
-.. _intro-stats-data-modeling-index:
+.. _tableau-intro-index:
 
-Introduction to Statistics and Data Modeling
-============================================
+Introduction to Visualization in Tableau
+========================================
 
 .. toctree::
    :maxdepth: 3
 
-   intro-stats-data-modeling
+   tableau-intro
    exercises
    studio

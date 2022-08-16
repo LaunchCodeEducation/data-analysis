@@ -1,11 +1,11 @@
-.. _intro-stats-data-modeling-index:
+.. _sql-part5-index:
 
-Introduction to Statistics and Data Modeling
-============================================
+SQL Part 5 - Schemas and CRUD Operations
+========================================
 
 .. toctree::
    :maxdepth: 3
 
-   intro-stats-data-modeling
+   sql-part5
    exercises
    studio

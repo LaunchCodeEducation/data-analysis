@@ -1,11 +1,11 @@
-.. _intro-stats-data-modeling-index:
+.. _tableau-part2-index:
 
-Introduction to Statistics and Data Modeling
-============================================
+Tableau Part 2 - Data Preparation
+=================================
 
 .. toctree::
    :maxdepth: 3
 
-   intro-stats-data-modeling
+   tableau-part2
    exercises
    studio

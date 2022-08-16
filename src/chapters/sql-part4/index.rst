@@ -1,7 +1,7 @@
 .. _sql-part4-index:
 
-SQL: Part 4 Subqueries, UNION, INTERSECT, EXCEPT
-================================================
+SQL Part 4 - Subqueries, UNION, INTERSECT, EXCEPT
+=================================================
 
 .. toctree::
    :maxdepth: 3
