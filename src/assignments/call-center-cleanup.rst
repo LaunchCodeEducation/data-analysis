@@ -69,4 +69,4 @@ Submitting Your Work
 --------------------
 
 When you are finished, make sure to push your changes up to Github. Copy the link to your Github 
-repository and paste it into the submission box in Canvas and click submit.
+repository and paste it into the submission box in Canvas and click *Submit*.
