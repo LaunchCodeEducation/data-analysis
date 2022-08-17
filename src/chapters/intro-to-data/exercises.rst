@@ -19,6 +19,11 @@ D. Selected number of columns from total number of columns displayed.
 E. Data type: A = strings # = Number
 
 
+Create A Document
+-----------------
+
+In your chosen word processing program create a document titled: your_name-IntroToDataExercises.  Copy 
+the below questions and paste into your document and answer the questions.
 
 **Business Issue:**
 
@@ -30,40 +35,90 @@ the museum. You are looking into the artwork that came directly from the artist 
 and its visitors.
 
 
-**Data Understanding:**
+| **Data Understanding:**
 
-Given two csvs of artists and artworks, what do the different columns mean to the analysis and what data 
-type is each column?
+| 1. Given two csvs of artists and artworks, what do the different columns mean to the analysis and what data type is each column?
 
+|
 
-**Data Preparation:**
+|
 
-We need to merge our two csvs. What columns would you want to keep and what columns do you think 
-are unnecessary? What information is shared between the CSVs?
+|
 
+| **Data Preparation:**
 
-**Exploratory Analysis and Modeling:**
+| 2. We need to merge our two csvs. What columns would you want to keep and what columns do you think are unnecessary? 
+ 
+|
 
-What are the key columns that we will be using in our analysis? Is there anything that we should 
-be aware of about the data when working on the model?
+|
 
+|
 
-**Validation:**
+| 3. What information is shared between the CSVs?
 
-The project found that the top 3 artists to donate their work to the museum are: Louise Bourgeois, 
-William Wegman, and Robert Rauschenberg. How would you go about validating this? For example, who 
-at the museum can you speak with to confirm that this information is accurate?
+|
 
-Is there anything in the Credit column that would make you think that you haven't counted a donation 
-properly?
+|
 
+|
 
-**Visualization and Presentation:**
-
-You now have to present your findings to the Museums board of directors. What do you want to 
-include in the presentation and what do you want to leave out?
+| **Exploratory Analysis and Modeling:**
 
 
+| 4. What are the key columns that we will be using in our analysis? 
+
+|
+
+|
+
+|
+
+| 5. Is there anything that we should be aware of about the data when working on the model?
+
+|
+
+|
+
+|
+
+| **Validation:**
+
+| The project found that the top 3 artists to donate their work to the museum are: Louise Bourgeois, William Wegman, and Robert Rauschenberg. 
+
+| 6. How would you go about validating this? For example, who at the museum can you speak with to confirm that this information is accurate?
+
+|
+
+|
+
+|
+
+| 7. Is there anything in the Credit column that would make you think that you haven't counted a donation properly?
+
+|
+
+|
+
+|
+
+| **Visualization and Presentation:**
+
+| You now have to present your findings to the Museums board of directors. 
+
+| 8. What do you want to include in the presentation and what do you want to leave out?
+
+|
+
+|
+
+|
+
+Submitting Your Work
+--------------------
+
+When finished make sure to save your work. Upload your document into the submission box in Canvas 
+for Exercises: Intro to Data and click *Submit*.
 
 
 
