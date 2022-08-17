@@ -24,7 +24,9 @@ process for each visualization. The first caption should include a link to your 
 final story point should include links to any supporting materials, such as the Github repository 
 if you used a Jupyter notebook for this checkpoint. 
 
-Examples of completed Checkpoint 4 can be found `here <https://github.com/LaunchCodeEducation/finalProjectDAExamples/tree/main/Checkpoint%204>`__.
+**Examples** 
+
+Checkpoint 4 examples can be found `here <https://github.com/LaunchCodeEducation/finalProjectDAExamples/tree/main/Checkpoint%204>`__.
 
 Submitting Your Work
 --------------------

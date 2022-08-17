@@ -17,7 +17,9 @@ clone it to your computer. If you need a refresher on how to do this see
 :ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`.  Follow the instructions 
 within the notebook using your chosen dataset. Add notes about your EDA where directed to. 
 
-Examples of completed Checkpoint 2 can be found `here <https://github.com/LaunchCodeEducation/finalProjectDAExamples/tree/main/Checkpoint%202>`__.
+**Examples**
+
+ Checkpoint 2 examples can be found `here <https://github.com/LaunchCodeEducation/finalProjectDAExamples/tree/main/Checkpoint%202>`__.
 
 
 Submitting Your Work
