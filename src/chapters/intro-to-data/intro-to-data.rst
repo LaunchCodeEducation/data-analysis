@@ -1,7 +1,10 @@
 Introduction To Data
 ====================
 
-Read the following articles and complete the quiz in canvas:
+Readings
+--------
+
+Read the following articles, follow along where instructed:
 
 | `Data Analysis Methods & Techniques <https://www.datapine.com/blog/data-analysis-methods-and-techniques/>`__.
 
@@ -18,3 +21,9 @@ Read the following articles and complete the quiz in canvas:
 | `Asking the right question <https://www.datapine.com/blog/data-analysis-questions/%C2%A0%C2%A0>`__.
 
 | `Diagram of a Dataset <https://docs.google.com/document/d/1K0EQClQHJeWosEQlVZHM84sWPKrUrC7RI3Ub2fGJlOU/edit?usp=sharing>`__.
+
+Check Your Understanding
+------------------------
+
+Complete the quiz in canvas for this weeks readings to check your understanding of the above 
+material. This does not count towards you final grade. You may take the quiz multiple times.
