@@ -20,4 +20,8 @@ In addition to presenting your Tableau story from Checkpoint Four, you are welco
 slides talking about the first three points if you find that helpful. You are not required to do so, 
 however, and can use your Tableau story as your sole presentation aid if you prefer.
 
+If you haven't done so already makes sure to combine each of your individual checkpoints into one 
+Github repository to showcase all of your hard work.  For examples of what this might look like visit :ref:`the project overview page<finalProjectExamples>`.
+
+
 :ref:`Back to Final Project Overview<finalProject>`

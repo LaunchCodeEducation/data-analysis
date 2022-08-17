@@ -17,4 +17,11 @@ is broken into five checkpoints and a final presentation.
 #. :ref:`Modelling data<checkpoint5>`
 #. :ref:`Final presentation<finalPresentation>`
 
-Examples of final projects to help you understand the requirements and complete your own:
+.. _finalProjectExamples:
+
+Examples of final project repositories to help you understand the requirements and complete your own:
+
+* `Carly's Final Project: Microbiome Analysis <https://github.com/LaunchCodeEducation/data-analysis-final-project-sample-carly/tree/main>`__.
+* `Courtney's Final Project: Dungeons and Dragons Encounter Creator <https://github.com/speudusa/data-analysis-final-project>`__.
+* `Kimberly's Final Project: Chocolate Bar Analysis <https://github.com/codinglikeagirl42/ChocolateBarAnalysis>`__.
+* `Sally's Final Project: Sephora Analysis <https://github.com/gildedgardenia/data-analysis-final-project>`__>
