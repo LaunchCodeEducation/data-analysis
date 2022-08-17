@@ -19,6 +19,10 @@ computer. Follow the instructions within the notebook to create a linear regress
 dataset. If it doesn't work out very well, that is alright. The most important thing is that you train a 
 model and summarize the results.
 
+**Examples**
+
+Checkpoint 5 examples can be found `here <https://github.com/LaunchCodeEducation/finalProjectDAExamples/tree/main/Checkpoint%205>`__.
+
 Submitting Your Work
 --------------------
 
