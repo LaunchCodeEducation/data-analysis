@@ -1,7 +1,10 @@
 Exploratory Data Analysis
 =========================
 
-Read the following articles and complete the quiz in canvas:
+Readings
+--------
+
+Read the following articles, follow along where instructed:
 
 .. admonition:: tip
   
@@ -33,3 +36,9 @@ Read the following articles and complete the quiz in canvas:
 * Key takeaway: Using pandas DataFrame; with examples
   
 | `Diagrams of a Dataframe <https://docs.google.com/document/d/1vQkFP9ED1CPUgpUlk7S9egQrxbhffvDKymWPA7bPAaQ/edit?usp=sharing>`__.
+
+Check Your Understanding
+------------------------
+
+Complete the quiz in canvas for this weeks readings to check your understanding of the above 
+material. This does not count towards you final grade. You may take the quiz multiple times.
