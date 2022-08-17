@@ -1,7 +1,7 @@
 Exploratory Data Analysis
 =========================
 
-Read the following articles and follow along where instructed:
+Read the following articles and complete the quiz in canvas:
 
 .. admonition:: tip
   
