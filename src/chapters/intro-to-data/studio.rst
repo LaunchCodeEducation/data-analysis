@@ -1,6 +1,9 @@
 Studio: Introduction To Data
 ============================
 
+Getting Started
+---------------
+
 You will be working in a small group to discuss a potential data analysis project. Your course staff 
 will give each group a scenario which outlines the business issue and what data you have at your 
 disposal. Before you dive in, give everyone in your group time to read through the scenario and 

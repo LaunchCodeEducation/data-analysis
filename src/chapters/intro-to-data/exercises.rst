@@ -1,6 +1,9 @@
 Exercises: Introduction To Data
 ===============================
 
+Getting Started
+---------------
+
 For the exercises, answer the following questions about the lifecycle of a MOMA data 
 analysis project. As you work through the exercises, refer to the `Kaggle <https://www.kaggle.com/momanyc/museum-collection>`__ page to get the information you need.
 
