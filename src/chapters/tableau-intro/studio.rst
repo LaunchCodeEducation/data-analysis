@@ -1,2 +1,2 @@
-Studio: Introduction to Visualization in Tableau
-================================================
+Studio: Tableau Part 1 - Introduction to Visualization 
+======================================================

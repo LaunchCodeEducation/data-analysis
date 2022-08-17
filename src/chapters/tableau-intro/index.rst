@@ -1,7 +1,7 @@
 .. _tableau-intro-index:
 
-Introduction to Visualization in Tableau
-========================================
+Tableau Part 1 - Introduction to Visualization 
+==============================================
 
 .. toctree::
    :maxdepth: 3

@@ -1,2 +1,2 @@
-Introduction to Visualization in Tableau
-========================================
+Tableau Part 1 - Introduction to Visualization 
+==============================================

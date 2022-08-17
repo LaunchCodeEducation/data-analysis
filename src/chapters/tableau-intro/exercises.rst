@@ -1,2 +1,2 @@
-Exercises: Introduction to Visualization in Tableau
-===================================================
+Exercises: Tableau Part 1 - Introduction to Visualization 
+=========================================================
