@@ -63,6 +63,9 @@ Check Your Understanding
   
   Column names cannot be changed in dataframes?
 
+  a. True
+  b. False
+
 .. admonition:: Question
 
   What can knowing the data types present in a data set tell us about the data being presented?
@@ -85,6 +88,9 @@ Check Your Understanding
 .. admonition:: Question
 
   A dataframe column is a series?
+
+  a. True
+  b. False
 
 .. admonition:: Question  
 
