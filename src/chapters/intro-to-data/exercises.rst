@@ -25,8 +25,7 @@ Create A Document
 In your chosen word processing program create a document titled: your_name-IntroToDataExercises.  Copy 
 the below questions and paste into your document and answer the questions.
 
-Business Issue:
-~~~~~~~~~~~~~~~
+| **Business Issue:**
 
 MOMA wants their collection to more accurately represent the art of the world. Currently, critics think 
 it is too Eurocentric. MOMA hears this and wants to look at their collection, particularly artists 
@@ -36,27 +35,23 @@ the museum. You are looking into the artwork that came directly from the artist 
 and its visitors.
 
 
-Data Understanding:
-~~~~~~~~~~~~~~~~~~~
+**Data Understanding:**
 
 | 1. Given two csvs of artists and artworks, what do the different columns mean to the analysis and what data type is each column?
 
-Data Preparation:
-~~~~~~~~~~~~~~~~~
+**Data Preparation:**
 
 | 2. We need to merge our two csvs. What columns would you want to keep and what columns do you think are unnecessary? 
  
 | 3. What information is shared between the CSVs?
 
-Exploratory Analysis and Modeling:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Exploratory Analysis and Modeling:**
 
 | 4. What are the key columns that we will be using in our analysis? 
 
 | 5. Is there anything that we should be aware of about the data when working on the model?
 
-Validation:
-~~~~~~~~~~~
+**Validation:**
 
 | The project found that the top 3 artists to donate their work to the museum are: Louise Bourgeois, William Wegman, and Robert Rauschenberg. 
 
@@ -64,8 +59,7 @@ Validation:
 
 | 7. Is there anything in the Credit column that would make you think that you haven't counted a donation properly?
 
-Visualization and Presentation:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Visualization and Presentation:**
 
 | You now have to present your findings to the Museums board of directors. 
 
