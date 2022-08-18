@@ -18,8 +18,6 @@ Chapters
    chapters/errors-and-debugging/index
    chapters/functions/index
    chapters/dictionaries/index
-   chapters/classes-and-objects/index
-   chapters/class-relationships/index
    chapters/intro-to-data/index
    chapters/exploratory-data-analysis/index
    chapters/eda-part2/index
@@ -56,8 +54,6 @@ Studios
    chapters/errors-and-debugging/studio
    chapters/functions/studio
    chapters/dictionaries/studio
-   chapters/classes-and-objects/studio
-   chapters/class-relationships/studio
    chapters/intro-to-data/studio
    chapters/exploratory-data-analysis/studio
    chapters/eda-part2/studio
@@ -115,3 +111,5 @@ Appendices
    :hidden:
 
    index-full
+   chapters/classes-and-objects/index
+   chapters/class-relationships/index
