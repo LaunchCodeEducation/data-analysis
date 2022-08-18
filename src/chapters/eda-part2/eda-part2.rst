@@ -29,5 +29,45 @@ Read the following articles, follow along where instructed:
 Check Your Understanding
 ------------------------
 
-Complete the quiz in canvas for this weeks readings to check your understanding of the above 
-material. This does not count towards you final grade. You may take the quiz multiple times.
+.. admonition:: Question
+
+  The following plot graphs a user's Spotify recommended song length (in milliseconds) with a 
+  song's energy score (a perceptual measure of intensity and activity between 0 and 1). What, 
+  if any, outliers are present?
+
+  .. figure:: figures/outliers.png
+   :alt: Plot graph with dots representing length of song and energy score.
+
+.. admonition:: Question
+
+  The National Park Service records the number of visitors to the Gateway Arch in St Louis every day. Occasionally, concerts are held on the park grounds and the number of visitors soars. On concert days, what type of figures is the NPS seeing?
+
+.. admonition:: Question
+
+  Do missing values in a dataset provide no analytical use?
+
+  a. True
+  b. False
+
+.. admonition:: Question
+
+  How can data analysts leverage the presence of null values in a data set?
+
+  a. We can create an additional column with a binary type, indicating if any information is missing in the column in question 
+  b. We can clean the data by removing any missing entries. 
+  c. We can clean the data by removing any columns with missing entries. 
+  d. We can’t, Null values serve no purpose in analysis. 
+
+.. admonition:: Question
+
+  Data sets with missing values have been improperly assembled and are rare to encounter in the professional field of data analysis.
+
+  a. True
+  b. False
+
+.. admonition:: Question
+
+  There is no best method for addressing missing data.
+
+  a. True
+  b. False
