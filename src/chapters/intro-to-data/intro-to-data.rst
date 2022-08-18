@@ -20,8 +20,6 @@ Read the following articles, follow along where instructed:
   
 | `Asking the right question <https://www.datapine.com/blog/data-analysis-questions/%C2%A0%C2%A0>`__.
 
-| `Diagram of a Dataset <https://docs.google.com/document/d/1K0EQClQHJeWosEQlVZHM84sWPKrUrC7RI3Ub2fGJlOU/edit?usp=sharing>`__.
-
 What is a Dataset?
 ------------------
 
