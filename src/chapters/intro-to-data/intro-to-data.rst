@@ -22,6 +22,38 @@ Read the following articles, follow along where instructed:
 
 | `Diagram of a Dataset <https://docs.google.com/document/d/1K0EQClQHJeWosEQlVZHM84sWPKrUrC7RI3Ub2fGJlOU/edit?usp=sharing>`__.
 
+What is a Dataset?
+------------------
+
+Think back to when you are working on a monthly budget. Let's say you have a singular spreadsheet 
+tracking your monthly automatic payments for May that includes info such as the company name, the 
+amount, and the date. Now just this one spreadsheet alone could be a dataset. It would be small and 
+you may not be able to gain many insights from just one month of automatic payments, but it is still 
+a dataset. If you wanted to gain further insight into your monthly payments, your dataset might 
+include every spreadsheet you have of automatic payments for the past year. If you wanted an overview 
+of your whole budget, you might add spreadsheets of your taxes, paychecks, and grocery bills to your 
+dataset, such as the dataset below.  
+
+.. figure:: figures/diagramDataset.png
+   :alt: Diagram of my May budget dataset.
+
+What is a Dataframe?
+--------------------
+
+A Pandas dataframe is similar to a Python dictionary. The column names are like keys and the values are the data for that column.  This diagram illustrates the different components of a dataframe.
+
+.. figure:: figures/diagramPandasDataframe.png
+   :alt: Diagram of a Pandas Dataframe.
+
+Credit for the above diagram and for more information about Pandas Dataframes `visit here <https://www.w3resource.com/python-exercises/pandas/index-dataframe.php>`__.
+
+| The column values are called a Pandas series. Here is how Pandas series are used to build a dataframe.
+
+.. figure:: figures/diagramPandasSeries.png
+   :alt: Diagram of how Pandas series build a dataframe.  
+
+Credit for the above diagram and for more information about Pandas Series `visit here <https://www.datasciencemadesimple.com/create-series-in-python-pandas/>`__.
+
 Check Your Understanding
 ------------------------
 
