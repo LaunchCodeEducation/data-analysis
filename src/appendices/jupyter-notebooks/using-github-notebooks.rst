@@ -26,7 +26,7 @@ In the upper right corner your will see the fork button, when you click it
 a pop-up with accounts to choose from appears:
 
 .. figure:: figures/forkrepo.png
-   :alt: A screenshot of a popup with github accounts.
+   :alt: Popup with github accounts.
 
 Choose your account:
 
