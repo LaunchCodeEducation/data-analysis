@@ -35,23 +35,6 @@ dataset, such as the dataset below.
 .. figure:: figures/diagramDataset.png
    :alt: Diagram of my May budget dataset.
 
-What is a Dataframe?
---------------------
-
-A Pandas dataframe is similar to a Python dictionary. The column names are like keys and the values are the data for that column.  This diagram illustrates the different components of a dataframe.
-
-.. figure:: figures/diagramPandasDataframe.png
-   :alt: Diagram of a Pandas Dataframe.
-
-Credit for the above diagram and for more information about Pandas Dataframes `visit here <https://www.w3resource.com/python-exercises/pandas/index-dataframe.php>`__.
-
-| The column values are called a Pandas series. Here is how Pandas series are used to build a dataframe.
-
-.. figure:: figures/diagramPandasSeries.png
-   :alt: Diagram of how Pandas series build a dataframe.  
-
-Credit for the above diagram and for more information about Pandas Series `visit here <https://www.datasciencemadesimple.com/create-series-in-python-pandas/>`__.
-
 Check Your Understanding
 ------------------------
 
