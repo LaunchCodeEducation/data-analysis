@@ -40,5 +40,42 @@ Read the following articles, follow along where instructed:
 Check Your Understanding
 ------------------------
 
-Complete the quiz in canvas for this weeks readings to check your understanding of the above 
-material. This does not count towards you final grade. You may take the quiz multiple times.
+.. admonition:: Question
+
+  What is the pandas function used to return the number of rows and columns in a dataframe?
+
+.. admonition:: Question
+  
+  Column names cannot be changed in dataframes?
+
+.. admonition:: Question
+
+  What can knowing the data types present in a data set tell us about the data being presented?
+
+.. admonition:: Question
+
+  What is the Pandas method for reading a csv?
+
+.. admonition:: Question
+
+  Visualized below is the “purchases” dataframe . What is the pandas syntax to select for Robert’s data?
+
+  .. figure:: figures/purchaseDataframe.png
+   :alt: Dataframe showing name of person and if they purchased apples and/or oranges.
+
+.. admonition:: Question
+
+  How do we view only the first 13 rows of a dataframe?
+
+.. admonition:: Question
+
+  A dataframe column is a series?
+
+.. admonition:: Question  
+
+  Which pandas function will print the number of records, three quartiles, mean, standard deviation, minimum and maximum values of  a dataframe?
+
+  a. .describe() 
+  b. .index() 
+  c. .statistics() 
+  d. .head() 
