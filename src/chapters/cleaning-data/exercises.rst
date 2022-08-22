@@ -1,4 +1,4 @@
-Exercises: Cleaning Data 
+Exercises: Cleaning Data
 ========================
 
 Getting Started
@@ -8,17 +8,14 @@ Fork this `Git Hub repository <https://github.com/gildedgardenia/cleaning-data/b
 clone to your computer. If you need a refresher on how to do this 
 see :ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`.
 
-| Next, select one of the following data sets to work with.  Download and add to your project folder in 
-Jupyter Notebooks.
+| Next, select one of the following data sets to work with.  Download and add to your project folder in Jupyter Notebooks.
 
-
-| `Women's E-commerce Clothing Reviews <https://www.kaggle.com/nicapotato/womens-ecommerce-clothing-reviews >`__.
-
-| `New York City Rat Sightings <https://www.kaggle.com/new-york-city/nyc-rat-sightings>`__.
+#. `Women's E-commerce Clothing Reviews <https://www.kaggle.com/nicapotato/womens-ecommerce-clothing-reviews>`__.
+#. `New York City Rat Sightings <https://www.kaggle.com/new-york-city/nyc-rat-sightings>`__.
  
-* Work through the exercise notebook using the dataset you choose from above.
+| Work through the exercise notebook using the dataset you have choose from above.
 
-* Don't hesitate to reach out to course staff and your fellow students if you want to talk through the 
+| Don't hesitate to reach out to course staff and your fellow students if you want to talk through the 
   data set or a potential spot that needs to be cleaned!
 
 Submitting Your Work
