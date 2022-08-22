@@ -1,6 +1,6 @@
 .. _usingGitHubNotebooks:
 
-Instruction for Using Github w/Jupyter Notebooks
+Instruction for Using GitHub w/Jupyter Notebooks
 ================================================
 
 Welcome to Git!
@@ -13,20 +13,20 @@ exercises, studios, and assignments using Github.
 This will help your mentors access your code more easily and will help 
 you practice a valuable industry skill.
 
-Set up your own Github account `here <https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home>`__.
+Set up your own GitHub account `here <https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home>`__.
 or if you already have an account `sign in here <https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsignup%3Fref_cta%3DSign%2Bup%26ref_loc%3Dheader%2Blogged%2Bout%26ref_page%3D%252F%26source%3Dheader-home>`__.
 
-When you click a link to the Git notebooks in the instructions, it will 
+When you click a link to the GitHub notebooks in the instructions, it will 
 take you to the repository page and will look something like this.
 
 .. figure:: figures/gitrepo.png
-   :alt: The fork button on a Github repository.
+   :alt: The fork button on a GitHub repository.
 
 In the upper right corner your will see the fork button, when you click it 
 a pop-up with accounts to choose from appears:
 
 .. figure:: figures/forkrepo.png
-   :alt: Popup with github accounts.
+   :alt: Popup with GitHub accounts.
 
 Choose your account:
 
@@ -93,7 +93,7 @@ I ran the following commands to navigate into and create a new folder(directory)
 Now open your notebook in Jupyter Notebooks.
 
 After you have made changes to your notebook and saved them, you will want to push those changes back 
-up to Github.
+up to GitHub.
 
 In the terminal, navigate to your project. 
 
@@ -132,13 +132,13 @@ There are three steps used to commit changes to your git repository and a final 
 When you check your github repository, you will see the update.
 
 .. figure:: figures/checkfirstcommit.png
-   :alt: Github repository with commit message.
+   :alt: GitHub repository with commit message.
 
 .. admonition:: note
 
   For a more detailed explanation of Git, `use this link <https://education.launchcode.org/intro-to-professional-web-dev/appendices/git/workflows.html>`__.
 
-When you are ready to submit your assignment, copy the link to your repository on Github and 
+When you are ready to submit your assignment, copy the link to your repository on GitHub and 
 paste it into the submission box in Canvas and hit *Submit*.
 
 
