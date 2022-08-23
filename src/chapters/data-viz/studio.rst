@@ -32,7 +32,7 @@ Once you have your group, everyone in the group needs to make two visualizations
 * These visualizations can be of any chart type.
 * Make sure that everyone is doing something different! 
 
-When everyone is done creating their two charts, come back together and discuss as a group which chart 
+When everyone is done creating their charts, come back together and discuss as a group which chart 
 most effectively tells the story. 
 
 * Feel free to also try different color schemes and style the winning chart as a group to make it even stronger! 
