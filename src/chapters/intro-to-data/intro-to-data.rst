@@ -71,12 +71,12 @@ Check Your Understanding
 	
 .. admonition:: Question
 
-   If you are a data analyst for a big box store, what is a standard KPI you would want to use to help drive up revenue? (short answer)
+   If you are a data analyst for a big box store, what is a standard KPI you would want to use to help drive up revenue? 
    
 .. admonition:: Question
 
-   If you are a data analyst for a big box store, where would you get the data that would help answer the question? (short answer)
+   If you are a data analyst for a big box store, where would you get the data that would help answer the question? 
    
 .. admonition:: Question
 
-   If you are a data analyst for a big box store, how do you foresee ensuring data quality? (short answer)
+   If you are a data analyst for a big box store, how do you foresee ensuring data quality? 

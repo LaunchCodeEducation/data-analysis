@@ -16,7 +16,7 @@ not have to re-submit any previous checkpoints unless your mentor requests you d
 Getting Started
 ---------------
 
-Fork `this GitHub repository <https://github.com/gildedgardenia/cleaning-data-checkpoint>`__ and and 
+Fork `this GitHub repository <https://github.com/gildedgardenia/cleaning-data-checkpoint>`__ and 
 clone it to your computer. Follow the instructions within the notebook using your chosen dataset. 
 Add notes about your process where directed to. 
 
@@ -32,8 +32,8 @@ Checkpoint 3 examples can be found `here <https://github.com/LaunchCodeEducation
 Submitting Your Work
 --------------------
 
-When finished cleaning your data, make sure to push your changes up to Github including your 
-new cleaned dataset. Copy the link to your Github repository and paste it into the submission box 
+When finished cleaning your data, make sure to push your changes up to GitHub including your 
+new cleaned dataset. Copy the link to your GitHub repository and paste it into the submission box 
 in Canvas for Graded Assignment #4: Checkpoint 3 and click *Submit*.
 
 :ref:`Back to Final Project Overview<finalProject>`
