@@ -62,11 +62,11 @@ Getting Started
 
 Fork `this GitHub repository <https://github.com/gildedgardenia/call-center-cleanup-assignment>`__
 and clone it to your computer. If you need a refresher on how to do this see 
-:ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`. Follow the 
+:ref:`Instruction for Using GitHub w/Jupyter Notebooks<usingGitHubNotebooks>`. Follow the 
 instructions in the Call Center Cleanup.ipynb notebook to complete the assignment. 
 
 Submitting Your Work
 --------------------
 
-When you are finished, make sure to push your changes up to Github. Copy the link to your Github 
-repository and paste it into the submission box in Canvas and click *Submit*.
+When you are finished, make sure to push your changes up to GitHub. Copy the link to your GitHub 
+repository and paste it into the submission box in Canvas for Graded Assignment #2: Call Center Cleanup and click *Submit*.

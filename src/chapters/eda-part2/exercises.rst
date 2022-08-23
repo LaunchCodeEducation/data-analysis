@@ -4,7 +4,7 @@ Exercises: EDA With Python Part 2
 Getting Started
 ---------------
 
-Fork this `Git Hub repository <https://github.com/codinglikeagirl42/EDApt2Exercises>`__ and 
+Fork this `GitHub repository <https://github.com/codinglikeagirl42/EDApt2Exercises>`__ and 
 clone to your computer. If you need a refresher on how to do this 
 see :ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`.
 
@@ -16,6 +16,6 @@ see :ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>
 Submitting Your Work
 --------------------
 
-When finished make sure to push your changes up to Github. Copy the link to your Github 
+When finished make sure to push your changes up to GitHub. Copy the link to your GitHub 
 repository and paste it into the submission box in Canvas for Exercises: EDA Part 2 
 and click *Submit*.
