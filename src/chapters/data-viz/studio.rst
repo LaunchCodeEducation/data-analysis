@@ -15,6 +15,7 @@ clone to your computer.  If you need a refresher on how to do this see :ref:`Ins
    This dataset was cleaned before being uploaded and is included in the above GitHub repository, so 
    you can focus on the visualizations. 
 
+
 Your mentors will split you up into small groups and each group will be given something in the dataset to 
 visualize. The options are:
 
@@ -25,6 +26,9 @@ visualize. The options are:
 
 #. Text ratings count versus reviews count.
 
+Create Your Visualizations
+--------------------------
+
 Once you have your group, everyone in the group needs to make two visualizations:
 
 * One in Matplotlib.
@@ -32,18 +36,22 @@ Once you have your group, everyone in the group needs to make two visualizations
 * These visualizations can be of any chart type.
 * Make sure that everyone is doing something different! 
 
-When everyone is done creating their charts, come back together and discuss as a group which chart 
-most effectively tells the story. 
+Share with Your Group
+---------------------
 
-* Feel free to also try different color schemes and style the winning chart as a group to make it even stronger! 
-  
-| When the whole class comes back together, each group will present their winning chart. 
+When everyone is done creating their two charts, come back together and discuss as a group which chart most effectively tells the story.
 
-| Each presentation should be about 5min and cover: 
+* Feel free to also try different color schemes and style the winning chart as a group to make it even stronger!
 
-* Why did they pick this chart?
+Present to the Class
+--------------------
+
+| When the whole class comes back together, each group will present their winning chart.
+
+Each presentation should be about 5min and cover:
+* Why they picked this chart.
 * What was effective about the chart for them.
-* What changes do they think would make the chart even better?
+* What changes do they think would make the chart even better.
 
 Submitting Your Work
 --------------------
