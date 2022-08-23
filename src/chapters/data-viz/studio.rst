@@ -43,7 +43,7 @@ most effectively tells the story.
 
 * Why did they pick this chart?
 * What was effective about the chart for them.
-* What changes do they think would make the chart even better.
+* What changes do they think would make the chart even better?
 
 Submitting Your Work
 --------------------
