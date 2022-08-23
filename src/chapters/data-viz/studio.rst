@@ -51,7 +51,7 @@ Present to the Class
 Each presentation should be about 5min and cover:
 
 * Why they picked this chart.
-* What was effective about the chart for them.
+* What was effective about the chart for them?
 * What changes do they think would make the chart even better.
 
 Submitting Your Work
