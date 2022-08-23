@@ -11,7 +11,7 @@ jupyter notebooks. The link can be found :ref:`here<dataManipulationNotebook>`.
 
 .. admonition:: Note
 
-   You will find all the assigned reading within each notebook in the GitHub repository you forked for this weeks exercises.  
+   You will find all the assigned reading within each notebook in the GitHub repository you forked for this week's exercises.  
 
 .. _cyuDataManipulation:
 
