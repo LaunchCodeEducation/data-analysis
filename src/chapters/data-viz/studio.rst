@@ -21,7 +21,7 @@ visualize. The options are:
 #. Number of books published per year.
 #. Number of books published by each publisher.
 
-   * Some publisher's names are in non Latin scripts, such as Japanese and Russian so Matplotlib may not know how to display these names, that is okay!
+   * Some publishers' names are in non-Latin scripts, such as Japanese and Russian.  Matplotlib may not know how to display these names; that is okay!
 
 #. Text ratings count versus reviews count.
 
