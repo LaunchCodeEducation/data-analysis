@@ -17,7 +17,7 @@ see :ref:`Instruction for Using GitHub w/Jupyter Notebooks<usingGitHubNotebooks>
    #. DataManipulationWorkbook
    #. MergingTables 
 
-   Each notebook is self-contained, with all the reading links and check your understanding questions for this chapter.
+   Each notebook is self-contained, with all the reading links for this chapter. See :ref:`here<cyuDataManipulation>` to review check your understanding questions.
 
 Submitting Your Work
 --------------------
