@@ -9,7 +9,7 @@ Readings
 The readings and exercises are a little different for this chapter.  Both have been combined into 2 
 jupyter notebooks and the link can be found :ref:`here<dataManipulationNotebook>`. 
 
-| Complete the notebooks in the following order using the readings to help you:
+| Complete the notebooks in the following order:
 
 #. DataManipulationWorkbook
 #. MergingTables 
