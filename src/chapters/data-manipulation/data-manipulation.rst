@@ -18,7 +18,7 @@ jupyter notebooks and the link can be found :ref:`here<dataManipulationNotebook>
 
 .. admonition:: Note
 
-You will find all the assigned reading within your forked notebooks.  
+   You will find all the assigned reading within your forked notebooks.  
 
 Check Your Understanding
 ------------------------
