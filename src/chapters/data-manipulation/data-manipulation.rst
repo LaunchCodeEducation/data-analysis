@@ -16,7 +16,7 @@ jupyter notebooks and the link can be found :ref:`here<dataManipulationNotebook>
 
 | When finished follow the instructions :ref:`here<submitDataManipulation>` to submit your finished notebooks.
 
-.. admonition:: note
+.. admonition:: Note
 
    The reading links are included within the notebooks you forked.
 
