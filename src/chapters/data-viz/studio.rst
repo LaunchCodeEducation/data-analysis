@@ -25,7 +25,7 @@ visualize. The options are:
 
 #. Text ratings count versus reviews count.
 
-Once you have your group, everyone in the group needs to make two visualization:
+Once you have your group, everyone in the group needs to make two visualizations:
 
 * One in Matplotlib.
 * One in Seaborn.
