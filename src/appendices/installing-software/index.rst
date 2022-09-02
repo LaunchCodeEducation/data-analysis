@@ -9,3 +9,4 @@ Setting Up Software for this Class
    setting-up-git
    setting-up-anaconda
    setting-up-azure
+   setting-up-tableau
