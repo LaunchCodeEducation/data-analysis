@@ -8,3 +8,4 @@ Setting Up Software for this Class
    setting-up-terminal
    setting-up-git
    setting-up-anaconda
+   setting-up-azure
