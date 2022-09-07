@@ -26,8 +26,8 @@ Checkpoint 5 examples can be found `here <https://github.com/LaunchCodeEducation
 Submitting Your Work
 --------------------
 
-When finished with your linear regression model, make sure to push your changes up to Github. Copy the link to 
-your Github repository and paste it into the submission box in Canvas for Graded Assignment #4: Checkpoint 
+When finished with your linear regression model, make sure to push your changes up to GitHub. Copy the link to 
+your GitHub repository and paste it into the submission box in Canvas for Graded Assignment #4: Checkpoint 
 5 and click *Submit*.
 
 :ref:`Back to Final Project Overview<finalProject>`

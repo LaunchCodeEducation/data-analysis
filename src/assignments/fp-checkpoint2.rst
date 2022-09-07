@@ -25,7 +25,7 @@ within the notebook using your chosen dataset. Add notes about your EDA where di
 Submitting Your Work
 --------------------
 
-When finished with your EDA make sure to push your changes up to Github. Copy the link to your Github 
+When finished with your EDA make sure to push your changes up to GitHub. Copy the link to your GitHub 
 repository and paste it into the submission box in Canvas for Graded Assignment #4: Checkpoint 2 
 and click *Submit*.
 

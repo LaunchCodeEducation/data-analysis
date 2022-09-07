@@ -76,7 +76,7 @@ Check Your Understanding
 
 .. admonition:: Question
 
-  Visualized below is the “purchases” dataframe . What is the pandas syntax to select for Robert’s data?
+  Visualized below is the “purchases” dataframe . What is the pandas syntax to select for Robert's data?
 
   .. figure:: figures/purchaseDataframe.png
    :alt: Dataframe showing name of person and if they purchased apples and/or oranges.
