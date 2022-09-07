@@ -17,7 +17,7 @@ Check Your Understanding
   c. CHARINDEX
   d. RTRIM
 
-.. admonition:: Questions
+.. admonition:: Question
 
    Alyce wants to create consistency in the formatting of the state abbreviations of the local business addresses contained in their dataset.  What string function could help with this?
    
