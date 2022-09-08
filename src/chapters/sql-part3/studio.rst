@@ -11,8 +11,6 @@ clone to your computer.  If you need a refresher on how to do this see :ref:`Ins
 
 | The focus of this studio is to get more familiar with JOIN statements and to practice using them.
  
-Use the last 30 minutes of studio time to regroup and each person will present one of the events they created and the query used to solve it.
-
 * Break into small groups and work together to answer the questions.  
 * Each member of the group should be coding along in their own notebooks.  
 * In Part 2 of the studio, each person will pick their own month and create two events or promotions, creating queries to support their choices in their own notebook.
