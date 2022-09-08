@@ -8,7 +8,7 @@ Read the following articles, follow along where instructed:
 
 `What is SQL? <https://www.youtube.com/watch?v=27axs9dO7AE>`__
 
-`What Is a Database? Understanding Database Concepts <https://medium.com/geekculture/what-is-a-database-understanding-database-concepts-d032c0d3daa4>`__
+`What Is a Database? <https://www.oracle.com/database/what-is-database/>`__
 
 `Learn to write SQL queries in 5 minutes! <https://medium.com/geekculture/writing-your-first-sql-query-610da7a5afea>`__
 
