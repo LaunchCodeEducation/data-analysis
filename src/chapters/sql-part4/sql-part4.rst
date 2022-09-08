@@ -10,7 +10,7 @@ The articles below share how to use subqueries in queries that go beyond a SELEC
 
 `Subqueries (SQL Server) <https://docs.microsoft.com/en-us/sql/relational-databases/performance/subqueries?view=sql-server-ver15>`__.
 
-`SQL - Sub Queries <https://www.tutorialspoint.com/sql/sql-sub-queries.html>`__.
+`SQL - Sub Queries <https://www.tutorialspoint.com/sql/sql-sub-queries.htm>`__.
 
 **UNION, INTERSECT, EXCEPT**
 
