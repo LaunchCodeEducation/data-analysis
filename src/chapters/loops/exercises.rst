@@ -52,7 +52,7 @@ the altitude the shuttle reaches.
 4. Construct ``while`` loops to do the following:
 
    a. Prompt the user to enter the starting fuel level. The loop should continue until
-      the user enters a positive value greater than 5000 but less than 30000.
+      the user enters a positive value greater than 5000 but less than 30000. 
    b. Use a second loop to query the user for the number of astronauts
       (up to a maximum of 7). Validate the entry by having the loop continue
       until the user enters an integer from 1 - 7.
@@ -62,8 +62,7 @@ the altitude the shuttle reaches.
       The loop should end when there is not enough fuel to boost the crew
       another 50 km, so the fuel level might not reach 0).
 
-#. After the loops complete, output the result with the phrase, ``The shuttle
-   gained an altitude of ___ km.``
+#. After the loops complete, print the result with the phrase, ``The shuttle gained an altitude of ___ km and has ___ kg of fuel left.`` Fill in the blanks with the altitude and fuel level values.
 
    #. If the altitude is 2000 km or higher, add "Orbit achieved!"
    #. Otherwise add, "Failed to reach orbit."
@@ -73,5 +72,6 @@ the altitude the shuttle reaches.
 Submitting Your Work
 --------------------
 
-When finished copy the URLs to your repls for the exercises, separating each URL with a semi-colon and paste them into the submission box in Canvas for **Exercises: Booleans, Conditionals, and Loops
-** and click *Submit*.
+When finished copy the URLs to your repls for the exercises, separating each URL with a semi-colon and paste them into the submission box in Canvas for **Exercises: Booleans, Conditionals, and Loops** and click *Submit*.
+
+You should have a total of **5** repls, **2** from the above Loops Exercises and **3** from from :ref:`Booleans and Conditionals Exercises<exercises-booleans-and-conditionals>`.

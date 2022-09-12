@@ -189,4 +189,4 @@ Submitting Your work
 
 When finished copy the URLs to your repls for the exercises, separating each URL with a semi-colon and paste them into the submission box in Canvas for **Exercises: Strings and Lists** and click *Submit*.
 
-You should have a total of **9** repls, **5** from the above String Exercises and **4** from the :ref:`String Exercises<exercises-lists>` 
+You should have a total of **9** repls, **5** from the above String Exercises and **4** from the :ref:`List Exercises<exercises-lists>` 
