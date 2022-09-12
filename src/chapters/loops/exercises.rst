@@ -69,3 +69,9 @@ the altitude the shuttle reaches.
    #. Otherwise add, "Failed to reach orbit."
 
       :ref:`Check your solution <loops-exercise-solutions2>`. 
+
+Submitting Your Work
+--------------------
+
+When finished copy the URLs to your repls for the exercises, separating each URL with a semi-colon and paste them into the submission box in Canvas for **Exercises: Booleans, Conditionals, and Loops
+** and click *Submit*.

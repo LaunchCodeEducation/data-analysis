@@ -162,4 +162,6 @@ Part Four: Multi-dimensional Lists
 Submitting Your Work
 ---------------------
 
-You should have four replits by the end of your exercises.  Submit them via Canvas.
+When finished copy the URLs to your repls for the exercises, separating each URL with a semi-colon and paste them into the submission box in Canvas for **Exercises: Strings and Lists** and click *Submit*.
+
+You should have a total of **9** repls, **5** from :ref:`String Exercises<strings-exercises>` and *4* from the above List Exercises.

@@ -87,8 +87,7 @@ e. *Bonus to the Bonus*: Modify the code to query the user for BOTH a cabinet in
 Submitting Your Work
 ---------------------
 
-You should have two replits, one for *String Modification* and one for *List and String Conversions*.
-Submit the links to your replits in your Canvas account for credit.
+You should have **two** repls when finished with the studio. Copy the URLs to your repls, separating each URL with a semi-colon and paste them into the submission box in Canvas for **Studio: Strings and Lists** and click *Submit*.
 
 If you did Part 3, submit that through Canvas as well.
 
