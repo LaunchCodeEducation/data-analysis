@@ -191,3 +191,10 @@ A. **Assign the following variables for our space shuttle**
       launch!"``
 
       Else print ``"Launch scrubbed!"``
+
+Submitting Your Work
+--------------------
+
+When finished copy the URLs to your repls for the exercises, separating each URL with a semi-colon and paste them into the submission box in Canvas for **Exercises: Booleans, Conditionals, and Loops** and click *Submit*.
+
+You should have a total of **5** repls, **3** from the above Booleans and Conditionals Exercises and **2** from from :ref:`Loops Exercises<exercises-loops>`.
