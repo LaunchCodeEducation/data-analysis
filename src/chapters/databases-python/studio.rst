@@ -20,5 +20,5 @@ Submitting Your Work
 --------------------
 
 When finished make sure to push your changes up to GitHub. Copy the link to your GitHub 
-repository and paste it into the submission box in Canvas for Studio: Working with Databases in Python
+repository and paste it into the submission box in Canvas for **Studio: Working with Databases in Python**
 and click *Submit*.
