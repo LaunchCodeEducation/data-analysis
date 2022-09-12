@@ -17,12 +17,9 @@ We will also be using documentation provided by `Tableau <https://www.tableau.co
    * You can select the version you would like to view at the bottom of the collection list.
 
 .. admonition:: Note
-
+   
    You should have two accounts one for Tableau Public and one for Tableau.
-
-
- 
-
+   
 Watch the following videos and complete the assigned Tasks:
 
 NOTE:  As you watch the videos you may notice a discrepancy between your interface and one in the video.  You are still able to code along with each video, you might have to look in a different location than shown in the video. 
