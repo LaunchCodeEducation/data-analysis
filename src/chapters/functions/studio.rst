@@ -185,3 +185,10 @@ Bonus Missions
    a. length = 2, width = 4 (area = 8)
    b. length = 14, width = 7 (area = 98)
    c. length = 20 (area = 400)
+
+Submitting Your Work
+---------------------
+
+You should have **1** repl when finished with the studio. Copy the URL to your repl and paste it into the submission box in Canvas for **Studio: Functions** and click *Submit*.
+
+If you did the bonus missions, submit them through Canvas as well.

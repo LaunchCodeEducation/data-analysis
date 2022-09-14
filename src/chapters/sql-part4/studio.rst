@@ -13,5 +13,5 @@ Submitting Your Work
 --------------------
 
 When finished make sure to push your changes up to GitHub. Copy the link to your GitHub 
-repository and paste it into the submission box in Canvas for Studio: SQL Part 4
+repository and paste it into the submission box in Canvas for **Studio: SQL Part 4**
 and click *Submit*.
