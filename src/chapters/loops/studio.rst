@@ -66,4 +66,4 @@ Resources
 Submitting Your Work
 --------------------
 
-When finished with the studio, enter your thoughts/goals into the submission box in Canvas for **Studio: Booleans, Conditionals, and Loops** and click *Submit*.
+When finished with the studio, enter your thoughts/goals into the submission box in Canvas for **Studio: Goal Setting and Getting in the Right Mindset** and click *Submit*.

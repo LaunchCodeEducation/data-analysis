@@ -173,3 +173,8 @@ Data Sets
 
 * Columns: Name, Time Spent, Level, Hours Worked
 * Example: Juanita Rodriguez, 6 years, senior volunteer, 500 hours
+
+Submitting Your Work
+--------------------
+
+When finished with the studio, upload the document you created into the submission box in Canvas for **Studio: Intro To Data** and click *Submit*.

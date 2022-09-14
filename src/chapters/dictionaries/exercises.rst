@@ -205,3 +205,10 @@ The final output for ``"B-A-L-L-O-O-N-S!"`` should be:
    n: 1
    o: 2
    s: 1
+
+Submitting Your Work
+--------------------
+
+When finished copy the URLs to your repls for the exercises, separating each URL with a semi-colon and paste them into the submission box in Canvas for **Exercises: Dictionaries** and click *Submit*.
+
+You should have a total of **3** repls.

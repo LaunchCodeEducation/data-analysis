@@ -211,4 +211,12 @@ Refactor your functions so that they take a single character as a parameter,
 and draw the shapes with that character instead of always using ``'#'``. Make
 the new parameter optional, with default value ``'#'``.
 
+Submitting Your Work
+--------------------
+
+When finished copy the URLs to your repls for the exercises, separating each URL with a semi-colon and paste them into the submission box in Canvas for **Exercises: Booleans, Conditionals, and Loops** and click *Submit*.
+
+You should have a total of **6** repls, **1** from the above Functions Exercises and **5** from from :ref:`Errors and Debugging Exercises<errors-and-debugging-exercises>`.
+
+
 
