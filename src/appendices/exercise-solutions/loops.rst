@@ -67,18 +67,20 @@ the altitude the shuttle reaches.
         altitude += 50
         fuel_level -= 100*num_astronauts
 
-#. After the loops complete, output the result with the phrase, ``The shuttle
-   gained an altitude of ___ km.``
+#. After the loops complete, print the result with the phrase, ``The shuttle gained an altitude of ___ km and has ___ kg of fuel left.`` Fill in the blanks with the altitude and fuel level values.
+
 
    a. If the altitude is 2000 km or higher, add "Orbit achieved!"
+   b. Otherwise add, "Failed to reach orbit."
 
    .. sourcecode:: py
       :linenos:
 
-      output = "The shuttle gained an altitude of " + altitude + " km."
-
       if altitude >= 2000:
-         output = output + " Orbit achieved!"
-         print(output)
+         ending = 'Orbit achieved!'
+      else:
+         ending = 'Failed to reach orbit.'
+
+      print('The shuttle gained an altitude of', altitude, 'km and has', fuel_level,'kg of fuel left.', ending)
 
 :ref:`Back to the exercises <exercises-loops>`.

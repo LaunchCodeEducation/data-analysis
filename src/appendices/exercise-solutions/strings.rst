@@ -126,20 +126,17 @@ Given ``word = 'bag'``:
 
 1. Set up a loop to iterate through the string of lowercase vowels,
    ``'aeiou'``.
-
-   .. sourcecode:: python
-
-      vowels = "aeiou"
-      for index in vowels:
-         print(vowels[index])
-
 2. Inside the loop, create a new string from ``word``, but with a different
    vowel. Use the ``replace()`` string method.
+3. Print the new string.
     
    .. sourcecode:: python
 
+      word = "bag"
+      vowels = "aeiou"
+   
       for vowel in vowels:
-         new_word = word.replace("a", vowel).replace("e", vowel).replace("i", vowel).replace("o", vowel).replace("u", vowel)
+         new_word = word.replace("a", vowel)
          print(new_word)
 
 :ref:`Return to the exercises<strings-exercises>`
@@ -159,7 +156,7 @@ Method Chaining Fun with DNA
       dna = dna.strip().upper()
       print(dna)
 
-4. Let's use string methods to do more work on the same DNA strand:
+3. Let's use string methods to do more work on the same DNA strand:
 
    a. Use ``replace()`` to remove the sequence ``'GCT'``, and then print the altered
       strand. Don't forget about the extra hyphen!

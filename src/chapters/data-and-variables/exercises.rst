@@ -110,3 +110,9 @@ A. **Declare and assign variables**
 
    :ref:`Check your solution <data-and-variables-exercise-solutionsE>`
 
+Submitting Your Work
+--------------------
+
+When finished copy the URL to your repl for the exercises and paste it into the submission box in Canvas for **Exercises: Data and Variables** and click *Submit*.
+
+

@@ -266,3 +266,8 @@ name begins with a capital letter.
    Choose a(n) adjective:  golden
    Choose a(n) City:  phoenix
    The golden bus dropped us off in the middle of Phoenix.
+
+Submitting Your Work
+---------------------
+
+You should have **1** repl when finished with the studio. Copy the URL to your repl and paste it into the submission box in Canvas for **Studio: Dictionaries** and click *Submit*.

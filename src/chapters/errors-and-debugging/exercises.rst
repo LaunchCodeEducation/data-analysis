@@ -135,6 +135,10 @@ Solve Logic Errors
 Submitting Your Work
 --------------------
 
-You should have five different replits at the end of these exercises.  
-Submit the links through your Canvas page.
+Submitting Your Work
+--------------------
+
+When finished copy the URLs to your repls for the exercises, separating each URL with a semi-colon and paste them into the submission box in Canvas for **Exercises: Booleans, Conditionals, and Loops** and click *Submit*.
+
+You should have a total of **6** repls, **5** from the above Error and Debugging Exercises and **1** from from :ref:`Functions Exercises<exercises-functions>`.
 

@@ -187,5 +187,6 @@ The following code sample works, but it can be improved.
 Submitting Your work
 --------------------
 
-Phew! That was a lot of work and a lot of replits.  
-Quick completion (sanity) check: You should have *five* replit pages once you finished the Template Literal exercises.
+When finished copy the URLs to your repls for the exercises, separating each URL with a semi-colon and paste them into the submission box in Canvas for **Exercises: Strings and Lists** and click *Submit*.
+
+You should have a total of **9** repls, **5** from the above String Exercises and **4** from the :ref:`List Exercises<exercises-lists>` 
