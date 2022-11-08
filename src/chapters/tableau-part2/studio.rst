@@ -39,163 +39,141 @@ Download `library data set <https://www.kaggle.com/imls/public-libraries?select=
 
 | In Part C,  you will select 2 (or more) of your favorite charts and create a dashboard that highlights results from your selected region.
 
-git sRegional Code Table
-US Regional Codes Table
-
-State Names and Abbreviations
-
-Region Code 1 - New England 
-
-Maine (ME), New Hampshire (NH), Vermont (VT), Massachusetts (MA), Connecticut (CT), Rhode Island (RI)
-
-Region Code 2 - Mideast 
-
-New York (NY), Pennsylvania (PA), Maryland (MD), New Jersey (NJ), Delaware (DE), Washington DC (DC)
-
-Region Code 3 - Great Lakes
-
-Wisconsin (WI), Illinois (IL), Indiana (IN), Michigan (MI), Ohio (OH)
-
-Region Code 4 - Plains 
-
-Missouri (MO), Kansas (KS), North Dakota (ND), South Dakota (SD), Minnesota (MN), Iowa (IA), Nebraska (NE)
-
-Region Code 5 - Southeast
-
-Virginia (VA), West Virginia (WV), North Carolina (NC), South Carolina (SC), Georgia (GA), Florida (FL), Alabama (AL), Mississippi (MS), Louisiana (LA), Arkansas (AK), Tennessee (TN), Kentucky (KY)
-
-Region Code 6 - Southwest 
-
-Arizona (AZ), New Mexico (NM), Oklahoma (OK), Texas (TX)
-
-Region Code 7 - Rocky Mountain 
-
-Idaho (ID), Montana (MT), Wyoming (WY), Colorado (CO), Utah (UT)
-
-Region Code 8 - Far West
-
-Alaska (AK), Washington (WI), Oregon (OR), California (CA), Nevada (NV), Hawaii (HI)
-
-Source:
-
-https://www.bea.gov/news/2015/gross-domestic-product-state-advance-2014-and-revised-1997-2013/regional-mapsLinks to an external site.
-
+.. list-table:: Regional Code Table:
+      :align: left
+      :header-rows: 1
+  
+      * - **US Regional Codes Table**
+        - **State Names and Abbreviations**
+      * - Region Code 1 - New England 
+        - Maine (ME), New Hampshire (NH), Vermont (VT), Massachusetts (MA), Connecticut (CT), Rhode Island (RI)
+      * - Region Code 2 - Mideast
+        - New York (NY), Pennsylvania (PA), Maryland (MD), New Jersey (NJ), Delaware (DE), Washington DC (DC)
+      * - Region Code 3 - Great Lakes
+        - Wisconsin (WI), Illinois (IL), Indiana (IN), Michigan (MI), Ohio (OH)
+      * - Region Code 4 - Plains 
+        - Missouri (MO), Kansas (KS), North Dakota (ND), South Dakota (SD), Minnesota (MN), Iowa (IA), Nebraska (NE)
+      * - Region Code 5 - Southeast
+        - Virginia (VA), West Virginia (WV), North Carolina (NC), South Carolina (SC), Georgia (GA), Florida (FL), Alabama (AL), Mississippi (MS), Louisiana (LA), Arkansas (AK), Tennessee (TN), Kentucky (KY)
+      * - Region Code 6 - Southwest 
+        - Arizona (AZ), New Mexico (NM), Oklahoma (OK), Texas (TX)
+      * - Region Code 7 - Rocky Mountain 
+        - Idaho (ID), Montana (MT), Wyoming (WY), Colorado (CO), Utah (UT)
+      * - Region Code 8 - Far West
+        - Alaska (AK), Washington (WI), Oregon (OR), California (CA), Nevada (NV), Hawaii (HI)
+      * - `Source <https://www.bea.gov/news/2015/gross-domestic-product-state-advance-2014-and-revised-1997-2013/regional-maps>`__.
+        - 
  
-
 Part A: EDA
+^^^^^^^^^^^
 
-Use data from the states.csv table unless otherwise noted.  In this section, we are looking nation-wide.
+| Use data from the states.csv table unless otherwise noted.  In this section, we are looking nation-wide.
 
-Create a viz for each of the following questions: 
+| Create a viz for each of the following questions: 
 
-How many visits occurred in each region?  
-How does that compare to circulation transactions?
+#. How many visits occurred in each region?  
+   
+   A. How does that compare to circulation transactions?
 
-Compare Library Programs against State Population.
-Try something other than a bar chart
-Explore the marks card.  Add at least one feature.
+#. Compare Library Programs against State Population.
 
-How many visits in each region compared to the End Date?
-Hint:  Use the End date from the libraries.csv file.  Pull other elements from the states.csv file.  Hide the Null values in your final viz.
-Use the US Regional Codes Table above to create aliases for each region.
-Hint: Rename the Region only at this time.  Don’t worry about states right now.
+   A. Try something other than a bar chart
+   #. Explore the marks card.  Add at least one feature.
+
+#. How many visits in each region compared to the End Date?
+
+    A. Hint: Use the End date from the libraries.csv file.  Pull other elements from the states.csv file.  Hide the Null values in your final viz.
+    #. Use the US Regional Codes Table above to create aliases for each region. Hint: Rename the Region only at this time. Don't worry about states right now.
+
+Part B: Collect Your Data
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+| Begin working with your assigned region.  
+
+| Use the table above to help with managing and organizing your data.  Use data from the states.csv table unless otherwise noted.
+
+**Create collections to hold your data:***
+
+#. Set Your Data
+
+   A. Select your region as a set.  We are going to compare your region to the rest of the US. 
+   #. Give this set a name so that you can easily find and use it
+ 
+#. Group Your Data
+
+   A. Group the states within your region as a whole.
+
+      * Give this group a name.  
+   
+         #. If you used the “State Code” field for your group, you will need to create aliases for the state number to either the name or abbreviation
+
+            a. For example, “51” becomes “Virginia” or “VA”
+            #. See `document page D-44 <https://www.imls.gov/sites/default/files/fy2014_pls_data_file_documentation.pdf>`__ for the state codes
+
+   #. Group the states individually.
+   
+      *  Give this group a name.
  
 
-Part B: Collect Your Data 
+#. Organizing Your Collections
 
-Begin working with your assigned region.  
+   A. If you want to create a hierarchy to better organize your data or drill down at some point, this is your choice.  
+   
+      * You can create vizzes with or without hierarchies.  
+      * It is your choice. 
 
- 
-
-Getting Started:
-
-Use the table above to help with managing and organizing your data.  Use data from the states.csv table unless otherwise noted.
-
- 
-
-Create collections to hold your data:
-
-Set Your Data
-
-Select your region as a set.  We are going to compare your region to the rest of the US. 
-Give this set a name so that you can easily find and use it
- 
-
-Group Your Data
-
-Group the states within your region as a whole.
-Give this group a name.  
-If you used the “State Code” field for your group, you will need to create aliases for the state number to either the name or abbreviation
-For example, “51” becomes “Virginia” or “VA”
-See document page D-44Links to an external site. for the state codes
-
-Group the states individually.
-Give this group a name.
- 
-
-Organizing Your Collections
-
-If you want to create a hierarchy to better organize your data or drill down at some point, this is your choice.  You can create vizzes with or without hierarchies.  It is your choice.
-
- 
-
-Questions to Answer with a Viz
+#. Questions to Answer with a Viz
 
 Now that you have organized your data, you are ready to explore your region.
 
- 
+   A. Create a new worksheet for each question using either your sets or groups.
 
-Create a new worksheet for each question using either your sets or groups.
+      #. How many Central Libraries vs Branch Libraries are in each state within your region?
 
- 
+         a. How many bookmobiles?
+         #. Add a tooltip or make an interactive filter card
 
-How many Central Libraries vs Branch Libraries are in each state within your region?
-How many bookmobiles?
-Add a tooltip or make an interactive filter card
+      #. How many Young Adult (YA) library programs does each state in your region host and how many individuals attend?
 
-How many Young Adult (YA) library programs does each state in your region host and how many individuals attend?
-Add a detail and a label to this viz. 
+         a. Add a detail and a label to this viz. 
 
-Between Central Libraries and Branch Libraries in your region, how many employees are Librarians?
-Use the marks card to show data about Librarians.
+      #. Between Central Libraries and Branch Libraries in your region, how many employees are Librarians?
 
-How many Librarians hold an MLS degree in your region compared to the rest of the US?
-Compared to how many Total Staff?
-Use a new chart format (if possible)
+         a. Use the marks card to show data about Librarians.
 
-How do circulation transactions compare between your region and the rest of the US over 2013-2014?
-Hint: Use the End Date pill.  Hide any Null values, we only want reported values at this time. 
-Add a label
+      #. How many Librarians hold an MLS degree in your region compared to the rest of the US?
+
+         a. Compared to how many Total Staff?
+         #. Use a new chart format (if possible)
+
+      #. How do circulation transactions compare between your region and the rest of the US over 2013-2014?
+
+         a. Hint: Use the End Date pill.  Hide any Null values, we only want reported values at this time. 
+         #. Add a label
  
 
 Part C: Create a Dashboard
-
- 
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Create a dashboard that highlights at least 2 of your favorite charts from the studio.  (The bonus can be one of these)
 
- 
-
 Bonus Mission
+^^^^^^^^^^^^^
 
-Using the spacial files to create a map, create a viz to answer the following question:
+| Using the spacial files to create a map, create a viz to answer the following question:
 
- 
+A. Within your region, how many children's programs were distributed by a state by county?
 
-Within your region, how many children's programs were distributed by a state by county?
-Hint 1: Drag the State (states.csv) file into the central plane, and use the Marks card.  Be sure to filter.
-Hint 2: County is a dimension found in the libraries.csv table.
+   #. Hint: Drag the State (states.csv) file into the central plane, and use the *Marks* card.  Be sure to filter.
+   #. Hint: County is a dimension found in the libraries.csv table.
  
 
 Finishing Touches
+^^^^^^^^^^^^^^^^^
 
- 
+| Before you turn in your vizzes, make sure that they are easy to read. Review and edit any axes so that they don't contain any file information. Make sure any filtering, group, or set information is easy to understand. For example, when using a set the predefined labels may say “In” and “Out”. Would extra context make them easier to understand? Don't forget to title your charts.  
 
-Before you turn in your vizzes, make sure that they are easy to read.  Review and edit any axes so that they don’t contain any file information.  Make sure any filtering, group, or set information is easy to understand.  For example, when using a set the predefined labels may say “In” and “Out”.  Would extra context make them easier to understand?  Don’t forget to title your charts.  
-
- 
-
-If you want to explore fonts and colors, go right ahead.  And feel free to change the colors of any/all of your charts.  
+| If you want to explore fonts and colors, go right ahead. And feel free to change the colors of any/all of your charts.  
 
 
 Submitting Your Work
