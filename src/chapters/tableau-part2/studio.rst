@@ -63,7 +63,7 @@ Download `library data set <https://www.kaggle.com/imls/public-libraries?select=
         - Alaska (AK), Washington (WI), Oregon (OR), California (CA), Nevada (NV), Hawaii (HI)
       * - `Source <https://www.bea.gov/news/2015/gross-domestic-product-state-advance-2014-and-revised-1997-2013/regional-maps>`__.
         - 
- 
+
 Part A: EDA
 ^^^^^^^^^^^
 
