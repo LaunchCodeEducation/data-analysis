@@ -20,24 +20,33 @@ Working Through the Studio:
 Setting Up the Studio:
 ^^^^^^^^^^^^^^^^^^^^^^
 
+.. _tableau-part2-setup-studio:
+
 Download `library data set <https://www.kaggle.com/imls/public-libraries?select=libraries.csv%C2%A0>`__. There are 2 csv files. To download all csv files at once, click on the "Download" bubble next to the "New Notebook" bubble.  An orange arrow is pointing to the "Download" bubble in the image below.
 
-.. figure:: download-multi-files.png
+.. figure:: figures/download-multi-files.png
    :alt: An orange arrow points to the "Download" bubble, highlighting the Download option of kaggle.
 
-| Open the csv file in Tableau Public.  It is a larger file than we have previously used and may take a few minutes to open. Use your downtime wiselyLinks to an external site..
+#. Open the csv file in Tableau Public.  
 
-| When you open this data set, you will want to create a relationship between the libraries.csv file and the states.csv file using branch libraries.
+   A. It is a larger file than we have previously used and may take a few minutes to open. 
+   #. `Use your downtime wisely <https://xkcd.com/303/>`__.
 
-| If you have any trouble downloading, opening the csv files or trouble saving to Tableau public, don't forget to check out the Tableau Troubleshooting resources.
+#. When you open this data set, you will want to create a relationship between the *libraries.csv* file and the *states.csv* file using branch libraries.
 
-| Final outcome of this studio will include 9 worksheets (10 if you do the bonus) and 1 dashboard in a single Tableau Public viz.
+#. Final outcome of this studio will include in a single Tableau Public viz:
 
-| Part A invites you to briefly explore the data set.  You will explore the regions of the US and eventually select one region in particular to focus on.
+   A. 9 worksheets
 
-| In Part B, using your assigned region, you will be asked to answer questions using the collection type of your choice: a set or group.  
+      #. 10 if you do the bonus 
+      
+   #. And, 1 dashboard 
 
-| In Part C,  you will select 2 (or more) of your favorite charts and create a dashboard that highlights results from your selected region.
+#. :ref:`Part A<tableau-part2-partA>` invites you to briefly explore the data set.  You will explore all the regions of the US.
+
+#. In :ref:`Part B <tableau-part2-partB>`, using your assigned region, you will be asked to answer questions using the collection type of your choice: a set or group.  
+
+#. In :ref:`Part C <tableau-part2-partC>`,  you will select 2 (or more) of your favorite charts and create a dashboard that highlights results from your selected region.
 
 .. list-table:: Regional Code Table:
       :align: left
@@ -64,10 +73,14 @@ Download `library data set <https://www.kaggle.com/imls/public-libraries?select=
       * - `Source <https://www.bea.gov/news/2015/gross-domestic-product-state-advance-2014-and-revised-1997-2013/regional-maps>`__.
         - 
 
+.. _tableau-part2-partA:
+
 Part A: EDA
 ^^^^^^^^^^^
 
-| Use data from the states.csv table unless otherwise noted.  In this section, we are looking nation-wide.
+| Use data from the states.csv table unless otherwise noted.  
+
+| In this section, we are looking nation-wide.
 
 | Create a viz for each of the following questions: 
 
@@ -82,98 +95,128 @@ Part A: EDA
 
 #. How many visits in each region compared to the End Date?
 
-    A. Hint: Use the End date from the libraries.csv file.  Pull other elements from the states.csv file.  Hide the Null values in your final viz.
-    #. Use the US Regional Codes Table above to create aliases for each region. Hint: Rename the Region only at this time. Don't worry about states right now.
+   A. Hint: Use the End date from the libraries.csv file.
+
+      #. Pull other elements from the states.csv file.
+      #. Hide the Null values in your final viz.
+      
+   #. Use the US Regional Codes Table above to create aliases for each region. 
+   
+      #. Hint: Rename the Region only at this time. 
+      #. Don't worry about states right now.
+
+:ref:`Back to Setting Up Studio<tableau-part2-setup-studio>`
+
+.. _tableau-part2-partB:
 
 Part B: Collect Your Data
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 | Begin working with your assigned region.  
 
-| Use the table above to help with managing and organizing your data.  Use data from the states.csv table unless otherwise noted.
+| Use the table above to help with managing and organizing your data.  
 
-**Create collections to hold your data:***
+| Use data from the states.csv table unless otherwise noted.
+
+**Create collections to hold your data:**
 
 #. Set Your Data
 
-   A. Select your region as a set.  We are going to compare your region to the rest of the US. 
-   #. Give this set a name so that you can easily find and use it
+   A. Select your region as a set.  
+
+      #. We are going to compare your region to the rest of the US. 
+      #. Give this set a name so that you can easily find and use it
  
 #. Group Your Data
 
    A. Group the states within your region as a whole.
+    
+      #. Give this group a name.  
+      #. If you used the “State Code” field for your group, you will need to create aliases for the state number to either the name or abbreviation
 
-      * Give this group a name.  
+         a. For example, “51” becomes “Virginia” or “VA”
+         #. See `document page D-44 <https://www.imls.gov/sites/default/files/fy2014_pls_data_file_documentation.pdf>`__ for the state codes
+
+   #. Group the states individually
    
-         #. If you used the “State Code” field for your group, you will need to create aliases for the state number to either the name or abbreviation
-
-            a. For example, “51” becomes “Virginia” or “VA”
-            #. See `document page D-44 <https://www.imls.gov/sites/default/files/fy2014_pls_data_file_documentation.pdf>`__ for the state codes
-
-   #. Group the states individually.
-   
-      *  Give this group a name.
- 
+      #. Give this group a name.
 
 #. Organizing Your Collections
 
    A. If you want to create a hierarchy to better organize your data or drill down at some point, this is your choice.  
    
-      * You can create vizzes with or without hierarchies.  
-      * It is your choice. 
+      #. You can create vizzes with or without hierarchies.  
+      #. It is your choice. 
 
-#. Questions to Answer with a Viz
+**Questions to Answer with a Viz**
 
-Now that you have organized your data, you are ready to explore your region.
+| Now that you have organized your data, you are ready to explore your region.
 
-   A. Create a new worksheet for each question using either your sets or groups.
+| Create a new worksheet for each question using either your sets or groups.
 
-      #. How many Central Libraries vs Branch Libraries are in each state within your region?
+#. How many Central Libraries vs Branch Libraries are in each state within your region?
 
-         a. How many bookmobiles?
-         #. Add a tooltip or make an interactive filter card
+   A. How many bookmobiles?
+   #. Add a tooltip or make an interactive filter card
 
-      #. How many Young Adult (YA) library programs does each state in your region host and how many individuals attend?
+#. How many Young Adult (YA) library programs does each state in your region host and how many individuals attend?
 
-         a. Add a detail and a label to this viz. 
+   A. Add a detail and a label to this viz. 
 
-      #. Between Central Libraries and Branch Libraries in your region, how many employees are Librarians?
+#. Between Central Libraries and Branch Libraries in your region, how many employees are Librarians?
 
-         a. Use the marks card to show data about Librarians.
+   A. Use the marks card to show data about Librarians.
 
-      #. How many Librarians hold an MLS degree in your region compared to the rest of the US?
+#. How many Librarians hold an MLS degree in your region compared to the rest of the US?
 
-         a. Compared to how many Total Staff?
-         #. Use a new chart format (if possible)
+   A. Compared to how many Total Staff?
+   #. Use a new chart format (if possible)
 
-      #. How do circulation transactions compare between your region and the rest of the US over 2013-2014?
+#. How do circulation transactions compare between your region and the rest of the US over 2013-2014?
 
-         a. Hint: Use the End Date pill.  Hide any Null values, we only want reported values at this time. 
-         #. Add a label
+   A. Hint: Use the End Date pill.  Hide any Null values, we only want reported values at this time. 
+   #. Add a label
  
+
+:ref:`Back to Setting Up Studio<tableau-part2-setup-studio>`
+
+.. _tableau-part2-partC:
+
 
 Part C: Create a Dashboard
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Create a dashboard that highlights at least 2 of your favorite charts from the studio.  (The bonus can be one of these)
 
+:ref:`Back to Setting Up Studio<tableau-part2-setup-studio>`
+
 Bonus Mission
 ^^^^^^^^^^^^^
 
 | Using the spacial files to create a map, create a viz to answer the following question:
 
-A. Within your region, how many children's programs were distributed by a state by county?
+#. Within your region, how many children's programs were distributed by a state by county?
 
-   #. Hint: Drag the State (states.csv) file into the central plane, and use the *Marks* card.  Be sure to filter.
+   A. Hint: Drag the State (states.csv) file into the central plane, and use the *Marks* card.  
+      #. Be sure to filter.
    #. Hint: County is a dimension found in the libraries.csv table.
  
 
 Finishing Touches
 ^^^^^^^^^^^^^^^^^
 
-| Before you turn in your vizzes, make sure that they are easy to read. Review and edit any axes so that they don't contain any file information. Make sure any filtering, group, or set information is easy to understand. For example, when using a set the predefined labels may say “In” and “Out”. Would extra context make them easier to understand? Don't forget to title your charts.  
+| Before you turn in your vizzes:
 
-| If you want to explore fonts and colors, go right ahead. And feel free to change the colors of any/all of your charts.  
+#. Make sure that they are easy to read. 
+#. Review and edit any axes so that they don't contain any file information. 
+#. Make sure any filtering, group, or set information is easy to understand. 
+
+   A. For example, when using a set the predefined labels may say “In” and “Out”. Would extra context make them easier to understand? 
+   #. Don't forget to title your charts.  
+
+#. If you want to explore fonts and colors, go right ahead. 
+
+   A. Feel free to change the colors of any/all of your charts.  
 
 
 Submitting Your Work
