@@ -12,50 +12,82 @@ Part 1:  Dashboard Finesse
 
 Please watch the following videos (13:42 min total).
 
-To complete this assignment, you are going to continue coding on the viz you worked on in ::ref:`Chapter 25<tableau-part1>`, using the World Bank CO2 dataset.
+To complete this assignment, you are going to continue coding on the viz you worked on in :ref:`Chapter 25<tableau-part1>`, using the World Bank CO2 dataset.
 
-Video 14	Combining Sheets On a Dashboard (5:27 min)	Code-a-long using your charts from lesson 16
-Video 15	Adding Interactivity to Your Dashboard (4:10)	continue to code-along 
-Video 16	Dashboard Formatting (4:05)	continue to code-a-long and submit your final Dashboard URL
- 
+.. list-table:: Tableau Videos with Corresponding Tasks:
+      :align: left
+      :widths: 20 40 40
+      :header-rows: 1
+
+      * - **Video**
+        - **Name of Video**
+        - **Tasks**
+      * - Video 1: 
+        - `Combining Sheets On a Dashboard (5:27 min) <https://www.youtube.com/watch?v=yRo5p3MLFMM>`__.
+        - Code-a-long using your project from Chapter 25.
+      * - Video 2: 
+        - `Adding Interactivity to Your Dashboard (4:10) <https://www.youtube.com/watch?v=evP7rzb7Dcs>`__.
+        - Code-a-long.
+      * - Video 3: 
+        - `Dashboard Formatting (4:05) <https://www.youtube.com/watch?v=rbfEdOGbEWQ>`__.
+        - Code-a-long. Save and publish your project. 
 
 Part 2: Tableau Calculations & Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Read the following documentation.
 
-**Basic Calculations Reading:**
+**Basic Calculations:**
 
-Get Started with Calculations in TableauLinks to an external site.
-Formatting Calculations in TableauLinks to an external site.
-Understanding Calculations in TableauLinks to an external site.
-Table Calculations Reading:
+`Get Started with Calculations in Tableau <https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm>`__.
 
-Transform Values with Table CalculationsLinks to an external site.
-Quick Table CalculationsLinks to an external site.
-Parameters Reading:
+`Formatting Calculations in Tableau <https://help.tableau.com/current/pro/desktop/en-us/functions_operators.htm>`__.
 
-Create Parameters Links to an external site. 
-Videos:
+`Understanding Calculations in Tableau <https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_understand.htm>`__.
 
-Watch the following videos above to help you learn about Tableau calculations functionality and  syntax, as well as  parameters.   The calculation videos are part of a larger calculations playlist.  We suggest you explore more videos in this playlist to learn more about calculations with certain data types and in specific situations.  Keep in mind that we will not be covering LOD (Level of Detail) calculations in this class,  so you may skip over those.
+**Table Calculations:**
 
- 
+`Transform Values with Table Calculations <https://help.tableau.com/current/pro/desktop/en-us/calculations_tablecalculations.htm#Create>`__.
 
-Remember, to watch any of the videos below, you must be logged into your Tableau.com account.
+`Quick Table Calculations <https://help.tableau.com/current/pro/desktop/en-us/calculations_tablecalculations_quick.htm>`__.
 
- 
+**Parameters:**
 
-Each of these learning videos has a workbook that you can download to and code-along with.  You are not required to complete any of these workbooks, but it is suggested that you practice them to become more familiar with Tableau.
+`Create Parameters <https://help.tableau.com/current/pro/desktop/en-us/parameters_create.htm>`__.
 
-Getting Started with Calculations(3:25 min)	
-Calculation Syntax(4:18 min)
-Intro to Table Calculations(3:58 min)	
-Parameters(5:25 min)	
-Using a Parameter to Change Fields(3:58 min)	
- 
+**Videos:**
 
- 
+| Watch the following videos to help you learn about Tableau calculations functionality and syntax, as well as parameters.   
+
+| The calculation videos are part of a larger calculations playlist.  We suggest you explore more videos in this playlist to learn more about calculations with certain data types and in specific situations.  Keep in mind that we will not be covering LOD (Level of Detail) calculations in this class, so you may skip over those.
+
+.. admonition:: Note 
+   
+   Each of these learning videos has a workbook that you can download to and code-along with.  You are not required to complete any of these workbooks, but it is suggested that you practice them to become more familiar with Tableau.
+
+.. list-table:: Tableau Videos with Corresponding Tasks:
+      :align: left
+      :widths: 20 40 40 
+      :header-rows: 1
+
+      * - **Video**
+        - **Name of Video**
+        - **Tasks**
+      * - Video 1: 
+        - `Getting Started with Calculations(3:25 min) <https://www.tableau.com/learn/tutorials/on-demand/getting-started-calculations?playlist=269502>`__.
+        - Watch only (code-along optional)
+      * - Video 2: 
+        - `Calculation Syntax(4:18 min) <https://www.tableau.com/learn/tutorials/on-demand/calculation-syntax?playlist=269502>`__.
+        - Watch only (code-along optional)
+      * - Video 3: 
+        - `Intro to Table Calculations(3:58 min) <https://www.tableau.com/learn/tutorials/on-demand/intro-table-calculations?playlist=269502>`__.
+        - Watch only (code-along optional)
+      * - Video 4: 
+        - `Parameters(5:25 min) <https://www.tableau.com/learn/tutorials/on-demand/parameters>`__.
+        - Watch only (code-along optional)
+      * - Video 5: 
+        - `Using a Parameter to Change Fields(3:58 min) <https://www.tableau.com/learn/tutorials/on-demand/using-parameter-change-fields?playlist=269504>`__.
+        - Watch only (code-along optional)
 
 Suggested Resources (not required reading)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
