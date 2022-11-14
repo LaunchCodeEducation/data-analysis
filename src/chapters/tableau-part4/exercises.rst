@@ -13,27 +13,33 @@ Create Your Own Interactive Resume
    
    If you do not feel comfortable creating a resume about yourself, you may choose to create an interactive resume about a fictional character or historical figure of your choice. 
 
-| Your interactive resume should contain at least one gantt chart that displays a relevant timeline for your resume.  And at least one other type of visualization that is relevant to your resume.
+| Your interactive resume should contain:
+
+1. At least one gantt chart that displays a relevant timeline for your resume.  
+#. And at least one other type of visualization that is relevant to your resume.
+
+.. _part1-how-to:
 
 Part 1: How to Create a Resume In Tableau Public
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. `How to Create an Interactive Resume in Tableau <https://www.tableau.com/blog/how-create-interactive-resume-tableau>`__.
+1. `How to Create an Interactive Resume in Tableau <https://www.tableau.com/blog/how-create-interactive-resume-tableau>`__.
 
    A. Don't feel limited with your visualizations here.  
    #. Browse the `Interactive Resume Gallery <https://www.tableau.com/interactive-resume-gallery>`__, for inspiration.
-   #. You can download a viz that you like and explore how they created their resume.
+   
+      1. You can download a viz that you like and explore how they created their resume.
 
 #. Optional resources to help you build your Interactive Resume:
 
    A. `5 Tips on Creating an Interactive Resume using Tableau <https://www.tableau.com/blog/5-tips-creating-visual-resume-using-tableau-40558>`__.
    #. `How to make an interactive resume in Tableau (50 min) <https://www.tableau.com/learn/webinars/how-make-interactive-resume-tableau?ssologin=true#video>`__.
 
-      #. This video will teach you how to make a gantt chart and a lollipop chart. 
+      1. This video will teach you how to make a gantt chart and a lollipop chart. 
    
    #. `Create Your Interactive Resume in Tableau Public? Video (48 min) <https://www.youtube.com/watch?v=YlyO_InVI-E>`__.
 
-      #. This video will teach you how to create an obsolescence chart, as well as how to customize a lollipop cart, and add links to your dashboard.
+      1. This video will teach you how to create an obsolescence chart, as well as how to customize a lollipop cart, and add links to your dashboard.
 
 Part 2: Creating the Data
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -71,7 +77,7 @@ Part 2: Creating the Data
    #. There could be things you want to add, redesign, or you might have caught a typo.  
    #. You can modify your data.  Go back to your spreadsheet and make your changes.  
 
-      #. For example, you decided that you want to add location to one of your spreadsheets.  Add the column (or columns) to your spreadsheet.  Depending on the program you use, in Excel you might need to only save it to update all your changes, or if using Google Sheets  you will need to download it again as a csv and then replace the old version with the new one.  Once that is done, you can refresh your data in Tableau.
+      1. For example, you decided that you want to add location to one of your spreadsheets.  Add the column (or columns) to your spreadsheet.  Depending on the program you use, in Excel you might need to only save it to update all your changes, or if using Google Sheets  you will need to download it again as a csv and then replace the old version with the new one.  Once that is done, you can refresh your data in Tableau.
 
    .. figure:: figures/refresh-your-data.png
       :alt: Image showing how to use the Data menu to refresh your data
@@ -82,7 +88,7 @@ Part 3:  Create your Charts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Now that you have your data, use it to create your Gantt chart and a second chart of your choice.  
-Refer to the resources in Part 1 for guidance.
+Refer to the resources in :ref:`Part 1<part1-how-to>` for guidance.
 
 Submitting Your Work
 --------------------
