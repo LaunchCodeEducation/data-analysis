@@ -96,31 +96,16 @@ Check Your Understanding
    Using our flowers and garden_supply tables, write the syntax to merge a subset of columns, 
    where flowers is the right table, and garden_supply on the left. This subset should only look 
    at "Flower" and "Sold_As" only in the garden_supply table, and "Name" in the flowers table.
-
-   a. 
    
    .. sourcecode:: py
 
-      garden_supply[["Flower","Sold_As"]].merge(flowers[["Name"]],left_on="Flower", right_on="Name") 
+     a. garden_supply[["Flower","Sold_As"]].merge(flowers[["Name"]],left_on="Flower", right_on="Name")
+
+     b. flowers[["Flower", "Sold_As"]].merge(garden_supply[["Name"]], left_on="Flower", right_on="Name")
    
-   b. 
-   
-   .. sourcecode:: py
-   
-      flowers[["Flower", "Sold_As"]].merge(garden_supply[["Name"]], left_on="Flower", right_on="Name") 
-   
-   c. 
-   
-   .. sourcecode:: py
-   
-      garden_supply[["Flower", "Sold_As"]].merge(flowers[["Name"]], left_on="Name", right_on="Flowers") 
-   
-   
-   d. 
-   
-   .. sourcecode:: py
-   
-         garden_supply[["Name"]].merge(flowers[["Flower", "Sold_As"]], left_on="Flower", right_on="Name") 
+     c. garden_supply[["Flower", "Sold_As"]].merge(flowers[["Name"]], left_on="Name", right_on="Flowers") 
+    
+     d. garden_supply[["Name"]].merge(flowers[["Flower", "Sold_As"]], left_on="Flower", right_on="Name") 
 
 .. admonition:: Question
 
