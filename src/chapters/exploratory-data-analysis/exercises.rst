@@ -4,7 +4,7 @@ Exercises: Exploratory Data Analysis
 Getting Started
 ---------------
 
-Fork this `GitHub repository <https://github.com/CarlyLanglois/EDAExercises/blob/master/EDApt1Exercises.ipynb>`__ 
+Fork this `GitHub repository <https://github.com/launchcodeeducation/EDAExercises/blob/master/EDApt1Exercises.ipynb>`__ 
 into your own GitHub account and clone to your computer.  If you need a refresher on how to do this 
 see :ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`.
 
