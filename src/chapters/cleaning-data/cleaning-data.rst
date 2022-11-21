@@ -6,15 +6,15 @@ Readings
 
 Read the following articles, follow along where instructed:
 
-| `Data Cleaning in Python: the Ultimate Guide <https://towardsdatascience.com/data-cleaning-in-python-the-ultimate-guide-2020-c63b88bf0a0d>`__.
+1. `Data Cleaning in Python: the Ultimate Guide <https://towardsdatascience.com/data-cleaning-in-python-the-ultimate-guide-2020-c63b88bf0a0d>`__.
 
 * Key takeaway: More in-depth techniques on what to clean and how.
 
-| `Data Cleaning for Beginners- Why and How ? <https://www.analyticsvidhya.com/blog/2021/04/data-cleaning-for-beginners-why-and-how/>`__.
+2. `Data Cleaning for Beginners- Why and How ? <https://www.analyticsvidhya.com/blog/2021/04/data-cleaning-for-beginners-why-and-how/>`__.
 
 * Key takeaway: Brief Introduction of why and how to clean your data
 
-| `Guide To Data Cleaning: Definition, Benefits, Components, And How To Clean Your Data <https://www.tableau.com/learn/articles/what-is-data-cleaning>`__.
+3. `Guide To Data Cleaning: Definition, Benefits, Components, And How To Clean Your Data <https://www.tableau.com/learn/articles/what-is-data-cleaning>`__.
 
 * Key takeaway: Theory behind cleaning.
 
