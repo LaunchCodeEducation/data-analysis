@@ -4,7 +4,7 @@ Studio: Data Visualization with Python
 Getting Started
 ---------------
 
-For this weeks studio fork this `GitHub repository <https://github.com/gildedgardenia/data-viz-with-python>`__ and 
+For this weeks studio fork this `GitHub repository <https://github.com/launchcodeeducation/data-viz-with-python>`__ and 
 clone to your computer.  If you need a refresher on how to do this see :ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`.
 
 
