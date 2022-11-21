@@ -12,7 +12,7 @@ working on Checkpoint 2.
 Getting Started
 ---------------
 
-Fork `this GitHub repository <https://github.com/gildedgardenia/eda-checkpoint>`__ and and 
+Fork `this GitHub repository <https://github.com/launchcodeeducation/eda-checkpoint>`__ and and 
 clone it to your computer. If you need a refresher on how to do this see 
 :ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`.  Follow the instructions 
 within the notebook using your chosen dataset. Add notes about your EDA where directed to. 
