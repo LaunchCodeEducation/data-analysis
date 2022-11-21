@@ -1,15 +1,14 @@
 Exploratory Data Analysis
 =========================
 
-Readings
---------
-
 Read the following articles, follow along where instructed:
 
 .. admonition:: tip
   
   For Medium articles: if you run out of free articles, open the page in an incognito window
 
+Exploring Data with Python
+--------------------------
 
 1. `Exploratory data analysis in Python <https://towardsdatascience.com/exploratory-data-analysis-in-python-c9a77dfa39ce>`__.
 
@@ -17,7 +16,10 @@ Read the following articles, follow along where instructed:
   it all depends on the dataset and your questions.
 * Just read and follow the steps for comprehension, don't need to do the tutorial.
 * Stop at #8: “Detecting Outliers”
-  
+
+Get to Know Your Data
+---------------------
+
 2. `Getting to know your data <https://medium.com/@shanegary/getting-to-know-your-data-9e42935e7f60>`__.
 
 * Key Takeaways: Questions to better understand why the data was collected.
@@ -25,11 +27,17 @@ Read the following articles, follow along where instructed:
 
   * Key Takeaways: Definitions for discrete, continuous and categorical data.
 
+Python Pandas
+-------------
+
 3. `Python Pandas Tutorial: A Complete Introduction for Beginners <https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/>`__.
 
 * You do not need to install pandas, it comes with the Anaconda package.
 * Try coding along with the article 
 * Stop at “Handling Duplicates” header
+
+Statistics in Pandas
+--------------------
 
 4. `Basic statistics in pandas DataFrame <https://medium.com/@kasiarachuta/basic-statistics-in-pandas-dataframe-594208074f85>`__.
 

@@ -3,9 +3,6 @@ Data Manipulation
 
 .. _readingDataManipulation:
 
-Readings
---------
-
 The readings and exercises are a little different for this chapter.  Both have been combined into a GitHub repository containing two 
 jupyter notebooks. The link can be found :ref:`here<dataManipulationNotebook>`. 
 

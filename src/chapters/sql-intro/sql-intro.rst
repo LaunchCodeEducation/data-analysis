@@ -1,10 +1,10 @@
 SQL Part 1 - Introduction and Azure Data Studio
 ===============================================
 
-Readings
---------
-
 Read the following articles, follow along where instructed:
+
+Introduction to SQL
+-------------------
 
 1. `What is SQL? <https://www.youtube.com/watch?v=27axs9dO7AE>`__
 

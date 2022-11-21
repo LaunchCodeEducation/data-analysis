@@ -1,10 +1,10 @@
 Cleaning Data 
 =============
 
-Readings
---------
-
 Read the following articles, follow along where instructed:
+
+Intro to Data Cleaning
+----------------------
 
 1. `Data Cleaning in Python: the Ultimate Guide <https://towardsdatascience.com/data-cleaning-in-python-the-ultimate-guide-2020-c63b88bf0a0d>`__.
 

@@ -1,8 +1,10 @@
 Data Visualization with Python
 ==============================
 
-Readings
---------
+Read the following articles, follow along where instructed:
+
+Intro to Data Vizualization
+---------------------------
 
 1. `An Intuitive Guide to Visualization in Python <https://www.analyticsvidhya.com/blog/2021/02/an-intuitive-guide-to-visualization-in-python/>`__. 
 
@@ -14,7 +16,8 @@ Readings
 
 5. `Designing Charts and Graphs: How to Choose the Right Data Visualization Types <https://www.datapine.com/blog/how-to-choose-the-right-data-visualization-types/>`__. 
 
-**Additional Resources and Practice**
+Matplotlib and Graphs
+---------------------
 
 6. `Matplotlib Tutorial <https://www.w3schools.com/python/matplotlib_intro.asp>`__. 
 

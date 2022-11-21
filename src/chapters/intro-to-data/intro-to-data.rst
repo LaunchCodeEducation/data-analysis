@@ -1,18 +1,24 @@
 Introduction To Data
 ====================
 
-Readings
---------
-
 Read the following articles, follow along where instructed:
+
+Methods and Techniques
+----------------------
 
 1. `Data Analysis Methods & Techniques <https://www.datapine.com/blog/data-analysis-methods-and-techniques/>`__.
 
 * Key Takeaways: Video about qualitative vs quantitative data illustrates some key points!
-  
+
+Data Analytics in Python
+------------------------
+
 2. `A Beginner's Guide to Data Analysis in Python <https://towardsdatascience.com/a-beginners-guide-to-data-analysis-in-python-188706df5447>`__.
 
 * Key Takeaways: How to take data from the computer and create a visualization using Python.
+
+Data Project Life Cycle
+-----------------------
 
 3. `Data project life cycle <https://www.northeastern.edu/graduate/blog/data-analysis-project-lifecycle/>`__.
 
