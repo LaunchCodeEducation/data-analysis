@@ -4,7 +4,7 @@ Exercises: Tableau Part 1 - Introduction to Visualization
 Getting Started
 ---------------
 
-Use this guide: `World Happiness Dashboard <https://towardsdatascience.com/world-happiness-dashboard-in-tableau-4dc504212288>`__ in Tableau, to create your own dashboard.
+Work through `World Happiness Dashboard <https://towardsdatascience.com/world-happiness-dashboard-in-tableau-4dc504212288>`__ in Tableau to create your own dashboard. This walkthrough uses the `World Happiness Dataset <https://www.kaggle.com/unsdsn/world-happiness?select=2019.csv>`__ on Kaggle.
 
 | Don't hesitate to change colors or add details to your visualizations.
 
