@@ -21,8 +21,8 @@ Step-by-step Guide for this Walkthrough
 
    A. Create the Map
 
-      #. Drop the **Latitude** pill into the *Rows* shelf
-      #. Drop **Longitude** pill into *Columns* shelf
+      #. Drop the **Latitude** pill into the *Rows* shelf.
+      #. Drop **Longitude** pill into *Columns* shelf.
       
    #. Drop **Country or region** onto the *Marks Card*. 
 
@@ -35,12 +35,12 @@ Step-by-step Guide for this Walkthrough
 
 #. **Viz 2: Happiness Score vs GDP and Healthy Life Expectancy**
 
-   A. Drag **Score** onto the *Row* shelf
+   A. Drag **Score** onto the *Row* shelf.
 
       #. It will automatically aggregate as a SUM of Score.
       #. To remove that, find the drop down menu on the right side of the pill and select “Dimension”.
 
-   #. Drag **GDP per capita** onto the *Columns* shelf
+   #. Drag **GDP per capita** onto the *Columns* shelf.
 
       #. Convert this into a “Dimension”, too.
       
@@ -55,18 +55,18 @@ Step-by-step Guide for this Walkthrough
       
    #. Drag the **Freedom to make life choices** pill onto the *Rows* shelf.
 
-      #. Notice that it changed to a SUM - keep it this way
+      #. Notice that it changed to a SUM - keep it this way.
 
-   #. Drag the **Social Support** pill onto the *Row* shelf
+   #. Drag the **Social Support** pill onto the *Row* shelf.
 
-      #. Notice that is also now a SUM - keep it this way
+      #. Notice that is also now a SUM - keep it this way.
       
    #. To rename an axis, double-click on it and make the changes desired.
-   #. Rename your sheet
+   #. Rename your sheet.
 
 #. **Make a Dashboard**
 
-   A. Use the tab to create a new dashboard
+   A. Use the tab to create a new dashboard.
    #. Drag your sheets onto the dashboard.
    
    .. admonition:: Note
