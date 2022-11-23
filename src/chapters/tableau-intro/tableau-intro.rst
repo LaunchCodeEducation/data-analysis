@@ -8,7 +8,7 @@ Read the following articles:
 
 .. admonition:: Note
 
-  Many of these articles were written for Tableau Desktop; however, a lot of the materials covered in 
+  Many of these articles were written for Tableau Desktop, however, a lot of the materials covered in 
   these articles are applicable to Tableau Public.
 
 | `The Tableau Workspace <https://help.tableau.com/current/pro/desktop/en-us/environment_workspace.htm>`__.
