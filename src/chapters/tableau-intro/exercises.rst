@@ -16,7 +16,7 @@ Step-by-step Guide for this Walkthrough
    As you read through the article, don't hesitate to try out what the videos demonstrate or just experiment with Tableau to figure things out. We have outlined the steps from the article below so you don't lose your place!
 
 
-#. Download the 2019.csv file (the link above should take you to that page)
+#. Download the ``2019.csv`` file from the Kaggle dataset.
 #. **Viz 1: Happiness Score of Countries — 2019**
 
    A. Create the Map
