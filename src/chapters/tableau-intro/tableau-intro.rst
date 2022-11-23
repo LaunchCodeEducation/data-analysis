@@ -65,7 +65,7 @@ Check Your Understanding
 
 .. admonition:: Question
 
-   Shifting a table from a wide format into a long format is called?
+   What is shifting a table from a wide format into a long format called?
 
 .. admonition:: Question
 
