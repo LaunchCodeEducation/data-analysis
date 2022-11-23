@@ -10,7 +10,8 @@ Work through `World Happiness Dashboard <https://towardsdatascience.com/world-ha
 
 | `Link to the dataset <https://www.kaggle.com/unsdsn/world-happiness?select=2019.csv>`__, if the hyperlink in the article is not working.
 
-**Step by step guide for this walkthrough**
+Step-by-step Guide for this Walkthrough
+-----------------------------------------
 
 .. admonition:: Note
 
