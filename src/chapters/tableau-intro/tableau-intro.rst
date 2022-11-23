@@ -61,7 +61,7 @@ Check Your Understanding
  
 .. admonition:: Question
 
-   Breaking a list of years into decades is an example of?
+   What is breaking a list of years into decades an example of?
 
 .. admonition:: Question
 
