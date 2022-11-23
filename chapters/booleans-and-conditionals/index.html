@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6. Making Decisions With Conditionals &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6.1. Decision Making" href="introduction.html" />
+    <link rel="prev" title="5.10. Studio: Data and Variables" href="../data-and-variables/studio.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li class="active"><span class="section-number">6. </span>Making Decisions With Conditionals</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="making-decisions-with-conditionals">
+<span id="conditionals"></span><h1><span class="section-number">6. </span>Making Decisions With Conditionals<a class="headerlink" href="#making-decisions-with-conditionals" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">6.1. Decision Making</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bool-data-type.html">6.2. Data Type for <code class="docutils literal notranslate"><span class="pre">True</span></code>/<code class="docutils literal notranslate"><span class="pre">False</span></code></a><ol>
+<li class="toctree-l2"><a class="reference internal" href="bool-data-type.html#identify-true-and-false">6.2.1. Identify <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code></a><ol>
+<li class="toctree-l3"><a class="reference internal" href="bool-data-type.html#boolean-values">6.2.1.1. Boolean Values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bool-data-type.html#data-type-review">6.2.1.2. Data Type Review</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="boolean-expressions.html">6.3. Boolean Expressions</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="boolean-expressions.html#testing-for-equality">6.3.1. Testing for Equality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="boolean-expressions.html#other-comparisons">6.3.2. Other Comparisons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="boolean-expressions.html#check-your-understanding">6.3.3. Check Your Understanding</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="math-with-booleans.html">6.4. Can We Do Math with Boolean Values?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conditionals.html">6.5. Conditionals</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html#if-statements">6.5.1. <code class="docutils literal notranslate"><span class="pre">if</span></code> Statements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html#else-clause">6.5.2. <code class="docutils literal notranslate"><span class="pre">else</span></code> Clause</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conditionals.html#check-your-understanding">6.5.3. Check Your Understanding</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="logical-operators.html">6.6. Logical Operators</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="logical-operators.html#logical-and">6.6.1. Logical <code class="docutils literal notranslate"><span class="pre">and</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="logical-operators.html#logical-or">6.6.2. Logical <code class="docutils literal notranslate"><span class="pre">or</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="logical-operators.html#logical-not">6.6.3. Logical <code class="docutils literal notranslate"><span class="pre">not</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="logical-operators.html#longer-combinations">6.6.4. Longer Combinations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logical-operators.html#check-your-understanding">6.6.5. Check Your Understanding</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="truth-tables.html">6.7. Truth Tables</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="truth-tables.html#truth-table-for-and">6.7.1. Truth Table for <code class="docutils literal notranslate"><span class="pre">and</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="truth-tables.html#truth-table-for-or">6.7.2. Truth Table for <code class="docutils literal notranslate"><span class="pre">or</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="truth-tables.html#order-of-operations">6.7.3. Order of Operations</a><ol>
+<li class="toctree-l3"><a class="reference internal" href="truth-tables.html#table-of-operator-order">6.7.3.1. Table of Operator Order</a></li>
+</ol>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="truth-tables.html#check-your-understanding">6.7.4. Check Your Understanding</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nested-conditionals.html">6.8. Nested Conditionals</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="nested-conditionals.html#nesting-also-works-with-else">6.8.1. Nesting Also Works With <code class="docutils literal notranslate"><span class="pre">else</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="nested-conditionals.html#check-your-understanding">6.8.2. Check Your Understanding</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chained-conditionals.html">6.9. Chained Conditionals</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="chained-conditionals.html#elif-statements">6.9.1. <code class="docutils literal notranslate"><span class="pre">elif</span></code> Statements</a><ol>
+<li class="toctree-l3"><a class="reference internal" href="chained-conditionals.html#multiple-elif-statements">6.9.1.1. Multiple <code class="docutils literal notranslate"><span class="pre">elif</span></code> Statements</a></li>
+</ol>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chained-conditionals.html#nested-vs-chained-conditionals">6.9.2. Nested vs. Chained Conditionals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chained-conditionals.html#check-your-understanding">6.9.3. Check Your Understanding</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="exercises.html">6.10. Exercises: Booleans and Conditionals</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="exercises.html#submitting-your-work">6.10.1. Submitting Your Work</a></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="../data-and-variables/studio.html"><span aria-hidden="true">&larr;</span> <span class="section-number">5.10. </span>Studio: Data and Variables</a></li>
+        
+        
+        <li class="next"><a href="introduction.html"><span class="section-number">6.1. </span>Decision Making <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

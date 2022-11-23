@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12.7. Additional Collections in Python &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="12.8. Exercises: Dictionaries" href="exercises.html" />
+    <link rel="prev" title="12.6. Search a Dictionary" href="search-a-dictionary.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">12. </span>Python Dictionaries and Tuples</a></li>
+    <li class="active"><span class="section-number">12.7. </span>Additional Collections in Python</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="additional-collections-in-python">
+<h1><span class="section-number">12.7. </span>Additional Collections in Python<a class="headerlink" href="#additional-collections-in-python" title="Permalink to this headline">¶</a></h1>
+<p>Lists and dictionaries are just two of the four built-in collections in Python. The other two are tuples and sets.</p>
+<div class="section" id="tuples">
+<h2><span class="section-number">12.7.1. </span>Tuples<a class="headerlink" href="#tuples" title="Permalink to this headline">¶</a></h2>
+<p>Tuples are ordered collections similar to lists, except tuples are <em>immutable</em>. However, we can do many of the same things with tuples as we do with lists.
+We can save snippets of a tuple in a different tuple, we can iterate over tuples, and access individual elements with their index.
+So then, why use a tuple over a list?
+Here are a few of the reasons why a programmer might opt for tuples over lists:</p>
+<ol class="arabic simple">
+<li>A tuple and a list of the same size do NOT take up the same amount of space in the computer’s memory. Tuples take up less space! While this isn’t always a concern in small personal applications, it can be a concern in larger enterprise applications.</li>
+<li>Tuples take less time! If we want to iterate over a tuple of the same size as a list, it will take the computer less time to go over the tuple. This is another thing where if you are working with a small tuple than you probably won’t notice the difference, but if the elements number in the tens of thousands, then you may want to use a tuple to save the computer time.</li>
+<li>If you have a data set that you want to protect from accidental changes, then using a tuple for storage is a great way to protect it!</li>
+</ol>
+<p>While tuples can serve many of the same functions as lists, the syntax is different.
+If you want to assign a new tuple, you use parantheses as opposed to brackets.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">my_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Let’s walk through how to work with tuples. If you have a tuple with students’ names, you may want to loop through the list to print out the class roster and then add a student who joins mid-year.</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">my_class</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Sandra&quot;</span><span class="p">,</span> <span class="s2">&quot;Deidre&quot;</span><span class="p">,</span> <span class="s2">&quot;Mary&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">student</span> <span class="ow">in</span> <span class="n">my_class</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="p">)</span>
+
+<span class="n">my_class</span> <span class="o">=</span> <span class="n">my_class</span> <span class="o">+</span> <span class="p">(</span><span class="s2">&quot;Denise&quot;</span><span class="p">,)</span>
+
+<span class="k">for</span> <span class="n">student</span> <span class="ow">in</span> <span class="n">my_class</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/TuplesBasics" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p>Because tuples are immutable, to add an element to <code class="docutils literal notranslate"><span class="pre">my_class</span></code>, we have to save the result as a new tuple.
+You may also note that when adding an element to a tuple, we had to use a second tuple even if it was only one element.
+Tuples with one element must include the comma. If you remove the comma, <code class="docutils literal notranslate"><span class="pre">(&quot;Denise&quot;)</span></code>, that is not a tuple.</p>
+<p>You can also easily convert between lists and tuples using type conversion:</p>
+<div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">my_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+
+<span class="n">my_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">my_tuple</span><span class="p">)</span>
+
+<span class="n">my_new_tuple</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>To explore tuples further, check out <a class="reference external" href="https://www.w3schools.com/python/python_tuples.asp" target="_blank">W3Schools<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+</div>
+<div class="section" id="sets">
+<h2><span class="section-number">12.7.2. </span>Sets<a class="headerlink" href="#sets" title="Permalink to this headline">¶</a></h2>
+<p>The final collection in Python is a set. Sets are unordered and unindexed. While we will not cover them in this class, you should know that they may come into play later in your data analysis career.
+Sets cannot store duplicate values and are highly efficient when it comes to mathematical operations. This makes them great for large amounts of data!</p>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">12.7.3. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Which of the following is NOT a collection in Python?</p>
+<ol class="last loweralpha simple">
+<li>list</li>
+<li>dictionary</li>
+<li>thesaurus</li>
+<li>set</li>
+<li>tuple</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">True or false: tuples are immutable.</p>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="search-a-dictionary.html"><span aria-hidden="true">&larr;</span> <span class="section-number">12.6. </span>Search a Dictionary</a></li>
+        
+        
+        <li class="next"><a href="exercises.html"><span class="section-number">12.8. </span>Exercises: Dictionaries <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

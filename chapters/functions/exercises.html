@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11.10. Exercises: Functions &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="11.11. Studio: Functions" href="studio.html" />
+    <link rel="prev" title="11.9. Why Create Functions?" href="why-create-functions.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">11. </span>What’s Your Function</a></li>
+    <li class="active"><span class="section-number">11.10. </span>Exercises: Functions</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="exercises-functions">
+<span id="id1"></span><h1><span class="section-number">11.10. </span>Exercises: Functions<a class="headerlink" href="#exercises-functions" title="Permalink to this headline">¶</a></h1>
+<p>To solve problems with code, you need to be able to break large
+problems into small ones. Usually, these smaller problems will take the form of
+functions that are used to solve the larger problem. Therefore, to solve problems with code,
+you need to be skilled at writing functions. And to master
+functions, you need to write a <em>lot</em> of them.</p>
+<p>These exercises ask you to write many relatively small functions, which
+combine to form larger, more complicated ones.</p>
+<p>At the end, you will be able to create strings of shapes, like this nifty
+diamond:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    #
+   ###
+  #####
+ #######
+#########
+#########
+ #######
+  #####
+   ###
+    #
+</pre></div>
+</div>
+<div class="section" id="getting-started">
+<h2><span class="section-number">11.10.1. </span>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>You will find the starter code <a class="reference external" href="https://replit.com/&#64;launchcode/FunctionsExercises" target="_blank">here<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+</div>
+<div class="section" id="part-1-rectangles">
+<span id="exercises-functions-part1"></span><h2><span class="section-number">11.10.2. </span>Part 1: Rectangles<a class="headerlink" href="#part-1-rectangles" title="Permalink to this headline">¶</a></h2>
+<ol class="upperalpha">
+<li><p class="first">Write a function <code class="docutils literal notranslate"><span class="pre">make_line(size)</span></code> that returns a line with exactly <code class="docutils literal notranslate"><span class="pre">size</span></code>
+hashes.</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">make_line</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#####
+</pre></div>
+</div>
+</li>
+<li><p class="first">Write a function called <code class="docutils literal notranslate"><span class="pre">make_square(size)</span></code> that returns a <code class="docutils literal notranslate"><span class="pre">size</span></code> by
+<code class="docutils literal notranslate"><span class="pre">size</span></code> string of hashes. The function should NOT print each row of the
+square. Instead, it must return a single string that contains the entire
+shape.</p>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<ol class="last arabic simple">
+<li>Call your <code class="docutils literal notranslate"><span class="pre">make_line</span></code> function to create each row of the square.</li>
+<li>The newline character, <code class="docutils literal notranslate"><span class="pre">\n</span></code>, will be helpful to you.</li>
+<li>Do NOT include a newline character at the end of your string.</li>
+</ol>
+</div>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">make_square</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#####
+#####
+#####
+#####
+#####
+</pre></div>
+</div>
+<div class="admonition-warning admonition">
+<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
+<p class="last">For each of the shape exercises, do not include a newline character at
+the very end of your string. While the final <code class="docutils literal notranslate"><span class="pre">\n</span></code> might not be
+noticeable for the simpler shapes, including it will make life harder for
+you toward the end of the exercises.</p>
+</div>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/functions.html#exercises-functions-square"><span class="std std-ref">Check Your Solution</span></a></p>
+</li>
+<li><p class="first">Write a function <code class="docutils literal notranslate"><span class="pre">make_rectangle(width,</span> <span class="pre">height)</span></code> that returns a
+rectangle with the given width and height. Use your <code class="docutils literal notranslate"><span class="pre">make_line</span></code> function to
+do this.</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">make_rectangle</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#####
+#####
+#####
+</pre></div>
+</div>
+</li>
+<li><p class="first">Now, go back and rewrite <code class="docutils literal notranslate"><span class="pre">make_square</span></code> to use <code class="docutils literal notranslate"><span class="pre">make_rectangle</span></code>.</p>
+</li>
+</ol>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/functions.html#exercises-functions-rectangle"><span class="std std-ref">Check Your Solution</span></a></p>
+</div>
+<div class="section" id="part-2-triangles">
+<span id="exercises-functions-part2"></span><h2><span class="section-number">11.10.3. </span>Part 2:  Triangles<a class="headerlink" href="#part-2-triangles" title="Permalink to this headline">¶</a></h2>
+<ol class="upperalpha">
+<li><p class="first">Write a function <code class="docutils literal notranslate"><span class="pre">make_downward_stairs(height)</span></code> that prints the staircase
+pattern shown below, with the given height. Use your <code class="docutils literal notranslate"><span class="pre">make_line</span></code> function
+to do this.</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">make_downward_stairs</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#
+##
+###
+####
+#####
+</pre></div>
+</div>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/functions.html#exercises-functions-stairs"><span class="std std-ref">Check Your Solution</span></a></p>
+</li>
+<li><p class="first">Write a function <code class="docutils literal notranslate"><span class="pre">make_space_line(numSpaces,</span> <span class="pre">numChars)</span></code> that returns a line
+with exactly the specified number of spaces, followed by the
+specified number of hashes, followed again by <code class="docutils literal notranslate"><span class="pre">num_spaces</span></code> more spaces.</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">make_space_line</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">));</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>___#####___
+</pre></div>
+</div>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="last">We have inserted underscores to represent spaces, so they are visible in the output. Don’t do this in your code.</p>
+</div>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/functions.html#exercises-functions-space-line"><span class="std std-ref">Check Your Solution</span></a></p>
+</li>
+<li><p class="first">Write a function <code class="docutils literal notranslate"><span class="pre">make_isosceles_triangle(height)</span></code> that returns a triangle
+of the given height.</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">make_isosceles_triangle</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    #
+   ###
+  #####
+ #######
+#########
+</pre></div>
+</div>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="last">Consider the top line of the triangle to be level 0, the next to be line 1, and so on. Then line <code class="docutils literal notranslate"><span class="pre">i</span></code> is a space-line with <code class="docutils literal notranslate"><span class="pre">height</span> <span class="pre">-</span> <span class="pre">i</span> <span class="pre">-</span> <span class="pre">1</span></code> spaces and <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">*</span> <span class="pre">i</span> <span class="pre">+</span> <span class="pre">1</span></code> hashes.</p>
+</div>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/functions.html#exercises-functions-triangle"><span class="std std-ref">Check Your Solution</span></a></p>
+</li>
+</ol>
+</div>
+<div class="section" id="part-3-diamonds">
+<span id="exercises-functions-part3"></span><h2><span class="section-number">11.10.4. </span>Part 3: Diamonds<a class="headerlink" href="#part-3-diamonds" title="Permalink to this headline">¶</a></h2>
+<ol class="upperalpha">
+<li><p class="first">Write a function <code class="docutils literal notranslate"><span class="pre">make_diamond(height)</span></code> that returns a diamond where the
+triangle formed by the <em>top</em> portion has the given height.</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">make_diamond</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    #
+   ###
+  #####
+ #######
+#########
+#########
+ #######
+  #####
+   ###
+    #
+</pre></div>
+</div>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/functions.html#exercises-functions-diamond"><span class="std std-ref">Check Your Solution</span></a></p>
+</li>
+</ol>
+</div>
+<div class="section" id="optional-mission">
+<span id="exercises-functions-bonus"></span><h2><span class="section-number">11.10.5. </span>Optional Mission<a class="headerlink" href="#optional-mission" title="Permalink to this headline">¶</a></h2>
+<p>Refactor your functions so that they take a single character as a parameter,
+and draw the shapes with that character instead of always using <code class="docutils literal notranslate"><span class="pre">'#'</span></code>. Make
+the new parameter optional, with default value <code class="docutils literal notranslate"><span class="pre">'#'</span></code>.</p>
+</div>
+<div class="section" id="submitting-your-work">
+<h2><span class="section-number">11.10.6. </span>Submitting Your Work<a class="headerlink" href="#submitting-your-work" title="Permalink to this headline">¶</a></h2>
+<p>When finished copy the URLs to your repls for the exercises, separating each URL with a semi-colon and paste them into the submission box in Canvas for <strong>Exercises: Booleans, Conditionals, and Loops</strong> and click <em>Submit</em>.</p>
+<p>You should have a total of <strong>6</strong> repls, <strong>1</strong> from the above Functions Exercises and <strong>5</strong> from from <a class="reference internal" href="../errors-and-debugging/exercises.html#errors-and-debugging-exercises"><span class="std std-ref">Errors and Debugging Exercises</span></a>.</p>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="why-create-functions.html"><span aria-hidden="true">&larr;</span> <span class="section-number">11.9. </span>Why Create Functions?</a></li>
+        
+        
+        <li class="next"><a href="studio.html"><span class="section-number">11.11. </span>Studio: Functions <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

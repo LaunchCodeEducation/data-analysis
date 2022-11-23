@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6.3. Boolean Expressions &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6.4. Can We Do Math with Boolean Values?" href="math-with-booleans.html" />
+    <link rel="prev" title="6.2. Data Type for True/False" href="bool-data-type.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">6. </span>Making Decisions With Conditionals</a></li>
+    <li class="active"><span class="section-number">6.3. </span>Boolean Expressions</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="boolean-expressions">
+<span id="boolean-expression"></span><h1><span class="section-number">6.3. </span>Boolean Expressions<a class="headerlink" href="#boolean-expressions" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="index-0"></span><span class="target" id="index-1"></span><p id="index-2">A <strong>boolean expression</strong> makes a comparison and returns one of the boolean
+values, either <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>To make a decision within our code, a boolean expression is used as the
+<strong>condition</strong>. A condition is a comparison that can be called correct
+(<code class="docutils literal notranslate"><span class="pre">True</span></code>) or incorrect (<code class="docutils literal notranslate"><span class="pre">False</span></code>).</p>
+<div class="section" id="testing-for-equality">
+<h2><span class="section-number">6.3.1. </span>Testing for Equality<a class="headerlink" href="#testing-for-equality" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>equality operator</strong>, <code class="docutils literal notranslate"><span class="pre">==</span></code>, compares two values and returns <code class="docutils literal notranslate"><span class="pre">True</span></code> or
+<code class="docutils literal notranslate"><span class="pre">False</span></code> depending on whether the values are identical.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">37</span>
+<span class="n">other_num</span> <span class="o">=</span> <span class="mi">40</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">==</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span> <span class="o">==</span> <span class="s1">&#39;def&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num</span> <span class="o">==</span> <span class="n">other_num</span> <span class="o">-</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>True
+False
+True
+</pre></div>
+</div>
+</div>
+<p>In line 4, the two values are equal, so the expression evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code>.
+In the line 5, the string <code class="docutils literal notranslate"><span class="pre">abc</span></code> is not equal to <code class="docutils literal notranslate"><span class="pre">def</span></code>, so we get <code class="docutils literal notranslate"><span class="pre">False</span></code>.
+Line 7 compares the result of <code class="docutils literal notranslate"><span class="pre">other_num</span> <span class="pre">-</span> <span class="pre">3</span></code> with the value stored in
+<code class="docutils literal notranslate"><span class="pre">num</span></code>.</p>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>A common error is using a single equals sign (<code class="docutils literal notranslate"><span class="pre">=</span></code>) instead of a double
+equals (<code class="docutils literal notranslate"><span class="pre">==</span></code>) when comparing two values. We call <code class="docutils literal notranslate"><span class="pre">=</span></code> an
+<em>assignment</em> operator, but <code class="docutils literal notranslate"><span class="pre">==</span></code> is a <em>comparison</em> operator.</p>
+<ol class="last arabic simple">
+<li>To set the value of a variable, use <code class="docutils literal notranslate"><span class="pre">=</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">name</span> <span class="pre">=</span> <span class="pre">'Mae'</span></code>).</li>
+<li>To compare values, use <code class="docutils literal notranslate"><span class="pre">==</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">name</span> <span class="pre">==</span> <span class="pre">other_name</span></code>).</li>
+</ol>
+</div>
+<p>An equality test is <em>symmetric</em>, meaning that we can switch the places of the
+two values and get the same the result.  If <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">==</span> <span class="pre">7</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">==</span> <span class="pre">num</span></code> is also <code class="docutils literal notranslate"><span class="pre">True</span></code>. However, an assignment statement is NOT
+symmetric: <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">=</span> <span class="pre">7</span></code> works while <code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">=</span> <span class="pre">num</span></code> does not.</p>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Run the code as-is first.</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Cynthia&#39;</span>
+<span class="n">other_name</span> <span class="o">=</span> <span class="s1">&#39;Rose&#39;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">other_name</span><span class="p">,</span> <span class="n">name</span> <span class="o">==</span> <span class="n">other_name</span><span class="p">)</span>
+
+<span class="n">name</span> <span class="o">=</span> <span class="n">other_name</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">other_name</span><span class="p">)</span>
+
+<span class="c1"># Replace the assignment statement on line 7 with other_name = name.</span>
+<span class="c1"># Does the output change?</span>
+
+<span class="c1"># Does name = other_name behave the same way as other_name = name?</span>
+<span class="c1"># What happens when you try print(name = other_name)?</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/Boolean-Expressions" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+</div>
+</div>
+<div class="section" id="other-comparisons">
+<h2><span class="section-number">6.3.2. </span>Other Comparisons<a class="headerlink" href="#other-comparisons" title="Permalink to this headline">¶</a></h2>
+<p id="index-3">The <code class="docutils literal notranslate"><span class="pre">==</span></code> operator is one of seven common <strong>comparison operators</strong>.</p>
+<div class="admonition-note admonition" id="index-4">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="last">Remember: The values on either side of an operator are called <strong>operands</strong>.</p>
+</div>
+<span id="index-5"></span><table border="1" class="colwidths-auto docutils align-default" id="id1">
+<caption><span class="caption-text">Comparison Operators</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Operator</th>
+<th class="head">Description</th>
+<th class="head">Examples Returning <code class="docutils literal notranslate"><span class="pre">True</span></code></th>
+<th class="head">Examples Returning <code class="docutils literal notranslate"><span class="pre">False</span></code></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Equal (<code class="docutils literal notranslate"><span class="pre">==</span></code>)</td>
+<td>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if two compared values (operands) are equal, and <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</td>
+<td><p class="first"><code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">==</span> <span class="pre">3</span> <span class="pre">+</span> <span class="pre">4</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">'ab'</span> <span class="pre">==</span> <span class="pre">'a'+'b'</span></code></p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">&quot;dog&quot;</span> <span class="pre">==</span> <span class="pre">&quot;dog&quot;</span></code></p>
+</td>
+<td><p class="first"><code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">==</span> <span class="pre">5</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">'dog'</span> <span class="pre">==</span> <span class="pre">'cat'</span></code></p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">'cat'</span> <span class="pre">==</span> <span class="pre">'Cat'</span></code></p>
+</td>
+</tr>
+<tr class="row-odd"><td>Not equal (<code class="docutils literal notranslate"><span class="pre">!=</span></code>)</td>
+<td>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if two values (operands) are NOT equal, and <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</td>
+<td><p class="first"><code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">!=</span> <span class="pre">5</span></code></p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">&quot;dog&quot;</span> <span class="pre">!=</span> <span class="pre">&quot;cat&quot;</span></code></p>
+</td>
+<td><p class="first"><code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">!=</span> <span class="pre">7</span></code></p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">&quot;dog&quot;</span> <span class="pre">!=</span> <span class="pre">&quot;dog&quot;</span></code></p>
+</td>
+</tr>
+<tr class="row-even"><td>Greater than (<code class="docutils literal notranslate"><span class="pre">&gt;</span></code>)</td>
+<td>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the left-hand value (operand) is greater than the right-hand operand, and <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</td>
+<td><p class="first"><code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">&gt;</span> <span class="pre">5</span></code></p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">'b'</span> <span class="pre">&gt;</span> <span class="pre">'a'</span></code></p>
+</td>
+<td><p class="first"><code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">&gt;</span> <span class="pre">7</span></code></p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">'a'</span> <span class="pre">&gt;</span> <span class="pre">'b'</span></code></p>
+</td>
+</tr>
+<tr class="row-odd"><td>Less than (<code class="docutils literal notranslate"><span class="pre">&lt;</span></code>)</td>
+<td>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the left-hand operand is less than the right-hand operand, and <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</td>
+<td><p class="first"><code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">&lt;</span> <span class="pre">7</span></code></p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">'a'</span> <span class="pre">&lt;</span> <span class="pre">'b'</span></code></p>
+</td>
+<td><p class="first"><code class="docutils literal notranslate"><span class="pre">15</span> <span class="pre">&lt;</span> <span class="pre">15</span></code></p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">'b'</span> <span class="pre">&lt;</span> <span class="pre">'a'</span></code></p>
+</td>
+</tr>
+<tr class="row-even"><td>Greater than or equal (<code class="docutils literal notranslate"><span class="pre">&gt;=</span></code>)</td>
+<td>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the left-hand operand is greater than or equal to the right-hand operand, and <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</td>
+<td><p class="first"><code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">&gt;=</span> <span class="pre">5</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">&gt;=</span> <span class="pre">7</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">'b'</span> <span class="pre">&gt;=</span> <span class="pre">'a'</span></code></p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">'b'</span> <span class="pre">&gt;=</span> <span class="pre">'b'</span></code></p>
+</td>
+<td><p class="first"><code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">&gt;=</span> <span class="pre">7</span></code></p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">'a'</span> <span class="pre">&gt;=</span> <span class="pre">'b'</span></code></p>
+</td>
+</tr>
+<tr class="row-odd"><td>Less than or equal (<code class="docutils literal notranslate"><span class="pre">&lt;=</span></code>)</td>
+<td>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the left-hand value is less than or equal to the right-hand value, and <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</td>
+<td><p class="first"><code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">&lt;=</span> <span class="pre">7</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">&lt;=</span> <span class="pre">5</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">'a'</span> <span class="pre">&lt;=</span> <span class="pre">'b'</span></code></p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">'a'</span> <span class="pre">&lt;=</span> <span class="pre">'a'</span></code></p>
+</td>
+<td><p class="first"><code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">&lt;=</span> <span class="pre">5</span></code></p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">'b'</span> <span class="pre">&lt;=</span> <span class="pre">'a'</span></code></p>
+</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">in</span></code></td>
+<td>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the left-hand value is found inside the right-hand value, and <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.
+This operator does NOT work for the <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code> data types.</td>
+<td><p class="first"><code class="docutils literal notranslate"><span class="pre">'a'</span> <span class="pre">in</span> <span class="pre">'Happy'</span></code></p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">'stop'</span> <span class="pre">in</span> <span class="pre">'unstoppable'</span></code></p>
+</td>
+<td><p class="first"><code class="docutils literal notranslate"><span class="pre">'A'</span> <span class="pre">in</span> <span class="pre">'apple'</span></code> (case matters)</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">'oy'</span> <span class="pre">in</span> <span class="pre">'you'</span></code> (order matters)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">6.3.3. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Which of the following are boolean expressions? Select ALL that apply.</p>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">&lt;=</span> <span class="pre">4</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">+</span> <span class="pre">4</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">&quot;DogCat&quot;</span> <span class="pre">==</span> <span class="pre">&quot;dog&quot;</span> <span class="pre">+</span> <span class="pre">&quot;cat&quot;</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">&quot;False&quot;</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">'Rutabagas!'</span></code></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="bool-data-type.html"><span aria-hidden="true">&larr;</span> <span class="section-number">6.2. </span>Data Type for <code class="docutils literal notranslate"><span class="pre">True</span></code>/<code class="docutils literal notranslate"><span class="pre">False</span></code></a></li>
+        
+        
+        <li class="next"><a href="math-with-booleans.html"><span class="section-number">6.4. </span>Can We Do Math with Boolean Values? <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

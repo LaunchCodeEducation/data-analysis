@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8.9. Checking Strings &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="8.10. The string Module" href="string-module.html" />
+    <link rel="prev" title="8.8. Iteration with Strings" href="string-iteration.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">8. </span>Stringing Characters Together</a></li>
+    <li class="active"><span class="section-number">8.9. </span>Checking Strings</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="checking-strings">
+<h1><span class="section-number">8.9. </span>Checking Strings<a class="headerlink" href="#checking-strings" title="Permalink to this headline">¶</a></h1>
+<p>It is often helpful to examine a character and test whether it is uppercase,
+lowercase, or whether it is a character or a digit.</p>
+<p>We can use bracket notation and string methods inside a
+<a class="reference internal" href="../booleans-and-conditionals/boolean-expressions.html#boolean-expression"><span class="std std-ref">boolean expression</span></a> to check if a string meets a
+certain condition.</p>
+<div class="section" id="checking-type">
+<h2><span class="section-number">8.9.1. </span>Checking Type<a class="headerlink" href="#checking-type" title="Permalink to this headline">¶</a></h2>
+<p>The string methods only work on string objects. Let’s say <code class="docutils literal notranslate"><span class="pre">my_var</span> <span class="pre">=</span> <span class="pre">'Python'</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">my_var.upper()</span></code> works just fine. However, if we were to reassign a number
+to the variable, like <code class="docutils literal notranslate"><span class="pre">my_var</span> <span class="pre">=</span> <span class="pre">3.14159</span></code>, then <code class="docutils literal notranslate"><span class="pre">my_var.upper()</span></code> throws an
+error.</p>
+<p>Let’s see how we can use the <code class="docutils literal notranslate"><span class="pre">type()</span></code> function to check for a string.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">my_var</span> <span class="o">=</span> <span class="mi">42</span>
+
+<span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">my_var</span><span class="p">)</span> <span class="o">==</span> <span class="nb">str</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The value &#39;</span><span class="si">{0}</span><span class="s2">&#39; is a string.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">my_var</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The value </span><span class="si">{0}</span><span class="s2"> is NOT a string.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">my_var</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/StringConditionalsPractice" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p>Run the program with each of the following values for <code class="docutils literal notranslate"><span class="pre">my_var</span></code>:</p>
+<ol class="arabic simple">
+<li><code class="docutils literal notranslate"><span class="pre">'1234'</span></code> vs. <code class="docutils literal notranslate"><span class="pre">1234</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> vs. <code class="docutils literal notranslate"><span class="pre">&quot;True&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;False&quot;</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">0.333</span></code> vs. <code class="docutils literal notranslate"><span class="pre">'0.333'</span></code></li>
+</ol>
+<p><strong>Follow Up</strong>:</p>
+<ol class="last arabic simple">
+<li>Add an <code class="docutils literal notranslate"><span class="pre">elif</span></code> statement and code block to check for the <code class="docutils literal notranslate"><span class="pre">int</span></code> data
+type.</li>
+<li>Repeat this process for the <code class="docutils literal notranslate"><span class="pre">float</span></code> and <code class="docutils literal notranslate"><span class="pre">bool</span></code> data types.</li>
+<li>Rerun the program with the different <code class="docutils literal notranslate"><span class="pre">my_var</span></code> values.</li>
+</ol>
+</div>
+<p>We can easily modify line 3 to check if <code class="docutils literal notranslate"><span class="pre">my_var</span></code> is an <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>,
+or <code class="docutils literal notranslate"><span class="pre">bool</span></code> data type. We could also use an <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code> block to check for
+the different data types.  (<em>TRY IT</em>!)</p>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>Of course, we could avoid the conditional block completely with:</p>
+<div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The value </span><span class="si">{0}</span><span class="s2"> is a </span><span class="si">{1}</span><span class="s2"> data type.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">my_var</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">my_var</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="comparing-strings">
+<h2><span class="section-number">8.9.2. </span>Comparing Strings<a class="headerlink" href="#comparing-strings" title="Permalink to this headline">¶</a></h2>
+<p>We can use the comparison operators <code class="docutils literal notranslate"><span class="pre">==,</span> <span class="pre">!=,</span> <span class="pre">&lt;,</span> <span class="pre">&gt;,</span> <span class="pre">&lt;=,</span> <span class="pre">&gt;=</span></code> on strings.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">my_pet</span> <span class="o">=</span> <span class="s1">&#39;dog&#39;</span>
+<span class="n">your_pet</span> <span class="o">=</span> <span class="s1">&#39;cat&#39;</span>
+<span class="n">other_pet</span> <span class="o">=</span> <span class="s1">&#39;crow&#39;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">my_pet</span> <span class="o">==</span> <span class="n">your_pet</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">your_pet</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">other_pet</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_pet</span> <span class="o">&lt;</span> <span class="n">your_pet</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>False
+True
+False
+</pre></div>
+</div>
+</div>
+<ol class="arabic simple">
+<li>Line 5 evaluates if the strings <code class="docutils literal notranslate"><span class="pre">'dog'</span></code> and <code class="docutils literal notranslate"><span class="pre">'cat'</span></code> are identical and
+then prints the boolean result (<code class="docutils literal notranslate"><span class="pre">False</span></code>).</li>
+<li>Line 6 evaluates if the first character in <code class="docutils literal notranslate"><span class="pre">'cat'</span></code> and <code class="docutils literal notranslate"><span class="pre">'crow'</span></code> are the
+same (<code class="docutils literal notranslate"><span class="pre">True</span></code>).<ul>
+<li>Note that the first character comparison for <code class="docutils literal notranslate"><span class="pre">'cat'</span></code> and <code class="docutils literal notranslate"><span class="pre">'Crow'</span></code>
+would return <code class="docutils literal notranslate"><span class="pre">False</span></code> due to the different cases.</li>
+<li>To make the expression <em>case-insensitive</em>, we need to convert each
+character to the same case (e.g.
+<code class="docutils literal notranslate"><span class="pre">your_pet[0].lower()</span> <span class="pre">==</span> <span class="pre">other_pet[0].lower()</span></code>).</li>
+</ul>
+</li>
+<li>Line 7 evaluates if <code class="docutils literal notranslate"><span class="pre">'dog'</span></code> is less than <code class="docutils literal notranslate"><span class="pre">'cat'</span></code>. This comparison is a bit more complicated.
+What is really being compared is each character’s Unicode value. All characters, even letters,
+have <a class="reference external" href="https://unicode-table.com/en/" target="_blank">Unicode numbers<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>. The Unicode value of a letter corresponds with its alphabetical order.
+So a string that comes earlier in the alphabet is considered <em>less than</em> a string that comes
+later. Since <code class="docutils literal notranslate"><span class="pre">'dog'</span></code> follows <code class="docutils literal notranslate"><span class="pre">'cat'</span></code> alphabetically, the expression
+<code class="docutils literal notranslate"><span class="pre">'dog'</span> <span class="pre">&lt;</span> <span class="pre">'cat'</span></code> evaluates to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</li>
+</ol>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>Case matters when comparing characters! CAPITAL letters have smaller Unicode values
+than lowercase letters.</p>
+<p><code class="docutils literal notranslate"><span class="pre">'Zebra'</span> <span class="pre">&lt;</span> <span class="pre">'zebra'</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>,</p>
+<p><code class="docutils literal notranslate"><span class="pre">'Zebra'</span> <span class="pre">&lt;</span> <span class="pre">'apple'</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>,  and</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">'zebra'</span> <span class="pre">&lt;</span> <span class="pre">'apple'</span></code> is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</div>
+<div class="section" id="checking-with-in-and-not-in">
+<h3><span class="section-number">8.9.2.1. </span>Checking with <code class="docutils literal notranslate"><span class="pre">in</span></code> and <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code><a class="headerlink" href="#checking-with-in-and-not-in" title="Permalink to this headline">¶</a></h3>
+<p>If we want to find out if a certain character is in a string, we could iterate
+through the string and compare each character to the one we want.</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;The Hunger Games&#39;</span>
+<span class="n">search_character</span> <span class="o">=</span> <span class="s1">&#39;e&#39;</span>
+
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">title</span><span class="p">:</span>
+   <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="n">search_character</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;</span><span class="si">{0}</span><span class="s2">&#39; is in &#39;</span><span class="si">{1}</span><span class="s2">&#39;.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">search_character</span><span class="p">,</span> <span class="n">title</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<p>However, this is inefficient, since the loop continues even after we find
+<code class="docutils literal notranslate"><span class="pre">search_character</span></code>. As coded, the program prints the output once each time
+<code class="docutils literal notranslate"><span class="pre">search_character</span></code> is found.</p>
+<p>A better approach is to use the <code class="docutils literal notranslate"><span class="pre">in</span></code> operator (or its opposite, <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code>)
+to return the same information. The <code class="docutils literal notranslate"><span class="pre">in</span></code> operator tests if one string is a
+substring of another.</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;The Hunger Games&#39;</span>
+<span class="n">search_character</span> <span class="o">=</span> <span class="s1">&#39;e&#39;</span>
+
+<span class="k">if</span> <span class="n">search_character</span> <span class="ow">in</span> <span class="n">title</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;</span><span class="si">{0}</span><span class="s2">&#39; is in &#39;</span><span class="si">{1}</span><span class="s2">&#39;.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">search_character</span><span class="p">,</span> <span class="n">title</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p>This example uses the <code class="docutils literal notranslate"><span class="pre">in</span></code> operator to decide when to increase the value
+of <code class="docutils literal notranslate"><span class="pre">vowel_count</span></code>.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Make the check for vowels case-insensitive.</span>
+<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Armadillos or anteaters&quot;</span>
+<span class="n">vowels</span> <span class="o">=</span> <span class="s1">&#39;aeiou&#39;</span>
+<span class="n">vowel_count</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">text</span><span class="p">:</span>
+   <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">vowels</span><span class="p">:</span>
+      <span class="n">vowel_count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&#39;</span><span class="si">{</span><span class="n">text</span><span class="si">}</span><span class="s2">&#39; contains </span><span class="si">{</span><span class="n">vowel_count</span><span class="si">}</span><span class="s2"> vowels.&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/CountingVowelsPractice" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<ol class="last arabic simple">
+<li>The program does not quite work yet. There are 9 vowels in
+<code class="docutils literal notranslate"><span class="pre">'Armadillos</span> <span class="pre">or</span> <span class="pre">anteaters'</span></code>, but the code does not count the capital
+<code class="docutils literal notranslate"><span class="pre">A</span></code>.</li>
+<li>Fix the code to be <em>case-insensitive</em>. Both capital and lowercase vowels
+should increase <code class="docutils literal notranslate"><span class="pre">vowel_count</span></code>.</li>
+<li>Refactor the code to report the number of consonants (non-vowels) in the
+string. (<em>Hint</em>: Use the <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code> operator).</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="checking-case">
+<h2><span class="section-number">8.9.3. </span>Checking Case<a class="headerlink" href="#checking-case" title="Permalink to this headline">¶</a></h2>
+<p>Let’s explore how we can check the case for a character, slice, or an entire
+string. Fortunately, Python provides methods that check the case of a string, and they
+deal with non-letter characters properly.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">character</span> <span class="o">=</span> <span class="s1">&#39;a&#39;</span>
+<span class="n">word</span> <span class="o">=</span> <span class="s2">&quot;yep!&quot;</span>
+<span class="n">non_letters</span> <span class="o">=</span> <span class="s1">&#39;$10.75&#39;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">character</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">word</span><span class="o">.</span><span class="n">islower</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">non_letters</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>False
+True
+False
+</pre></div>
+</div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">isupper()</span></code> method returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if all the letters in a string are
+uppercase. If the string contains a single lowercase letter, or no letters at
+all, the method returns <code class="docutils literal notranslate"><span class="pre">False</span></code>. The <code class="docutils literal notranslate"><span class="pre">islower()</span></code> method behaves in a
+similar way, but it checks for lowercase letters.</p>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">8.9.4. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<p>Evaluate whether the following expressions are <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>:</p>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dog&quot;</span> <span class="o">&lt;</span> <span class="s2">&quot;doghouse&quot;</span>
+</pre></div>
+</div>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">True</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">False</span></code></li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dog&quot;</span> <span class="o">&lt;</span> <span class="s2">&quot;Dog&quot;</span>
+</pre></div>
+</div>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">True</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">False</span></code></li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dog&quot;</span> <span class="o">&lt;</span> <span class="s2">&quot;Doghouse&quot;</span>
+</pre></div>
+</div>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">True</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">False</span></code></li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;app&quot;</span> <span class="ow">in</span> <span class="s2">&quot;Happy&quot;</span>
+</pre></div>
+</div>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">True</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">False</span></code></li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>For which of the following would <code class="docutils literal notranslate"><span class="pre">text.upper()</span> <span class="pre">==</span> <span class="pre">text</span></code> return
+<code class="docutils literal notranslate"><span class="pre">True</span></code>?</p>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">'Stop</span> <span class="pre">Yelling!'</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">'STOP</span> <span class="pre">YELLING!'</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">'stop</span> <span class="pre">yelling!'</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">'STOP</span> <span class="pre">YELLINg!'</span></code></li>
+<li>All return <code class="docutils literal notranslate"><span class="pre">True</span></code></li>
+<li>None return <code class="docutils literal notranslate"><span class="pre">True</span></code></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="string-iteration.html"><span aria-hidden="true">&larr;</span> <span class="section-number">8.8. </span>Iteration with Strings</a></li>
+        
+        
+        <li class="next"><a href="string-module.html"><span class="section-number">8.10. </span>The <code class="docutils literal notranslate"><span class="pre">string</span></code> Module <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

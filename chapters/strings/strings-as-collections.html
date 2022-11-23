@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8.1. Strings as Collections &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="8.2. Bracket Notation" href="bracket-notation.html" />
+    <link rel="prev" title="8. Stringing Characters Together" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">8. </span>Stringing Characters Together</a></li>
+    <li class="active"><span class="section-number">8.1. </span>Strings as Collections</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="strings-as-collections">
+<h1><span class="section-number">8.1. </span>Strings as Collections<a class="headerlink" href="#strings-as-collections" title="Permalink to this headline">¶</a></h1>
+<p>Throughout the first chapters of this book, we use strings to represent words,
+phrases, or characters we want to print. Our first definition of a string is
+simple: <em>a string is a sequence of characters inside quotes</em>.</p>
+<p>In this chapter we explore strings in much more detail.</p>
+<div class="section" id="collection-data-types">
+<h2><span class="section-number">8.1.1. </span>Collection Data Types<a class="headerlink" href="#collection-data-types" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="index-0"></span><p id="index-1">Strings are an example of a <strong>collection data type</strong>. <em>Collections</em> are built
+from smaller, individual pieces. Other data types like <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, and
+<code class="docutils literal notranslate"><span class="pre">bool</span></code> do NOT contain any smaller parts.</p>
+<p>Depending on what we are doing, we can treat a collection data type as a single
+object, like a cardboard box, or we can dig into the collection and access its
+smaller parts (searching through the box).</p>
+<p id="index-2">A <strong>character</strong> is a string that contains exactly one element, such as <code class="docutils literal notranslate"><span class="pre">'a'</span></code>,
+<code class="docutils literal notranslate"><span class="pre">&quot;?&quot;</span></code>, or even <code class="docutils literal notranslate"><span class="pre">&quot;</span> <span class="pre">&quot;</span></code> (a single space character).</p>
+<p>Strings are built out of these single characters. In this way, strings can be
+broken down into smaller pieces.</p>
+<div class="figure align-default" id="id1">
+<img alt="The string &quot;Python&quot; broken down into individual letters." src="../../_images/python-string.png" />
+<p class="caption"><span class="caption-text">The string “Python” is made up of 6 characters, each of which is a string of
+length 1.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="ordered-collections">
+<h2><span class="section-number">8.1.2. </span>Ordered Collections<a class="headerlink" href="#ordered-collections" title="Permalink to this headline">¶</a></h2>
+<p id="index-3">We also call strings <strong>ordered collections</strong> of characters. This means that the
+individual characters in the string follow a particular order from left to
+right. The string <code class="docutils literal notranslate"><span class="pre">&quot;LaunchCode&quot;</span></code> is different from the string
+<code class="docutils literal notranslate"><span class="pre">&quot;CodeLaunch&quot;</span></code>, even though they contain the exact same characters.</p>
+</div>
+<div class="section" id="collection-length">
+<h2><span class="section-number">8.1.3. </span>Collection Length<a class="headerlink" href="#collection-length" title="Permalink to this headline">¶</a></h2>
+<p id="index-4">Strings can contain any number of characters, and we often need to determine
+how many are in the collection. Fortunately, Python gives us a convenient
+function to return this value.</p>
+<p>The <strong>length function</strong>, <code class="docutils literal notranslate"><span class="pre">len()</span></code>, returns the number of elements inside of a
+collection. We can put the collection itself inside the parentheses, like
+<code class="docutils literal notranslate"><span class="pre">len('hello')</span></code>, or we can use a variable.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Don&#39;t count the number of characters yourself. Python will do it for you!&quot;</span>
+
+<span class="n">length_of_text</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">length_of_text</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>73
+</pre></div>
+</div>
+<p class="last">Note that any spaces in a string also count as characters.</p>
+</div>
+<div class="section" id="the-empty-string">
+<h3><span class="section-number">8.1.3.1. </span>The Empty String<a class="headerlink" href="#the-empty-string" title="Permalink to this headline">¶</a></h3>
+<p id="index-5">A string that contains no characters, called the <strong>empty string</strong>, is still
+considered a string. It simply contains zero characters and is represented by
+<code class="docutils literal notranslate"><span class="pre">''</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code> (two single or two double quotes with nothing in between).</p>
+</div>
+</div>
+<div class="section" id="quote-reminder">
+<h2><span class="section-number">8.1.4. </span>Quote Reminder<a class="headerlink" href="#quote-reminder" title="Permalink to this headline">¶</a></h2>
+<p>Recall from the <a class="reference internal" href="../data-and-variables/values-and-data-types.html#quote-reminder"><span class="std std-ref">Data and Variables</span></a> chapter that we can
+use single quotes around a string (<code class="docutils literal notranslate"><span class="pre">'hello'</span></code>), double quotes (<code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;</span></code>),
+or triple quotes (<code class="docutils literal notranslate"><span class="pre">'''hello'''</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;hello&quot;&quot;&quot;</span></code>), as long as we start and
+end with the same type.</p>
+<p>Why have three options?</p>
+<ol class="arabic">
+<li><p class="first">We can include quote characters inside a string, as long as we use a
+different type around the entire collection. For example, <code class="docutils literal notranslate"><span class="pre">&quot;The</span> <span class="pre">teacher's</span>
+<span class="pre">classroom.&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">'''&quot;Quote</span> <span class="pre">from</span> <span class="pre">a</span> <span class="pre">book,</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">author's</span> <span class="pre">name.&quot;'''</span></code>).</p>
+</li>
+<li><p class="first">Triple quotes allow us to create strings that cover multiple lines.</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">sentence</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;This string covers</span>
+<span class="s1">multiple lines.</span>
+<span class="s1">Cool!&#39;&#39;&#39;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>This string covers
+multiple lines.
+Cool!
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="index.html"><span aria-hidden="true">&larr;</span> <span class="section-number">8. </span>Stringing Characters Together</a></li>
+        
+        
+        <li class="next"><a href="bracket-notation.html"><span class="section-number">8.2. </span>Bracket Notation <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

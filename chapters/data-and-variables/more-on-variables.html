@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5.4. More On Variables &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="5.5. Expressions and Evaluation" href="expressions-and-evaluation.html" />
+    <link rel="prev" title="5.3. Variables" href="variables.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">5. </span>Data and Variables</a></li>
+    <li class="active"><span class="section-number">5.4. </span>More On Variables</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="more-on-variables">
+<h1><span class="section-number">5.4. </span>More On Variables<a class="headerlink" href="#more-on-variables" title="Permalink to this headline">¶</a></h1>
+<p>The previous section covered creating, evaluating, and reassigning variables.
+This section will cover some additional, more nuanced topics related to
+variables.</p>
+<div class="section" id="naming-variables">
+<h2><span class="section-number">5.4.1. </span>Naming Variables<a class="headerlink" href="#naming-variables" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="valid-variable-names">
+<h3><span class="section-number">5.4.1.1. </span>Valid Variable Names<a class="headerlink" href="#valid-variable-names" title="Permalink to this headline">¶</a></h3>
+<p>As you may have discovered already, not just any sequence of characters is a
+valid variable name. For example, if we try to declare a variable with a name
+containing a space, Python complains.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">application</span> <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Planning App&quot;</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>SyntaxError: Invalid syntax
+</pre></div>
+</div>
+</div>
+<p>Python provides a broad set of rules for naming variables, but there is no
+reason to go beyond a few easy-to-remember guidelines:</p>
+<ol class="arabic simple" id="index-0">
+<li>Use only the characters 0-9, a-z, A-Z, and underscore. In other words, do
+not use special characters or whitespace (space, tab, and so on).</li>
+<li>Do not start a variable name with a number.</li>
+<li>Do not use <strong>keywords</strong>, which are words reserved by Python for use by
+the language itself. We’ll discuss these in detail in a moment.</li>
+</ol>
+<p>Following these guidelines will prevent you from creating illegal variable
+names. While this is important, we should also strive to create good variable
+names.</p>
+</div>
+<div class="section" id="good-variable-names">
+<h3><span class="section-number">5.4.1.2. </span>Good Variable Names<a class="headerlink" href="#good-variable-names" title="Permalink to this headline">¶</a></h3>
+<p>Writing good code is about more than writing code that simply works and
+accomplishes the task at-hand. It is also about writing code that can be read,
+updated, and maintained as easily as possible. How to write code that achieves
+these goals is a theme we will return to again and again.</p>
+<p>One of the primary ways that code can be written poorly is by using bad
+variable names. For example, consider the following program. While we haven’t
+introduced each of the components used here, you should be able to come to a
+general understanding of the new components.</p>
+<div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="mf">3.14</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">Y</span> <span class="o">*</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>Understanding what this program is trying to do is not obvious, to say the
+least. The main problem is that the variable names <code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">Y</span></code>, and <code class="docutils literal notranslate"><span class="pre">z</span></code> are
+not descriptive. They don’t tell us anything about what they represent, or how
+they will be used.</p>
+<blockquote class="pull-quote">
+<div>Variable names should be descriptive, providing context about the data they contain and how they will be used.</div></blockquote>
+<p>Let’s look at an improved version of this program.</p>
+<div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">radius_of_circle</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">PI</span> <span class="o">=</span> <span class="mf">3.14</span>
+<span class="n">area_of_circle</span> <span class="o">=</span> <span class="n">PI</span> <span class="o">*</span> <span class="n">radius_of_circle</span> <span class="o">**</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">area_of_circle</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>With improved variable names, it now becomes clear that the program is calculating the area of a circle of radius 5.</p>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="last">When considering program readability, think about whether or not your code will make sense to another programmer. It is not enough for code to be readable by only the programmer that originally wrote it.</p>
+</div>
+</div>
+</div>
+<div class="section" id="creating-constants">
+<h2><span class="section-number">5.4.2. </span>Creating Constants<a class="headerlink" href="#creating-constants" title="Permalink to this headline">¶</a></h2>
+<p>One of the key features of variables that we have discussed so far is their
+ability to change value. We can create a variable with one value, and then
+reassign it to another value.</p>
+<p>A possible problem with this approach is that an unwitting programmer might change the
+value of that same variable later in the program, causing unexpected outcomes.</p>
+<p>An easy way to avoid this is by creating <strong>constant</strong> variables.
+Constant variables are initialized once and not able to be changed later throughout the program.
+No matter how hard you may try.</p>
+<p>We will explore constant variables later in this course.
+For now, we suggest being aware of your variable names so you don’t accidentally reassign them.</p>
+</div>
+<div class="section" id="keywords">
+<h2><span class="section-number">5.4.3. </span>Keywords<a class="headerlink" href="#keywords" title="Permalink to this headline">¶</a></h2>
+<p id="index-1">Our last note on naming variables has to do with a collection of words that are reserved for use by the Python language itself. Such words are called <strong>keywords</strong>, or <strong>reserved words</strong>.
+Any word that is formally part of the Python language syntax is a keyword.</p>
+<div class="admonition-warning admonition">
+<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
+<p class="last">While <code class="docutils literal notranslate"><span class="pre">print()</span></code> may seem like a keyword, it is actually slightly different.
+It is actually a built-in name that is available by default in Python environments.
+Here is an <a class="reference external" href="http://python-history.blogspot.com/2013/11/story-of-none-true-false.html" target="_blank">article<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> by the Python language designer about the difference between built-in names and keywords if you are interested in learning more.</p>
+</div>
+<p>Attempting to use a keyword for anything other than it’s intended use will result in an error.</p>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="last">Most code editors will highlight keywords in a different color than variables or other parts of your code. This serves as a visual cue that a given word is a keyword, and can help prevent mistakes.</p>
+</div>
+<p>We will not provide the full list of keywords at this time, but rather point them out as we learn about each of them. If you are curious, the <a class="reference external" href="https://www.w3schools.com/python/python_ref_keywords.asp" target="_blank">full list is available at W3Schools<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="variables.html"><span aria-hidden="true">&larr;</span> <span class="section-number">5.3. </span>Variables</a></li>
+        
+        
+        <li class="next"><a href="expressions-and-evaluation.html"><span class="section-number">5.5. </span>Expressions and Evaluation <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Solutions: Functions &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Exercise Solutions: Dictionaries" href="dictionaries.html" />
+    <link rel="prev" title="Exercises: Errors and Debugging Solutions" href="errors-and-debugging.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html">Exercise Solutions</a></li>
+    <li class="active">Exercise Solutions: Functions</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="exercise-solutions-functions">
+<h1>Exercise Solutions: Functions<a class="headerlink" href="#exercise-solutions-functions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="part-1-rectangles">
+<h2>Part 1: Rectangles<a class="headerlink" href="#part-1-rectangles" title="Permalink to this headline">¶</a></h2>
+<ol class="upperalpha">
+<li><p class="first">Write a function <code class="docutils literal notranslate"><span class="pre">make_line(size)</span></code> that returns a line with exactly <code class="docutils literal notranslate"><span class="pre">size</span></code>
+hashes.</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_line</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+   <span class="n">line</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+      <span class="n">line</span> <span class="o">+=</span> <span class="s2">&quot;#&quot;</span>
+   <span class="k">return</span> <span class="n">line</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">make_line</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#####
+</pre></div>
+</div>
+<p><a class="reference internal" href="../../chapters/functions/exercises.html#exercises-functions-part1"><span class="std std-ref">Return to Exercises</span></a></p>
+</li>
+<li id="exercises-functions-square"><p class="first">Write a function called <code class="docutils literal notranslate"><span class="pre">make_square(size)</span></code> that returns a <code class="docutils literal notranslate"><span class="pre">size</span></code> by
+<code class="docutils literal notranslate"><span class="pre">size</span></code> string of hashes.</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_square</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+   <span class="n">square</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+      <span class="n">square</span> <span class="o">+=</span> <span class="p">(</span><span class="n">make_line</span><span class="p">(</span><span class="n">size</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+   <span class="k">return</span> <span class="n">square</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">make_square</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#####
+#####
+#####
+#####
+#####
+</pre></div>
+</div>
+<p><a class="reference internal" href="../../chapters/functions/exercises.html#exercises-functions-part1"><span class="std std-ref">Return to Exercises</span></a></p>
+</li>
+<li id="exercises-functions-rectangle"><p class="first">Write a function <code class="docutils literal notranslate"><span class="pre">make_rectangle(width,</span> <span class="pre">height)</span></code> that returns a
+rectangle with the given width and height. Use your <code class="docutils literal notranslate"><span class="pre">make_line</span></code> function to
+do this.</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_rectangle</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
+   <span class="n">rectangle</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">height</span><span class="p">):</span>
+      <span class="n">rectangle</span> <span class="o">+=</span> <span class="p">(</span><span class="n">make_line</span><span class="p">(</span><span class="n">width</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+   <span class="k">return</span> <span class="n">rectangle</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">make_rectangle</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#####
+#####
+#####
+</pre></div>
+</div>
+<p><a class="reference internal" href="../../chapters/functions/exercises.html#exercises-functions-part1"><span class="std std-ref">Return to Exercises</span></a></p>
+</li>
+</ol>
+</div>
+<div class="section" id="part-2-triangles">
+<h2>Part 2:  Triangles<a class="headerlink" href="#part-2-triangles" title="Permalink to this headline">¶</a></h2>
+<ol class="upperalpha" id="exercises-functions-stairs">
+<li><p class="first">Write a function <code class="docutils literal notranslate"><span class="pre">make_downward_stairs(height)</span></code> that prints the staircase
+pattern shown below, with the given height.</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_downward_stairs</span><span class="p">(</span><span class="n">height</span><span class="p">):</span>
+   <span class="n">stairs</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">height</span><span class="p">):</span>
+      <span class="n">stairs</span> <span class="o">+=</span> <span class="p">(</span><span class="n">make_line</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+   <span class="k">return</span> <span class="n">stairs</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">make_downward_stairs</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#
+##
+###
+####
+#####
+</pre></div>
+</div>
+<p><a class="reference internal" href="../../chapters/functions/exercises.html#exercises-functions-part2"><span class="std std-ref">Return to Exercises</span></a></p>
+</li>
+<li id="exercises-functions-space-line"><p class="first">Write a function <code class="docutils literal notranslate"><span class="pre">make_space_line(numSpaces,</span> <span class="pre">numChars)</span></code> that returns a line
+with exactly the specified number of spaces, followed by the
+specified number of hashes, followed again by <code class="docutils literal notranslate"><span class="pre">num_spaces</span></code> more spaces.</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_space_line</span><span class="p">(</span><span class="n">numSpaces</span><span class="p">,</span> <span class="n">numChars</span><span class="p">):</span>
+   <span class="n">space_line</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numSpaces</span><span class="p">):</span>
+      <span class="n">space_line</span> <span class="o">+=</span> <span class="s2">&quot; &quot;</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numChars</span><span class="p">):</span>
+      <span class="n">space_line</span> <span class="o">+=</span> <span class="s2">&quot;#&quot;</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numSpaces</span><span class="p">):</span>
+      <span class="n">space_line</span> <span class="o">+=</span> <span class="s2">&quot; &quot;</span>
+   <span class="k">return</span> <span class="n">space_line</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">make_space_line</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>___#####___
+</pre></div>
+</div>
+<p><a class="reference internal" href="../../chapters/functions/exercises.html#exercises-functions-part2"><span class="std std-ref">Return to Exercises</span></a></p>
+</li>
+<li id="exercises-functions-triangle"><p class="first">Write a function <code class="docutils literal notranslate"><span class="pre">make_isosceles_triangle(height)</span></code> that returns a triangle
+of the given height.</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_isosceles_triangle</span><span class="p">(</span><span class="n">height</span><span class="p">):</span>
+   <span class="n">triangle</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">height</span><span class="p">):</span>
+      <span class="n">triangle</span> <span class="o">+=</span> <span class="p">(</span><span class="n">make_space_line</span><span class="p">(</span><span class="n">height</span> <span class="o">-</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+   <span class="k">return</span> <span class="n">triangle</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">make_isosceles_triangle</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    #
+   ###
+  #####
+ #######
+#########
+</pre></div>
+</div>
+<p><a class="reference internal" href="../../chapters/functions/exercises.html#exercises-functions-part2"><span class="std std-ref">Return to Exercises</span></a></p>
+</li>
+</ol>
+</div>
+<div class="section" id="part-3-diamonds">
+<h2>Part 3: Diamonds<a class="headerlink" href="#part-3-diamonds" title="Permalink to this headline">¶</a></h2>
+<ol class="upperalpha" id="exercises-functions-diamond">
+<li><p class="first">Write a function <code class="docutils literal notranslate"><span class="pre">make_diamond(height)</span></code> that returns a diamond where the
+triangle formed by the <em>top</em> portion has the given height.</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_diamond</span><span class="p">(</span><span class="n">height</span><span class="p">):</span>
+   <span class="n">diamond</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+   <span class="n">triangle</span> <span class="o">=</span> <span class="n">make_isosceles_triangle</span><span class="p">(</span><span class="n">height</span><span class="p">)</span>
+   <span class="n">diamond</span> <span class="o">+=</span> <span class="n">triangle</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">triangle</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+      <span class="n">diamond</span> <span class="o">+=</span> <span class="n">triangle</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+   <span class="k">return</span> <span class="n">diamond</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">make_diamond</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    #
+   ###
+  #####
+ #######
+#########
+#########
+ #######
+  #####
+   ###
+    #
+</pre></div>
+</div>
+</li>
+</ol>
+<p><a class="reference internal" href="../../chapters/functions/exercises.html#exercises-functions-part3"><span class="std std-ref">Return to Exercises</span></a></p>
+</div>
+<div class="section" id="optional-mission">
+<h2>Optional Mission<a class="headerlink" href="#optional-mission" title="Permalink to this headline">¶</a></h2>
+<p>Refactor your functions so that they take a single character as a parameter,
+and draw the shapes with that character instead of always using <code class="docutils literal notranslate"><span class="pre">'#'</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_line</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">char</span><span class="p">):</span>
+   <span class="n">line</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+      <span class="n">line</span> <span class="o">+=</span> <span class="n">char</span>
+   <span class="k">return</span> <span class="n">line</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">make_line</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="s1">&#39;&amp;&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;
+</pre></div>
+</div>
+<p><a class="reference internal" href="../../chapters/functions/exercises.html#exercises-functions-bonus"><span class="std std-ref">Return to Exercises</span></a></p>
+<p>Make the new parameter optional, with default value <code class="docutils literal notranslate"><span class="pre">'#'</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_line</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">char</span> <span class="o">=</span> <span class="s2">&quot;#&quot;</span><span class="p">):</span>
+   <span class="n">line</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+      <span class="n">line</span> <span class="o">+=</span> <span class="n">char</span>
+   <span class="k">return</span> <span class="n">line</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">make_line</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>########
+</pre></div>
+</div>
+<p><a class="reference internal" href="../../chapters/functions/exercises.html#exercises-functions-bonus"><span class="std std-ref">Return to Exercises</span></a></p>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="errors-and-debugging.html"><span aria-hidden="true">&larr;</span> Exercises: Errors and Debugging Solutions</a></li>
+        
+        
+        <li class="next"><a href="dictionaries.html">Exercise Solutions: Dictionaries <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

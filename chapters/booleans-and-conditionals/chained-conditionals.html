@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6.9. Chained Conditionals &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6.10. Exercises: Booleans and Conditionals" href="exercises.html" />
+    <link rel="prev" title="6.8. Nested Conditionals" href="nested-conditionals.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">6. </span>Making Decisions With Conditionals</a></li>
+    <li class="active"><span class="section-number">6.9. </span>Chained Conditionals</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="chained-conditionals">
+<h1><span class="section-number">6.9. </span>Chained Conditionals<a class="headerlink" href="#chained-conditionals" title="Permalink to this headline">¶</a></h1>
+<p id="index-0">A <strong>chained conditional</strong> consists of a series of checks that are evaluated one
+after the other. If one check in the series evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code>, then all of
+the following checks are ignored.</p>
+<div class="section" id="elif-statements">
+<h2><span class="section-number">6.9.1. </span><code class="docutils literal notranslate"><span class="pre">elif</span></code> Statements<a class="headerlink" href="#elif-statements" title="Permalink to this headline">¶</a></h2>
+<p id="index-1"><code class="docutils literal notranslate"><span class="pre">If/else</span></code> statements provide two alternative paths. A single condition
+determines which path to follow. We can build more complex conditionals using
+an <strong>elif</strong> clause. <code class="docutils literal notranslate"><span class="pre">elif</span></code> stands for <em>else if</em>, and it allows us to include
+more conditions and code blocks. This leads to more branches for our code to
+follow.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">other_num</span> <span class="o">=</span> <span class="mi">20</span>
+
+<span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="n">other_num</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is greater than&quot;</span><span class="p">,</span> <span class="n">other_num</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="n">other_num</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is less than&quot;</span><span class="p">,</span> <span class="n">other_num</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is equal to&quot;</span><span class="p">,</span> <span class="n">other_num</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>10 is less than 20
+</pre></div>
+</div>
+</div>
+<p><strong>Summary:</strong></p>
+<ol class="arabic simple">
+<li>Line 4 begins the chained conditional. The boolean expression <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&gt;</span> <span class="pre">other_num</span></code>
+returns <code class="docutils literal notranslate"><span class="pre">False</span></code>, since 10 is not greater than 20. This causes line 5 to be
+skipped.</li>
+<li>Line 6 contains the <code class="docutils literal notranslate"><span class="pre">elif</span></code> statement. The boolean expression
+<code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&lt;</span> <span class="pre">other_num</span></code> returns <code class="docutils literal notranslate"><span class="pre">True</span></code>, since 10 is less than 20. This
+triggers line 7.</li>
+<li>The code block for the <code class="docutils literal notranslate"><span class="pre">else</span></code> clause (line 9) is skipped, because one of
+the conditions above it was true.</li>
+</ol>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="last">Just like with a simple <code class="docutils literal notranslate"><span class="pre">if</span></code> statement, the <code class="docutils literal notranslate"><span class="pre">else</span></code> clause is also optional
+for <code class="docutils literal notranslate"><span class="pre">elif</span></code> statements. In the example above, removing lines 8 &amp; 9 will
+not break anything. However, the program will not print anything when
+<code class="docutils literal notranslate"><span class="pre">num</span></code> equals <code class="docutils literal notranslate"><span class="pre">other_num</span></code>, since the <code class="docutils literal notranslate"><span class="pre">if</span></code> and <code class="docutils literal notranslate"><span class="pre">elif</span></code> conditions both
+return <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</div>
+<div class="section" id="multiple-elif-statements">
+<h3><span class="section-number">6.9.1.1. </span>Multiple <code class="docutils literal notranslate"><span class="pre">elif</span></code> Statements<a class="headerlink" href="#multiple-elif-statements" title="Permalink to this headline">¶</a></h3>
+<p>We can include more than one <code class="docutils literal notranslate"><span class="pre">elif</span></code> statement within a conditional. For
+example, the following code sample prints different messages depending on the
+first character in a string.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="last highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">character</span> <span class="o">=</span> <span class="s1">&#39;P&#39;</span>
+<span class="n">lowercase</span> <span class="o">=</span> <span class="s1">&#39;abcdefghijklmnopqrstuvwxyz&#39;</span>
+<span class="n">uppercase</span> <span class="o">=</span> <span class="s1">&#39;ABCDEFGHIJKLMNOPQRSTUVWXYZ&#39;</span>
+<span class="n">digits</span> <span class="o">=</span> <span class="s1">&#39;0123456789&#39;</span>
+
+<span class="k">if</span> <span class="n">character</span> <span class="ow">in</span> <span class="n">lowercase</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">character</span><span class="p">,</span> <span class="s1">&#39;is a lowercase letter.&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">character</span> <span class="ow">in</span> <span class="n">uppercase</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">character</span><span class="p">,</span> <span class="s1">&#39;is an UPPERCASE letter.&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">character</span> <span class="ow">in</span> <span class="n">digits</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">character</span><span class="p">,</span> <span class="s1">&#39;is a number.&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&amp;**%#!&#39;</span><span class="p">,</span> <span class="n">character</span><span class="p">,</span> <span class="s1">&#39;is a punctuation mark or a space.&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>We can easily add more <code class="docutils literal notranslate"><span class="pre">elif</span></code> statements to the conditional if we need to
+perform more checks. This gives us a huge amount of flexibility if we decide
+to modify the program later.</p>
+<p>Here are some rules for building <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code> statements:</p>
+<ol class="arabic simple">
+<li>Order is important. The <code class="docutils literal notranslate"><span class="pre">if</span></code> statement comes first, then the <code class="docutils literal notranslate"><span class="pre">elif</span></code>
+statements, and finally the <code class="docutils literal notranslate"><span class="pre">else</span></code>.</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">if</span></code> statement and code block are required. The <code class="docutils literal notranslate"><span class="pre">elif</span></code> and <code class="docutils literal notranslate"><span class="pre">else</span></code>
+clauses are optional.</li>
+<li>Conditionals contain only ONE <code class="docutils literal notranslate"><span class="pre">if</span></code> statement and only ONE <code class="docutils literal notranslate"><span class="pre">else</span></code>
+(if used).</li>
+<li>Multiple <code class="docutils literal notranslate"><span class="pre">elif</span></code> statements are allowed after the <code class="docutils literal notranslate"><span class="pre">if</span></code> statement, but
+they must come before the <code class="docutils literal notranslate"><span class="pre">else</span></code> clause.</li>
+</ol>
+<p>No matter how long we make a chained conditional, <em>no more than one</em> of the
+code blocks will run.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">other_num</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="n">other_num</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is greater than&quot;</span><span class="p">,</span> <span class="n">other_num</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="n">other_num</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is less than&quot;</span><span class="p">,</span> <span class="n">other_num</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is divisible by 5&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is even&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>10 is less than 20
+</pre></div>
+</div>
+</div>
+<p>Even though both of the conditions <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">%</span> <span class="pre">5</span> <span class="pre">==</span> <span class="pre">0</span></code> and <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">%</span> <span class="pre">2</span> <span class="pre">==</span> <span class="pre">0</span></code>
+evaluate to <code class="docutils literal notranslate"><span class="pre">True</span></code>, neither line 9 nor 11 runs. Since line 6 is satisfied
+first, the rest of the conditional is skipped.</p>
+</div>
+</div>
+<div class="section" id="nested-vs-chained-conditionals">
+<h2><span class="section-number">6.9.2. </span>Nested vs. Chained Conditionals<a class="headerlink" href="#nested-vs-chained-conditionals" title="Permalink to this headline">¶</a></h2>
+<p>On the previous page, we used a nested conditional to print different outputs
+based on the length of a word. We can accomplish the same result with a
+chained conditional.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Here is the nested conditional again:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Please enter a word: &#39;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;What did your mom tell you about using 4-letter words?&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You can think of a longer word than that!&quot;</span><span class="p">)</span>
+   <span class="k">else</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Excellent word!&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>The following chained conditional produces the same result:</p>
+<div class="last highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Please enter a word: &#39;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;What did your mom tell you about using 4-letter words?&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You can think of a longer word than that!&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Excellent word!&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>Often, you can use a nested conditional or a chained conditional to solve the
+same problem. Which one you choose depends on your personal preference, but
+you should always use the option that makes your code easier for others to
+read.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Nesting one conditional inside of another performs a <em>check within a check</em>,
+and we can do this any number of times.</p>
+<div class="last highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">condition_1</span><span class="p">:</span>
+   <span class="c1"># code here</span>
+
+   <span class="k">if</span> <span class="n">condition_2</span><span class="p">:</span>
+      <span class="c1"># code here</span>
+
+      <span class="k">if</span> <span class="n">condition_3</span><span class="p">:</span>
+         <span class="c1"># code here</span>
+      <span class="k">else</span><span class="p">:</span>
+         <span class="c1"># code here</span>
+
+   <span class="k">else</span><span class="p">:</span>
+      <span class="c1"># code here</span>
+
+<span class="k">else</span><span class="p">:</span>
+   <span class="c1"># code here</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>Perhaps you see the problem with nesting more than once or twice. The code
+quickly gets very difficult to read and follow.</p>
+<p>Even though we COULD code a check within a check within a check within a check
+within a check (etc.), we really SHOULDN’T. In most instances, we can
+make our code more readable by using chained conditionals and/or logical
+operators in place of nested conditionals.</p>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">6.9.3. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What does the following code print?</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">8</span>
+
+<span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Launch&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Code&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;LaunchCode&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">Launch</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">Code</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">Launch</span> <span class="pre">Code</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">LaunchCode</span></code></li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Examine this nested conditional:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span>
+<span class="k">if</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The negative number&quot;</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is not valid here.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is a positive number&quot;</span><span class="p">)</span>
+   <span class="k">else</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is 0&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>Which of the following code blocks gives the same result?</p>
+<ol class="last loweralpha">
+<li><div class="first highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The negative number&quot;</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is not valid here.&quot;</span><span class="p">)</span>
+<span class="k">else</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is a positive number&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is 0&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</li>
+<li><div class="first highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The negative number&quot;</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is not valid here.&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is a positive number&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is 0&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</li>
+<li><div class="first highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The negative number&quot;</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is not valid here.&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is a positive number&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="s2">&quot;is 0&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="nested-conditionals.html"><span aria-hidden="true">&larr;</span> <span class="section-number">6.8. </span>Nested Conditionals</a></li>
+        
+        
+        <li class="next"><a href="exercises.html"><span class="section-number">6.10. </span>Exercises: Booleans and Conditionals <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

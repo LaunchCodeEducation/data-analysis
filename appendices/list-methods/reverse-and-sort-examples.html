@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rearranging List Elements &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Common Python Dictionary Methods" href="../dictionary-methods/index.html" />
+    <link rel="prev" title="join Examples" href="join-examples.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html">Common Python List Methods</a></li>
+    <li class="active">Rearranging List Elements</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="rearranging-list-elements">
+<h1>Rearranging List Elements<a class="headerlink" href="#rearranging-list-elements" title="Permalink to this headline">¶</a></h1>
+<p>Python provides two list methods to rearrange the order of the elements. Both
+methods <em>mutate</em> (change) the original list.</p>
+<div class="section" id="reverse-example">
+<span id="list-reverse-example"></span><span id="index-0"></span><h2><code class="docutils literal notranslate"><span class="pre">reverse</span></code> Example<a class="headerlink" href="#reverse-example" title="Permalink to this headline">¶</a></h2>
+<p>The general syntax for this method is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">list_name</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">reverse</span></code> flips the order of the elements in a list. No arguments go inside
+the <code class="docutils literal notranslate"><span class="pre">()</span></code>.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;At&#39;</span><span class="p">,</span> <span class="s1">&#39;banana&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;zoo&#39;</span><span class="p">]</span>
+
+<span class="n">words</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;zoo&#39;, &#39;apple&#39;, &#39;orange&#39;, &#39;banana&#39;, &#39;At&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="sort-examples">
+<span id="list-sort-examples"></span><span id="index-1"></span><h2><code class="docutils literal notranslate"><span class="pre">sort</span></code> Examples<a class="headerlink" href="#sort-examples" title="Permalink to this headline">¶</a></h2>
+<p>The general syntax for this method is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">list_name</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">sort</span></code> arranges the elements of a list into increasing order (smallest to
+largest). However, all elements inside the list MUST be of the same data type.
+Numbers sort with other numbers, strings with other strings, booleans with
+other booleans, etc.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Numerical sorting:</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mf">45.5</span><span class="p">]</span>
+<span class="n">mixed_types</span> <span class="o">=</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">]</span>
+
+<span class="n">numbers</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+
+<span class="n">mixed_types</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[2, 8, 10, 30, 45.5, 400]
+Line 11:
+   mixed_types.sort()
+TypeError: &#39;&lt;&#39; not supported between instances of &#39;str&#39; and &#39;int&#39;
+</pre></div>
+</div>
+</div>
+<p>For strings, <code class="docutils literal notranslate"><span class="pre">sort</span></code> arranges the elements in alphabetical order.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>When sorting strings, case matters!</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">letters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">]</span>
+<span class="n">letters_and_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;5&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;8&#39;</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">]</span>
+
+<span class="n">letters</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="n">letters_and_numbers</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">letters</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">letters_and_numbers</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[ &#39;B&#39;, &#39;X&#39;, &#39;a&#39;, &#39;c&#39;, &#39;f&#39; ]
+[&#39;3&#39;, &#39;5&#39;, &#39;8&#39;, &#39;T&#39;, &#39;m&#39;]
+</pre></div>
+</div>
+<p>From the alphabet song, we know that <code class="docutils literal notranslate"><span class="pre">'a'</span></code> comes before <code class="docutils literal notranslate"><span class="pre">'B'</span></code> (and
+certainly before <code class="docutils literal notranslate"><span class="pre">'X'</span></code>), but Python treats capital and lowercase letters
+differently. Capital letters get sorted before lowercase.</p>
+<p class="last">Note that <em>numerical strings</em> come before all letters.</p>
+</div>
+<div class="section" id="sorting-numerical-strings">
+<h3>Sorting Numerical Strings<a class="headerlink" href="#sorting-numerical-strings" title="Permalink to this headline">¶</a></h3>
+<p>Let’s take a look at sorting a list of strings when each element is a string
+of digits.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">number_strings</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;8&#39;</span><span class="p">,</span> <span class="s1">&#39;10&#39;</span><span class="p">,</span> <span class="s1">&#39;400&#39;</span><span class="p">,</span> <span class="s1">&#39;30&#39;</span><span class="p">]</span>
+
+<span class="n">number_strings</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">number_strings</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[ 10, 2, 30, 400, 8 ]
+</pre></div>
+</div>
+<p>Wait… what? How is 8 larger than 400?</p>
+<p class="last">Note that even though we use digits, each element is still a <em>string</em>.
+Just like <code class="docutils literal notranslate"><span class="pre">'apple'</span></code> comes before <code class="docutils literal notranslate"><span class="pre">'pear'</span></code> because <code class="docutils literal notranslate"><span class="pre">'a'</span></code> comes
+before <code class="docutils literal notranslate"><span class="pre">'p'</span></code>, the string <code class="docutils literal notranslate"><span class="pre">'400'</span></code> begins with a <code class="docutils literal notranslate"><span class="pre">'4'</span></code>, which comes
+before any string starting with an <code class="docutils literal notranslate"><span class="pre">'8'</span></code>. Looking only at the first
+digit in each string, we see the expected progression (1, 2, 3, 4, 8).</p>
+</div>
+</div>
+<div class="section" id="sort-in-descending-order">
+<h3>Sort in Descending Order<a class="headerlink" href="#sort-in-descending-order" title="Permalink to this headline">¶</a></h3>
+<p>To sort a list from the largest to smallest value, the general syntax is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">list_name</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Sort in descending order:</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mf">45.5</span><span class="p">]</span>
+<span class="n">letters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">]</span>
+
+<span class="n">numbers</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">letters</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">letters</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[400, 45.5, 30, 10, 8, 2]
+[&#39;f&#39;, &#39;c&#39;, &#39;a&#39;, &#39;X&#39;, &#39;B&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="join-examples.html"><span aria-hidden="true">&larr;</span> <code class="docutils literal notranslate"><span class="pre">join</span></code> Examples</a></li>
+        
+        
+        <li class="next"><a href="../dictionary-methods/index.html">Common Python Dictionary Methods <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

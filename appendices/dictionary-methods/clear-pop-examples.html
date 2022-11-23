@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Removing Items From a Dictionary &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Return Keys, Values, or Key/Value Pairs" href="keys-values-items-examples.html" />
+    <link rel="prev" title="Common Python Dictionary Methods" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html">Common Python Dictionary Methods</a></li>
+    <li class="active">Removing Items From a Dictionary</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="removing-items-from-a-dictionary">
+<h1>Removing Items From a Dictionary<a class="headerlink" href="#removing-items-from-a-dictionary" title="Permalink to this headline">¶</a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">clear</span></code> and <code class="docutils literal notranslate"><span class="pre">pop</span></code> dictionary methods <em>mutate</em> (change) the original
+collection.</p>
+<div class="section" id="clear-example">
+<span id="dictionary-clear"></span><span id="index-0"></span><h2><code class="docutils literal notranslate"><span class="pre">clear</span></code> Example<a class="headerlink" href="#clear-example" title="Permalink to this headline">¶</a></h2>
+<p>The general syntax for this method is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dictionary_name</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">clear</span></code> removes all key/value pairs from a dictionary. The dictionary still
+exists, but it is empty.</p>
+<p>No arguments go inside the <code class="docutils literal notranslate"><span class="pre">()</span></code>.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">phone_book</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;Mom&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5555&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Work&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5556&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Home&#39;</span> <span class="p">:</span> <span class="s1">&#39;123-456-7890&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;BFF&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5557&#39;</span>
+<span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">phone_book</span><span class="p">)</span>
+
+<span class="n">phone_book</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">phone_book</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">phone_book</span><span class="p">))</span>  <span class="c1"># Print the length of the dictionary</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;Mom&#39;: &#39;555-5555&#39;, &#39;Work&#39;: &#39;555-5556&#39;, &#39;Home&#39;: &#39;123-456-7890&#39;, &#39;BFF&#39;: &#39;555-5557&#39;}
+{}
+0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="pop-examples">
+<span id="dictionary-pop"></span><span id="index-1"></span><h2><code class="docutils literal notranslate"><span class="pre">pop</span></code> Examples<a class="headerlink" href="#pop-examples" title="Permalink to this headline">¶</a></h2>
+<p>The general syntax for this method is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dictionary_name</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">pop</span></code> removes the key indicated inside the <code class="docutils literal notranslate"><span class="pre">()</span></code>, along with its linked
+value. Even though only the key goes inside the <code class="docutils literal notranslate"><span class="pre">()</span></code>, the key/value pair gets
+removed from the dictionary.</p>
+<p>In addition to <em>removing</em> a key/value pair from the dictionary, <code class="docutils literal notranslate"><span class="pre">pop</span></code> also
+<em>returns</em> the value. This means <code class="docutils literal notranslate"><span class="pre">dictionary_name.pop(key)</span></code> can be printed or
+assigned to a variable.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">phone_book</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;Mom&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5555&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Work&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5556&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Home&#39;</span> <span class="p">:</span> <span class="s1">&#39;123-456-7890&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;BFF&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5557&#39;</span>
+<span class="p">}</span>
+
+<span class="c1"># Remove the &#39;Home&#39; key/value pair, but the returned value is lost.</span>
+<span class="n">phone_book</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;Home&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">phone_book</span><span class="p">)</span>
+
+<span class="c1"># Remove the &#39;BFF&#39; key/value pair and assign the returned value to a variable.</span>
+<span class="n">returned_value</span> <span class="o">=</span> <span class="n">phone_book</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;BFF&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">returned_value</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">phone_book</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;Mom&#39;: &#39;555-5555&#39;, &#39;Work&#39;: &#39;555-5556&#39;, &#39;BFF&#39;: &#39;555-5557&#39;}
+555-5557
+{&#39;Mom&#39;: &#39;555-5555&#39;, &#39;Work&#39;: &#39;555-5556&#39;}
+</pre></div>
+</div>
+</div>
+<div class="section" id="missing-key">
+<h3>Missing Key<a class="headerlink" href="#missing-key" title="Permalink to this headline">¶</a></h3>
+<p>Unlike the <a class="reference internal" href="../list-methods/clear-pop-remove-examples.html#list-pop-examples"><span class="std std-ref">list method</span></a> with the same name, the
+<code class="docutils literal notranslate"><span class="pre">pop()</span></code> method for dictionaries MUST include a key inside the <code class="docutils literal notranslate"><span class="pre">()</span></code>. If we
+call the method without a key, or if the key does not exist in the dictionary,
+Python throws an error message.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">phone_book</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;Mom&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5555&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Work&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5556&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Home&#39;</span> <span class="p">:</span> <span class="s1">&#39;123-456-7890&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;BFF&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5557&#39;</span>
+<span class="p">}</span>
+
+<span class="n">phone_book</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="n">phone_book</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;Beyonce&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last arabic simple">
+<li>Line 8 throws <code class="docutils literal notranslate"><span class="pre">TypeError:</span> <span class="pre">pop</span> <span class="pre">expected</span> <span class="pre">at</span> <span class="pre">least</span> <span class="pre">1</span> <span class="pre">argument,</span> <span class="pre">got</span> <span class="pre">0</span></code>.
+Python expected to find a key argument, but we did not provide one.</li>
+<li>Line 9 throws <code class="docutils literal notranslate"><span class="pre">KeyError:</span> <span class="pre">'Beyonce'</span></code>. The key <code class="docutils literal notranslate"><span class="pre">Beyonce</span></code> does not exist
+in <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="set-a-default-return-value">
+<h3>Set a Default Return Value<a class="headerlink" href="#set-a-default-return-value" title="Permalink to this headline">¶</a></h3>
+<p>As good coders, we can build our <code class="docutils literal notranslate"><span class="pre">pop</span></code> statements to only use known keys.
+However, if we allow outside users to change a dictionary, then we cannot
+guarantee that calling <code class="docutils literal notranslate"><span class="pre">pop(key)</span></code> remains safe.</p>
+<p>Fortunately, we can set a <em>default</em> return value to avoid throwing runtime
+errors! The general syntax is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dictionary_name</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">default_value</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If Python cannot find the given <code class="docutils literal notranslate"><span class="pre">key</span></code> inside a dictionary, it returns the
+<code class="docutils literal notranslate"><span class="pre">default_value</span></code> instead. The dictionary itself remains unchanged, but we do
+avoid crashing the program.</p>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p>Run the following program several times and enter different key names. Be
+sure to try:</p>
+<ol class="arabic simple">
+<li>A key that exists in <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>,</li>
+<li>A key that does NOT exist in <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>,</li>
+<li>Just hitting return to enter the empty string, <code class="docutils literal notranslate"><span class="pre">''</span></code>.</li>
+</ol>
+<div class="last"><iframe src="https://trinket.io/embed/python3/56cf9e451f" width="100%" height="400" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe></div></div>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="index.html"><span aria-hidden="true">&larr;</span> Common Python Dictionary Methods</a></li>
+        
+        
+        <li class="next"><a href="keys-values-items-examples.html">Return Keys, Values, or Key/Value Pairs <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

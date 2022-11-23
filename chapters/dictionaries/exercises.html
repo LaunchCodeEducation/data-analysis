@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12.8. Exercises: Dictionaries &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="12.9. Studio: Mad Dictionaries" href="studio.html" />
+    <link rel="prev" title="12.7. Additional Collections in Python" href="additional-collections.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">12. </span>Python Dictionaries and Tuples</a></li>
+    <li class="active"><span class="section-number">12.8. </span>Exercises: Dictionaries</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="exercises-dictionaries">
+<h1><span class="section-number">12.8. </span>Exercises: Dictionaries<a class="headerlink" href="#exercises-dictionaries" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="part-a-search-a-dictionary">
+<h2><span class="section-number">12.8.1. </span>Part A: Search a Dictionary<a class="headerlink" href="#part-a-search-a-dictionary" title="Permalink to this headline">¶</a></h2>
+<p>Fork the starter code on <a class="reference external" href="https://replit.com/&#64;launchcode/DictionaryExercises01#main.py" target="_blank">Replit<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">flavors</span></code> dictionary contains entries that pair different ice cream
+flavors with their cost per scoop. Your job is to do the following:</p>
+<ol class="arabic" id="dictionaries-exercises-a1">
+<li><p class="first">Write a function called <code class="docutils literal notranslate"><span class="pre">return_cost</span></code> that takes a dictionary and flavor
+choice as parameters.</p>
+<ol class="loweralpha simple">
+<li>The function searches the dictionary for the flavor and returns its cost.</li>
+<li>If the flavor is not in the dictionary, return a value of <code class="docutils literal notranslate"><span class="pre">0</span></code>.</li>
+</ol>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-a1"><span class="std std-ref">Check your solution</span></a></p>
+</li>
+<li><p class="first">After coding the <code class="docutils literal notranslate"><span class="pre">return_cost</span></code> function, run the program and examine the
+output. Make sure your function behaves as expected before moving to the
+next step. Don’t forget to assign different strings to the <code class="docutils literal notranslate"><span class="pre">choice</span></code>
+variable!</p>
+</li>
+</ol>
+<ol class="arabic" id="dictionaries-exercises-a3">
+<li><p class="first">Write a function called <code class="docutils literal notranslate"><span class="pre">fanciest_flavor</span></code> that takes a dictionary as a
+parameter. The function should return the key name for the most expensive
+choice in the dictionary.</p>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-a3"><span class="std std-ref">Check your solution</span></a></p>
+</li>
+<li><p class="first">Uncomment the 3 indicated lines in <code class="docutils literal notranslate"><span class="pre">main()</span></code>, then run the program several
+times and examine the output. Change the prices in <code class="docutils literal notranslate"><span class="pre">flavors</span></code> after each
+run to make sure your function correctly identifies the most expensive ice
+cream flavor.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="part-b-keys-from-a-collection">
+<h2><span class="section-number">12.8.2. </span>Part B: Keys from a Collection<a class="headerlink" href="#part-b-keys-from-a-collection" title="Permalink to this headline">¶</a></h2>
+<p>Fork the starter code on <a class="reference external" href="https://replit.com/&#64;launchcode/DictionaryExercises02#main.py" target="_blank">Replit<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p>Use the accumulator pattern to add new key/value pairs to an empty dictionary.</p>
+<ol class="arabic" id="dictionaries-exercises-b1">
+<li><p class="first">Write a function called <code class="docutils literal notranslate"><span class="pre">assign_tickets</span></code> that takes a list of names as a
+parameter.</p>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-b1"><span class="std std-ref">Check your solution</span></a></p>
+</li>
+<li><p class="first">The function should take each name from the list and use it to create a key
+in the dictionary.</p>
+</li>
+</ol>
+<ol class="arabic" id="dictionaries-exercises-b3">
+<li><p class="first">For the value of each key, assign a random integer from 100-500.</p>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="last">We are not worried about giving two people the same ticket number in this
+exercise. However, for a real event we would want to prevent this.</p>
+</div>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-b3"><span class="std std-ref">Check your solution</span></a></p>
+</li>
+<li><p class="first">Return the new dictionary.</p>
+</li>
+</ol>
+<ol class="arabic" id="dictionaries-exercises-b5">
+<li><p class="first">In <code class="docutils literal notranslate"><span class="pre">main()</span></code>, call the <code class="docutils literal notranslate"><span class="pre">assign_tickets</span></code> function and assign the result to
+a <code class="docutils literal notranslate"><span class="pre">ticket_holders</span></code> variable.</p>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-b5"><span class="std std-ref">Check your solution</span></a></p>
+</li>
+</ol>
+<p>Print <code class="docutils literal notranslate"><span class="pre">ticket_holders</span></code> to check that your code works as expected. Your output
+should look something like:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;Caleb&#39;: 192, &#39;Naomi&#39;: 490, &#39;Owen&#39;: 465, &#39;Ava&#39;: 248, &#39;Aaron&#39;: 421, &#39;Lydia&#39;: 306}
+</pre></div>
+</div>
+</div>
+<div class="section" id="part-c-modify-values">
+<h2><span class="section-number">12.8.3. </span>Part C: Modify Values<a class="headerlink" href="#part-c-modify-values" title="Permalink to this headline">¶</a></h2>
+<p>Oh no! Ticket numbers 100-199 were supposed to be held back for VIPs. You need
+to reassign tickets to anyone who was given one of the reserved seats. Use the
+editor in part B as you update your code.</p>
+<p id="dictionaries-exercises-c">Call the function <code class="docutils literal notranslate"><span class="pre">fix_tickets</span></code>, and use <code class="docutils literal notranslate"><span class="pre">ticket_holders</span></code> as the argument.
+The <code class="docutils literal notranslate"><span class="pre">fix_tickets</span></code> function should:</p>
+<ol class="arabic simple">
+<li>Accept a dictionary as a parameter.</li>
+<li>Loop through the dictionary and check each ticket number to see if it is in
+the range 100-199 (including the end points).</li>
+<li>For a ticket within the range, increase its value by <code class="docutils literal notranslate"><span class="pre">500</span></code> and reassign it
+to the key.</li>
+<li>Unless you cloned the dictionary, there is no need to return the updated
+collection.</li>
+</ol>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-c"><span class="std std-ref">Check your solution</span></a></p>
+<p>To check your code, be sure to print <code class="docutils literal notranslate"><span class="pre">ticket_holders</span></code> before and after
+calling the <code class="docutils literal notranslate"><span class="pre">fix_tickets</span></code> function.</p>
+<p><strong>Sample Output:</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Before: {&#39;Caleb&#39;: 168, &#39;Naomi&#39;: 205, &#39;Owen&#39;: 193, &#39;Ava&#39;: 161, &#39;Aaron&#39;: 246, &#39;Lydia&#39;: 330}
+After: {&#39;Caleb&#39;: 668, &#39;Naomi&#39;: 205, &#39;Owen&#39;: 693, &#39;Ava&#39;: 661, &#39;Aaron&#39;: 246, &#39;Lydia&#39;: 330}
+</pre></div>
+</div>
+</div>
+<div class="section" id="part-d-counting-characters">
+<h2><span class="section-number">12.8.4. </span>Part D: Counting Characters<a class="headerlink" href="#part-d-counting-characters" title="Permalink to this headline">¶</a></h2>
+<p>Fork the starter code on <a class="reference external" href="https://replit.com/&#64;launchcode/DictionaryExercises03#main.py" target="_blank">Replit<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p id="dictionaries-exercises-d">Write a function called <code class="docutils literal notranslate"><span class="pre">character_count</span></code> that counts how many times each
+character appears in a string.</p>
+<p>The function should:</p>
+<ol class="arabic simple">
+<li>Accept a string as a parameter.</li>
+<li>Create an empty dictionary called <code class="docutils literal notranslate"><span class="pre">counts</span></code>.</li>
+<li>Loop through the string and check each character.<ol class="loweralpha">
+<li>If the character does NOT exist in as a key in <code class="docutils literal notranslate"><span class="pre">counts</span></code>, add it and
+assign it a value of <code class="docutils literal notranslate"><span class="pre">1</span></code>.</li>
+<li>If the character DOES exist as a key in <code class="docutils literal notranslate"><span class="pre">counts</span></code>, increase its value by
+one.</li>
+</ol>
+</li>
+<li>Return the completed <code class="docutils literal notranslate"><span class="pre">counts</span></code> dictionary and assign it to a <code class="docutils literal notranslate"><span class="pre">results</span></code>
+variable in <code class="docutils literal notranslate"><span class="pre">main()</span></code>.</li>
+</ol>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-d"><span class="std std-ref">Check your solution</span></a></p>
+<p>The counting should be <em>case-insensitive</em>. For example, <code class="docutils literal notranslate"><span class="pre">'a'</span></code> and <code class="docutils literal notranslate"><span class="pre">'A'</span></code>
+both count as the same letter.</p>
+<p>Be sure to print the returned dictionary to check your code.</p>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>Here are some test strings and their results:</p>
+<ol class="last arabic simple">
+<li><code class="docutils literal notranslate"><span class="pre">&quot;Python</span> <span class="pre">ROCKS!&quot;</span></code> returns <code class="docutils literal notranslate"><span class="pre">{'p':</span> <span class="pre">1,</span> <span class="pre">'y':</span> <span class="pre">1,</span> <span class="pre">'t':</span> <span class="pre">1,</span> <span class="pre">'h':</span> <span class="pre">1,</span> <span class="pre">'o':</span> <span class="pre">2,</span> <span class="pre">'n':</span> <span class="pre">1,</span> <span class="pre">'</span> <span class="pre">':</span> <span class="pre">1,</span> <span class="pre">'r':</span> <span class="pre">1,</span> <span class="pre">'c':</span> <span class="pre">1,</span> <span class="pre">'k':</span> <span class="pre">1,</span> <span class="pre">'s':</span> <span class="pre">1,</span> <span class="pre">'!':</span> <span class="pre">1}</span></code>.</li>
+<li><code class="docutils literal notranslate"><span class="pre">&quot;Balloons,</span> <span class="pre">bookkeepers,</span> <span class="pre">and</span> <span class="pre">bubbles.&quot;</span></code> returns <code class="docutils literal notranslate"><span class="pre">{'b':</span> <span class="pre">5,</span> <span class="pre">'a':</span> <span class="pre">2,</span> <span class="pre">'l':</span> <span class="pre">3,</span> <span class="pre">'o':</span> <span class="pre">4,</span> <span class="pre">'n':</span> <span class="pre">2,</span> <span class="pre">'s':</span> <span class="pre">3,</span> <span class="pre">',':</span> <span class="pre">2,</span> <span class="pre">'</span> <span class="pre">':</span> <span class="pre">3,</span> <span class="pre">'k':</span> <span class="pre">2,</span> <span class="pre">'e':</span> <span class="pre">4,</span> <span class="pre">'p':</span> <span class="pre">1,</span> <span class="pre">'r':</span> <span class="pre">1,</span> <span class="pre">'d':</span> <span class="pre">1,</span> <span class="pre">'u':</span> <span class="pre">1,</span> <span class="pre">'.':</span> <span class="pre">1}</span></code>.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="part-e-use-a-list-to-sort-key-value-output">
+<h2><span class="section-number">12.8.5. </span>Part E: Use a List to Sort Key/Value Output<a class="headerlink" href="#part-e-use-a-list-to-sort-key-value-output" title="Permalink to this headline">¶</a></h2>
+<p>Now display the character count result in a cleaner way. Update your code in
+the part D editor.</p>
+<ol class="arabic" id="dictionaries-exercises-e1">
+<li><p class="first">In the <code class="docutils literal notranslate"><span class="pre">main()</span></code> function, loop through the <code class="docutils literal notranslate"><span class="pre">results</span></code> dictionary and
+print each key/value pair on its own line. For <code class="docutils literal notranslate"><span class="pre">&quot;B-A-L-L-O-O-N-S!&quot;</span></code>, the
+output would be:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The character counts for &#39;B-A-L-L-O-O-N-S!&#39; are:
+b: 1
+-: 7
+a: 1
+l: 2
+o: 2
+n: 1
+s: 1
+!: 1
+</pre></div>
+</div>
+<p>Be sure your output includes the introductory sentence.</p>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-e1"><span class="std std-ref">Check your solution</span></a></p>
+</li>
+<li><p class="first">Modify your code to print a key/value pair ONLY IF the character is a
+letter.</p>
+</li>
+</ol>
+<ol class="arabic" id="dictionaries-exercises-e3">
+<li><p class="first">Modify your code again, but this time display the character counts in
+alphabetical order.</p>
+<ol class="loweralpha simple">
+<li>Use the <code class="docutils literal notranslate"><span class="pre">list</span></code> function to create a list of the keys from the
+<code class="docutils literal notranslate"><span class="pre">results</span></code> dictionary.</li>
+<li>Sort the list, then use a loop to print the key/value pairs, one pair
+per line.</li>
+</ol>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-e3"><span class="std std-ref">Check your solution</span></a></p>
+</li>
+</ol>
+<p>The final output for <code class="docutils literal notranslate"><span class="pre">&quot;B-A-L-L-O-O-N-S!&quot;</span></code> should be:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The character counts for &#39;B-A-L-L-O-O-N-S!&#39; are:
+a: 1
+b: 1
+l: 2
+n: 1
+o: 2
+s: 1
+</pre></div>
+</div>
+</div>
+<div class="section" id="submitting-your-work">
+<h2><span class="section-number">12.8.6. </span>Submitting Your Work<a class="headerlink" href="#submitting-your-work" title="Permalink to this headline">¶</a></h2>
+<p>When finished copy the URLs to your repls for the exercises, separating each URL with a semi-colon and paste them into the submission box in Canvas for <strong>Exercises: Dictionaries</strong> and click <em>Submit</em>.</p>
+<p>You should have a total of <strong>3</strong> repls.</p>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="additional-collections.html"><span aria-hidden="true">&larr;</span> <span class="section-number">12.7. </span>Additional Collections in Python</a></li>
+        
+        
+        <li class="next"><a href="studio.html"><span class="section-number">12.9. </span>Studio: Mad Dictionaries <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

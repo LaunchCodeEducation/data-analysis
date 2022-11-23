@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio: Classes and Objects &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Object-Oriented Programming" href="../class-relationships/index.html" />
+    <link rel="prev" title="Exercises: Classes and Objects" href="exercises.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html">Classes and Objects</a></li>
+    <li class="active">Studio: Classes and Objects</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="studio-classes-and-objects">
+<h1>Studio: Classes and Objects<a class="headerlink" href="#studio-classes-and-objects" title="Permalink to this headline">¶</a></h1>
+<p>Now its time to design a new class of robots. These objects will all be able to
+clean our school building, but we want to pick the best ones.</p>
+<p>Let’s create a class to handle new cleaning crew candidates!</p>
+<div class="section" id="before-you-start">
+<h2>Before You Start<a class="headerlink" href="#before-you-start" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="last">We always encourage you to use local development at every opportunity. However, sometimes computers and software fail and we would rather you spend your studio time coding!
+If your computer is not cooperating with cloning your repo from Github, you can fork the starter code for the studio on <a class="reference external" href="https://replit.com/&#64;launchcode/ClassesStudio#main.py" target="_blank">Replit<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+</div>
+</div>
+<div class="section" id="part-1-add-class-properties-and-str-method">
+<h2>Part 1: Add Class Properties and <code class="docutils literal notranslate"><span class="pre">__str__</span></code> Method<a class="headerlink" href="#part-1-add-class-properties-and-str-method" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Declare a class called <code class="docutils literal notranslate"><span class="pre">CrewCandidate</span></code> with a constructor that takes
+three parameters: <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">mass</span></code>, and <code class="docutils literal notranslate"><span class="pre">scores</span></code>. Note that <code class="docutils literal notranslate"><span class="pre">scores</span></code>
+will be a list of test results for the candidate’s speed and accuracy.</p>
+</li>
+<li><p class="first">In <code class="docutils literal notranslate"><span class="pre">main()</span></code>, create objects for the following candidates:</p>
+<ol class="loweralpha simple">
+<li>iClean has a mass of 13.5 kg and test scores of 88, 85, and 90.</li>
+<li>Shiny has a mass of 1.5 kg and test scores of 93, 88, and 97.</li>
+<li>DustVac has a mass of 22.5 kg and test scores of 75, 78, and 62.</li>
+</ol>
+</li>
+<li><p class="first">Define a <code class="docutils literal notranslate"><span class="pre">__str__</span></code> method to display the properties of each candidate. The
+output should look something like:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>**Candidate Information**
+Name: Shiny
+Mass: 1.5 kg
+Scores: [93, 88, 97]
+</pre></div>
+</div>
+</li>
+<li><p class="first">Print each object to check to see if your class correctly assigns and
+displays the property values. (You can remove or comment out the <code class="docutils literal notranslate"><span class="pre">print</span></code>
+statement after your tests pass).</p>
+</li>
+</ol>
+</div>
+<div class="section" id="part-2-add-another-class-method">
+<h2>Part 2: Add Another Class Method<a class="headerlink" href="#part-2-add-another-class-method" title="Permalink to this headline">¶</a></h2>
+<p>As our candidates complete more tests, we need to be able to add the new
+scores to their records.</p>
+<ol class="arabic">
+<li><p class="first">Create an <code class="docutils literal notranslate"><span class="pre">add_score</span></code> method in <code class="docutils literal notranslate"><span class="pre">CrewCandidate</span></code>. The function must take
+a new score as a parameter in addition to <code class="docutils literal notranslate"><span class="pre">self</span></code>.</p>
+</li>
+<li><p class="first">When passed a score, the function adds the value to <code class="docutils literal notranslate"><span class="pre">self.scores</span></code> with the
+<a class="reference internal" href="../../appendices/list-methods/append-insert-examples.html#list-append-examples"><span class="std std-ref">append method</span></a>.</p>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="last">Inside the class, the name of the list is <code class="docutils literal notranslate"><span class="pre">self.scores</span></code> instead of
+<code class="docutils literal notranslate"><span class="pre">scores</span></code>. Thus, <code class="docutils literal notranslate"><span class="pre">self.scores.append()</span></code> is the proper syntax.</p>
+</div>
+</li>
+<li><p class="first">In <code class="docutils literal notranslate"><span class="pre">main()</span></code>, test your new method by adding a score of <code class="docutils literal notranslate"><span class="pre">83</span></code> to iClean’s
+record. Print out the new score list with <code class="docutils literal notranslate"><span class="pre">object_name.scores</span></code>.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="part-3-add-more-methods">
+<h2>Part 3: Add More Methods<a class="headerlink" href="#part-3-add-more-methods" title="Permalink to this headline">¶</a></h2>
+<p>Now that we can add scores to our candidates’ records, we need to evaluate
+their fitness for our cleaning program. Let’s add two more methods to
+<code class="docutils literal notranslate"><span class="pre">CrewCandidate</span></code>. One will average the test scores, and the other will decide
+if the candidate should be added to the cleaning team.</p>
+<div class="section" id="calculating-the-test-average">
+<h3>Calculating the Test Average<a class="headerlink" href="#calculating-the-test-average" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Define an <code class="docutils literal notranslate"><span class="pre">average()</span></code> method. It only needs the <code class="docutils literal notranslate"><span class="pre">self</span></code> parameter.</p>
+</li>
+<li><p class="first">To find the average, add up the entries from <code class="docutils literal notranslate"><span class="pre">self.scores</span></code>, then divide
+the sum by the number of scores in the list.</p>
+</li>
+<li><p class="first">To make the average easier to look at,
+round it to 1 decimal place, then return the result
+from the method.</p>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">round</span></code> is an built-in Python function.  Syntax is as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="n">numeric_value</span><span class="p">,</span> <span class="n">num_digits</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="last">This function was demonstated in the <a class="reference internal" href="../dictionaries/dictionary-accumulator.html#round-function"><span class="std std-ref">Dictionaries chapter</span></a>.</p>
+</div>
+</li>
+</ol>
+<p>Check your code by evaluating and printing Shiny’s average test score
+(<code class="docutils literal notranslate"><span class="pre">92.7</span></code>).</p>
+</div>
+<div class="section" id="determining-candidate-status">
+<h3>Determining Candidate Status<a class="headerlink" href="#determining-candidate-status" title="Permalink to this headline">¶</a></h3>
+<p>Candidates with averages at or above 90% are automatically added to our new
+cleaning crew. Backup robots average between 80 - 89%, while robots with
+averages between 70 - 79% get sent out for repairs. Averages below 70% lead to
+a short trip to the recycling bin.</p>
+<ol class="arabic">
+<li><p class="first">Add a <code class="docutils literal notranslate"><span class="pre">status()</span></code> method to <code class="docutils literal notranslate"><span class="pre">CrewCandidate</span></code>. The method returns a string
+(<code class="docutils literal notranslate"><span class="pre">'Accepted'</span></code>, <code class="docutils literal notranslate"><span class="pre">'Backup'</span></code>, <code class="docutils literal notranslate"><span class="pre">'Maintenance'</span></code>, or <code class="docutils literal notranslate"><span class="pre">'Scrapped'</span></code>)
+depending on a candidate’s average.</p>
+</li>
+<li><p class="first">The <code class="docutils literal notranslate"><span class="pre">status</span></code> method requires the average test score. Fortunately, methods
+can call other methods inside a class! Just remember to use
+<code class="docutils literal notranslate"><span class="pre">self.method_name()</span></code>.</p>
+</li>
+<li><p class="first">Once <code class="docutils literal notranslate"><span class="pre">status</span></code> has a candidate’s average score, return the proper string
+based on that value.</p>
+</li>
+<li><p class="first">In <code class="docutils literal notranslate"><span class="pre">main()</span></code>, test the <code class="docutils literal notranslate"><span class="pre">status</span></code> method on each of the three candidates.
+Print the result with the format, <code class="docutils literal notranslate"><span class="pre">'___</span> <span class="pre">scored</span> <span class="pre">an</span> <span class="pre">average</span> <span class="pre">of</span> <span class="pre">___%</span> <span class="pre">(___).'</span></code></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>iClean scored an average of 87.7% (Backup).
+Shiny scored an average of 92.7% (Accepted).
+DustVac scored an average of 71.7% (Maintenance).
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="optional-testing">
+<h2>Optional Testing<a class="headerlink" href="#optional-testing" title="Permalink to this headline">¶</a></h2>
+<p>Use the class methods to boost DustVac’s status to <code class="docutils literal notranslate"><span class="pre">Backup</span></code> or higher. How
+many good tests will it take to reach <code class="docutils literal notranslate"><span class="pre">Backup</span></code> status? How many to reach
+<code class="docutils literal notranslate"><span class="pre">Accepted</span></code>?</p>
+<p>Note that scores cannot exceed 100%.</p>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="last">Rather than adding one score at a time, could you use a loop?</p>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="exercises.html"><span aria-hidden="true">&larr;</span> Exercises: Classes and Objects</a></li>
+        
+        
+        <li class="next"><a href="../class-relationships/index.html">Object-Oriented Programming <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

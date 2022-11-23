@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11.7. Parameters and Variables &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="11.8. Functions Calling Other Functions" href="composing-functions.html" />
+    <link rel="prev" title="11.6. A Good Function-Writing Process" href="process.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">11. </span>What’s Your Function</a></li>
+    <li class="active"><span class="section-number">11.7. </span>Parameters and Variables</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="parameters-and-variables">
+<h1><span class="section-number">11.7. </span>Parameters and Variables<a class="headerlink" href="#parameters-and-variables" title="Permalink to this headline">¶</a></h1>
+<p>Earlier, we said that a parameter “behaves like a variable within the
+function.” While this is true, the relationship between variables and
+parameters is a bit more complicated.</p>
+<div class="section" id="function-scope">
+<span id="id1"></span><h2><span class="section-number">11.7.1. </span>Function Scope<a class="headerlink" href="#function-scope" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="index-0"></span><p id="index-1">The <strong>scope</strong> of a variable refers to where that variable is useable within a
+program. Scope consists of all locations in a program where a variable can be
+used or modified.</p>
+<div class="admonition-warning admonition">
+<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
+<p class="last">A variable defined inside a function is NOT usable outside of that
+function.</p>
+</div>
+<p>Consider the following function, which takes a string as a parameter and
+returns a new string without hyphens, <code class="docutils literal notranslate"><span class="pre">-</span></code>.</p>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<ol class="arabic">
+<li><p class="first">Run the program as-is, and examine the output.</p>
+</li>
+<li><p class="first">On line 3, add the following code to the function body. Re-run the
+program and examine the output.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>3</pre></div></td><td class="code"><div class="highlight"><pre><span></span>   <span class="nb">print</span><span class="p">(</span><span class="n">phone_number</span><span class="p">,</span> <span class="n">str_with_hyphens</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</li>
+<li><p class="first">On line 9, add <code class="docutils literal notranslate"><span class="pre">print(without_hyphens)</span></code> and run the program one more
+time. You should receive an error message.</p>
+</li>
+</ol>
+<div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">remove_hyphens</span><span class="p">(</span><span class="n">str_with_hyphens</span><span class="p">):</span>
+   <span class="n">without_hyphens</span> <span class="o">=</span> <span class="n">str_with_hyphens</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+   <span class="k">return</span> <span class="n">without_hyphens</span>
+
+<span class="n">phone_number</span> <span class="o">=</span> <span class="s2">&quot;555-555-5555&quot;</span>
+<span class="n">no_hyph_number</span> <span class="o">=</span> <span class="n">remove_hyphens</span><span class="p">(</span><span class="n">phone_number</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">no_hyph_number</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/FunctionScope" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+</div>
+<p>In <em>step 1</em>, the function <code class="docutils literal notranslate"><span class="pre">remove_hyphens</span></code> behaves as expected. It takes the
+argument <code class="docutils literal notranslate"><span class="pre">&quot;555-555-5555&quot;</span></code>, removes the <code class="docutils literal notranslate"><span class="pre">&quot;-&quot;</span></code> symbols, and returns the
+result. Line 7 assigns that result to the variable <code class="docutils literal notranslate"><span class="pre">no_hyph_number</span></code>, and line
+8 prints it to the console.</p>
+<p>In <em>step 2</em>, the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement on line 3 shows us that the value of
+<code class="docutils literal notranslate"><span class="pre">phone_number</span></code> has been assigned to the parameter <code class="docutils literal notranslate"><span class="pre">str_with_hyphens</span></code>. Both
+variables are <em>visible</em> inside the function.</p>
+<div class="admonition-warning admonition">
+<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
+<p>Since the original variable and the parameter have the same values, you
+might be tempted to just use <code class="docutils literal notranslate"><span class="pre">phone_number</span></code> in the function.</p>
+<blockquote>
+<div>DON’T!</div></blockquote>
+<p class="last">We will explain why later, but it is important that you recognize this
+warning now.</p>
+</div>
+<p>In <em>step 3</em>, we receive an error message (<code class="docutils literal notranslate"><span class="pre">NameError:</span> <span class="pre">name</span> <span class="pre">'without_hyphens'</span> <span class="pre">is</span>
+<span class="pre">not</span> <span class="pre">defined</span></code>) when we try to print <code class="docutils literal notranslate"><span class="pre">without_hyphens</span></code> on line 9.</p>
+<p>Line 7 calls <code class="docutils literal notranslate"><span class="pre">remove_hyphens</span></code>, which returns <code class="docutils literal notranslate"><span class="pre">without_hyphens</span></code> with the
+value <code class="docutils literal notranslate"><span class="pre">&quot;5555555555&quot;</span></code>. However, once the function finishes <em>ALL VARIABLES AND
+PARAMETERS WITHIN THE FUNCTION ARE DESTROYED</em>.</p>
+<p>This is why line 9 produces a <code class="docutils literal notranslate"><span class="pre">NameError</span></code>—there is no longer a variable
+named <code class="docutils literal notranslate"><span class="pre">without_hyphens</span></code>.</p>
+<p>This is what we mean when we refer to <strong>scope</strong>. A variable is not always
+usable throughout an entire program. Where it can be used depends on where it
+is defined.</p>
+<blockquote>
+<div>Parameters and variables defined inside a function are only visible within
+that function.</div></blockquote>
+</div>
+<div class="section" id="variable-shadowing">
+<h2><span class="section-number">11.7.2. </span>Variable Shadowing<a class="headerlink" href="#variable-shadowing" title="Permalink to this headline">¶</a></h2>
+<p>What about variables defined OUTSIDE of a function? We saw above that
+<code class="docutils literal notranslate"><span class="pre">phone_number</span></code> was visible inside of the <code class="docutils literal notranslate"><span class="pre">remove_hyphens</span></code> function.</p>
+<p>This situation is more complicated. A variable defined outside a
+function <em>may</em> be visible within the function, but using it or trying to
+change its value creates problems.</p>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p>Let’s take another look at our <code class="docutils literal notranslate"><span class="pre">remove_hyphens</span></code> function.</p>
+<ol class="arabic">
+<li><p class="first">Run the program as-is, and examine the output.</p>
+</li>
+<li><p class="first">On line 3, add the following code to the function body. Re-run the
+program and examine the output.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>3</pre></div></td><td class="code"><div class="highlight"><pre><span></span>   <span class="n">phone_number</span> <span class="o">=</span> <span class="s1">&#39;1234&#39;</span>
+</pre></div>
+</td></tr></table></div>
+</li>
+</ol>
+<div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">remove_hyphens</span><span class="p">(</span><span class="n">str_with_hyphens</span><span class="p">):</span>
+   <span class="n">without_hyphens</span> <span class="o">=</span> <span class="n">str_with_hyphens</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="n">phone_number</span><span class="p">)</span>
+   <span class="k">return</span> <span class="n">without_hyphens</span>
+
+<span class="n">phone_number</span> <span class="o">=</span> <span class="s2">&quot;555-555-5555&quot;</span>
+<span class="n">no_hyph_number</span> <span class="o">=</span> <span class="n">remove_hyphens</span><span class="p">(</span><span class="n">phone_number</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">no_hyph_number</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">phone_number</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/ScopeExample02" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+</div>
+<p>In <em>step 1</em>, even though <code class="docutils literal notranslate"><span class="pre">phone_number</span></code> is defined outside the function, it is
+still visible within the function. When <code class="docutils literal notranslate"><span class="pre">remove_hyphens</span></code> is called and
+<code class="docutils literal notranslate"><span class="pre">print(phone_number)</span></code> on line 4 runs, <code class="docutils literal notranslate"><span class="pre">phone_number</span></code> has the value
+<code class="docutils literal notranslate"><span class="pre">&quot;555-555-5555&quot;</span></code>. This means that the scope of <code class="docutils literal notranslate"><span class="pre">phone_number</span></code> extends into
+the function <code class="docutils literal notranslate"><span class="pre">remove_hyphens</span></code>.</p>
+<p>In <em>step 2</em>, we assign <code class="docutils literal notranslate"><span class="pre">phone_number</span></code> a value of <code class="docutils literal notranslate"><span class="pre">'1234'</span></code> in line 3. Now line
+4 displays that new number in the console. However, line 10 still prints the
+<em>original</em> value <code class="docutils literal notranslate"><span class="pre">555-555-5555</span></code>.</p>
+<p>Line 3 actually defines a NEW <code class="docutils literal notranslate"><span class="pre">phone_number</span></code> variable inside the function,
+and this variable is <em>different</em> from the one outside of the function. This
+situation confuses many new coders—we created two variables that have the
+same name but different values. Yuck!</p>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="last">Do NOT define variables inside a function that use the same names found
+outside of the function.</p>
+</div>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>What if we did something like this:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">remove_hyphens</span><span class="p">(</span><span class="n">phone_number</span><span class="p">):</span>
+   <span class="n">without_hyphens</span> <span class="o">=</span> <span class="n">phone_number</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+   <span class="k">return</span> <span class="n">without_hyphens</span>
+
+<span class="n">phone_number</span> <span class="o">=</span> <span class="s2">&quot;614-555-5555&quot;</span>
+<span class="n">no_hyph_number</span> <span class="o">=</span> <span class="n">remove_hyphens</span><span class="p">(</span><span class="s1">&#39;56-78&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="last">We don’t recommend doing this! Are you having trouble interpreting this code?
+When the function runs, does <code class="docutils literal notranslate"><span class="pre">phone_number</span></code> on line 2 have the value <code class="docutils literal notranslate"><span class="pre">&quot;614-555-5555&quot;</span></code> or
+<code class="docutils literal notranslate"><span class="pre">'56-78'</span></code>? Feel free to run this code in the editor above to find out.</p>
+</div>
+<p id="index-2">An interesting thing happens when a function parameter has the same name as a
+variable defined outside of that function.</p>
+<p>While the variable <code class="docutils literal notranslate"><span class="pre">phone_number</span></code> declared on line 5 is visible inside
+<code class="docutils literal notranslate"><span class="pre">remove_hyphens</span></code>, it is <em>hidden</em> by the function parameter with the same
+name. When <code class="docutils literal notranslate"><span class="pre">remove_hyphens('56-78')</span></code> is called, and
+<code class="docutils literal notranslate"><span class="pre">phone_number.replace('-',</span> <span class="pre">'')</span></code> runs, <code class="docutils literal notranslate"><span class="pre">phone_number</span></code> has the value
+<code class="docutils literal notranslate"><span class="pre">'56-78'</span></code>, which is the argument passed into the function.</p>
+<p>This situation is called <strong>shadowing</strong>. We can imagine that a function
+parameter <em>casts a shadow</em> over a variable of the same name and hides it from
+view.</p>
+<div class="admonition-warning admonition">
+<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
+<p>There is NO good reason to allow variable shadowing in your programs!</p>
+<p class="last"><em>Avoid giving variables and function parameters the same name.</em></p>
+</div>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">11.7.3. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What does the following code output?</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">is_even</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+   <span class="k">return</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+
+<span class="n">num</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">is_even</span><span class="p">(</span><span class="mi">43</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">True</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">False</span></code></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="process.html"><span aria-hidden="true">&larr;</span> <span class="section-number">11.6. </span>A Good Function-Writing Process</a></li>
+        
+        
+        <li class="next"><a href="composing-functions.html"><span class="section-number">11.8. </span>Functions Calling Other Functions <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10.2. Types of Errors &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="10.3. Error Messages are Good" href="diagnosing-error-messages.html" />
+    <link rel="prev" title="10.1. What is Debugging?" href="what-is-debugging.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">10. </span>Errors and Debugging</a></li>
+    <li class="active"><span class="section-number">10.2. </span>Types of Errors</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="types-of-errors">
+<h1><span class="section-number">10.2. </span>Types of Errors<a class="headerlink" href="#types-of-errors" title="Permalink to this headline">¶</a></h1>
+<p>Each type of error—syntax, runtime, and logic—shows itself in a different
+way. Also, some strategies may be more useful for certain types of errors
+compared to others.</p>
+<div class="section" id="stages-for-running-a-python-program">
+<h2><span class="section-number">10.2.1. </span>Stages for Running a Python Program<a class="headerlink" href="#stages-for-running-a-python-program" title="Permalink to this headline">¶</a></h2>
+<p>In order to understand programming errors, we should understand that code gets
+executed in two stages.</p>
+<div class="section" id="stage-1-parsing">
+<h3><span class="section-number">10.2.1.1. </span>Stage 1 - Parsing<a class="headerlink" href="#stage-1-parsing" title="Permalink to this headline">¶</a></h3>
+<p id="index-0">Before code can be run, it must be validated and prepared for execution. This is
+known as the <strong>parsing stage</strong>. Think of it like the pre-flight checklist
+pilots use before taking off. If errors are found, the plane stays on the
+ground.</p>
+<p>When we click <em>Run</em> to start our code, parsing begins. A lot of detailed tasks
+happen behind the scenes during this process, but we just need to know that
+parsing checks the syntax and structure of the code. If any mistakes are found,
+the program does not launch.</p>
+</div>
+<div class="section" id="stage-2-execution">
+<h3><span class="section-number">10.2.1.2. </span>Stage 2 - Execution<a class="headerlink" href="#stage-2-execution" title="Permalink to this headline">¶</a></h3>
+<p>If parsing finishes without finding any errors, the program is ready to run.
+During the <strong>execution stage</strong>, the statements written into our code—printing
+to the console, prompting the user for input, making calculations, etc.—get
+carried out. Think of this stage as the plane taking flight.</p>
+</div>
+</div>
+<div class="section" id="syntax-errors">
+<h2><span class="section-number">10.2.2. </span>Syntax Errors<a class="headerlink" href="#syntax-errors" title="Permalink to this headline">¶</a></h2>
+<p id="index-1">Python can only run a program if the code is <em>syntactically correct</em>.
+<strong>Syntax</strong> refers to the structure of a language (spoken, programming, or
+otherwise) and the rules about that structure. For example, in English,
+a sentence must begin with a capital letter and end with some type of
+punctuation mark.</p>
+<p id="index-2">A <strong>syntax error</strong> occurs when we break one of the rules for a given language.</p>
+<div class="admonition-examples admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Examples</p>
+<p>this sentence contains a syntax error.</p>
+<p>So does this one</p>
+<p>Here is a Python syntax error:</p>
+<div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">printt</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>For most readers, a few syntax errors are not a big problem. Our brains are
+flexible enough to figure out a sentence even if it contains one or more syntax
+errors.</p>
+<p>Programming languages are not so forgiving. If there is a single syntax error
+anywhere in our program, Python will display an error message and immediately
+quit. Since syntax is checked during the parsing stage, these errors are
+found first.</p>
+<p>As you completed the coding exercises in the last several chapters, you
+probably spent some time tracking down syntax errors. As you gain experience,
+you will make fewer of these mistakes, but they will never disappear completely.
+However, you will get good at quickly finding syntax errors.</p>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p>Find the syntax errors in the program.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Run the code to generate an error message.</span>
+<span class="c1"># Find and fix only ONE syntax error at a time.</span>
+
+<span class="n">day</span> <span class="o">=</span> <span class="s2">&quot;Wednesday&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">day</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/SyntaxErrors" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<ol class="last arabic simple">
+<li>What syntax errors did you find?</li>
+<li>What was the error message provided by Python in each case?</li>
+<li>Pay attention to any line numbers given in the error message.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="runtime-errors">
+<span id="runtime-error"></span><h2><span class="section-number">10.2.3. </span>Runtime Errors<a class="headerlink" href="#runtime-errors" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="index-3"></span><p id="index-4">Once the syntax for your code is correct, the program launches. However,
+mistakes can still occur and cause the program to crash. These mistakes are
+called <strong>runtime errors</strong> because they do not appear until we run the program.
+The errors are also called <strong>exceptions</strong> because they usually indicate that
+something exceptional (and bad) has happened.</p>
+<p>Runtime errors occur during the execution phase of a program, so we only
+see them after <em>all</em> syntax mistakes are fixed.</p>
+<p>Common runtime errors include:</p>
+<ol class="arabic simple">
+<li>Misspelling a variable name.</li>
+<li>Using an index value that is too large for a given string or list.</li>
+<li>Incorrect math operations (like dividing by zero).</li>
+<li>Comparing different data types.</li>
+</ol>
+<div class="admonition-examples admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Examples</p>
+<p>Run the following code to produce an error message. Read the message, fix
+the error, then re-run the program.</p>
+<p>Continue this process until no more error messages appear. Fix only one
+error at a time.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Run the program to generate an error message.</span>
+<span class="c1"># Fix only ONE error at a time, and re-run the program after each fix.</span>
+
+<span class="n">first_Name</span> <span class="o">=</span> <span class="s2">&quot;Jack&quot;</span>
+<span class="n">word</span> <span class="o">=</span> <span class="s1">&#39;Rutabaga&#39;</span>
+<span class="n">number</span> <span class="o">=</span> <span class="mi">25</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">first_name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">word</span><span class="p">[</span><span class="mi">25</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">number</span><span class="o">/</span><span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">number</span> <span class="o">&gt;</span> <span class="n">word</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/RuntimeErrors" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="last">Make a note of name (e.g. <code class="docutils literal notranslate"><span class="pre">IndexError</span></code>) given to each of the runtime
+errors you find in the code. Also notice that the error message gives you
+the line number where the mistake occurred.</p>
+</div>
+<p>The <em>syntax</em> in the code is correct, but when the program runs, an error occurs
+that Python cannot solve. For example, on line 8, we try to print the value
+<code class="docutils literal notranslate"><span class="pre">first_name</span></code>, but the variable does not exist! (In line 4, we defined
+<code class="docutils literal notranslate"><span class="pre">first_Name</span></code> instead).</p>
+</div>
+<div class="section" id="logic-errors">
+<span id="logic-error"></span><h2><span class="section-number">10.2.4. </span>Logic Errors<a class="headerlink" href="#logic-errors" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="index-5"></span><p id="index-6">The third type of error is the <strong>logic error</strong> (sometimes called a <strong>semantic
+error</strong>). If there is a logic error in our code, the program runs successfully
+and no error messages appear. However, the program does not work as intended.</p>
+<p>The key characteristic of logic errors is that the program we wrote is not the
+program we wanted. The code runs just fine, but it does not solve the problem
+we need.</p>
+<p>Let’s take a look at two examples of logic errors:</p>
+<div class="admonition-examples admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Examples</p>
+<ol class="last arabic">
+<li><p class="first">We can use a conditional to tell us if an integer is even or odd:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">25</span>
+
+<span class="k">if</span> <span class="n">num</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number </span><span class="si">{0}</span><span class="s2"> is odd&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number </span><span class="si">{0}</span><span class="s2"> is even&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The number 25 is even.
+</pre></div>
+</div>
+</li>
+<li><p class="first">To calculate our daily pay based on our weekly pay, we might try:</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">weekly_pay</span> <span class="o">=</span> <span class="mi">600</span>
+
+<span class="n">daily_pay</span> <span class="o">=</span> <span class="n">weekly_pay</span> <span class="o">/</span> <span class="mi">7</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">daily_pay</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>85.71428571428571
+</pre></div>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<p>In the first example, the value <code class="docutils literal notranslate"><span class="pre">25</span></code> is odd, but our program calls it even.
+The syntax of the code is perfectly correct, and no runtime errors crash the
+program, but it gives us the wrong answer. The <em>logic</em> of the code is faulty.
+Since we know what the answer <em>should</em> be for <code class="docutils literal notranslate"><span class="pre">25</span></code>, we can use that knowledge
+to help us correct our code. (There are several ways to fix the error—try to
+identify one option).</p>
+<p>In the second example, the result surprises us because we thought we were
+making at least $100 per day (assuming we work Monday through Friday).
+According to the program, though, we only earn about $85 per day. The logic
+error occurs because we divided our weekly pay by 7 instead of the 5 days we
+actually came in to work.</p>
+<p>Identifying logic errors can be tricky because unlike syntax and runtime
+problems, running the program produces no error messages that help us identify
+the issue. We must examine the output of the program and work backward to
+figure out what our code is doing wrong.</p>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">10.2.5. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Label each of the following as either a syntax, runtime, or logic error.</p>
+<p>Trying to use a variable that has not been defined.</p>
+<ol class="loweralpha simple">
+<li>syntax error</li>
+<li>runtime error</li>
+<li>logic error</li>
+</ol>
+<p>Leaving off a close parenthesis, <code class="docutils literal notranslate"><span class="pre">)</span></code>, when calling <code class="docutils literal notranslate"><span class="pre">print</span></code>.</p>
+<ol class="loweralpha simple">
+<li>syntax error</li>
+<li>runtime error</li>
+<li>logic error</li>
+</ol>
+<p>Using the formula <code class="docutils literal notranslate"><span class="pre">seconds</span> <span class="pre">=</span> <span class="pre">minutes</span> <span class="pre">*</span> <span class="pre">6</span></code> to calculate the number of
+seconds from a number of minutes.</p>
+<ol class="last loweralpha simple">
+<li>syntax error</li>
+<li>runtime error</li>
+<li>logic error</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Look back at the first logic error example. Which of the following would
+NOT correct the error?</p>
+<ol class="last loweralpha simple">
+<li>In line 3, use <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">num%2</span> <span class="pre">!=</span> <span class="pre">0:</span></code></li>
+<li>In line 3, use <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">num%2</span> <span class="pre">==</span> <span class="pre">1:</span></code></li>
+<li>Switch the odd/even words in the print statements.</li>
+<li>In line 1, use <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">=</span> <span class="pre">26</span></code></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="what-is-debugging.html"><span aria-hidden="true">&larr;</span> <span class="section-number">10.1. </span>What is Debugging?</a></li>
+        
+        
+        <li class="next"><a href="diagnosing-error-messages.html"><span class="section-number">10.3. </span>Error Messages are Good <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

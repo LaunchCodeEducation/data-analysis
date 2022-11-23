@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9.2. Lists Are Like Strings &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="9.3. Working with Lists" href="working-with-lists.html" />
+    <link rel="prev" title="9.1. List Basics" href="list-basics.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">9. </span>Lists Keep Things in Order</a></li>
+    <li class="active"><span class="section-number">9.2. </span>Lists Are Like Strings</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="lists-are-like-strings">
+<h1><span class="section-number">9.2. </span>Lists Are Like Strings<a class="headerlink" href="#lists-are-like-strings" title="Permalink to this headline">¶</a></h1>
+<p>Besides being ordered collections, Python lists share other similarities with strings.</p>
+<div class="section" id="list-length">
+<h2><span class="section-number">9.2.1. </span>List Length<a class="headerlink" href="#list-length" title="Permalink to this headline">¶</a></h2>
+<p id="index-0">The <code class="docutils literal notranslate"><span class="pre">len()</span></code> function also returns the length of a list (the number of elements in the list).</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">letters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The list </span><span class="si">{0}</span><span class="s2"> has </span><span class="si">{1}</span><span class="s2"> elements.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">letters</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">letters</span><span class="p">)))</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The list [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;x&#39;, &#39;y&#39;, &#39;z&#39;] has 6 elements.
+</pre></div>
+</div>
+<p class="last">In line 3, <code class="docutils literal notranslate"><span class="pre">len(letters)</span></code> returns the number of items stored in the
+<code class="docutils literal notranslate"><span class="pre">letters</span></code> list.</p>
+</div>
+<p>Note that the statement <code class="docutils literal notranslate"><span class="pre">print(letters[len(letters)])</span></code> will throw an <em>index
+out of range</em> error. Since index values start at 0, the last element in any
+list will always have a value of <code class="docutils literal notranslate"><span class="pre">len(list_name)</span> <span class="pre">-</span> <span class="pre">1</span></code>.</p>
+</div>
+<div class="section" id="combining-lists">
+<span id="concatenating-lists"></span><h2><span class="section-number">9.2.2. </span>Combining Lists<a class="headerlink" href="#combining-lists" title="Permalink to this headline">¶</a></h2>
+<p>Just like strings, we can use the <code class="docutils literal notranslate"><span class="pre">+</span></code> and <code class="docutils literal notranslate"><span class="pre">*</span></code> operators for <em>concatenation</em>
+and <em>repetition</em>. Concatenation combines different lists to create one new,
+longer list. Repetition makes multiple copies of the same elements within a
+single list.</p>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p>Experiment with using different operators on lists. Take notes about the
+results you see.</p>
+<ol class="arabic simple">
+<li>Does order matter?  Print <code class="docutils literal notranslate"><span class="pre">first_list</span> <span class="pre">+</span> <span class="pre">second_list</span></code> vs.
+<code class="docutils literal notranslate"><span class="pre">second_list</span> <span class="pre">+</span> <span class="pre">first_list</span></code>, and then write down your answer.</li>
+<li>Does the <code class="docutils literal notranslate"><span class="pre">+</span></code> operator change the original list? To check, print
+<code class="docutils literal notranslate"><span class="pre">first_list</span></code> again after your code from step 1.</li>
+<li>Try printing <code class="docutils literal notranslate"><span class="pre">first_list</span> <span class="pre">+</span> <span class="pre">13</span></code> vs. <code class="docutils literal notranslate"><span class="pre">first_list</span> <span class="pre">+</span> <span class="pre">[13]</span></code>. What happens?</li>
+<li>Can we subtract two lists? Try printing <code class="docutils literal notranslate"><span class="pre">first_list</span> <span class="pre">-</span> <span class="pre">second_list</span></code>.</li>
+<li>What does the <code class="docutils literal notranslate"><span class="pre">*</span></code> operator do to a list? Try printing
+<code class="docutils literal notranslate"><span class="pre">second_list</span> <span class="pre">*</span> <span class="pre">3</span></code>.</li>
+<li>Does the <code class="docutils literal notranslate"><span class="pre">*</span></code> operator change the original list? To check, print
+<code class="docutils literal notranslate"><span class="pre">second_list</span></code> again after your code from step 5.</li>
+</ol>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Follow the instructions to see how the &#39;+&#39; and &#39;*&#39; operators affect lists.</span>
+<span class="n">first_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+<span class="n">second_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+
+<span class="c1"># Add your print statements here:</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/ListConcatenation" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+</div>
+</div>
+<div class="section" id="in-and-not-in">
+<h2><span class="section-number">9.2.3. </span><code class="docutils literal notranslate"><span class="pre">in</span></code> and <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code><a class="headerlink" href="#in-and-not-in" title="Permalink to this headline">¶</a></h2>
+<p>Just like strings, we can use the <code class="docutils literal notranslate"><span class="pre">in</span></code> and <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code> operators to check if a
+specific value is present in a list. The operators return <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>
+depending on if the value matches an element.</p>
+<div class="admonition-try-it admonition" id="in-not-in-editor">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p>Run this program to see the results returned by the <code class="docutils literal notranslate"><span class="pre">in</span></code> and <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code>
+operators.</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">fruit</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;cherry&quot;</span><span class="p">,</span> <span class="s2">&quot;tomato&quot;</span><span class="p">,</span> <span class="s2">&quot;bell pepper&quot;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;apple&#39;</span> <span class="ow">in</span> <span class="n">fruit</span><span class="p">)</span>       <span class="c1"># &#39;apple&#39; is an element in the list.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pear&#39;</span> <span class="ow">in</span> <span class="n">fruit</span><span class="p">)</span>        <span class="c1"># &#39;pear&#39; is NOT in the list.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;nana&#39;</span> <span class="ow">in</span> <span class="n">fruit</span><span class="p">)</span>        <span class="c1"># The string &#39;nana&#39; is NOT an element in the list.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;carrot&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">fruit</span><span class="p">)</span>  <span class="c1"># &#39;carrot&#39; is missing from the list, so &#39;not in&#39; returns True.</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/InAndNotInList" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="last">Note that even though the substring <code class="docutils literal notranslate"><span class="pre">'nana'</span></code> is present in <code class="docutils literal notranslate"><span class="pre">'banana'</span></code>,
+the result of line 5 is still <code class="docutils literal notranslate"><span class="pre">False</span></code>. In this case, the <code class="docutils literal notranslate"><span class="pre">in</span></code> operator
+checks if the string <code class="docutils literal notranslate"><span class="pre">'nana'</span></code> is its own element in <code class="docutils literal notranslate"><span class="pre">fruit</span></code>. To check if
+<code class="docutils literal notranslate"><span class="pre">'nana'</span></code> is a smaller piece of each element requires more code.</p>
+</div>
+</div>
+<div class="section" id="list-slices">
+<span id="slicing-lists"></span><h2><span class="section-number">9.2.4. </span>List Slices<a class="headerlink" href="#list-slices" title="Permalink to this headline">¶</a></h2>
+<p id="index-1">Just like strings, we can return a <em>slice</em> (several elements) from a list.
+Taking a slice creates a new list, and the syntax should be familiar:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">list_name</span><span class="p">[</span><span class="n">start_index</span> <span class="p">:</span> <span class="n">end_index</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The new list contains the elements from <code class="docutils literal notranslate"><span class="pre">start_index</span></code> up to but NOT including
+<code class="docutils literal notranslate"><span class="pre">end_index</span></code>. If we leave out <code class="docutils literal notranslate"><span class="pre">start_index</span></code>, the slice starts at the
+beginning of the list. If we leave out <code class="docutils literal notranslate"><span class="pre">end_index</span></code>, the slice continues to
+the end of the list.</p>
+<p>The index values in the new list begin at 0.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">original_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">14</span><span class="p">]</span>
+
+<span class="n">new_list</span> <span class="o">=</span> <span class="n">original_list</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">new_list</span><span class="p">,</span> <span class="s1">&#39;vs.&#39;</span><span class="p">,</span> <span class="n">original_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">original_list</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">original_list</span><span class="p">[</span><span class="mi">3</span><span class="p">:])</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[6, 8, 10] vs. [2, 4, 6, 8, 10, 12, 14]
+6
+[2, 4, 6]
+[8, 10, 12, 14]
+</pre></div>
+</div>
+</div>
+<div class="section" id="try-it">
+<h3><span class="section-number">9.2.4.1. </span>Try It!<a class="headerlink" href="#try-it" title="Permalink to this headline">¶</a></h3>
+<p>In the <a class="reference internal" href="#in-not-in-editor"><span class="std std-ref">(in/not in) Replit above</span></a>, add slices to check
+only a portion of the <code class="docutils literal notranslate"><span class="pre">fruit</span></code> list (e.g. <code class="docutils literal notranslate"><span class="pre">print(&quot;apple&quot;</span> <span class="pre">in</span> <span class="pre">fruit[2:4])</span></code>).</p>
+</div>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">9.2.5. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What is printed by the following code?</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">a_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last loweralpha simple">
+<li>2</li>
+<li>8</li>
+<li>6</li>
+<li>5</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Given <code class="docutils literal notranslate"><span class="pre">num_list</span> <span class="pre">=</span> <span class="pre">[8,</span> <span class="pre">6,</span> <span class="pre">7,</span> <span class="pre">5,</span> <span class="pre">3,</span> <span class="pre">0,</span> <span class="pre">9]</span></code>, what does <code class="docutils literal notranslate"><span class="pre">num_list[2:5]</span></code>
+return?</p>
+<ol class="last loweralpha simple">
+<li>[7, 5, 3]</li>
+<li>[7, 5, 3, 0]</li>
+<li>[6, 7, 5]</li>
+<li>[6, 7, 5, 3]</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What is printed by the following code?</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">a_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a_list</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last loweralpha simple">
+<li>[4, 4, 2, 2, 8, 8]</li>
+<li>[4, 2, 8, 4, 2, 8]</li>
+<li>[8, 4, 16]</li>
+<li>The code throws an error.</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Given <code class="docutils literal notranslate"><span class="pre">fruit</span> <span class="pre">=</span> <span class="pre">[&quot;apple&quot;,</span> <span class="pre">&quot;orange&quot;,</span> <span class="pre">&quot;banana&quot;,</span> <span class="pre">&quot;cherry&quot;,</span> <span class="pre">&quot;tomato&quot;,</span> <span class="pre">&quot;bell</span> <span class="pre">pepper&quot;]</span></code>,
+which of the following statements return <code class="docutils literal notranslate"><span class="pre">True</span></code>? Select ALL that apply.</p>
+<ol class="last loweralpha simple">
+<li>apples in fruit</li>
+<li>pepper in fruit</li>
+<li>banana in fruit[:3]</li>
+<li>tomato in fruit[1:4]</li>
+<li>broccoli not in fruit</li>
+<li>orange not in fruit[2:]</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="list-basics.html"><span aria-hidden="true">&larr;</span> <span class="section-number">9.1. </span>List Basics</a></li>
+        
+        
+        <li class="next"><a href="working-with-lists.html"><span class="section-number">9.3. </span>Working with Lists <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

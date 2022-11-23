@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13.2. Exercises: Introduction To Data &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="13.3. Studio: Introduction To Data" href="studio.html" />
+    <link rel="prev" title="13.1. Introduction To Data" href="intro-to-data.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">13. </span>Introduction To Data</a></li>
+    <li class="active"><span class="section-number">13.2. </span>Exercises: Introduction To Data</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="exercises-introduction-to-data">
+<h1><span class="section-number">13.2. </span>Exercises: Introduction To Data<a class="headerlink" href="#exercises-introduction-to-data" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="getting-started">
+<h2><span class="section-number">13.2.1. </span>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>For the exercises, answer the following questions about the lifecycle of a MOMA data
+analysis project. As you work through the exercises, refer to the <a class="reference external" href="https://www.kaggle.com/momanyc/museum-collection" target="_blank">Kaggle<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> page to get the information you need.</p>
+<p>Looking at a dataset on Kaggle:</p>
+<div class="figure align-default">
+<img alt="MOMA Dataset view on Kaggle.com" src="../../_images/kaggleDataOverview.png" />
+</div>
+<ol class="upperalpha simple">
+<li>Files</li>
+<li>Column headings</li>
+<li>File currently open</li>
+<li>Selected number of columns from total number of columns displayed.</li>
+<li>Data type: A = strings # = Number</li>
+</ol>
+</div>
+<div class="section" id="create-a-document">
+<h2><span class="section-number">13.2.2. </span>Create A Document<a class="headerlink" href="#create-a-document" title="Permalink to this headline">¶</a></h2>
+<p>In your chosen word processing program create a document titled: your_name-IntroToDataExercises.  Copy
+the below questions and paste into your document and answer the questions.</p>
+<div class="line-block">
+<div class="line"><strong>Business Issue:</strong></div>
+</div>
+<p>MOMA wants their collection to more accurately represent the art of the world. Currently, critics think
+it is too Eurocentric. MOMA hears this and wants to look at their collection, particularly artists
+represented, to determine a path forward to changing the feel of the collection. As part of this, MOMA
+has tasked their team with doing some analyses on the artists of the collection and how the art came to
+the museum. You are looking into the artwork that came directly from the artist as a gift to the museum
+and its visitors.</p>
+<p><strong>Data Understanding:</strong></p>
+<div class="line-block">
+<div class="line">1. Given two csvs of artists and artworks, what do the different columns mean to the analysis and what data type is each column?</div>
+</div>
+<p><strong>Data Preparation:</strong></p>
+<div class="line-block">
+<div class="line">2. We need to merge our two csvs. What columns would you want to keep and what columns do you think are unnecessary?</div>
+</div>
+<div class="line-block">
+<div class="line">3. What information is shared between the CSVs?</div>
+</div>
+<p><strong>Exploratory Analysis and Modeling:</strong></p>
+<div class="line-block">
+<div class="line">4. What are the key columns that we will be using in our analysis?</div>
+</div>
+<div class="line-block">
+<div class="line">5. Is there anything that we should be aware of about the data when working on the model?</div>
+</div>
+<p><strong>Validation:</strong></p>
+<div class="line-block">
+<div class="line">The project found that the top 3 artists to donate their work to the museum are: Louise Bourgeois, William Wegman, and Robert Rauschenberg.</div>
+</div>
+<div class="line-block">
+<div class="line">6. How would you go about validating this? For example, who at the museum can you speak with to confirm that this information is accurate?</div>
+</div>
+<div class="line-block">
+<div class="line">7. Is there anything in the Credit column that would make you think that you haven’t counted a donation properly?</div>
+</div>
+<p><strong>Visualization and Presentation:</strong></p>
+<div class="line-block">
+<div class="line">You now have to present your findings to the Museums board of directors.</div>
+</div>
+<div class="line-block">
+<div class="line">8. What do you want to include in the presentation and what do you want to leave out?</div>
+</div>
+</div>
+<div class="section" id="submitting-your-work">
+<h2><span class="section-number">13.2.3. </span>Submitting Your Work<a class="headerlink" href="#submitting-your-work" title="Permalink to this headline">¶</a></h2>
+<p>When finished make sure to save your work. Upload your document into the submission box in Canvas
+for <strong>Exercises: Intro to Data</strong> and click <em>Submit</em>.</p>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="intro-to-data.html"><span aria-hidden="true">&larr;</span> <span class="section-number">13.1. </span>Introduction To Data</a></li>
+        
+        
+        <li class="next"><a href="studio.html"><span class="section-number">13.3. </span>Studio: Introduction To Data <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>24.1. Working with Databases in Python &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="24.2. Exercises: Working with Databases in Python" href="exercises.html" />
+    <link rel="prev" title="24. Working with Databases in Python" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">24. </span>Working with Databases in Python</a></li>
+    <li class="active"><span class="section-number">24.1. </span>Working with Databases in Python</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="working-with-databases-in-python">
+<h1><span class="section-number">24.1. </span>Working with Databases in Python<a class="headerlink" href="#working-with-databases-in-python" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="reading">
+<h2><span class="section-number">24.1.1. </span>Reading<a class="headerlink" href="#reading" title="Permalink to this headline">¶</a></h2>
+<p>Read the following articles:</p>
+<p><a class="reference external" href="https://www.geeksforgeeks.org/working-with-database-using-pandas/" target="_blank">Working with database using Pandas<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p><a class="reference external" href="https://medium.com/jbennetcodes/how-to-use-pandas-to-access-databases-e4e74e6a329e" target="_blank">How to Use Pandas to Access Databases<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p><a class="reference external" href="https://www.tutorialspoint.com/python_network_programming/python_databases_and_sql.htm" target="_blank">Python - Databases and SQL<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">24.1.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What is the correct code for establishing the connection to a database?</p>
+<ol class="loweralpha simple">
+<li></li>
+</ol>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">con</span> <span class="o">=</span> <span class="n">sl</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;database.db&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<ol class="loweralpha simple" start="2">
+<li></li>
+</ol>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">con</span> <span class="o">=</span> <span class="n">sl</span><span class="o">.</span><span class="n">connection</span><span class="p">(</span><span class="s1">&#39;database.db&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<ol class="loweralpha simple" start="3">
+<li></li>
+</ol>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">con</span> <span class="o">=</span> <span class="n">sl</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">database</span><span class="o">.</span><span class="n">db</span><span class="p">)</span>
+</pre></div>
+</div>
+<ol class="loweralpha simple" start="4">
+<li></li>
+</ol>
+<div class="last highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">con</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;database.db&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last"><strong>read_sql_query()</strong> has 2 arguments. What are they?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">Is it a good practice to attempt to first explore a database with a database client or Pandas? Why?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">Is it good practice to limit the fields and/or records to retrieve when setting up a dataframe from a database table?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">Should the database server handle joins or Pandas? Why?</p>
+</div>
+<div class="admonition-queston admonition">
+<p class="first admonition-title">Queston</p>
+<p class="last">If your connection is named <strong>con</strong>, and you want to add a new record to the table, <strong>costco_finds</strong>, what would your code look like?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">If you wanted to print the records in the <strong>costco_finds</strong> table, what would your code look like?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">If you wanted to change the name of one of your <strong>costco finds</strong>, what would your code look like?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">If you wanted to remove a record from <strong>costco_finds</strong>, what would your code look like?</p>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="index.html"><span aria-hidden="true">&larr;</span> <span class="section-number">24. </span>Working with Databases in Python</a></li>
+        
+        
+        <li class="next"><a href="exercises.html"><span class="section-number">24.2. </span>Exercises: Working with Databases in Python <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

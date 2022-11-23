@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12.6. Search a Dictionary &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="12.7. Additional Collections in Python" href="additional-collections.html" />
+    <link rel="prev" title="12.5. Accumulator Pattern with Dictionaries" href="dictionary-accumulator.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">12. </span>Python Dictionaries and Tuples</a></li>
+    <li class="active"><span class="section-number">12.6. </span>Search a Dictionary</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="search-a-dictionary">
+<h1><span class="section-number">12.6. </span>Search a Dictionary<a class="headerlink" href="#search-a-dictionary" title="Permalink to this headline">¶</a></h1>
+<p>With both lists and strings, we used the <code class="docutils literal notranslate"><span class="pre">in</span></code> and <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code> operators to
+search for specific values. These expressions returned either <code class="docutils literal notranslate"><span class="pre">True</span></code> or
+<code class="docutils literal notranslate"><span class="pre">False</span></code> depending on if the value was found in the collection.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">greeting</span> <span class="o">=</span> <span class="s1">&#39;Hello, World!&#39;</span>
+<span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;banana&#39;</span><span class="p">,</span> <span class="s1">&#39;pear&#39;</span><span class="p">,</span> <span class="s1">&#39;kiwi&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">]</span>
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">28</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;or&#39;</span> <span class="ow">in</span> <span class="n">greeting</span><span class="p">)</span>  <span class="c1"># Search for the substring &#39;or&#39; in the larger string.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;nana&#39;</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">)</span>  <span class="c1"># Search for the value &#39;nana&#39; in the list of strings.</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;!&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">greeting</span><span class="p">)</span> <span class="c1"># Check if &#39;!&#39; is NOT in &#39;Hello, World!&#39;.</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">42</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">)</span>   <span class="c1"># Check if 42 is NOT in the numbers list.</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>True
+False
+False
+True
+</pre></div>
+</div>
+</div>
+<p>Since the elements in a dictionary come as pairs, we search for an item in
+<em>either</em> the set of keys <em>or</em> the set of values.</p>
+<p>We practiced with the <code class="docutils literal notranslate"><span class="pre">keys()</span></code> and <code class="docutils literal notranslate"><span class="pre">values()</span></code> methods in the previous two
+sections, and we can use them in a similar way to search a dictionary.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">ticket_holders</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;Bob&#39;</span> <span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+   <span class="s1">&#39;Jessi&#39;</span> <span class="p">:</span> <span class="mi">103</span><span class="p">,</span>
+   <span class="s1">&#39;Maria&#39;</span> <span class="p">:</span> <span class="mi">101</span><span class="p">,</span>
+   <span class="s1">&#39;Devon&#39;</span> <span class="p">:</span> <span class="mi">102</span>
+<span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="mi">101</span> <span class="ow">in</span> <span class="n">ticket_holders</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">101</span> <span class="ow">in</span> <span class="n">ticket_holders</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Jessi&#39;</span> <span class="ow">in</span> <span class="n">ticket_holders</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Jessi&#39;</span> <span class="ow">in</span> <span class="n">ticket_holders</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>False
+True
+True
+False
+</pre></div>
+</div>
+<ol class="last arabic simple">
+<li>In line 8, <code class="docutils literal notranslate"><span class="pre">101</span> <span class="pre">in</span> <span class="pre">ticket_holders.keys()</span></code> returns <code class="docutils literal notranslate"><span class="pre">False</span></code>. Even
+though <code class="docutils literal notranslate"><span class="pre">101</span></code> is in the dictionary, it is a <em>value</em>, and in this case we
+are searching through the <em>keys</em>.</li>
+<li>In line 9, <code class="docutils literal notranslate"><span class="pre">101</span> <span class="pre">in</span> <span class="pre">ticket_holders.values()</span></code> returns <code class="docutils literal notranslate"><span class="pre">True</span></code>.</li>
+<li>In lines 11 and 12, we search for the string <code class="docutils literal notranslate"><span class="pre">'Jessi'</span></code> first in the
+keys and then in the values.</li>
+</ol>
+</div>
+<div class="section" id="default-search-method">
+<h2><span class="section-number">12.6.1. </span>Default Search Method<a class="headerlink" href="#default-search-method" title="Permalink to this headline">¶</a></h2>
+<p>If we do not add the <code class="docutils literal notranslate"><span class="pre">keys()</span></code> or <code class="docutils literal notranslate"><span class="pre">values()</span></code> method after the dictionary
+name, Python searches the <em>keys</em> by default.</p>
+<p>This means that</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">search_value</span> <span class="ow">in</span> <span class="n">dictionary_name</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>returns the same result as</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">search_value</span> <span class="ow">in</span> <span class="n">dictionary_name</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="try-it">
+<h2><span class="section-number">12.6.2. </span>Try It!<a class="headerlink" href="#try-it" title="Permalink to this headline">¶</a></h2>
+<p>Let’s build a quick search algorithm for a <code class="docutils literal notranslate"><span class="pre">phone_book</span></code> dictionary. In the
+code editor below, begin with the following:</p>
+<ol class="arabic simple">
+<li>Note how the input statement on line 12 modifies the name entered by the
+user. Attaching the <code class="docutils literal notranslate"><span class="pre">lower()</span></code> and <code class="docutils literal notranslate"><span class="pre">capitalize()</span></code> methods makes sure that
+the string matches the format of the keys in <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>. The entries
+<code class="docutils literal notranslate"><span class="pre">'john',</span> <span class="pre">'John',</span> <span class="pre">and</span> <span class="pre">'JOHN'</span></code> all get converted to <code class="docutils literal notranslate"><span class="pre">'John'</span></code>.</li>
+<li>On lines 15-18, add an <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block that does the following:<ol class="loweralpha">
+<li>Checks if <code class="docutils literal notranslate"><span class="pre">name</span></code> is one of the keys in <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>.</li>
+<li>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, print <code class="docutils literal notranslate"><span class="pre">&quot;The</span> <span class="pre">number</span> <span class="pre">for</span> <span class="pre">___</span> <span class="pre">is</span> <span class="pre">___.&quot;</span></code> Fill in the first
+blank with the entered name (the key). Fill in the second blank with that
+person’s phone number (the value).</li>
+<li>If <code class="docutils literal notranslate"><span class="pre">False</span></code>, print <code class="docutils literal notranslate"><span class="pre">&quot;Sorry,</span> <span class="pre">___</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">your</span> <span class="pre">phone</span> <span class="pre">book.&quot;</span></code> Fill in
+the blank with the entered name.</li>
+</ol>
+</li>
+<li>Run the program several times to make sure it responds correctly.</li>
+</ol>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">phone_book</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;Abby&#39;</span><span class="p">:</span> <span class="s1">&#39;555-5081&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Mike&#39;</span><span class="p">:</span> <span class="s1">&#39;555-5515&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Daniel&#39;</span><span class="p">:</span> <span class="s1">&#39;555-5037&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Kimberly&#39;</span><span class="p">:</span> <span class="s1">&#39;555-5509&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Jt&#39;</span><span class="p">:</span> <span class="s1">&#39;555-5198&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Becky&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5162&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Gordon&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5299&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;James&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5837&#39;</span>
+<span class="p">}</span>
+
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a name: &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
+
+<span class="c1"># Code the first if/else block here:</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/DictionarySearch" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p><strong>Now expand the program:</strong></p>
+<ol class="arabic">
+<li><p class="first">On line 20, paste a new input statement:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ph_number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a phone number: &quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Add a second <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block that:</p>
+<ol class="loweralpha">
+<li><p class="first">Checks if <code class="docutils literal notranslate"><span class="pre">ph_number</span></code> is NOT a value in the <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>.</p>
+</li>
+<li><p class="first">If <code class="docutils literal notranslate"><span class="pre">True</span></code>, prints <code class="docutils literal notranslate"><span class="pre">&quot;___</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">your</span> <span class="pre">phone</span> <span class="pre">book!&quot;</span></code>. Fill in the
+blank with the entered phone number.</p>
+</li>
+<li><p class="first">If <code class="docutils literal notranslate"><span class="pre">False</span></code>, runs the following loop. Be sure to indent it properly
+compared to the <code class="docutils literal notranslate"><span class="pre">else</span></code> keyword.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>26
+27
+28</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="ow">in</span> <span class="n">phone_book</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+   <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="n">ph_number</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Dialing </span><span class="si">{</span><span class="n">ph_number</span><span class="si">}</span><span class="s2"> will call </span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</li>
+</ol>
+</li>
+</ol>
+<div class="section" id="sample-output">
+<h3><span class="section-number">12.6.2.1. </span>Sample Output<a class="headerlink" href="#sample-output" title="Permalink to this headline">¶</a></h3>
+<p>Properly done, your output should look something like this:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Enter a name:  kimberly
+The number for Kimberly is 555-5509.
+Enter a phone number:  333-3333
+333-3333 is not in your phone book!
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Enter a name:  will
+Sorry, Will is not in your phone book.
+Enter a phone number:  555-5162
+Dialing 555-5162 will call Becky.
+</pre></div>
+</div>
+</div>
+<div class="section" id="bonus">
+<h3><span class="section-number">12.6.2.2. </span>Bonus!<a class="headerlink" href="#bonus" title="Permalink to this headline">¶</a></h3>
+<p>Update the program to add a new key/value pair to the dictionary if the name
+entered by the user is NOT already in <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>.</p>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="dictionary-accumulator.html"><span aria-hidden="true">&larr;</span> <span class="section-number">12.5. </span>Accumulator Pattern with Dictionaries</a></li>
+        
+        
+        <li class="next"><a href="additional-collections.html"><span class="section-number">12.7. </span>Additional Collections in Python <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

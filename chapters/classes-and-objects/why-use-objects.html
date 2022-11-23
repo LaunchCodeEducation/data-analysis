@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why Use Objects? &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Working With Objects" href="using-objects.html" />
+    <link rel="prev" title="What are Objects" href="what-are-objects.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html">Classes and Objects</a></li>
+    <li class="active">Why Use Objects?</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="why-use-objects">
+<h1>Why Use Objects?<a class="headerlink" href="#why-use-objects" title="Permalink to this headline">¶</a></h1>
+<p id="index-0">Most of the Python programs you have written so far contain statements that
+gather data, do something with it, and then display the results. The statements
+follow a general top-down order, and they focus on how to carry out a certain
+job. You included functions to help streamline your code, and you called those
+functions as you needed them. This style of programming is called
+<strong>procedural</strong>. It focuses on the process of working with data:</p>
+<ol class="arabic simple">
+<li>Define or import a function to do a specific job,</li>
+<li>Call that function and send it some data,</li>
+<li>Use loops, conditionals, etc. to do something with the returned result.</li>
+</ol>
+<p>This style of programming works fine for small programs. However, as our
+applications get bigger, reading, debugging and updating the code gets harder.</p>
+<div class="section" id="a-shift-in-thinking">
+<h2>A Shift in Thinking<a class="headerlink" href="#a-shift-in-thinking" title="Permalink to this headline">¶</a></h2>
+<p>An <em>object</em> wraps the processes of collecting and using data into one tidy
+package. A single object can store data, perform actions on that data, and
+return the results of those actions. Instead of defining several related
+functions and variables at different places in our code, we can collect all of
+those statements into a single object.</p>
+<p>If we bring together a collection of different objects, each with its own
+set of properties and methods, then we can build programs in a much more
+flexible way. Each object controls its own data and actions. This lets us break
+large programs into smaller chunks of code that are easier to edit and debug.</p>
+<p>Imagine that we write a program over several weeks or months. As we build it
+and add new features, we code new functions and add them to the end of a
+growing list. As long as we include the proper control statements and variables
+in <code class="docutils literal notranslate"><span class="pre">main()</span></code>, our program will work fine. However, as our code grows, it will
+get more difficult to keep track of how each function relates to the data and
+the actions performed in <code class="docutils literal notranslate"><span class="pre">main()</span></code>. In the figure below, our program might
+look like the image shown on the left (shapes with the same color relate to
+each other).</p>
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="../../_images/process-vs-objects.png"><img alt="Figure showing the how objects organize code within a program." src="../../_images/process-vs-objects.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text">Objects allow us to keep related code together in a program.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>The right hand side of the figure shows the same program. However, this time we
+created three objects in <code class="docutils literal notranslate"><span class="pre">main()</span></code>. Inside each object, we placed data and
+actions that relate to each other.</p>
+<p>If we test our program and find a logic error with collecting and evaluating
+user input, then the object-oriented approach helps us narrow down the
+statements we need to check. We can focus on the object that deals with that
+task instead of having to search through all of our code to find the faulty
+<code class="docutils literal notranslate"><span class="pre">input</span></code> statements and/or function calls.</p>
+<p>Objects are created as they are needed and <em>only</em> when the program <em>runs</em>.</p>
+</div>
+<div class="section" id="objects-copy-real-world-thinking">
+<h2>Objects Copy Real World Thinking<a class="headerlink" href="#objects-copy-real-world-thinking" title="Permalink to this headline">¶</a></h2>
+<p>As we shift our thinking towards using objects, it helps to create a mental
+picture that connects how we want to code with some real life examples. In the
+world around us, we interact with objects all the time. Think of things like
+cars, phones, refrigerators, etc.</p>
+<p>Each of these objects has a set of properties that describe it, and each object
+can perform different actions.</p>
+<div class="section" id="phones-as-objects">
+<h3>Phones as Objects<a class="headerlink" href="#phones-as-objects" title="Permalink to this headline">¶</a></h3>
+<p>When we run an app on a smartphone, we use the device to perform a specific
+action. This is the same idea behind coding with an object. Instead of writing
+a function and sending it some data, we create an object and give it the
+ability to perform an action.</p>
+<p>Let’s think about how using a smartphone relates to coding with an object. Take
+a look at the following code:</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">show_weather</span><span class="p">(</span><span class="n">phone</span><span class="p">)</span>
+
+<span class="n">phone</span><span class="o">.</span><span class="n">weather</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+<p>Line 1 shows a function call to <code class="docutils literal notranslate"><span class="pre">show_weather</span></code>, and we pass it <code class="docutils literal notranslate"><span class="pre">phone</span></code> as
+the argument. The statement tells Python, <em>Run the code to give us a weather
+report, and use the data assigned to phone</em>. This is an example of procedural
+programming.</p>
+<p>Line 3 shows an object-oriented approach to the same job. <code class="docutils literal notranslate"><span class="pre">phone</span></code> is an
+object that contains code for displaying the weather. The statement tells
+Python, <em>Make the phone object run its weather() action</em>.</p>
+</div>
+<div class="section" id="cooking-with-objects">
+<h3>Cooking with Objects<a class="headerlink" href="#cooking-with-objects" title="Permalink to this headline">¶</a></h3>
+<p>If we stand in a kitchen, we will probably find several different tools for
+cooking dinner. These might include a microwave, a stove top, an oven, a
+crock pot, and maybe a barbecue grill (although we should move that outside
+before using it). What we won’t find in the kitchen is a device called
+<code class="docutils literal notranslate"><span class="pre">cook()</span></code>.</p>
+<p>For a moment, lets imagine that we <em>do</em> write a <code class="docutils literal notranslate"><span class="pre">cook()</span></code> function as part of
+our kitchen space. It’s not a device, like the stove. Instead, its a place
+where we must add items to prepare a meal. Let’s think about how we would use
+this set of code to do some procedural programming. We can picture the code
+block as a box waiting for some input:</p>
+<div class="figure align-default" id="id2">
+<img alt="Image showing and empty box labeled &quot;cook()&quot;." src="../../_images/cook-function.png" />
+<p class="caption"><span class="caption-text">The <code class="docutils literal notranslate"><span class="pre">cook()</span></code> function, which represents a spot in your kitchen to deposit food and a device.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>When we call the function, we need to send it the <em>device that does the
+cooking</em> as well as the ingredients.</p>
+<div class="figure align-default" id="id3">
+<a class="reference internal image-reference" href="../../_images/cook-function-2.png"><img alt="Image showing examples of putting devices and food into the cook() box." src="../../_images/cook-function-2.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">cook(device,</span> <span class="pre">food)</span></code>. The function code must deal with multiple tools and ingredients.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>Since each device has it’s own way of cooking food, the code inside <code class="docutils literal notranslate"><span class="pre">cook()</span></code>
+must be able to handle different tools and ingredients. The function needs to
+work for an oven, a toaster, a microwave, etc. This is an inefficient way to
+code for the job of cooking.</p>
+<p>Now let’s look at how we can prepare a meal using the object-oriented approach.</p>
+<p>With objects, we can assign a special block of code to each tool. The stove,
+microwave, etc. gets its own <code class="docutils literal notranslate"><span class="pre">.cook()</span></code> method designed to work with its
+hardware. To warm up our food, we put it in a device and then push a button or
+turn a dial. Instead of writing one big function to deal with all possible
+cooking tools, methods allow us to write smaller blocks of code for each
+specific device.</p>
+<div class="figure align-default" id="id4">
+<img alt="Image showing the .cook() method applied to different cooking devices." src="../../_images/cook-method.png" />
+<p class="caption"><span class="caption-text">Each device has its own specific <code class="docutils literal notranslate"><span class="pre">.cook()</span></code> method.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">.cook()</span></code> method for a microwave contains different code than the
+<code class="docutils literal notranslate"><span class="pre">.cook()</span></code> method for a gas grill.</p>
+<p>Writing code for separate <code class="docutils literal notranslate"><span class="pre">.cook()</span></code> methods might sound like just as much
+work as creating one big <code class="docutils literal notranslate"><span class="pre">cook()</span></code> function. Our final program will work well
+either way. However, each method represents a smaller individual block of code.
+This leaves less room for error and makes debugging much easier. For example,
+we can modify the oven code without worrying about how it will affect the crock
+pot.</p>
+<p>Coding with objects also allows us to more easily expand our program. We can
+add a new device and cook method, like <code class="docutils literal notranslate"><span class="pre">toaster.cook()</span></code>, without needing to
+change the code for other objects. The new object and method extends what we
+already have. We <em>add</em> new code blocks instead of <em>inserting</em> the code in the
+middle of an existing function. By working this way, we don’t disrupt the other
+<code class="docutils literal notranslate"><span class="pre">.cook()</span></code> methods.</p>
+</div>
+</div>
+<div class="section" id="check-your-understanding">
+<h2>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Which of the following refers to the <em>properties</em> of an object?</p>
+<ol class="last loweralpha simple">
+<li>behaviors of the object</li>
+<li>actions the object can take</li>
+<li>data describing the object</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="what-are-objects.html"><span aria-hidden="true">&larr;</span> What are Objects</a></li>
+        
+        
+        <li class="next"><a href="using-objects.html">Working With Objects <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

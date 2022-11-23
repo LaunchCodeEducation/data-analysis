@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10. Errors and Debugging &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="10.1. What is Debugging?" href="what-is-debugging.html" />
+    <link rel="prev" title="9.11. Studio: Strings and Lists" href="../lists/studio.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li class="active"><span class="section-number">10. </span>Errors and Debugging</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="errors-and-debugging">
+<h1><span class="section-number">10. </span>Errors and Debugging<a class="headerlink" href="#errors-and-debugging" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="what-is-debugging.html">10.1. What is Debugging?</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="what-is-debugging.html#beginning-tips-for-debugging">10.1.1. Beginning Tips for Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="what-is-debugging.html#check-your-understanding">10.1.2. Check Your Understanding</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="error-types.html">10.2. Types of Errors</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="error-types.html#stages-for-running-a-python-program">10.2.1. Stages for Running a Python Program</a><ol>
+<li class="toctree-l3"><a class="reference internal" href="error-types.html#stage-1-parsing">10.2.1.1. Stage 1 - Parsing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="error-types.html#stage-2-execution">10.2.1.2. Stage 2 - Execution</a></li>
+</ol>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="error-types.html#syntax-errors">10.2.2. Syntax Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="error-types.html#runtime-errors">10.2.3. Runtime Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="error-types.html#logic-errors">10.2.4. Logic Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="error-types.html#check-your-understanding">10.2.5. Check Your Understanding</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="diagnosing-error-messages.html">10.3. Error Messages are Good</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="diagnosing-error-messages.html#a-syntax-error">10.3.1. A Syntax Error</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diagnosing-error-messages.html#syntax-errors-and-code-highlighting">10.3.2. Syntax Errors and Code Highlighting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diagnosing-error-messages.html#a-runtime-error">10.3.3. A Runtime Error</a></li>
+<li class="toctree-l2"><a class="reference internal" href="diagnosing-error-messages.html#runtime-errors-and-code-highlighting">10.3.4. Runtime Errors and Code Highlighting</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="debugging-logic-errors.html">10.4. Fixing Logic Errors</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="debugging-logic-errors.html#printing-values">10.4.1. Printing Values</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="how-to-avoid-debugging.html">10.5. How To Avoid Debugging</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="how-to-avoid-debugging.html#start-small">10.5.1. Start Small</a></li>
+<li class="toctree-l2"><a class="reference internal" href="how-to-avoid-debugging.html#keep-it-working">10.5.2. Keep It Working</a></li>
+<li class="toctree-l2"><a class="reference internal" href="how-to-avoid-debugging.html#talk-to-a-duck">10.5.3. Talk to a Duck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="how-to-avoid-debugging.html#practice-makes-better">10.5.4. Practice Makes Better</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="asking-good-questions.html">10.6. Asking Good Questions</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="asking-good-questions.html#what-is-the-problem-with-your-code">10.6.1. What is the problem with your code?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="asking-good-questions.html#what-have-you-done-to-try-to-fix-the-problem">10.6.2. What have you done to try to fix the problem?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="asking-good-questions.html#where-have-you-looked-for-an-answer">10.6.3. Where have you looked for an answer?</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="exercises.html">10.7. Exercises: Errors and Debugging</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="exercises.html#find-and-fix-syntax-errors">10.7.1. Find and Fix Syntax Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises.html#find-and-fix-runtime-errors">10.7.2. Find and Fix Runtime Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises.html#solve-logic-errors">10.7.3. Solve Logic Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises.html#submitting-your-work">10.7.4. Submitting Your Work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exercises.html#id1">10.7.5. Submitting Your Work</a></li>
+</ol>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="studio.html">10.8. Studio: Errors and Debugging</a><ol>
+<li class="toctree-l2"><a class="reference internal" href="studio.html#fix-syntax-errors-first">10.8.1. Fix Syntax Errors First</a></li>
+<li class="toctree-l2"><a class="reference internal" href="studio.html#fix-runtime-errors-next">10.8.2. Fix Runtime Errors Next</a></li>
+<li class="toctree-l2"><a class="reference internal" href="studio.html#solve-logic-errors-last">10.8.3. Solve Logic Errors Last</a></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="../lists/studio.html"><span aria-hidden="true">&larr;</span> <span class="section-number">9.11. </span>Studio: Strings and Lists</a></li>
+        
+        
+        <li class="next"><a href="what-is-debugging.html"><span class="section-number">10.1. </span>What is Debugging? <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

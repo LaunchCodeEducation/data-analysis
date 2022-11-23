@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9.5. Iterating Through Lists &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="9.6. Common List Tasks" href="common-list-tasks.html" />
+    <link rel="prev" title="9.4. List Methods" href="list-methods.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">9. </span>Lists Keep Things in Order</a></li>
+    <li class="active"><span class="section-number">9.5. </span>Iterating Through Lists</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="iterating-through-lists">
+<h1><span class="section-number">9.5. </span>Iterating Through Lists<a class="headerlink" href="#iterating-through-lists" title="Permalink to this headline">¶</a></h1>
+<p>We can use a loop to iterate through the elements in a list in the same way we did with the characters in a string.</p>
+<div class="section" id="loop-by-element">
+<h2><span class="section-number">9.5.1. </span>Loop by Element<a class="headerlink" href="#loop-by-element" title="Permalink to this headline">¶</a></h2>
+<p>Since a list is simply a sequence of separate data values, Python gives us a
+way to automatically iterate over those elements.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">shopping_list_items</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apples&#39;</span><span class="p">,</span> <span class="s1">&#39;oranges&#39;</span><span class="p">,</span> <span class="s1">&#39;bananas&#39;</span><span class="p">,</span> <span class="s1">&#39;bread&#39;</span><span class="p">,</span> <span class="s1">&#39;toothpaste&#39;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;You need to buy:&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">shopping_list_items</span><span class="p">:</span>     <span class="c1"># Iterate by element</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">item</span><span class="p">)</span>           <span class="c1"># Print a tab followed by the string assigned to &#39;item&#39;</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>You need to buy:
+   apples
+   oranges
+   bananas
+   bread
+   toothpaste
+</pre></div>
+</div>
+</div>
+<p>The syntax almost reads like natural language: <em>For each item in
+shopping_list_items, print a tab character plus the item</em>.</p>
+<p>Each time the loop repeats, Python assigns the next element in the list to the
+variable <code class="docutils literal notranslate"><span class="pre">item</span></code>. The elements may be of any data type.</p>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>To keep the meaning of your code clear, use plural names for your
+lists—like <code class="docutils literal notranslate"><span class="pre">fruits</span></code>, <code class="docutils literal notranslate"><span class="pre">cars</span></code>, <code class="docutils literal notranslate"><span class="pre">even_numbers</span></code>, etc.</p>
+<p>When you iterate through a list, use the singular name for the loop
+variable.</p>
+<ol class="arabic simple">
+<li><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">fruit</span> <span class="pre">in</span> <span class="pre">fruits:</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">car</span> <span class="pre">in</span> <span class="pre">cars:</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">even_number</span> <span class="pre">in</span> <span class="pre">even_numbers:</span></code></li>
+</ol>
+<p class="last">This helps you explain what your code is doing. For example, in step 2, you
+can think to yourself, <em>Each time the loop repeats, my code takes one
+car element from the cars list</em>.</p>
+</div>
+</div>
+<div class="section" id="loop-by-index">
+<h2><span class="section-number">9.5.2. </span>Loop by Index<a class="headerlink" href="#loop-by-index" title="Permalink to this headline">¶</a></h2>
+<p>We can also use the <code class="docutils literal notranslate"><span class="pre">range</span></code> command to generate index values, and then use
+bracket notation to access each element from the list:</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">shopping_list_items</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apples&#39;</span><span class="p">,</span> <span class="s1">&#39;oranges&#39;</span><span class="p">,</span> <span class="s1">&#39;bananas&#39;</span><span class="p">,</span> <span class="s1">&#39;bread&#39;</span><span class="p">,</span> <span class="s1">&#39;toothpaste&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">shopping_list_items</span><span class="p">)):</span>     <span class="c1"># Iterate by index</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{0}</span><span class="s2">) </span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">shopping_list_items</span><span class="p">[</span><span class="n">index</span><span class="p">]))</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>1) apples
+2) oranges
+3) bananas
+4) bread
+5) toothpaste
+</pre></div>
+</div>
+</div>
+<p>Note the following:</p>
+<ol class="arabic simple">
+<li>In this loop, <code class="docutils literal notranslate"><span class="pre">range(len(shopping_list_items))</span></code> generates a sequence of
+integers up to but not including the length of the list. Since
+<code class="docutils literal notranslate"><span class="pre">len(shopping_list_items)</span></code> returns the value <code class="docutils literal notranslate"><span class="pre">5</span></code>, this list of integers
+will be <code class="docutils literal notranslate"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4</span></code>.</li>
+<li>Each time the loop repeats, Python assigns the next integer in the
+sequence to the variable <code class="docutils literal notranslate"><span class="pre">index</span></code>.</li>
+<li>In line 4, note how we use the <code class="docutils literal notranslate"><span class="pre">index</span></code> values to calculate the item
+numbers and access each element from the list.<ol class="loweralpha">
+<li>The <code class="docutils literal notranslate"><span class="pre">{0}</span></code> placeholder gets filled with the value of <code class="docutils literal notranslate"><span class="pre">index</span></code> plus
+one. Since <code class="docutils literal notranslate"><span class="pre">index</span></code> takes the values 0 - 4, the output shows the
+line numbers 1 - 5.</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">{1}</span></code> placeholder gets filled with one element from the list.
+When <code class="docutils literal notranslate"><span class="pre">index</span></code> is <code class="docutils literal notranslate"><span class="pre">0</span></code>, <code class="docutils literal notranslate"><span class="pre">shopping_list_items[index]</span></code> returns
+<code class="docutils literal notranslate"><span class="pre">'apples'</span></code>. The next time the loop repeats, <code class="docutils literal notranslate"><span class="pre">index</span></code> is <code class="docutils literal notranslate"><span class="pre">1</span></code>, and
+<code class="docutils literal notranslate"><span class="pre">shopping_list_items[index]</span></code> returns <code class="docutils literal notranslate"><span class="pre">'oranges'</span></code>.</li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="which-syntax-should-we-use">
+<h2><span class="section-number">9.5.3. </span>Which Syntax Should We Use?<a class="headerlink" href="#which-syntax-should-we-use" title="Permalink to this headline">¶</a></h2>
+<p>Should we <em>loop by element</em> or <em>loop by index</em>? In many cases, the choice comes
+down to personal preference. Sometimes, however, one option will be better than
+the other.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Given <code class="docutils literal notranslate"><span class="pre">scores</span> <span class="pre">=</span> <span class="pre">[10,</span> <span class="pre">25,</span> <span class="pre">8,</span> <span class="pre">33,</span> <span class="pre">0]</span></code>, the code shows two ways to add up all
+of the values from the list:</p>
+<div class="last highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">scores</span><span class="p">:</span>             <span class="c1"># Option 1: Loop by element</span>
+   <span class="n">total_points</span> <span class="o">+=</span> <span class="n">score</span>
+
+<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)):</span> <span class="c1"># Option 2: Loop by index</span>
+   <span class="n">total_points</span> <span class="o">+=</span> <span class="n">scores</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>The end result is the same for both loops, <code class="docutils literal notranslate"><span class="pre">total_points</span></code> winds up with a
+value of <code class="docutils literal notranslate"><span class="pre">76</span></code>. However, the syntax for looping by element (option 1) is
+cleaner, since we do not have to worry about bracket notation.</p>
+<p>This example shows doing something WITH the list elements. We access each one
+in turn and add it to <code class="docutils literal notranslate"><span class="pre">total_points</span></code>. We do NOT change any of the elements
+themselves. <code class="docutils literal notranslate"><span class="pre">print(scores)</span></code> returns <code class="docutils literal notranslate"><span class="pre">[10,</span> <span class="pre">25,</span> <span class="pre">8,</span> <span class="pre">33,</span> <span class="pre">0]</span></code> even after the
+loop finishes.</p>
+<p>The next example shows a case where we change the values of some list elements:</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Given <code class="docutils literal notranslate"><span class="pre">scores</span> <span class="pre">=</span> <span class="pre">[10,</span> <span class="pre">25,</span> <span class="pre">8,</span> <span class="pre">33,</span> <span class="pre">0]</span></code>, the code below changes the points for
+some of the values:</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)):</span>    <span class="c1"># Loop by index</span>
+   <span class="k">if</span> <span class="n">index</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">:</span>                   <span class="c1"># Check position in list</span>
+      <span class="n">scores</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">12</span>           <span class="c1"># If True, increase the value of the element</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[10, 25, 8, 33, 0]
+[10, 25, 20, 45, 12]
+</pre></div>
+</div>
+<p>Take a moment to think about what happens inside this loop. We change the
+value of an element based on its <em>position</em> in the list.</p>
+<ol class="last arabic simple">
+<li>Each time the loop runs, <code class="docutils literal notranslate"><span class="pre">index</span></code> gets assigned the next value in the
+sequence <code class="docutils literal notranslate"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4</span></code>.</li>
+<li>Line 4 checks if the element in the list is at index 2 or later. If
+<code class="docutils literal notranslate"><span class="pre">True</span></code>, we add 12 points to the value.</li>
+<li>We use the bracket notation in line 5 to change the value of the selected
+element.</li>
+</ol>
+</div>
+<p>We can also change list elements based on their values instead of their
+locations:</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)):</span>    <span class="c1"># Loop by index</span>
+   <span class="k">if</span> <span class="n">scores</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>         <span class="c1"># Check if the current score is even</span>
+      <span class="n">scores</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">*=</span> <span class="mi">2</span>            <span class="c1"># If True, double the score</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[10, 25, 8, 33, 0]
+[20, 25, 16, 33, 0]
+</pre></div>
+</div>
+<ol class="last arabic simple">
+<li>Line 4 checks if the value for the current list element is even.</li>
+<li>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, line 5 doubles the value and reassigns it to the same
+index location in the list.</li>
+</ol>
+</div>
+<p>Since lists are mutable, we can use a loop to change some or all of the
+elements. To do this, we must know the <em>position</em> of the element in the list,
+and this requires an index value.</p>
+<div class="section" id="take-home-ideas">
+<h3><span class="section-number">9.5.3.1. </span>Take Home Ideas<a class="headerlink" href="#take-home-ideas" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>If we need to access the values inside a list without changing the list
+itself, then looping by element is the cleaner approach.</li>
+<li>Looping by element avoids <em>index out of range</em> errors.</li>
+<li>If we need to change one or more of the values in a list, then we MUST loop
+by index.</li>
+<li>If we need to access elements based on their position, then looping by index
+is the better choice.</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="list-methods.html"><span aria-hidden="true">&larr;</span> <span class="section-number">9.4. </span>List Methods</a></li>
+        
+        
+        <li class="next"><a href="common-list-tasks.html"><span class="section-number">9.6. </span>Common List Tasks <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

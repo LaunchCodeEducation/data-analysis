@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9.9. Lists Within Lists &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="9.10. Exercises: Lists" href="exercises.html" />
+    <link rel="prev" title="9.8. split and join" href="split-and-join.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">9. </span>Lists Keep Things in Order</a></li>
+    <li class="active"><span class="section-number">9.9. </span>Lists Within Lists</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="lists-within-lists">
+<h1><span class="section-number">9.9. </span>Lists Within Lists<a class="headerlink" href="#lists-within-lists" title="Permalink to this headline">¶</a></h1>
+<p>Earlier we learned that lists can store values of any data type. Does this mean
+we can store lists inside of lists? Well, yes we can…</p>
+<span class="target" id="index-0"></span><p id="index-1">A <strong>multi-dimensional list</strong> is a list of lists, meaning that the values inside
+the list are also lists.</p>
+<p>A <strong>nested list</strong> is a list that appears as an element inside another list.
+Nested lists can store strings, numbers, and even more lists.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">multidim_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="s1">&#39;rutabaga&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>In <code class="docutils literal notranslate"><span class="pre">multidim_list</span></code>, the element at index 2 is a nested list. If we
+<code class="docutils literal notranslate"><span class="pre">print(multidim_list[2])</span></code>, we see <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3]</span></code> appear in the console.</p>
+<p>The figure below shows a <code class="docutils literal notranslate"><span class="pre">courses</span></code> list that holds lists at each index
+position. Each <em>nested</em> list contains classes from the same subject area.
+Notice that each nested list has its own set of index values.</p>
+<div class="figure align-default" id="id1">
+<img alt="A label, 'courses', pointing to a list that contains lists at it's three indexes. Each nested list contains classes from the same subject area." src="../../_images/multi-dim-list.png" />
+<p class="caption"><span class="caption-text">Lists within lists.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="two-dimensional-lists">
+<h2><span class="section-number">9.9.1. </span>Two Dimensional Lists<a class="headerlink" href="#two-dimensional-lists" title="Permalink to this headline">¶</a></h2>
+<p>The simplest form of a multi-dimensional list is a two dimensional list. Each
+element is a nested list, which contains multiple data values.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">two_dim_list</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">101</span><span class="p">],</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">]]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">two_dim_list</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>3
+</pre></div>
+</div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">two_dim_list</span></code> holds three elements, each of which is a list. Note that the
+<code class="docutils literal notranslate"><span class="pre">len()</span></code> function only counts these three elements and NOT the total number of
+items inside of the nested lists.</p>
+<p>To access the values from a nested list, use two sets of square brackets and
+two index values. The indexes evaluate from left to right. The first index
+selects one of the nested lists, and the second index selects an element from
+that nested list.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Use one set of brackets to access a nested list, and add a second set of
+brackets to access the values inside that list.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">two_dim_list</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">101</span><span class="p">],</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">]]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">two_dim_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>     <span class="c1"># Print the lists at indexes 0, 1, and 2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">two_dim_list</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">two_dim_list</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">two_dim_list</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># Print the element from list 0, index 2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">two_dim_list</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># Print the element from list 1, index 1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">two_dim_list</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># Print the element from list 2, index 3</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]
+[90, 101]
+[True, False, False, True]
+
+c
+101
+True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="applying-methods-to-nested-lists">
+<h2><span class="section-number">9.9.2. </span>Applying Methods to Nested Lists<a class="headerlink" href="#applying-methods-to-nested-lists" title="Permalink to this headline">¶</a></h2>
+<p>We can apply list methods to either the nested or outer lists. However,
+we must use bracket notation carefully.</p>
+<p>To apply a method to the outer list, the syntax is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">list_name</span><span class="o">.</span><span class="n">method</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>To apply a method to one of the nested lists, the syntax is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">list_name</span><span class="p">[</span><span class="n">index_of_nested_list</span><span class="p">]</span><span class="o">.</span><span class="n">method</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Examine how including bracket notation affects how the <code class="docutils literal notranslate"><span class="pre">reverse</span></code> method
+changes each list.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">list_a</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">]</span> <span class="p">]</span>
+<span class="n">list_b</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">]</span> <span class="p">]</span>
+
+<span class="n">list_a</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>     <span class="c1"># Change the order of the 3 nested lists, but NOT their elements.</span>
+<span class="n">list_b</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>  <span class="c1"># Change the order of the list at index 2.</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">list_a</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">list_b</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[ [&#39;A&#39;, &#39;B&#39;, &#39;C&#39;], [&#39;A&#39;, &#39;b&#39;, &#39;c&#39;], [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;] ]
+[ [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], [&#39;A&#39;, &#39;b&#39;, &#39;c&#39;], [&#39;C&#39;, &#39;B&#39;, &#39;A&#39;] ]
+</pre></div>
+</div>
+</div>
+<div class="section" id="try-it">
+<h3><span class="section-number">9.9.2.1. </span>Try It!<a class="headerlink" href="#try-it" title="Permalink to this headline">¶</a></h3>
+<p>Using the lists below in the text editor, work through the following challenge:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">id_number_lists</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">111</span><span class="p">,</span> <span class="mi">222</span><span class="p">,</span> <span class="mi">333</span><span class="p">],</span> <span class="p">[</span><span class="mi">987</span><span class="p">,</span> <span class="mi">654</span><span class="p">],</span> <span class="p">[</span><span class="mi">1010</span><span class="p">,</span> <span class="mi">1100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="p">]</span>
+<span class="n">new_nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1138</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/MultiDimensionalLists" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<ol class="arabic">
+<li><p class="first">Append <code class="docutils literal notranslate"><span class="pre">new_nums</span></code> to <code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code>, and append the value <code class="docutils literal notranslate"><span class="pre">444</span></code> to
+the first list in <code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code>.</p>
+</li>
+<li><p class="first">Print <code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code> to verify your changes. Also, print the length of
+<code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code> (which should be <code class="docutils literal notranslate"><span class="pre">4</span></code>).</p>
+</li>
+<li><p class="first">Print a slice of the last two elements in <code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code>. Also, print a
+slice of the first two elements from the third list in <code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code>.</p>
+</li>
+<li><p class="first">Sample output:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[ [111, 222, 333, 444], [987, 654], [1010, 1100, 0, 1], [1138, 42, 5] ]
+4
+[ [1010, 1100, 0, 1], [1138, 42, 5] ]
+[1010, 1100]
+</pre></div>
+</div>
+</li>
+<li><p class="first">When done with steps 1 - 4, paste these statements to the bottom of your
+code. Run the program and examine the output. Write down your explanation of
+what happens at each step in the loops.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">id_numbers</span> <span class="ow">in</span> <span class="n">id_number_lists</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Outer loop:&#39;</span><span class="p">,</span> <span class="n">id_numbers</span><span class="p">)</span>
+
+   <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">id_numbers</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nested loop:&#39;</span><span class="p">,</span> <span class="n">number</span><span class="p">)</span>
+
+   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;--------------&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="beyond-two-dimensional-lists">
+<h2><span class="section-number">9.9.3. </span>Beyond Two Dimensional lists<a class="headerlink" href="#beyond-two-dimensional-lists" title="Permalink to this headline">¶</a></h2>
+<p>There is no limit to how many layers we can have inside our lists. However, it
+is rare to use more than two dimensions.</p>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">9.9.4. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<p>Use the following list to answer the questions:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
+   <span class="p">[</span><span class="s2">&quot;science&quot;</span><span class="p">,</span> <span class="s2">&quot;computer&quot;</span><span class="p">,</span> <span class="s2">&quot;art&quot;</span><span class="p">],</span>
+   <span class="p">[</span><span class="s2">&quot;Jones&quot;</span><span class="p">,</span> <span class="s2">&quot;Diaz&quot;</span><span class="p">,</span> <span class="s2">&quot;Rhodes&quot;</span><span class="p">]</span>
+<span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Which of the following will access the name <code class="docutils literal notranslate"><span class="pre">&quot;Jones&quot;</span></code>?</p>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">data[0][0]</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">data[0][1]</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">data[1][0]</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">data[1][1]</span></code></li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>How would you add <code class="docutils literal notranslate"><span class="pre">&quot;dance&quot;</span></code> to the first nested list?</p>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">data.append('dance')</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">data[0].append('dance')</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">data[1].append('dance')</span></code></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="split-and-join.html"><span aria-hidden="true">&larr;</span> <span class="section-number">9.8. </span><code class="docutils literal notranslate"><span class="pre">split</span></code> and <code class="docutils literal notranslate"><span class="pre">join</span></code></a></li>
+        
+        
+        <li class="next"><a href="exercises.html"><span class="section-number">9.10. </span>Exercises: Lists <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

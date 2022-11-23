@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>19.1. SQL Part 1 - Introduction and Azure Data Studio &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="19.2. Exercises: SQL Part 1 - Introduction and Azure Data Studio" href="exercises.html" />
+    <link rel="prev" title="19. SQL Part 1 - Introduction and Azure Data Studio" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">19. </span>SQL Part 1 - Introduction and Azure Data Studio</a></li>
+    <li class="active"><span class="section-number">19.1. </span>SQL Part 1 - Introduction and Azure Data Studio</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="sql-part-1-introduction-and-azure-data-studio">
+<h1><span class="section-number">19.1. </span>SQL Part 1 - Introduction and Azure Data Studio<a class="headerlink" href="#sql-part-1-introduction-and-azure-data-studio" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="readings">
+<h2><span class="section-number">19.1.1. </span>Readings<a class="headerlink" href="#readings" title="Permalink to this headline">¶</a></h2>
+<p>Read the following articles, follow along where instructed:</p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=27axs9dO7AE" target="_blank">What is SQL?<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p><a class="reference external" href="https://www.oracle.com/database/what-is-database/" target="_blank">What Is a Database?<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p><a class="reference external" href="https://medium.com/geekculture/writing-your-first-sql-query-610da7a5afea" target="_blank">Learn to write SQL queries in 5 minutes!<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p><a class="reference external" href="https://www.sqlshack.com/learn-to-write-basic-sql-queries/" target="_blank">Learn to write basic SQL Queries.<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p>Read the following article, skipping the installation and set up section and stopping at the Join section.  We are just looking for comprehension to help guide when completing the exercises.  As they are using SQLite, some of the terminology may be slightly different.  We are using T-SQL which uses TOP instead of LIMIT.</p>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://www.dataquest.io/blog/sql-basics/" target="_blank">SQL Basics — Hands-On Beginner SQL Tutorial Analyzing Bike-Sharing<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
+</div>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>note</p>
+<p class="last">As you read through the articles in the SQL lessons, you may find that you want to try out the queries the authors describe. You have access to a database called AdventureWorks2019 if you would like to try out some of these queries. Doing so is additional practice separate from the exercises.</p>
+</div>
+<p><strong>Additional Resources</strong></p>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://swcarpentry.github.io/sql-novice-survey/reference.html" target="_blank">Glossary: Databases and SQL<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
+</div>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://www.sqltutorial.org/" target="_blank">SQL Tutorial: Essential SQL For The Beginners<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
+</div>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">19.1.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">What does SQL stand for?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">Why do we use SQL?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Is Microsoft Excel a database?</p>
+<ol class="last loweralpha simple">
+<li>True</li>
+<li>False</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">How are a Relational Database’s items structured?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">What does the asterisk(*) return?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Match the following terms:</p>
+<table border="1" class="last docutils align-left">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Table</strong></td>
+<td>Command which is used to retrieve the desired information.</td>
+</tr>
+<tr class="row-even"><td><strong>Row</strong></td>
+<td>Collection of data.</td>
+</tr>
+<tr class="row-odd"><td><strong>Column</strong></td>
+<td>Known as a tuple/record.</td>
+</tr>
+<tr class="row-even"><td><strong>Query</strong></td>
+<td>Represents a unique field.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Match the following Keyword with its definition:</p>
+<table border="1" class="last docutils align-left">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>WHERE</strong></td>
+<td>Filters the data that falls into the defined begin and end value.</td>
+</tr>
+<tr class="row-even"><td><strong>SELECT</strong></td>
+<td>Sort the data according to the specified column.</td>
+</tr>
+<tr class="row-odd"><td><strong>FROM</strong></td>
+<td>Filter the data according to specified conditions.</td>
+</tr>
+<tr class="row-even"><td><strong>BETWEEN</strong></td>
+<td>Used to eliminate duplicate data from the specified columns.</td>
+</tr>
+<tr class="row-odd"><td><strong>ORDER BY</strong></td>
+<td>Used to retrieve data from the data table.</td>
+</tr>
+<tr class="row-even"><td><strong>DISTINCT</strong></td>
+<td>Specify the table name to retrieve data from.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">What does the Keyword AS do?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">In T-SQL what expression would return the first 50 rows?</p>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="index.html"><span aria-hidden="true">&larr;</span> <span class="section-number">19. </span>SQL Part 1 - Introduction and Azure Data Studio</a></li>
+        
+        
+        <li class="next"><a href="exercises.html"><span class="section-number">19.2. </span>Exercises: SQL Part 1 - Introduction and Azure Data Studio <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

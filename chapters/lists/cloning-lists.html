@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9.7. Cloning Lists &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="9.8. split and join" href="split-and-join.html" />
+    <link rel="prev" title="9.6. Common List Tasks" href="common-list-tasks.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">9. </span>Lists Keep Things in Order</a></li>
+    <li class="active"><span class="section-number">9.7. </span>Cloning Lists</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="cloning-lists">
+<span id="id1"></span><h1><span class="section-number">9.7. </span>Cloning Lists<a class="headerlink" href="#cloning-lists" title="Permalink to this headline">¶</a></h1>
+<p>Every data value that a program uses gets stored in a computer’s memory. When
+we assign a data value to a variable, that variable becomes a label for the
+memory location of that value.</p>
+<div class="figure align-default" id="id2">
+<img alt="Diagram showing that ``first_var`` and ``other_var`` point to different memory locations." src="../../_images/reference-ex-1.png" />
+<p class="caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">first_var</span></code> points to <code class="docutils literal notranslate"><span class="pre">'hello'</span></code>, and <code class="docutils literal notranslate"><span class="pre">other_var</span></code> points to <code class="docutils literal notranslate"><span class="pre">10</span></code>.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>What if we assign <code class="docutils literal notranslate"><span class="pre">first_var</span></code> and <code class="docutils literal notranslate"><span class="pre">other_var</span></code> the same value? For
+<code class="docutils literal notranslate"><span class="pre">first_var</span> <span class="pre">=</span> <span class="pre">10</span></code> and <code class="docutils literal notranslate"><span class="pre">other_var</span> <span class="pre">=</span> <span class="pre">10</span></code> each variable points to a different
+memory location, even though those locations store the same data.</p>
+<div class="figure align-default" id="id3">
+<img alt="Diagram showing that ``first_var`` and ``other_var`` have the same value but point to different memory locations." src="../../_images/reference-ex-2.png" />
+<p class="caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">first_var</span></code> points to <code class="docutils literal notranslate"><span class="pre">10</span></code>, and <code class="docutils literal notranslate"><span class="pre">other_var</span></code> points to a different
+<code class="docutils literal notranslate"><span class="pre">10</span></code>.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>What if we assign one variable to another, like <code class="docutils literal notranslate"><span class="pre">other_var</span> <span class="pre">=</span> <span class="pre">first_var</span></code>? Does
+<code class="docutils literal notranslate"><span class="pre">other_var</span></code> point to a new memory location, or does it point to the same
+location as <code class="docutils literal notranslate"><span class="pre">first_var</span></code>?</p>
+<p>Let’s perform a simple experiment to find out.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Examine the output from the following program. How does the value of
+<code class="docutils literal notranslate"><span class="pre">other_var</span></code> change when <code class="docutils literal notranslate"><span class="pre">first_var</span></code> gets assigned a new value?</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">first_var</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">other_var</span> <span class="o">=</span> <span class="n">first_var</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">first_var</span><span class="p">,</span> <span class="n">other_var</span><span class="p">)</span>
+
+<span class="n">first_var</span> <span class="o">=</span> <span class="s1">&#39;hello&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">first_var</span><span class="p">,</span> <span class="n">other_var</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>10 10
+hello 10
+</pre></div>
+</div>
+<ol class="last arabic simple">
+<li>Line 2 assigns the value of <code class="docutils literal notranslate"><span class="pre">first_var</span></code> to <code class="docutils literal notranslate"><span class="pre">other_var</span></code>.</li>
+<li>Line 3 confirms that the two variables have the same value.</li>
+<li>Line 5 assigns the new value <code class="docutils literal notranslate"><span class="pre">'hello'</span></code> to <code class="docutils literal notranslate"><span class="pre">first_var</span></code>.</li>
+<li>Line 6 confirms that changing <code class="docutils literal notranslate"><span class="pre">first_var</span></code> does NOT affect <code class="docutils literal notranslate"><span class="pre">other_var</span></code>.</li>
+</ol>
+</div>
+<p>In this example, even though we set <code class="docutils literal notranslate"><span class="pre">other_var</span> <span class="pre">=</span> <span class="pre">first_var</span></code>, each variable
+points to a <em>different</em> location in memory. This allows us to replace <code class="docutils literal notranslate"><span class="pre">10</span></code>
+with <code class="docutils literal notranslate"><span class="pre">'hello'</span></code> for <code class="docutils literal notranslate"><span class="pre">first_var</span></code> without changing <code class="docutils literal notranslate"><span class="pre">other_var</span></code>.</p>
+<p>Now let’s run the experiment again, but this time we will use a list as the
+data type.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Examine the output from the following program.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">list_a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">list_b</span> <span class="o">=</span> <span class="n">list_a</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list_a</span><span class="p">,</span> <span class="n">list_b</span><span class="p">)</span>
+
+<span class="n">list_a</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list_a</span><span class="p">,</span> <span class="n">list_b</span><span class="p">)</span>
+
+<span class="n">list_b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list_a</span><span class="p">,</span> <span class="n">list_b</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[10, 33, 8, -2]   [10, 33, 8, -2]
+[-2, 8, 10, 33]   [-2, 8, 10, 33]
+[-2, 8, 10, 33, &#39;hello&#39;]   [-2, 8, 10, 33, &#39;hello&#39;]
+</pre></div>
+</div>
+</div>
+<p>The second set of results are quite different from the first. Any changes made
+with one variable affect the other!</p>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>For the <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">str</span></code>, <code class="docutils literal notranslate"><span class="pre">bool</span></code>, and <code class="docutils literal notranslate"><span class="pre">float</span></code> data types, setting
+<code class="docutils literal notranslate"><span class="pre">other_var</span> <span class="pre">=</span> <span class="pre">first_var</span></code> creates separate values in two memory locations,
+one for each variable.</p>
+<p class="last">For lists, <code class="docutils literal notranslate"><span class="pre">list_b</span> <span class="pre">=</span> <span class="pre">list_a</span></code> creates two variables that point to the
+<em>SAME</em> memory location. The same list has two different names.</p>
+</div>
+<p id="index-0">Because the same list has two different names, we say that it is <strong>aliased</strong>.
+Changes made with one alias affect the other.</p>
+<div class="figure align-default" id="id4">
+<img alt="Diagram showing that the variables ``list_a`` and ``list_b`` point to the same memory location." src="../../_images/list-var-ref.png" />
+<p class="caption"><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">list_a</span></code> and <code class="docutils literal notranslate"><span class="pre">list_b</span></code> both point to the same list.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="creating-an-independent-copy">
+<h2><span class="section-number">9.7.1. </span>Creating an Independent Copy<a class="headerlink" href="#creating-an-independent-copy" title="Permalink to this headline">¶</a></h2>
+<p>What if we want to modify a list but keep the original intact? In general, it
+is safer to avoid aliasing when working with lists or other mutable objects.</p>
+<p id="index-1">Making a separate copy of a list is called <strong>cloning</strong>, and Python gives us two
+ways to do it:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">list_clone</span> <span class="o">=</span> <span class="n">original_list</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">list_clone</span> <span class="o">=</span> <span class="n">original_list</span><span class="p">[</span> <span class="p">:</span> <span class="p">]</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">copy()</span></code> method creates a new list in a new memory location and assigns
+it to the <code class="docutils literal notranslate"><span class="pre">list_clone</span></code> variable. The empty slice operator <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">:</span> <span class="pre">]</span></code> does the
+same thing, but it also allows us to clone a portion of the original list.</p>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p>Run the following program to confirm that, as written, changes made to
+either <code class="docutils literal notranslate"><span class="pre">list_a</span></code> or <code class="docutils literal notranslate"><span class="pre">list_b</span></code> affect the other.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Try to make list_a and list_b independent of each other.</span>
+<span class="n">list_a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">list_b</span> <span class="o">=</span> <span class="n">list_a</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list_a</span><span class="p">,</span> <span class="n">list_b</span><span class="p">)</span>
+
+<span class="n">list_b</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>           <span class="c1"># Sort list_b.</span>
+<span class="n">list_a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>  <span class="c1"># Add a new element to list_a.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list_a</span><span class="p">,</span> <span class="n">list_b</span><span class="p">)</span>   <span class="c1"># Hmmm...</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/CloningLists" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<ol class="last arabic simple">
+<li>In line 2, use the <code class="docutils literal notranslate"><span class="pre">copy()</span></code> method on <code class="docutils literal notranslate"><span class="pre">list_a</span></code>. Rerun the program to
+confirm that changes made to one list do NOT affect the other.</li>
+<li>Repeat step 1, but use the slice operator instead of <code class="docutils literal notranslate"><span class="pre">copy()</span></code>.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">9.7.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>The syntax <code class="docutils literal notranslate"><span class="pre">list_a</span> <span class="pre">=</span> <span class="pre">list_b</span></code> creates a(n) ____.</p>
+<ol class="last loweralpha simple">
+<li>alias</li>
+<li>clone</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Changes made to a(n) ____ will NOT affect the original.</p>
+<ol class="last loweralpha simple">
+<li>alias</li>
+<li>clone</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What is printed by the following program?</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">list_a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">list_b</span> <span class="o">=</span> <span class="n">list_a</span>
+<span class="n">list_b</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">999</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list_a</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last loweralpha simple">
+<li>[4, 2, 8, 6, 5]</li>
+<li>[4, 2, 8, 999, 5]</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Describe a specific example or task where we would want to keep the original
+list intact.</p>
+<p class="last">Describe a specific example or task where it would not matter if we used an
+alias or a clone of the original list.</p>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="common-list-tasks.html"><span aria-hidden="true">&larr;</span> <span class="section-number">9.6. </span>Common List Tasks</a></li>
+        
+        
+        <li class="next"><a href="split-and-join.html"><span class="section-number">9.8. </span><code class="docutils literal notranslate"><span class="pre">split</span></code> and <code class="docutils literal notranslate"><span class="pre">join</span></code> <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

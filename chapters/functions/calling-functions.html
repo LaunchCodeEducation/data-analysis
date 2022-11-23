@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11.2. Calling Functions &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="11.3. Defining Our Own Functions" href="creating-functions.html" />
+    <link rel="prev" title="11.1. Introduction" href="intro.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">11. </span>What’s Your Function</a></li>
+    <li class="active"><span class="section-number">11.2. </span>Calling Functions</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="calling-functions">
+<h1><span class="section-number">11.2. </span>Calling Functions<a class="headerlink" href="#calling-functions" title="Permalink to this headline">¶</a></h1>
+<p id="index-0"><strong>Calling a function</strong> is the act of running that function and giving it the
+information it needs to do its job.</p>
+<div class="section" id="making-a-function-run">
+<h2><span class="section-number">11.2.1. </span>Making a Function Run<a class="headerlink" href="#making-a-function-run" title="Permalink to this headline">¶</a></h2>
+<p>The general syntax for calling a function is:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>function_name(input values)
+</pre></div>
+</div>
+<p>You have already become familiar with several Python functions:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">print()</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">len()</span></code></li>
+<li>Type conversion functions like <code class="docutils literal notranslate"><span class="pre">int()</span></code>, <code class="docutils literal notranslate"><span class="pre">str()</span></code>, and <code class="docutils literal notranslate"><span class="pre">list()</span></code></li>
+<li>String and list methods, such as <code class="docutils literal notranslate"><span class="pre">find()</span></code> or <code class="docutils literal notranslate"><span class="pre">reverse()</span></code>.</li>
+</ul>
+<p>Every function works in the same way. By typing the function’s name, followed by
+parentheses, we <em>call</em> the function. This results in an action being carried
+out.</p>
+<p>Sometimes, we include values inside the parentheses. When we do this, the
+function carries out its action with that data.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>The <em>action</em> of the <code class="docutils literal notranslate"><span class="pre">print</span></code> function displays information to the console,
+while the <code class="docutils literal notranslate"><span class="pre">int</span></code> function returns the integer value from the given input.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>
+<span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="s2">&quot;23&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>Hello, World!
+23
+</pre></div>
+</div>
+</div>
+<p>As programmers, we do not need to know <em>how</em> Python prints to the console or
+converts a string to an integer. Instead, we just need to be able to ask Python
+to do those jobs for us with the data we supply.</p>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="last" id="index-1"><strong>Arguments</strong> refer to the data values we send to a function. Some functions
+do not require arguments inside the parentheses, <code class="docutils literal notranslate"><span class="pre">()</span></code>.</p>
+</div>
+<p>If a function requires more than one argument, we separate them with commas:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>function_name(argument_1, argument_2, ...)
+</pre></div>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="intro.html"><span aria-hidden="true">&larr;</span> <span class="section-number">11.1. </span>Introduction</a></li>
+        
+        
+        <li class="next"><a href="creating-functions.html"><span class="section-number">11.3. </span>Defining Our Own Functions <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

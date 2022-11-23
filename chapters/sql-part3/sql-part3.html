@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>21.1. SQL Part 3 - Joins &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="21.2. Exercises: SQL Part 3 - Joins" href="exercises.html" />
+    <link rel="prev" title="21. SQL Part 3 - Joins" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">21. </span>SQL Part 3 - Joins</a></li>
+    <li class="active"><span class="section-number">21.1. </span>SQL Part 3 - Joins</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="sql-part-3-joins">
+<h1><span class="section-number">21.1. </span>SQL Part 3 - Joins<a class="headerlink" href="#sql-part-3-joins" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="reading">
+<h2><span class="section-number">21.1.1. </span>Reading<a class="headerlink" href="#reading" title="Permalink to this headline">¶</a></h2>
+<p>Read the following articles, and watch the videos.</p>
+<p><strong>Joins:</strong></p>
+<p><a class="reference external" href="https://www.metabase.com/learn/sql-questions/sql-join-types" target="_blank">SQL join types<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p><a class="reference external" href="https://www.geeksforgeeks.org/sql-join-set-1-inner-left-right-and-full-joins/" target="_blank">SQL | Join (Inner, Left, Right and Full Joins)<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=9yeOJ0ZMUYw" target="_blank">SQL Joins Explained |¦| Joins in SQL |¦| SQL Tutorial Part 1<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=Jh_pvk48jHA" target="_blank">SQL Joins Examples |¦| Joins in SQL |¦| SQL Tutorial Part 2<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p><strong>HAVING clause:</strong></p>
+<div class="line-block">
+<div class="line">The HAVING clause is very similar to a WHERE clause in that it is used to filter result sets. However, we cannot use the WHERE clause with aggregate functions. Instead, we have to use the HAVING clause. If you want to use an aggregate function with a join, then you need to make use of this new clause. The HAVING clause is often used with GROUP BY.</div>
+</div>
+<p><a class="reference external" href="https://www.sqltutorial.org/sql-having/" target="_blank">SQL HAVING<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=tYBOMw7Ob8E" target="_blank">Intermediate SQL Tutorial | Having Clause<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">21.1.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What does an inner join do?</p>
+<ol class="last loweralpha simple">
+<li>Returns results with matching rows in both tables</li>
+<li>Returns results with all the rows from the left table with null values for unmatched rows from the right table</li>
+<li>Returns results with all the rows from the right table with null values for unmatched rows from the left table</li>
+<li>Returns results from all the rows from both tables with null values filled in for all unmatched rows.</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What does a full (outer) join do?</p>
+<ol class="last loweralpha simple">
+<li>Returns results with matching rows in both tables</li>
+<li>Returns results with all the rows from the left table with null values for unmatched rows from the right table</li>
+<li>Returns results with all the rows from the right table with null values for unmatched rows from the left table</li>
+<li>Returns results from all the rows from both tables with null values filled in for all unmatched rows</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">In your own words what is the difference between a right join and a left join?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>In what order do the following clauses go when writing a query?</p>
+<ol class="last loweralpha simple">
+<li><strong>SELECT, WHERE, HAVING, GROUP BY</strong></li>
+<li><strong>SELECT, HAVING, WHERE, GROUP BY</strong></li>
+<li><strong>SELECT, WHERE, GROUP BY, HAVING</strong></li>
+<li><strong>SELECT, HAVING, GROUP BY, WHERE</strong></li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Can you use aggregates with the HAVING Clause?</p>
+<ol class="last loweralpha simple">
+<li>True</li>
+<li>False</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Can you use aggregates with the WHERE clause?</p>
+<ol class="last loweralpha simple">
+<li>True</li>
+<li>False</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">In your own words, what is the difference between the WHERE clause and the HAVING clause?</p>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="index.html"><span aria-hidden="true">&larr;</span> <span class="section-number">21. </span>SQL Part 3 - Joins</a></li>
+        
+        
+        <li class="next"><a href="exercises.html"><span class="section-number">21.2. </span>Exercises: SQL Part 3 - Joins <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

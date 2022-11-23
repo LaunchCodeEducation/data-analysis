@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7.7. Infinite Loops &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="7.8. Ending a Loop With break" href="terminating-loops.html" />
+    <link rel="prev" title="7.6. while Loops" href="while-loops.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">7. </span>Repeating Things With Loops</a></li>
+    <li class="active"><span class="section-number">7.7. </span>Infinite Loops</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="infinite-loops">
+<h1><span class="section-number">7.7. </span>Infinite Loops<a class="headerlink" href="#infinite-loops" title="Permalink to this headline">¶</a></h1>
+<p>Here’s the code for a simple <code class="docutils literal notranslate"><span class="pre">while</span></code> loop. Run the program first to make sure it
+works. Then make one of these changes, and run the program again:</p>
+<ol class="arabic">
+<li><p class="first">Remove or comment out <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">+=</span> <span class="pre">1</span></code>.</p>
+</li>
+<li><p class="first">Replace the <code class="docutils literal notranslate"><span class="pre">+=</span></code> operator with <code class="docutils literal notranslate"><span class="pre">-=</span></code>.</p>
+<div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Be careful what you type!</span>
+<span class="n">num</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">21</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+   <span class="n">num</span> <span class="o">+=</span> <span class="mi">1</span>      <span class="c1"># -= anyone?</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/InfiniteLoop" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+</li>
+</ol>
+<p>Yikes! What happened? The program just keeps running!</p>
+<p id="index-0">This is an example of an <strong>infinite loop</strong>, which is a set of code that repeats
+forever.</p>
+<ol class="arabic simple">
+<li>By removing <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">+=</span> <span class="pre">1</span></code> from the loop body, the value of <code class="docutils literal notranslate"><span class="pre">num</span></code> remains 0.</li>
+<li>By changing the operator to <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">-=</span> <span class="pre">1</span></code>, the value of the variable
+decreases every iteration.</li>
+</ol>
+<p>By making either of these changes, the expression <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&lt;</span> <span class="pre">21</span></code> will ALWAYS
+return <code class="docutils literal notranslate"><span class="pre">True</span></code>, so the <code class="docutils literal notranslate"><span class="pre">while</span></code> loop will NEVER stop.</p>
+<div class="section" id="coding-infinity">
+<h2><span class="section-number">7.7.1. </span>Coding Infinity<a class="headerlink" href="#coding-infinity" title="Permalink to this headline">¶</a></h2>
+<p>Simple mistakes in the code create infinite loops, and <em>every</em> programmer
+accidentally creates one from time to time. Consider it a rite of
+passage—when you launch your first, welcome to the club.</p>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="last">When this happens to you, holding down <code class="docutils literal notranslate"><span class="pre">control-c</span></code> will usually force your
+program to stop.</p>
+</div>
+<p>Infinite loops are usually created from small typos or missing statements.
+These mistakes set up a situation where the ending condition cannot be reached.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Here’s another infinite while loop. The program is supposed to print a
+decreasing total until that total reaches 0.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">start_value</span> <span class="o">=</span> <span class="mi">26</span>
+<span class="n">total</span> <span class="o">=</span> <span class="n">start_value</span>
+
+<span class="k">while</span> <span class="n">start_value</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+   <span class="n">total</span> <span class="o">-=</span> <span class="mi">5</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="last">In this case, the update statement is correct (line 5), but the error occurs
+in line 4. Instead of using <code class="docutils literal notranslate"><span class="pre">total</span></code> in the boolean expression, we used
+<code class="docutils literal notranslate"><span class="pre">start_value</span></code>, which never gets updated in the loop.</p>
+</div>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">7.7.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>The following code contains an infinite loop. Which is the BEST explanation
+for why the loop does not end?</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="k">while</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+   <span class="n">answer</span> <span class="o">=</span> <span class="n">answer</span> <span class="o">+</span> <span class="n">num</span>
+   <span class="n">num</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">num</span></code> starts at 10 and increases by 1 each time through the loop, so it will always be positive.</li>
+<li><code class="docutils literal notranslate"><span class="pre">answer</span></code> starts at 1 and increases by <code class="docutils literal notranslate"><span class="pre">num</span></code> each time, so it will always be positive.</li>
+<li>You cannot compare <code class="docutils literal notranslate"><span class="pre">num</span></code> to 0 in a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop. You must compare it to another variable.</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="while-loops.html"><span aria-hidden="true">&larr;</span> <span class="section-number">7.6. </span><code class="docutils literal notranslate"><span class="pre">while</span></code> Loops</a></li>
+        
+        
+        <li class="next"><a href="terminating-loops.html"><span class="section-number">7.8. </span>Ending a Loop With <code class="docutils literal notranslate"><span class="pre">break</span></code> <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

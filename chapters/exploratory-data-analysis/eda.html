@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14.1. Exploratory Data Analysis &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="14.2. Exercises: Exploratory Data Analysis" href="exercises.html" />
+    <link rel="prev" title="14. Exploratory Data Analysis" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">14. </span>Exploratory Data Analysis</a></li>
+    <li class="active"><span class="section-number">14.1. </span>Exploratory Data Analysis</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="exploratory-data-analysis">
+<h1><span class="section-number">14.1. </span>Exploratory Data Analysis<a class="headerlink" href="#exploratory-data-analysis" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="readings">
+<h2><span class="section-number">14.1.1. </span>Readings<a class="headerlink" href="#readings" title="Permalink to this headline">¶</a></h2>
+<p>Read the following articles, follow along where instructed:</p>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>tip</p>
+<p class="last">For Medium articles: if you run out of free articles, open the page in an incognito window</p>
+</div>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://towardsdatascience.com/exploratory-data-analysis-in-python-c9a77dfa39ce" target="_blank">Exploratory data analysis in Python<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</div>
+</div>
+<ul class="simple">
+<li>Key Takeaways: Outline of common steps used in EDA, note that there is no one process for performing EDA,
+it all depends on the dataset and your questions.</li>
+<li>Just read and follow the steps for comprehension, don’t need to do the tutorial.</li>
+<li>Stop at #8: “Detecting Outliers”</li>
+</ul>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://medium.com/&#64;shanegary/getting-to-know-your-data-9e42935e7f60" target="_blank">Getting to know your data<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</div>
+</div>
+<ul class="simple">
+<li>Key Takeaways: Questions to better understand why the data was collected.</li>
+<li><em>Suggested Reading:</em> <a class="reference external" href="https://towardsdatascience.com/data-types-in-statistics-347e152e8bee" target="_blank">Data Types in Statistics<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.<ul>
+<li>Key Takeaways: Definitions for discrete, continuous and categorical data.</li>
+</ul>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/" target="_blank">Python Pandas Tutorial: A Complete Introduction for Beginners<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</div>
+</div>
+<ul class="simple">
+<li>You do not need to install pandas, it comes with the Anaconda package.</li>
+<li>Try coding along with the article</li>
+<li>Stop at “Handling Duplicates” header</li>
+</ul>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://medium.com/&#64;kasiarachuta/basic-statistics-in-pandas-dataframe-594208074f85" target="_blank">Basic statistics in pandas DataFrame<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</div>
+</div>
+<ul class="simple">
+<li>Key takeaway: Using pandas DataFrame; with examples</li>
+</ul>
+</div>
+<div class="section" id="what-is-a-dataframe">
+<h2><span class="section-number">14.1.2. </span>What is a Dataframe?<a class="headerlink" href="#what-is-a-dataframe" title="Permalink to this headline">¶</a></h2>
+<p>A Pandas dataframe is similar to a Python dictionary. The column names are like keys and the values are the data for that column.  This diagram illustrates the different components of a dataframe.</p>
+<div class="figure align-default">
+<img alt="Diagram of a Pandas Dataframe." src="../../_images/diagramPandasDataframe.png" />
+</div>
+<p>Credit for the above diagram and for more information about Pandas Dataframes <a class="reference external" href="https://www.w3resource.com/python-exercises/pandas/index-dataframe.php" target="_blank">visit here<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<div class="line-block">
+<div class="line">The column values are called a Pandas series. Here is how Pandas series are used to build a dataframe.</div>
+</div>
+<div class="figure align-default">
+<img alt="Diagram of how Pandas series build a dataframe." src="../../_images/diagramPandasSeries.png" />
+</div>
+<p>Credit for the above diagram and for more information about Pandas Series <a class="reference external" href="https://www.datasciencemadesimple.com/create-series-in-python-pandas/" target="_blank">visit here<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">14.1.3. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">What is the pandas function used to return the number of rows and columns in a dataframe?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Column names cannot be changed in dataframes?</p>
+<ol class="last loweralpha simple">
+<li>True</li>
+<li>False</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">What can knowing the data types present in a data set tell us about the data being presented?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">What is the Pandas method for reading a csv?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Visualized below is the “purchases” dataframe . What is the pandas syntax to select for Robert’s data?</p>
+<div class="last figure align-default">
+<img alt="Dataframe showing name of person and if they purchased apples and/or oranges." src="../../_images/purchaseDataframe.png" />
+</div>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">How do we view only the first 13 rows of a dataframe?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>A dataframe column is a series?</p>
+<ol class="last loweralpha simple">
+<li>True</li>
+<li>False</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Which pandas function will print the number of records, three quartiles, mean, standard deviation, minimum and maximum values of  a dataframe?</p>
+<ol class="last loweralpha simple">
+<li>.describe()</li>
+<li>.index()</li>
+<li>.statistics()</li>
+<li>.head()</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="index.html"><span aria-hidden="true">&larr;</span> <span class="section-number">14. </span>Exploratory Data Analysis</a></li>
+        
+        
+        <li class="next"><a href="exercises.html"><span class="section-number">14.2. </span>Exercises: Exploratory Data Analysis <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

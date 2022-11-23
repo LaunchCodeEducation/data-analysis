@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13.1. Introduction To Data &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="13.2. Exercises: Introduction To Data" href="exercises.html" />
+    <link rel="prev" title="13. Introduction To Data" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">13. </span>Introduction To Data</a></li>
+    <li class="active"><span class="section-number">13.1. </span>Introduction To Data</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="introduction-to-data">
+<h1><span class="section-number">13.1. </span>Introduction To Data<a class="headerlink" href="#introduction-to-data" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="readings">
+<h2><span class="section-number">13.1.1. </span>Readings<a class="headerlink" href="#readings" title="Permalink to this headline">¶</a></h2>
+<p>Read the following articles, follow along where instructed:</p>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://www.datapine.com/blog/data-analysis-methods-and-techniques/" target="_blank">Data Analysis Methods &amp; Techniques<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</div>
+</div>
+<ul class="simple">
+<li>Key Takeaways: Video about qualitative vs quantitative data illustrates some key points!</li>
+</ul>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://towardsdatascience.com/a-beginners-guide-to-data-analysis-in-python-188706df5447" target="_blank">A Beginner’s Guide to Data Analysis in Python<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</div>
+</div>
+<ul class="simple">
+<li>Key Takeaways: How to take data from the computer and create a visualization using Python.</li>
+</ul>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://www.northeastern.edu/graduate/blog/data-analysis-project-lifecycle/" target="_blank">Data project life cycle<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</div>
+</div>
+<ul class="simple">
+<li>Key Takeaways: Definitions of life cycles and Examples.</li>
+</ul>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://www.datapine.com/blog/data-analysis-questions/%C2%A0%C2%A0" target="_blank">Asking the right question<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</div>
+</div>
+</div>
+<div class="section" id="what-is-a-dataset">
+<h2><span class="section-number">13.1.2. </span>What is a Dataset?<a class="headerlink" href="#what-is-a-dataset" title="Permalink to this headline">¶</a></h2>
+<p>Think back to when you are working on a monthly budget. Let’s say you have a singular spreadsheet
+tracking your monthly automatic payments for May that includes info such as the company name, the
+amount, and the date. Now just this one spreadsheet alone could be a dataset. It would be small and
+you may not be able to gain many insights from just one month of automatic payments, but it is still
+a dataset. If you wanted to gain further insight into your monthly payments, your dataset might
+include every spreadsheet you have of automatic payments for the past year. If you wanted an overview
+of your whole budget, you might add spreadsheets of your taxes, paychecks, and grocery bills to your
+dataset, such as the dataset below.</p>
+<div class="figure align-default">
+<img alt="Diagram of my May budget dataset." src="../../_images/diagramDataset.png" />
+</div>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">13.1.3. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">Name the 5 main types of analysis.</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What does KPI stand for?</p>
+<ol class="last loweralpha simple">
+<li>Key Performance Indicators</li>
+<li>Key Performance Identifiers</li>
+<li>Key Performance Ideas</li>
+<li>Key Performance Idioms</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What does EDA stand for?</p>
+<ol class="last loweralpha simple">
+<li>Exploratory Data Analysis</li>
+<li>Explanatory Data Analysis</li>
+<li>Exploratory Data Audit</li>
+<li>Examinable Data Analysis</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What is between Data Understanding and Exploratory Analysis/Modeling in the project life cycle?</p>
+<ol class="last loweralpha simple">
+<li>Data Preparation</li>
+<li>Validation</li>
+<li>Visualization and Presentation</li>
+<li>Business Issue</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">If you are a data analyst for a big box store, what is a standard KPI you would want to use to help drive up revenue?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">If you are a data analyst for a big box store, where would you get the data that would help answer the question?</p>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="last">If you are a data analyst for a big box store, how do you foresee ensuring data quality?</p>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="index.html"><span aria-hidden="true">&larr;</span> <span class="section-number">13. </span>Introduction To Data</a></li>
+        
+        
+        <li class="next"><a href="exercises.html"><span class="section-number">13.2. </span>Exercises: Introduction To Data <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

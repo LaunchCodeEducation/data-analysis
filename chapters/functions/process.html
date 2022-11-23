@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11.6. A Good Function-Writing Process &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="11.7. Parameters and Variables" href="parameters-and-variables.html" />
+    <link rel="prev" title="11.5. Function Output" href="function-output.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">11. </span>What’s Your Function</a></li>
+    <li class="active"><span class="section-number">11.6. </span>A Good Function-Writing Process</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="a-good-function-writing-process">
+<h1><span class="section-number">11.6. </span>A Good Function-Writing Process<a class="headerlink" href="#a-good-function-writing-process" title="Permalink to this headline">¶</a></h1>
+<p>Functions are the most powerful Python tool that we have seen so far. They
+have more parts to their syntax than either conditionals or loops, and they can
+be used in more complex ways.</p>
+<p>To avoid frustration and bugs, it’s important to write functions in a very
+structured way. <em>Have a plan</em> before you start coding any function! This is
+essential now and once you start writing more complex code.</p>
+<p>In this section, we outline what we think is the best approach. To show a
+concrete example, we will consider a fictional function that makes a sandwich.</p>
+<div class="section" id="step-1-design-your-function">
+<h2><span class="section-number">11.6.1. </span>Step 1: Design Your Function<a class="headerlink" href="#step-1-design-your-function" title="Permalink to this headline">¶</a></h2>
+<p>Before typing anything, have a clear idea of what you want your function to do.
+Once you identify that, ask yourself the following questions:</p>
+<ol class="arabic simple">
+<li>What is a good, descriptive name for my function?</li>
+<li>What data (<em>parameters</em>) does my function need to do its job?</li>
+<li>What data types do we expect the parameters to be?</li>
+<li>What are good names for the parameters?</li>
+<li>Should my function return a value? (<em>Hint</em>: The answer is almost always
+“YES”.)</li>
+<li>What will be the data type of the return value?</li>
+</ol>
+<p>For our sandwich function, the answers might look like this:</p>
+<table border="1" class="docutils align-default" id="id1">
+<caption><span class="caption-text">Details for a Sandwich Function</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><th class="stub">Function name</th>
+<td><code class="docutils literal notranslate"><span class="pre">make_sandwich</span></code></td>
+</tr>
+<tr class="row-even"><th class="stub">Parameters</th>
+<td>bread, filling, condiments</td>
+</tr>
+<tr class="row-odd"><th class="stub">Parameter names and types</th>
+<td><code class="docutils literal notranslate"><span class="pre">bread_type</span></code> (string), <code class="docutils literal notranslate"><span class="pre">filling_type</span></code> (string), <code class="docutils literal notranslate"><span class="pre">condiment</span></code> (string)</td>
+</tr>
+<tr class="row-even"><th class="stub">Return Value</th>
+<td>The finished sandwich</td>
+</tr>
+<tr class="row-odd"><th class="stub">Return Type</th>
+<td>An object of type <code class="docutils literal notranslate"><span class="pre">sandwich</span></code> <sup>*</sup></td>
+</tr>
+</tbody>
+</table>
+<p>* Python does not actually have a <code class="docutils literal notranslate"><span class="pre">sandwich</span></code> data type, but we want our
+function to be as flexible as possible. For now, recognize that returning a
+simple string to describe the sandwich will not be useful. In later lessons,
+we will learn how to create our own data types, so making a virtual,
+code-based <code class="docutils literal notranslate"><span class="pre">sandwich</span></code> will be possible.</p>
+</div>
+<div class="section" id="step-2-create-the-basic-structure">
+<span id="sandwich-function"></span><h2><span class="section-number">11.6.2. </span>Step 2: Create the Basic Structure<a class="headerlink" href="#step-2-create-the-basic-structure" title="Permalink to this headline">¶</a></h2>
+<p>Now it is time to start coding. Using the decisions you just made, write the
+minimal syntax needed to create and call the function.</p>
+<p>Here’s an outline for our sandwich function:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_sandwich</span><span class="p">(</span><span class="n">bread_type</span><span class="p">,</span> <span class="n">filling_type</span><span class="p">,</span> <span class="n">condiment</span><span class="p">):</span>
+
+   <span class="c1"># TODO: make a sandwich with the given ingredients</span>
+
+   <span class="k">return</span> <span class="c1"># TODO: Send back a sandwich object</span>
+
+<span class="n">make_sandwich</span><span class="p">(</span><span class="s1">&#39;this&#39;</span><span class="p">,</span> <span class="s1">&#39;is&#39;</span><span class="p">,</span> <span class="s1">&#39;practice&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>Doing this step before writing the body makes sure we aren’t
+leaving off the <code class="docutils literal notranslate"><span class="pre">:</span></code> or forgetting to define a parameter.</p>
+<p>Even though the function does not do anything yet, it will still work. Running
+the program at this point will NOT generate any error messages unless we have a
+syntax error (like forgetting the <code class="docutils literal notranslate"><span class="pre">:</span></code>) or the wrong number of parameters.</p>
+</div>
+<div class="section" id="step-3-write-the-body">
+<h2><span class="section-number">11.6.3. </span>Step 3: Write the Body<a class="headerlink" href="#step-3-write-the-body" title="Permalink to this headline">¶</a></h2>
+<p>With the basic structure in place, start writing the function body. Be sure to
+switch between finishing small parts of the function and running your code.
+<em>Do not wait until you have written the entire function body before testing
+it!</em></p>
+<p>We can’t stress this enough. Going long stretches of time without running
+your program is a good way to end up frustrated! Recall that
+<a class="reference internal" href="../errors-and-debugging/how-to-avoid-debugging.html#how-to-avoid-debugging"><span class="std std-ref">in the debugging chapter</span></a>, we gave you the
+following tip to avoid bugs:</p>
+<blockquote class="pull-quote">
+<div>Get something working and keep it working.</div></blockquote>
+<p>This applies <em>especially</em> to writing functions. Every good programmer works
+this way:</p>
+<ol class="arabic simple">
+<li>Write a few lines of code,</li>
+<li>Run it,</li>
+<li>Debug any errors,</li>
+<li>Repeat.</li>
+</ol>
+<p>Following these steps won’t prevent you from making mistakes, but it will
+reduce the number of bugs you create. This helps you create solid, working code
+more quickly.</p>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="function-output.html"><span aria-hidden="true">&larr;</span> <span class="section-number">11.5. </span>Function Output</a></li>
+        
+        
+        <li class="next"><a href="parameters-and-variables.html"><span class="section-number">11.7. </span>Parameters and Variables <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

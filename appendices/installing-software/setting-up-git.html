@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git and GitHub &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Setting Up Anaconda" href="setting-up-anaconda.html" />
+    <link rel="prev" title="Setting Up Your Terminal" href="setting-up-terminal.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html">Setting Up Software for this Class</a></li>
+    <li class="active">Git and GitHub</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="git-and-github">
+<span id="git-setup"></span><h1>Git and GitHub<a class="headerlink" href="#git-and-github" title="Permalink to this headline">¶</a></h1>
+<p>Git is a programming language used by many companies to track changes to projects
+and share projects between team members as part of a process called <strong>version control</strong>.
+Github is the biggest online hub for storing code and the workflow of
+submitting your assignments is all done with Git.
+Cloning an online repository to your computer is just one of those steps.</p>
+<p>While at the beginning of class, Git and Github may seem like just one way for you to
+save and share your assignment code with course staff, these workflows are going to
+serve you well for a career in tech.
+Many companies even look at job candidate’s Github profiles to see not only their work,
+but also how often they are working on code!</p>
+<p>To store your work on Github, you will need to set up Git on your machine.
+First, ensure that you have properly <a class="reference internal" href="setting-up-terminal.html#terminal-setupinstructions"><span class="std std-ref">set up your terminal</span></a>.
+Then, follow the steps to <a class="reference internal" href="#git-install"><span class="std std-ref">install Git</span></a>.</p>
+<p>Your Github account needs a Personal Access Token. Setting up a token for your account is fairly straightforward.</p>
+<div class="section" id="create-a-github-account">
+<h2>Create a GitHub Account<a class="headerlink" href="#create-a-github-account" title="Permalink to this headline">¶</a></h2>
+<p>Create a
+<a class="reference external" href="https://github.com/join?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F&amp;source=header-home" target="_blank">GitHub account<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<div class="section" id="create-a-personal-access-token-pat">
+<h3>Create a Personal Access Token (PAT)<a class="headerlink" href="#create-a-personal-access-token-pat" title="Permalink to this headline">¶</a></h3>
+<p id="index-0">To use HTTPS to push and pull from GitHub, users must create a
+<strong>personal access token</strong>. A PAT takes the place of a password, and the token
+process is considered more secure than a username/password verification.</p>
+<p>Once you create your PAT, you will use it instead of your password to perform
+HTTPS Git operations.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/username/repo.git
+Username: your_username
+Password: your_token
+</pre></div>
+</div>
+<p>Some users question the need for a PAT, since it looks like another password
+they have to remember. Rather than diving into a lengthy debate and
+justification, we’ll focus on the main point: <em>GitHub requires a PAT or similar
+token</em>. The platform is incredibly helpful, and we want to use it, so we’ll
+follow their advice.</p>
+<p>GitHub provides detailed instructions for setting up your PAT, so we will use
+their documentation. Follow steps 1 - 9 for <a class="reference external" href="https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token" target="_blank">Creating a Token<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+carefully.</p>
+<p><strong>Tips</strong>:</p>
+<ol class="arabic">
+<li><p class="first">The checkboxes in step 7 select the actions you’re allowed to perform from
+the command line (terminal). For now, just choose the <em>repo</em> option.</p>
+<p>There’s no harm in selecting more options, but you won’t need any of them
+for this course.</p>
+</li>
+<li><p class="first">After you generate your PAT in step 8, <em>copy and save it somewhere safe</em>!
+Your new PAT will NOT be an easy-to-remember sequence of characters (that’s
+the whole point), so you need to record it somewhere.</p>
+<p>If you use a password manager, that’s a perfect place to keep your PAT.
+If you use an unsecured spreadsheet or a folded piece of paper, you want to
+break that habit now.</p>
+</li>
+<li><p class="first">If you will be pushing and pulling from a repository multiple times in
+quick succession, you can save your PAT in memory for a short time. Run the
+command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git config credential.helper <span class="s1">&#39;cache --timeout=3600&#39;</span>
+</pre></div>
+</div>
+<p>The next time you access your remote repo, Git will ask for your username
+and PAT. It will then remember your credentials for a certain amount of
+time. In the example above, <code class="docutils literal notranslate"><span class="pre">timeout=3600</span></code> saves your information for 1
+hour (3600 seconds). You can adjust the amount of time up or down as needed.</p>
+</li>
+<li><p class="first"><strong>Mac Users</strong>: At the bottom of the PAT documentation page, you can find
+some OPTIONAL instructions for saving your PAT in the MacOS <em>Keychain</em> app.</p>
+</li>
+</ol>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="last">Before starting on any assignment, make sure you are signed into your Github account!</p>
+</div>
+<p>A <strong>repository</strong> is a Github term for a folder of code.
+Write down the name of the repository you will be working with.
+Having the repository name written somewhere will ensure you can access your assignment code if you
+are interrupted from the rest of the setup process.</p>
+<p>Once you clicked the <code class="docutils literal notranslate"><span class="pre">Code</span></code> button a menu will dropdown.
+To clone your repository, you need the HTTPS link for your repository.
+Click on the <em>Clone</em> button on the repository page and copy the link!</p>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip!</p>
+<p class="last">If you are not sure if you selected the HTTPS clone code,
+look at the url you are asked to copy.
+The HTTPS will start with “https:…”
+If something else is starting the code in the box, try clicking on the HTTPS above the
+box holding the url.</p>
+</div>
+<div class="figure align-default" id="id1">
+<img alt="Highlighting the HTTPS link in the pop-up when the Clone button is clicked." src="../../_images/gh-clone-repo-button.png" />
+<p class="caption"><span class="caption-text">After clicking on the green <code class="docutils literal notranslate"><span class="pre">Code</span></code> box, the menu dropped down.
+There is an orange line under the HTTPS indicating that the item to copy is an https link.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="setting-up-git">
+<span id="git-install"></span><h2>Setting Up Git<a class="headerlink" href="#setting-up-git" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="mac-users">
+<h2>Mac Users<a class="headerlink" href="#mac-users" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Open a new terminal window.</p>
+</li>
+<li><p class="first">Type the command, <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">--version</span></code>, in the terminal.</p>
+</li>
+<li><p class="first">If the output includes a Git version, like the code below, then you are ready to use Git!</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>LaunchCode-Super-Computer:~ launchcode-student$ git --version
+git version 2.6.4 (Apple Git-63)
+</pre></div>
+</div>
+</li>
+<li><p class="first">If the output does not include a Git version, then a popup will open and ask you to install Developer Tools. Click “Install”!</p>
+</li>
+<li><p class="first">After the installation is done, you can double check that it worked by typing <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">--version</span></code> and the version of Git will be part of the output!</p>
+</li>
+</ol>
+</div>
+<div class="section" id="windows-users">
+<h2>Windows Users<a class="headerlink" href="#windows-users" title="Permalink to this headline">¶</a></h2>
+<p>Since you already installed Git Bash when you set up your terminal, you are good to go!</p>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="setting-up-terminal.html"><span aria-hidden="true">&larr;</span> Setting Up Your Terminal</a></li>
+        
+        
+        <li class="next"><a href="setting-up-anaconda.html">Setting Up Anaconda <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

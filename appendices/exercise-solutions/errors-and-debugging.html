@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercises: Errors and Debugging Solutions &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Exercise Solutions: Functions" href="functions.html" />
+    <link rel="prev" title="Exercise Solutions: Lists" href="lists.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html">Exercise Solutions</a></li>
+    <li class="active">Exercises: Errors and Debugging Solutions</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="exercises-errors-and-debugging-solutions">
+<h1>Exercises: Errors and Debugging Solutions<a class="headerlink" href="#exercises-errors-and-debugging-solutions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="find-and-fix-syntax-errors">
+<h2>Find and Fix Syntax Errors<a class="headerlink" href="#find-and-fix-syntax-errors" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic" id="errors-and-debugging-exercise-solutions-part1">
+<li><p class="first"><strong>Error 1: Line 6</strong>  Correct syntax should look like this:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>value = int(input(&quot;Enter an index value: &quot;))
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>Error 2: Line 9</strong> Correct syntax should look like this</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>if value &gt; len(alphabet):
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>Error 3: Line 12</strong> Correct syntax should look like this:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>print(&quot;The letter at index {0} is &#39;{1}&#39;.&quot;.format(index, alphabet[index]))
+</pre></div>
+</div>
+</li>
+</ol>
+<p><a class="reference internal" href="../../chapters/errors-and-debugging/exercises.html#errors-and-debugging-exercises"><span class="std std-ref">Back to Exercises</span></a></p>
+</div>
+<div class="section" id="find-and-fix-runtime-errors">
+<h2>Find and Fix Runtime Errors<a class="headerlink" href="#find-and-fix-runtime-errors" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic" id="errors-and-debugging-exercise-solutions-part2">
+<li><p class="first"><strong>Error 1: Line 2</strong>:  One option for correct syntax could be this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The last letter in &#39;</span><span class="si">{0}</span><span class="s2">&#39; is &#39;</span><span class="si">{1}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">word</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>Error 2: Line 5</strong>:  What data type is user input?  What data type do you need?  Correct syntax could be this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">second_num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter another whole number: &quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>Error 3: Line 10</strong>:  Correct the variable name typo</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">Product = </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">first_num</span> <span class="o">*</span> <span class="n">second_num</span><span class="p">))</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p><a class="reference internal" href="../../chapters/errors-and-debugging/exercises.html#errors-and-debugging-exercises"><span class="std std-ref">Back to Exercises</span></a></p>
+</div>
+<div class="section" id="solve-logic-errors">
+<h2>Solve Logic Errors<a class="headerlink" href="#solve-logic-errors" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first"><strong>Part 1: Calculate a Percentage</strong></p>
+<ol class="arabic" id="errors-and-debugging-exercise-solutions-part3a">
+<li><p class="first"><strong>Errors 1 and 2: Line 5</strong>: Correct syntax could look like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">percentage</span> <span class="o">=</span> <span class="n">points_earned</span><span class="o">/</span><span class="n">points_possible</span> <span class="o">*</span> <span class="mi">100</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</li>
+<li id="errors-and-debugging-exercise-solutions-part3b"><p class="first"><strong>Part 2: Convert a Student’s Percentage into a Letter Grade</strong></p>
+<ol class="arabic">
+<li><p class="first"><strong>Error 1: Lines 8, 10, 12, 14, &amp; 16:</strong> Fix the Letter Grades</p>
+</li>
+<li><p class="first"><strong>Error 2: Lines 7, 9, 11, 13</strong>:  Change <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> or <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> to include the value as well.   You could also update the order of percentage ranges, too.
+One solution could start like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">score_percent</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+   <span class="n">letter_grade</span> <span class="o">=</span> <span class="s1">&#39;A&#39;</span>
+<span class="k">elif</span> <span class="n">score_percent</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+   <span class="n">letter_grade</span> <span class="o">=</span> <span class="s2">&quot;B&quot;</span>
+
+<span class="c1"># rest of code...</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+<ol class="arabic" id="errors-and-debugging-exercise-solutions-part3c">
+<li><p class="first"><strong>Part 3: Validating a Username</strong>:</p>
+<ol class="arabic">
+<li><p class="first"><strong>Testing with</strong> <code class="docutils literal notranslate"><span class="pre">print()</span></code> <strong>statements</strong>:  This is a demo, but syntax could look like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">username</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">5</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">username</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">:</span>
+   <span class="n">is_valid</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">is_valid</span><span class="p">)</span>  <span class="c1">#testing with print is a easy way to check your work</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>Error 1: Lines 13-18</strong>:  Correct syntax could look like this.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">username</span><span class="p">:</span>
+   <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">digits</span><span class="p">:</span>
+      <span class="n">has_digit</span> <span class="o">=</span> <span class="kc">True</span>
+   <span class="k">elif</span> <span class="n">char</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_letters</span><span class="p">:</span>
+      <span class="n">is_valid</span> <span class="o">=</span> <span class="kc">False</span>
+   <span class="c1"># else:                 #else statement not needed</span>
+      <span class="c1"># is_valid = True</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">is_valid</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+<p><a class="reference internal" href="../../chapters/errors-and-debugging/exercises.html#errors-and-debugging-exercises"><span class="std std-ref">Back to Exercises</span></a></p>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="lists.html"><span aria-hidden="true">&larr;</span> Exercise Solutions: Lists</a></li>
+        
+        
+        <li class="next"><a href="functions.html">Exercise Solutions: Functions <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

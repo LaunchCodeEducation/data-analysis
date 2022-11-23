@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11.8. Functions Calling Other Functions &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="11.9. Why Create Functions?" href="why-create-functions.html" />
+    <link rel="prev" title="11.7. Parameters and Variables" href="parameters-and-variables.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">11. </span>What’s Your Function</a></li>
+    <li class="active"><span class="section-number">11.8. </span>Functions Calling Other Functions</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="functions-calling-other-functions">
+<h1><span class="section-number">11.8. </span>Functions Calling Other Functions<a class="headerlink" href="#functions-calling-other-functions" title="Permalink to this headline">¶</a></h1>
+<p>Once we define a function, we can call it on its own (line 5), as part of a conditional (line 7),
+or from inside of a loop (line 10).</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="last highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">double_number</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+   <span class="k">return</span> <span class="n">num</span><span class="o">*</span><span class="mi">2</span>
+
+<span class="n">integer</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">double_number</span><span class="p">(</span><span class="n">integer</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">integer</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+   <span class="n">double_number</span><span class="p">(</span><span class="n">integer</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+   <span class="n">double_number</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>Even better, we can call one function from INSIDE another function.</p>
+<div class="section" id="functions-should-do-exactly-one-thing">
+<h2><span class="section-number">11.8.1. </span>Functions Should Do Exactly One Thing<a class="headerlink" href="#functions-should-do-exactly-one-thing" title="Permalink to this headline">¶</a></h2>
+<p>When writing a function, we should pay attention to its size. Functions work best when they are
+small and do only one thing.</p>
+<p>Consider the <code class="docutils literal notranslate"><span class="pre">make_sandwich</span></code> function from an
+<a class="reference internal" href="process.html#sandwich-function"><span class="std std-ref">earlier section</span></a>. What if we wanted to expand our
+program to not only make a sandwich, but also to pour a drink. It would be a
+bad idea to write one function to do both (<code class="docutils literal notranslate"><span class="pre">make_sandwich_and_pour_drink</span></code>).
+What if a customer wants only one thing—a sandwich or a drink?</p>
+<p>A much better solution would look like this:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_sandwich</span><span class="p">(</span> <span class="n">parameters</span> <span class="p">):</span>
+   <span class="c1"># make the sandwich</span>
+
+<span class="k">def</span> <span class="nf">pour_drink</span><span class="p">(</span> <span class="n">parameters</span> <span class="p">):</span>
+   <span class="c1"># pour the drink</span>
+
+<span class="k">def</span> <span class="nf">make_lunch</span><span class="p">(</span> <span class="n">parameters</span> <span class="p">):</span>
+   <span class="n">make_sandwich</span><span class="p">(</span> <span class="n">sand_arguments</span> <span class="p">)</span>
+   <span class="n">pour_drink</span><span class="p">(</span> <span class="n">drink_arguments</span> <span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>Why is this better? First, smaller functions are easier to debug. Also, by
+assigning single jobs to separate functions, we make our code easier to read
+and more reusable.</p>
+<p>Looking at the <code class="docutils literal notranslate"><span class="pre">make_lunch</span></code> function, it is very clear what is going on.
+It makes a sandwich first, and then it pours a drink.</p>
+<p>If the <code class="docutils literal notranslate"><span class="pre">make_lunch</span></code> function held all of the code needed to do <em>both</em> tasks,
+there would be no clear separation between one job and the other.</p>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="parameters-and-variables.html"><span aria-hidden="true">&larr;</span> <span class="section-number">11.7. </span>Parameters and Variables</a></li>
+        
+        
+        <li class="next"><a href="why-create-functions.html"><span class="section-number">11.9. </span>Why Create Functions? <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

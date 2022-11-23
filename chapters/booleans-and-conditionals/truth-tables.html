@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6.7. Truth Tables &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6.8. Nested Conditionals" href="nested-conditionals.html" />
+    <link rel="prev" title="6.6. Logical Operators" href="logical-operators.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">6. </span>Making Decisions With Conditionals</a></li>
+    <li class="active"><span class="section-number">6.7. </span>Truth Tables</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="truth-tables">
+<h1><span class="section-number">6.7. </span>Truth Tables<a class="headerlink" href="#truth-tables" title="Permalink to this headline">¶</a></h1>
+<p id="index-0"><strong>Truth tables</strong> help us understand how logical operators work by showing all
+of the possible return values. Let’s look at the truth table for <code class="docutils literal notranslate"><span class="pre">and</span></code>, which
+assumes we have two boolean expressions, <code class="docutils literal notranslate"><span class="pre">A</span></code> and <code class="docutils literal notranslate"><span class="pre">B</span></code>.</p>
+<div class="section" id="truth-table-for-and">
+<h2><span class="section-number">6.7.1. </span>Truth Table for <code class="docutils literal notranslate"><span class="pre">and</span></code><a class="headerlink" href="#truth-table-for-and" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<table border="1" class="colwidths-auto last docutils align-center">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">A <code class="docutils literal notranslate"><span class="pre">and</span></code> B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">True</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">True</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">True</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">True</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">False</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">False</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">False</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">True</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">False</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">False</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">False</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">False</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Consider the first row of the table. This row states that if A is true
+and B is true, then <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">and</span> <span class="pre">B</span></code> is true. The two middle rows show that if
+either A or B is false, then <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">and</span> <span class="pre">B</span></code> is false. Finally, if both A and B are
+false, then <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">and</span> <span class="pre">B</span></code> is false.</p>
+</div>
+<div class="section" id="truth-table-for-or">
+<h2><span class="section-number">6.7.2. </span>Truth Table for <code class="docutils literal notranslate"><span class="pre">or</span></code><a class="headerlink" href="#truth-table-for-or" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<table border="1" class="colwidths-auto last docutils align-center">
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">A <code class="docutils literal notranslate"><span class="pre">or</span></code> B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">True</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">True</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">True</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">True</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">False</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">True</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">False</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">True</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">True</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">False</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">False</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">False</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Similar to the <code class="docutils literal notranslate"><span class="pre">and</span></code> table, if A or B are both true, then <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">or</span> <span class="pre">B</span></code> is true.
+However, the middle two rows show that if either A or B is false, then <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">or</span> <span class="pre">B</span></code> still remains true.
+This is very different from the <code class="docutils literal notranslate"><span class="pre">and</span></code> table.
+The last row shows that if both options are false, then the entire statement is false.</p>
+</div>
+<div class="section" id="order-of-operations">
+<h2><span class="section-number">6.7.3. </span>Order of Operations<a class="headerlink" href="#order-of-operations" title="Permalink to this headline">¶</a></h2>
+<p id="index-1">We now have a lot of operators in our toolkit, so it is important to understand
+how they relate to each other. Which operators get done first?</p>
+<p>Python always performs operations in a specific order:</p>
+<ol class="arabic simple">
+<li>It does all math calculations first.</li>
+<li>Next, it evaluates all comparisons as <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</li>
+<li>Next, it applies all <code class="docutils literal notranslate"><span class="pre">not</span></code> operators.</li>
+<li>Finally, it evaluates <code class="docutils literal notranslate"><span class="pre">and</span></code> and <code class="docutils literal notranslate"><span class="pre">or</span></code> operations.</li>
+</ol>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>The expression <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">*</span> <span class="pre">5</span> <span class="pre">&gt;=</span> <span class="pre">10</span> <span class="pre">and</span> <span class="pre">y</span> <span class="pre">-</span> <span class="pre">6</span> <span class="pre">&lt;=</span> <span class="pre">20</span></code> will be completed in this order:</p>
+<ol class="arabic simple">
+<li><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">*</span> <span class="pre">5</span></code> is calculated, then <code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">-</span> <span class="pre">6</span></code>.</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code> comparison is evaluated as <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> comparison is evaluated as <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">and</span></code> operator is evaluated last.</li>
+</ol>
+<p>Let’s say <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">2</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">46</span></code>. Here we step through each stage of the evaluation:</p>
+<table border="1" class="colwidths-auto last docutils align-center" id="id1">
+<caption><span class="caption-text">Operator Order on: <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">*</span> <span class="pre">5</span> <span class="pre">&gt;=</span> <span class="pre">10</span> <span class="pre">and</span> <span class="pre">y</span> <span class="pre">-</span> <span class="pre">6</span> <span class="pre">&lt;=</span> <span class="pre">20</span></code></span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Action</th>
+<th class="head">Result</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Plug in the values into the expression</td>
+<td><code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">*</span> <span class="pre">5</span> <span class="pre">&gt;=</span> <span class="pre">10</span> <span class="pre">and</span> <span class="pre">46</span> <span class="pre">-</span> <span class="pre">6</span> <span class="pre">&lt;=</span> <span class="pre">20</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">*</span> <span class="pre">5</span></code> is calculated, then <code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">-</span> <span class="pre">6</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">10</span> <span class="pre">&gt;=</span> <span class="pre">10</span> <span class="pre">and</span> <span class="pre">40</span> <span class="pre">&lt;=</span> <span class="pre">20</span></code></td>
+</tr>
+<tr class="row-even"><td>The <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code> comparison is evaluated as <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">True</span> <span class="pre">and</span> <span class="pre">40</span> <span class="pre">&lt;=</span> <span class="pre">20</span></code></td>
+</tr>
+<tr class="row-odd"><td>The <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> comparison is evaluated as <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></td>
+<td><code class="docutils literal notranslate"><span class="pre">True</span> <span class="pre">and</span> <span class="pre">False</span></code></td>
+</tr>
+<tr class="row-even"><td>The <code class="docutils literal notranslate"><span class="pre">and</span></code> operator is evaluated last</td>
+<td><code class="docutils literal notranslate"><span class="pre">False</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="table-of-operator-order">
+<h3><span class="section-number">6.7.3.1. </span>Table of Operator Order<a class="headerlink" href="#table-of-operator-order" title="Permalink to this headline">¶</a></h3>
+<p>The following table lists operators in order of importance, from highest
+(applied first) to lowest (applied last).</p>
+<table border="1" class="colwidths-auto docutils align-center" id="id2">
+<caption><span class="caption-text">Operator Order</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Level</th>
+<th class="head">Category</th>
+<th class="head">Operators</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>(Highest)</td>
+<td>Parentheses</td>
+<td><code class="docutils literal notranslate"><span class="pre">()</span></code></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>Exponent</td>
+<td><code class="docutils literal notranslate"><span class="pre">**</span></code> (For example: <code class="docutils literal notranslate"><span class="pre">2**3</span></code>)</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>Multiplication and Division</td>
+<td><code class="docutils literal notranslate"><span class="pre">*</span>&#160; <span class="pre">/</span>&#160; <span class="pre">//</span>&#160; <span class="pre">%</span></code></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>Addition and subtraction</td>
+<td><code class="docutils literal notranslate"><span class="pre">+</span>&#160; <span class="pre">-</span></code></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>Comparison</td>
+<td><code class="docutils literal notranslate"><span class="pre">==</span>&#160; <span class="pre">!=</span>&#160; <span class="pre">&lt;=</span>&#160; <span class="pre">&gt;=</span>&#160; <span class="pre">&gt;</span>&#160; <span class="pre">&lt;</span></code></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>Logical</td>
+<td><code class="docutils literal notranslate"><span class="pre">not</span></code></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>Logical</td>
+<td><code class="docutils literal notranslate"><span class="pre">and</span></code></td>
+</tr>
+<tr class="row-odd"><td>(Lowest)</td>
+<td>Logical</td>
+<td><code class="docutils literal notranslate"><span class="pre">or</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>Using parentheses is not always necessary, but they make a BIG difference when
+someone else reads your code. As a best practice, use parentheses to make your
+code easier to read:</p>
+<p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">*</span> <span class="pre">5</span> <span class="pre">&gt;=</span> <span class="pre">10</span> <span class="pre">and</span> <span class="pre">y</span> <span class="pre">-</span> <span class="pre">6</span> <span class="pre">&lt;=</span> <span class="pre">20</span></code></p>
+<p>vs.</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">(x</span> <span class="pre">*</span> <span class="pre">5</span> <span class="pre">&gt;=</span> <span class="pre">10)</span> <span class="pre">and</span> <span class="pre">(y</span> <span class="pre">-</span> <span class="pre">6</span> <span class="pre">&lt;=</span> <span class="pre">20)</span></code></p>
+</div>
+</div>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">6.7.4. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Assume we have 3 boolean expressions (A, B, and C). Which combinations of
+values (A/B/C) will make the expression <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">or</span> <span class="pre">B</span> <span class="pre">and</span> <span class="pre">C</span></code> evaluate to
+<code class="docutils literal notranslate"><span class="pre">True</span></code>?</p>
+<ol class="last loweralpha simple">
+<li>True / True / True</li>
+<li>False / True / True</li>
+<li>True / False / True</li>
+<li>True / True / False</li>
+<li>False / False / True</li>
+<li>False / True / False</li>
+<li>True / False / False</li>
+<li>False / False / False</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="logical-operators.html"><span aria-hidden="true">&larr;</span> <span class="section-number">6.6. </span>Logical Operators</a></li>
+        
+        
+        <li class="next"><a href="nested-conditionals.html"><span class="section-number">6.8. </span>Nested Conditionals <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

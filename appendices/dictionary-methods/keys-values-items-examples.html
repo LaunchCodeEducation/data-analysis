@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Return Keys, Values, or Key/Value Pairs &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Cloning a Dictionary" href="dictionary-copy-example.html" />
+    <link rel="prev" title="Removing Items From a Dictionary" href="clear-pop-examples.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html">Common Python Dictionary Methods</a></li>
+    <li class="active">Return Keys, Values, or Key/Value Pairs</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="return-keys-values-or-key-value-pairs">
+<span id="keys-values-items-examples"></span><h1>Return Keys, Values, or Key/Value Pairs<a class="headerlink" href="#return-keys-values-or-key-value-pairs" title="Permalink to this headline">¶</a></h1>
+<p>The structure of a Python dictionary involves <em>pairs</em> of items. Each element in
+the collection contains a key and a value.</p>
+<p>Python provides two methods that allow us to access all of the keys (without
+their values), or all of the values (without their keys).</p>
+<div class="section" id="return-all-keys">
+<span id="dictionary-keys"></span><h2>Return All Keys<a class="headerlink" href="#return-all-keys" title="Permalink to this headline">¶</a></h2>
+<p id="index-0">The general syntax for the <code class="docutils literal notranslate"><span class="pre">keys()</span></code> method is:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">dictionary_name</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No arguments are needed inside the parentheses, and the method returns an
+<em>object</em> that contains all of the keys in the dictionary.</p>
+<p>Let’s explore what this means.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Print the <em>object</em> returned by the <code class="docutils literal notranslate"><span class="pre">keys()</span></code> method:</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">phone_book</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;Mom&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5555&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Work&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5556&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Home&#39;</span> <span class="p">:</span> <span class="s1">&#39;123-456-7890&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;BFF&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5557&#39;</span>
+<span class="p">}</span>
+
+<span class="n">book_keys</span> <span class="o">=</span> <span class="n">phone_book</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">book_keys</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">book_keys</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>dict_keys([&#39;Mom&#39;, &#39;Work&#39;, &#39;Home&#39;, &#39;BFF&#39;])
+&lt;class &#39;dict_keys&#39;&gt;
+</pre></div>
+</div>
+</div>
+<p>Notice that when we print <code class="docutils literal notranslate"><span class="pre">book_keys</span></code>, we see something that looks like a
+list, but that list is enclosed in <code class="docutils literal notranslate"><span class="pre">dict_keys()</span></code>. Line 10 shows us that
+<code class="docutils literal notranslate"><span class="pre">book_keys</span></code> is a data type that we have not seen before—<code class="docutils literal notranslate"><span class="pre">dict_keys</span></code>.</p>
+<p>Good news! We do not need a deep understanding of the <code class="docutils literal notranslate"><span class="pre">dict_keys</span></code> data type.
+We just need to know how to use it. One option is to use the <code class="docutils literal notranslate"><span class="pre">list()</span></code>
+function to convert the <code class="docutils literal notranslate"><span class="pre">dict_keys</span></code> object into a list.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">book_keys</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">phone_book</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">book_keys</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">book_keys</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">book_keys</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;Mom&#39;, &#39;Work&#39;, &#39;Home&#39;, &#39;BFF&#39;]
+&lt;class &#39;list&#39;&gt;
+Mom
+</pre></div>
+</div>
+</div>
+<p>In the <a class="reference internal" href="../../chapters/dictionaries/dictionary-iteration.html#dictionary-iteration"><span class="std std-ref">dictionary iteration</span></a> section, we see how
+to apply the <code class="docutils literal notranslate"><span class="pre">keys()</span></code> method to loop through a dictionary.</p>
+</div>
+<div class="section" id="return-all-values">
+<span id="dictionary-values"></span><h2>Return All Values<a class="headerlink" href="#return-all-values" title="Permalink to this headline">¶</a></h2>
+<p id="index-1">The general syntax for the <code class="docutils literal notranslate"><span class="pre">values()</span></code> method is:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">dictionary_name</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No arguments are needed inside the parentheses, and the method returns an
+<em>object</em> that contains all of the values from the dictionary.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">phone_book</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;Mom&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5555&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Work&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5556&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Home&#39;</span> <span class="p">:</span> <span class="s1">&#39;123-456-7890&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;BFF&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5557&#39;</span>
+<span class="p">}</span>
+
+<span class="n">book_values</span> <span class="o">=</span> <span class="n">phone_book</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">book_values</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">book_values</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">book_values</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>dict_values([&#39;555-5555&#39;, &#39;555-5556&#39;, &#39;123-456-7890&#39;, &#39;555-5557&#39;])
+&lt;class &#39;dict_values&#39;&gt;
+[&#39;555-5555&#39;, &#39;555-5556&#39;, &#39;123-456-7890&#39;, &#39;555-5557&#39;]
+</pre></div>
+</div>
+</div>
+<p>By collecting all of the values from a dictionary into one object, we can
+loop through the entries or search the object for a specific value.</p>
+</div>
+<div class="section" id="return-all-key-value-pairs">
+<span id="dictionary-items"></span><h2>Return All Key/Value Pairs<a class="headerlink" href="#return-all-key-value-pairs" title="Permalink to this headline">¶</a></h2>
+<p id="index-2">The general syntax for the <code class="docutils literal notranslate"><span class="pre">items()</span></code> method is:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">dictionary_name</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>No arguments are needed inside the parentheses, and the method returns an
+<em>object</em> that contains all of the key/value pairs from the dictionary.</p>
+<p>Just like with <code class="docutils literal notranslate"><span class="pre">keys()</span></code> and <code class="docutils literal notranslate"><span class="pre">values()</span></code>, we can convert the <em>object</em> into
+a list.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">phone_book</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;Mom&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5555&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Work&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5556&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Home&#39;</span> <span class="p">:</span> <span class="s1">&#39;123-456-7890&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;BFF&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5557&#39;</span>
+<span class="p">}</span>
+
+<span class="n">book_items</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">phone_book</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">book_items</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">book_items</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">book_items</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">book_items</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[(&#39;Mom&#39;, &#39;555-5555&#39;), (&#39;Work&#39;, &#39;555-5556&#39;), (&#39;Home&#39;, &#39;123-456-7890&#39;), (&#39;BFF&#39;, &#39;555-5557&#39;)]
+(&#39;Mom&#39;, &#39;555-5555&#39;)
+Mom 555-5555
+</pre></div>
+</div>
+</div>
+<p>Note that each element in the list comes is a <em>pair</em>, which can be accessed
+with bracket notation. A single bracket, like <code class="docutils literal notranslate"><span class="pre">book_items[0]</span></code>, accesses one
+pair in the list. A pair of brackets, like <code class="docutils literal notranslate"><span class="pre">book_items[1][0]</span></code> lets us access
+one half of a pair.</p>
+</div>
+<div class="section" id="why">
+<h2>Why?<a class="headerlink" href="#why" title="Permalink to this headline">¶</a></h2>
+<p>When we define the <code class="docutils literal notranslate"><span class="pre">keys(),</span> <span class="pre">values()</span></code>, and <code class="docutils literal notranslate"><span class="pre">items()</span></code> methods on their own,
+it might be difficult to see why they are so important. This is especially true
+when we throw in the <em>returns an object</em> business.</p>
+<p>To fully understand why these dictionary methods are helpful, we must use them
+in concrete examples. If you haven’t done so, read the
+<a class="reference internal" href="../../chapters/dictionaries/dictionary-iteration.html#dictionary-iteration"><span class="std std-ref">dictionary iteration</span></a> section and then return to
+this appendix page.</p>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="clear-pop-examples.html"><span aria-hidden="true">&larr;</span> Removing Items From a Dictionary</a></li>
+        
+        
+        <li class="next"><a href="dictionary-copy-example.html">Cloning a Dictionary <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

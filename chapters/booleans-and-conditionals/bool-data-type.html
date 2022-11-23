@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6.2. Data Type for True/False &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6.3. Boolean Expressions" href="boolean-expressions.html" />
+    <link rel="prev" title="6.1. Decision Making" href="introduction.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">6. </span>Making Decisions With Conditionals</a></li>
+    <li class="active"><span class="section-number">6.2. </span>Data Type for <code class="docutils literal notranslate"><span class="pre">True</span></code>/<code class="docutils literal notranslate"><span class="pre">False</span></code></li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="data-type-for-true-false">
+<h1><span class="section-number">6.2. </span>Data Type for <code class="docutils literal notranslate"><span class="pre">True</span></code>/<code class="docutils literal notranslate"><span class="pre">False</span></code><a class="headerlink" href="#data-type-for-true-false" title="Permalink to this headline">¶</a></h1>
+<p>In order for us to build code that can make decisions, we need to understand
+how programming languages represent <em>true</em> and <em>false</em>.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>If we run the following code, we would see in the following output.</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;dog&#39;</span> <span class="o">==</span> <span class="s1">&#39;cat&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;dog&#39;</span> <span class="o">!=</span> <span class="s1">&#39;cat&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>False
+True
+False
+True
+</pre></div>
+</div>
+</div>
+<p>In the code above, we make four <em>comparisons</em> and then print the results to the
+console. Python evaluates each comparison as being either <code class="docutils literal notranslate"><span class="pre">True</span></code> or
+<code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<ol class="arabic simple">
+<li>In line 1, the <em>equality operator</em> <code class="docutils literal notranslate"><span class="pre">==</span></code> compares the strings <code class="docutils literal notranslate"><span class="pre">'dog'</span></code>
+and <code class="docutils literal notranslate"><span class="pre">'cat'</span></code>. Since these are NOT the same, the comparison returns the
+value <code class="docutils literal notranslate"><span class="pre">False</span></code>.</li>
+<li>In line 2, the operator <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> compares the values of 3 and 4. Since 3 is
+indeed less than 4, comparison returns the result <code class="docutils literal notranslate"><span class="pre">True</span></code>.</li>
+<li>The comparison in line 3 returns <code class="docutils literal notranslate"><span class="pre">False</span></code>, since 3 is NOT larger than 10.</li>
+<li>In line 4, the <code class="docutils literal notranslate"><span class="pre">!=</span></code> operator stands for “not equal”, so
+<code class="docutils literal notranslate"><span class="pre">'dog'</span> <span class="pre">!=</span> <span class="pre">'cat'</span></code> returns <code class="docutils literal notranslate"><span class="pre">True</span></code>, while something like <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">!=</span> <span class="pre">3</span></code> would
+return <code class="docutils literal notranslate"><span class="pre">False</span></code>.</li>
+</ol>
+<div class="section" id="identify-true-and-false">
+<h2><span class="section-number">6.2.1. </span>Identify <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code><a class="headerlink" href="#identify-true-and-false" title="Permalink to this headline">¶</a></h2>
+<p>Recall that the <code class="docutils literal notranslate"><span class="pre">type()</span></code> function tells us the data type of what’s inside
+the <code class="docutils literal notranslate"><span class="pre">()</span></code>.</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;dog&#39;</span> <span class="o">==</span> <span class="s1">&#39;cat&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s1">&#39;dog&#39;</span> <span class="o">==</span> <span class="s1">&#39;cat&#39;</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>True
+&lt;class &#39;bool&#39;&gt;
+False
+&lt;class &#39;bool&#39;&gt;
+</pre></div>
+</div>
+<p>In the previous chapter, we learned about three data types—<code class="docutils literal notranslate"><span class="pre">int</span></code>,
+<code class="docutils literal notranslate"><span class="pre">float</span></code>, and <code class="docutils literal notranslate"><span class="pre">string</span></code>. The first two deal with numbers, while <code class="docutils literal notranslate"><span class="pre">string</span></code>
+deals with collections of characters.</p>
+<p id="index-0">We can now add the data type <code class="docutils literal notranslate"><span class="pre">bool</span></code>, which stands for
+<strong>boolean value</strong>, to our list.</p>
+<div class="section" id="boolean-values">
+<h3><span class="section-number">6.2.1.1. </span>Boolean Values<a class="headerlink" href="#boolean-values" title="Permalink to this headline">¶</a></h3>
+<p id="index-1">There are only two boolean values—<code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="last">Capitalization matters! Since Python is case-sensitive, <code class="docutils literal notranslate"><span class="pre">true</span></code> and
+<code class="docutils literal notranslate"><span class="pre">false</span></code> are NOT valid boolean values.</p>
+</div>
+<p>The values <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code> are NOT strings. We can see this by printing
+another set of <code class="docutils literal notranslate"><span class="pre">type()</span></code> results:</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="kc">True</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s2">&quot;True&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="o">==</span> <span class="s2">&quot;True&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;bool&#39;&gt;
+&lt;class &#39;str&#39;&gt;
+False
+</pre></div>
+</div>
+</div>
+<p>Putting quotes around boolean values (<code class="docutils literal notranslate"><span class="pre">&quot;True&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;False&quot;</span></code>) makes them
+strings, just like <code class="docutils literal notranslate"><span class="pre">&quot;1234&quot;</span></code> is a string rather than an <code class="docutils literal notranslate"><span class="pre">int</span></code> data type.</p>
+<p>Line 3 shows that even though they look similar, <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;True&quot;</span></code> are
+NOT the same! <code class="docutils literal notranslate"><span class="pre">str</span></code> and <code class="docutils literal notranslate"><span class="pre">bool</span></code> are different data types.</p>
+</div>
+<div class="section" id="data-type-review">
+<h3><span class="section-number">6.2.1.2. </span>Data Type Review<a class="headerlink" href="#data-type-review" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>The string (<code class="docutils literal notranslate"><span class="pre">str</span></code>) data type represents a collection of characters.</li>
+<li>The integer (<code class="docutils literal notranslate"><span class="pre">int</span></code>) data type represents a whole number.</li>
+<li>The float (<code class="docutils literal notranslate"><span class="pre">float</span></code>) data type represents a decimal value.</li>
+<li>The boolean (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) data type represents <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="introduction.html"><span aria-hidden="true">&larr;</span> <span class="section-number">6.1. </span>Decision Making</a></li>
+        
+        
+        <li class="next"><a href="boolean-expressions.html"><span class="section-number">6.3. </span>Boolean Expressions <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

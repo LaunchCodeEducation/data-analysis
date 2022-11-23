@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7.4. Loops With Conditions &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="7.5. The Accumulator Pattern" href="accumulator-pattern.html" />
+    <link rel="prev" title="7.3. More on range" href="range-options.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">7. </span>Repeating Things With Loops</a></li>
+    <li class="active"><span class="section-number">7.4. </span>Loops With Conditions</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="loops-with-conditions">
+<h1><span class="section-number">7.4. </span>Loops With Conditions<a class="headerlink" href="#loops-with-conditions" title="Permalink to this headline">¶</a></h1>
+<p>In the <a class="reference internal" href="../booleans-and-conditionals/index.html#conditionals"><span class="std std-ref">last chapter</span></a>, we learned how to use conditionals
+to decide which block of code to run. In this chapter, we use loops to repeat a
+set of statements multiple times.</p>
+<p>You might wonder:</p>
+<ol class="arabic simple">
+<li><em>Can I put a loop inside an if statement?</em></li>
+<li><em>Can I put a conditional inside a loop?</em></li>
+</ol>
+<p>The answer to both of these questions is a definite, <em>YES!</em></p>
+<div class="section" id="repeating-a-check">
+<h2><span class="section-number">7.4.1. </span>Repeating a Check<a class="headerlink" href="#repeating-a-check" title="Permalink to this headline">¶</a></h2>
+<p>Run the following code samples to see how each one behaves.</p>
+<div class="admonition-examples admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Examples</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">13</span>
+
+<span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+   <span class="k">if</span> <span class="n">number</span><span class="o">%</span><span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="s2">&quot;is divisible by 3.&quot;</span><span class="p">)</span>
+   <span class="k">else</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="s2">&quot;is NOT divisible by 3.&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>In this first loop, the text displayed in the console depends on whether the
+condition <code class="docutils literal notranslate"><span class="pre">number%3</span> <span class="pre">==</span> <span class="pre">0</span></code> returns <code class="docutils literal notranslate"><span class="pre">True</span></code>. If <code class="docutils literal notranslate"><span class="pre">number</span></code> is evenly
+divisible by 3, then line 5 runs. Otherwise, line 7 runs.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;Coding ROCKS!&#39;</span>
+<span class="n">num_vowels</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">text</span><span class="p">:</span>
+   <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="s1">&#39;aeiou&#39;</span><span class="p">:</span>
+      <span class="n">num_vowels</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="s2">&quot;contains&quot;</span><span class="p">,</span> <span class="n">num_vowels</span><span class="p">,</span> <span class="s2">&quot;lowercase vowels.&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="last">In the second loop, the condition <code class="docutils literal notranslate"><span class="pre">char</span> <span class="pre">in</span> <span class="pre">'aeiou'</span></code> returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if
+the value of <code class="docutils literal notranslate"><span class="pre">char</span></code> matches any part of the string. When this happens,
+<code class="docutils literal notranslate"><span class="pre">num_vowels</span></code> gets increased by 1 (line 6). <code class="docutils literal notranslate"><span class="pre">Coding</span> <span class="pre">ROCKS!</span></code> contains 2
+lowercase vowels, so line 6 only runs 2 times. For every other character in
+the string, the line gets skipped.</p>
+</div>
+</div>
+<div class="section" id="looping-if">
+<h2><span class="section-number">7.4.2. </span>Looping <code class="docutils literal notranslate"><span class="pre">if</span></code><a class="headerlink" href="#looping-if" title="Permalink to this headline">¶</a></h2>
+<p>We can also place a loop inside any of the code blocks of an <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code>
+statement.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">condition</span><span class="p">:</span>
+   <span class="k">for</span> <span class="n">var_name</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+      <span class="c1"># Loop body</span>
+<span class="k">elif</span> <span class="n">other_condition</span><span class="p">:</span>
+   <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span><span class="p">:</span>
+      <span class="c1"># Loop body</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="k">for</span> <span class="n">step</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Python ROCKS!&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>Set up this way, only one of the three loops will run:</p>
+<ol class="last arabic simple">
+<li>IF <code class="docutils literal notranslate"><span class="pre">condition</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop starting on line 2 runs.</li>
+<li>IF <code class="docutils literal notranslate"><span class="pre">condition</span></code> is <code class="docutils literal notranslate"><span class="pre">False</span></code> and <code class="docutils literal notranslate"><span class="pre">other_condition</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, then
+the loop starting on line 5 runs.</li>
+<li>IF <code class="docutils literal notranslate"><span class="pre">condition</span></code> and <code class="docutils literal notranslate"><span class="pre">other_condition</span></code> both return <code class="docutils literal notranslate"><span class="pre">False</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">ROCKS!</span></code> gets printed 20 times by the last loop.</li>
+</ol>
+</div>
+<p>Placing a loop inside a conditional allows us to choose when the loop body
+should run.</p>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="range-options.html"><span aria-hidden="true">&larr;</span> <span class="section-number">7.3. </span>More on <code class="docutils literal notranslate"><span class="pre">range</span></code></a></li>
+        
+        
+        <li class="next"><a href="accumulator-pattern.html"><span class="section-number">7.5. </span>The Accumulator Pattern <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

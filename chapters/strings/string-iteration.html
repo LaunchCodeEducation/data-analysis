@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8.8. Iteration with Strings &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="8.9. Checking Strings" href="string-conditionals.html" />
+    <link rel="prev" title="8.7. Template Literals" href="template-literals.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">8. </span>Stringing Characters Together</a></li>
+    <li class="active"><span class="section-number">8.8. </span>Iteration with Strings</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="iteration-with-strings">
+<h1><span class="section-number">8.8. </span>Iteration with Strings<a class="headerlink" href="#iteration-with-strings" title="Permalink to this headline">¶</a></h1>
+<p>One of the most common uses of a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop is to carry out a task on each
+item in a collection. When using a loop with a collection in this way, we say
+that the loop <em>iterates over</em> the collection.</p>
+<div class="section" id="iterate-by-index-or-characters">
+<h2><span class="section-number">8.8.1. </span>Iterate by Index or Characters<a class="headerlink" href="#iterate-by-index-or-characters" title="Permalink to this headline">¶</a></h2>
+<p>In the <a class="reference internal" href="../loops/index.html#loops"><span class="std std-ref">Loops chapter</span></a>, we learned about iteration. The following examples illustrate two ways we can iterate over a string.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>One way to iterate over a string is to use the index values for each
+character. The following program prints each of the characters of the string
+<code class="docutils literal notranslate"><span class="pre">'LaunchCode'</span></code> on a separate line.</p>
+<p>Run the code to see the output, then complete the <em>Try It</em> suggestions.</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;LaunchCode&#39;</span>
+
+<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)):</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/StringIterationExample" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p>Since <code class="docutils literal notranslate"><span class="pre">len(name)</span></code> is 10, the loop executes once for each of the values 0 to
+9, assigning them in turn to the loop variable <code class="docutils literal notranslate"><span class="pre">index</span></code>.</p>
+<p>The loop body, <code class="docutils literal notranslate"><span class="pre">print(name[index])</span></code>, prints one of the characters from
+<code class="docutils literal notranslate"><span class="pre">name</span></code> (<code class="docutils literal notranslate"><span class="pre">name[0]</span></code> through <code class="docutils literal notranslate"><span class="pre">name[9]</span></code> for <code class="docutils literal notranslate"><span class="pre">'LaunchCode'</span></code>).</p>
+<p><strong>Try It!</strong></p>
+<ol class="last arabic simple">
+<li>Replace the string <code class="docutils literal notranslate"><span class="pre">'LaunchCode'</span></code> with your name. Note how using
+<code class="docutils literal notranslate"><span class="pre">len(name)</span></code> as the argument inside <code class="docutils literal notranslate"><span class="pre">range</span></code> makes the loop run the
+proper number of times, regardless of the string.</li>
+<li>Use <code class="docutils literal notranslate"><span class="pre">range(start,</span> <span class="pre">stop,</span> <span class="pre">step)</span></code> to print every third character from
+<code class="docutils literal notranslate"><span class="pre">name</span></code>.</li>
+<li>Loop through the string using <em>negative</em> index values. Run the program
+with <code class="docutils literal notranslate"><span class="pre">range(-1,</span> <span class="pre">-len(range),</span> <span class="pre">-1)</span></code>. How does the output change?</li>
+<li><code class="docutils literal notranslate"><span class="pre">range(-1,</span> <span class="pre">-len(range),</span> <span class="pre">-1)</span></code> does not quite get all of the letters from
+<code class="docutils literal notranslate"><span class="pre">name</span></code>. Modify the <code class="docutils literal notranslate"><span class="pre">start,</span> <span class="pre">stop,</span> <span class="pre">step</span></code> values as needed to print all
+of the characters.</li>
+</ol>
+</div>
+<p>Since a string is simply a sequence of characters, Python gives us a way to
+automatically iterate over those characters.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Run the following code to see the output, then complete the <em>Try It</em>
+suggestions.</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">fruit</span> <span class="o">=</span> <span class="s1">&#39;Bananas&#39;</span>
+<span class="n">fruit_copy</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">fruit</span><span class="p">:</span>
+   <span class="n">fruit_copy</span> <span class="o">+=</span> <span class="n">char</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">char</span><span class="p">,</span> <span class="n">fruit_copy</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/StringIterationExampleChars" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p>The loop variable <code class="docutils literal notranslate"><span class="pre">char</span></code> is automatically reassigned each character in the
+string stored by <code class="docutils literal notranslate"><span class="pre">fruit</span></code>. This approach is called <em>iteration by item</em>.</p>
+<p>We also see an example of the accumulator pattern. The program reassigns a
+new, longer string to <code class="docutils literal notranslate"><span class="pre">fruit_copy</span></code> each iteration.</p>
+<p>Note that <em>iteration by item</em> moves through a collection from left to right.
+If we want to move from right to left, we must use the index values.</p>
+<p><strong>Try It!</strong></p>
+<ol class="last arabic simple">
+<li>Replace <code class="docutils literal notranslate"><span class="pre">fruit_copy</span> <span class="pre">+=</span> <span class="pre">char</span></code> with
+<code class="docutils literal notranslate"><span class="pre">fruit_copy</span> <span class="pre">=</span> <span class="pre">char.upper()</span> <span class="pre">+</span> <span class="pre">fruit_copy</span></code>. What happens to the output?</li>
+<li>Replace <code class="docutils literal notranslate"><span class="pre">print(char,</span> <span class="pre">fruit_copy)</span></code> with
+<code class="docutils literal notranslate"><span class="pre">print(char,</span> <span class="pre">fruit.count(char))</span></code>. Run the program to see the output.</li>
+<li>Use a template literal and <code class="docutils literal notranslate"><span class="pre">format()</span></code> to print a more readable message
+each iteration. Something like, <code class="docutils literal notranslate"><span class="pre">'Bananas'</span> <span class="pre">contains</span> <span class="pre">3</span> <span class="pre">'a'</span> <span class="pre">character(s).</span></code>
+The output should change each time the loop repeats.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">8.8.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Given the following code, which character is printed during the <em>fifth</em>
+iteration?</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;Hello, World!&#39;</span>
+
+<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">)):</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">'l'</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">'o'</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">','</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span></code></li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Given the following code, which character is printed during the <em>fifth</em>
+iteration?</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;Hello, World!&#39;</span>
+
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">text</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">'l'</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">'o'</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">','</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span></code></li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Given the string <code class="docutils literal notranslate"><span class="pre">my_dream_car</span> <span class="pre">=</span> <span class="pre">'Tesla'</span></code>, which of the following will
+loop backwards through all of the characters in the string? Select ALL
+options that work.</p>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">index</span> <span class="pre">in</span> <span class="pre">range(len(my_dream_car)):</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">index</span> <span class="pre">in</span> <span class="pre">range(-1,</span> <span class="pre">-len(my_dream_car),</span> <span class="pre">-1):</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">index</span> <span class="pre">in</span> <span class="pre">range(len(my_dream_car)-1,</span> <span class="pre">-1,</span> <span class="pre">-1):</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">index</span> <span class="pre">in</span> <span class="pre">range(-1,</span> <span class="pre">-len(my_dream_car)-1,</span> <span class="pre">-1):</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">char</span> <span class="pre">in</span> <span class="pre">my_dream_car:</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">char</span> <span class="pre">in</span> <span class="pre">-my_dream_car:</span></code></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="template-literals.html"><span aria-hidden="true">&larr;</span> <span class="section-number">8.7. </span>Template Literals</a></li>
+        
+        
+        <li class="next"><a href="string-conditionals.html"><span class="section-number">8.9. </span>Checking Strings <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

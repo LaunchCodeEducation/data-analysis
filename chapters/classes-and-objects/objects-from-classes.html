@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using a Class &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Adding Methods to a Class" href="class-methods.html" />
+    <link rel="prev" title="Create a Class" href="creating-classes.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html">Classes and Objects</a></li>
+    <li class="active">Using a Class</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="using-a-class">
+<h1>Using a Class<a class="headerlink" href="#using-a-class" title="Permalink to this headline">¶</a></h1>
+<p>Classes provide a pattern for making new objects.</p>
+<p>Every object is an <em>example of</em> its class, but the object is NOT a copy of the
+class. We use a class to <em>build</em> objects, just like we use a cutter to shape
+separate cookies. The cookie and the cutter are NOT the same thing.</p>
+<div class="section" id="create-new-objects">
+<h2>Create New Objects<a class="headerlink" href="#create-new-objects" title="Permalink to this headline">¶</a></h2>
+<p id="index-0">To create an object from a class, the general syntax is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">object_name</span> <span class="o">=</span> <span class="n">ClassName</span><span class="p">(</span><span class="n">arguments</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This creates an <strong>instance</strong> of the class, which means <code class="docutils literal notranslate"><span class="pre">object_name</span></code> has the
+same set of property names as every other object made from the class. However,
+the <em>values</em> for the properties may differ between objects.</p>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p>Let’s use a <code class="docutils literal notranslate"><span class="pre">Student</span></code> class to create two objects. Run the following
+program an examine the output.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
+   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">grade</span><span class="p">,</span> <span class="n">id_number</span><span class="p">):</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">grade_level</span> <span class="o">=</span> <span class="n">grade</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">id_number</span>
+
+<span class="n">dan</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s1">&#39;Dan&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5234</span><span class="p">)</span>
+<span class="n">jessi</span> <span class="o">=</span> <span class="n">Student</span><span class="p">(</span><span class="s1">&#39;Jessi&#39;</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">3333</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">dan</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">jessi</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dan</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">jessi</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/UsingClasses" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+</div>
+<p>In lines 7 and 8, we call the <code class="docutils literal notranslate"><span class="pre">Student</span></code> class twice and pass in different
+sets of arguments, creating the objects <code class="docutils literal notranslate"><span class="pre">dan</span></code> and <code class="docutils literal notranslate"><span class="pre">jessi</span></code>.</p>
+<p>The output of line 10 shows that <code class="docutils literal notranslate"><span class="pre">dan</span></code> and <code class="docutils literal notranslate"><span class="pre">jessi</span></code> are both the same type
+of object (<code class="docutils literal notranslate"><span class="pre">Student</span></code>). Line 11 shows us that the two share the same property
+names (like <code class="docutils literal notranslate"><span class="pre">id</span></code>), but they have different values assigned to those names.</p>
+<p>After creating a <code class="docutils literal notranslate"><span class="pre">Student</span></code> object, we can access, modify, or add new
+properties and values as described in the
+<a class="reference internal" href="using-objects.html#object-properties"><span class="std std-ref">Object Properties</span></a> section.</p>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It</p>
+<p>Play around with <a class="reference internal" href="using-objects.html#object-properties"><span class="std std-ref">modifying and adding properties</span></a>
+inside and outside of the <code class="docutils literal notranslate"><span class="pre">Student</span></code> class.</p>
+<ol class="arabic simple">
+<li>Add a new property inside the constructor.</li>
+<li>On line 12, change the value of the ID number for <code class="docutils literal notranslate"><span class="pre">dan</span></code>, then print the
+new information.</li>
+<li>On line 15, add the <code class="docutils literal notranslate"><span class="pre">act_score</span></code> property to <code class="docutils literal notranslate"><span class="pre">jessi</span></code> and assign it an
+integer value. Print this value to check your work.</li>
+</ol>
+<p class="last">Note that line 15 adds the <code class="docutils literal notranslate"><span class="pre">act_score</span></code> property to the <code class="docutils literal notranslate"><span class="pre">jessi</span></code> object,
+but this change does NOT affect any other objects created with <code class="docutils literal notranslate"><span class="pre">Student</span></code>.</p>
+</div>
+<div class="section" id="default-property-values">
+<h3>Default Property Values<a class="headerlink" href="#default-property-values" title="Permalink to this headline">¶</a></h3>
+<p>If we try to create a new <code class="docutils literal notranslate"><span class="pre">Student</span></code> object without passing in all of the
+required arguments, the program crashes.</p>
+<p>To avoid issues with missing arguments, we can set a <em>default</em> value for a
+parameter as follows:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Student</span><span class="p">:</span>
+   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">grade</span><span class="p">,</span> <span class="n">id_number</span> <span class="o">=</span> <span class="s1">&#39;Missing&#39;</span><span class="p">):</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">grade_level</span> <span class="o">=</span> <span class="n">grade</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">id</span> <span class="o">=</span> <span class="n">id_number</span>
+</pre></div>
+</td></tr></table></div>
+<p>Now if we call <code class="docutils literal notranslate"><span class="pre">Student</span></code> but leave out an ID number, the constructor
+automatically assigns <code class="docutils literal notranslate"><span class="pre">id</span></code> a value of <code class="docutils literal notranslate"><span class="pre">'Missing'</span></code>. If we include an
+argument for <code class="docutils literal notranslate"><span class="pre">id_number</span></code>, then the default value is ignored.</p>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="last">Return to the example above and modify the <code class="docutils literal notranslate"><span class="pre">Student</span></code> class to use a
+default value for one or more of the constructor parameters.</p>
+</div>
+</div>
+</div>
+<div class="section" id="another-mental-image-for-classes">
+<h2>Another Mental Image for Classes<a class="headerlink" href="#another-mental-image-for-classes" title="Permalink to this headline">¶</a></h2>
+<p>Besides the cookie cutter idea, we can also think of a class as a <em>factory for
+making objects</em>. The <code class="docutils literal notranslate"><span class="pre">Student</span></code> class itself isn’t an instance of a student,
+but it contains all the tools to make student objects. Every time we call the
+class, we ask the factory to make a new object. As the object goes through the
+production line, the constructor runs to get the object properly set
+up.</p>
+<p>The statement <code class="docutils literal notranslate"><span class="pre">jessi</span> <span class="pre">=</span> <span class="pre">Student('Jessi',</span> <span class="pre">12,</span> <span class="pre">3333)</span></code> essentially says,
+<em>Hey, Student factory! Please make me a new object with these settings</em>.</p>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="creating-classes.html"><span aria-hidden="true">&larr;</span> Create a Class</a></li>
+        
+        
+        <li class="next"><a href="class-methods.html">Adding Methods to a Class <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

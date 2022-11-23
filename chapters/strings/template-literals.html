@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8.7. Template Literals &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="8.8. Iteration with Strings" href="string-iteration.html" />
+    <link rel="prev" title="8.6. Special Characters" href="special-characters.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">8. </span>Stringing Characters Together</a></li>
+    <li class="active"><span class="section-number">8.7. </span>Template Literals</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="template-literals">
+<h1><span class="section-number">8.7. </span>Template Literals<a class="headerlink" href="#template-literals" title="Permalink to this headline">¶</a></h1>
+<p id="index-0">Earlier, we used <em>concatenation</em> to
+<a class="reference internal" href="../data-and-variables/other-operators.html#string-concatenation"><span class="std std-ref">combine strings and variables together</span></a> in order
+to create a specific output:</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Jack&#39;</span>
+<span class="n">current_age</span> <span class="o">=</span> <span class="mi">9</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Next year, &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot; will be &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">current_age</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Next year, Jack will be 10.
+</pre></div>
+</div>
+<p>Note the following:</p>
+<ol class="last arabic simple">
+<li>We must include spaces inside each of the strings to make the output
+readable. Without the spaces, line 4 prints <code class="docutils literal notranslate"><span class="pre">Nextyear,Jackwillbe10.</span></code></li>
+<li>In order to concatenate, we must convert the <code class="docutils literal notranslate"><span class="pre">int</span></code> value from the
+expression <code class="docutils literal notranslate"><span class="pre">current_age</span> <span class="pre">+</span> <span class="pre">1</span></code> into the <code class="docutils literal notranslate"><span class="pre">str</span></code> data type.</li>
+</ol>
+</div>
+<p>While it does work, concatenation quickly gets tedious for any output that
+depends on multiple variables. Also, concatenation usually requires several
+test runs of the code in order to check for syntax errors and proper spacing.
+Fortunately, Python offers us a better way to accomplish the same thing.</p>
+<p id="index-1"><strong>Template literals</strong> allow for the automatic insertion of expressions and
+variable values into strings.</p>
+<p>Within a template literal, type the string, but leave <em>placeholders</em> where you
+want to insert values. Placeholders are identified by a pair of curly braces,
+<code class="docutils literal notranslate"><span class="pre">{}</span></code>. When the program runs, the placeholders are replaced by the values we
+want to include in the string.</p>
+<p>Let’s compare the string concatenation in the example above to a template
+literal:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Concatenation (messy, complicated, hard to read)</span>
+<span class="s2">&quot;Next year, &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot; will be &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">current_age</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span>
+
+<span class="c1"># Template literal (beautiful, simple, easier to read)</span>
+<span class="s2">&quot;Next year, </span><span class="si">{}</span><span class="s2"> will be </span><span class="si">{}</span><span class="s2">.&quot;</span>
+</pre></div>
+</div>
+<p>The braces <code class="docutils literal notranslate"><span class="pre">{}</span></code> indicate where we want to insert the values for <code class="docutils literal notranslate"><span class="pre">name</span></code> and
+<code class="docutils literal notranslate"><span class="pre">current_age</span> <span class="pre">+</span> <span class="pre">1</span></code>. Note how we only need one pair of quotes, and the spacing
+fits naturally around the <code class="docutils literal notranslate"><span class="pre">{}</span></code>. Python also takes care of any data type
+conversions.</p>
+<div class="section" id="the-format-method">
+<span id="format-string-method"></span><span id="index-2"></span><h2><span class="section-number">8.7.1. </span>The <code class="docutils literal notranslate"><span class="pre">format()</span></code> Method<a class="headerlink" href="#the-format-method" title="Permalink to this headline">¶</a></h2>
+<p>Template literals allow us to insert variables and other expressions directly
+into strings. To accomplish this, we need:</p>
+<ol class="arabic simple">
+<li>A string that includes curly braces <code class="docutils literal notranslate"><span class="pre">{}</span></code>.</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">.format()</span></code> method.</li>
+<li>A value to insert into each set of braces.</li>
+</ol>
+<p>The general syntax is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">string_with_braces</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">value_1</span><span class="p">,</span> <span class="n">value_2</span><span class="p">,</span> <span class="n">etc</span><span class="o">.</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The values inside <code class="docutils literal notranslate"><span class="pre">format()</span></code> can be numbers, strings, variables, or expressions.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Compare the difference between printing <code class="docutils literal notranslate"><span class="pre">output</span></code> by itself vs. printing
+<code class="docutils literal notranslate"><span class="pre">output.format()</span></code>.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Jack&#39;</span>
+<span class="n">current_age</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;Next year, </span><span class="si">{}</span><span class="s2"> will be </span><span class="si">{}</span><span class="s2">.&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">current_age</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>Next year, {} will be {}.
+Next year, Jack will be 10.
+</pre></div>
+</div>
+</div>
+<p>Python works from left to right through the string, replacing each placeholder
+with the next value inside <code class="docutils literal notranslate"><span class="pre">format()</span></code>.</p>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p>Experiment with the <code class="docutils literal notranslate"><span class="pre">format()</span></code> string method.</p>
+<ol class="arabic simple">
+<li>Run the program several times with different values for <code class="docutils literal notranslate"><span class="pre">my_string</span></code> and
+<code class="docutils literal notranslate"><span class="pre">my_number</span></code>.</li>
+<li>Change the order of <code class="docutils literal notranslate"><span class="pre">my_number</span></code> and <code class="docutils literal notranslate"><span class="pre">my_string</span></code> inside the <code class="docutils literal notranslate"><span class="pre">format</span></code>
+parentheses. What happens?</li>
+<li>Change the location of one set of <code class="docutils literal notranslate"><span class="pre">{}</span></code> in <code class="docutils literal notranslate"><span class="pre">output</span></code>. What happens?</li>
+<li>Remove one set of <code class="docutils literal notranslate"><span class="pre">{}</span></code> from <code class="docutils literal notranslate"><span class="pre">output</span></code> and run the program. What
+happens?</li>
+<li>Use four or more <code class="docutils literal notranslate"><span class="pre">{}</span></code> inside <code class="docutils literal notranslate"><span class="pre">output</span></code> and run the program. What
+happens?</li>
+</ol>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
+<span class="n">my_number</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">my_expression</span> <span class="o">=</span> <span class="n">my_string</span> <span class="o">*</span> <span class="n">my_number</span>
+
+<span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;This is my_string: &quot;</span><span class="si">{}</span><span class="s1">&quot;.</span>
+<span class="s1">This is a my_number: </span><span class="si">{}</span><span class="s1">.</span>
+<span class="s1">This is the length of my_string * my_number: </span><span class="si">{}</span><span class="s1">&#39;&#39;&#39;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">my_string</span><span class="p">,</span> <span class="n">my_number</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">my_expression</span><span class="p">)))</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/FormatPractice" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+</div>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>Python fills the empty braces <code class="docutils literal notranslate"><span class="pre">{}</span></code> from left to right through the string,
+and it uses the values given in <code class="docutils literal notranslate"><span class="pre">format</span></code> from left to right as well.</p>
+<p class="last">If you are missing a brace, any input you expected to see might be in an different spot.
+With too many braces, an error will be thrown and a message will pop up.
+Either way, the output will not be what you expected.</p>
+</div>
+<div class="section" id="index-values-with-format">
+<h3><span class="section-number">8.7.1.1. </span>Index Values with <code class="docutils literal notranslate"><span class="pre">format()</span></code><a class="headerlink" href="#index-values-with-format" title="Permalink to this headline">¶</a></h3>
+<p>What if we want to use the same value multiple times in a string?</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Let’s take the case where we add a number to itself three times:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_num</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> + </span><span class="si">{}</span><span class="s1"> + </span><span class="si">{}</span><span class="s1"> = </span><span class="si">{}</span><span class="s1">&#39;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">my_num</span><span class="p">,</span> <span class="n">my_num</span><span class="p">,</span> <span class="n">my_num</span><span class="p">,</span> <span class="mi">3</span><span class="o">*</span><span class="n">my_num</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>10 + 10 + 10 = 30
+</pre></div>
+</div>
+</div>
+<p>Remember that when we code, we want to avoid repeating ourselves as much as
+possible. Typing <code class="docutils literal notranslate"><span class="pre">my_num</span></code> three times inside <code class="docutils literal notranslate"><span class="pre">format()</span></code> should set off
+alarm bells in our heads. There is a shorter way.</p>
+<p id="index-3">We can include index values inside of the curly braces <code class="docutils literal notranslate"><span class="pre">{}</span></code>.
+These <strong>indices</strong> (a plural of index)
+refer to the items inside <code class="docutils literal notranslate"><span class="pre">format()</span></code>, and the indexes begin with 0.
+Zero-based counting strikes again!</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Let’s add index values to the template literal:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_num</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{0}</span><span class="s1"> + </span><span class="si">{0}</span><span class="s1"> + </span><span class="si">{0}</span><span class="s1"> = </span><span class="si">{1}</span><span class="s1">&#39;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">my_num</span><span class="p">,</span> <span class="mi">3</span><span class="o">*</span><span class="n">my_num</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>10 + 10 + 10 = 30
+</pre></div>
+</div>
+</div>
+<p>When Python evaluates <code class="docutils literal notranslate"><span class="pre">{0}</span></code>, it inserts the <em>first</em> value from <code class="docutils literal notranslate"><span class="pre">format()</span></code>.
+<code class="docutils literal notranslate"><span class="pre">{1}</span></code> gets replaced by the second value. Since <code class="docutils literal notranslate"><span class="pre">{0}</span></code> occurs three times,
+<code class="docutils literal notranslate"><span class="pre">my_num</span></code> is used for each one.</p>
+<p>If we add another value inside <code class="docutils literal notranslate"><span class="pre">format()</span></code>, we can insert it into the string
+by adding <code class="docutils literal notranslate"><span class="pre">{2}</span></code> to <code class="docutils literal notranslate"><span class="pre">output</span></code>.</p>
+<p>Index values in template literals are flexible. The order of the values in curly
+braces does not need to match the order of the values within <code class="docutils literal notranslate"><span class="pre">format()</span></code>.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;Hello, </span><span class="si">{1}</span><span class="s2">. You turn </span><span class="si">{0}</span><span class="s2"> years old today. Happy birthday, </span><span class="si">{1}</span><span class="s2">!&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;Anna&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>Hello, Anna. You turn 5 years old today. Happy birthday, Anna!
+</pre></div>
+</div>
+</div>
+<p>Notice how the string <code class="docutils literal notranslate"><span class="pre">'Anna'</span></code> is used first in the print statement, even though it
+comes second within <code class="docutils literal notranslate"><span class="pre">format()</span></code>.</p>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>Even if you do not think you will need indicies in a template literal, it is
+a good idea to use them anyway!</p>
+<p class="last">In this book, most of the template literals used in the examples and starter
+code will contain index values.</p>
+</div>
+</div>
+</div>
+<div class="section" id="f-strings">
+<h2><span class="section-number">8.7.2. </span>f-Strings<a class="headerlink" href="#f-strings" title="Permalink to this headline">¶</a></h2>
+<p id="index-4">Python versions 3.6 and later provide another way to insert values and
+expressions into a string. The new format is called an <strong>f-string</strong>, for
+<em>format string</em>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sa">f</span><span class="s2">&quot;This is a string with a </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">, an </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2">, and a calculated result, </span><span class="si">{</span><span class="mi">3</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="mi">10</span><span class="si">}</span><span class="s2">.&quot;</span>
+</pre></div>
+</div>
+<p>Items to note:</p>
+<ol class="arabic simple">
+<li>f-strings begin with the character <code class="docutils literal notranslate"><span class="pre">f</span></code>, followed by the string in quotes.</li>
+<li>Instead of index values, variable names or expressions are placed inside the
+curly braces <code class="docutils literal notranslate"><span class="pre">{}</span></code>.</li>
+</ol>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Let’s refactor an earlier example to use an f-string:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Jack&#39;</span>
+<span class="n">current_age</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">output</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Next year, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> will be </span><span class="si">{</span><span class="n">current_age</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s2">.&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>Next year, Jack will be 10.
+</pre></div>
+</div>
+</div>
+<p>Essentially, <code class="docutils literal notranslate"><span class="pre">f</span></code> replaces <code class="docutils literal notranslate"><span class="pre">.format</span></code>, and using variable names and/or
+expressions inside the braces replaces the index values. When Python comes
+across an <code class="docutils literal notranslate"><span class="pre">f</span></code> in front of a string, it evaluates everything within the curly
+braces and inserts the results into the string.</p>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>We won’t discuss f-strings further in this book. If you are interested in
+digging deeper, here are a couple of places to start:</p>
+<ol class="last arabic simple">
+<li><a class="reference external" href="https://realpython.com/python-string-formatting/" target="_blank">Python String Formatting Best Practices<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>,</li>
+<li><a class="reference external" href="https://realpython.com/python-f-strings/" target="_blank">Python 3’s f-Strings<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">8.7.3. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Mad Libs are games where one player asks a group to supply random words
+(e.g. “Give me a verb,” or, “I need a color”). The words are substituted
+into blanks within a story, which is then read for everyone’s amusement.</p>
+<p>Refactor the following code to replace the awkward string concatenation with
+a template literal. Be sure to add your own choices for the variables!</p>
+<p>Feel free to use either <code class="docutils literal notranslate"><span class="pre">.format()</span></code> or an f-string.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Refactor the string concatenation to use either .format() or an f-string instead.</span>
+<span class="n">plural_noun</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="n">verb</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="n">adjective</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+<span class="n">mad_lib</span> <span class="o">=</span> <span class="s2">&quot;Python provides a &quot;</span><span class="o">+</span> <span class="n">color</span> <span class="o">+</span><span class="s2">&quot; collection of tools — including &quot;</span> <span class="o">+</span> <span class="n">adjective</span> <span class="o">+</span> <span class="s2">&quot; syntax and &quot;</span> <span class="o">+</span> <span class="n">plural_noun</span> <span class="o">+</span> <span class="s2">&quot; — that allows &quot;</span><span class="o">+</span> <span class="n">name</span> <span class="o">+</span><span class="s2">&quot; to &quot;</span><span class="o">+</span> <span class="n">verb</span> <span class="o">+</span><span class="s2">&quot; with strings.&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">mad_lib</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/MadLibConceptCheck" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="special-characters.html"><span aria-hidden="true">&larr;</span> <span class="section-number">8.6. </span>Special Characters</a></li>
+        
+        
+        <li class="next"><a href="string-iteration.html"><span class="section-number">8.8. </span>Iteration with Strings <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

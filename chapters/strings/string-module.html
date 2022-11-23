@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8.10. The string Module &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="8.11. Exercises: Strings" href="exercises.html" />
+    <link rel="prev" title="8.9. Checking Strings" href="string-conditionals.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">8. </span>Stringing Characters Together</a></li>
+    <li class="active"><span class="section-number">8.10. </span>The <code class="docutils literal notranslate"><span class="pre">string</span></code> Module</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <span class="target" id="string-module"></span><div class="section" id="the-string-module">
+<span id="index-0"></span><h1><span class="section-number">8.10. </span>The <code class="docutils literal notranslate"><span class="pre">string</span></code> Module<a class="headerlink" href="#the-string-module" title="Permalink to this headline">¶</a></h1>
+<p>We’ve talked before about string methods. The Python language gives us another means of working with string data.
+The Python <strong>string module</strong> provides several constants that are useful for checking to see if a character, slice, or
+string contains letters, digits, symbols, etc. To use these constants, we need to <em>import</em> the module into our code.</p>
+<p>Begin with an <code class="docutils literal notranslate"><span class="pre">import</span></code> statement at the top of your code:</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">string</span>
+</pre></div>
+</td></tr></table></div>
+<div class="section" id="using-string-constants">
+<h2><span class="section-number">8.10.1. </span>Using <code class="docutils literal notranslate"><span class="pre">string</span></code> Constants<a class="headerlink" href="#using-string-constants" title="Permalink to this headline">¶</a></h2>
+<p>Let’s say we want to check if one character from a string is a digit or a
+lowercase letter. We could set up a conditional like so:</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="s1">&#39;0123456789&#39;</span><span class="p">:</span>
+   <span class="c1"># Code for the digit case...</span>
+<span class="k">elif</span> <span class="n">char</span> <span class="ow">in</span> <span class="s1">&#39;abcdefghijklmnopqrstuvwxyz&#39;</span><span class="p">:</span>
+   <span class="c1"># Code for the lowercase letter case...</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="c1"># Alternate code here...</span>
+</pre></div>
+</td></tr></table></div>
+<p>Note what we did:</p>
+<ol class="arabic simple">
+<li>Line 1 checks if the character is any of the digits <code class="docutils literal notranslate"><span class="pre">0</span></code> - <code class="docutils literal notranslate"><span class="pre">9</span></code>,</li>
+<li>If not, line 3 checks if the character is any of the lowercase letters from
+<code class="docutils literal notranslate"><span class="pre">a</span></code> - <code class="docutils literal notranslate"><span class="pre">z</span></code>.</li>
+<li>We could easily expand the conditional to check for uppercase letters
+(<code class="docutils literal notranslate"><span class="pre">elif</span> <span class="pre">char</span> <span class="pre">in</span> <span class="pre">'ABC...'</span></code>), punctuation, etc.</li>
+</ol>
+<p>Although fairly straightforward, setting up the checks is tedious, since we need
+to hard-code the strings for the numbers, letters, and symbols. (Go ahead and
+type out the lowercase letters, then the uppercase letters, and then check for
+any mistakes. How long did that take?)</p>
+<p>Fortunately, Python has already defined the more common character combinations.
+For example, <code class="docutils literal notranslate"><span class="pre">string.digits</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">'0123456789'</span></code>, and
+<code class="docutils literal notranslate"><span class="pre">string.ascii_lowercase</span></code> is the same as <code class="docutils literal notranslate"><span class="pre">'abcdefghijklmnopqrstuvwxyz'</span></code>.</p>
+<p>The table below summarizes several of the constants defined in the <code class="docutils literal notranslate"><span class="pre">string</span></code>
+module. For a complete list, refer to the
+<a class="reference external" href="https://docs.python.org/3/library/string.html" target="_blank">Python documentation<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<table border="1" class="docutils align-default" id="id1">
+<caption><span class="caption-text">Common String Methods</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Syntax</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">string.digits</span></code></td>
+<td>Returns the string <code class="docutils literal notranslate"><span class="pre">'0123456789'</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">string.ascii_lowercase</span></code></td>
+<td>Returns the string <code class="docutils literal notranslate"><span class="pre">'abcdefghijklmnopqrstuvwxyz'</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">string.ascii_uppercase</span></code></td>
+<td>Returns the string <code class="docutils literal notranslate"><span class="pre">'ABCDEFGHIJKLMNOPQRSTUVWXYZ'</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">string.ascii_letters</span></code></td>
+<td>Returns a string containing all of the uppercase and lowercase letters.</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">string.punctuation</span></code></td>
+<td>Returns the string <code class="docutils literal notranslate"><span class="pre">'!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?&#64;[\]^_`{|}~'</span></code>.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="try-it">
+<h3><span class="section-number">8.10.1.1. </span>Try It!<a class="headerlink" href="#try-it" title="Permalink to this headline">¶</a></h3>
+<p>Run the following code to see the values assigned to each <code class="docutils literal notranslate"><span class="pre">string</span></code> module
+constant:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">string</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_uppercase</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_letters</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">digits</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">)</span>
+
+<span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;*&#39;</span>
+<span class="k">if</span> <span class="n">my_string</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;</span><span class="si">{0}</span><span class="s2">&#39; is a lowercase letter.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">my_string</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/StringModuleIntro" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p>Now try this:</p>
+<ol class="arabic simple">
+<li>Add <code class="docutils literal notranslate"><span class="pre">elif</span></code> blocks to the code to check if <code class="docutils literal notranslate"><span class="pre">my_string</span></code> is an uppercase
+letter, a digit, or some type of punctuation. Your code should print a
+different message depending on the value of <code class="docutils literal notranslate"><span class="pre">my_string</span></code>.</li>
+<li>Add an <code class="docutils literal notranslate"><span class="pre">else</span></code> statement to deal with characters that are not letters,
+digits, or punctuation.</li>
+<li>Assign a longer string to <code class="docutils literal notranslate"><span class="pre">my_string</span></code>. Add a loop to your code so that it
+checks each character in <code class="docutils literal notranslate"><span class="pre">my_string</span></code> and reports the results.</li>
+<li>Note that <em>whitespace</em> characters are not included in any of these
+constants. Can you guess the name for the <code class="docutils literal notranslate"><span class="pre">string</span></code> module constant that
+contains <code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">',</span> <span class="pre">'\t'</span></code>, and <code class="docutils literal notranslate"><span class="pre">'\n'</span></code>?</li>
+</ol>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>Python contains a number of methods that return <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> based
+on the characteristics of an <em>entire</em> string instead of a single character.
+These can be used as alternatives to the examples above.</p>
+<p>For example, the <code class="docutils literal notranslate"><span class="pre">isdigit()</span></code> method returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if ALL the characters
+in a string are digits. So <code class="docutils literal notranslate"><span class="pre">'21'.isdigit()</span></code> returns <code class="docutils literal notranslate"><span class="pre">True</span></code> while
+<code class="docutils literal notranslate"><span class="pre">'21'</span> <span class="pre">in</span> <span class="pre">string.digits</span></code> returns <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p class="last">Check out <a class="reference external" href="https://www.w3schools.com/python/python_ref_string.asp" target="_blank">W3Schools<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+for more details about these methods.</p>
+</div>
+</div>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">8.10.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Which of the following expressions evaluate to <code class="docutils literal notranslate"><span class="pre">True</span></code>? Click each option
+to check your prediction.</p>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">'a'</span> <span class="pre">in</span> <span class="pre">string.ascii_uppercase</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">'Q'</span> <span class="pre">in</span> <span class="pre">string.ascii_letters</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">'334'</span> <span class="pre">in</span> <span class="pre">string.digits</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span> <span class="pre">in</span> <span class="pre">string.punctuation</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">'$'</span> <span class="pre">in</span> <span class="pre">string.punctuation</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">'abc'</span> <span class="pre">in</span> <span class="pre">'abcdefghijklmnopqrstuvwxyz'</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">'eo'</span> <span class="pre">in</span> <span class="pre">'aeiou'</span></code></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="string-conditionals.html"><span aria-hidden="true">&larr;</span> <span class="section-number">8.9. </span>Checking Strings</a></li>
+        
+        
+        <li class="next"><a href="exercises.html"><span class="section-number">8.11. </span>Exercises: Strings <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

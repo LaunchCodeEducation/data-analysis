@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9.4. List Methods &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="9.5. Iterating Through Lists" href="list-iteration.html" />
+    <link rel="prev" title="9.3. Working with Lists" href="working-with-lists.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">9. </span>Lists Keep Things in Order</a></li>
+    <li class="active"><span class="section-number">9.4. </span>List Methods</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="list-methods">
+<span id="id1"></span><h1><span class="section-number">9.4. </span>List Methods<a class="headerlink" href="#list-methods" title="Permalink to this headline">¶</a></h1>
+<p id="index-0">As with strings, Python provides us with useful <strong>methods</strong> for lists. These
+methods will either <em>change</em> an existing list, <em>return</em> information about the
+list, or <em>create and return</em> a new list.</p>
+<div class="section" id="common-list-methods">
+<h2><span class="section-number">9.4.1. </span>Common List Methods<a class="headerlink" href="#common-list-methods" title="Permalink to this headline">¶</a></h2>
+<p>Here is a sample of the most frequently used list methods. More complete lists
+can be found here:</p>
+<ol class="arabic simple">
+<li><a class="reference external" href="https://www.w3schools.com/python/python_ref_list.asp" target="_blank">W3Schools<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+<li><a class="reference external" href="https://docs.python.org/3/tutorial/datastructures.html" target="_blank">Python.org<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+</ol>
+<p>To see detailed examples for a particular method, click on its name.</p>
+<table border="1" class="docutils align-default" id="id2">
+<caption><span class="caption-text">Methods That Return Information About The List</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Method</th>
+<th class="head">Syntax</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="../../appendices/list-methods/count-examples.html#list-count-examples"><span class="std std-ref">count</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">list_name.count(value)</span></code></td>
+<td>Returns the number of elements in the list that match <code class="docutils literal notranslate"><span class="pre">value</span></code>.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../../appendices/list-methods/index-examples.html#list-index-examples"><span class="std std-ref">index</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">list_name.index(value)</span></code></td>
+<td>Returns the index of the FIRST occurrence of <code class="docutils literal notranslate"><span class="pre">value</span></code> in the list. If
+the value is not in the list, Python throws an error.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils align-default" id="id3">
+<caption><span class="caption-text">Methods That Rearrange The Entries In The list</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Method</th>
+<th class="head">Syntax</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="../../appendices/list-methods/reverse-and-sort-examples.html#list-reverse-example"><span class="std std-ref">reverse</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">list_name.reverse()</span></code></td>
+<td>Reverses the order of the elements in a list.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../../appendices/list-methods/reverse-and-sort-examples.html#list-sort-examples"><span class="std std-ref">sort</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">list_name.sort()</span></code></td>
+<td>Arranges the elements of a list into increasing or decreasing order.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils align-default" id="id4">
+<caption><span class="caption-text">Methods That Add Or Remove Entries From A List</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Method</th>
+<th class="head">Syntax</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="../../appendices/list-methods/append-insert-examples.html#list-append-examples"><span class="std std-ref">append</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">list_name.append(value)</span></code></td>
+<td>Adds <code class="docutils literal notranslate"><span class="pre">value</span></code> to the end of the list.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../../appendices/list-methods/clear-pop-remove-examples.html#list-clear-examples"><span class="std std-ref">clear</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">list_name.clear()</span></code></td>
+<td>Removes all elements from a list.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../../appendices/list-methods/append-insert-examples.html#list-insert-examples"><span class="std std-ref">insert</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">list_name.insert(index,</span> <span class="pre">value)</span></code></td>
+<td>Adds <code class="docutils literal notranslate"><span class="pre">value</span></code> at the specified <code class="docutils literal notranslate"><span class="pre">index</span></code> in the list. This pushes
+existing elements further down the list.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../../appendices/list-methods/clear-pop-remove-examples.html#list-pop-examples"><span class="std std-ref">pop</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">list_name.pop(index)</span></code></td>
+<td>Removes and returns the element at the given <code class="docutils literal notranslate"><span class="pre">index</span></code> value. If no
+<code class="docutils literal notranslate"><span class="pre">index</span></code> is provided, the last element in the list gets removed.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../../appendices/list-methods/clear-pop-remove-examples.html#list-remove-examples"><span class="std std-ref">remove</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">list_name.remove(value)</span></code></td>
+<td>Removes the FIRST element in a list that matches <code class="docutils literal notranslate"><span class="pre">value</span></code>.</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils align-default" id="id5">
+<caption><span class="caption-text">Methods That Create New Lists</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Method</th>
+<th class="head">Syntax</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="../../appendices/list-methods/join-examples.html#list-join-examples"><span class="std std-ref">join</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">'connecter'.join(list_name)</span></code></td>
+<td>Combines all the elements of a list into a string.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../../appendices/string-methods/split-list-examples.html#string-split-examples"><span class="std std-ref">split</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">'string'.split('delimiter')</span></code></td>
+<td>Divides a string into smaller pieces, which are stored as separate
+elements in a new list.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../../appendices/string-methods/split-list-examples.html#list-function"><span class="std std-ref">list</span></a></td>
+<td><code class="docutils literal notranslate"><span class="pre">list(collection)</span></code></td>
+<td>This is a function rather than a method, and it behaves similarly to
+data conversion functions like <code class="docutils literal notranslate"><span class="pre">int()</span></code> and <code class="docutils literal notranslate"><span class="pre">str()</span></code>. The <code class="docutils literal notranslate"><span class="pre">list()</span></code>
+function tries to convert the whatever is inside the <code class="docutils literal notranslate"><span class="pre">()</span></code> into a list.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">9.4.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<p>As you answer these questions, follow the links in the table above as needed.</p>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What is printed by the following code?</p>
+<div class="highlight-js notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nx">string_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;coder&#39;</span><span class="p">,</span> <span class="s1">&#39;Tech&#39;</span><span class="p">,</span> <span class="s1">&#39;47&#39;</span><span class="p">,</span> <span class="s1">&#39;23&#39;</span><span class="p">,</span> <span class="s1">&#39;350&#39;</span><span class="p">]</span>
+<span class="nx">string_list</span><span class="p">.</span><span class="nx">sort</span><span class="p">()</span>
+<span class="nx">print</span><span class="p">(</span><span class="nx">string_list</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last loweralpha simple">
+<li>[‘350’, ‘23’, ‘47’, ‘Tech’, ‘coder’]</li>
+<li>[‘coder’, ‘Tech’, ‘23’, ‘47’, ‘350’]</li>
+<li>[‘23’, ‘47’, ‘350’, ‘coder’, ‘Tech’]</li>
+<li>[‘23’, ‘350’, ‘47’, ‘Tech’, ‘coder’]</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Which statement converts the string <code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">'Coding</span> <span class="pre">students</span> <span class="pre">rock!'</span></code> into
+the list <code class="docutils literal notranslate"><span class="pre">['Coding',</span> <span class="pre">'students',</span> <span class="pre">'rock!']</span></code>?</p>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">text.join()</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">text.split()</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">text.join(&quot;&quot;)</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">text.split(&quot;&quot;)</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">list(text)</span></code></li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What is printed by the following program?</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">grocery_bag</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bananas&#39;</span><span class="p">,</span> <span class="s1">&#39;apples&#39;</span><span class="p">,</span> <span class="s1">&#39;edamame&#39;</span><span class="p">,</span> <span class="s1">&#39;chips&#39;</span><span class="p">,</span> <span class="s1">&#39;cucumbers&#39;</span><span class="p">,</span> <span class="s1">&#39;milk&#39;</span><span class="p">,</span> <span class="s1">&#39;cheese&#39;</span><span class="p">]</span>
+<span class="n">selected_items</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">selected_items</span> <span class="o">=</span> <span class="n">grocery_bag</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+<span class="n">selected_items</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">selected_items</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last loweralpha simple">
+<li>[‘chips’, ‘cucumbers’, ‘edamame’]</li>
+<li>[‘chips’, ‘cucumbers’, ‘edamame’, ‘milk’]</li>
+<li>[‘apples’, ‘chips’, ‘edamame’]</li>
+<li>[‘apples’, ‘chips’, ‘cucumbers’, ‘edamame’]</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What is printed by the following program?</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">a_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">a_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">a_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last loweralpha simple">
+<li>[4, 2, 8, 6, 5, False, True]</li>
+<li>[4, 2, 8, 6, 5, True, False]</li>
+<li>[True, False, 4, 2, 8, 6, 5]</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What is printed by the following program?</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">a_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">a_list</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">a_list</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last loweralpha simple">
+<li>[False, 4, 2, True, 8, 6, 5]</li>
+<li>[4, False, True, 2, 8, 6, 5]</li>
+<li>[False, 2, True, 6, 5]</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What is printed by the following program?</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">a_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">a_list</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">a_list</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last loweralpha simple">
+<li>[4, 8, 6]</li>
+<li>[2, 6, 5]</li>
+<li>[4, 2, 6]</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="working-with-lists.html"><span aria-hidden="true">&larr;</span> <span class="section-number">9.3. </span>Working with Lists</a></li>
+        
+        
+        <li class="next"><a href="list-iteration.html"><span class="section-number">9.5. </span>Iterating Through Lists <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

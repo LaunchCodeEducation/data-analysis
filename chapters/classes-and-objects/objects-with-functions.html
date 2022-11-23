@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using Objects in Functions &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Exercises: Classes and Objects" href="exercises.html" />
+    <link rel="prev" title="More Object Details" href="printing-objects.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html">Classes and Objects</a></li>
+    <li class="active">Using Objects in Functions</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="using-objects-in-functions">
+<h1>Using Objects in Functions<a class="headerlink" href="#using-objects-in-functions" title="Permalink to this headline">¶</a></h1>
+<p>Just like any other data type, we can send an object to a function as an input
+value. We can also set up a function to create a new object and return it to the main
+program.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Assume we defined the same <code class="docutils literal notranslate"><span class="pre">Dog</span></code> class we used on the
+<a class="reference internal" href="printing-objects.html#dog-class-complete"><span class="std std-ref">previous page</span></a>.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_puppy</span><span class="p">(</span><span class="n">parent_1</span><span class="p">,</span> <span class="n">parent_2</span><span class="p">):</span>
+   <span class="n">puppy_name</span> <span class="o">=</span> <span class="n">parent_1</span><span class="o">.</span><span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">parent_2</span><span class="o">.</span><span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+   <span class="n">cuteness</span> <span class="o">=</span> <span class="n">parent_1</span><span class="o">.</span><span class="n">is_cute</span> <span class="ow">or</span> <span class="n">parent_2</span><span class="o">.</span><span class="n">is_cute</span>
+
+   <span class="k">return</span> <span class="n">Dog</span><span class="p">(</span><span class="n">puppy_name</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">cuteness</span><span class="p">)</span>
+
+<span class="n">dog_1</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s1">&#39;Spot&#39;</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>     <span class="c1"># Create one Dog object</span>
+<span class="n">dog_2</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s1">&#39;Fleas&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>   <span class="c1"># Create another Dog object</span>
+<span class="n">new_pet</span> <span class="o">=</span> <span class="n">make_puppy</span><span class="p">(</span><span class="n">dog_1</span><span class="p">,</span> <span class="n">dog_2</span><span class="p">)</span>  <span class="c1"># Call make_puppy and return new Dog</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_pet</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Name of dog: SF, Age of dog: 0 years
+</pre></div>
+</div>
+<ol class="last arabic simple">
+<li>Lines 20 and 21 create two new <code class="docutils literal notranslate"><span class="pre">Dog</span></code> objects.</li>
+<li>Line 22 calls the <code class="docutils literal notranslate"><span class="pre">make_puppy</span></code> function and sends it <code class="docutils literal notranslate"><span class="pre">dog_1</span></code> and
+<code class="docutils literal notranslate"><span class="pre">dog_2</span></code> as arguments.</li>
+<li>Line 14 assigns the objects to the parameters <code class="docutils literal notranslate"><span class="pre">parent_1</span></code> and
+<code class="docutils literal notranslate"><span class="pre">parent_2</span></code>.</li>
+<li>Line 15 combines the first letters of the parents’ names to make the
+string for <code class="docutils literal notranslate"><span class="pre">puppy_name</span></code>.</li>
+<li>Line 16 uses a boolean expression to decide if the puppy is cute.</li>
+<li>Line 18 creates and returns a new <code class="docutils literal notranslate"><span class="pre">Dog</span></code> object.</li>
+<li>Control returns to line 22, where the new object is assigned to
+<code class="docutils literal notranslate"><span class="pre">new_pet</span></code>.</li>
+</ol>
+</div>
+<div class="section" id="object-scope">
+<h2>Object Scope<a class="headerlink" href="#object-scope" title="Permalink to this headline">¶</a></h2>
+<p>Within a function, any change made to an object will change the object itself.</p>
+<p>In the example above, adding the statement <code class="docutils literal notranslate"><span class="pre">parent_1.name</span> <span class="pre">=</span> <span class="pre">&quot;Fido&quot;</span></code> changes
+the property value in the function AND outside of the function. If we
+used <code class="docutils literal notranslate"><span class="pre">print(dog_1.name)</span></code> after calling <code class="docutils literal notranslate"><span class="pre">make_puppy</span></code>, we would see
+<code class="docutils literal notranslate"><span class="pre">Fido</span></code> appear in the console instead of <code class="docutils literal notranslate"><span class="pre">Spot</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">parent_1</span></code> is NOT a new <code class="docutils literal notranslate"><span class="pre">Dog</span></code> object. Instead, it is a new label that
+points to the same set of data as <code class="docutils literal notranslate"><span class="pre">dog_1</span></code>.</p>
+<p>We saw similar behavior with both <a class="reference internal" href="../lists/cloning-lists.html#cloning-lists"><span class="std std-ref">lists</span></a> and
+<a class="reference internal" href="../../appendices/dictionary-methods/dictionary-copy-example.html#dictionary-copy-example"><span class="std std-ref">dictionaries</span></a>.</p>
+</div>
+<div class="section" id="check-your-understanding">
+<h2>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Given <code class="docutils literal notranslate"><span class="pre">bob</span> <span class="pre">=</span> <span class="pre">Pet()</span></code>, which of the following shows the object
+<code class="docutils literal notranslate"><span class="pre">bob</span></code> used as an <em>argument</em>?</p>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">feed_pet(bob,</span> <span class="pre">lettuce)</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">feed_pet(bob,</span> <span class="pre">lettuce):</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">bob</span></code></li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Which of the following shows the object <code class="docutils literal notranslate"><span class="pre">pet_name</span></code> used as a <em>parameter</em>?</p>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">label_habitat(pet_name,</span> <span class="pre">climate,</span> <span class="pre">habitat_size)</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">label_habitat(pet_name,</span> <span class="pre">climate,</span> <span class="pre">habitat_size):</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">pet_name</span></code></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="printing-objects.html"><span aria-hidden="true">&larr;</span> More Object Details</a></li>
+        
+        
+        <li class="next"><a href="exercises.html">Exercises: Classes and Objects <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

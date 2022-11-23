@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12.4. Iterating Through Dictionaries &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="12.5. Accumulator Pattern with Dictionaries" href="dictionary-accumulator.html" />
+    <link rel="prev" title="12.3. Dictionary Methods" href="dictionary-methods.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">12. </span>Python Dictionaries and Tuples</a></li>
+    <li class="active"><span class="section-number">12.4. </span>Iterating Through Dictionaries</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="iterating-through-dictionaries">
+<span id="dictionary-iteration"></span><h1><span class="section-number">12.4. </span>Iterating Through Dictionaries<a class="headerlink" href="#iterating-through-dictionaries" title="Permalink to this headline">¶</a></h1>
+<p>Many times in this book, we looped through the characters in a string or the
+elements in a list without using the index values.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="last highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;Rutabagas!&#39;</span>
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">33</span><span class="p">,</span> <span class="o">-</span><span class="mi">25</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="mi">86</span><span class="p">,</span> <span class="mi">1168</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mf">6.022e23</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">character</span> <span class="ow">in</span> <span class="n">my_string</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+
+<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+   <span class="n">total</span> <span class="o">+=</span> <span class="n">number</span><span class="o">*</span><span class="mi">2</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<p>Each time the loop body repeats, the loop variable (<code class="docutils literal notranslate"><span class="pre">character</span></code> or
+<code class="docutils literal notranslate"><span class="pre">number</span></code>) gets assigned the next value in the collection.</p>
+<p>We can do something similar with dictionaries.</p>
+<div class="section" id="loop-by-keys-or-values">
+<span id="iterate-dictionary"></span><h2><span class="section-number">12.4.1. </span>Loop by Keys or Values<a class="headerlink" href="#loop-by-keys-or-values" title="Permalink to this headline">¶</a></h2>
+<p>To loop through a dictionary, we need to specify whether to assign the loop
+variable the keys or the values from the collection. To do this, we use the
+<code class="docutils literal notranslate"><span class="pre">keys()</span></code> or <code class="docutils literal notranslate"><span class="pre">values()</span></code> method in the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">dictionary_name</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+   <span class="c1"># Loop body...</span>
+
+<span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">dictionary_name</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+   <span class="c1"># Loop body...</span>
+</pre></div>
+</td></tr></table></div>
+<p>In the first <code class="docutils literal notranslate"><span class="pre">for</span></code> loop, each time the code repeats, the loop variable
+<code class="docutils literal notranslate"><span class="pre">key</span></code> gets assigned one of the key names from the dictionary. In the second
+loop, the variable <code class="docutils literal notranslate"><span class="pre">value</span></code> gets assigned a new value each iteration.</p>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="last">We do not have to use the name <code class="docutils literal notranslate"><span class="pre">key</span></code> or <code class="docutils literal notranslate"><span class="pre">value</span></code> for the loop variable,
+but doing so helps keep our code clear.</p>
+</div>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p>Run the following program to see how iterating through a dictionary works.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">comics</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;Gary Larson&#39;</span> <span class="p">:</span> <span class="s1">&#39;The Far Side&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Terri Libenson&#39;</span> <span class="p">:</span> <span class="s1">&#39;Pajama Diaries&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Hilary B. Price&#39;</span> <span class="p">:</span> <span class="s1">&#39;Rhymes with Orange&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Jim Toomey&#39;</span> <span class="p">:</span> <span class="s2">&quot;Sherman&#39;s Lagoon&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Iterate by keys.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here are the keys from the comics dictionary:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">comics</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+
+<span class="c1"># Iterate by values.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Here are the values from the comics dictionary:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">comics</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+<span class="c1"># Access both keys and values.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Here are the key/value pairs from the comics dictionary:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">comics</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Key: </span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">, Value: </span><span class="si">{</span><span class="n">comics</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Change the dictionary values.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Use a loop to change all of the values:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">comics</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+   <span class="n">comics</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">comics</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">comics</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/DictionaryIteration01" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="last">Try adding or removing key/value pairs to change the output.</p>
+</div>
+<p>Note that on lines 21 and 26, we access each value in the dictionary by using
+bracket notation and the loop variable <code class="docutils literal notranslate"><span class="pre">key</span></code>. Each iteration, <code class="docutils literal notranslate"><span class="pre">key</span></code>
+represents a new label from <code class="docutils literal notranslate"><span class="pre">comics</span></code>, so <code class="docutils literal notranslate"><span class="pre">comics[key]</span></code> accesses a different
+value each time the loop repeats.</p>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p>What happens if we forget to attach the <code class="docutils literal notranslate"><span class="pre">keys()</span></code> or <code class="docutils literal notranslate"><span class="pre">values()</span></code> method in
+the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement?  Let’s find out!</p>
+<p>Run the following program to see how Python deals with a missing method.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">comics</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;Gary Larson&#39;</span> <span class="p">:</span> <span class="s1">&#39;The Far Side&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Terri Libenson&#39;</span> <span class="p">:</span> <span class="s1">&#39;Pajama Diaries&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Hilary B. Price&#39;</span> <span class="p">:</span> <span class="s1">&#39;Rhymes with Orange&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Jim Toomey&#39;</span> <span class="p">:</span> <span class="s2">&quot;Sherman&#39;s Lagoon&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># What gets printed if we don&#39;t attach .keys() or .values() to comics?</span>
+<span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">comics</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/DictionaryIteration02" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+</div>
+<p>Aha! By default, Python iterates through a dictionary by using the key names.</p>
+<div class="section" id="loop-by-key-value-pairs">
+<span id="key-value-iteration"></span><h3><span class="section-number">12.4.1.1. </span>Loop by Key/Value Pairs<a class="headerlink" href="#loop-by-key-value-pairs" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">items()</span></code> method returns each key/value pair as a unit, and it allows us
+to assign BOTH the key and value from the dictionary to separate variables. The
+general syntax for this is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="ow">in</span> <span class="n">dictionary_name</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</pre></div>
+</div>
+<p>In the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement, we define a pair of variables <code class="docutils literal notranslate"><span class="pre">(key,</span> <span class="pre">value)</span></code> to
+hold a key name and its linked value from the dictionary. Each iteration, these
+two variables represent a new key/value pair from the collection.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Compare the following two loops, which do exactly the same thing:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">comics</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;Gary Larson&#39;</span> <span class="p">:</span> <span class="s1">&#39;The Far Side&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Terri Libenson&#39;</span> <span class="p">:</span> <span class="s1">&#39;Pajama Diaries&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Hilary B. Price&#39;</span> <span class="p">:</span> <span class="s1">&#39;Rhymes with Orange&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Jim Toomey&#39;</span> <span class="p">:</span> <span class="s2">&quot;Sherman&#39;s Lagoon&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Iterate by keys, and print out the dictionary key/value pairs:</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">comics</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">comics</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+
+<span class="c1"># Iterate by key/value pairs:</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="ow">in</span> <span class="n">comics</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="last">By defining a pair of variables, we can access the values from the
+dictionary without needing to use bracket notation. On line 14, the variable
+<code class="docutils literal notranslate"><span class="pre">value</span></code> replaces <code class="docutils literal notranslate"><span class="pre">comics[key]</span></code> in our code.</p>
+</div>
+</div>
+</div>
+<div class="section" id="sorting-by-keys">
+<h2><span class="section-number">12.4.2. </span>Sorting by Keys<a class="headerlink" href="#sorting-by-keys" title="Permalink to this headline">¶</a></h2>
+<p>Dictionaries are <em>unordered</em> collections, so they do NOT include any type of
+sorting method. However, sometimes we might want to access or display the
+key/value pairs in a particular order—like alphabetically by key name.</p>
+<p>If we want to sort a dictionary, the short answer is…we can’t. However, we
+can use a work-around. We won’t change the order of the key/value pairs in the
+dictionary. Instead, we will use a list, which can be sorted.</p>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p>Let’s see how to print out the key/value pairs in a dictionary
+alphabetically by key name.</p>
+<ol class="arabic simple">
+<li>Run the program as-is. Notice that the loop prints the key/value pairs in
+the order they occur in the collection.</li>
+<li>On line 13, add the statement <code class="docutils literal notranslate"><span class="pre">keys_list</span> <span class="pre">=</span> <span class="pre">list(grocery_bill.keys())</span></code>.
+On line 14, print <code class="docutils literal notranslate"><span class="pre">keys_list</span></code> and run the program to see the result.<ul>
+<li>Line 13 does NOT change the dictionary. Instead, the <code class="docutils literal notranslate"><span class="pre">list()</span></code>
+function creates a new list that contains copies of all the key names
+from <code class="docutils literal notranslate"><span class="pre">grocery_bill</span></code>.</li>
+</ul>
+</li>
+<li>On line 14, replace the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement with <code class="docutils literal notranslate"><span class="pre">keys_list.sort()</span></code>,
+which alphabetizes the strings in the list.<ul>
+<li>Note that line 14 sorts the <em>list</em> and NOT the dictionary!</li>
+</ul>
+</li>
+<li>Change the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement to loop through <code class="docutils literal notranslate"><span class="pre">keys_list</span></code> instead of
+<code class="docutils literal notranslate"><span class="pre">grocery_bill.keys()</span></code>. Run the program again so see the alphabetical
+result.</li>
+</ol>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="ch">#!/bin/python3</span>
+<span class="n">grocery_bill</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;bananas&#39;</span> <span class="p">:</span> <span class="mf">1.77</span><span class="p">,</span>
+   <span class="s1">&#39;pears&#39;</span> <span class="p">:</span> <span class="mf">6.97</span><span class="p">,</span>
+   <span class="s1">&#39;broccoli&#39;</span> <span class="p">:</span> <span class="mf">1.98</span><span class="p">,</span>
+   <span class="s1">&#39;cheese&#39;</span> <span class="p">:</span> <span class="mf">5.99</span><span class="p">,</span>
+   <span class="s1">&#39;soy milk&#39;</span> <span class="p">:</span> <span class="mf">6.99</span><span class="p">,</span>
+   <span class="s1">&#39;orange juice&#39;</span> <span class="p">:</span> <span class="mf">5.49</span><span class="p">,</span>
+   <span class="s1">&#39;eggs&#39;</span> <span class="p">:</span> <span class="mf">1.98</span><span class="p">,</span>
+   <span class="s1">&#39;carrots&#39;</span> <span class="p">:</span> <span class="mf">2.99</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">grocery_bill</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{0}</span><span class="s2">: </span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">grocery_bill</span><span class="p">[</span><span class="n">key</span><span class="p">]))</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/DictionaryIteration03" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p>Note that we do not need to change the final <code class="docutils literal notranslate"><span class="pre">print</span></code> statement. It still
+uses the loop variable <code class="docutils literal notranslate"><span class="pre">key</span></code>, but in this case it takes elements from the
+list we created in line 13 and sorted in line 14.</p>
+<p><code class="docutils literal notranslate"><span class="pre">grocery_bill[key]</span></code> still refers to a value from the dictionary, but now
+we access the values in a different (sorted) order!</p>
+<p class="last">If we print the <code class="docutils literal notranslate"><span class="pre">grocery_bill</span></code> dictionary at the end of the program, we
+can prove that we did NOT alter the order of the key/value paris.</p>
+</div>
+<p>By adding copies of the key names to a separate list, we can sort the list to
+get the order we want. Then we use the key names <em>from the sorted list</em> to
+access the values in the dictionary.</p>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">12.4.3. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Given the code:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">comics</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;Georgia Dunn&#39;</span> <span class="p">:</span> <span class="s1">&#39;Breaking Cat News&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Jan Eliot&#39;</span> <span class="p">:</span> <span class="s1">&#39;Stone Soup&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Wiley Miller&#39;</span> <span class="p">:</span> <span class="s1">&#39;Non Sequitur&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Bill Watterson&#39;</span> <span class="p">:</span> <span class="s1">&#39;Calvin and Hobbs&#39;</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">comics</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">comics</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+</pre></div>
+</td></tr></table></div>
+<p>What is the value of <code class="docutils literal notranslate"><span class="pre">comics[key]</span></code> the <em>third</em> time through the loop?</p>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">'Wiley</span> <span class="pre">Miller'</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">'Bill</span> <span class="pre">Watterson'</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">'Non</span> <span class="pre">Sequitur'</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">'Calvin</span> <span class="pre">and</span> <span class="pre">Hobbs'</span></code></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="dictionary-methods.html"><span aria-hidden="true">&larr;</span> <span class="section-number">12.3. </span>Dictionary Methods</a></li>
+        
+        
+        <li class="next"><a href="dictionary-accumulator.html"><span class="section-number">12.5. </span>Accumulator Pattern with Dictionaries <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

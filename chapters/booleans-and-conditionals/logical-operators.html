@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6.6. Logical Operators &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6.7. Truth Tables" href="truth-tables.html" />
+    <link rel="prev" title="6.5. Conditionals" href="conditionals.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">6. </span>Making Decisions With Conditionals</a></li>
+    <li class="active"><span class="section-number">6.6. </span>Logical Operators</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="logical-operators">
+<h1><span class="section-number">6.6. </span>Logical Operators<a class="headerlink" href="#logical-operators" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="index-0"></span><p id="index-1">Recall that an <em>operator</em> carries out an action on one or more operands
+(values). Math operators (<code class="docutils literal notranslate"><span class="pre">+</span></code>, <code class="docutils literal notranslate"><span class="pre">-</span></code>, <code class="docutils literal notranslate"><span class="pre">*</span></code>, <code class="docutils literal notranslate"><span class="pre">/</span></code>, <code class="docutils literal notranslate"><span class="pre">//</span></code>, <code class="docutils literal notranslate"><span class="pre">**</span></code>, <code class="docutils literal notranslate"><span class="pre">%</span></code>)
+perform calculations. <strong>Boolean operators</strong> (like the comparisons <code class="docutils literal notranslate"><span class="pre">==</span></code> and
+<code class="docutils literal notranslate"><span class="pre">&lt;</span></code>) return a value of either <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Please enter a username: &#39;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Welcome, &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid username.&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>The expression <code class="docutils literal notranslate"><span class="pre">len(name)</span> <span class="pre">&gt;</span> <span class="pre">5</span></code> compares the length of the string stored
+in <code class="docutils literal notranslate"><span class="pre">name</span></code> to the value <code class="docutils literal notranslate"><span class="pre">5</span></code>.</p>
+<p class="last">If <code class="docutils literal notranslate"><span class="pre">False</span></code>, the program prints <code class="docutils literal notranslate"><span class="pre">Invalid</span> <span class="pre">username.</span></code> If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the
+program prints the welcome message.</p>
+</div>
+<p>What if we wanted to set another limit to the length of <code class="docutils literal notranslate"><span class="pre">name</span></code>? We could
+replace line 3 with <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">len(name)</span> <span class="pre">&lt;</span> <span class="pre">10</span></code>, but then we would lose the first
+comparison. Fortunately, we can perform both checks at the same time.</p>
+<p>Three boolean operators allow us to make more complicated comparisons in a
+single <code class="docutils literal notranslate"><span class="pre">if</span></code> statement. These are called <strong>logical operators</strong>, and there
+are only three—<code class="docutils literal notranslate"><span class="pre">and</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code>, and <code class="docutils literal notranslate"><span class="pre">not</span></code>.</p>
+<div class="section" id="logical-and">
+<h2><span class="section-number">6.6.1. </span>Logical <code class="docutils literal notranslate"><span class="pre">and</span></code><a class="headerlink" href="#logical-and" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="index-2"></span><p id="index-3">Let’s take the two boolean expressions from above:</p>
+<ol class="arabic simple">
+<li><code class="docutils literal notranslate"><span class="pre">len(name)</span> <span class="pre">&gt;</span> <span class="pre">5</span></code> returns <code class="docutils literal notranslate"><span class="pre">True</span></code> when <code class="docutils literal notranslate"><span class="pre">name</span></code> contains more than 5
+characters.</li>
+<li><code class="docutils literal notranslate"><span class="pre">len(name)</span> <span class="pre">&lt;</span> <span class="pre">10</span></code> returns <code class="docutils literal notranslate"><span class="pre">True</span></code> when <code class="docutils literal notranslate"><span class="pre">name</span></code> contains less than 10
+characters.</li>
+</ol>
+<p>A <strong>compound boolean expression</strong> is a boolean expression built out of smaller
+ones. Python allows us to combine expressions by using the <code class="docutils literal notranslate"><span class="pre">and</span></code> operator.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">5</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">10</span>
+</pre></div>
+</div>
+<p>Run the following code and examine the output. Try each of the <code class="docutils literal notranslate"><span class="pre">name</span></code>
+suggestions to see how they change the output.</p>
+<div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Bob&#39;</span> <span class="c1"># Other names to try: &#39;Username&#39;, &#39;Rumpelstiltskin&#39;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Longer than 5 characters: &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Shorter than 10 characters: &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;len(name) &gt; 5 and len(name) &lt; 10: &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">5</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/AndOperator" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p>A compound expression returns only ONE boolean value, which depends on the
+results from BOTH of the smaller comparisons.
+<code class="docutils literal notranslate"><span class="pre">len(name)</span> <span class="pre">&gt;</span> <span class="pre">5</span> <span class="pre">and</span> <span class="pre">len(name)</span> <span class="pre">&lt;</span> <span class="pre">10</span></code> is true only if <code class="docutils literal notranslate"><span class="pre">len(name)</span></code> is
+greater than <code class="docutils literal notranslate"><span class="pre">5</span></code> AND, at the same time, <code class="docutils literal notranslate"><span class="pre">len(name)</span></code> is less than <code class="docutils literal notranslate"><span class="pre">10</span></code>.</p>
+<div class="admonition-take-home-idea admonition">
+<p class="first admonition-title">Take-Home Idea</p>
+<ol class="last arabic simple">
+<li>Logical <code class="docutils literal notranslate"><span class="pre">and</span></code> combines two conditions.</li>
+<li>The combined expression is <code class="docutils literal notranslate"><span class="pre">True</span></code> only if <em>both</em> conditions return
+<code class="docutils literal notranslate"><span class="pre">True</span></code>.</li>
+<li>If either condition is <code class="docutils literal notranslate"><span class="pre">False</span></code>, the overall expression is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</li>
+</ol>
+</div>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>The meaning of <code class="docutils literal notranslate"><span class="pre">and</span></code> resembles its use in English. The sentence “Roses
+are red and violets are blue,” is true as a whole because roses are
+actually red, and violets are blue.</p>
+<p class="last">On the other hand, the sentence “Roses are red and violets are green,” is
+false as a whole. While roses are indeed red, violets are NOT green.</p>
+</div>
+<p>Let’s look at another example.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="mi">7</span> <span class="o">&gt;</span> <span class="n">num</span> <span class="ow">and</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="o">*</span><span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">100</span> <span class="ow">and</span> <span class="s1">&#39;dog&#39;</span> <span class="o">==</span> <span class="s1">&#39;cat&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>True
+False
+False
+</pre></div>
+</div>
+</div>
+<p>In line 2, <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&gt;</span> <span class="pre">0</span> <span class="pre">and</span> <span class="pre">num</span> <span class="pre">&lt;</span> <span class="pre">10</span></code> evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code> because both
+<code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&gt;</span> <span class="pre">0</span></code> and <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&lt;</span> <span class="pre">10</span></code> are each <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>In line 4, the expression <code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">&gt;</span> <span class="pre">num</span> <span class="pre">and</span> <span class="pre">num</span> <span class="pre">==</span> <span class="pre">3</span></code> evaluates to <code class="docutils literal notranslate"><span class="pre">False</span></code>
+because one of the two comparisons, <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">==</span> <span class="pre">3</span></code>, is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>Line 6 evaluates to <code class="docutils literal notranslate"><span class="pre">False</span></code> because both comparisons return <code class="docutils literal notranslate"><span class="pre">False</span></code>.
+Notice that we can mix and match data types however we like, as long as both
+sides of the <code class="docutils literal notranslate"><span class="pre">and</span></code> expression are themselves boolean expressions.</p>
+</div>
+<div class="section" id="logical-or">
+<h2><span class="section-number">6.6.2. </span>Logical <code class="docutils literal notranslate"><span class="pre">or</span></code><a class="headerlink" href="#logical-or" title="Permalink to this headline">¶</a></h2>
+<p id="index-4">Python’s logical <code class="docutils literal notranslate"><span class="pre">or</span></code> also combines two boolean expressions. In this case,
+however, the resulting expression is <code class="docutils literal notranslate"><span class="pre">True</span></code> if <em>either</em> of the conditions are
+<code class="docutils literal notranslate"><span class="pre">True</span></code>. If both conditions are <code class="docutils literal notranslate"><span class="pre">False</span></code>, the overall expression is
+<code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>For the compound expression <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">-</span> <span class="pre">2</span> <span class="pre">==</span> <span class="pre">0</span> <span class="pre">or</span> <span class="pre">num</span> <span class="pre">-</span> <span class="pre">3</span> <span class="pre">==</span> <span class="pre">0</span></code>, only one part has
+to be true for the overall result to be <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>Let’s look at another code example. Change the value of <code class="docutils literal notranslate"><span class="pre">num</span></code> to see when
+each combined expression returns <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">7</span> <span class="o">&gt;</span> <span class="n">num</span> <span class="ow">or</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="o">*</span><span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">100</span> <span class="ow">or</span> <span class="s1">&#39;dog&#39;</span> <span class="o">==</span> <span class="s1">&#39;cat&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/OrOperator" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p>Using <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">=</span> <span class="pre">5</span></code>, lines 2 and 4 both return <code class="docutils literal notranslate"><span class="pre">True</span></code> because at least one of
+the two comparisons is <code class="docutils literal notranslate"><span class="pre">True</span></code>. Line 6 returns <code class="docutils literal notranslate"><span class="pre">False</span></code> because both of the
+comparisons are <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<div class="admonition-tip admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>Logical <code class="docutils literal notranslate"><span class="pre">or</span></code> also resembles its English use. The sentence “Pigs can
+fly, or dogs can run,” is true as a whole. Even though pigs cannot fly, dogs
+CAN run. Only one of the two statements has to be true in order for the whole
+sentence to be true.</p>
+<p class="last">When both of the statements joined by <code class="docutils literal notranslate"><span class="pre">or</span></code> are false, the statement as a
+whole is false. “Pigs can fly or the Earth is flat,” is a false statement.</p>
+</div>
+</div>
+<div class="section" id="logical-not">
+<h2><span class="section-number">6.6.3. </span>Logical <code class="docutils literal notranslate"><span class="pre">not</span></code><a class="headerlink" href="#logical-not" title="Permalink to this headline">¶</a></h2>
+<p id="index-5">The logical <code class="docutils literal notranslate"><span class="pre">not</span></code> operator takes a single operand and flips its boolean
+value. If a comparison returns <code class="docutils literal notranslate"><span class="pre">False</span></code>, then applying <code class="docutils literal notranslate"><span class="pre">not</span></code> changes the
+result to <code class="docutils literal notranslate"><span class="pre">True</span></code> (and vice versa).</p>
+<div class="admonition-examples admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Examples</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="ow">not</span> <span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="ow">not</span> <span class="kc">False</span><span class="p">)</span>
+
+<span class="n">num</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="ow">not</span><span class="p">(</span><span class="n">num</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="ow">not</span><span class="p">(</span><span class="s1">&#39;dog&#39;</span> <span class="o">==</span> <span class="s1">&#39;cat&#39;</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="ow">not</span><span class="p">(</span><span class="n">num</span><span class="o">*</span><span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">100</span> <span class="ow">or</span> <span class="s1">&#39;dog&#39;</span> <span class="o">==</span> <span class="s1">&#39;cat&#39;</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>False
+True
+False
+True
+True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="longer-combinations">
+<h2><span class="section-number">6.6.4. </span>Longer Combinations<a class="headerlink" href="#longer-combinations" title="Permalink to this headline">¶</a></h2>
+<p>In the examples above, we used the <code class="docutils literal notranslate"><span class="pre">and</span></code> and <code class="docutils literal notranslate"><span class="pre">or</span></code> operators to combine two
+smaller boolean expressions. However, we can use the operators to combine as
+many expressions as we want!</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">python</span> <span class="o">=</span> <span class="s1">&#39;Awesome!&#39;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="ow">and</span> <span class="s1">&#39;dog&#39;</span> <span class="o">==</span> <span class="s1">&#39;cat&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="mi">7</span> <span class="ow">or</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">3</span> <span class="ow">or</span> <span class="s1">&#39;dog&#39;</span> <span class="o">==</span> <span class="s1">&#39;cat&#39;</span> <span class="ow">or</span> <span class="n">python</span> <span class="o">==</span> <span class="s1">&#39;Awesome!&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>False
+True
+</pre></div>
+</div>
+<div class="admonition-warning admonition">
+<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
+<p>Here is a VERY common mistake programmers make when they try to combine
+boolean expressions.</p>
+<p>What if we have a variable <code class="docutils literal notranslate"><span class="pre">num</span></code> and we want to check if its value is 5, 6,
+or 7?</p>
+<ol class="arabic simple">
+<li>If we try to describe this out loud, we might say, “<code class="docutils literal notranslate"><span class="pre">num</span></code> is equal to 5 or 6
+or 7”.</li>
+<li>If we translate this into Python as <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">==</span> <span class="pre">5</span> <span class="pre">or</span> <span class="pre">6</span> <span class="pre">or</span> <span class="pre">7</span></code>, we get an
+error when we run the code.</li>
+</ol>
+<p class="last">To prevent this error, we must combine three separate equality comparisons,
+<code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">==</span> <span class="pre">5</span> <span class="pre">or</span> <span class="pre">num</span> <span class="pre">==</span> <span class="pre">6</span> <span class="pre">or</span> <span class="pre">num</span> <span class="pre">==</span> <span class="pre">7</span></code>. This may seem like a lot of extra
+typing, but it is necessary.</p>
+</div>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">6.6.5. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What is returned by the following boolean expression?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">4</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="ow">or</span> <span class="mi">2</span> <span class="o">&lt;</span> <span class="mi">3</span>
+</pre></div>
+</div>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">True</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">False</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">&quot;True&quot;</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">&quot;False&quot;</span></code></li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What is the correct Python expression for checking to see if a number
+stored in the variable <code class="docutils literal notranslate"><span class="pre">num</span></code> is between 0 and 5.</p>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&gt;</span> <span class="pre">0</span> <span class="pre">and</span> <span class="pre">&lt;</span> <span class="pre">5</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&gt;</span> <span class="pre">0</span> <span class="pre">or</span> <span class="pre">&lt;</span> <span class="pre">5</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&gt;</span> <span class="pre">0</span> <span class="pre">and</span> <span class="pre">num</span> <span class="pre">&lt;</span> <span class="pre">5</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&gt;</span> <span class="pre">0</span> <span class="pre">or</span> <span class="pre">num</span> <span class="pre">&lt;</span> <span class="pre">5</span></code></li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Predict if each of the following expressions evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code> or
+<code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">12</span> <span class="pre">*</span> <span class="pre">2</span> <span class="pre">==</span> <span class="pre">24</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">'dog'</span> <span class="pre">==</span> <span class="pre">'cat'</span> <span class="pre">or</span> <span class="pre">'dog'</span> <span class="pre">==</span> <span class="pre">'Dog'</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">12%2</span> <span class="pre">==</span> <span class="pre">0</span> <span class="pre">and</span> <span class="pre">len('flower')</span> <span class="pre">&lt;</span> <span class="pre">6</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">'a'</span> <span class="pre">in</span> <span class="pre">'xyz'</span> <span class="pre">and</span> <span class="pre">len('flower')</span> <span class="pre">&gt;=</span> <span class="pre">6</span> <span class="pre">or</span> <span class="pre">5</span> <span class="pre">+</span> <span class="pre">5</span> <span class="pre">==</span> <span class="pre">10</span></code></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="conditionals.html"><span aria-hidden="true">&larr;</span> <span class="section-number">6.5. </span>Conditionals</a></li>
+        
+        
+        <li class="next"><a href="truth-tables.html"><span class="section-number">6.7. </span>Truth Tables <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

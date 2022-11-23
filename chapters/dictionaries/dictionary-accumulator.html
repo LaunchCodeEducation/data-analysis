@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12.5. Accumulator Pattern with Dictionaries &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="12.6. Search a Dictionary" href="search-a-dictionary.html" />
+    <link rel="prev" title="12.4. Iterating Through Dictionaries" href="dictionary-iteration.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">12. </span>Python Dictionaries and Tuples</a></li>
+    <li class="active"><span class="section-number">12.5. </span>Accumulator Pattern with Dictionaries</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="accumulator-pattern-with-dictionaries">
+<h1><span class="section-number">12.5. </span>Accumulator Pattern with Dictionaries<a class="headerlink" href="#accumulator-pattern-with-dictionaries" title="Permalink to this headline">¶</a></h1>
+<p>We used the <a class="reference internal" href="../lists/common-list-tasks.html#list-accumulation"><span class="std std-ref">accumulator pattern</span></a> to build up from an
+empty string or list, or to keep track of a running total.</p>
+<p>Since dictionaries are just another type of collection, the accumulator pattern
+works with them as well.</p>
+<div class="section" id="adding-to-an-empty-dictionary">
+<h2><span class="section-number">12.5.1. </span>Adding to an Empty Dictionary<a class="headerlink" href="#adding-to-an-empty-dictionary" title="Permalink to this headline">¶</a></h2>
+<p>We can add key/value pairs one at a time to an empty dictionary using bracket
+notation:</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Let’s create a dictionary that uses strings as key/value pairs.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">eng_to_pirate</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="n">eng_to_pirate</span><span class="p">[</span><span class="s1">&#39;Hello&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Ahoy&#39;</span>
+<span class="n">eng_to_pirate</span><span class="p">[</span><span class="s1">&#39;your&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;yer&#39;</span>
+<span class="n">eng_to_pirate</span><span class="p">[</span><span class="s1">&#39;there&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;yonder&#39;</span>
+<span class="n">eng_to_pirate</span><span class="p">[</span><span class="s1">&#39;element 18&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Ar&#39;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">eng_to_pirate</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;Hello&#39;: &#39;Ahoy&#39;, &#39;your&#39;: &#39;yer&#39;, &#39;there&#39;: &#39;yonder&#39;, &#39;element 18&#39;: &#39;Ar&#39;}
+</pre></div>
+</div>
+<p>In lines 3 - 6, on the left hand side of the <code class="docutils literal notranslate"><span class="pre">=</span></code> operator we define the
+new keys for the <code class="docutils literal notranslate"><span class="pre">eng_to_pirate</span></code> dictionary. On the right hand side of the
+<code class="docutils literal notranslate"><span class="pre">=</span></code>, we place the value to assign to the key.</p>
+<p class="last">Each key is an English word, and its value is the related term in
+pirate-speak.</p>
+</div>
+<p>A more efficient way would be to use the accumulator pattern to add new
+key/value pairs. Recall that with lists and strings, the pattern adds only one
+new thing each time the loop repeats. For dictionaries, we need to add <em>two</em>
+items—a new key and a new value.</p>
+<p>Let’s play with a couple of examples to practice this.</p>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p>The following program builds the <code class="docutils literal notranslate"><span class="pre">vowel_count</span></code> dictionary by adding a new
+key/value pair each time the loop repeats. Each character from the string
+<code class="docutils literal notranslate"><span class="pre">'aeiou'</span></code> becomes a key in the dictionary, which gets linked to an integer
+value.</p>
+<ol class="arabic simple">
+<li>Line 5 creates an empty dictionary and assigns it to the variable
+<code class="docutils literal notranslate"><span class="pre">vowel_counts</span></code>.</li>
+<li>Line 7 creates a new key/value pair in <code class="docutils literal notranslate"><span class="pre">vowel_counts</span></code>. Each key is one
+character from <code class="docutils literal notranslate"><span class="pre">vowels</span></code>, and its value is how often that letter occurs
+in the <code class="docutils literal notranslate"><span class="pre">guide</span></code> string.</li>
+</ol>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">guide</span> <span class="o">=</span> <span class="s2">&quot;Far out in the uncharted backwaters of the unfashionable end of the Western Spiral arm of the galaxy lies a small, unregarded yellow sun.&quot;</span>
+<span class="n">games</span> <span class="o">=</span> <span class="s2">&quot;When I wake up, the other side of the bed is cold. My finger’s stretch out, seeking Prim’s warmth but finding only the rough canvas cover. She must have had bad dreams and climbed in with mother. Of course she did. This is the day of the reaping.&quot;</span>
+<span class="n">vowels</span> <span class="o">=</span> <span class="s1">&#39;aeiou&#39;</span>
+
+<span class="n">vowel_counts</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">vowel</span> <span class="ow">in</span> <span class="n">vowels</span><span class="p">:</span>
+   <span class="n">vowel_counts</span><span class="p">[</span><span class="n">vowel</span><span class="p">]</span> <span class="o">=</span> <span class="n">guide</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">vowel</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">vowel_counts</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/DictionaryAccumulator01" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p><strong>Now try:</strong></p>
+<ol class="last arabic simple">
+<li>Indent line 9 to put the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement inside the loop. Run the
+program to see how <code class="docutils literal notranslate"><span class="pre">vowel_counts</span></code> grows each time the loop repeats.</li>
+<li>Replace <code class="docutils literal notranslate"><span class="pre">guide</span></code> with <code class="docutils literal notranslate"><span class="pre">games</span></code> in line 7.</li>
+<li>Use a different string in the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement to count different
+letters or other characters. (As a good Python coder, you should change
+your variable names once you stop counting vowels).</li>
+</ol>
+</div>
+<p>The previous example took the characters from the string <code class="docutils literal notranslate"><span class="pre">'aeiou'</span></code> and turned
+them into dictionary keys. We used items from one collection (a string) to help
+us build a new dictionary.</p>
+<p>The next example combines the elements of two lists into a single dictionary.</p>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p>Let’s build an English-to-pirate translation dictionary! We will use English
+words as keys and pirate words for the values.</p>
+<p>Feel free to add your own words to each list! However, be sure to keep both
+lists the same length.</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">english_words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="s1">&#39;your&#39;</span><span class="p">,</span> <span class="s1">&#39;there&#39;</span><span class="p">,</span> <span class="s1">&#39;stop&#39;</span><span class="p">,</span> <span class="s1">&#39;yes&#39;</span><span class="p">]</span>
+<span class="n">pirate_words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ahoy&#39;</span><span class="p">,</span> <span class="s1">&#39;yer&#39;</span><span class="p">,</span> <span class="s1">&#39;yonder&#39;</span><span class="p">,</span> <span class="s1">&#39;avast&#39;</span><span class="p">,</span> <span class="s1">&#39;aye&#39;</span><span class="p">]</span>
+
+<span class="c1"># Create an empty &#39;translation&#39; dictionary.</span>
+<span class="n">eng_to_pirate</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="c1"># We need to use index values to pull items from both lists.</span>
+<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">english_words</span><span class="p">)):</span>
+   <span class="n">eng_to_pirate</span><span class="p">[</span><span class="n">english_words</span><span class="p">[</span><span class="n">index</span><span class="p">]]</span> <span class="o">=</span> <span class="n">pirate_words</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">eng_to_pirate</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eng_to_pirate</span><span class="p">[</span><span class="s1">&#39;hello&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/DictionaryAccumulator02" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p><strong>Note the following:</strong></p>
+<ol class="last arabic simple">
+<li>Since we pull elements from two different lists, we need to assign
+<em>index</em> values (0, 1, 2…) to the loop variable. This allows us to match
+the correct words from each list.</li>
+<li>On line 9, <code class="docutils literal notranslate"><span class="pre">english_words[index]</span></code> accesses one element from the
+<code class="docutils literal notranslate"><span class="pre">english_words</span></code> list, and it uses that element to define a new key. For
+example, the first time through the loop, the left hand side of line 9
+evaluates as:<ol class="loweralpha">
+<li><code class="docutils literal notranslate"><span class="pre">eng_to_pirate[english_words[index]]</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">eng_to_pirate[english_words[0]]</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">eng_to_pirate['hello']</span></code></li>
+</ol>
+</li>
+<li>The right hand side of line 9 uses the same index value, but it pulls an
+element from the <code class="docutils literal notranslate"><span class="pre">pirate_words</span></code> list:<ol class="loweralpha">
+<li><code class="docutils literal notranslate"><span class="pre">pirate_words[index]</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">pirate_words[0]</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">'ahoy'</span></code></li>
+</ol>
+</li>
+<li>For index value 0, line 9 reduces to <code class="docutils literal notranslate"><span class="pre">eng_to_pirate['hello']</span> <span class="pre">=</span> <span class="pre">'ahoy'</span></code>,
+and this adds the <code class="docutils literal notranslate"><span class="pre">'hello'</span> <span class="pre">:</span> <span class="pre">'ahoy'</span></code> key/value pair to the
+<code class="docutils literal notranslate"><span class="pre">eng_to_pirate</span></code> dictionary.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="accumulate-with-an-existing-dictionary">
+<h2><span class="section-number">12.5.2. </span>Accumulate with an Existing Dictionary<a class="headerlink" href="#accumulate-with-an-existing-dictionary" title="Permalink to this headline">¶</a></h2>
+<p id="round-function">We can also use the accumulator pattern to perform an operation with the values
+in a dictionary.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">exam_scores</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;exam_1&#39;</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">&#39;exam_2&#39;</span> <span class="p">:</span> <span class="mf">90.7</span><span class="p">,</span> <span class="s1">&#39;exam_3&#39;</span> <span class="p">:</span> <span class="mf">88.3</span><span class="p">}</span>
+
+<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">exam_scores</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+   <span class="n">total</span> <span class="o">+=</span> <span class="n">exam_scores</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+
+<span class="n">average</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">exam_scores</span><span class="p">)</span>
+<span class="n">rounded_average</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">average</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The average result is </span><span class="si">{0}</span><span class="s2">%.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">rounded_average</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The average result is 91.3%.
+</pre></div>
+</div>
+<p><strong>Note the following:</strong></p>
+<ol class="last arabic simple">
+<li>In line 3, we define the accumulator variable <code class="docutils literal notranslate"><span class="pre">total</span></code> and assign it an
+initial value of <code class="docutils literal notranslate"><span class="pre">0</span></code>.</li>
+<li>In line 4, we set the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement to loop through the keys of the
+<code class="docutils literal notranslate"><span class="pre">exam_scores</span></code> dictionary.</li>
+<li>Each time the loop repeats, line 5 increases <code class="docutils literal notranslate"><span class="pre">total</span></code> by the value
+linked to the current key. For example, the first time through the loop,
+line 5 operates this way:<ol class="loweralpha">
+<li><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">+=</span> <span class="pre">exam_scores[key]</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">+=</span> <span class="pre">exam_scores['exam_1']</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">+=</span> <span class="pre">95</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">=</span> <span class="pre">total</span> <span class="pre">+</span> <span class="pre">95</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">=</span> <span class="pre">0</span> <span class="pre">+</span> <span class="pre">95</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">=</span> <span class="pre">95</span></code></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">12.5.3. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What does the following program print?</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">my_animals</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;cats&quot;</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;dogs&quot;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span> <span class="s2">&quot;elephants&quot;</span><span class="p">:</span><span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;bears&quot;</span><span class="p">:</span><span class="mi">20</span><span class="p">}</span>
+
+<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">my_animals</span><span class="p">:</span>
+   <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">:</span>
+      <span class="n">total</span> <span class="o">+=</span> <span class="n">my_animals</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">0</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">25</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">45</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">60</span></code></li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>We want to code an accumulator that takes names and ticket numbers from two
+different lists, then uses that data to add key/value pairs to a dictionary.</p>
+<p>The names should be the keys in the dictionary with the ticket numbers as
+their values.</p>
+<p>Given the following statements:</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;Maria&#39;</span><span class="p">,</span> <span class="s1">&#39;Devon&#39;</span><span class="p">,</span> <span class="s1">&#39;Jessi&#39;</span><span class="p">]</span>
+<span class="n">ticket_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">103</span><span class="p">]</span>
+
+<span class="n">ticket_holders</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">)):</span>
+   <span class="c1"># Assignment statement here.</span>
+</pre></div>
+</td></tr></table></div>
+<p>Which of the following is the correct syntax for adding the key/value
+pairs to <code class="docutils literal notranslate"><span class="pre">ticket_holders</span></code>?</p>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">ticket_holders[index]</span> <span class="pre">=</span> <span class="pre">ticket_numbers[index]</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">ticket_holders[names[index]]</span> <span class="pre">=</span> <span class="pre">ticket_numbers[index]</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">ticket_holders[key]</span> <span class="pre">=</span> <span class="pre">ticket_numbers[value]</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">ticket_holders[key]</span> <span class="pre">=</span> <span class="pre">value</span></code></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="dictionary-iteration.html"><span aria-hidden="true">&larr;</span> <span class="section-number">12.4. </span>Iterating Through Dictionaries</a></li>
+        
+        
+        <li class="next"><a href="search-a-dictionary.html"><span class="section-number">12.6. </span>Search a Dictionary <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

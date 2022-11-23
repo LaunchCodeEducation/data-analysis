@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9.1. List Basics &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="9.2. Lists Are Like Strings" href="lists-are-like-strings.html" />
+    <link rel="prev" title="9. Lists Keep Things in Order" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">9. </span>Lists Keep Things in Order</a></li>
+    <li class="active"><span class="section-number">9.1. </span>List Basics</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="list-basics">
+<h1><span class="section-number">9.1. </span>List Basics<a class="headerlink" href="#list-basics" title="Permalink to this headline">¶</a></h1>
+<p id="index-0">The Python <strong>list</strong> data type is another example of an <em>ordered collection</em>.
+Lists store data values, which are called <strong>elements</strong>. Just like with strings, each
+element has its own index value. However, strings are ordered collections of <em>characters</em> and the elements of lists can be of any data type.</p>
+<div class="figure align-default" id="id1">
+<img alt="A label, languages, pointing to an array that contains &quot;Python&quot; at index 0, &quot;C#&quot; at index 1, &quot;Java&quot; at index 2, and &quot;JavaScript&quot; at index 3." src="../../_images/list-diagram.png" />
+<p class="caption"><span class="caption-text">This list contains four strings, and each value has its own index position.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="create-a-new-list">
+<h2><span class="section-number">9.1.1. </span>Create a New List<a class="headerlink" href="#create-a-new-list" title="Permalink to this headline">¶</a></h2>
+<p>There are several ways to create a new list. The simplest is to enclose the
+elements in square brackets <code class="docutils literal notranslate"><span class="pre">[]</span></code>, with each element separated from the others
+by commas.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="last highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
+<span class="n">strings</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span> <span class="s1">&#39;broccoli&#39;</span><span class="p">,</span> <span class="s1">&#39;kale&#39;</span><span class="p">,</span> <span class="s1">&#39;applesauce&#39;</span><span class="p">]</span>
+<span class="n">mixed_data</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mf">48.5</span><span class="p">]]</span>
+<span class="n">empty_list</span> <span class="o">=</span> <span class="p">[]</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<ol class="arabic simple" id="index-1">
+<li>Line 1 assigns a list of five integers to the variable <code class="docutils literal notranslate"><span class="pre">numbers</span></code>.</li>
+<li>Line 2 assigns a list of four strings.</li>
+<li>The elements of a list don’t have to be the same data type! The list in line
+3 contains a string, an integer, a boolean, a float, and another list.</li>
+<li>Line 4 assigns a special list that contains no elements, called the
+<strong>empty list</strong>.</li>
+</ol>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="last">A list within another list is said to be <em>nested</em>. We will explore this idea
+later in the chapter.</p>
+</div>
+</div>
+<div class="section" id="accessing-elements">
+<h2><span class="section-number">9.1.2. </span>Accessing Elements<a class="headerlink" href="#accessing-elements" title="Permalink to this headline">¶</a></h2>
+<p>With strings, we accessed individual characters by using square brackets. With lists, we use square brackets to access list elements. The
+integer or expression inside the brackets gives the <em>index</em> for the element we
+want.</p>
+<blockquote>
+<div>Remember that index values start at 0.</div></blockquote>
+<p>Any integer (or an expression that returns a whole number) can be used as the
+index. Negative index values identify elements from right-to-left, beginning
+at <code class="docutils literal notranslate"><span class="pre">-1</span></code> for the last element in the list.</p>
+<div class="admonition-try-it admonition">
+<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p>Use index values to print out different elements from a list.</p>
+<ol class="arabic simple">
+<li>Add at least three new elements to <code class="docutils literal notranslate"><span class="pre">my_list</span></code>. Feel free to use values
+of the same data type or different data types.</li>
+<li>Note that line 4 prints the entire list (with brackets) to the console.</li>
+<li>Change the index value in line 5 to print different elements from
+<code class="docutils literal notranslate"><span class="pre">my_list</span></code>. Be sure to try both positive and negative integers.</li>
+<li>Try using an expression (like <code class="docutils literal notranslate"><span class="pre">len(my_list)</span> <span class="pre">-</span> <span class="pre">2</span></code>) inside the brackets
+in line 5.</li>
+<li>What happens if you use an index value larger than the number of elements
+in the list?</li>
+</ol>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Practice adding new elements to the list, and use bracket notation to print single elements from the list.</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Python&quot;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/AccessingListElements" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+</div>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">9.1.3. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>List elements must all be the same data type.</p>
+<ol class="last loweralpha simple">
+<li>True</li>
+<li>False</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Identify the length of these two lists. (The answers list <code class="docutils literal notranslate"><span class="pre">classes</span></code> first,
+then <code class="docutils literal notranslate"><span class="pre">teachers</span></code>).</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">classes</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Chemistry, US History, Intro To Coding&quot;</span><span class="p">]</span>
+<span class="n">teachers</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Cortez&quot;</span><span class="p">,</span> <span class="s2">&quot;Holmes&quot;</span><span class="p">,</span> <span class="s2">&quot;Bracey&quot;</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last loweralpha simple">
+<li>1 and 3</li>
+<li>3 and 1</li>
+<li>3 and 3</li>
+<li>1 and 1</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Identify the output from the following statements:</p>
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">a_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a_list</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">Hello</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">42</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">True</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">3.14</span></code></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="index.html"><span aria-hidden="true">&larr;</span> <span class="section-number">9. </span>Lists Keep Things in Order</a></li>
+        
+        
+        <li class="next"><a href="lists-are-like-strings.html"><span class="section-number">9.2. </span>Lists Are Like Strings <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

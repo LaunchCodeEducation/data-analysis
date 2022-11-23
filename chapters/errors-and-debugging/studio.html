@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10.8. Studio: Errors and Debugging &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="11. What’s Your Function" href="../functions/index.html" />
+    <link rel="prev" title="10.7. Exercises: Errors and Debugging" href="exercises.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">10. </span>Errors and Debugging</a></li>
+    <li class="active"><span class="section-number">10.8. </span>Studio: Errors and Debugging</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="studio-errors-and-debugging">
+<h1><span class="section-number">10.8. </span>Studio: Errors and Debugging<a class="headerlink" href="#studio-errors-and-debugging" title="Permalink to this headline">¶</a></h1>
+<p>The code in this project is broken! Your job is to fix it so we can clear a
+rocket for launch.</p>
+<p>Requirements:</p>
+<ol class="arabic simple">
+<li>Launch the rocket <em>only if</em> the fuel, crew and computer all check out OK.</li>
+<li>If a check fails, print that information to the console and scrub the
+launch.</li>
+<li>If all checks be successful, print a countdown to the console followed by
+“Liftoff!”</li>
+</ol>
+<div class="section" id="fix-syntax-errors-first">
+<h2><span class="section-number">10.8.1. </span>Fix Syntax Errors First<a class="headerlink" href="#fix-syntax-errors-first" title="Permalink to this headline">¶</a></h2>
+<p>Find this code at <a class="reference external" href="https://replit.com/&#64;launchcode/DebuggingStudio01" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<ol class="arabic">
+<li><p class="first">Run the following code as-is and examine the error message. Fix the mistake,
+and then re-run the code to check it.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>launch_ready = False
+fuel_level = 17000
+
+if fuel_level &gt;= 20000
+   print(&#39;Fuel level cleared.&#39;)
+   launch_ready = True
+else:
+   print(&#39;WARNING: Insufficient fuel!&#39;)
+   launch_ready = False
+</pre></div>
+</div>
+</li>
+<li><p class="first">The next block of code hides two syntax errors. Run the code as-is to
+find the mistakes.</p>
+<p><em>Tip</em>: Only ONE error gets flagged at a time. Fix that ONE problem, and then
+re-run the code to check your work. Avoid trying to fix multiple issues at
+once.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>launch_ready = False
+crew_status = True
+computer_status = &#39;green&#39;
+
+if crew_status and computer_status = &#39;green&#39;:
+   print(&#39;Crew &amp; computer cleared.&#39;)
+   launch_ready = True
+else:
+   print(&#39;WARNING: Crew or computer not ready!&#39;)
+   launch_ready = False
+
+if (launch_ready):
+   print(&quot;10, 9, 8, 7, 6, 5, 4, 3, 2, 1...&quot;)
+   print(&quot;Fed parrot...&quot;)
+   print(&quot;Ignition...&quot;)
+   print(&quot;Liftoff!&#39;)
+else:
+   print(&quot;Launch scrubbed.&quot;)
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="fix-runtime-errors-next">
+<h2><span class="section-number">10.8.2. </span>Fix Runtime Errors Next<a class="headerlink" href="#fix-runtime-errors-next" title="Permalink to this headline">¶</a></h2>
+<p>Fix this code at <a class="reference external" href="https://replit.com/&#64;launchcode/DebuggingStudio02" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<ol class="arabic">
+<li><p class="first">Remember to examine the error message for clues about what went wrong. Pay
+close attention to any line numbers given in the message—these will help
+you locate and repair the bug.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>launch_ready = False
+fuel_level = 27000
+
+if fuel_Level &gt;= 20000:
+   print(&#39;Fuel level cleared.&#39;)
+   launch_ready = True
+else:
+   print(&#39;WARNING: Insufficient fuel!&#39;)
+   launch_ready = False
+</pre></div>
+</div>
+</li>
+<li><p class="first">Now find and fix the runtime error in a longer code block.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>launch_ready = False
+fuel_level = 27000
+
+if fuel_level &gt;= 20000:
+   print(&#39;Fuel level cleared.&#39;)
+   launch_ready = True
+else:
+   print(&#39;WARNING: Insufficient fuel!&#39;)
+   launch_ready = False
+
+if launch_ready:
+   print(&quot;10, 9, 8...&quot;)
+   print(&quot;Fed parrot...&quot;)
+   print(&quot;6, 5, 4...&quot;)
+   print(&quot;Ignition...&quot;)
+   printt(&quot;3, 2, 1...&quot;)
+   print(&quot;Liftoff!&quot;)
+else:
+   print(&quot;Launch scrubbed.&quot;)
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="solve-logic-errors-last">
+<h2><span class="section-number">10.8.3. </span>Solve Logic Errors Last<a class="headerlink" href="#solve-logic-errors-last" title="Permalink to this headline">¶</a></h2>
+<p>Logic errors do not generate warning messages or prevent the code from running,
+but the program still does not work right. (Refer to the
+<a class="reference internal" href="debugging-logic-errors.html#fixing-logic-errors"><span class="std std-ref">Fixing Logic Errors</span></a> section if you need to
+review).</p>
+<p>Fix this code at <a class="reference external" href="https://replit.com/&#64;launchcode/DebuggingStudio03" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<ol class="arabic">
+<li><p class="first">First, run this sample code as-is and examine the output. Should the rocket
+have launched? Did it?</p>
+<p>Do not worry about fixing the code yet. You will do that in the next steps.</p>
+</li>
+<li><p class="first">Let’s break the code down into smaller chunks. Consider the first <code class="docutils literal notranslate"><span class="pre">if/else</span></code>
+block below.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>if fuel_level &gt;= 20000:
+   print(&#39;Fuel level cleared.&#39;)
+   launch_ready = True
+else:
+   print(&#39;WARNING: Insufficient fuel!&#39;)
+   launch_ready = False
+</pre></div>
+</div>
+<ol class="loweralpha simple">
+<li>Comment out lines 14 - 25 in the code editor.</li>
+<li>Add <code class="docutils literal notranslate"><span class="pre">print(&quot;launch_ready</span> <span class="pre">=&quot;,</span> <span class="pre">launch_ready)</span></code> after the first block,
+then run the program.</li>
+<li>Given the <code class="docutils literal notranslate"><span class="pre">fuel_level</span></code> value, should <code class="docutils literal notranslate"><span class="pre">launch_ready</span></code> be <code class="docutils literal notranslate"><span class="pre">True</span></code> or
+<code class="docutils literal notranslate"><span class="pre">False</span></code> after the check? Is the program behaving as expected?</li>
+</ol>
+</li>
+<li><p class="first">Now consider the second <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block. Add another
+<code class="docutils literal notranslate"><span class="pre">print(&quot;launch_ready</span> <span class="pre">=&quot;,</span> <span class="pre">launch_ready)</span></code> after this block and run the
+program.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>if crew_status and computer_status == &#39;green&#39;:
+   print(&#39;Crew &amp; computer cleared.&#39;)
+   launch_ready = True
+else:
+   print(&#39;WARNING: Crew or computer not ready!&#39;)
+   launch_ready = False
+</pre></div>
+</div>
+<p>Given <code class="docutils literal notranslate"><span class="pre">crew_status</span></code> and <code class="docutils literal notranslate"><span class="pre">computer_status</span></code>, should <code class="docutils literal notranslate"><span class="pre">launch_ready</span></code> be
+<code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> after this check? Is the program behaving as expected?</p>
+</li>
+<li><p class="first">Now consider both <code class="docutils literal notranslate"><span class="pre">if/else</span></code> blocks together (keeping the added <code class="docutils literal notranslate"><span class="pre">print</span></code>
+lines). Run the code and examine the output.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>launch_ready = False
+fuel_level = 17000
+crew_status = True
+computer_status = &#39;green&#39;
+
+if fuel_level &gt;= 20000:
+   print(&#39;Fuel level cleared.&#39;)
+   launch_ready = True
+else:
+   print(&#39;WARNING: Insufficient fuel!&#39;)
+   launch_ready = False
+
+print(&quot;launch_ready =&quot;, launch_ready)
+
+if crew_status and computer_status == &#39;green&#39;:
+   print(&#39;Crew &amp; computer cleared.&#39;)
+   launch_ready = True
+else:
+   print(&#39;WARNING: Crew or computer not ready!&#39;)
+   launch_ready = False
+
+print(&quot;launch_ready =&quot;, launch_ready)
+</pre></div>
+</div>
+<p>Given the values for <code class="docutils literal notranslate"><span class="pre">fuel_level</span></code>, <code class="docutils literal notranslate"><span class="pre">crew_status</span></code> and
+<code class="docutils literal notranslate"><span class="pre">computer_status</span></code>, should <code class="docutils literal notranslate"><span class="pre">launch_ready</span></code> be <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>? Is
+the program behaving as expected?</p>
+</li>
+<li><p class="first">Ah ha! The value of <code class="docutils literal notranslate"><span class="pre">launch_ready</span></code> assigned in the first <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block
+got changed in the second <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block. This is a common
+mistake—using the same variable to track the results of two separate
+conditionals.</p>
+<p>Since the issue is with <code class="docutils literal notranslate"><span class="pre">launch_ready</span></code>, ONE way to fix the logic error is
+to use a different variable to store the fuel check result. Make your code
+do this, then check if your change works by updating the first <code class="docutils literal notranslate"><span class="pre">print</span></code>
+statement.</p>
+</li>
+<li><p class="first">Almost done! Modify the final <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block to print the countdown and
+<code class="docutils literal notranslate"><span class="pre">&quot;Liftoff!&quot;</span></code> if both the fuel check and <code class="docutils literal notranslate"><span class="pre">launch_ready</span></code> variables are
+<code class="docutils literal notranslate"><span class="pre">True</span></code>. Print <code class="docutils literal notranslate"><span class="pre">&quot;Launch</span> <span class="pre">scrubbed&quot;</span></code> if either check fails.</p>
+</li>
+</ol>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="exercises.html"><span aria-hidden="true">&larr;</span> <span class="section-number">10.7. </span>Exercises: Errors and Debugging</a></li>
+        
+        
+        <li class="next"><a href="../functions/index.html"><span class="section-number">11. </span>What’s Your Function <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

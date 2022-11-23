@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8.3. Taking a Slice &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="8.4. String Immutability" href="string-immutability.html" />
+    <link rel="prev" title="8.2. Bracket Notation" href="bracket-notation.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">8. </span>Stringing Characters Together</a></li>
+    <li class="active"><span class="section-number">8.3. </span>Taking a Slice</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="taking-a-slice">
+<h1><span class="section-number">8.3. </span>Taking a Slice<a class="headerlink" href="#taking-a-slice" title="Permalink to this headline">¶</a></h1>
+<p id="index-0">In addition to accessing single characters in a string, we can also use bracket
+notation to return multiple characters. This smaller set of characters is
+called a <strong>substring</strong> of the original.</p>
+<p>A substring is also called a <strong>slice</strong> of the original string. Selecting a
+slice is similar to selecting a character, and the syntax is:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">some_string</span><span class="p">[</span><span class="n">start_index</span> <span class="p">:</span> <span class="n">end_index</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>With this format, Python returns all of the characters from the <code class="docutils literal notranslate"><span class="pre">start_index</span></code>
+value up to but NOT including the <code class="docutils literal notranslate"><span class="pre">end_index</span></code> value.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">alphabet</span> <span class="o">=</span> <span class="s1">&#39;abcdefghijklmnopqrstuvwxyz&#39;</span>
+<span class="n">substring</span> <span class="o">=</span> <span class="n">alphabet</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">substring</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cde
+</pre></div>
+</div>
+<p class="last">Since we start counting at 0, the character at index value 2 is <code class="docutils literal notranslate"><span class="pre">'c'</span></code>,
+and the character at index 5 is <code class="docutils literal notranslate"><span class="pre">'f'</span></code>. However, note that <code class="docutils literal notranslate"><span class="pre">'f'</span></code> is
+NOT included in the slice.</p>
+</div>
+<p>If we leave out the first index (before the colon), the slice starts at the
+beginning of the string. If we leave out the second index, the slice goes to
+the end of the string.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">fruit</span> <span class="o">=</span> <span class="s2">&quot;cucumber&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruit</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fruit</span><span class="p">[</span><span class="mi">3</span><span class="p">:])</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cuc
+umber
+</pre></div>
+</div>
+<p>What do you think <code class="docutils literal notranslate"><span class="pre">fruit[:]</span></code> means?</p>
+<p class="last">How about <code class="docutils literal notranslate"><span class="pre">fruit[-5:-2]</span></code>?</p>
+</div>
+<div class="section" id="saving-substrings">
+<h2><span class="section-number">8.3.1. </span>Saving Substrings<a class="headerlink" href="#saving-substrings" title="Permalink to this headline">¶</a></h2>
+<p>In the examples above, we simply print a substring to the
+console, like <code class="docutils literal notranslate"><span class="pre">print(fruit[:3])</span></code>. This works because when we use brackets to
+return part of a string, we actually <em>create a new string</em>.
+This new string is a piece of data, and we can perform operations on it like any other string. The
+expression <code class="docutils literal notranslate"><span class="pre">fruit[:3]</span></code> returns the string <code class="docutils literal notranslate"><span class="pre">'cuc'</span></code>, so the <code class="docutils literal notranslate"><span class="pre">print</span></code> function
+displays that data in the console. If we want to use the string <code class="docutils literal notranslate"><span class="pre">'cuc'</span></code> again, we will need
+to take another slice from <code class="docutils literal notranslate"><span class="pre">fruit</span></code>, or save the string in a new variable.</p>
+<p>Instead of creating, using, then losing a new string, we can assign it to a
+variable whenever we use bracket notation.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">vegetable</span> <span class="o">=</span> <span class="s2">&quot;carrot&quot;</span>
+<span class="n">top_half</span> <span class="o">=</span> <span class="n">vegetable</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">end_piece</span> <span class="o">=</span> <span class="n">vegetable</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">top_half</span><span class="p">,</span> <span class="n">end_piece</span><span class="p">,</span> <span class="n">vegetable</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>car t carrot
+</pre></div>
+</div>
+</div>
+<p>By assigning the substrings <code class="docutils literal notranslate"><span class="pre">'car'</span></code> and <code class="docutils literal notranslate"><span class="pre">'t'</span></code> to variables, we can use
+those strings elsewhere in the program.</p>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="last">Notice that taking two slices from the string <code class="docutils literal notranslate"><span class="pre">'carrot'</span></code>
+did NOT change the string itself. We will explore this idea in the next
+section.</p>
+</div>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">8.3.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Given <code class="docutils literal notranslate"><span class="pre">language</span> <span class="pre">=</span> <span class="pre">'Python'</span></code>, what does <code class="docutils literal notranslate"><span class="pre">language[1:5]</span></code> return?</p>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">&quot;Pyth&quot;</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">&quot;Pyt&quot;</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">&quot;yth&quot;</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">&quot;ytho&quot;</span></code></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="bracket-notation.html"><span aria-hidden="true">&larr;</span> <span class="section-number">8.2. </span>Bracket Notation</a></li>
+        
+        
+        <li class="next"><a href="string-immutability.html"><span class="section-number">8.4. </span>String Immutability <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

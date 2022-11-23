@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12.2. Working with Dictionaries &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="12.3. Dictionary Methods" href="dictionary-methods.html" />
+    <link rel="prev" title="12.1. Dictionary Basics" href="dictionary-basics.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">12. </span>Python Dictionaries and Tuples</a></li>
+    <li class="active"><span class="section-number">12.2. </span>Working with Dictionaries</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="working-with-dictionaries">
+<h1><span class="section-number">12.2. </span>Working with Dictionaries<a class="headerlink" href="#working-with-dictionaries" title="Permalink to this headline">¶</a></h1>
+<p>Dictionaries are <em>mutable</em>, so we can change the value assigned to a key, add
+new key/value pairs, or remove key/value pairs.</p>
+<p>Since dictionaries are <em>unordered</em>, we have no options for sorting or
+rearranging the key/value pairs within the collections.</p>
+<div class="section" id="change-one-value">
+<h2><span class="section-number">12.2.1. </span>Change One Value<a class="headerlink" href="#change-one-value" title="Permalink to this headline">¶</a></h2>
+<p>To update a single value in a dictionary, use the syntax:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dictionary_name</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_value</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">dictionary_name[key]</span></code> identifies the value in the collection that we want to
+change. The <code class="docutils literal notranslate"><span class="pre">=</span></code> operator assigns <code class="docutils literal notranslate"><span class="pre">new_value</span></code> to that key.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">phone_book</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;Mom&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5555&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Work&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5556&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Home&#39;</span> <span class="p">:</span> <span class="s1">&#39;123-456-7890&#39;</span>
+<span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">phone_book</span><span class="p">)</span>
+
+<span class="n">phone_book</span><span class="p">[</span><span class="s1">&#39;Work&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;314-555-5556&#39;</span>  <span class="c1"># Link the key &#39;Work&#39; to the value &#39;314-555-5556&#39;.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">phone_book</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;Mom&#39; : &#39;555-5555&#39;, &#39;Work&#39; : &#39;555-5556&#39;, &#39;Home&#39; : &#39;123-456-7890&#39;}
+{&#39;Mom&#39; : &#39;555-5555&#39;, &#39;Work&#39; : &#39;314-555-5556&#39;, &#39;Home&#39; : &#39;123-456-7890&#39;}
+</pre></div>
+</div>
+</div>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="last">We cannot use this method to change the names of the keys.</p>
+</div>
+</div>
+<div class="section" id="add-a-new-key-value-pair">
+<h2><span class="section-number">12.2.2. </span>Add a New Key/Value Pair<a class="headerlink" href="#add-a-new-key-value-pair" title="Permalink to this headline">¶</a></h2>
+<p>After defining a dictionary, we can add new new key/value pairs at any time by
+using bracket syntax:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dictionary_name</span><span class="p">[</span><span class="s1">&#39;new_key&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_value</span>
+</pre></div>
+</div>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">phone_book</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;Mom&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5555&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Work&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5556&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Home&#39;</span> <span class="p">:</span> <span class="s1">&#39;123-456-7890&#39;</span>
+<span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">phone_book</span><span class="p">)</span>
+
+<span class="n">phone_book</span><span class="p">[</span><span class="s1">&#39;BFF&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;555-5557&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">phone_book</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;Mom&#39; : &#39;555-5555&#39;, &#39;Work&#39; : &#39;555-5556&#39;, &#39;Home&#39; : &#39;123-456-7890&#39;}
+{&#39;Mom&#39; : &#39;555-5555&#39;, &#39;Work&#39; : &#39;555-5556&#39;, &#39;Home&#39; : &#39;123-456-7890&#39;, &#39;BFF&#39; : &#39;555-5557&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="remove-a-key-value-pair">
+<h2><span class="section-number">12.2.3. </span>Remove a Key/Value Pair<a class="headerlink" href="#remove-a-key-value-pair" title="Permalink to this headline">¶</a></h2>
+<p>To remove a key/value pair from a dictionary, use the <code class="docutils literal notranslate"><span class="pre">del</span></code> keyword. The
+general syntax is:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">dictionary_name</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">phone_book</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;Mom&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5555&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Work&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5556&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Home&#39;</span> <span class="p">:</span> <span class="s1">&#39;123-456-7890&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;BFF&#39;</span> <span class="p">:</span> <span class="s1">&#39;555-5557&#39;</span>
+<span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">phone_book</span><span class="p">)</span>
+
+<span class="k">del</span> <span class="n">phone_book</span><span class="p">[</span><span class="s1">&#39;Home&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">phone_book</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;Mom&#39; : &#39;555-5555&#39;, &#39;Work&#39; : &#39;555-5556&#39;, &#39;Home&#39; : &#39;123-456-7890&#39;, &#39;BFF&#39; : &#39;555-5557&#39;}
+{&#39;Mom&#39; : &#39;555-5555&#39;, &#39;Work&#39; : &#39;555-5556&#39;, &#39;BFF&#39; : &#39;555-5557&#39;}
+</pre></div>
+</div>
+</div>
+<div class="admonition-note admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>Once we define a key, it remains in the dictionary unless we use <code class="docutils literal notranslate"><span class="pre">del</span></code> to
+remove it.</p>
+<p>For example, if we wanted to rename the key <code class="docutils literal notranslate"><span class="pre">'Mom'</span></code> to <code class="docutils literal notranslate"><span class="pre">'Mother'</span></code>, we
+would have to delete the old key first, then add a new key/value pair.</p>
+<div class="last highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">phone_book</span><span class="p">[</span><span class="s1">&#39;Mom&#39;</span><span class="p">]</span>
+<span class="n">phone_book</span><span class="p">[</span><span class="s1">&#39;Mother&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;555-5555&#39;</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="try-it">
+<h2><span class="section-number">12.2.4. </span>Try It!<a class="headerlink" href="#try-it" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-example admonition">
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Use a dictionary to keep track of favorite ice cream flavors!</p>
+<p>In the editor below:</p>
+<ol class="arabic simple">
+<li>Change the value for <code class="docutils literal notranslate"><span class="pre">'Mom'</span></code> to something more exciting than
+<code class="docutils literal notranslate"><span class="pre">'vanilla'</span></code>.</li>
+<li>Add your own name and favorite flavor to the dictionary.</li>
+<li>Use <code class="docutils literal notranslate"><span class="pre">del</span></code> to remove the <code class="docutils literal notranslate"><span class="pre">'Odd</span> <span class="pre">choice'</span></code> key/value pair.</li>
+<li>Fix the misspelling in the <code class="docutils literal notranslate"><span class="pre">'teachher'</span></code> key.</li>
+</ol>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">favorite_ic_flavors</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="s1">&#39;Mom&#39;</span> <span class="p">:</span> <span class="s1">&#39;vanilla&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Jerry&#39;</span> <span class="p">:</span> <span class="s1">&#39;Cherry Garcia&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Ben&#39;</span> <span class="p">:</span> <span class="s1">&#39;Chocolate Fudge Brownie&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Jenny&#39;</span> <span class="p">:</span> <span class="s1">&#39;Mint Chocolate Chip&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;Odd choice&#39;</span> <span class="p">:</span> <span class="s1">&#39;pickled mango&#39;</span><span class="p">,</span>
+   <span class="s1">&#39;teachher&#39;</span> <span class="p">:</span> <span class="s1">&#39;Rocky Road&#39;</span>
+<span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">favorite_ic_flavors</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/DictionaryOperations" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+</div>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">12.2.5. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Given the following dictionary:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pet_population</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;cats&#39;</span> <span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;dogs&#39;</span> <span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;elephants&#39;</span> <span class="p">:</span> <span class="mi">25</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>What value does <code class="docutils literal notranslate"><span class="pre">len(pet_population)</span></code> return?</p>
+<ol class="last loweralpha simple">
+<li>3</li>
+<li>6</li>
+<li>40</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Using the same <code class="docutils literal notranslate"><span class="pre">pet_population</span></code> dictionary, what would the following
+statement do?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pet_population</span><span class="p">[</span><span class="s1">&#39;birds&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div>
+</div>
+<ol class="last loweralpha simple">
+<li>Throw an error message because <code class="docutils literal notranslate"><span class="pre">pet_population</span></code> does not contain a <code class="docutils literal notranslate"><span class="pre">'birds'</span></code> key.</li>
+<li>Add the <code class="docutils literal notranslate"><span class="pre">'birds'</span> <span class="pre">:</span> <span class="pre">5</span></code> key/value pair to the dictionary.</li>
+<li>Add five <code class="docutils literal notranslate"><span class="pre">'birds'</span></code> keys to the dictionary.</li>
+<li>Replace the <code class="docutils literal notranslate"><span class="pre">'dogs'</span></code> key with <code class="docutils literal notranslate"><span class="pre">'birds'</span></code>.</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What is printed by the following statements?</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">pet_population</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;cats&#39;</span> <span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;dogs&#39;</span> <span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;elephants&#39;</span> <span class="p">:</span> <span class="mi">25</span><span class="p">}</span>
+
+<span class="n">pet_population</span><span class="p">[</span><span class="s1">&#39;mice&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pet_population</span><span class="p">[</span><span class="s1">&#39;cats&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">pet_population</span><span class="p">[</span><span class="s1">&#39;dogs&#39;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">pet_population</span><span class="p">[</span><span class="s1">&#39;mice&#39;</span><span class="p">])</span>
+</pre></div>
+</td></tr></table></div>
+<ol class="last loweralpha simple">
+<li>0</li>
+<li>5</li>
+<li>10</li>
+<li>15</li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Once we added mice to our pet collection, all the elephants ran away! Which
+of the following shows the correct syntax for setting the value of the
+<code class="docutils literal notranslate"><span class="pre">'elephants'</span></code> key to zero?</p>
+<ol class="last loweralpha simple">
+<li><code class="docutils literal notranslate"><span class="pre">pet_population['elephants']</span> <span class="pre">=</span> <span class="pre">0</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">pet_population['elephants']</span> <span class="pre">=</span> <span class="pre">''</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">del</span> <span class="pre">pet_population['elephants']</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">pet_population[2]</span> <span class="pre">=</span> <span class="pre">0</span></code></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="dictionary-basics.html"><span aria-hidden="true">&larr;</span> <span class="section-number">12.1. </span>Dictionary Basics</a></li>
+        
+        
+        <li class="next"><a href="dictionary-methods.html"><span class="section-number">12.3. </span>Dictionary Methods <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

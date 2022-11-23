@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>23.2. Exercises: SQL Part 5 - Schemas and CRUD Operations &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="23.3. Studio: SQL Part 5 - Schemas and CRUD Operations" href="studio.html" />
+    <link rel="prev" title="23.1. SQL Part 5 - Schemas and CRUD Operations" href="sql-part5.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">23. </span>SQL Part 5 - Schemas and CRUD Operations</a></li>
+    <li class="active"><span class="section-number">23.2. </span>Exercises: SQL Part 5 - Schemas and CRUD Operations</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="exercises-sql-part-5-schemas-and-crud-operations">
+<h1><span class="section-number">23.2. </span>Exercises: SQL Part 5 - Schemas and CRUD Operations<a class="headerlink" href="#exercises-sql-part-5-schemas-and-crud-operations" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="getting-started">
+<h2><span class="section-number">23.2.1. </span>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>Fork this <a class="reference external" href="https://github.com/gildedgardenia/sql-part5-exercises" target="_blank">GitHub repository<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> and
+clone to your computer. If you need a refresher on how to do this
+see <a class="reference internal" href="../../appendices/jupyter-notebooks/using-github-notebooks.html#usinggithubnotebooks"><span class="std std-ref">Instruction for Using GitHub w/Jupyter Notebooks</span></a>.</p>
+</div>
+<div class="section" id="setup-a-new-connection">
+<h2><span class="section-number">23.2.2. </span>Setup a New Connection<a class="headerlink" href="#setup-a-new-connection" title="Permalink to this headline">¶</a></h2>
+<p>For this lesson, you will be using a separate username and password than the one you have been using for the class so far. This new account is unique to you and has the permissions necessary to practice the types of queries covered in the reading.</p>
+<div class="line-block">
+<div class="line">To set up a new connection, do the following:</div>
+</div>
+<ol class="arabic">
+<li><p class="first">Open Azure Data Studio</p>
+</li>
+<li><p class="first">Select New and then New Connection</p>
+<div class="figure align-default">
+<img alt="Azure Data Studio welcome screen with new button clicked and drop down menu selecting new connection." src="../../_images/NewConnection.png" />
+</div>
+</li>
+<li><p class="first">Use the username and password assigned to you.</p>
+</li>
+<li><p class="first">The database you will connect to is the JunkDB assigned to your class.</p>
+<div class="figure align-default">
+<img alt="Connection details pop up with username, password and database filled in." src="../../_images/ConnectionDets.png" />
+</div>
+</li>
+</ol>
+<p>With your new connection configured, click on the junk database in the Object Explorer. Instead of clicking on Tables, click on the folder called Security and then Schemas. You should see a schema with your name on it. When practicing these queries, you will only be able to use your schema.</p>
+<div class="line-block">
+<div class="line">The example below is from the AdventureWorks2019 Database.</div>
+</div>
+<div class="figure align-default">
+<img alt="File Tree, Security Folder to schema folder to individual schemas." src="../../_images/Schemas.png" />
+</div>
+</div>
+<div class="section" id="submitting-your-work">
+<h2><span class="section-number">23.2.3. </span>Submitting Your Work<a class="headerlink" href="#submitting-your-work" title="Permalink to this headline">¶</a></h2>
+<p>When finished make sure to push your changes up to GitHub. Copy the link to your GitHub
+repository and paste it into the submission box in Canvas for <strong>Exercises: SQL Part 5</strong>
+and click <em>Submit</em>.</p>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="sql-part5.html"><span aria-hidden="true">&larr;</span> <span class="section-number">23.1. </span>SQL Part 5 - Schemas and CRUD Operations</a></li>
+        
+        
+        <li class="next"><a href="studio.html"><span class="section-number">23.3. </span>Studio: SQL Part 5 - Schemas and CRUD Operations <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8.11. Exercises: Strings &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="9. Lists Keep Things in Order" href="../lists/index.html" />
+    <link rel="prev" title="8.10. The string Module" href="string-module.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">8. </span>Stringing Characters Together</a></li>
+    <li class="active"><span class="section-number">8.11. </span>Exercises: Strings</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="exercises-strings">
+<span id="strings-exercises"></span><h1><span class="section-number">8.11. </span>Exercises: Strings<a class="headerlink" href="#exercises-strings" title="Permalink to this headline">¶</a></h1>
+<p>The exercises have been broken up into three parts.
+There are <em>five</em> replit pages with starter code for you to fork.
+Most sections have replit starter code provided.
+You should see links to your starter code above the exercise steps.</p>
+<div class="section" id="part-one-bracket-notation">
+<h2><span class="section-number">8.11.1. </span>Part One: Bracket Notation<a class="headerlink" href="#part-one-bracket-notation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="points-to-ponder">
+<h3><span class="section-number">8.11.1.1. </span>Points to Ponder<a class="headerlink" href="#points-to-ponder" title="Permalink to this headline">¶</a></h3>
+<p>Identify the result for each of the following statements:</p>
+<p><em>There’s no starter code for this one, just try it on your own with old-fashioned pencil and paper!</em></p>
+<ol class="arabic simple">
+<li><code class="docutils literal notranslate"><span class="pre">'Characters'[8]</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">&quot;Strings</span> <span class="pre">are</span> <span class="pre">sequences</span> <span class="pre">of</span> <span class="pre">characters.&quot;[5]</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">len(&quot;Wonderful&quot;)</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">len(&quot;Do</span> <span class="pre">spaces</span> <span class="pre">count?&quot;)</span></code></li>
+</ol>
+</div>
+<div class="section" id="bracket-notation-basics">
+<h3><span class="section-number">8.11.1.2. </span>Bracket Notation Basics<a class="headerlink" href="#bracket-notation-basics" title="Permalink to this headline">¶</a></h3>
+<p>The starter code for this and the following part can be found at <a class="reference external" href="https://replit.com/&#64;launchcode/StringsExercisesPart1-2and3" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p>Use bracket notation to:</p>
+<ol class="arabic simple">
+<li>Print a slice of the first 12 characters from
+<code class="docutils literal notranslate"><span class="pre">&quot;Strings_are_sequences_of_characters.&quot;</span></code></li>
+<li>Print a slice of the last 12 characters from the same string. You should
+NOT have to count the index values yourself!</li>
+<li>Print a slice of the middle 12 characters from the same string.</li>
+</ol>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/strings.html#strings-exercise-solutions1-2"><span class="std std-ref">Check Your Solutions</span></a></p>
+</div>
+<div class="section" id="looping-through-a-string">
+<h3><span class="section-number">8.11.1.3. </span>Looping Through a String<a class="headerlink" href="#looping-through-a-string" title="Permalink to this headline">¶</a></h3>
+<p>Use index values to loop <em>backwards</em> through a string:</p>
+<ol class="arabic simple">
+<li>First, print one letter per line.</li>
+<li>Next, instead of one letter per line, use the accumulator pattern to build
+up and print the reversed string. For example, if given the string
+<code class="docutils literal notranslate"><span class="pre">'good'</span></code>, your program prints <code class="docutils literal notranslate"><span class="pre">doog</span></code>.</li>
+<li>Finally, use concatenation to print the combination of the original and
+reversed string. For example, given the string <code class="docutils literal notranslate"><span class="pre">'tomato'</span></code>, your program
+prints <code class="docutils literal notranslate"><span class="pre">tomatootamot</span></code>. (If you want to be fancy, include the <code class="docutils literal notranslate"><span class="pre">|</span></code>
+character to make the output look almost like a mirrored image: <code class="docutils literal notranslate"><span class="pre">tomato</span> <span class="pre">|</span> <span class="pre">otamot</span></code>).</li>
+</ol>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/strings.html#strings-exercise-solutions1-3"><span class="std std-ref">Check Your Solutions</span></a></p>
+</div>
+</div>
+<div class="section" id="part-two-string-methods-and-operations">
+<h2><span class="section-number">8.11.2. </span>Part Two: String Methods and Operations<a class="headerlink" href="#part-two-string-methods-and-operations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="string-methods-and-data-types">
+<h3><span class="section-number">8.11.2.1. </span>String Methods and Data Types<a class="headerlink" href="#string-methods-and-data-types" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://replit.com/&#64;launchcode/StringsExercisesPart2-1" target="_blank">Code it at repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">len()</span></code> function returns the number of characters in a string. However,
+the function will NOT give us the length of an integer. If <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">=</span> <span class="pre">1001</span></code>,
+then <code class="docutils literal notranslate"><span class="pre">len(num)</span></code> throws an error instead of returning <code class="docutils literal notranslate"><span class="pre">4</span></code>.</p>
+<ol class="arabic simple">
+<li>Use <code class="docutils literal notranslate"><span class="pre">str()</span></code> to change <code class="docutils literal notranslate"><span class="pre">num</span></code> from an <code class="docutils literal notranslate"><span class="pre">int</span></code> to a string data type.</li>
+<li>Print the length (number of digits) in <code class="docutils literal notranslate"><span class="pre">num</span></code>.</li>
+<li>Modify your code to print the number of digits in a <code class="docutils literal notranslate"><span class="pre">float</span></code> value (e.g.
+<code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">=</span> <span class="pre">123.45</span></code> has 5 digits but a length of 6). The digit count should
+NOT include the decimal point.</li>
+<li>What if <code class="docutils literal notranslate"><span class="pre">num</span></code> could be EITHER an integer or a decimal? Add an <code class="docutils literal notranslate"><span class="pre">if/else</span></code>
+statement so your code can handle both cases.  (Hint: Consider using the
+<code class="docutils literal notranslate"><span class="pre">find()</span></code> method or the <code class="docutils literal notranslate"><span class="pre">in</span></code> operator to check if <code class="docutils literal notranslate"><span class="pre">num</span></code> contains a
+decimal point).</li>
+</ol>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/strings.html#strings-exercise-solutions2-1"><span class="std std-ref">Check Your Solutions</span></a></p>
+</div>
+<div class="section" id="loops-conditionals-and-strings-oh-my">
+<h3><span class="section-number">8.11.2.2. </span>Loops, Conditionals, and Strings! Oh my!<a class="headerlink" href="#loops-conditionals-and-strings-oh-my" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://replit.com/&#64;launchcode/StringsExercisesPart2-2" target="_blank">Code it at repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p>Given <code class="docutils literal notranslate"><span class="pre">word</span> <span class="pre">=</span> <span class="pre">'bag'</span></code>:</p>
+<ol class="arabic">
+<li><p class="first">Set up a loop to iterate through the string of lowercase vowels,
+<code class="docutils literal notranslate"><span class="pre">'aeiou'</span></code>.</p>
+</li>
+<li><p class="first">Inside the loop, create a new string from <code class="docutils literal notranslate"><span class="pre">word</span></code>, but with a different
+vowel. Use the <code class="docutils literal notranslate"><span class="pre">replace()</span></code> string method.</p>
+</li>
+<li><p class="first">Print the new string.</p>
+<p>Properly done, your output should look something like this:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>bag
+beg
+big
+bog
+bug
+</pre></div>
+</div>
+</li>
+<li><p class="first">Try other words besides <code class="docutils literal notranslate"><span class="pre">'bag'</span></code>!</p>
+</li>
+</ol>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/strings.html#strings-exercise-solutions2-2"><span class="std std-ref">Check Your Solutions</span></a></p>
+</div>
+<div class="section" id="method-chaining-fun-with-dna">
+<h3><span class="section-number">8.11.2.3. </span>Method Chaining Fun with DNA<a class="headerlink" href="#method-chaining-fun-with-dna" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://replit.com/&#64;launchcode/StringsExercisesPart2-3and4" target="_blank">Code it at repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p>Consider a string that represents a strand of DNA:
+<code class="docutils literal notranslate"><span class="pre">dna</span> <span class="pre">=</span> <span class="pre">&quot;</span> <span class="pre">TCG-TAC-gaC-TAC-CGT-CAG-ACT-TAa-CcA-GTC-cAt-AGA-GCT</span>&#160;&#160;&#160; <span class="pre">&quot;</span></code>. There
+are some typos in the string that you need to fix:</p>
+<ol class="arabic simple">
+<li>Use the <code class="docutils literal notranslate"><span class="pre">strip()</span></code> method to remove the leading and trailing whitespace,
+and then print the result.</li>
+<li>Change all of the letters in the DNA string to UPPERCASE and print the
+result.</li>
+<li>Note that you need to <em>reassign</em> the changes back to the <code class="docutils literal notranslate"><span class="pre">dna</span></code> variable in order to see them printed.
+Apply these fixes to your code so that <code class="docutils literal notranslate"><span class="pre">print(dna)</span></code> prints the DNA strand in UPPERCASE
+with no whitespace.</li>
+<li>Let’s use string methods to do more work on the same DNA strand:<ol class="loweralpha">
+<li>Use <code class="docutils literal notranslate"><span class="pre">replace()</span></code> to remove the sequence <code class="docutils literal notranslate"><span class="pre">'GCT'</span></code>, and then print the altered
+strand. Don’t forget about the extra hyphen!</li>
+<li>Look for the sequence <code class="docutils literal notranslate"><span class="pre">'CAT'</span></code> with <code class="docutils literal notranslate"><span class="pre">find()</span></code>. If found print, <code class="docutils literal notranslate"><span class="pre">'CAT</span>
+<span class="pre">found'</span></code>, otherwise print, <code class="docutils literal notranslate"><span class="pre">'CAT</span> <span class="pre">NOT</span> <span class="pre">found'</span></code>.</li>
+<li>Use <code class="docutils literal notranslate"><span class="pre">count()</span></code> to find the number of hyphens (<code class="docutils literal notranslate"><span class="pre">-</span></code>) in the string, then
+print the number of <em>genes</em> (in this case, a gene is a set of 3 letters) in the DNA strand. Note
+that the number of genes will be 1 more than the number of hyphens.</li>
+<li>Finally, use an f-string to print the output
+<code class="docutils literal notranslate"><span class="pre">&quot;The</span> <span class="pre">DNA</span> <span class="pre">string</span> <span class="pre">is</span> <span class="pre">___</span> <span class="pre">characters</span> <span class="pre">long</span> <span class="pre">and</span> <span class="pre">contains</span> <span class="pre">___</span> <span class="pre">genes.&quot;</span></code> Fill in
+the blanks with the length of the string and the number of genes.</li>
+</ol>
+</li>
+</ol>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/strings.html#strings-exercise-solutions2-3"><span class="std std-ref">Check Your Solutions</span></a></p>
+</div>
+</div>
+<div class="section" id="part-three-string-formatting">
+<h2><span class="section-number">8.11.3. </span>Part Three: String Formatting<a class="headerlink" href="#part-three-string-formatting" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="template-literals">
+<h3><span class="section-number">8.11.3.1. </span>Template Literals<a class="headerlink" href="#template-literals" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://replit.com/&#64;launchcode/StringsExercisesPart3-1" target="_blank">Code it at repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p>Assign your favorite, school-appropriate number and word to two variables.</p>
+<ol class="arabic simple">
+<li>Use <code class="docutils literal notranslate"><span class="pre">format()</span></code> and index values to print the string,
+<code class="docutils literal notranslate"><span class="pre">&quot;Here</span> <span class="pre">is</span> <span class="pre">my</span> <span class="pre">number:</span> <span class="pre">___,</span> <span class="pre">and</span> <span class="pre">here</span> <span class="pre">is</span> <span class="pre">my</span> <span class="pre">word:</span> <span class="pre">___,</span> <span class="pre">and</span> <span class="pre">here</span> <span class="pre">is</span> <span class="pre">my</span>
+<span class="pre">number</span> <span class="pre">again:</span> <span class="pre">___.&quot;</span></code></li>
+<li>Print the string, <code class="docutils literal notranslate"><span class="pre">&quot;Here</span> <span class="pre">is</span> <span class="pre">my</span> <span class="pre">word</span> <span class="pre">3</span> <span class="pre">times:</span> <span class="pre">___/___/___,</span> <span class="pre">and</span> <span class="pre">here</span> <span class="pre">is</span> <span class="pre">my</span>
+<span class="pre">number</span> <span class="pre">squared:</span> <span class="pre">___.&quot;</span></code></li>
+</ol>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/strings.html#strings-exercise-solutions3-1"><span class="std std-ref">Check Your Solutions</span></a></p>
+</div>
+<div class="section" id="debugging-practice">
+<h3><span class="section-number">8.11.3.2. </span>Debugging Practice<a class="headerlink" href="#debugging-practice" title="Permalink to this headline">¶</a></h3>
+<p><em>No starter code for this one.</em></p>
+<p>The following code sample works, but it can be improved.</p>
+<ol class="arabic simple">
+<li>Assuming that <code class="docutils literal notranslate"><span class="pre">advice</span></code> remains a string, when will the code produce the
+wrong output?</li>
+<li>Why will the code do this?</li>
+<li>What should the programmer do to fix the code?</li>
+</ol>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">advice</span> <span class="o">=</span> <span class="s2">&quot;Don&#39;t Panic&quot;</span>
+
+<span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;The text, &#39;</span><span class="si">{0}</span><span class="s2">&#39; contains </span><span class="si">{1}</span><span class="s2"> characters.&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Don&#39;t Panic&quot;</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>Console Output</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The text, &#39;Don&#39;t Panic&#39; contains 11 characters.
+</pre></div>
+</div>
+<p><a class="reference internal" href="../../appendices/exercise-solutions/strings.html#strings-exercise-solutions3-2"><span class="std std-ref">Check Your Solutions</span></a></p>
+</div>
+</div>
+<div class="section" id="submitting-your-work">
+<h2><span class="section-number">8.11.4. </span>Submitting Your work<a class="headerlink" href="#submitting-your-work" title="Permalink to this headline">¶</a></h2>
+<p>When finished copy the URLs to your repls for the exercises, separating each URL with a semi-colon and paste them into the submission box in Canvas for <strong>Exercises: Strings and Lists</strong> and click <em>Submit</em>.</p>
+<p>You should have a total of <strong>9</strong> repls, <strong>5</strong> from the above String Exercises and <strong>4</strong> from the <a class="reference internal" href="../lists/exercises.html#exercises-lists"><span class="std std-ref">List Exercises</span></a></p>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="string-module.html"><span aria-hidden="true">&larr;</span> <span class="section-number">8.10. </span>The <code class="docutils literal notranslate"><span class="pre">string</span></code> Module</a></li>
+        
+        
+        <li class="next"><a href="../lists/index.html"><span class="section-number">9. </span>Lists Keep Things in Order <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
