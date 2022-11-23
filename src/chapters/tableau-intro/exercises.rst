@@ -13,10 +13,7 @@ Work through `World Happiness Dashboard <https://towardsdatascience.com/world-ha
 Step-by-step Guide for this Walkthrough
 -----------------------------------------
 
-.. admonition:: Note
-
-   As you read through the above article, try what the videos demonstrate. Then play around with Tableau 
-   and see if you can figure it out.  Alternatively use the below steps to create the visualizations from the article.
+   As you read through the article, don't hesitate to try out what the videos demonstrate or just experiment with Tableau to figure things out. We have outlined the steps from the article below so you don't lose your place!
 
 
 #. Download the 2019.csv file (the link above should take you to that page)
