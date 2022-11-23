@@ -61,7 +61,7 @@ Step-by-step Guide for this Walkthrough
 
       #. Notice that is also now a SUM - keep it this way
       
-   #. To rename any axis, double click on it and make the changes desired
+   #. To rename an axis, double-click on it and make the changes desired.
    #. Rename your sheet
 
 #. **Make a Dashboard**
