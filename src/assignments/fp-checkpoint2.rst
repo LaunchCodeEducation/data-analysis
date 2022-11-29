@@ -19,7 +19,7 @@ within the notebook using your chosen dataset. Add notes about your EDA where di
 
 **Examples**
 
- Checkpoint 2 examples can be found `here <https://github.com/LaunchCodeEducation/finalProjectDAExamples/tree/main/Checkpoint%202>`__.
+Checkpoint 2 examples can be found `here <https://github.com/LaunchCodeEducation/finalProjectDAExamples/tree/main/Checkpoint%202>`__.
 
 
 Submitting Your Work
