@@ -10,17 +10,17 @@ Getting Started
 
 #. Open Tableau Public and connect to your dataset.  
 
-#. Create visualizations for the following:  (a sheet for each)
+#. Create visualizations for the following:  (a sheet for each).
 
    #. How many Mushrooms are poisonous vs edible?
    #. How many different habitats were mushrooms collected from?
-   #. How many Mushroom habitats compared to class
-   #. How many Mushrooms sorted by class and cap-color
-   #. `Create aliases <https://help.tableau.com/current/pro/desktop/en-us/datafields_fieldproperties_aliases_ex1editing.htm>`__ for each letter in chart d
+   #. How many Mushroom habitats compared to class?
+   #. How many Mushrooms sorted by class and cap-color?
+   #. `Create aliases <https://help.tableau.com/current/pro/desktop/en-us/datafields_fieldproperties_aliases_ex1editing.htm>`__ for each letter in chart d.
       
-      a. Use the context provided in the dataset for what each letter represents
-      #. Explore the “Marks” card to add color or size to chart d based on the chart design you have chosen
-      #. Give your chart a new title
+      a. Use the context provided in the dataset for what each letter represents.
+      #. Explore the “Marks” card to add color or size to chart d based on the chart design you have chosen.
+      #. Give your chart a new title.
       
    #. Create your own chart with at least 2 dimensions and aliases to provide context.
    #. Create a dashboard with at least 2 of your sheets.
