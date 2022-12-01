@@ -15,50 +15,50 @@ Part A: Hierarchy
 
 #. What is the total number of adult hotel bookings according to the Reservation Status Date dimension?
    
-   A. Drill Down to the Months level.
+   #. Drill down to the Months level.
 
 #. What is the average daily rate by customer type for booking hotels compared to the arrival day of the month, week number, and year?
 
-   A. Create a hierarchy using:
+   #. Create a hierarchy using:
    
-      1. Arrival Day of the Month
+      A. Arrival Day of the Month
       #. Arrival Date of the Week Number
       #. Arrival Date Year Measures.
       
 Part B: Filtering
 ^^^^^^^^^^^^^^^^^
 
-3. How many total adults and children booked hotel rooms between 2015-2017?
+#. How many total adults and children booked hotel rooms between 2015-2017?
 
-   A. Create a filter for “Arrival Date Year” using the either DD or Filter card.
+   #. Create a filter for “Arrival Date Year” using the either DD or Filter card.
 
 #. What countries had a total of 1,000 total adult hotel bookings in 2016?
 
-   A. Hint: set the conditions of your filters
+   #. Hint: set the conditions of your filters
  
 Part C: Grouping
 ^^^^^^^^^^^^^^^^
 
-5. What months were the most popular for adult hotel bookings only in South America?
+#. What months were the most popular for adult hotel bookings only in South America?
    
-   A. Create a group of South American countries and place the group on the shelf
+   #. Create a group of South American countries and place the group on the shelf
 
 #. Which country in South America had the highest number of adult hotel bookings total?
 
 Part D: Sets
 ^^^^^^^^^^^^
 
-7. What countries have hotel bookings that occurred within 10 days or less of arrival?
+#. What countries have hotel bookings that occurred within 10 days or less of arrival?
    
-   A. Hint: Create a conditional.  
+   #. Hint: Create a conditional.  
 
-      1. You can do this by filtering your set.  
+      A. You can do this by filtering your set.  
       #. You should see the options: “General”, “Conditional”, and “Top”.
       #. Select “Conditional”, by field and then select the desired field and the operator and the value.
 
 #. Student Choice: Create a hierarchy of sets to explore the ADR of a country you would like to visit.
 
-   A. Start with the continent
+   #. Start with the continent
    #. Then a region
    #. Then the country.  
  

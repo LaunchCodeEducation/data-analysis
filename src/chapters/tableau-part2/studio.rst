@@ -29,16 +29,16 @@ Download `library data set <https://www.kaggle.com/imls/public-libraries?select=
 
 #. Open the csv file in Tableau Public.  
 
-   A. It is a larger file than we have previously used and may take a few minutes to open. 
+   #. It is a larger file than we have previously used and may take a few minutes to open. 
    #. `Use your downtime wisely <https://xkcd.com/303/>`__.
 
 #. When you open this data set, you will want to create a relationship between the *libraries.csv* file and the *states.csv* file using branch libraries.
 
 #. Final outcome of this studio will include in a single Tableau Public viz:
 
-   A. 9 worksheets
+   #. 9 worksheets
 
-      #. 10 if you do the bonus 
+      A. 10 if you do the bonus 
       
    #. And, 1 dashboard 
 
@@ -86,23 +86,23 @@ Part A: EDA
 
 #. How many visits occurred in each region?  
    
-   A. How does that compare to circulation transactions?
+   #. How does that compare to circulation transactions?
 
 #. Compare Library Programs against State Population.
 
-   A. Try something other than a bar chart
+   #. Try something other than a bar chart
    #. Explore the marks card.  Add at least one feature.
 
 #. How many visits in each region compared to the End Date?
 
-   A. Hint: Use the End date from the libraries.csv file.
+   #. Hint: Use the End date from the libraries.csv file.
 
-      #. Pull other elements from the states.csv file.
+      A. Pull other elements from the states.csv file.
       #. Hide the Null values in your final viz.
       
    #. Use the US Regional Codes Table above to create aliases for each region. 
    
-      #. Hint: Rename the Region only at this time. 
+      A. Hint: Rename the Region only at this time. 
       #. Don't worry about states right now.
 
 :ref:`Back to Setting Up Studio<tableau-part2-setup-studio>`
@@ -122,30 +122,29 @@ Part B: Collect Your Data
 
 #. Set Your Data
 
-   A. Select your region as a set.  
+   #. Select your region as a set.  
 
-      #. We are going to compare your region to the rest of the US. 
+      A. We are going to compare your region to the rest of the US. 
       #. Give this set a name so that you can easily find and use it
  
 #. Group Your Data
 
-   A. Group the states within your region as a whole.
+   #. Group the states within your region as a whole.
     
-      #. Give this group a name.  
+      A. Give this group a name.  
       #. If you used the “State Code” field for your group, you will need to create aliases for the state number to either the name or abbreviation
-
-         a. For example, “51” becomes “Virginia” or “VA”
-         #. See `document page D-44 <https://www.imls.gov/sites/default/files/fy2014_pls_data_file_documentation.pdf>`__ for the state codes
+      #. For example, “51” becomes “Virginia” or “VA”
+      #. See `document page D-44 <https://www.imls.gov/sites/default/files/fy2014_pls_data_file_documentation.pdf>`__ for the state codes
 
    #. Group the states individually
    
-      #. Give this group a name.
+      A. Give this group a name.
 
 #. Organizing Your Collections
 
-   A. If you want to create a hierarchy to better organize your data or drill down at some point, this is your choice.  
+   #. If you want to create a hierarchy to better organize your data or drill down at some point, this is your choice.  
    
-      #. You can create vizzes with or without hierarchies.  
+      A. You can create vizzes with or without hierarchies.  
       #. It is your choice. 
 
 **Questions to Answer with a Viz**
@@ -156,25 +155,25 @@ Part B: Collect Your Data
 
 #. How many Central Libraries vs Branch Libraries are in each state within your region?
 
-   A. How many bookmobiles?
+   #. How many bookmobiles?
    #. Add a tooltip or make an interactive filter card
 
 #. How many Young Adult (YA) library programs does each state in your region host and how many individuals attend?
 
-   A. Add a detail and a label to this viz. 
+   #. Add a detail and a label to this viz. 
 
 #. Between Central Libraries and Branch Libraries in your region, how many employees are Librarians?
 
-   A. Use the marks card to show data about Librarians.
+   #. Use the marks card to show data about Librarians.
 
 #. How many Librarians hold an MLS degree in your region compared to the rest of the US?
 
-   A. Compared to how many Total Staff?
+   #. Compared to how many Total Staff?
    #. Use a new chart format (if possible)
 
 #. How do circulation transactions compare between your region and the rest of the US over 2013-2014?
 
-   A. Hint: Use the End Date pill.  Hide any Null values, we only want reported values at this time. 
+   #. Hint: Use the End Date pill.  Hide any Null values, we only want reported values at this time. 
    #. Add a label
  
 
@@ -197,8 +196,10 @@ Bonus Mission
 
 #. Within your region, how many children's programs were distributed by a state by county?
 
-   A. Hint: Drag the State (states.csv) file into the central plane, and use the *Marks* card.  
-      #. Be sure to filter.
+   #. Hint: Drag the State (states.csv) file into the central plane, and use the *Marks* card.  
+   
+      A. Be sure to filter.
+      
    #. Hint: County is a dimension found in the libraries.csv table.
  
 
@@ -211,12 +212,12 @@ Finishing Touches
 #. Review and edit any axes so that they don't contain any file information. 
 #. Make sure any filtering, group, or set information is easy to understand. 
 
-   A. For example, when using a set the predefined labels may say “In” and “Out”. Would extra context make them easier to understand? 
+   #. For example, when using a set the predefined labels may say “In” and “Out”. Would extra context make them easier to understand? 
    #. Don't forget to title your charts.  
 
 #. If you want to explore fonts and colors, go right ahead. 
 
-   A. Feel free to change the colors of any/all of your charts.  
+   #. Feel free to change the colors of any/all of your charts.  
 
 
 Submitting Your Work

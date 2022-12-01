@@ -24,7 +24,7 @@ Watch the following videos on Data Preparation (17:37 min total)
 
 `The Data Interpreter (4:29) <https://www.youtube.com/watch?v=dnagLq0QLXo>`__.
 
-`Pivoting Your Data (4:54) <https://www.youtube.com/watch?v=aNBXggXEjaw>`__.
+`Pivoting Your Data (4:54) <https://www.youtube.com/watch?v=zJm6qc5FaSs>`__.
 
 `Splitting Your Data (2:26) <https://www.youtube.com/watch?v=aNBXggXEjaw>`__.
 
