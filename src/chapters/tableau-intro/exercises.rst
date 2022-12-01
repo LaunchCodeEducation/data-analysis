@@ -20,32 +20,31 @@ Download the Dataset
 Viz 1: Happiness Score of Countries — 2019
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Create the Map.   
-
+#. Create the Map.
+   
    #. Drop the **Latitude** pill into the *Rows* shelf.
    #. Drop **Longitude** pill into *Columns* shelf.
-
    #. Drop **Country or region** onto the *Marks Card*.
-
-      #. This is added as a *Detail*. Look at the icons to verify.
-
+      
+      A. This is added as a *Detail*. Look at the icons to verify.
+      
    #. Select **Score** and drag it onto the *Color* box contained in the *Marks* card.
    #. Rename your sheet: either double click on “Sheet 1” in the View or right click on the Sheet tab to update the name.
-
-      a. If only updating the view, the sheet tab name will not change. 
-
+      
+      A. If only updating the view, the sheet tab name will not change. 
+      
 Viz 2: Happiness Score vs GDP and Healthy Life Expectancy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. Drag **Score** onto the *Row* shelf.
    
-   a. It will automatically aggregate as a SUM of Score.
+   #. It will automatically aggregate as a SUM of Score.
    #. To remove that, find the drop down menu on the right side of the pill and select “Dimension”.
-
+   
 #. Drag **GDP per capita** onto the *Columns* shelf.
    
-   a. Convert this into a “Dimension”, too.   
-
+   #. Convert this into a “Dimension”, too.   
+   
 #. Drag the **Healthy Life Expectancy** into the *Color* box found in the *Marks* card.
 #. Rename your sheet.
 
@@ -53,16 +52,16 @@ Viz 3: Freedom and Social Support vs Score
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. Drop **Score** into the *Columns* shelf.
-
-   a. Within the **Score** pill, find the drop down menu and select “Dimension”.
+   
+   #. Within the **Score** pill, find the drop down menu and select “Dimension”.
    
 #. Drag the **Freedom to make life choices** pill onto the *Rows* shelf.
-
-   a. Notice that it changed to a SUM - keep it this way.
-
+   
+   #. Notice that it changed to a SUM - keep it this way.
+   
 #. Drag the **Social Support** pill onto the *Row* shelf.
-
-   a. Notice that is also now a SUM - keep it this way.
+   
+   #. Notice that is also now a SUM - keep it this way.
    
 #. To rename an axis, double-click on it and make the changes desired.
 #. Rename your sheet.
@@ -72,14 +71,13 @@ Make a Dashboard
 
 #. Use the tab to create a new dashboard.
 #. Drag your sheets onto the dashboard.
-
+   
    .. admonition:: Note
-      
+   
       If you only renamed the sheets within your view, the tabs will not have changed.  This is okay.  You can either update the tab names now or work with Sheet 1, Sheet 2, and Sheet 3.  
-
+   
 #. You may make it identical to the dashboard in the article, or design it yourself.
 
- 
 Submitting Your Work
 --------------------
 
