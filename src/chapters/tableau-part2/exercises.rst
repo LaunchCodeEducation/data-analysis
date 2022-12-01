@@ -60,7 +60,7 @@ Part D: Sets
 
    A. Start with the continent
    #. Then a region
-   #. #. Then the country.  
+   #. Then the country.  
  
 Submitting Your Work
 --------------------

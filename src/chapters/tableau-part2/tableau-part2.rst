@@ -1,8 +1,8 @@
 Tableau Part 2 - Data Preparation
 =================================
 
-Reading
--------
+Reading and Videos
+--------------------
 
 Read the following articles. As you work through the prep work, feel free to watch any of the videos linked in the readings. You will need to be signed into your Tableau account for access.
 
@@ -34,9 +34,9 @@ Additional Resources (Optional)
 
 For additional video resources check out these Tableau videos `here <https://www.tableau.com/learn/training/20211>`__.
 
-#. These videos are for Tableau version 2021.1
+#. These videos are for Tableau version 2021.1.
 #. You can select the version at the bottom of the collection list.
-#. Suggested Topic: Visual Analytics
+#. We suggest checking out Visual Analytics.
 
 Check Your Understanding
 ------------------------
