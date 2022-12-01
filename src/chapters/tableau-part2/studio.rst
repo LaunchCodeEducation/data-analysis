@@ -33,20 +33,17 @@ Download `library data set <https://www.kaggle.com/imls/public-libraries?select=
    #. `Use your downtime wisely <https://xkcd.com/303/>`__.
 
 #. When you open this data set, you will want to create a relationship between the *libraries.csv* file and the *states.csv* file using branch libraries.
-
+#. :ref:`Part A<tableau-part2-partA>` invites you to briefly explore the data set.  You will explore all the regions of the US.
+#. In :ref:`Part B <tableau-part2-partB>`, using your assigned region, you will be asked to answer questions using the collection type of your choice: a set or group.  
+#. In :ref:`Part C <tableau-part2-partC>`,  you will select 2 (or more) of your favorite charts and create a dashboard that highlights results from your selected region.
 #. Final outcome of this studio will include in a single Tableau Public viz:
 
-   #. 9 worksheets
+   #. 9 worksheets.
 
-      A. 10 if you do the bonus 
+      A. 10 if you do the bonus. 
       
-   #. And, 1 dashboard 
+   #. And, 1 dashboard. 
 
-#. :ref:`Part A<tableau-part2-partA>` invites you to briefly explore the data set.  You will explore all the regions of the US.
-
-#. In :ref:`Part B <tableau-part2-partB>`, using your assigned region, you will be asked to answer questions using the collection type of your choice: a set or group.  
-
-#. In :ref:`Part C <tableau-part2-partC>`,  you will select 2 (or more) of your favorite charts and create a dashboard that highlights results from your selected region.
 
 .. list-table:: Regional Code Table:
       :align: left
@@ -90,7 +87,7 @@ Part A: EDA
 
 #. Compare Library Programs against State Population.
 
-   #. Try something other than a bar chart
+   #. Try something other than a bar chart.
    #. Explore the marks card.  Add at least one feature.
 
 #. How many visits in each region compared to the End Date?
@@ -120,27 +117,27 @@ Part B: Collect Your Data
 
 **Create collections to hold your data:**
 
-#. Set Your Data
+#. Set Your Data.
 
    #. Select your region as a set.  
 
       A. We are going to compare your region to the rest of the US. 
-      #. Give this set a name so that you can easily find and use it
+      #. Give this set a name so that you can easily find and use it.
  
-#. Group Your Data
+#. Group Your Data.
 
    #. Group the states within your region as a whole.
     
       A. Give this group a name.  
-      #. If you used the “State Code” field for your group, you will need to create aliases for the state number to either the name or abbreviation
-      #. For example, “51” becomes “Virginia” or “VA”
-      #. See `document page D-44 <https://www.imls.gov/sites/default/files/fy2014_pls_data_file_documentation.pdf>`__ for the state codes
+      #. If you used the “State Code” field for your group, you will need to create aliases for the state number to either the name or abbreviation.
+      #. For example, “51” becomes “Virginia” or “VA”.
+      #. See `document page D-44 <https://www.imls.gov/sites/default/files/fy2014_pls_data_file_documentation.pdf>`__ for the state codes.
 
-   #. Group the states individually
+   #. Group the states individually.
    
       A. Give this group a name.
 
-#. Organizing Your Collections
+#. Organizing Your Collections.
 
    #. If you want to create a hierarchy to better organize your data or drill down at some point, this is your choice.  
    
@@ -156,7 +153,7 @@ Part B: Collect Your Data
 #. How many Central Libraries vs Branch Libraries are in each state within your region?
 
    #. How many bookmobiles?
-   #. Add a tooltip or make an interactive filter card
+   #. Add a tooltip or make an interactive filter card.
 
 #. How many Young Adult (YA) library programs does each state in your region host and how many individuals attend?
 
@@ -169,12 +166,12 @@ Part B: Collect Your Data
 #. How many Librarians hold an MLS degree in your region compared to the rest of the US?
 
    #. Compared to how many Total Staff?
-   #. Use a new chart format (if possible)
+   #. Use a new chart format (if possible).
 
 #. How do circulation transactions compare between your region and the rest of the US over 2013-2014?
 
    #. Hint: Use the End Date pill.  Hide any Null values, we only want reported values at this time. 
-   #. Add a label
+   #. Add a label.
  
 
 :ref:`Back to Setting Up Studio<tableau-part2-setup-studio>`
@@ -185,7 +182,7 @@ Part B: Collect Your Data
 Part C: Create a Dashboard
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Create a dashboard that highlights at least 2 of your favorite charts from the studio.  (The bonus can be one of these)
+Create a dashboard that highlights at least 2 of your favorite charts from the studio.  (The bonus can be one of these).
 
 :ref:`Back to Setting Up Studio<tableau-part2-setup-studio>`
 

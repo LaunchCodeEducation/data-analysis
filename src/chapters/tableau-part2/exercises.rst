@@ -21,8 +21,8 @@ Part A: Hierarchy
 
    #. Create a hierarchy using:
    
-      A. Arrival Day of the Month
-      #. Arrival Date of the Week Number
+      A. Arrival Day of the Month.
+      #. Arrival Date of the Week Number.
       #. Arrival Date Year Measures.
       
 Part B: Filtering
@@ -34,14 +34,14 @@ Part B: Filtering
 
 #. What countries had a total of 1,000 total adult hotel bookings in 2016?
 
-   #. Hint: set the conditions of your filters
+   #. Hint: set the conditions of your filters.
  
 Part C: Grouping
 ^^^^^^^^^^^^^^^^
 
 #. What months were the most popular for adult hotel bookings only in South America?
    
-   #. Create a group of South American countries and place the group on the shelf
+   #. Create a group of South American countries and place the group on the shelf.
 
 #. Which country in South America had the highest number of adult hotel bookings total?
 
@@ -58,8 +58,8 @@ Part D: Sets
 
 #. Student Choice: Create a hierarchy of sets to explore the ADR of a country you would like to visit.
 
-   #. Start with the continent
-   #. Then a region
+   #. Start with the continent.
+   #. Then a region.
    #. Then the country.  
  
 Submitting Your Work
