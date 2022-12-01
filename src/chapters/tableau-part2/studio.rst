@@ -40,7 +40,7 @@ Download `library data set <https://www.kaggle.com/imls/public-libraries?select=
 
    #. 9 worksheets.
 
-      A. 10 if you do the bonus. 
+      a. 10 if you do the bonus. 
       
    #. And, 1 dashboard. 
 
@@ -94,12 +94,12 @@ Part A: EDA
 
    #. Hint: Use the End date from the libraries.csv file.
 
-      A. Pull other elements from the states.csv file.
+      a. Pull other elements from the states.csv file.
       #. Hide the Null values in your final viz.
       
    #. Use the US Regional Codes Table above to create aliases for each region. 
    
-      A. Hint: Rename the Region only at this time. 
+      a. Hint: Rename the Region only at this time. 
       #. Don't worry about states right now.
 
 :ref:`Back to Setting Up Studio<tableau-part2-setup-studio>`
@@ -121,27 +121,27 @@ Part B: Collect Your Data
 
    #. Select your region as a set.  
 
-      A. We are going to compare your region to the rest of the US. 
+      a. We are going to compare your region to the rest of the US. 
       #. Give this set a name so that you can easily find and use it.
  
 #. Group Your Data.
 
    #. Group the states within your region as a whole.
     
-      A. Give this group a name.  
+      a. Give this group a name.  
       #. If you used the “State Code” field for your group, you will need to create aliases for the state number to either the name or abbreviation.
       #. For example, “51” becomes “Virginia” or “VA”.
       #. See `document page D-44 <https://www.imls.gov/sites/default/files/fy2014_pls_data_file_documentation.pdf>`__ for the state codes.
 
    #. Group the states individually.
    
-      A. Give this group a name.
+      a. Give this group a name.
 
 #. Organizing Your Collections.
 
    #. If you want to create a hierarchy to better organize your data or drill down at some point, this is your choice.  
    
-      A. You can create vizzes with or without hierarchies.  
+      a. You can create vizzes with or without hierarchies.  
       #. It is your choice. 
 
 **Questions to Answer with a Viz**
@@ -195,7 +195,7 @@ Bonus Mission
 
    #. Hint: Drag the State (states.csv) file into the central plane, and use the *Marks* card.  
    
-      A. Be sure to filter.
+      a. Be sure to filter.
       
    #. Hint: County is a dimension found in the libraries.csv table.
  

@@ -21,7 +21,7 @@ Part A: Hierarchy
 
    #. Create a hierarchy using:
    
-      A. Arrival Day of the Month.
+      a. Arrival Day of the Month.
       #. Arrival Date of the Week Number.
       #. Arrival Date Year Measures.
       
@@ -52,7 +52,7 @@ Part D: Sets
    
    #. Hint: Create a conditional.  
 
-      A. You can do this by filtering your set.  
+      a. You can do this by filtering your set.  
       #. You should see the options: “General”, “Conditional”, and “Top”.
       #. Select “Conditional”, by field and then select the desired field and the operator and the value.
 
