@@ -43,9 +43,7 @@ Download `FIE Fencing Womens Foil data set <https://www.kaggle.com/datasets/amic
 EDA
 ^^^
 
-1. There are 4 csv's.
-   
-   #. Work with the ones you think you will need to answer your questions.
+1. The dataset contains 4 CSVs. You only need to work with the ones that will provide answers to your questions.
 
 #. Explore the tables and play with the columns you think you might use. 
 
