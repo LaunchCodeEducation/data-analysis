@@ -6,12 +6,12 @@ Getting Started
 
 1. Download this `Bike Sharing in Washington D.C. Dataset <https://www.kaggle.com/marklvl/bike-sharing-dataset>`__.
    
-   A. 2 csv files total. 
+   #. 2 csv files total. 
   
 #. Be sure to read the context and content about this dataset to better understand how and why data was collected.
 #. Open the downloaded dataset in Tableau Public.
 
-   A. Create a relationship between the csv files.
+   #. Create a relationship between the csv files.
    #. ``Dteday`` is a shared column between the two tables.
    
 #. Create a new Tableau Public project to answer the below questions.

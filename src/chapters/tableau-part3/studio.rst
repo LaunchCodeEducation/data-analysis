@@ -51,7 +51,7 @@ Calculations
    #. Use your discretion from what you observe in your vizzes. 
    #. Use a basic calculation to create a new field indicating your measure for high sales.
    
-      #. Use this field in a new chart to display which stores return higher sales than others.
+      a. Use this field in a new chart to display which stores return higher sales than others.
 
 #. TarMart wants to know which of the stores included in this dataset have contributed the most to overall sales in the company. 
 
