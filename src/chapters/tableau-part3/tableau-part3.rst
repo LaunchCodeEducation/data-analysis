@@ -15,21 +15,17 @@ To complete this assignment, you are going to continue coding on the viz you wor
 
 .. list-table:: Tableau Videos with Corresponding Tasks:
       :align: left
-      :widths: 20 40 40
+      :widths: 20 80
       :header-rows: 1
 
       * - **Video**
         - **Name of Video**
-        - **Tasks**
       * - Video 1: 
         - `Combining Sheets On a Dashboard (5:27 min) <https://www.youtube.com/watch?v=yRo5p3MLFMM>`__.
-        - Code-a-long using your project from Chapter 25.
       * - Video 2: 
         - `Adding Interactivity to Your Dashboard (4:10) <https://www.youtube.com/watch?v=evP7rzb7Dcs>`__.
-        - Code-a-long.
       * - Video 3: 
         - `Dashboard Formatting (4:05) <https://www.youtube.com/watch?v=rbfEdOGbEWQ>`__.
-        - Code-a-long. Save and publish your project. 
 
 Part 2: Tableau Calculations & Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
