@@ -41,23 +41,23 @@ Read the following articles, and watch the videos.
 Suggested Resources (not required reading)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-`Custom Date FormatsLinks to an external site. <https://help.tableau.com/current/pro/desktop/en-us/dates_custom_date_formats.htm>`__.
+`Custom Date Formats <https://help.tableau.com/current/pro/desktop/en-us/dates_custom_date_formats.htm>`__.
 
-* Great resource for the plethora of date formats and how to work with them
+* Great resource for the plethora of date formats and how to work with them.
 
-`Date Functions Links to an external site. <https://help.tableau.com/current/pro/desktop/en-us/functions_functions_date.htm>`__.
+`Date Functions <https://help.tableau.com/current/pro/desktop/en-us/functions_functions_date.htm>`__.
 
-* Collection of date functions with definitions and examples
+* Collection of date functions with definitions and examples.
 
-`The Story WorkspaceLinks to an external site. <https://help.tableau.com/current/pro/desktop/en-us/story_workspace.htm>`__.
+`The Story Workspace <https://help.tableau.com/current/pro/desktop/en-us/story_workspace.htm>`__.
 
-* Resource that explains the controls, panes, and features of the story workspace
+* Resource that explains the controls, panes, and features of the story workspace.
 
-`Best Practices for Telling Great StoriesLinks to an external site. <https://help.tableau.com/current/pro/desktop/en-us/story_best_practices.htm>`__.
+`Best Practices for Telling Great Stories <https://help.tableau.com/current/pro/desktop/en-us/story_best_practices.htm>`__.
 
-* An introduction to why and how to tell stories with Tableau
+* An introduction to why and how to tell stories with Tableau.
 
-`Best Practices for Effective DashboardsLinks to an external site. <https://help.tableau.com/current/pro/desktop/en-us/dashboards_best_practices.htm>`__.
+`Best Practices for Effective Dashboards <https://help.tableau.com/current/pro/desktop/en-us/dashboards_best_practices.htm>`__.
 
 * An introduction to making/keeping your dashboards easy to use 
 

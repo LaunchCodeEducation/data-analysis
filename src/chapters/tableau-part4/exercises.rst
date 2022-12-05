@@ -25,21 +25,21 @@ Part 1: How to Create a Resume In Tableau Public
 
 1. `How to Create an Interactive Resume in Tableau <https://www.tableau.com/blog/how-create-interactive-resume-tableau>`__.
 
-   A. Don't feel limited with your visualizations here.  
+   #. Don't feel limited with your visualizations here.  
    #. Browse the `Interactive Resume Gallery <https://www.tableau.com/interactive-resume-gallery>`__, for inspiration.
    
-      1. You can download a viz that you like and explore how they created their resume.
+      A. You can download a viz that you like and explore how they created their resume.
 
 #. Optional resources to help you build your Interactive Resume:
 
-   A. `5 Tips on Creating an Interactive Resume using Tableau <https://www.tableau.com/blog/5-tips-creating-visual-resume-using-tableau-40558>`__.
+   #. `5 Tips on Creating an Interactive Resume using Tableau <https://www.tableau.com/blog/5-tips-creating-visual-resume-using-tableau-40558>`__.
    #. `How to make an interactive resume in Tableau (50 min) <https://www.tableau.com/learn/webinars/how-make-interactive-resume-tableau?ssologin=true#video>`__.
 
-      1. This video will teach you how to make a gantt chart and a lollipop chart. 
+      A. This video will teach you how to make a gantt chart and a lollipop chart. 
    
    #. `Create Your Interactive Resume in Tableau Public? Video (48 min) <https://www.youtube.com/watch?v=YlyO_InVI-E>`__.
 
-      1. This video will teach you how to create an obsolescence chart, as well as how to customize a lollipop cart, and add links to your dashboard.
+      A. This video will teach you how to create an obsolescence chart, as well as how to customize a lollipop cart, and add links to your dashboard.
 
 Part 2: Creating the Data
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -52,9 +52,9 @@ Part 2: Creating the Data
 
 | *Dates:*
 
-1. Start and End Time: 
+#. Start and End Time: 
 
-   A. If you don't remember exactly when you started or ended an experience, use your best judgement and be consistent.  
+   #. If you don't remember exactly when you started or ended an experience, use your best judgement and be consistent.  
    #. Also when you are adding dates into your spreadsheet, look in the data entry line to verify the formatting as well as the cell you are entering data into.  
 
    .. figure:: figures/check-your-dates.png
@@ -64,7 +64,7 @@ Part 2: Creating the Data
 
 #. Formats:  When you open a file in Tableau, you might notice that Tableau thinks your dates are numbers or strings.  
 
-   A. You can convert these to dates in the preview page by selecting the column you want to change, clicking on the dropdown menu and selecting “Change Data Type” then pick what data type you want the value to be.  
+   #. You can convert these to dates in the preview page by selecting the column you want to change, clicking on the dropdown menu and selecting “Change Data Type” then pick what data type you want the value to be.  
 
    .. figure:: figures/string-date-change.png
       :alt: Data preview page in Tableau Public showing how to change data type. 
@@ -73,11 +73,11 @@ Part 2: Creating the Data
 
 #. Remembering Things Once Working In Tableau:
 
-   A. Once you start working in Tableau with your data, you might want to change your data. 
+   #. Once you start working in Tableau with your data, you might want to change your data. 
    #. There could be things you want to add, redesign, or you might have caught a typo.  
    #. You can modify your data.  Go back to your spreadsheet and make your changes.  
 
-      1. For example, you decided that you want to add location to one of your spreadsheets.  Add the column (or columns) to your spreadsheet.  Depending on the program you use, in Excel you might need to only save it to update all your changes, or if using Google Sheets  you will need to download it again as a csv and then replace the old version with the new one.  Once that is done, you can refresh your data in Tableau.
+      A. For example, you decided that you want to add location to one of your spreadsheets.  Add the column (or columns) to your spreadsheet.  Depending on the program you use, in Excel you might need to only save it to update all your changes, or if using Google Sheets  you will need to download it again as a csv and then replace the old version with the new one.  Once that is done, you can refresh your data in Tableau.
 
    .. figure:: figures/refresh-your-data.png
       :alt: Image showing how to use the Data menu to refresh your data

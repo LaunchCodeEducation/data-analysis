@@ -14,7 +14,7 @@ Getting Started
 #. You will present your dashboard at the end of class.
 #. Suggested Topics to Explore:
 
-   A. Weapons
+   #. Weapons
    #. Handedness
    #. Category
    #. Ages
@@ -26,15 +26,15 @@ Getting Started
 Setting Up the Studio:
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Download `FIE Fencing Womens Foil data set <https://www.kaggle.com/datasets/amichaelsen/fie-fencing-womens-foil-data>`__. There are 4 csv files. To download all csv files at once, click on the "Download" bubble next to the "New Notebook" bubble.  An orange arrow is pointing to the "Download" bubble in the image below.
+Download `FIE Fencing Womens Foil data set <https://www.kaggle.com/datasets/amichaelsen/fie-fencing-womens-foil-data>`__. There are 4 csv files. To download all csv files at once, click on the ``Download`` bubble next to the ``New Notebook`` bubble.  An orange arrow is pointing to the ``Download`` bubble in the image below.
 
 .. figure:: figures/download-multi-files.png
-   :alt: An orange arrow points to the "Download" bubble, highlighting the Download option of kaggle.
+   :alt: An orange arrow points to the ``Download`` bubble, highlighting the ``Download`` option of kaggle.
 
 #. Open the csv file in Tableau Public.  
 #. When you open this data set, you may want to create a relationship between the csv files.
 
-   A. You will explore this in the EDA section below.
+   #. You will explore this in the EDA section below.
 
 #. Here is more information about the `International Fencing Federation <https://fie.org/>`__.
 
@@ -45,28 +45,28 @@ EDA
 
 1. There are 4 csv's.
    
-   A. Work with the ones you think you will need to answer your questions.
+   #. Work with the ones you think you will need to answer your questions.
 
 #. Explore the tables and play with the columns you think you might use. 
 
-   A. When you get a viz that you like, ask yourself the following questions:
+   #. When you get a viz that you like, ask yourself the following questions:
 
-      1. Why do you like it?  What is it showing?
-      2. Would it work better with a calculation or any manipulation?
-      3. Would looking at a smaller sample, like the top 100, help?
+      A. Why do you like it?  What is it showing?
+      #. Would it work better with a calculation or any manipulation?
+      #. Would looking at a smaller sample, like the top 100, help?
 
 Cleaning
 ^^^^^^^^
 
 #. Do you need to clean any of the data you have decided to work with?
 
-   A. Any nulls?  
+   #. Any nulls?  
 
-      1. Are they appropriate for the data?
+      A. Are they appropriate for the data?
 
    #. Any discrepancies?
 
-      1.Hint: ages might need some attention.
+      A. Hint: ages might need some attention.
 
 Manipulation
 ^^^^^^^^^^^^
@@ -75,13 +75,14 @@ Manipulation
 #. Thinking of your dashboard, how do you think you would like to present your data to your audience? 
 #. In order to do this, do you need:
 
-   A. filters? 
+   #. Filters? 
    #. Groups? 
    #. Parameters? 
    #. Calculations?
 
 Dashboard and Finesse
 ^^^^^^^^^^^^^^^^^^^^^
+
 1. Create a final dashboard viz that answers the question(s)/topic(s) you explored.
 2. Now is a good time to update labels and colors for an easily digestible report.
 3. Hide your worksheets
@@ -96,12 +97,10 @@ Finishing Touches
 #. Make sure any filtering, group, or set information is easy to understand. 
 #. If you want to explore fonts and colors, go right ahead. 
 
-   A. Feel free to change the colors of any/all of your charts. 
-
 Present Your Dashboard to the class and provide feedback to your classmates.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Share even if your group dashboard is not complete, we want to see your unique ideas. 
+#. Share even if your group dashboard is not complete, we want to see your unique ideas. 
 
 Submitting Your Work
 --------------------
