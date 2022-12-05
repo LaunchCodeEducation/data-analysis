@@ -1,5 +1,5 @@
-Exercises: Tableau Part 3 - Dashboard Finesse, Calculations and Parameters
-==========================================================================
+Exercises: Tableau Part 3 
+=========================
 
 Getting Started
 ---------------
@@ -35,7 +35,7 @@ EDA
 
    A. What about registered riders?
 
-#. What daily trends do you see between casual riders and registered riders from 2011-2012
+#. What daily trends do you see between casual riders and registered riders from 2011-2012.
 
    A. Use **Dteday** and drill down.
 
@@ -45,7 +45,7 @@ Basic Calculation:
 1. Do holidays impact casual rentals?  
 #. What about registered rentals?
 
-   A. Rename holidays from 0 and 1 to “Holiday” and “Non-Holiday” using a calculated field
+   A. Rename holidays from 0 and 1 to “Holiday” and “Non-Holiday” using a calculated field.
 
 #. Does the season increase or decrease usage?  
 
@@ -74,7 +74,7 @@ Basic Calculation:
 
    #. Next convert to F with the following formula: **(°C * 1.8) + 32**
 
-      #. Quick Check:  The average temp of Jan 1, 2011 is 46.72°F and the average temp of Feb 1, 2011 is 33.86°F
+      #. Quick Check:  The average temp of Jan 1, 2011 is 46.72°F and the average temp of Feb 1, 2011 is 33.86°F.
 
 
 Table Calculation:
@@ -82,7 +82,7 @@ Table Calculation:
 
 1. How many total bike rentals occurred in the city between Jan 2011 to Dec 2012?
 
-   A. What are the running totals of bike rides between 2011-2012
+   A. What are the running totals of bike rides between 2011-2012?
 
       #. Hint: You can use a quick calculation for this.
 
@@ -100,7 +100,7 @@ Dashboard & Finesse:
 
    A. Informative titles, axes, and other text elements.
 
-#. Wrap Up Questions to think about only (don't need to submit any answers for these questions)
+#. Before submitting your work, reflect on these questions. You don't need to submit any answers for these questions.
 
    A. Would there be any other data that you wish you had as you worked with this data?
    #. Are you happy with your data visualizations?

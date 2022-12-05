@@ -1,5 +1,5 @@
-Tableau Part 3 - Dashboard Finesse, Calculations and Parameters
-===============================================================
+Tableau Part 3
+==============
 
 Reading
 -------
@@ -66,27 +66,22 @@ Read the following documentation.
 
 .. list-table:: Tableau Videos with Corresponding Tasks:
       :align: left
-      :widths: 20 40 40 
+      :widths: 20 80 
       :header-rows: 1
 
       * - **Video**
         - **Name of Video**
-        - **Tasks**
       * - Video 1: 
         - `Getting Started with Calculations(3:25 min) <https://www.tableau.com/learn/tutorials/on-demand/getting-started-calculations?playlist=269502>`__.
-        - Watch only (code-along optional)
       * - Video 2: 
         - `Calculation Syntax(4:18 min) <https://www.tableau.com/learn/tutorials/on-demand/calculation-syntax?playlist=269502>`__.
-        - Watch only (code-along optional)
       * - Video 3: 
         - `Intro to Table Calculations(3:58 min) <https://www.tableau.com/learn/tutorials/on-demand/intro-table-calculations?playlist=269502>`__.
-        - Watch only (code-along optional)
       * - Video 4: 
         - `Parameters(5:25 min) <https://www.tableau.com/learn/tutorials/on-demand/parameters>`__.
-        - Watch only (code-along optional)
       * - Video 5: 
         - `Using a Parameter to Change Fields(3:58 min) <https://www.tableau.com/learn/tutorials/on-demand/using-parameter-change-fields?playlist=269504>`__.
-        - Watch only (code-along optional)
+      
 
 Suggested Resources (not required reading)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -95,23 +90,23 @@ Suggested Resources (not required reading)
 
 `Functions in Tableau <https://help.tableau.com/current/pro/desktop/en-us/functions.htm>`__.
 
-* Good resource for specific functions
+* Good resource for specific functions.
   
 `Tips for Working with Calculated Fields in tableau <https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_tips.htm>`__.
 
-* Keep this as a resource for how to create and edit calculations 
+* Keep this as a resource for how to create and edit calculations.
 
 **Table Calculation**
 
 `Table Calculations Types <https://help.tableau.com/current/pro/desktop/en-us/calculations_tablecalculations_definebasic_runningtotal.htm>`__.
 
-* Defines and offers examples for each of the pre-set quick table calculations
+* Defines and offers examples for each of the pre-set quick table calculations.
 
 **Parameter Resources**
 
 `Parameter Actions <https://help.tableau.com/current/pro/desktop/en-us/actions_parameters.htm>`__.
 
-* Resource for creating interactive vizzes
+* Resource for creating interactive vizzes.
 
 Check Your Understanding
 ------------------------

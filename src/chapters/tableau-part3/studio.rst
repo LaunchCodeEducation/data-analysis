@@ -1,5 +1,5 @@
-Studio: Tableau Part 3 - Dashboard Finesse, Calculations and Parameters
-=======================================================================
+Studio: Tableau Part 3
+======================
 
 Getting Started
 ---------------
@@ -15,7 +15,7 @@ sales.
 Setting Up the Studio:
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Download `Retail Data Analytics data set <https://www.kaggle.com/datasets/manjeetsingh/retaildataset?select=Features+data+set.csv>`__. There are 3  csv files. To download all csv files at once, click on the "Download" bubble next to the "New Notebook" bubble.  An orange arrow is pointing to the "Download" bubble in the image below.
+Download `Retail Data Analytics data set <https://www.kaggle.com/datasets/manjeetsingh/retaildataset?select=Features+data+set.csv>`__. There are 3 csv files. To download all csv files at once, click on the "Download" bubble next to the "New Notebook" bubble.  An orange arrow is pointing to the "Download" bubble in the image below.
 
 .. figure:: figures/download-multi-files.png
    :alt: An orange arrow points to the "Download" bubble, highlighting the Download option of kaggle.
