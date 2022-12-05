@@ -21,7 +21,7 @@ Download `Retail Data Analytics data set <https://www.kaggle.com/datasets/manjee
    :alt: An orange arrow points to the ``Download`` bubble, highlighting the Download option of kaggle.
 
 #. Open the csv file in Tableau Public.  
-#. When you open this data set, you will want to create a relationship between the *3* csv files.
+#. When you open this data set, you will want to create a relationship between the 3 CSV files.
 
    #. Each csv has a ``Store`` column.
    #. Here's some more context for working with relationships in Tableau:
