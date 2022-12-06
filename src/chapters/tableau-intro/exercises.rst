@@ -82,5 +82,5 @@ Submitting Your Work
 --------------------
 
 When finished make sure to save and publish your work to your Tableau Public account. Copy the URL to your published Tableau project and paste it into the submission box in 
-Canvas for **Exercises: Tableau Part 1 - Introduction to Visualization** and click *Submit*.
+Canvas for **Exercises: Visualization with Tableau Part 1** and click *Submit*.
 
