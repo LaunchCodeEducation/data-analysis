@@ -4,7 +4,7 @@ Studio: Introduction to Statistics and Data Modeling
 Getting Started
 ---------------
 
-Fork this `GitHub repository <https://github.com/codinglikeagirl42/IntroToStatsStudio>`__ and 
+Fork this `GitHub repository <https://github.com/LaunchCodeEducation/IntroToStatsStudio>`__ and 
 clone to your computer.  If you need a refresher on how to do this 
 see :ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`.
 
