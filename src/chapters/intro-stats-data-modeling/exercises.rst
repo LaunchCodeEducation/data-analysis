@@ -1,5 +1,5 @@
-Exercises: Introduction to Statistics and Data Modeling
-=======================================================
+Exercises: Data Modeling Part 1
+===============================
 
 Getting Started
 ---------------
