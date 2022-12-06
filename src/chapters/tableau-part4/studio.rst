@@ -104,4 +104,4 @@ Submitting Your Work
 --------------------
 
 When finished make sure to save and publish your work to your Tableau Public account. Copy the URL to your published Tableau project and paste it into the submission box in 
-Canvas for **Studio: Tableau Part 4 - Stories and Dates** and click *Submit*.
+Canvas for **Studio: Visualization with Tableau Part 4** and click *Submit*.
