@@ -4,7 +4,7 @@ Studio: Tableau Part 1 - Introduction to Visualization
 Getting Started
 ---------------
 
-| Please use your best judgement on the type of chart, layout, and interpretation of the list below. This is an exercise to get hands-on experience with Tableau. This will be the first stop on a journey of many skills!
+Please use your best judgement on the type of chart, layout, and interpretation of the list below. This is an exercise to get hands-on experience with Tableau. This will be the first stop on a journey of many skills!
 
 #. We will be using the `Mushroom Classification <https://www.kaggle.com/datasets/uciml/mushroom-classification>`__ dataset from Kaggle.  Download the CSV file.
 
