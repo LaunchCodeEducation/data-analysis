@@ -1,7 +1,7 @@
 Exploratory Data Analysis
 =========================
 
-Read the following articles, follow along where instructed:
+Read the following articles, follow along where instructed.  You do not need to install ``pandas``, it comes with ``Anaconda``.  
 
 .. admonition:: Tip
   
@@ -26,49 +26,50 @@ Read the following articles.
 #. `Data Types in Statistics <https://towardsdatascience.com/data-types-in-statistics-347e152e8bee>`_.
 
 
-Python Pandas
--------------
+Python ``pandas``
+-----------------
 
-Code along with this article.  You do not need to install ``pandas``, it comes with ``Anaconda``.  
+Code along with this article.  
 
 Stop at "Handling Duplicates".
 
 #. `Python Pandas Tutorial: A Complete Introduction for Beginners <https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/>`_
 
-Statistics in Pandas
---------------------
+Statistics in ``pandas``
+------------------------
 
 Read the following article.
 
 #. `Basic statistics in pandas DataFrame <https://medium.com/@kasiarachuta/basic-statistics-in-pandas-dataframe-594208074f85>`__.
   
-What is a Dataframe?
---------------------
+What is a ``DataFrame``?
+------------------------
 
-A pandas dataframe is similar to a Python dictionary. The column names are like keys and the values are the data for that column.  This diagram illustrates the different components of a dataframe.
+A ``pandas DataFrame`` is similar to a Python dictionary. The column names are like keys and the values are the data for that column. 
 
 .. figure:: figures/diagramPandasDataframe.png
-   :alt: Diagram of a Pandas Dataframe.
+  :alt: Diagram of a Pandas Dataframe.
+  
+  
+  For more information about ``pandas DataFrames`` and the diagram above, `visit w3resource <https://www.w3resource.com/python-exercises/pandas/index-dataframe.php>`__.
 
-Credit for the above diagram and for more information about Pandas Dataframes `visit here <https://www.w3resource.com/python-exercises/pandas/index-dataframe.php>`__.
-
-| The column values are called a Pandas series. Here is how Pandas series are used to build a dataframe.
+| The column values are called a ``pandas Series``. Here is how ``pandas Series`` are used to build a dataframe.
 
 .. figure:: figures/diagramPandasSeries.png
-   :alt: Diagram of how Pandas series build a dataframe.  
+  :alt: Diagram of how ``pandas Series``  a dataframe.  
 
-Credit for the above diagram and for more information about Pandas Series `visit here <https://www.datasciencemadesimple.com/create-series-in-python-pandas/>`__.
+  For more information about ``pandas Series`` and diagram above, `visit w3resource <https://www.datasciencemadesimple.com/create-series-in-python-pandas/>`__.
 
 Check Your Understanding
 ------------------------
 
 .. admonition:: Question
 
-  What is the pandas function used to return the number of rows and columns in a dataframe?
+  What is the ``pandas`` function used to return the number of rows and columns in a ``DataFrame``?
 
 .. admonition:: Question
   
-  Column names cannot be changed in dataframes?
+  Column names cannot be changed in a ``DataFrame``?
 
   a. True
   b. False
@@ -79,31 +80,31 @@ Check Your Understanding
 
 .. admonition:: Question
 
-  What is the Pandas method for reading a csv?
+  What is the ``pandas`` method for reading a CSV file type?
 
 .. admonition:: Question
 
-  Visualized below is the “purchases” dataframe . What is the pandas syntax to select for Robert's data?
+  Visualized below is the “purchases” ``DataFrame`` . What is the ``pandas`` syntax to select for Robert's data?
 
   .. figure:: figures/purchaseDataframe.png
-   :alt: Dataframe showing name of person and if they purchased apples and/or oranges.
+   :alt: DataFrame showing name of person and if they purchased apples and/or oranges.
 
 .. admonition:: Question
 
-  How do we view only the first 13 rows of a dataframe?
+  How do we view only the first 13 rows of a ``DataFrame``?
 
 .. admonition:: Question
 
-  A dataframe column is a series?
+  A ``DataFrame`` column is a ``Series``?
 
   a. True
   b. False
 
 .. admonition:: Question  
 
-  Which pandas function will print the number of records, three quartiles, mean, standard deviation, minimum and maximum values of  a dataframe?
+  Which ``pandas`` function will print the number of records, three quartiles, mean, standard deviation, minimum and maximum values of a ``DataFrame``?
 
-  a. .describe() 
-  b. .index() 
-  c. .statistics() 
-  d. .head() 
+  a. ``.describe()`` 
+  b. ``.index()`` 
+  c. ``.statistics()`` 
+  d. ``.head()`` 
