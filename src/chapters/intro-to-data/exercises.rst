@@ -79,13 +79,5 @@ Submitting Your Work
 --------------------
 
 When finished make sure to save your work. 
+
 Upload your document into the submission box in Canvas for **Exercises: Intro to Data** and click *Submit*.
-
-
-
-
-
-
-
-
-
