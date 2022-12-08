@@ -23,10 +23,12 @@ Missing Data
 
 4. `The best way to handle missing data <https://seleritysas.com/blog/2020/03/03/the-best-way-to-handle-missing-data/>`__.
 
-* Note: no need to know the details of the techniques described here for handling missing data. Read to get introduced to some advanced methods of systematically handling missing values
+.. admonition:: Note
+  
+  No need to know the details of the techniques described here for handling missing data. Read to get introduced to some advanced methods of systematically handling missing values
 
-Unvariate and Multivariate Charts
----------------------------------
+Univariate and Multivariate Charts
+----------------------------------
 
 5. `Understand the Data With Univariate And Multivariate Charts and Plots in Python <https://towardsdatascience.com/understand-the-data-with-univariate-and-multivariate-charts-and-plots-in-python-3b9fcd68cd8>`__.
 
