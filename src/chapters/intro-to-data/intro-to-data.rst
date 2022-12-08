@@ -1,35 +1,34 @@
 Introduction To Data
 ====================
 
-Read the following articles, follow along where instructed:
-
 Methods and Techniques
 ----------------------
 
-1. `Data Analysis Methods & Techniques <https://www.datapine.com/blog/data-analysis-methods-and-techniques/>`__.
+Read the following article.
 
-* Key Takeaways: Video about qualitative vs quantitative data illustrates some key points!
+#. `Data Analysis Methods & Techniques <https://www.datapine.com/blog/data-analysis-methods-and-techniques/>`__.
 
 Data Analytics in Python
 ------------------------
 
-2. `A Beginner's Guide to Data Analysis in Python <https://towardsdatascience.com/a-beginners-guide-to-data-analysis-in-python-188706df5447>`__.
+Read the following article.
 
-* Key Takeaways: How to take data from the computer and create a visualization using Python.
+#. `A Beginner's Guide to Data Analysis in Python <https://towardsdatascience.com/a-beginners-guide-to-data-analysis-in-python-188706df5447>`__.
+
 
 Data Project Life Cycle
 -----------------------
 
-3. `Data project life cycle <https://www.northeastern.edu/graduate/blog/data-analysis-project-lifecycle/>`__.
+Read the following articles.
 
-* Key Takeaways: Definitions of life cycles and Examples.
-  
-4. `Asking the right questions <https://www.datapine.com/blog/data-analysis-questions/%C2%A0%C2%A0>`__.
+#. `Data project life cycle <https://www.northeastern.edu/graduate/blog/data-analysis-project-lifecycle/>`__.  
+
+#. `Asking the right questions <https://www.datapine.com/blog/data-analysis-questions/%C2%A0%C2%A0>`__.
 
 What is a Dataset?
 ------------------
 
-Think back to when you are working on a monthly budget. Let's say you have a singular spreadsheet 
+Think back to when you are working on a :ref:`monthly budget<monthly-budget>`. Let's say you have a singular spreadsheet 
 tracking your monthly automatic payments for May that includes info such as the company name, the 
 amount, and the date. Now just this one spreadsheet alone could be a dataset. It would be small and 
 you may not be able to gain many insights from just one month of automatic payments, but it is still 
