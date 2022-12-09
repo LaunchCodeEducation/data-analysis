@@ -36,14 +36,7 @@ Download `library data set <https://www.kaggle.com/imls/public-libraries?select=
 #. :ref:`Part A<tableau-part2-partA>` invites you to briefly explore the data set.  You will explore all the regions of the US.
 #. In :ref:`Part B <tableau-part2-partB>`, using your assigned region, you will be asked to answer questions using the collection type of your choice: a set or group.  
 #. In :ref:`Part C <tableau-part2-partC>`,  you will select 2 (or more) of your favorite charts and create a dashboard that highlights results from your selected region.
-#. Final outcome of this studio will include in a single Tableau Public viz:
-
-   #. 9 worksheets.
-
-      a. 10 if you do the bonus. 
-      
-   #. And, 1 dashboard. 
-
+#. Final outcome of this studio will include 9 worksheets (10 if you do the bonus) and 1 dashboard.
 
 .. list-table:: Regional Code Table:
       :align: left
