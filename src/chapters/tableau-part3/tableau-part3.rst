@@ -52,9 +52,9 @@ Read the following documentation.
 
 **Videos:**
 
-| Watch the following videos to help you learn about Tableau calculations functionality and syntax, as well as parameters.   
+Watch the following videos to help you learn about Tableau calculations functionality and syntax, as well as parameters.   
 
-| The calculation videos are part of a larger calculations playlist.  We suggest you explore more videos in this playlist to learn more about calculations with certain data types and in specific situations.  Keep in mind that we will not be covering LOD (Level of Detail) calculations in this class, so you may skip over those.
+The calculation videos are part of a larger calculations playlist.  We suggest you explore more videos in this playlist to learn more about calculations with certain data types and in specific situations.  Keep in mind that we will not be covering LOD (Level of Detail) calculations in this class, so you may skip over those.
 
 .. admonition:: Note 
    

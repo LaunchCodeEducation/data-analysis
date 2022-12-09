@@ -23,7 +23,7 @@ Download `Retail Data Analytics data set <https://www.kaggle.com/datasets/manjee
 #. Open the CSV file in Tableau Public.  
 #. When you open this data set, you will want to create a relationship between the 3 CSV files.
 
-   #. Each csv has a ``Store`` column.
+   #. Each CSV has a ``Store`` column.
    #. Here's some more context for working with relationships in Tableau:
 
       a. `Relationships vs Joins <Here's some more context for working with relationships in Tableau:>`__.
