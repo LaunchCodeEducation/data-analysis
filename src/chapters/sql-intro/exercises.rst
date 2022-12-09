@@ -9,8 +9,8 @@ Fork this `GitHub repository <https://github.com/launchcodeeducation/SQL-Part-1-
 
 If you need a refresher on how to do this see :ref:`Instruction for Using GitHub w/Jupyter Notebooks<usingGitHubNotebooks>`.
 
-Working In Azure Data Studio
-----------------------------
+In Your Notebook
+----------------
 
 Open Azure Data Studio and connect to the ``BookDB``.  If you need a refresher on how to do this see :ref:`Setup Azure Data Studio<setupAzure>`.
  
