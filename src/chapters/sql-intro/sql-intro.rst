@@ -1,32 +1,36 @@
 SQL Part 1 - Introduction and Azure Data Studio
 ===============================================
 
+.. admonition:: Note
+
+   As you read through the articles in the SQL lessons, you may find that you want to try out the queries the authors describe. 
+   You have access to a database called ``AdventureWorks2019`` if you would like to try out some of these queries. 
+   Doing so is additional practice separate from the exercises.
+
+
 Read the following articles, follow along where instructed:
 
 Introduction to SQL
 -------------------
 
-1. `What is SQL? <https://www.youtube.com/watch?v=27axs9dO7AE>`__
+#. `What is SQL? <https://www.youtube.com/watch?v=27axs9dO7AE>`__
+#. `What Is a Database? <https://www.oracle.com/database/what-is-database/>`__
+#. `Learn to write SQL queries in 5 minutes! <https://medium.com/geekculture/writing-your-first-sql-query-610da7a5afea>`__
+#. `Learn to write basic SQL Queries. <https://www.sqlshack.com/learn-to-write-basic-sql-queries/>`__
+#. `SQL Basics — Hands-On Beginner SQL Tutorial Analyzing Bike-Sharing <https://www.dataquest.io/blog/sql-basics/>`__
+   
+   a. As you read this article, skip the "Installation and Setup" section.
+   #. Stop at the "Join" section.  
+   #. The article uses SQLite3, while we are using T-SQL.  The biggest difference in sytax is that T-SQL uses ``TOP`` instead of ``LIMIT``.
 
-2. `What Is a Database? <https://www.oracle.com/database/what-is-database/>`__
-
-3. `Learn to write SQL queries in 5 minutes! <https://medium.com/geekculture/writing-your-first-sql-query-610da7a5afea>`__
-
-4. `Learn to write basic SQL Queries. <https://www.sqlshack.com/learn-to-write-basic-sql-queries/>`__
-
-Read the following article, skipping the installation and set up section and stopping at the Join section.  We are just looking for comprehension to help guide when completing the exercises.  As they are using SQLite, some of the terminology may be slightly different.  We are using T-SQL which uses TOP instead of LIMIT.
-
-5. `SQL Basics — Hands-On Beginner SQL Tutorial Analyzing Bike-Sharing <https://www.dataquest.io/blog/sql-basics/>`__
-
-.. admonition:: note
-
-   As you read through the articles in the SQL lessons, you may find that you want to try out the queries the authors describe. You have access to a database called AdventureWorks2019 if you would like to try out some of these queries. Doing so is additional practice separate from the exercises.
 
 **Additional Resources**
 
-1. `Glossary: Databases and SQL <https://swcarpentry.github.io/sql-novice-survey/reference.html>`__
+Optional reading:
 
-2. `SQL Tutorial: Essential SQL For The Beginners <https://www.sqltutorial.org/>`__
+#. `Glossary: Databases and SQL <https://swcarpentry.github.io/sql-novice-survey/reference.html>`__
+
+#. `SQL Tutorial: Essential SQL For The Beginners <https://www.sqltutorial.org/>`__
 
 Check Your Understanding
 ------------------------
@@ -53,7 +57,12 @@ Check Your Understanding
 
 .. admonition:: Question
 
-   What does the asterisk(*) return?
+   What does the ``*`` return?
+
+   .. sourcecode:: SQL
+
+      SELECT * 
+      FROM TABLE;
 
 .. admonition:: Question
 
@@ -78,22 +87,22 @@ Check Your Understanding
    .. list-table::
       :align: left
   
-      * - **WHERE**
+      * - ``WHERE``
         - Filters the data that falls into the defined begin and end value.
-      * - **SELECT**
+      * - ``SELECT``
         - Sort the data according to the specified column.
-      * - **FROM**
+      * - ``FROM``
         - Filter the data according to specified conditions.
-      * - **BETWEEN**
+      * - ``BETWEEN``
         - Used to eliminate duplicate data from the specified columns.
-      * - **ORDER BY**
+      * - ``ORDER BY``
         - Used to retrieve data from the data table.
-      * - **DISTINCT**
+      * - ``DISTINCT``
         - Specify the table name to retrieve data from.
 
 .. admonition:: Question
 
-   What does the Keyword AS do?
+   What does the Keyword ``AS`` do?
 
 .. admonition:: Question
 
