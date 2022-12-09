@@ -13,9 +13,9 @@ will be exploring data from the Fiscal Year 2014.  Documentation of this survey 
 Working Through the Studio:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-| You will be placed into one of eight groups.  The group number reflects the region you have been assigned in the table below.  As a team, one group member can be in charge of Tableau and screen share while other group members provide direction and suggestions.  At the end of studio, you will present your favorite chart or final dashboard to the class as a whole.
+You will be placed into one of eight groups.  The group number reflects the region you have been assigned in the table below.  As a team, one group member can be in charge of Tableau and screen share while other group members provide direction and suggestions.  At the end of studio, you will present your favorite chart or final dashboard to the class as a whole.
 
-| While this is a group assignment, for your own portfolio it is recommended that you make your own version of this studio.
+While this is a group assignment, for your own portfolio it is recommended that you make your own version of this studio.
 
 Setting Up the Studio:
 ^^^^^^^^^^^^^^^^^^^^^^
