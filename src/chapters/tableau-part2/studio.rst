@@ -13,7 +13,7 @@ will be exploring data from the Fiscal Year 2014.  Documentation of this survey 
 Working Through the Studio:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You will be placed into one of eight groups.  The group number reflects the region you have been assigned in the table below.  As a team, one group member can be in charge of Tableau and screen share while other group members provide direction and suggestions.  At the end of studio, you will present your favorite chart or final dashboard to the class as a whole.
+You will be placed into one of eight groups.  The group number reflects the region you have been assigned in the table below.  As a team, one group member can be in charge of Tableau and screen share while other group members provide direction and suggestions.  At the end of the studio, you will present your favorite chart or final dashboard to the class as a whole.
 
 While this is a group assignment, for your own portfolio it is recommended that you make your own version of this studio.
 
@@ -22,17 +22,17 @@ Setting Up the Studio:
 
 .. _tableau-part2-setup-studio:
 
-Download `library data set <https://www.kaggle.com/imls/public-libraries?select=libraries.csv%C2%A0>`__. There are 2 csv files. To download all csv files at once, click on the "Download" bubble next to the "New Notebook" bubble.  An orange arrow is pointing to the "Download" bubble in the image below.
+Download `library data set <https://www.kaggle.com/imls/public-libraries?select=libraries.csv%C2%A0>`__. There are 2 CSV files. To download all CSV files at once, click on the "Download" bubble next to the "New Notebook" bubble.  An orange arrow is pointing to the "Download" bubble in the image below.
 
 .. figure:: figures/download-multi-files.png
    :alt: An orange arrow points to the "Download" bubble, highlighting the Download option of kaggle.
 
-#. Open the csv file in Tableau Public.  
+#. Open the CSV file in Tableau Public.  
 
    #. It is a larger file than we have previously used and may take a few minutes to open. 
    #. `Use your downtime wisely <https://xkcd.com/303/>`__.
 
-#. When you open this data set, you will want to create a relationship between the *libraries.csv* file and the *states.csv* file using branch libraries.
+#. When you open this data set, you will want to create a relationship between the ``libraries.csv`` file and the ``states.csv`` file using branch libraries.
 #. :ref:`Part A<tableau-part2-partA>` invites you to briefly explore the data set.  You will explore all the regions of the US.
 #. In :ref:`Part B <tableau-part2-partB>`, using your assigned region, you will be asked to answer questions using the collection type of your choice: a set or group.  
 #. In :ref:`Part C <tableau-part2-partC>`,  you will select 2 (or more) of your favorite charts and create a dashboard that highlights results from your selected region.
@@ -146,9 +146,9 @@ Part B: Collect Your Data
 
 **Questions to Answer with a Viz**
 
-| Now that you have organized your data, you are ready to explore your region.
+Now that you have organized your data, you are ready to explore your region.
 
-| Create a new worksheet for each question using either your sets or groups.
+Create a new worksheet for each question using either your sets or groups.
 
 #. How many Central Libraries vs Branch Libraries are in each state within your region?
 
@@ -193,7 +193,7 @@ Bonus Mission
 
 #. Within your region, how many children's programs were distributed by a state by county?
 
-   #. Hint: Drag the State (states.csv) file into the central plane, and use the *Marks* card.  
+   #. Hint: Drag the State (``states.csv``) file into the central plane, and use the *Marks* card.  
    
       a. Be sure to filter.
       
@@ -203,7 +203,7 @@ Bonus Mission
 Finishing Touches
 ^^^^^^^^^^^^^^^^^
 
-| Before you turn in your vizzes:
+Before you turn in your vizzes:
 
 #. Make sure that they are easy to read. 
 #. Review and edit any axes so that they don't contain any file information. 
