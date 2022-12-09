@@ -8,7 +8,10 @@ Fork this `GitHub repository <https://github.com/launchcodeeducation/sql-part4-e
 clone to your computer. If you need a refresher on how to do this 
 see :ref:`Instruction for Using GitHub w/Jupyter Notebooks<usingGitHubNotebooks>`.
 
-Open Azure Data Studio and connect to the BookDB.  If you need a refresher on how to do this see :ref:`Setup Azure Data Studio<setupAzure>`.
+In Your Notebook
+----------------
+
+Open Azure Data Studio and connect to the ``BookDB``.  If you need a refresher on how to do this see :ref:`Setup Azure Data Studio<setupAzure>`.
  
 In Azure Data Studio, click on the open button and navigate to where you saved the git repository you just cloned and open the notebook.  Follow along and write queries to answer the questions.  
 
@@ -19,6 +22,6 @@ In Azure Data Studio, click on the open button and navigate to where you saved t
 Submitting Your Work
 --------------------
 
-When finished make sure to push your changes up to GitHub. Copy the link to your GitHub 
-repository and paste it into the submission box in Canvas for **Exercises: SQL Part 4** 
-and click *Submit*.
+When finished make sure to push your changes up to GitHub. 
+
+Copy the link to your GitHub repository and paste it into the submission box in Canvas for **Exercises: SQL Part 4** and click *Submit*.
