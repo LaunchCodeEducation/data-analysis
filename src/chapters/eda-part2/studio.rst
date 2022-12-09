@@ -4,11 +4,14 @@ Studio: EDA With Python Part 2
 Getting Started
 ---------------
 
-For this weeks studio fork this `GitHub repository <https://github.com/launchcodeeducation/EDA_pt2_studio>`__ and 
-clone to your computer.  If you need a refresher on how to do this see :ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`.
+For this weeks studio fork this `GitHub repository <https://github.com/launchcodeeducation/EDA_pt2_studio>`__ and clone to your computer.  
 
-* This studio follows the univariate EDA practice you did for this week's prep work.
-* With a dataset you've already worked with, IMDb popular movies from 2006 to 2016.
+If you need a refresher on how to do this see :ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`.
+
+Code Along
+----------
+
+This studio follows the univariate EDA practice you did for this Lesson's :ref:`exercises <eda2-exercises>` using the IMDb popular movies from 2006 to 2016 dataset.
 
 Submitting Your Work
 --------------------

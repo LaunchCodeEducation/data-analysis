@@ -10,7 +10,9 @@ Read the following articles, follow along where instructed.  You do not need to 
 Exploring Data with Python
 --------------------------
 
-Code along with this article.  Stop at Step #8 "Detecting Outliers".
+Code along with this article.  
+
+Stop at Step #8 "Detecting Outliers".
 
 #. `Exploratory data analysis in Python <https://towardsdatascience.com/exploratory-data-analysis-in-python-c9a77dfa39ce>`_.
 
