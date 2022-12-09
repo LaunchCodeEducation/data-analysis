@@ -15,12 +15,12 @@ sales.
 Setting Up the Studio:
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Download `Retail Data Analytics data set <https://www.kaggle.com/datasets/manjeetsingh/retaildataset?select=Features+data+set.csv>`__. There are 3 csv files. To download all csv files at once, click on the ``Download`` bubble next to the ``New Notebook`` bubble.  An orange arrow is pointing to the ``Download`` bubble in the image below.
+Download `Retail Data Analytics data set <https://www.kaggle.com/datasets/manjeetsingh/retaildataset?select=Features+data+set.csv>`__. There are 3 CSV files. To download all CSV files at once, click on the ``Download`` bubble next to the ``New Notebook`` bubble.  An orange arrow is pointing to the ``Download`` bubble in the image below.
 
 .. figure:: figures/download-multi-files.png
    :alt: An orange arrow points to the ``Download`` bubble, highlighting the Download option of kaggle.
 
-#. Open the csv file in Tableau Public.  
+#. Open the CSV file in Tableau Public.  
 #. When you open this data set, you will want to create a relationship between the 3 CSV files.
 
    #. Each csv has a ``Store`` column.
@@ -92,7 +92,7 @@ Dashboard and Finesse
 Finishing Touches
 ^^^^^^^^^^^^^^^^^
 
-| Before you turn in your vizzes:
+Before you turn in your vizzes:
 
 #. Make sure that they are easy to read. 
 #. Review and edit any axes so that they don't contain any file information. 

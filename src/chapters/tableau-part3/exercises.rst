@@ -6,12 +6,12 @@ Getting Started
 
 1. Download this `Bike Sharing in Washington D.C. Dataset <https://www.kaggle.com/marklvl/bike-sharing-dataset>`__.
    
-   #. 2 csv files total. 
+   #. 2 CSV files total. 
   
 #. Be sure to read the context and content about this dataset to better understand how and why data was collected.
 #. Open the downloaded dataset in Tableau Public.
 
-   #. Create a relationship between the csv files.
+   #. Create a relationship between the CSV files.
    #. ``Dteday`` is a shared column between the two tables.
    
 #. Create a new Tableau Public project to answer the below questions.
@@ -26,7 +26,7 @@ The Bike Sharing program did very well in DC and is still popular today.  Your c
 creating its own bike sharing program.  You have been tasked to see how the first 2 years went in DC to 
 anticipate any factors that might affect usability such as weather, seasons, or holidays.
 
-| A few questions have been provided to help guide your thoughts in this exercise.
+A few questions have been provided to help guide your thoughts in this exercise.
 
 EDA
 ^^^
