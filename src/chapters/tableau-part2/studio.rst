@@ -109,13 +109,9 @@ Part A: EDA
 Part B: Collect Your Data
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-| Begin working with your assigned region.  
+Begin working with your assigned region. Remember to use the table above to help with managing and organizing your data and use data from the ``states.csv`` table unless otherwise noted.
 
-| Use the table above to help with managing and organizing your data.  
-
-| Use data from the states.csv table unless otherwise noted.
-
-**Create collections to hold your data:**
+Create collections to hold your data:
 
 #. Set Your Data.
 
@@ -193,7 +189,7 @@ Bonus Mission
 
 #. Within your region, how many children's programs were distributed by a state by county?
 
-   #. Hint: Drag the State (``states.csv``) file into the central plane, and use the *Marks* card.  
+   #. Hint: Drag the State (``states.csv``) file into the central plane, and use the ``Marks`` card.  
    
       a. Be sure to filter.
       
