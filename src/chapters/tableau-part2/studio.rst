@@ -92,10 +92,10 @@ Part A: EDA
 
 #. How many visits in each region compared to the End Date?
 
-   #. Hint: Use the End date from the libraries.csv file.
+   #. Hint: Use the End date from the ``libraries.csv`` file.
 
-      a. Pull other elements from the states.csv file.
-      #. Hide the Null values in your final viz.
+      a. Pull other elements from the ``states.csv`` file.
+      #. Hide the ``Null`` values in your final viz.
       
    #. Use the US Regional Codes Table above to create aliases for each region. 
    
