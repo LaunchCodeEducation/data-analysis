@@ -86,6 +86,111 @@
     
   <div class="section" id="exercises-tableau-part-4-stories-and-dates">
 <h1><span class="section-number">28.2. </span>Exercises: Tableau Part 4 - Stories and Dates<a class="headerlink" href="#exercises-tableau-part-4-stories-and-dates" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="getting-started">
+<h2><span class="section-number">28.2.1. </span>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="create-your-own-interactive-resume">
+<h3><span class="section-number">28.2.1.1. </span>Create Your Own Interactive Resume<a class="headerlink" href="#create-your-own-interactive-resume" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Now that you are almost done with Women+, let’s create an interactive resume that will show off your skills using Tableau.  Since this resume will be all about you, you are going to be creating and editing the data.   You can choose to create a dashboard for your resume or a story.   Since we are using Tableau Public for this resume, you should not share any contact information for this project.</div>
+</div>
+<div class="admonition-note admonition">
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>If you do not feel comfortable creating a resume about yourself, you may choose to create an interactive resume about a fictional character or historical figure of your choice.</p>
+</div>
+<div class="line-block">
+<div class="line">Your interactive resume should contain:</div>
+</div>
+<ol class="arabic simple">
+<li><p>At least one Gantt chart that displays a relevant timeline for your resume.</p></li>
+<li><p>And at least one other type of visualization that is relevant to your resume.</p></li>
+</ol>
+</div>
+<div class="section" id="part-1-how-to-create-a-resume-in-tableau-public">
+<span id="part1-how-to"></span><h3><span class="section-number">28.2.1.2. </span>Part 1: How to Create a Resume In Tableau Public<a class="headerlink" href="#part-1-how-to-create-a-resume-in-tableau-public" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.tableau.com/blog/how-create-interactive-resume-tableau" target="_blank">How to Create an Interactive Resume in Tableau<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<ol class="arabic simple">
+<li><p>Don’t feel limited with your visualizations here.</p></li>
+<li><p>Browse the <a class="reference external" href="https://www.tableau.com/interactive-resume-gallery" target="_blank">Interactive Resume Gallery<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>, for inspiration.</p>
+<ol class="upperalpha simple">
+<li><p>You can download a viz that you like and explore how they created their resume.</p></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>Optional resources to help you build your Interactive Resume:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.tableau.com/blog/5-tips-creating-visual-resume-using-tableau-40558" target="_blank">5 Tips on Creating an Interactive Resume using Tableau<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
+<li><p><a class="reference external" href="https://www.tableau.com/learn/webinars/how-make-interactive-resume-tableau?ssologin=true#video" target="_blank">How to make an interactive resume in Tableau (50 min)<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<ol class="upperalpha simple">
+<li><p>This video will teach you how to make a Gantt chart and a Lollipop chart.</p></li>
+</ol>
+</li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=YlyO_InVI-E" target="_blank">Create Your Interactive Resume in Tableau Public? Video (48 min)<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<ol class="upperalpha simple">
+<li><p>This video will teach you how to create an obsolescence chart, as well as how to customize a lollipop cart, and add links to your dashboard.</p></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="part-2-creating-the-data">
+<h3><span class="section-number">28.2.1.3. </span>Part 2: Creating the Data<a class="headerlink" href="#part-2-creating-the-data" title="Permalink to this headline">¶</a></h3>
+<p>You are creating the data for this project, as it is your resume.  In order to do this, you will need to use a spreadsheet program that will allow you to save and download CSV files.  This could be Excel, Google Sheets, or Numbers.  Tableau likes columnar formats, meaning you organize your data by columns.  For example, you make a spreadsheet about volunteer work that has a column for the name of the organization/activity, the start date and end date, and a description.</p>
+<p>Once your data has been entered, you will need to save and download your file.  Make sure you download it as a csv file.  We suggest creating a folder for your spreadsheets and remembering its location as you might be adding to it as you work on this exercise.</p>
+<p><strong>A few notes on your data:</strong></p>
+<div class="line-block">
+<div class="line"><em>Dates:</em></div>
+</div>
+<ol class="arabic">
+<li><p>Start and End Time:</p>
+<ol class="arabic simple">
+<li><p>If you don’t remember exactly when you started or ended an experience, use your best judgement and be consistent.</p></li>
+<li><p>Also when you are adding dates into your spreadsheet, look in the data entry line to verify the formatting as well as the cell you are entering data into.</p></li>
+</ol>
+<div class="figure align-default">
+<img alt="A discrepancy between the Google Sheet cell and the Google Sheet function row." src="../../_images/check-your-dates.png" />
+</div>
+<p>In this example, notice that cell C2 says “Jun-02” which the creator of the data set meant to be “June 2002”, but the entry line is formatting it as “6/2/2021”.  By manually entering the date into the entry line, the correct format “6/1/2002” was entered and then uploaded to Tableau.  Things to double check before you upload.</p>
+</li>
+<li><p>Formats:  When you open a file in Tableau, you might notice that Tableau thinks your dates are numbers or strings.</p>
+<ol class="arabic simple">
+<li><p>You can convert these to dates in the preview page by selecting the column you want to change, clicking on the dropdown menu and selecting “Change Data Type” then pick what data type you want the value to be.</p></li>
+</ol>
+<div class="figure align-default">
+<img alt="Data preview page in Tableau Public showing how to change data type." src="../../_images/string-date-change.png" />
+</div>
+<p>In this example, “Start Date” is a string not a date.  Using the Dropdown menu, we were able to change data type from string to date.</p>
+</li>
+<li><p>Remembering Things Once Working In Tableau:</p>
+<ol class="arabic simple">
+<li><p>Once you start working in Tableau with your data, you might want to change your data.</p></li>
+<li><p>There could be things you want to add, redesign, or you might have caught a typo.</p></li>
+<li><p>You can modify your data.  Go back to your spreadsheet and make your changes.</p>
+<ol class="upperalpha simple">
+<li><p>For example, you decided that you want to add location to one of your spreadsheets.  Add the column (or columns) to your spreadsheet.  Depending on the program you use, in Excel you might need to only save it to update all your changes, or if using Google Sheets  you will need to download it again as a csv and then replace the old version with the new one.  Once that is done, you can refresh your data in Tableau.</p></li>
+</ol>
+</li>
+</ol>
+<div class="figure align-default">
+<img alt="Image showing how to use the Data menu to refresh your data" src="../../_images/refresh-your-data.png" />
+</div>
+<p>The data menu allows you to refresh your data.   After refreshing, a notice window will appear informing you that “If you have modified filters or hidden fields you may be replacing important data.  Are you sure you wish to proceed?” Select “Yes”. Make sure that you review your worksheet to make sure it functions correctly.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="part-3-create-your-charts">
+<h3><span class="section-number">28.2.1.4. </span>Part 3:  Create your Charts<a class="headerlink" href="#part-3-create-your-charts" title="Permalink to this headline">¶</a></h3>
+<p>Now that you have your data, use it to create your Gantt chart and a second chart of your choice.
+Refer to the resources in <a class="reference internal" href="#part1-how-to"><span class="std std-ref">Part 1</span></a> for guidance.</p>
+</div>
+</div>
+<div class="section" id="submitting-your-work">
+<h2><span class="section-number">28.2.2. </span>Submitting Your Work<a class="headerlink" href="#submitting-your-work" title="Permalink to this headline">¶</a></h2>
+<p>When finished make sure to save and publish your work to your Tableau Public account. Copy the URL to your published Tableau project and paste it into the submission box in
+Canvas for <strong>Exercises: Visualization with Tableau Part 4</strong> and click <em>Submit</em>.</p>
+</div>
 </div>
 
 
