@@ -109,7 +109,7 @@ Notice that each nested list has its own set of index values.</p>
 <p>The simplest form of a multi-dimensional list is a two dimensional list. Each
 element is a nested list, which contains multiple data values.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">two_dim_list</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">101</span><span class="p">],</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">]]</span>
@@ -118,7 +118,7 @@ element is a nested list, which contains multiple data values.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>3
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
 </div>
@@ -130,7 +130,7 @@ two index values. The indexes evaluate from left to right. The first index
 selects one of the nested lists, and the second index selects an element from
 that nested list.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Use one set of brackets to access a nested list, and add a second set of
 brackets to access the values inside that list.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -153,7 +153,7 @@ brackets to access the values inside that list.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]
 [90, 101]
 [True, False, False, True]
 
@@ -177,7 +177,7 @@ we must use bracket notation carefully.</p>
 </pre></div>
 </div>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Examine how including bracket notation affects how the <code class="docutils literal notranslate"><span class="pre">reverse</span></code> method
 changes each list.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -196,7 +196,7 @@ changes each list.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[ [&#39;A&#39;, &#39;B&#39;, &#39;C&#39;], [&#39;A&#39;, &#39;b&#39;, &#39;c&#39;], [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;] ]
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[ [&#39;A&#39;, &#39;B&#39;, &#39;C&#39;], [&#39;A&#39;, &#39;b&#39;, &#39;c&#39;], [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;] ]
 [ [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], [&#39;A&#39;, &#39;b&#39;, &#39;c&#39;], [&#39;C&#39;, &#39;B&#39;, &#39;A&#39;] ]
 </pre></div>
 </div>
@@ -211,16 +211,13 @@ changes each list.</p>
 </td></tr></table></div>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/MultiDimensionalLists" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 <ol class="arabic">
-<li><p class="first">Append <code class="docutils literal notranslate"><span class="pre">new_nums</span></code> to <code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code>, and append the value <code class="docutils literal notranslate"><span class="pre">444</span></code> to
-the first list in <code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code>.</p>
-</li>
-<li><p class="first">Print <code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code> to verify your changes. Also, print the length of
-<code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code> (which should be <code class="docutils literal notranslate"><span class="pre">4</span></code>).</p>
-</li>
-<li><p class="first">Print a slice of the last two elements in <code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code>. Also, print a
-slice of the first two elements from the third list in <code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code>.</p>
-</li>
-<li><p class="first">Sample output:</p>
+<li><p>Append <code class="docutils literal notranslate"><span class="pre">new_nums</span></code> to <code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code>, and append the value <code class="docutils literal notranslate"><span class="pre">444</span></code> to
+the first list in <code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code>.</p></li>
+<li><p>Print <code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code> to verify your changes. Also, print the length of
+<code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code> (which should be <code class="docutils literal notranslate"><span class="pre">4</span></code>).</p></li>
+<li><p>Print a slice of the last two elements in <code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code>. Also, print a
+slice of the first two elements from the third list in <code class="docutils literal notranslate"><span class="pre">id_number_lists</span></code>.</p></li>
+<li><p>Sample output:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[ [111, 222, 333, 444], [987, 654], [1010, 1100, 0, 1], [1138, 42, 5] ]
 4
 [ [1010, 1100, 0, 1], [1138, 42, 5] ]
@@ -228,7 +225,7 @@ slice of the first two elements from the third list in <code class="docutils lit
 </pre></div>
 </div>
 </li>
-<li><p class="first">When done with steps 1 - 4, paste these statements to the bottom of your
+<li><p>When done with steps 1 - 4, paste these statements to the bottom of your
 code. Run the program and examine the output. Write down your explanation of
 what happens at each step in the loops.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>12
@@ -268,22 +265,22 @@ is rare to use more than two dimensions.</p>
 </pre></div>
 </td></tr></table></div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Which of the following will access the name <code class="docutils literal notranslate"><span class="pre">&quot;Jones&quot;</span></code>?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">data[0][0]</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">data[0][1]</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">data[1][0]</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">data[1][1]</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">data[0][0]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data[0][1]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data[1][0]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data[1][1]</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>How would you add <code class="docutils literal notranslate"><span class="pre">&quot;dance&quot;</span></code> to the first nested list?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">data.append('dance')</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">data[0].append('dance')</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">data[1].append('dance')</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">data.append('dance')</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data[0].append('dance')</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data[1].append('dance')</span></code></p></li>
 </ol>
 </div>
 </div>

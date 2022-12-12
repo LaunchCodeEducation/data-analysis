@@ -99,7 +99,7 @@ to the variable, like <code class="docutils literal notranslate"><span class="pr
 error.</p>
 <p>Let’s see how we can use the <code class="docutils literal notranslate"><span class="pre">type()</span></code> function to check for a string.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -116,25 +116,25 @@ error.</p>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/StringConditionalsPractice" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 <p>Run the program with each of the following values for <code class="docutils literal notranslate"><span class="pre">my_var</span></code>:</p>
 <ol class="arabic simple">
-<li><code class="docutils literal notranslate"><span class="pre">'1234'</span></code> vs. <code class="docutils literal notranslate"><span class="pre">1234</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> vs. <code class="docutils literal notranslate"><span class="pre">&quot;True&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;False&quot;</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">0.333</span></code> vs. <code class="docutils literal notranslate"><span class="pre">'0.333'</span></code></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'1234'</span></code> vs. <code class="docutils literal notranslate"><span class="pre">1234</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> vs. <code class="docutils literal notranslate"><span class="pre">&quot;True&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;False&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">0.333</span></code> vs. <code class="docutils literal notranslate"><span class="pre">'0.333'</span></code></p></li>
 </ol>
 <p><strong>Follow Up</strong>:</p>
-<ol class="last arabic simple">
-<li>Add an <code class="docutils literal notranslate"><span class="pre">elif</span></code> statement and code block to check for the <code class="docutils literal notranslate"><span class="pre">int</span></code> data
-type.</li>
-<li>Repeat this process for the <code class="docutils literal notranslate"><span class="pre">float</span></code> and <code class="docutils literal notranslate"><span class="pre">bool</span></code> data types.</li>
-<li>Rerun the program with the different <code class="docutils literal notranslate"><span class="pre">my_var</span></code> values.</li>
+<ol class="arabic simple">
+<li><p>Add an <code class="docutils literal notranslate"><span class="pre">elif</span></code> statement and code block to check for the <code class="docutils literal notranslate"><span class="pre">int</span></code> data
+type.</p></li>
+<li><p>Repeat this process for the <code class="docutils literal notranslate"><span class="pre">float</span></code> and <code class="docutils literal notranslate"><span class="pre">bool</span></code> data types.</p></li>
+<li><p>Rerun the program with the different <code class="docutils literal notranslate"><span class="pre">my_var</span></code> values.</p></li>
 </ol>
 </div>
 <p>We can easily modify line 3 to check if <code class="docutils literal notranslate"><span class="pre">my_var</span></code> is an <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>,
 or <code class="docutils literal notranslate"><span class="pre">bool</span></code> data type. We could also use an <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code> block to check for
 the different data types.  (<em>TRY IT</em>!)</p>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p>Of course, we could avoid the conditional block completely with:</p>
-<div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The value </span><span class="si">{0}</span><span class="s2"> is a </span><span class="si">{1}</span><span class="s2"> data type.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">my_var</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">my_var</span><span class="p">)))</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The value </span><span class="si">{0}</span><span class="s2"> is a </span><span class="si">{1}</span><span class="s2"> data type.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">my_var</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">my_var</span><span class="p">)))</span>
 </pre></div>
 </div>
 </div>
@@ -143,7 +143,7 @@ the different data types.  (<em>TRY IT</em>!)</p>
 <h2><span class="section-number">8.9.2. </span>Comparing Strings<a class="headerlink" href="#comparing-strings" title="Permalink to this headline">¶</a></h2>
 <p>We can use the comparison operators <code class="docutils literal notranslate"><span class="pre">==,</span> <span class="pre">!=,</span> <span class="pre">&lt;,</span> <span class="pre">&gt;,</span> <span class="pre">&lt;=,</span> <span class="pre">&gt;=</span></code> on strings.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -160,38 +160,39 @@ the different data types.  (<em>TRY IT</em>!)</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>False
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>False
 True
 False
 </pre></div>
 </div>
 </div>
 <ol class="arabic simple">
-<li>Line 5 evaluates if the strings <code class="docutils literal notranslate"><span class="pre">'dog'</span></code> and <code class="docutils literal notranslate"><span class="pre">'cat'</span></code> are identical and
-then prints the boolean result (<code class="docutils literal notranslate"><span class="pre">False</span></code>).</li>
-<li>Line 6 evaluates if the first character in <code class="docutils literal notranslate"><span class="pre">'cat'</span></code> and <code class="docutils literal notranslate"><span class="pre">'crow'</span></code> are the
-same (<code class="docutils literal notranslate"><span class="pre">True</span></code>).<ul>
-<li>Note that the first character comparison for <code class="docutils literal notranslate"><span class="pre">'cat'</span></code> and <code class="docutils literal notranslate"><span class="pre">'Crow'</span></code>
-would return <code class="docutils literal notranslate"><span class="pre">False</span></code> due to the different cases.</li>
-<li>To make the expression <em>case-insensitive</em>, we need to convert each
+<li><p>Line 5 evaluates if the strings <code class="docutils literal notranslate"><span class="pre">'dog'</span></code> and <code class="docutils literal notranslate"><span class="pre">'cat'</span></code> are identical and
+then prints the boolean result (<code class="docutils literal notranslate"><span class="pre">False</span></code>).</p></li>
+<li><p>Line 6 evaluates if the first character in <code class="docutils literal notranslate"><span class="pre">'cat'</span></code> and <code class="docutils literal notranslate"><span class="pre">'crow'</span></code> are the
+same (<code class="docutils literal notranslate"><span class="pre">True</span></code>).</p>
+<ul class="simple">
+<li><p>Note that the first character comparison for <code class="docutils literal notranslate"><span class="pre">'cat'</span></code> and <code class="docutils literal notranslate"><span class="pre">'Crow'</span></code>
+would return <code class="docutils literal notranslate"><span class="pre">False</span></code> due to the different cases.</p></li>
+<li><p>To make the expression <em>case-insensitive</em>, we need to convert each
 character to the same case (e.g.
-<code class="docutils literal notranslate"><span class="pre">your_pet[0].lower()</span> <span class="pre">==</span> <span class="pre">other_pet[0].lower()</span></code>).</li>
+<code class="docutils literal notranslate"><span class="pre">your_pet[0].lower()</span> <span class="pre">==</span> <span class="pre">other_pet[0].lower()</span></code>).</p></li>
 </ul>
 </li>
-<li>Line 7 evaluates if <code class="docutils literal notranslate"><span class="pre">'dog'</span></code> is less than <code class="docutils literal notranslate"><span class="pre">'cat'</span></code>. This comparison is a bit more complicated.
+<li><p>Line 7 evaluates if <code class="docutils literal notranslate"><span class="pre">'dog'</span></code> is less than <code class="docutils literal notranslate"><span class="pre">'cat'</span></code>. This comparison is a bit more complicated.
 What is really being compared is each character’s Unicode value. All characters, even letters,
 have <a class="reference external" href="https://unicode-table.com/en/" target="_blank">Unicode numbers<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>. The Unicode value of a letter corresponds with its alphabetical order.
 So a string that comes earlier in the alphabet is considered <em>less than</em> a string that comes
 later. Since <code class="docutils literal notranslate"><span class="pre">'dog'</span></code> follows <code class="docutils literal notranslate"><span class="pre">'cat'</span></code> alphabetically, the expression
-<code class="docutils literal notranslate"><span class="pre">'dog'</span> <span class="pre">&lt;</span> <span class="pre">'cat'</span></code> evaluates to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</li>
+<code class="docutils literal notranslate"><span class="pre">'dog'</span> <span class="pre">&lt;</span> <span class="pre">'cat'</span></code> evaluates to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
 </ol>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p>Case matters when comparing characters! CAPITAL letters have smaller Unicode values
 than lowercase letters.</p>
 <p><code class="docutils literal notranslate"><span class="pre">'Zebra'</span> <span class="pre">&lt;</span> <span class="pre">'zebra'</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>,</p>
 <p><code class="docutils literal notranslate"><span class="pre">'Zebra'</span> <span class="pre">&lt;</span> <span class="pre">'apple'</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>,  and</p>
-<p class="last"><code class="docutils literal notranslate"><span class="pre">'zebra'</span> <span class="pre">&lt;</span> <span class="pre">'apple'</span></code> is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">'zebra'</span> <span class="pre">&lt;</span> <span class="pre">'apple'</span></code> is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 </div>
 <div class="section" id="checking-with-in-and-not-in">
 <h3><span class="section-number">8.9.2.1. </span>Checking with <code class="docutils literal notranslate"><span class="pre">in</span></code> and <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code><a class="headerlink" href="#checking-with-in-and-not-in" title="Permalink to this headline">¶</a></h3>
@@ -228,7 +229,7 @@ substring of another.</p>
 </pre></div>
 </td></tr></table></div>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>This example uses the <code class="docutils literal notranslate"><span class="pre">in</span></code> operator to decide when to increase the value
 of <code class="docutils literal notranslate"><span class="pre">vowel_count</span></code>.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
@@ -253,14 +254,14 @@ of <code class="docutils literal notranslate"><span class="pre">vowel_count</spa
 </pre></div>
 </td></tr></table></div>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/CountingVowelsPractice" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
-<ol class="last arabic simple">
-<li>The program does not quite work yet. There are 9 vowels in
+<ol class="arabic simple">
+<li><p>The program does not quite work yet. There are 9 vowels in
 <code class="docutils literal notranslate"><span class="pre">'Armadillos</span> <span class="pre">or</span> <span class="pre">anteaters'</span></code>, but the code does not count the capital
-<code class="docutils literal notranslate"><span class="pre">A</span></code>.</li>
-<li>Fix the code to be <em>case-insensitive</em>. Both capital and lowercase vowels
-should increase <code class="docutils literal notranslate"><span class="pre">vowel_count</span></code>.</li>
-<li>Refactor the code to report the number of consonants (non-vowels) in the
-string. (<em>Hint</em>: Use the <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code> operator).</li>
+<code class="docutils literal notranslate"><span class="pre">A</span></code>.</p></li>
+<li><p>Fix the code to be <em>case-insensitive</em>. Both capital and lowercase vowels
+should increase <code class="docutils literal notranslate"><span class="pre">vowel_count</span></code>.</p></li>
+<li><p>Refactor the code to report the number of consonants (non-vowels) in the
+string. (<em>Hint</em>: Use the <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code> operator).</p></li>
 </ol>
 </div>
 </div>
@@ -271,7 +272,7 @@ string. (<em>Hint</em>: Use the <code class="docutils literal notranslate"><span
 string. Fortunately, Python provides methods that check the case of a string, and they
 deal with non-letter characters properly.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -288,7 +289,7 @@ deal with non-letter characters properly.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>False
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>False
 True
 False
 </pre></div>
@@ -303,56 +304,56 @@ similar way, but it checks for lowercase letters.</p>
 <h2><span class="section-number">8.9.4. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <p>Evaluate whether the following expressions are <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>:</p>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dog&quot;</span> <span class="o">&lt;</span> <span class="s2">&quot;doghouse&quot;</span>
 </pre></div>
 </div>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">True</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">False</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dog&quot;</span> <span class="o">&lt;</span> <span class="s2">&quot;Dog&quot;</span>
 </pre></div>
 </div>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">True</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">False</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;dog&quot;</span> <span class="o">&lt;</span> <span class="s2">&quot;Doghouse&quot;</span>
 </pre></div>
 </div>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">True</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">False</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;app&quot;</span> <span class="ow">in</span> <span class="s2">&quot;Happy&quot;</span>
 </pre></div>
 </div>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">True</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">False</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>For which of the following would <code class="docutils literal notranslate"><span class="pre">text.upper()</span> <span class="pre">==</span> <span class="pre">text</span></code> return
 <code class="docutils literal notranslate"><span class="pre">True</span></code>?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">'Stop</span> <span class="pre">Yelling!'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">'STOP</span> <span class="pre">YELLING!'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">'stop</span> <span class="pre">yelling!'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">'STOP</span> <span class="pre">YELLINg!'</span></code></li>
-<li>All return <code class="docutils literal notranslate"><span class="pre">True</span></code></li>
-<li>None return <code class="docutils literal notranslate"><span class="pre">True</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">'Stop</span> <span class="pre">Yelling!'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">'STOP</span> <span class="pre">YELLING!'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">'stop</span> <span class="pre">yelling!'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text</span> <span class="pre">=</span> <span class="pre">'STOP</span> <span class="pre">YELLINg!'</span></code></p></li>
+<li><p>All return <code class="docutils literal notranslate"><span class="pre">True</span></code></p></li>
+<li><p>None return <code class="docutils literal notranslate"><span class="pre">True</span></code></p></li>
 </ol>
 </div>
 </div>

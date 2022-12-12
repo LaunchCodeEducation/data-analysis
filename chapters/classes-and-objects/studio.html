@@ -92,26 +92,25 @@ clean our school building, but we want to pick the best ones.</p>
 <div class="section" id="before-you-start">
 <h2>Before You Start<a class="headerlink" href="#before-you-start" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
-<p class="last">We always encourage you to use local development at every opportunity. However, sometimes computers and software fail and we would rather you spend your studio time coding!
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>We always encourage you to use local development at every opportunity. However, sometimes computers and software fail and we would rather you spend your studio time coding!
 If your computer is not cooperating with cloning your repo from Github, you can fork the starter code for the studio on <a class="reference external" href="https://replit.com/&#64;launchcode/ClassesStudio#main.py" target="_blank">Replit<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 </div>
 </div>
 <div class="section" id="part-1-add-class-properties-and-str-method">
 <h2>Part 1: Add Class Properties and <code class="docutils literal notranslate"><span class="pre">__str__</span></code> Method<a class="headerlink" href="#part-1-add-class-properties-and-str-method" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">Declare a class called <code class="docutils literal notranslate"><span class="pre">CrewCandidate</span></code> with a constructor that takes
+<li><p>Declare a class called <code class="docutils literal notranslate"><span class="pre">CrewCandidate</span></code> with a constructor that takes
 three parameters: <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">mass</span></code>, and <code class="docutils literal notranslate"><span class="pre">scores</span></code>. Note that <code class="docutils literal notranslate"><span class="pre">scores</span></code>
-will be a list of test results for the candidate’s speed and accuracy.</p>
-</li>
-<li><p class="first">In <code class="docutils literal notranslate"><span class="pre">main()</span></code>, create objects for the following candidates:</p>
+will be a list of test results for the candidate’s speed and accuracy.</p></li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">main()</span></code>, create objects for the following candidates:</p>
 <ol class="loweralpha simple">
-<li>iClean has a mass of 13.5 kg and test scores of 88, 85, and 90.</li>
-<li>Shiny has a mass of 1.5 kg and test scores of 93, 88, and 97.</li>
-<li>DustVac has a mass of 22.5 kg and test scores of 75, 78, and 62.</li>
+<li><p>iClean has a mass of 13.5 kg and test scores of 88, 85, and 90.</p></li>
+<li><p>Shiny has a mass of 1.5 kg and test scores of 93, 88, and 97.</p></li>
+<li><p>DustVac has a mass of 22.5 kg and test scores of 75, 78, and 62.</p></li>
 </ol>
 </li>
-<li><p class="first">Define a <code class="docutils literal notranslate"><span class="pre">__str__</span></code> method to display the properties of each candidate. The
+<li><p>Define a <code class="docutils literal notranslate"><span class="pre">__str__</span></code> method to display the properties of each candidate. The
 output should look something like:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>**Candidate Information**
 Name: Shiny
@@ -120,10 +119,9 @@ Scores: [93, 88, 97]
 </pre></div>
 </div>
 </li>
-<li><p class="first">Print each object to check to see if your class correctly assigns and
+<li><p>Print each object to check to see if your class correctly assigns and
 displays the property values. (You can remove or comment out the <code class="docutils literal notranslate"><span class="pre">print</span></code>
-statement after your tests pass).</p>
-</li>
+statement after your tests pass).</p></li>
 </ol>
 </div>
 <div class="section" id="part-2-add-another-class-method">
@@ -131,20 +129,18 @@ statement after your tests pass).</p>
 <p>As our candidates complete more tests, we need to be able to add the new
 scores to their records.</p>
 <ol class="arabic">
-<li><p class="first">Create an <code class="docutils literal notranslate"><span class="pre">add_score</span></code> method in <code class="docutils literal notranslate"><span class="pre">CrewCandidate</span></code>. The function must take
-a new score as a parameter in addition to <code class="docutils literal notranslate"><span class="pre">self</span></code>.</p>
-</li>
-<li><p class="first">When passed a score, the function adds the value to <code class="docutils literal notranslate"><span class="pre">self.scores</span></code> with the
+<li><p>Create an <code class="docutils literal notranslate"><span class="pre">add_score</span></code> method in <code class="docutils literal notranslate"><span class="pre">CrewCandidate</span></code>. The function must take
+a new score as a parameter in addition to <code class="docutils literal notranslate"><span class="pre">self</span></code>.</p></li>
+<li><p>When passed a score, the function adds the value to <code class="docutils literal notranslate"><span class="pre">self.scores</span></code> with the
 <a class="reference internal" href="../../appendices/list-methods/append-insert-examples.html#list-append-examples"><span class="std std-ref">append method</span></a>.</p>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
-<p class="last">Inside the class, the name of the list is <code class="docutils literal notranslate"><span class="pre">self.scores</span></code> instead of
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>Inside the class, the name of the list is <code class="docutils literal notranslate"><span class="pre">self.scores</span></code> instead of
 <code class="docutils literal notranslate"><span class="pre">scores</span></code>. Thus, <code class="docutils literal notranslate"><span class="pre">self.scores.append()</span></code> is the proper syntax.</p>
 </div>
 </li>
-<li><p class="first">In <code class="docutils literal notranslate"><span class="pre">main()</span></code>, test your new method by adding a score of <code class="docutils literal notranslate"><span class="pre">83</span></code> to iClean’s
-record. Print out the new score list with <code class="docutils literal notranslate"><span class="pre">object_name.scores</span></code>.</p>
-</li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">main()</span></code>, test your new method by adding a score of <code class="docutils literal notranslate"><span class="pre">83</span></code> to iClean’s
+record. Print out the new score list with <code class="docutils literal notranslate"><span class="pre">object_name.scores</span></code>.</p></li>
 </ol>
 </div>
 <div class="section" id="part-3-add-more-methods">
@@ -156,21 +152,19 @@ if the candidate should be added to the cleaning team.</p>
 <div class="section" id="calculating-the-test-average">
 <h3>Calculating the Test Average<a class="headerlink" href="#calculating-the-test-average" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
-<li><p class="first">Define an <code class="docutils literal notranslate"><span class="pre">average()</span></code> method. It only needs the <code class="docutils literal notranslate"><span class="pre">self</span></code> parameter.</p>
-</li>
-<li><p class="first">To find the average, add up the entries from <code class="docutils literal notranslate"><span class="pre">self.scores</span></code>, then divide
-the sum by the number of scores in the list.</p>
-</li>
-<li><p class="first">To make the average easier to look at,
+<li><p>Define an <code class="docutils literal notranslate"><span class="pre">average()</span></code> method. It only needs the <code class="docutils literal notranslate"><span class="pre">self</span></code> parameter.</p></li>
+<li><p>To find the average, add up the entries from <code class="docutils literal notranslate"><span class="pre">self.scores</span></code>, then divide
+the sum by the number of scores in the list.</p></li>
+<li><p>To make the average easier to look at,
 round it to 1 decimal place, then return the result
 from the method.</p>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">round</span></code> is an built-in Python function.  Syntax is as follows:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="n">numeric_value</span><span class="p">,</span> <span class="n">num_digits</span><span class="p">)</span>
 </pre></div>
 </div>
-<p class="last">This function was demonstated in the <a class="reference internal" href="../dictionaries/dictionary-accumulator.html#round-function"><span class="std std-ref">Dictionaries chapter</span></a>.</p>
+<p>This function was demonstated in the <a class="reference internal" href="../dictionaries/dictionary-accumulator.html#round-function"><span class="std std-ref">Dictionaries chapter</span></a>.</p>
 </div>
 </li>
 </ol>
@@ -184,18 +178,15 @@ cleaning crew. Backup robots average between 80 - 89%, while robots with
 averages between 70 - 79% get sent out for repairs. Averages below 70% lead to
 a short trip to the recycling bin.</p>
 <ol class="arabic">
-<li><p class="first">Add a <code class="docutils literal notranslate"><span class="pre">status()</span></code> method to <code class="docutils literal notranslate"><span class="pre">CrewCandidate</span></code>. The method returns a string
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">status()</span></code> method to <code class="docutils literal notranslate"><span class="pre">CrewCandidate</span></code>. The method returns a string
 (<code class="docutils literal notranslate"><span class="pre">'Accepted'</span></code>, <code class="docutils literal notranslate"><span class="pre">'Backup'</span></code>, <code class="docutils literal notranslate"><span class="pre">'Maintenance'</span></code>, or <code class="docutils literal notranslate"><span class="pre">'Scrapped'</span></code>)
-depending on a candidate’s average.</p>
-</li>
-<li><p class="first">The <code class="docutils literal notranslate"><span class="pre">status</span></code> method requires the average test score. Fortunately, methods
+depending on a candidate’s average.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">status</span></code> method requires the average test score. Fortunately, methods
 can call other methods inside a class! Just remember to use
-<code class="docutils literal notranslate"><span class="pre">self.method_name()</span></code>.</p>
-</li>
-<li><p class="first">Once <code class="docutils literal notranslate"><span class="pre">status</span></code> has a candidate’s average score, return the proper string
-based on that value.</p>
-</li>
-<li><p class="first">In <code class="docutils literal notranslate"><span class="pre">main()</span></code>, test the <code class="docutils literal notranslate"><span class="pre">status</span></code> method on each of the three candidates.
+<code class="docutils literal notranslate"><span class="pre">self.method_name()</span></code>.</p></li>
+<li><p>Once <code class="docutils literal notranslate"><span class="pre">status</span></code> has a candidate’s average score, return the proper string
+based on that value.</p></li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">main()</span></code>, test the <code class="docutils literal notranslate"><span class="pre">status</span></code> method on each of the three candidates.
 Print the result with the format, <code class="docutils literal notranslate"><span class="pre">'___</span> <span class="pre">scored</span> <span class="pre">an</span> <span class="pre">average</span> <span class="pre">of</span> <span class="pre">___%</span> <span class="pre">(___).'</span></code></p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>iClean scored an average of 87.7% (Backup).
 Shiny scored an average of 92.7% (Accepted).
@@ -213,8 +204,8 @@ many good tests will it take to reach <code class="docutils literal notranslate"
 <code class="docutils literal notranslate"><span class="pre">Accepted</span></code>?</p>
 <p>Note that scores cannot exceed 100%.</p>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
-<p class="last">Rather than adding one score at a time, could you use a loop?</p>
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>Rather than adding one score at a time, could you use a loop?</p>
 </div>
 </div>
 </div>

@@ -94,7 +94,7 @@ if we try to print the object itself?</p>
 <p>The following code defines a <code class="docutils literal notranslate"><span class="pre">Dog</span></code> class with a small number of properties
 and methods.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>Run the program to see how the <code class="docutils literal notranslate"><span class="pre">print</span></code> function displays the <code class="docutils literal notranslate"><span class="pre">dog_1</span></code> and
 <code class="docutils literal notranslate"><span class="pre">dog_2</span></code> objects.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
@@ -124,14 +124,14 @@ and methods.</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">dog_2</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/PrintingObjects01" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/PrintingObjects01" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
 <p>Instead of giving us the information stored in each object, we see an output
 similar to <code class="docutils literal notranslate"><span class="pre">&lt;__main__.Dog</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7fa1a167c4c0&gt;</span></code>. Despite the weird look,
 this actually gives us some information:</p>
 <ol class="arabic simple">
-<li>The data type (an <code class="docutils literal notranslate"><span class="pre">object</span></code> of type <code class="docutils literal notranslate"><span class="pre">Dog</span></code>).</li>
-<li>A memory address, <code class="docutils literal notranslate"><span class="pre">0x7fa1a167c4c0</span></code>, which differs between the two objects.</li>
+<li><p>The data type (an <code class="docutils literal notranslate"><span class="pre">object</span></code> of type <code class="docutils literal notranslate"><span class="pre">Dog</span></code>).</p></li>
+<li><p>A memory address, <code class="docutils literal notranslate"><span class="pre">0x7fa1a167c4c0</span></code>, which differs between the two objects.</p></li>
 </ol>
 <p>Usually, this format is not what we want to see when we print an object.
 Fortunately, Python allows us to decide what an object should look like when it
@@ -156,8 +156,8 @@ by the proper amount. Run the program to see the new output.</p>
 </td></tr></table></div>
 <p>Note that the <code class="docutils literal notranslate"><span class="pre">__str__</span></code> method MUST create and return a string.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
-<p class="last">Create your own return string in the <code class="docutils literal notranslate"><span class="pre">__str__</span></code> method. Feel free to
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p>Create your own return string in the <code class="docutils literal notranslate"><span class="pre">__str__</span></code> method. Feel free to
 include the <code class="docutils literal notranslate"><span class="pre">is_cute</span></code> value, or add and display new properties to the
 class.</p>
 </div>
@@ -171,7 +171,7 @@ values from an object.</p>
 <p id="index-1">We can use the function <code class="docutils literal notranslate"><span class="pre">vars()</span></code> to take an object and return a dictionary
 that contains the properties as key/value paris.</p>
 <div class="admonition-try-it admonition" id="dog-class-complete">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>Run the program below and examine the output.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -207,17 +207,17 @@ that contains the properties as key/value paris.</p>
 </pre></div>
 </td></tr></table></div>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/PrintingObjects02" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
-<ol class="last arabic simple">
-<li>Line 14 creates a new <code class="docutils literal notranslate"><span class="pre">Dog</span></code> object and assigns it to <code class="docutils literal notranslate"><span class="pre">dog_1</span></code>.</li>
-<li><code class="docutils literal notranslate"><span class="pre">vars(dog_1)</span></code> returns a dictionary and assigns it to <code class="docutils literal notranslate"><span class="pre">dog_data</span></code>. Each
+<ol class="arabic simple">
+<li><p>Line 14 creates a new <code class="docutils literal notranslate"><span class="pre">Dog</span></code> object and assigns it to <code class="docutils literal notranslate"><span class="pre">dog_1</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vars(dog_1)</span></code> returns a dictionary and assigns it to <code class="docutils literal notranslate"><span class="pre">dog_data</span></code>. Each
 key in the dictionary matches one of the property names defined in the
-<code class="docutils literal notranslate"><span class="pre">Dog</span></code> class.</li>
-<li>Line 16 prints the <code class="docutils literal notranslate"><span class="pre">dog_data</span></code> dictionary.</li>
+<code class="docutils literal notranslate"><span class="pre">Dog</span></code> class.</p></li>
+<li><p>Line 16 prints the <code class="docutils literal notranslate"><span class="pre">dog_data</span></code> dictionary.</p></li>
 </ol>
 </div>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">We could easily iterate through the <code class="docutils literal notranslate"><span class="pre">dog_data</span></code> dictionary by keys,
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>We could easily iterate through the <code class="docutils literal notranslate"><span class="pre">dog_data</span></code> dictionary by keys,
 values, or both as we saw <a class="reference internal" href="../dictionaries/dictionary-iteration.html#iterate-dictionary"><span class="std std-ref">here</span></a>.</p>
 </div>
 <div class="section" id="property-and-method-names">
@@ -227,9 +227,9 @@ values, or both as we saw <a class="reference internal" href="../dictionaries/di
 of the items in a given object.  This built-in function has a few quirks.
 Let’s walkthrough to see how to handle one of them.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
-<ol class="last arabic">
-<li><p class="first">Paste this code into the editor above, then run the program.</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<ol class="arabic">
+<li><p>Paste this code into the editor above, then run the program.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>18
 19
 20</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;dog_1 items:&quot;</span><span class="p">)</span>
@@ -238,11 +238,10 @@ Let’s walkthrough to see how to handle one of them.</p>
 </pre></div>
 </td></tr></table></div>
 </li>
-<li><p class="first"><code class="docutils literal notranslate"><span class="pre">dir(dog_1)</span></code> returns a (rather long) list of the names for each method and property
+<li><p><code class="docutils literal notranslate"><span class="pre">dir(dog_1)</span></code> returns a (rather long) list of the names for each method and property
 defined in the <code class="docutils literal notranslate"><span class="pre">Dog</span></code> class. This includes special methods like
-<code class="docutils literal notranslate"><span class="pre">__init__</span></code> and <code class="docutils literal notranslate"><span class="pre">__str__</span></code>.</p>
-</li>
-<li><p class="first"><em>Tip</em>: To skip the special names, add a conditional to the loop to check
+<code class="docutils literal notranslate"><span class="pre">__init__</span></code> and <code class="docutils literal notranslate"><span class="pre">__str__</span></code>.</p></li>
+<li><p><em>Tip</em>: To skip the special names, add a conditional to the loop to check
 if the name contains a double underscore, <code class="docutils literal notranslate"><span class="pre">__</span></code>.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>18
 19

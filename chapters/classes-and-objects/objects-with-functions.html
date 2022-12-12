@@ -90,7 +90,7 @@
 value. We can also set up a function to create a new object and return it to the main
 program.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Assume we defined the same <code class="docutils literal notranslate"><span class="pre">Dog</span></code> class we used on the
 <a class="reference internal" href="printing-objects.html#dog-class-complete"><span class="std std-ref">previous page</span></a>.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>14
@@ -118,18 +118,18 @@ program.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Name of dog: SF, Age of dog: 0 years
 </pre></div>
 </div>
-<ol class="last arabic simple">
-<li>Lines 20 and 21 create two new <code class="docutils literal notranslate"><span class="pre">Dog</span></code> objects.</li>
-<li>Line 22 calls the <code class="docutils literal notranslate"><span class="pre">make_puppy</span></code> function and sends it <code class="docutils literal notranslate"><span class="pre">dog_1</span></code> and
-<code class="docutils literal notranslate"><span class="pre">dog_2</span></code> as arguments.</li>
-<li>Line 14 assigns the objects to the parameters <code class="docutils literal notranslate"><span class="pre">parent_1</span></code> and
-<code class="docutils literal notranslate"><span class="pre">parent_2</span></code>.</li>
-<li>Line 15 combines the first letters of the parents’ names to make the
-string for <code class="docutils literal notranslate"><span class="pre">puppy_name</span></code>.</li>
-<li>Line 16 uses a boolean expression to decide if the puppy is cute.</li>
-<li>Line 18 creates and returns a new <code class="docutils literal notranslate"><span class="pre">Dog</span></code> object.</li>
-<li>Control returns to line 22, where the new object is assigned to
-<code class="docutils literal notranslate"><span class="pre">new_pet</span></code>.</li>
+<ol class="arabic simple">
+<li><p>Lines 20 and 21 create two new <code class="docutils literal notranslate"><span class="pre">Dog</span></code> objects.</p></li>
+<li><p>Line 22 calls the <code class="docutils literal notranslate"><span class="pre">make_puppy</span></code> function and sends it <code class="docutils literal notranslate"><span class="pre">dog_1</span></code> and
+<code class="docutils literal notranslate"><span class="pre">dog_2</span></code> as arguments.</p></li>
+<li><p>Line 14 assigns the objects to the parameters <code class="docutils literal notranslate"><span class="pre">parent_1</span></code> and
+<code class="docutils literal notranslate"><span class="pre">parent_2</span></code>.</p></li>
+<li><p>Line 15 combines the first letters of the parents’ names to make the
+string for <code class="docutils literal notranslate"><span class="pre">puppy_name</span></code>.</p></li>
+<li><p>Line 16 uses a boolean expression to decide if the puppy is cute.</p></li>
+<li><p>Line 18 creates and returns a new <code class="docutils literal notranslate"><span class="pre">Dog</span></code> object.</p></li>
+<li><p>Control returns to line 22, where the new object is assigned to
+<code class="docutils literal notranslate"><span class="pre">new_pet</span></code>.</p></li>
 </ol>
 </div>
 <div class="section" id="object-scope">
@@ -147,22 +147,22 @@ points to the same set of data as <code class="docutils literal notranslate"><sp
 <div class="section" id="check-your-understanding">
 <h2>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Given <code class="docutils literal notranslate"><span class="pre">bob</span> <span class="pre">=</span> <span class="pre">Pet()</span></code>, which of the following shows the object
 <code class="docutils literal notranslate"><span class="pre">bob</span></code> used as an <em>argument</em>?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">feed_pet(bob,</span> <span class="pre">lettuce)</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">feed_pet(bob,</span> <span class="pre">lettuce):</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">bob</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">feed_pet(bob,</span> <span class="pre">lettuce)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">feed_pet(bob,</span> <span class="pre">lettuce):</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">bob</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Which of the following shows the object <code class="docutils literal notranslate"><span class="pre">pet_name</span></code> used as a <em>parameter</em>?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">label_habitat(pet_name,</span> <span class="pre">climate,</span> <span class="pre">habitat_size)</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">label_habitat(pet_name,</span> <span class="pre">climate,</span> <span class="pre">habitat_size):</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">pet_name</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">label_habitat(pet_name,</span> <span class="pre">climate,</span> <span class="pre">habitat_size)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">label_habitat(pet_name,</span> <span class="pre">climate,</span> <span class="pre">habitat_size):</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">pet_name</span></code></p></li>
 </ol>
 </div>
 </div>

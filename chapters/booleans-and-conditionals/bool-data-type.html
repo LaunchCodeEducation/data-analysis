@@ -89,7 +89,7 @@
 <p>In order for us to build code that can make decisions, we need to understand
 how programming languages represent <em>true</em> and <em>false</em>.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>If we run the following code, we would see in the following output.</p>
 <div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -101,7 +101,7 @@ how programming languages represent <em>true</em> and <em>false</em>.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>False
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>False
 True
 False
 True
@@ -112,15 +112,15 @@ True
 console. Python evaluates each comparison as being either <code class="docutils literal notranslate"><span class="pre">True</span></code> or
 <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <ol class="arabic simple">
-<li>In line 1, the <em>equality operator</em> <code class="docutils literal notranslate"><span class="pre">==</span></code> compares the strings <code class="docutils literal notranslate"><span class="pre">'dog'</span></code>
+<li><p>In line 1, the <em>equality operator</em> <code class="docutils literal notranslate"><span class="pre">==</span></code> compares the strings <code class="docutils literal notranslate"><span class="pre">'dog'</span></code>
 and <code class="docutils literal notranslate"><span class="pre">'cat'</span></code>. Since these are NOT the same, the comparison returns the
-value <code class="docutils literal notranslate"><span class="pre">False</span></code>.</li>
-<li>In line 2, the operator <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> compares the values of 3 and 4. Since 3 is
-indeed less than 4, comparison returns the result <code class="docutils literal notranslate"><span class="pre">True</span></code>.</li>
-<li>The comparison in line 3 returns <code class="docutils literal notranslate"><span class="pre">False</span></code>, since 3 is NOT larger than 10.</li>
-<li>In line 4, the <code class="docutils literal notranslate"><span class="pre">!=</span></code> operator stands for “not equal”, so
+value <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p>In line 2, the operator <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> compares the values of 3 and 4. Since 3 is
+indeed less than 4, comparison returns the result <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p>The comparison in line 3 returns <code class="docutils literal notranslate"><span class="pre">False</span></code>, since 3 is NOT larger than 10.</p></li>
+<li><p>In line 4, the <code class="docutils literal notranslate"><span class="pre">!=</span></code> operator stands for “not equal”, so
 <code class="docutils literal notranslate"><span class="pre">'dog'</span> <span class="pre">!=</span> <span class="pre">'cat'</span></code> returns <code class="docutils literal notranslate"><span class="pre">True</span></code>, while something like <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">!=</span> <span class="pre">3</span></code> would
-return <code class="docutils literal notranslate"><span class="pre">False</span></code>.</li>
+return <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
 </ol>
 <div class="section" id="identify-true-and-false">
 <h2><span class="section-number">6.2.1. </span>Identify <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code><a class="headerlink" href="#identify-true-and-false" title="Permalink to this headline">¶</a></h2>
@@ -153,14 +153,14 @@ deals with collections of characters.</p>
 <h3><span class="section-number">6.2.1.1. </span>Boolean Values<a class="headerlink" href="#boolean-values" title="Permalink to this headline">¶</a></h3>
 <p id="index-1">There are only two boolean values—<code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">Capitalization matters! Since Python is case-sensitive, <code class="docutils literal notranslate"><span class="pre">true</span></code> and
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>Capitalization matters! Since Python is case-sensitive, <code class="docutils literal notranslate"><span class="pre">true</span></code> and
 <code class="docutils literal notranslate"><span class="pre">false</span></code> are NOT valid boolean values.</p>
 </div>
 <p>The values <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code> are NOT strings. We can see this by printing
 another set of <code class="docutils literal notranslate"><span class="pre">type()</span></code> results:</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="kc">True</span><span class="p">))</span>
@@ -169,7 +169,7 @@ another set of <code class="docutils literal notranslate"><span class="pre">type
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;bool&#39;&gt;
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;bool&#39;&gt;
 &lt;class &#39;str&#39;&gt;
 False
 </pre></div>
@@ -183,10 +183,10 @@ NOT the same! <code class="docutils literal notranslate"><span class="pre">str</
 <div class="section" id="data-type-review">
 <h3><span class="section-number">6.2.1.2. </span>Data Type Review<a class="headerlink" href="#data-type-review" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li>The string (<code class="docutils literal notranslate"><span class="pre">str</span></code>) data type represents a collection of characters.</li>
-<li>The integer (<code class="docutils literal notranslate"><span class="pre">int</span></code>) data type represents a whole number.</li>
-<li>The float (<code class="docutils literal notranslate"><span class="pre">float</span></code>) data type represents a decimal value.</li>
-<li>The boolean (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) data type represents <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</li>
+<li><p>The string (<code class="docutils literal notranslate"><span class="pre">str</span></code>) data type represents a collection of characters.</p></li>
+<li><p>The integer (<code class="docutils literal notranslate"><span class="pre">int</span></code>) data type represents a whole number.</p></li>
+<li><p>The float (<code class="docutils literal notranslate"><span class="pre">float</span></code>) data type represents a decimal value.</p></li>
+<li><p>The boolean (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) data type represents <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
 </ol>
 </div>
 </div>

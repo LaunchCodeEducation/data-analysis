@@ -115,40 +115,38 @@ do its job.</p>
 <span id="function-naming-rules"></span><h3><span class="section-number">11.3.1.1. </span>Naming Functions<a class="headerlink" href="#naming-functions" title="Permalink to this headline">¶</a></h3>
 <p>Python function names should follow these rules:</p>
 <ol class="arabic">
-<li><p class="first">Names CANNOT match any Python keyword like <code class="docutils literal notranslate"><span class="pre">print</span></code> or <code class="docutils literal notranslate"><span class="pre">for</span></code>.</p>
+<li><p>Names CANNOT match any Python keyword like <code class="docutils literal notranslate"><span class="pre">print</span></code> or <code class="docutils literal notranslate"><span class="pre">for</span></code>.</p>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
-<p class="last">Most code editors use syntax highlighting to indicate keywords. Paying
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>Most code editors use syntax highlighting to indicate keywords. Paying
 attention to the highlighting helps avoid this naming mistake.</p>
 </div>
 </li>
-<li><p class="first">Names use only lowercase letters.</p>
-</li>
-<li><p class="first">The name should describe exactly what the function does.</p>
+<li><p>Names use only lowercase letters.</p></li>
+<li><p>The name should describe exactly what the function does.</p>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
-<p class="last">You should prefer <em>long, descriptive names</em> over <em>short, abbreviated names</em>.
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>You should prefer <em>long, descriptive names</em> over <em>short, abbreviated names</em>.
 If someone unfamiliar with your code can read the function name and tell
 you what it does, then you chose a good name.</p>
 </div>
 </li>
-<li><p class="first">For names with multiple words, separate the words with underscores (e.g.
-<code class="docutils literal notranslate"><span class="pre">convert_score_to_percentage</span></code>).</p>
-</li>
+<li><p>For names with multiple words, separate the words with underscores (e.g.
+<code class="docutils literal notranslate"><span class="pre">convert_score_to_percentage</span></code>).</p></li>
 </ol>
 <div class="admonition-examples admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Examples</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Examples</p>
 <p><strong>Good</strong></p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">convert_feet_to_meters</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">is_valid_number_entry</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">draw_square</span></code></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">convert_feet_to_meters</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">is_valid_number_entry</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">draw_square</span></code></p></li>
 </ul>
 <p><strong>Not Good</strong></p>
-<ul class="last simple">
-<li><code class="docutils literal notranslate"><span class="pre">convert</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">is_valid</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">draw</span></code></li>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">convert</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">is_valid</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">draw</span></code></p></li>
 </ul>
 </div>
 </div>
@@ -162,7 +160,7 @@ indented when compared to the <code class="docutils literal notranslate"><span c
 function body once it finds the first <em>unindented</em> line after the <code class="docutils literal notranslate"><span class="pre">def</span></code>
 keyword.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -182,7 +180,7 @@ keyword.</p>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<p class="last">Line 1 defines the function name and parameter. Lines 2 - 6 are part of the
+<p>Line 1 defines the function name and parameter. Lines 2 - 6 are part of the
 function body. Line 89 is even with the <code class="docutils literal notranslate"><span class="pre">def</span></code> keyword, so it is NOT part of
 the <code class="docutils literal notranslate"><span class="pre">add_list_numbers</span></code> function.</p>
 </div>
@@ -193,15 +191,15 @@ the <code class="docutils literal notranslate"><span class="pre">add_list_number
 function does NOT run when it is defined. It must be <em>called</em> in order to
 execute.</p>
 <div class="admonition-warning admonition">
-<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
-<p class="last">This is not only a common point of confusion for new programmers, but it can
+<p class="admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
+<p>This is not only a common point of confusion for new programmers, but it can
 also cause logic errors!</p>
 </div>
 </div>
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">11.3.4. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What are the <em>parameters</em> of the following function? Click <em>ALL</em> that apply.</p>
 <div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -212,33 +210,33 @@ also cause logic errors!</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">perimeter_of_square</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">perimeter_of_square</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">side_length</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">print</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">perimeter_of_square</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">side_length</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">print</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>For the same code sample, what are the <em>arguments</em> sent by the function call?
 Click <em>ALL</em> that apply.</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">square</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">side_length</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">4</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">square</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">side_length</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">4</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>True or False: A function can be run several times by placing the function
 call inside a loop.</p>
-<ol class="last loweralpha simple">
-<li>True</li>
-<li>False</li>
+<ol class="loweralpha simple">
+<li><p>True</p></li>
+<li><p>False</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Which is the BEST name for the following function?</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -247,11 +245,11 @@ call inside a loop.</p>
   <span class="k">return</span> <span class="n">area</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">area</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">calculate_area_of_circle</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">circle</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">shape</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">area</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">calculate_area_of_circle</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">circle</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">shape</span></code></p></li>
 </ol>
 </div>
 </div>

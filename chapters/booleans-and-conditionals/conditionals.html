@@ -89,8 +89,8 @@
 <p id="index-0">At the beginning of this chapter, we presented an example of an app that tracks
 overdue library books.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
-<p class="last">Consider an application that reminds you when you have an overdue book. The
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p>Consider an application that reminds you when you have an overdue book. The
 app sends you a message <em>only if</em> the due date has passed and you have not
 returned the book.</p>
 </div>
@@ -117,17 +117,17 @@ create one in Python:</p>
 </td></tr></table></div>
 <p><strong>Syntax Notes:</strong></p>
 <ol class="arabic simple">
-<li>The <code class="docutils literal notranslate"><span class="pre">if</span></code> statement consists of a header line and a body. The header line
+<li><p>The <code class="docutils literal notranslate"><span class="pre">if</span></code> statement consists of a header line and a body. The header line
 begins with the keyword <code class="docutils literal notranslate"><span class="pre">if</span></code> followed by a condition and then a
-colon (<code class="docutils literal notranslate"><span class="pre">:</span></code>).</li>
-<li><code class="docutils literal notranslate"><span class="pre">condition</span></code> is a boolean expression, which returns either <code class="docutils literal notranslate"><span class="pre">True</span></code> or
-<code class="docutils literal notranslate"><span class="pre">False</span></code>. Examples include <code class="docutils literal notranslate"><span class="pre">name</span> <span class="pre">==</span> <span class="pre">'Jack'</span></code> or <code class="docutils literal notranslate"><span class="pre">points</span> <span class="pre">&gt;</span> <span class="pre">10</span></code>.</li>
-<li>The statements underneath the header make up a <strong>code block</strong> (lines
+colon (<code class="docutils literal notranslate"><span class="pre">:</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">condition</span></code> is a boolean expression, which returns either <code class="docutils literal notranslate"><span class="pre">True</span></code> or
+<code class="docutils literal notranslate"><span class="pre">False</span></code>. Examples include <code class="docutils literal notranslate"><span class="pre">name</span> <span class="pre">==</span> <span class="pre">'Jack'</span></code> or <code class="docutils literal notranslate"><span class="pre">points</span> <span class="pre">&gt;</span> <span class="pre">10</span></code>.</p></li>
+<li><p>The statements underneath the header make up a <strong>code block</strong> (lines
 2 - 5). Note that these statements MUST be indented, and the code block
-can be any size.</li>
-<li>The indented code runs if the condition evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code>. If the
-condition is <code class="docutils literal notranslate"><span class="pre">False</span></code>, this code gets ignored.</li>
-<li><em>The first unindented line marks the end of the if statement</em>.</li>
+can be any size.</p></li>
+<li><p>The indented code runs if the condition evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code>. If the
+condition is <code class="docutils literal notranslate"><span class="pre">False</span></code>, this code gets ignored.</p></li>
+<li><p><em>The first unindented line marks the end of the if statement</em>.</p></li>
 </ol>
 <p>Here is an example that checks the length of a string:</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -144,28 +144,28 @@ condition is <code class="docutils literal notranslate"><span class="pre">False<
 console. If the string is less than 10 characters long, then no message
 appears.</p>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p>Should you indent with tabs or spaces? This question usually starts BIG
 arguments within the programming world (think Marvel vs. DC or Hermione
 Granger marrying Harry instead of Ron).</p>
 <p>Many code editors automatically indent the lines within an <code class="docutils literal notranslate"><span class="pre">if</span></code> block, so most
 of the time you won’t need to worry about how far to move in the cursor.
 However, here are the accepted guidelines for Python:</p>
-<ol class="last arabic simple">
-<li>Use SPACES, not tabs</li>
-<li>Four spaces are preferred</li>
-<li>Indentation must be consistent within a code block.</li>
+<ol class="arabic simple">
+<li><p>Use SPACES, not tabs</p></li>
+<li><p>Four spaces are preferred</p></li>
+<li><p>Indentation must be consistent within a code block.</p></li>
 </ol>
 </div>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>Try the following:</p>
 <ol class="arabic simple">
-<li>Run the code as-is.</li>
-<li>Assign <code class="docutils literal notranslate"><span class="pre">num</span></code> a positive value, then re-run the code.</li>
-<li>Indent line 6 to match line 4, then re-run the code. How did the output
-change?</li>
-<li>Change the condition to print a message when <code class="docutils literal notranslate"><span class="pre">num</span></code> is positive.</li>
+<li><p>Run the code as-is.</p></li>
+<li><p>Assign <code class="docutils literal notranslate"><span class="pre">num</span></code> a positive value, then re-run the code.</p></li>
+<li><p>Indent line 6 to match line 4, then re-run the code. How did the output
+change?</p></li>
+<li><p>Change the condition to print a message when <code class="docutils literal notranslate"><span class="pre">num</span></code> is positive.</p></li>
 </ol>
 <div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -180,7 +180,7 @@ change?</li>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Indentation matters!&quot;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/IfStatements" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/IfStatements" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
 </div>
 <div class="section" id="else-clause">
@@ -191,11 +191,11 @@ message to change based on the value of <code class="docutils literal notranslat
 <p id="index-2">Adding an <strong>else clause</strong> to an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement allows us to include code that
 runs when the condition is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <ol class="arabic simple">
-<li>Run the following code as-is and examine the output.</li>
-<li>Change line 2 to <code class="docutils literal notranslate"><span class="pre">book_status</span> <span class="pre">=</span> <span class="pre">'overdue'</span></code> and run the code again.</li>
-<li>How does the output change?</li>
+<li><p>Run the following code as-is and examine the output.</p></li>
+<li><p>Change line 2 to <code class="docutils literal notranslate"><span class="pre">book_status</span> <span class="pre">=</span> <span class="pre">'overdue'</span></code> and run the code again.</p></li>
+<li><p>How does the output change?</p></li>
 </ol>
 <div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -212,7 +212,7 @@ runs when the condition is <code class="docutils literal notranslate"><span clas
    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;No overdue books!&#39;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/ElseClauses" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/ElseClauses" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
 <p>This structure is known as an <strong>if/else statement</strong>, and it allows our program
 to <strong>branch</strong>. The flow of the program takes one of two paths when it reaches a
@@ -238,34 +238,34 @@ conditional, depending on whether the condition is <code class="docutils literal
 </pre></div>
 </td></tr></table></div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What message gets printed if the user enters <code class="docutils literal notranslate"><span class="pre">&quot;Aaliyah&quot;</span></code> as their username?</p>
-<ol class="last loweralpha simple">
-<li>Invalid username.</li>
-<li>Welcome, name!</li>
-<li>Welcome, Aaliyah!</li>
-<li>Nothing is printed.</li>
+<ol class="loweralpha simple">
+<li><p>Invalid username.</p></li>
+<li><p>Welcome, name!</p></li>
+<li><p>Welcome, Aaliyah!</p></li>
+<li><p>Nothing is printed.</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Assume that you replace line 3 with <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">len(name)</span> <span class="pre">&lt;</span> <span class="pre">5:</span></code>. When would <code class="docutils literal notranslate"><span class="pre">Invalid</span> <span class="pre">username</span></code> get printed?</p>
-<ol class="last loweralpha simple">
-<li>For any name with 4 characters or less</li>
-<li>For any name with 5 characters or less</li>
-<li>For any name with 4 characters or more</li>
-<li>For any name with 5 characters or more</li>
+<ol class="loweralpha simple">
+<li><p>For any name with 4 characters or less</p></li>
+<li><p>For any name with 5 characters or less</p></li>
+<li><p>For any name with 4 characters or more</p></li>
+<li><p>For any name with 5 characters or more</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>If you want to print the welcome message for any username SHORTER than 20
 characters, how should you change line 3?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">len(name)</span> <span class="pre">&gt;</span> <span class="pre">20:</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">len(name)</span> <span class="pre">&gt;=</span> <span class="pre">20:</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">len(name)</span> <span class="pre">&lt;</span> <span class="pre">20:</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">len(name)</span> <span class="pre">&lt;=</span> <span class="pre">20:</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">len(name)</span> <span class="pre">&gt;</span> <span class="pre">20:</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">len(name)</span> <span class="pre">&gt;=</span> <span class="pre">20:</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">len(name)</span> <span class="pre">&lt;</span> <span class="pre">20:</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">len(name)</span> <span class="pre">&lt;=</span> <span class="pre">20:</span></code></p></li>
 </ol>
 </div>
 </div>

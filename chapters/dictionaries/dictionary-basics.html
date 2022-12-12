@@ -92,19 +92,19 @@ own index value.</p>
 <p id="index-0">A third type of Python collection is called a <strong>dictionary</strong>.</p>
 <span class="target" id="key-value-pair"></span><p id="index-1"><strong>Dictionary facts:</strong></p>
 <ol class="arabic simple">
-<li>Dictionaries are <em>unordered</em> collections. They do NOT use index values
-(0, 1, 2, …) to organize the data from left to right.</li>
-<li>Dictionaries are <em>mutable</em>. We can add, remove, or modify the data in the
-collection.</li>
-<li>Dictionaries store data using sets of <strong>key/value pairs</strong>. Think of a <em>key</em>
+<li><p>Dictionaries are <em>unordered</em> collections. They do NOT use index values
+(0, 1, 2, …) to organize the data from left to right.</p></li>
+<li><p>Dictionaries are <em>mutable</em>. We can add, remove, or modify the data in the
+collection.</p></li>
+<li><p>Dictionaries store data using sets of <strong>key/value pairs</strong>. Think of a <em>key</em>
 just like a label or a variable name. It <em>points to</em> a specific piece of
-data, called the <em>value</em>.</li>
-<li>Dictionaries store as many key/value pairs as needed, and each value needs
-a key. Without a key, the value cannot be accessed or modified.</li>
-<li>The values in a dictionary may be of any data type, including lists and
-other dictionaries.</li>
-<li>The keys should be an <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">str</span></code> data type. In most cases, using
-strings is the better choice. We will see why soon.</li>
+data, called the <em>value</em>.</p></li>
+<li><p>Dictionaries store as many key/value pairs as needed, and each value needs
+a key. Without a key, the value cannot be accessed or modified.</p></li>
+<li><p>The values in a dictionary may be of any data type, including lists and
+other dictionaries.</p></li>
+<li><p>The keys should be an <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">str</span></code> data type. In most cases, using
+strings is the better choice. We will see why soon.</p></li>
 </ol>
 <div class="figure align-default" id="id1">
 <a class="reference internal image-reference" href="../../_images/dictionary.png"><img alt="Each key points to a value inside a dictionary." src="../../_images/dictionary.png" style="width: 80%;" /></a>
@@ -130,9 +130,9 @@ element.</p>
 order of the key/value pairs in the collection is not important, since we just
 need to know the label for the value we want.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Compare the following data structures:</p>
-<div class="last highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -163,24 +163,22 @@ and their corresponding values. There are several ways to create a new
 dictionary, but the simplest is to wrap the key/value pairs in curly braces
 <code class="docutils literal notranslate"><span class="pre">{}</span></code>, with each pair separated from the others by commas.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
-<div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span> <span class="p">:</span> <span class="s1">&#39;Maria&#39;</span><span class="p">,</span> <span class="s1">&#39;id_number&#39;</span> <span class="p">:</span> <span class="mi">1234</span><span class="p">,</span> <span class="s1">&#39;scores&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">88</span><span class="p">]}</span>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span> <span class="p">:</span> <span class="s1">&#39;Maria&#39;</span><span class="p">,</span> <span class="s1">&#39;id_number&#39;</span> <span class="p">:</span> <span class="mi">1234</span><span class="p">,</span> <span class="s1">&#39;scores&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">88</span><span class="p">]}</span>
 </pre></div>
 </div>
 </div>
 <p><strong>Note the following</strong>:</p>
 <ol class="arabic">
-<li><p class="first">The new dictionary is assigned to the variable <code class="docutils literal notranslate"><span class="pre">student</span></code>.</p>
-</li>
-<li><p class="first">Inside the curly braces, colons separate the key/value pairs, with the keys
+<li><p>The new dictionary is assigned to the variable <code class="docutils literal notranslate"><span class="pre">student</span></code>.</p></li>
+<li><p>Inside the curly braces, colons separate the key/value pairs, with the keys
 on the left and the values on the right.</p>
 <p><code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">:</span> <span class="pre">value</span></code></p>
 </li>
-<li><p class="first">In this example, all of the key names are strings—<code class="docutils literal notranslate"><span class="pre">'name',</span> <span class="pre">'id_number',</span>
+<li><p>In this example, all of the key names are strings—<code class="docutils literal notranslate"><span class="pre">'name',</span> <span class="pre">'id_number',</span>
 <span class="pre">'scores'</span></code>. The values linked to these keys include a string, an integer,
-and a list.</p>
-</li>
-<li><p class="first">To help make our code more readable, we can place each key/value pair on
+and a list.</p></li>
+<li><p>To help make our code more readable, we can place each key/value pair on
 its own line.</p>
 <div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -194,12 +192,12 @@ its own line.</p>
 </pre></div>
 </td></tr></table></div>
 <div class="admonition-warning admonition">
-<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
-<p class="last">When putting the key/value pairs on separate lines, pay attention to spaces
+<p class="admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
+<p>When putting the key/value pairs on separate lines, pay attention to spaces
 and tabs! Incorrect indentation can result in a bug.</p>
 </div>
 </li>
-<li><p class="first">We can also define an empty dictionary using just a pair of braces.</p>
+<li><p>We can also define an empty dictionary using just a pair of braces.</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">empty_dictionary</span> <span class="o">=</span> <span class="p">{}</span>
 </pre></div>
 </div>
@@ -222,16 +220,16 @@ instead.</p>
 </pre></div>
 </td></tr></table></div>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>Experiment with the dictionary syntax to add and print values from
 different dictionaries.</p>
 <ol class="arabic simple">
-<li>Run the code as-is to see the output.</li>
-<li>Note that line 9 prints the entire dictionary (with braces) to the
-console.</li>
-<li>Change the key in line 10 to print different values from <code class="docutils literal notranslate"><span class="pre">student</span></code>.</li>
-<li>Add at least two key/value pairs to <code class="docutils literal notranslate"><span class="pre">animal_info</span></code>, then add brackets
-in line 12 to print each of the new values. (Use line 10 as an example).</li>
+<li><p>Run the code as-is to see the output.</p></li>
+<li><p>Note that line 9 prints the entire dictionary (with braces) to the
+console.</p></li>
+<li><p>Change the key in line 10 to print different values from <code class="docutils literal notranslate"><span class="pre">student</span></code>.</p></li>
+<li><p>Add at least two key/value pairs to <code class="docutils literal notranslate"><span class="pre">animal_info</span></code>, then add brackets
+in line 12 to print each of the new values. (Use line 10 as an example).</p></li>
 </ol>
 <div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -260,14 +258,14 @@ in line 12 to print each of the new values. (Use line 10 as an example).</li>
 </td></tr></table></div>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/DictionaryBasics" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 <p>Next:</p>
-<ol class="last arabic simple">
-<li>In line 10, try using a key name that does NOT exist in <code class="docutils literal notranslate"><span class="pre">student</span></code>.
-What happens when you run the program?</li>
-<li>Try using two identical key names for different values in
+<ol class="arabic simple">
+<li><p>In line 10, try using a key name that does NOT exist in <code class="docutils literal notranslate"><span class="pre">student</span></code>.
+What happens when you run the program?</p></li>
+<li><p>Try using two identical key names for different values in
 <code class="docutils literal notranslate"><span class="pre">animal_info</span></code> (something like <code class="docutils literal notranslate"><span class="pre">'name'</span> <span class="pre">:</span> <span class="pre">'Bob',</span> <span class="pre">'name'</span> <span class="pre">:</span> <span class="pre">42</span></code>). What
-happens when you run the program?</li>
-<li>Try assigning the same value (like <code class="docutils literal notranslate"><span class="pre">5</span></code>) to two different keys in the
-same dictionary. Does this cause an error?</li>
+happens when you run the program?</p></li>
+<li><p>Try assigning the same value (like <code class="docutils literal notranslate"><span class="pre">5</span></code>) to two different keys in the
+same dictionary. Does this cause an error?</p></li>
 </ol>
 </div>
 </div>
@@ -292,32 +290,32 @@ do not tell us which number belongs to a specific person or place. Just like
 variable names, we want the key names to be as descriptive as possible, and
 strings do this best.</p>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p>Technically, we can use an <code class="docutils literal notranslate"><span class="pre">int,</span> <span class="pre">str,</span> <span class="pre">float</span></code>, or <code class="docutils literal notranslate"><span class="pre">bool</span></code> data type for a
 key name. Strings are still the best choice in most cases, however.</p>
-<p class="last"><code class="docutils literal notranslate"><span class="pre">bool</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code> for a key?  Don’t.  Just… don’t.</p>
+<p><code class="docutils literal notranslate"><span class="pre">bool</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code> for a key?  Don’t.  Just… don’t.</p>
 </div>
 </div>
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">12.1.5. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>A dictionary is an unordered collection of key/value pairs.</p>
-<ol class="last loweralpha simple">
-<li>True</li>
-<li>False</li>
+<ol class="loweralpha simple">
+<li><p>True</p></li>
+<li><p>False</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>In a dictionary, two <em>keys</em> may have the same name.</p>
-<ol class="last loweralpha simple">
-<li>True</li>
-<li>False</li>
+<ol class="loweralpha simple">
+<li><p>True</p></li>
+<li><p>False</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What is printed by the following statements?</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -326,15 +324,15 @@ key name. Strings are still the best choice in most cases, however.</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">pet_population</span><span class="p">[</span><span class="s2">&quot;dogs&quot;</span><span class="p">])</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li>12</li>
-<li>6</li>
-<li>23</li>
-<li>dogs</li>
+<ol class="loweralpha simple">
+<li><p>12</p></li>
+<li><p>6</p></li>
+<li><p>23</p></li>
+<li><p>dogs</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What is printed by the following statements?</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -349,11 +347,11 @@ key name. Strings are still the best choice in most cases, however.</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">pet_population</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li>{‘cats’ : 12, ‘cats’ : 8}</li>
-<li>{‘cats’ : 8}</li>
-<li>{‘cats’ : 12}</li>
-<li>{‘cats’ : 20}</li>
+<ol class="loweralpha simple">
+<li><p>{‘cats’ : 12, ‘cats’ : 8}</p></li>
+<li><p>{‘cats’ : 8}</p></li>
+<li><p>{‘cats’ : 12}</p></li>
+<li><p>{‘cats’ : 20}</p></li>
 </ol>
 </div>
 </div>

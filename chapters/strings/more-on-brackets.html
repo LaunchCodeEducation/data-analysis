@@ -97,7 +97,7 @@ slice is similar to selecting a character, and the syntax is:</p>
 <p>With this format, Python returns all of the characters from the <code class="docutils literal notranslate"><span class="pre">start_index</span></code>
 value up to but NOT including the <code class="docutils literal notranslate"><span class="pre">end_index</span></code> value.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -111,7 +111,7 @@ value up to but NOT including the <code class="docutils literal notranslate"><sp
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cde
 </pre></div>
 </div>
-<p class="last">Since we start counting at 0, the character at index value 2 is <code class="docutils literal notranslate"><span class="pre">'c'</span></code>,
+<p>Since we start counting at 0, the character at index value 2 is <code class="docutils literal notranslate"><span class="pre">'c'</span></code>,
 and the character at index 5 is <code class="docutils literal notranslate"><span class="pre">'f'</span></code>. However, note that <code class="docutils literal notranslate"><span class="pre">'f'</span></code> is
 NOT included in the slice.</p>
 </div>
@@ -119,7 +119,7 @@ NOT included in the slice.</p>
 beginning of the string. If we leave out the second index, the slice goes to
 the end of the string.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">fruit</span> <span class="o">=</span> <span class="s2">&quot;cucumber&quot;</span>
@@ -133,7 +133,7 @@ umber
 </pre></div>
 </div>
 <p>What do you think <code class="docutils literal notranslate"><span class="pre">fruit[:]</span></code> means?</p>
-<p class="last">How about <code class="docutils literal notranslate"><span class="pre">fruit[-5:-2]</span></code>?</p>
+<p>How about <code class="docutils literal notranslate"><span class="pre">fruit[-5:-2]</span></code>?</p>
 </div>
 <div class="section" id="saving-substrings">
 <h2><span class="section-number">8.3.1. </span>Saving Substrings<a class="headerlink" href="#saving-substrings" title="Permalink to this headline">¶</a></h2>
@@ -147,7 +147,7 @@ to take another slice from <code class="docutils literal notranslate"><span clas
 <p>Instead of creating, using, then losing a new string, we can assign it to a
 variable whenever we use bracket notation.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -160,15 +160,15 @@ variable whenever we use bracket notation.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>car t carrot
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>car t carrot
 </pre></div>
 </div>
 </div>
 <p>By assigning the substrings <code class="docutils literal notranslate"><span class="pre">'car'</span></code> and <code class="docutils literal notranslate"><span class="pre">'t'</span></code> to variables, we can use
 those strings elsewhere in the program.</p>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">Notice that taking two slices from the string <code class="docutils literal notranslate"><span class="pre">'carrot'</span></code>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>Notice that taking two slices from the string <code class="docutils literal notranslate"><span class="pre">'carrot'</span></code>
 did NOT change the string itself. We will explore this idea in the next
 section.</p>
 </div>
@@ -176,13 +176,13 @@ section.</p>
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">8.3.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Given <code class="docutils literal notranslate"><span class="pre">language</span> <span class="pre">=</span> <span class="pre">'Python'</span></code>, what does <code class="docutils literal notranslate"><span class="pre">language[1:5]</span></code> return?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">&quot;Pyth&quot;</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">&quot;Pyt&quot;</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">&quot;yth&quot;</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">&quot;ytho&quot;</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;Pyth&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;Pyt&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;yth&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;ytho&quot;</span></code></p></li>
 </ol>
 </div>
 </div>

@@ -91,7 +91,7 @@
 a string into a list of words. By default, any number of whitespace characters
 is considered a word boundary.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -102,7 +102,7 @@ is considered a word boundary.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;Do&#39;, &#39;what&#39;, &#39;you&#39;, &#39;can,&#39;, &#39;with&#39;, &#39;what&#39;, &#39;you&#39;, &#39;have,&#39;, &#39;where&#39;, &#39;you&#39;, &#39;are.&#39;]
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;Do&#39;, &#39;what&#39;, &#39;you&#39;, &#39;can,&#39;, &#39;with&#39;, &#39;what&#39;, &#39;you&#39;, &#39;have,&#39;, &#39;where&#39;, &#39;you&#39;, &#39;are.&#39;]
 11
 </pre></div>
 </div>
@@ -111,7 +111,7 @@ is considered a word boundary.</p>
 delimiter sets the characters to use as word boundaries. The following example
 uses the string <code class="docutils literal notranslate"><span class="pre">se</span></code> as the delimiter:</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -122,7 +122,7 @@ uses the string <code class="docutils literal notranslate"><span class="pre">se<
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;Be your&#39;, &#39;lf. Everyone el&#39;, &#39; is already taken.&#39;]
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;Be your&#39;, &#39;lf. Everyone el&#39;, &#39; is already taken.&#39;]
 3
 </pre></div>
 </div>
@@ -133,7 +133,7 @@ method takes all of the elements from the list, combines them, and returns a
 new string value. To use <code class="docutils literal notranslate"><span class="pre">join</span></code>, we must give Python a <em>connector</em> string to
 place between the list elements.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -150,7 +150,7 @@ place between the list elements.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>Hello-how-are-you?
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Hello-how-are-you?
 [&#39;Hello&#39;, &#39;how&#39;, &#39;are&#39;, &#39;you?&#39;]
 Hello***how***are***you?
 Hellohowareyou?
@@ -165,26 +165,26 @@ or multi-character strings as the connector.</p>
 <p>These two methods are SUPER useful, since they allow us to convert between a
 mutable data type and an immutable one.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>Let’s put together a program that alphabetizes the words in a string.</p>
 <ol class="arabic simple">
-<li>On line 4, define the <code class="docutils literal notranslate"><span class="pre">tools_list</span></code> variable and set it equal to
-<code class="docutils literal notranslate"><span class="pre">tools.split()</span></code>.</li>
-<li>On line 5, print <code class="docutils literal notranslate"><span class="pre">tools_list</span></code> and note how each element includes a
-comma as part of the word. Let’s fix this.</li>
-<li>Inside <code class="docutils literal notranslate"><span class="pre">split()</span></code> set the delimiter to be a comma followed by a space
+<li><p>On line 4, define the <code class="docutils literal notranslate"><span class="pre">tools_list</span></code> variable and set it equal to
+<code class="docutils literal notranslate"><span class="pre">tools.split()</span></code>.</p></li>
+<li><p>On line 5, print <code class="docutils literal notranslate"><span class="pre">tools_list</span></code> and note how each element includes a
+comma as part of the word. Let’s fix this.</p></li>
+<li><p>Inside <code class="docutils literal notranslate"><span class="pre">split()</span></code> set the delimiter to be a comma followed by a space
 <code class="docutils literal notranslate"><span class="pre">',</span> <span class="pre">'</span></code>. Rerun the program to verify that <code class="docutils literal notranslate"><span class="pre">tools_list</span></code> contains only
-words now.</li>
-<li>On line 6, apply the <code class="docutils literal notranslate"><span class="pre">sort()</span></code> method to <code class="docutils literal notranslate"><span class="pre">tools_list</span></code>. Note that you
+words now.</p></li>
+<li><p>On line 6, apply the <code class="docutils literal notranslate"><span class="pre">sort()</span></code> method to <code class="docutils literal notranslate"><span class="pre">tools_list</span></code>. Note that you
 do NOT need to assign the sorted list to a variable.
-<code class="docutils literal notranslate"><span class="pre">tools_list.sort()</span></code> is all you need.</li>
-<li>Print <code class="docutils literal notranslate"><span class="pre">tools_list</span></code> again to verify that it is now alphabetized.</li>
-<li>Next, set <code class="docutils literal notranslate"><span class="pre">sorted_string</span></code> equal to <code class="docutils literal notranslate"><span class="pre">''.join(tools_list)</span></code>, then print
-<code class="docutils literal notranslate"><span class="pre">sorted_string</span></code>.</li>
-<li>The words in <code class="docutils literal notranslate"><span class="pre">sorted_string</span></code> are all squeezed together. Change the
+<code class="docutils literal notranslate"><span class="pre">tools_list.sort()</span></code> is all you need.</p></li>
+<li><p>Print <code class="docutils literal notranslate"><span class="pre">tools_list</span></code> again to verify that it is now alphabetized.</p></li>
+<li><p>Next, set <code class="docutils literal notranslate"><span class="pre">sorted_string</span></code> equal to <code class="docutils literal notranslate"><span class="pre">''.join(tools_list)</span></code>, then print
+<code class="docutils literal notranslate"><span class="pre">sorted_string</span></code>.</p></li>
+<li><p>The words in <code class="docutils literal notranslate"><span class="pre">sorted_string</span></code> are all squeezed together. Change the
 <em>connector</em> string in the <code class="docutils literal notranslate"><span class="pre">join</span></code> statement to be something other than
 the empty string. Try connecting the words with a hyphen, a comma, a
-space, and a comma-space to see which one looks best when printed.</li>
+space, and a comma-space to see which one looks best when printed.</p></li>
 </ol>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -194,17 +194,17 @@ space, and a comma-space to see which one looks best when printed.</li>
 </pre></div>
 </td></tr></table></div>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/SplitAndJoin" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
-<p class="last"><em>Question</em>: Did the program change the original <code class="docutils literal notranslate"><span class="pre">tools</span></code> string? What can
+<p><em>Question</em>: Did the program change the original <code class="docutils literal notranslate"><span class="pre">tools</span></code> string? What can
 you do to find out?</p>
 </div>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p>It is possible to alphabetize the string without using lists, but the code
 would be much more complicated. The difficulty comes with figuring out the
 proper order of words in the new string. This requires multiple slices from
 <code class="docutils literal notranslate"><span class="pre">tools</span></code>, plus conditionals to arrange the words, followed by repeated
 concatenation.</p>
-<p class="last">Placing the words into a list saves us a lot of time and effort.</p>
+<p>Placing the words into a list saves us a lot of time and effort.</p>
 </div>
 </div>
 <div class="section" id="list-type-conversion">
@@ -212,14 +212,14 @@ concatenation.</p>
 <p>Python has a built-in type conversion function called <code class="docutils literal notranslate"><span class="pre">list</span></code> that tries to
 turn whatever you give it into a list.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">test</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s2">&quot;Crunchy Frog&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;C&#39;, &#39;r&#39;, &#39;u&#39;, &#39;n&#39;, &#39;c&#39;, &#39;h&#39;, &#39;y&#39;, &#39; &#39;, &#39;F&#39;, &#39;r&#39;, &#39;o&#39;, &#39;g&#39;]
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;C&#39;, &#39;r&#39;, &#39;u&#39;, &#39;n&#39;, &#39;c&#39;, &#39;h&#39;, &#39;y&#39;, &#39; &#39;, &#39;F&#39;, &#39;r&#39;, &#39;o&#39;, &#39;g&#39;]
 </pre></div>
 </div>
 </div>
@@ -231,21 +231,21 @@ conversion function only works on data types that consist of smaller pieces.</p>
 <code class="docutils literal notranslate"><span class="pre">split</span></code> breaks a string into a list of <em>words</em>, while <code class="docutils literal notranslate"><span class="pre">list</span></code> breaks it into
 a list of <em>characters</em>.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>In the program below, lines 5 - 7 use the accumulator pattern to reverse the
 characters in <code class="docutils literal notranslate"><span class="pre">text</span></code>. Let’s use the <code class="docutils literal notranslate"><span class="pre">list</span></code> function to reverse
 <code class="docutils literal notranslate"><span class="pre">other_text</span></code>:</p>
 <ol class="arabic simple">
-<li>On line 11, define the <code class="docutils literal notranslate"><span class="pre">char_list</span></code> variable and set it equal to
-<code class="docutils literal notranslate"><span class="pre">list(other_text)</span></code>.</li>
-<li>On line 12, print <code class="docutils literal notranslate"><span class="pre">char_list</span></code> to verify that the function separated
-<code class="docutils literal notranslate"><span class="pre">other_text</span></code> into single characters.</li>
-<li>On line 13, apply the <code class="docutils literal notranslate"><span class="pre">reverse()</span></code> method to <code class="docutils literal notranslate"><span class="pre">char_list</span></code>. Note that you
+<li><p>On line 11, define the <code class="docutils literal notranslate"><span class="pre">char_list</span></code> variable and set it equal to
+<code class="docutils literal notranslate"><span class="pre">list(other_text)</span></code>.</p></li>
+<li><p>On line 12, print <code class="docutils literal notranslate"><span class="pre">char_list</span></code> to verify that the function separated
+<code class="docutils literal notranslate"><span class="pre">other_text</span></code> into single characters.</p></li>
+<li><p>On line 13, apply the <code class="docutils literal notranslate"><span class="pre">reverse()</span></code> method to <code class="docutils literal notranslate"><span class="pre">char_list</span></code>. Note that you
 do NOT need to assign the reversed list to a variable.
-<code class="docutils literal notranslate"><span class="pre">char_list.reverse()</span></code> is all you need.</li>
-<li>Next, define the variable <code class="docutils literal notranslate"><span class="pre">rev_other</span></code> and set it equal to
-<code class="docutils literal notranslate"><span class="pre">''.join(char_list)</span></code>.</li>
-<li>Print <code class="docutils literal notranslate"><span class="pre">rev_other</span></code>.</li>
+<code class="docutils literal notranslate"><span class="pre">char_list.reverse()</span></code> is all you need.</p></li>
+<li><p>Next, define the variable <code class="docutils literal notranslate"><span class="pre">rev_other</span></code> and set it equal to
+<code class="docutils literal notranslate"><span class="pre">''.join(char_list)</span></code>.</p></li>
+<li><p>Print <code class="docutils literal notranslate"><span class="pre">rev_other</span></code>.</p></li>
 </ol>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -269,7 +269,7 @@ do NOT need to assign the reversed list to a variable.
 </pre></div>
 </td></tr></table></div>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/ListAndJoin" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
-<p class="last">Note that the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement on line 12 is not needed for this
+<p>Note that the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement on line 12 is not needed for this
 technique to work. We just use it so see what the <code class="docutils literal notranslate"><span class="pre">list()</span></code> function
 returns.</p>
 </div>
@@ -277,7 +277,7 @@ returns.</p>
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">9.8.3. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What is printed by the following statements?</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -292,11 +292,11 @@ returns.</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">initials</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li>Poe</li>
-<li>EdgarAllanPoe</li>
-<li>EAP</li>
-<li>William Shakespeare</li>
+<ol class="loweralpha simple">
+<li><p>Poe</p></li>
+<li><p>EdgarAllanPoe</p></li>
+<li><p>EAP</p></li>
+<li><p>William Shakespeare</p></li>
 </ol>
 </div>
 </div>

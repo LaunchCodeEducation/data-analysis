@@ -91,90 +91,90 @@
 <p>The readings and exercises are a little different for this chapter.  Both have been combined into a GitHub repository containing two
 jupyter notebooks. The link can be found <a class="reference internal" href="exercises.html#datamanipulationnotebook"><span class="std std-ref">here</span></a>.</p>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">You will find all the assigned reading within each notebook in the GitHub repository you forked for this week’s exercises.</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>You will find all the assigned reading within each notebook in the GitHub repository you forked for this week’s exercises.</p>
 </div>
 </div>
 <div class="section" id="check-your-understanding">
 <span id="cyudatamanipulation"></span><h2><span class="section-number">17.1.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p class="last">What is the syntax for multiple aggregation functions across a single column, such as ‘age’?</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What is the syntax for multiple aggregation functions across a single column, such as ‘age’?</p>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p class="last">What data type is the syntax using?</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What data type is the syntax using?</p>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What is this line of code doing with the data?</p>
-<div class="last highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">data_group</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;embark_town&quot;</span><span class="p">)</span>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">data_group</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;embark_town&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What is this line of code doing with the data?</p>
-<div class="last highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">data_group</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;embark_town&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="s2">&quot;mean&quot;</span><span class="p">)</span>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">data_group</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;embark_town&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span><span class="s2">&quot;mean&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>According to pandas documentation, using a for loop is the only way to update values in a column.</p>
-<ol class="last loweralpha simple">
-<li>True</li>
-<li>False</li>
+<ol class="loweralpha simple">
+<li><p>True</p></li>
+<li><p>False</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p class="last">What is the syntax to rename a column?</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What is the syntax to rename a column?</p>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p class="last">Converting numeric data to categorical data is an example of?</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Converting numeric data to categorical data is an example of?</p>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>The pivot() method is the only way to aggregate values in a table.</p>
-<ol class="last loweralpha simple">
-<li>True</li>
-<li>False</li>
+<ol class="loweralpha simple">
+<li><p>True</p></li>
+<li><p>False</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p class="last">Which method do you use to create a “Wide-to-Long” table?</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Which method do you use to create a “Wide-to-Long” table?</p>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>When creating a small table, you should store it in its own variable to keep your original table safe.</p>
-<ol class="last loweralpha simple">
-<li>True</li>
-<li>False</li>
+<ol class="loweralpha simple">
+<li><p>True</p></li>
+<li><p>False</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>When appending a new row, if it contains a column that doesn’t previously exist in the original table then an error will be thrown.</p>
-<ol class="last loweralpha simple">
-<li>True</li>
-<li>False</li>
+<ol class="loweralpha simple">
+<li><p>True</p></li>
+<li><p>False</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Concatenation can act on which axes?</p>
-<ol class="last loweralpha simple">
-<li>1 and 0</li>
-<li>1, only</li>
-<li>0 only</li>
-<li>for as many columns as the table contains.</li>
+<ol class="loweralpha simple">
+<li><p>1 and 0</p></li>
+<li><p>1, only</p></li>
+<li><p>0 only</p></li>
+<li><p>for as many columns as the table contains.</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Using our flowers and garden_supply tables, write the syntax to merge a subset of columns,
 where flowers is the right table, and garden_supply on the left. This subset should only look
 at “Flower” and “Sold_As” only in the garden_supply table, and “Name” in the flowers table.</p>
@@ -199,42 +199,42 @@ at “Flower” and “Sold_As” only in the garden_supply table, and “Name�
 <ol class="loweralpha simple" start="4">
 <li></li>
 </ol>
-<div class="last highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">garden_supply</span><span class="p">[[</span><span class="s2">&quot;Name&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">flowers</span><span class="p">[[</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span> <span class="s2">&quot;Sold_As&quot;</span><span class="p">]],</span> <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Name&quot;</span><span class="p">)</span>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">garden_supply</span><span class="p">[[</span><span class="s2">&quot;Name&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">flowers</span><span class="p">[[</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span> <span class="s2">&quot;Sold_As&quot;</span><span class="p">]],</span> <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Name&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>The default merge in the pandas merge() function is a left merge.</p>
-<ol class="last loweralpha simple">
-<li>True</li>
-<li>False</li>
+<ol class="loweralpha simple">
+<li><p>True</p></li>
+<li><p>False</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p class="last">Which merge combines ALL of the rows of the merged dataframes, filling in NaN if values are missing?</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Which merge combines ALL of the rows of the merged dataframes, filling in NaN if values are missing?</p>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p class="last">(1 of 2) In the merge() function, there are the following parameters: on, left_on, and right_on.
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>(1 of 2) In the merge() function, there are the following parameters: on, left_on, and right_on.
 When would you use them?</p>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p class="last">(2 of 2) What is the difference between on and left_on in the merge() function?</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>(2 of 2) What is the difference between on and left_on in the merge() function?</p>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>When working with join, the right table will always be joined based on its index and not a designated column.</p>
-<ol class="last loweralpha simple">
-<li>True</li>
-<li>False</li>
+<ol class="loweralpha simple">
+<li><p>True</p></li>
+<li><p>False</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p class="last">The default join() type is:</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>The default join() type is:</p>
 </div>
 </div>
 </div>

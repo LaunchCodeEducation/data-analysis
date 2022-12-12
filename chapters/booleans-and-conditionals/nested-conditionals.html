@@ -90,13 +90,13 @@
 follow. We can add more branches to our program flow by combining conditionals.</p>
 <p>Let’s see how this works by solving the following problem:</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Write a program that:</p>
-<ol class="last arabic simple">
-<li>Prompts the user to enter a whole number.</li>
-<li>If the number is odd, print nothing.</li>
-<li>If the number is even, print “EVEN!” If the number is also positive,
-print “POSITIVE”.</li>
+<ol class="arabic simple">
+<li><p>Prompts the user to enter a whole number.</p></li>
+<li><p>If the number is odd, print nothing.</p></li>
+<li><p>If the number is even, print “EVEN!” If the number is also positive,
+print “POSITIVE”.</p></li>
 </ol>
 </div>
 <p>Our first attempt at a solution might look like this:</p>
@@ -133,7 +133,7 @@ this, we need to put the second conditional <em>inside</em> the first. This code
 structure is called a <strong>nested conditional</strong>. The result of the first
 conditional determines whether or not to consider the second.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>Run this code several times and choose different values for <code class="docutils literal notranslate"><span class="pre">entry</span></code> (even,
 odd, positive, negative) to prove that it works as desired. Nice, huh?</p>
 <div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -153,7 +153,7 @@ odd, positive, negative) to prove that it works as desired. Nice, huh?</p>
 <span class="c1"># Try removing the indentation for lines 6 &amp; 7 to see how the output changes!</span>
 </pre></div>
 </td></tr></table></div>
-<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/NestedConditionalsExample01" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/NestedConditionalsExample01" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
 <p>Notice that when we put one conditional inside another, the body of the nested
 conditional is indented by two levels rather than one. In Python, the indentation
@@ -164,12 +164,12 @@ statement to run inside another, it must be indented more than the outer conditi
 <p>In the examples above, we left out the <code class="docutils literal notranslate"><span class="pre">else</span></code> clauses from the conditionals.
 Let’s take nesting a step further by including <code class="docutils literal notranslate"><span class="pre">else</span></code> clauses:</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p><strong>PREDICT</strong>: What will this program print for the following words?</p>
 <ol class="arabic simple">
-<li><code class="docutils literal notranslate"><span class="pre">the</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">kale</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">rutabaga</span></code></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">the</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">kale</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rutabaga</span></code></p></li>
 </ol>
 <div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -191,11 +191,11 @@ Let’s take nesting a step further by including <code class="docutils literal n
 </pre></div>
 </td></tr></table></div>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/NestedConditionalsExample02" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
-<p class="last">Run the program to check your predictions.</p>
+<p>Run the program to check your predictions.</p>
 </div>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
-<p class="last">In Python, the amount of indentation tells us exactly which <code class="docutils literal notranslate"><span class="pre">else</span></code> clause belongs to which <code class="docutils literal notranslate"><span class="pre">if</span></code> statement.</p>
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>In Python, the amount of indentation tells us exactly which <code class="docutils literal notranslate"><span class="pre">else</span></code> clause belongs to which <code class="docutils literal notranslate"><span class="pre">if</span></code> statement.</p>
 </div>
 <p>This diagram shows the <em>flow of control</em> for this program:</p>
 <div class="figure align-default">
@@ -205,7 +205,7 @@ Let’s take nesting a step further by including <code class="docutils literal n
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">6.8.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What is printed when the following code runs?</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -218,15 +218,15 @@ Let’s take nesting a step further by including <code class="docutils literal n
       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;odd&quot;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li>The code won’t run due to invalid syntax.</li>
-<li>odd</li>
-<li>even</li>
-<li>The code runs but doesn’t print anything.</li>
+<ol class="loweralpha simple">
+<li><p>The code won’t run due to invalid syntax.</p></li>
+<li><p>odd</p></li>
+<li><p>even</p></li>
+<li><p>The code runs but doesn’t print anything.</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What is printed when the following code runs?</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -257,11 +257,11 @@ Let’s take nesting a step further by including <code class="docutils literal n
       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Clean your bathroom anyway!&quot;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li>Both of you agree!</li>
-<li>You two need to work this out.</li>
-<li>Stop arguing and work it out.</li>
-<li>Clean your bathroom anyway!</li>
+<ol class="loweralpha simple">
+<li><p>Both of you agree!</p></li>
+<li><p>You two need to work this out.</p></li>
+<li><p>Stop arguing and work it out.</p></li>
+<li><p>Clean your bathroom anyway!</p></li>
 </ol>
 </div>
 </div>

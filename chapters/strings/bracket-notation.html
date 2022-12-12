@@ -112,7 +112,7 @@ a new string containing just that one character.</p>
 <p>With zero-based indexing, the letter at index 0 of <code class="docutils literal notranslate"><span class="pre">'school'</span></code> is <code class="docutils literal notranslate"><span class="pre">'s'</span></code>. So
 at position [2] we have the letter <code class="docutils literal notranslate"><span class="pre">'h'</span></code>.</p>
 <div class="admonition-try-it admonition" id="string-index-try-it">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>Predict which letters will be printed to the console. Check your answers by
 clicking <em>Run</em>. Remember that with zero-based indexing, the <em>first</em>
 character always has an index value of <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
@@ -129,13 +129,13 @@ character always has an index value of <code class="docutils literal notranslate
 </td></tr></table></div>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/BracketPracticeStrings" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 <p>Now try the following:</p>
-<ol class="last arabic simple">
-<li>Change the index values in lines 3 and 5 to see how they affect the
-output.</li>
-<li>Enter <code class="docutils literal notranslate"><span class="pre">40</span></code> into the brackets in line 3. What happens when you use an
-index value that is larger than the length of the string?</li>
-<li>Replace <code class="docutils literal notranslate"><span class="pre">40</span></code> inside the brackets with a negative number, like <code class="docutils literal notranslate"><span class="pre">-1</span></code>.
-What happens?</li>
+<ol class="arabic simple">
+<li><p>Change the index values in lines 3 and 5 to see how they affect the
+output.</p></li>
+<li><p>Enter <code class="docutils literal notranslate"><span class="pre">40</span></code> into the brackets in line 3. What happens when you use an
+index value that is larger than the length of the string?</p></li>
+<li><p>Replace <code class="docutils literal notranslate"><span class="pre">40</span></code> inside the brackets with a negative number, like <code class="docutils literal notranslate"><span class="pre">-1</span></code>.
+What happens?</p></li>
 </ol>
 </div>
 <p>In step 2 above, <code class="docutils literal notranslate"><span class="pre">this_string[40]</span></code> causes an <em>index out of range</em> error.
@@ -152,7 +152,7 @@ expression that evaluates to an integer.</p>
 <p>Recall that we can use the <code class="docutils literal notranslate"><span class="pre">len()</span></code> function to return the number of
 characters in a string.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">this_string</span> <span class="o">=</span> <span class="s1">&#39;Zero-based indexing!&#39;</span>
@@ -164,7 +164,7 @@ characters in a string.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>20
 </pre></div>
 </div>
-<p class="last"><code class="docutils literal notranslate"><span class="pre">len(this_string)</span></code> evaluates to 20, and that value gets printed to the
+<p><code class="docutils literal notranslate"><span class="pre">len(this_string)</span></code> evaluates to 20, and that value gets printed to the
 console.</p>
 </div>
 <p>In the <em>Try It</em> example above, replace <code class="docutils literal notranslate"><span class="pre">print(this_string[3])</span></code> with
@@ -174,13 +174,13 @@ console.</p>
 <p>The reason is, once again, zero-based indexing. Since we start counting index
 values at <code class="docutils literal notranslate"><span class="pre">0</span></code>, the 20th character has an index value of <code class="docutils literal notranslate"><span class="pre">19</span></code>.</p>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
 <p>We can access the last character of the string and avoid the out of range error
 by using:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">this_string</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">this_string</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span>
 </pre></div>
 </div>
-<p class="last">The expression <code class="docutils literal notranslate"><span class="pre">len(this_string)</span> <span class="pre">-</span> <span class="pre">1</span></code> evaluates to <code class="docutils literal notranslate"><span class="pre">19</span></code>, and
+<p>The expression <code class="docutils literal notranslate"><span class="pre">len(this_string)</span> <span class="pre">-</span> <span class="pre">1</span></code> evaluates to <code class="docutils literal notranslate"><span class="pre">19</span></code>, and
 <code class="docutils literal notranslate"><span class="pre">this_string[19]</span></code> is the last character (<code class="docutils literal notranslate"><span class="pre">'!'</span></code>).</p>
 </div>
 </div>
@@ -201,62 +201,62 @@ to the beginning (right to left). In this case, the index values are
 <h3><span class="section-number">8.2.2.1. </span>Try It!<a class="headerlink" href="#try-it" title="Permalink to this headline">¶</a></h3>
 <p>Return to the <a class="reference internal" href="#string-index-try-it"><span class="std std-ref">repl above</span></a> and do the following:</p>
 <ol class="arabic simple">
-<li>Use a negative index to print the character <code class="docutils literal notranslate"><span class="pre">'x'</span></code> from the string
-<code class="docutils literal notranslate"><span class="pre">Zero-based</span> <span class="pre">indexing!</span></code></li>
-<li>What is the smallest negative number that gives an <em>index out of range</em>
-error? In this case, “smallest” means “closest to zero”.</li>
-<li><code class="docutils literal notranslate"><span class="pre">this_string[len(this_string)]</span></code> throws an error. What about
-<code class="docutils literal notranslate"><span class="pre">this_string[-len(this_string)]</span></code>?</li>
+<li><p>Use a negative index to print the character <code class="docutils literal notranslate"><span class="pre">'x'</span></code> from the string
+<code class="docutils literal notranslate"><span class="pre">Zero-based</span> <span class="pre">indexing!</span></code></p></li>
+<li><p>What is the smallest negative number that gives an <em>index out of range</em>
+error? In this case, “smallest” means “closest to zero”.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">this_string[len(this_string)]</span></code> throws an error. What about
+<code class="docutils literal notranslate"><span class="pre">this_string[-len(this_string)]</span></code>?</p></li>
 </ol>
 </div>
 </div>
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">8.2.3. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>If <code class="docutils literal notranslate"><span class="pre">phrase</span> <span class="pre">=</span> <span class="pre">'Code</span> <span class="pre">for</span> <span class="pre">fun'</span></code>, then <code class="docutils literal notranslate"><span class="pre">phrase[2]</span></code> evaluates to:</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">'o'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'d'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'for'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'fun'</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">'o'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'d'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'for'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'fun'</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Which of the following returns <code class="docutils literal notranslate"><span class="pre">True</span></code> given <code class="docutils literal notranslate"><span class="pre">my_str</span> <span class="pre">=</span> <span class="pre">'index'</span></code>?  Choose
 ALL correct answers.</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">my_str[2]</span> <span class="pre">==</span> <span class="pre">'n'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">my_str[4]</span> <span class="pre">==</span> <span class="pre">'x'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">my_str[6]</span> <span class="pre">==</span> <span class="pre">'</span> <span class="pre">'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">my_str[0]</span> <span class="pre">==</span> <span class="pre">'i'</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">my_str[2]</span> <span class="pre">==</span> <span class="pre">'n'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">my_str[4]</span> <span class="pre">==</span> <span class="pre">'x'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">my_str[6]</span> <span class="pre">==</span> <span class="pre">'</span> <span class="pre">'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">my_str[0]</span> <span class="pre">==</span> <span class="pre">'i'</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What is printed by the following code?</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">phrase</span> <span class="o">=</span> <span class="s2">&quot;Python rocks!&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">phrase</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">phrase</span><span class="p">)</span> <span class="o">-</span> <span class="mi">9</span><span class="p">])</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">'o'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'t'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'n'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'c'</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">'o'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'t'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'n'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'c'</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Given <code class="docutils literal notranslate"><span class="pre">my_str</span> <span class="pre">=</span> <span class="pre">'ABC</span> <span class="pre">DEF</span> <span class="pre">GHI'</span></code>, which of the following
 expressions returns <code class="docutils literal notranslate"><span class="pre">'F'</span></code>?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">my_str[-3]</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">my_str[-4]</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">my_str[-5]</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">my_str[-6]</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">my_str[-3]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">my_str[-4]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">my_str[-5]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">my_str[-6]</span></code></p></li>
 </ol>
 </div>
 </div>

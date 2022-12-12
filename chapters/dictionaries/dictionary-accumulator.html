@@ -95,7 +95,7 @@ works with them as well.</p>
 <p>We can add key/value pairs one at a time to an empty dictionary using bracket
 notation:</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Let’s create a dictionary that uses strings as key/value pairs.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -121,7 +121,7 @@ notation:</p>
 <p>In lines 3 - 6, on the left hand side of the <code class="docutils literal notranslate"><span class="pre">=</span></code> operator we define the
 new keys for the <code class="docutils literal notranslate"><span class="pre">eng_to_pirate</span></code> dictionary. On the right hand side of the
 <code class="docutils literal notranslate"><span class="pre">=</span></code>, we place the value to assign to the key.</p>
-<p class="last">Each key is an English word, and its value is the related term in
+<p>Each key is an English word, and its value is the related term in
 pirate-speak.</p>
 </div>
 <p>A more efficient way would be to use the accumulator pattern to add new
@@ -130,17 +130,17 @@ new thing each time the loop repeats. For dictionaries, we need to add <em>two</
 items—a new key and a new value.</p>
 <p>Let’s play with a couple of examples to practice this.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>The following program builds the <code class="docutils literal notranslate"><span class="pre">vowel_count</span></code> dictionary by adding a new
 key/value pair each time the loop repeats. Each character from the string
 <code class="docutils literal notranslate"><span class="pre">'aeiou'</span></code> becomes a key in the dictionary, which gets linked to an integer
 value.</p>
 <ol class="arabic simple">
-<li>Line 5 creates an empty dictionary and assigns it to the variable
-<code class="docutils literal notranslate"><span class="pre">vowel_counts</span></code>.</li>
-<li>Line 7 creates a new key/value pair in <code class="docutils literal notranslate"><span class="pre">vowel_counts</span></code>. Each key is one
+<li><p>Line 5 creates an empty dictionary and assigns it to the variable
+<code class="docutils literal notranslate"><span class="pre">vowel_counts</span></code>.</p></li>
+<li><p>Line 7 creates a new key/value pair in <code class="docutils literal notranslate"><span class="pre">vowel_counts</span></code>. Each key is one
 character from <code class="docutils literal notranslate"><span class="pre">vowels</span></code>, and its value is how often that letter occurs
-in the <code class="docutils literal notranslate"><span class="pre">guide</span></code> string.</li>
+in the <code class="docutils literal notranslate"><span class="pre">guide</span></code> string.</p></li>
 </ol>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -163,13 +163,13 @@ in the <code class="docutils literal notranslate"><span class="pre">guide</span>
 </td></tr></table></div>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/DictionaryAccumulator01" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 <p><strong>Now try:</strong></p>
-<ol class="last arabic simple">
-<li>Indent line 9 to put the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement inside the loop. Run the
-program to see how <code class="docutils literal notranslate"><span class="pre">vowel_counts</span></code> grows each time the loop repeats.</li>
-<li>Replace <code class="docutils literal notranslate"><span class="pre">guide</span></code> with <code class="docutils literal notranslate"><span class="pre">games</span></code> in line 7.</li>
-<li>Use a different string in the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement to count different
+<ol class="arabic simple">
+<li><p>Indent line 9 to put the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement inside the loop. Run the
+program to see how <code class="docutils literal notranslate"><span class="pre">vowel_counts</span></code> grows each time the loop repeats.</p></li>
+<li><p>Replace <code class="docutils literal notranslate"><span class="pre">guide</span></code> with <code class="docutils literal notranslate"><span class="pre">games</span></code> in line 7.</p></li>
+<li><p>Use a different string in the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement to count different
 letters or other characters. (As a good Python coder, you should change
-your variable names once you stop counting vowels).</li>
+your variable names once you stop counting vowels).</p></li>
 </ol>
 </div>
 <p>The previous example took the characters from the string <code class="docutils literal notranslate"><span class="pre">'aeiou'</span></code> and turned
@@ -177,7 +177,7 @@ them into dictionary keys. We used items from one collection (a string) to help
 us build a new dictionary.</p>
 <p>The next example combines the elements of two lists into a single dictionary.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>Let’s build an English-to-pirate translation dictionary! We will use English
 words as keys and pirate words for the values.</p>
 <p>Feel free to add your own words to each list! However, be sure to keep both
@@ -209,29 +209,31 @@ lists the same length.</p>
 </td></tr></table></div>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/DictionaryAccumulator02" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 <p><strong>Note the following:</strong></p>
-<ol class="last arabic simple">
-<li>Since we pull elements from two different lists, we need to assign
+<ol class="arabic simple">
+<li><p>Since we pull elements from two different lists, we need to assign
 <em>index</em> values (0, 1, 2…) to the loop variable. This allows us to match
-the correct words from each list.</li>
-<li>On line 9, <code class="docutils literal notranslate"><span class="pre">english_words[index]</span></code> accesses one element from the
+the correct words from each list.</p></li>
+<li><p>On line 9, <code class="docutils literal notranslate"><span class="pre">english_words[index]</span></code> accesses one element from the
 <code class="docutils literal notranslate"><span class="pre">english_words</span></code> list, and it uses that element to define a new key. For
 example, the first time through the loop, the left hand side of line 9
-evaluates as:<ol class="loweralpha">
-<li><code class="docutils literal notranslate"><span class="pre">eng_to_pirate[english_words[index]]</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">eng_to_pirate[english_words[0]]</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">eng_to_pirate['hello']</span></code></li>
+evaluates as:</p>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">eng_to_pirate[english_words[index]]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">eng_to_pirate[english_words[0]]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">eng_to_pirate['hello']</span></code></p></li>
 </ol>
 </li>
-<li>The right hand side of line 9 uses the same index value, but it pulls an
-element from the <code class="docutils literal notranslate"><span class="pre">pirate_words</span></code> list:<ol class="loweralpha">
-<li><code class="docutils literal notranslate"><span class="pre">pirate_words[index]</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">pirate_words[0]</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'ahoy'</span></code></li>
+<li><p>The right hand side of line 9 uses the same index value, but it pulls an
+element from the <code class="docutils literal notranslate"><span class="pre">pirate_words</span></code> list:</p>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pirate_words[index]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pirate_words[0]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'ahoy'</span></code></p></li>
 </ol>
 </li>
-<li>For index value 0, line 9 reduces to <code class="docutils literal notranslate"><span class="pre">eng_to_pirate['hello']</span> <span class="pre">=</span> <span class="pre">'ahoy'</span></code>,
+<li><p>For index value 0, line 9 reduces to <code class="docutils literal notranslate"><span class="pre">eng_to_pirate['hello']</span> <span class="pre">=</span> <span class="pre">'ahoy'</span></code>,
 and this adds the <code class="docutils literal notranslate"><span class="pre">'hello'</span> <span class="pre">:</span> <span class="pre">'ahoy'</span></code> key/value pair to the
-<code class="docutils literal notranslate"><span class="pre">eng_to_pirate</span></code> dictionary.</li>
+<code class="docutils literal notranslate"><span class="pre">eng_to_pirate</span></code> dictionary.</p></li>
 </ol>
 </div>
 </div>
@@ -240,7 +242,7 @@ and this adds the <code class="docutils literal notranslate"><span class="pre">'
 <p id="round-function">We can also use the accumulator pattern to perform an operation with the values
 in a dictionary.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -265,20 +267,21 @@ in a dictionary.</p>
 </pre></div>
 </div>
 <p><strong>Note the following:</strong></p>
-<ol class="last arabic simple">
-<li>In line 3, we define the accumulator variable <code class="docutils literal notranslate"><span class="pre">total</span></code> and assign it an
-initial value of <code class="docutils literal notranslate"><span class="pre">0</span></code>.</li>
-<li>In line 4, we set the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement to loop through the keys of the
-<code class="docutils literal notranslate"><span class="pre">exam_scores</span></code> dictionary.</li>
-<li>Each time the loop repeats, line 5 increases <code class="docutils literal notranslate"><span class="pre">total</span></code> by the value
+<ol class="arabic simple">
+<li><p>In line 3, we define the accumulator variable <code class="docutils literal notranslate"><span class="pre">total</span></code> and assign it an
+initial value of <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></li>
+<li><p>In line 4, we set the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement to loop through the keys of the
+<code class="docutils literal notranslate"><span class="pre">exam_scores</span></code> dictionary.</p></li>
+<li><p>Each time the loop repeats, line 5 increases <code class="docutils literal notranslate"><span class="pre">total</span></code> by the value
 linked to the current key. For example, the first time through the loop,
-line 5 operates this way:<ol class="loweralpha">
-<li><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">+=</span> <span class="pre">exam_scores[key]</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">+=</span> <span class="pre">exam_scores['exam_1']</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">+=</span> <span class="pre">95</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">=</span> <span class="pre">total</span> <span class="pre">+</span> <span class="pre">95</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">=</span> <span class="pre">0</span> <span class="pre">+</span> <span class="pre">95</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">=</span> <span class="pre">95</span></code></li>
+line 5 operates this way:</p>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">+=</span> <span class="pre">exam_scores[key]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">+=</span> <span class="pre">exam_scores['exam_1']</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">+=</span> <span class="pre">95</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">=</span> <span class="pre">total</span> <span class="pre">+</span> <span class="pre">95</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">=</span> <span class="pre">0</span> <span class="pre">+</span> <span class="pre">95</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">=</span> <span class="pre">95</span></code></p></li>
 </ol>
 </li>
 </ol>
@@ -287,7 +290,7 @@ line 5 operates this way:<ol class="loweralpha">
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">12.5.3. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What does the following program print?</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -306,15 +309,15 @@ line 5 operates this way:<ol class="loweralpha">
 <span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">0</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">25</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">45</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">60</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">0</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">25</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">45</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">60</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>We want to code an accumulator that takes names and ticket numbers from two
 different lists, then uses that data to add key/value pairs to a dictionary.</p>
 <p>The names should be the keys in the dictionary with the ticket numbers as
@@ -335,11 +338,11 @@ their values.</p>
 </td></tr></table></div>
 <p>Which of the following is the correct syntax for adding the key/value
 pairs to <code class="docutils literal notranslate"><span class="pre">ticket_holders</span></code>?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">ticket_holders[index]</span> <span class="pre">=</span> <span class="pre">ticket_numbers[index]</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">ticket_holders[names[index]]</span> <span class="pre">=</span> <span class="pre">ticket_numbers[index]</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">ticket_holders[key]</span> <span class="pre">=</span> <span class="pre">ticket_numbers[value]</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">ticket_holders[key]</span> <span class="pre">=</span> <span class="pre">value</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ticket_holders[index]</span> <span class="pre">=</span> <span class="pre">ticket_numbers[index]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ticket_holders[names[index]]</span> <span class="pre">=</span> <span class="pre">ticket_numbers[index]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ticket_holders[key]</span> <span class="pre">=</span> <span class="pre">ticket_numbers[value]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ticket_holders[key]</span> <span class="pre">=</span> <span class="pre">value</span></code></p></li>
 </ol>
 </div>
 </div>

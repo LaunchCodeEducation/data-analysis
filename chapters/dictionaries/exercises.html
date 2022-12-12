@@ -92,31 +92,29 @@
 <p>The <code class="docutils literal notranslate"><span class="pre">flavors</span></code> dictionary contains entries that pair different ice cream
 flavors with their cost per scoop. Your job is to do the following:</p>
 <ol class="arabic" id="dictionaries-exercises-a1">
-<li><p class="first">Write a function called <code class="docutils literal notranslate"><span class="pre">return_cost</span></code> that takes a dictionary and flavor
+<li><p>Write a function called <code class="docutils literal notranslate"><span class="pre">return_cost</span></code> that takes a dictionary and flavor
 choice as parameters.</p>
 <ol class="loweralpha simple">
-<li>The function searches the dictionary for the flavor and returns its cost.</li>
-<li>If the flavor is not in the dictionary, return a value of <code class="docutils literal notranslate"><span class="pre">0</span></code>.</li>
+<li><p>The function searches the dictionary for the flavor and returns its cost.</p></li>
+<li><p>If the flavor is not in the dictionary, return a value of <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></li>
 </ol>
 <p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-a1"><span class="std std-ref">Check your solution</span></a></p>
 </li>
-<li><p class="first">After coding the <code class="docutils literal notranslate"><span class="pre">return_cost</span></code> function, run the program and examine the
+<li><p>After coding the <code class="docutils literal notranslate"><span class="pre">return_cost</span></code> function, run the program and examine the
 output. Make sure your function behaves as expected before moving to the
 next step. Don’t forget to assign different strings to the <code class="docutils literal notranslate"><span class="pre">choice</span></code>
-variable!</p>
-</li>
+variable!</p></li>
 </ol>
 <ol class="arabic" id="dictionaries-exercises-a3">
-<li><p class="first">Write a function called <code class="docutils literal notranslate"><span class="pre">fanciest_flavor</span></code> that takes a dictionary as a
+<li><p>Write a function called <code class="docutils literal notranslate"><span class="pre">fanciest_flavor</span></code> that takes a dictionary as a
 parameter. The function should return the key name for the most expensive
 choice in the dictionary.</p>
 <p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-a3"><span class="std std-ref">Check your solution</span></a></p>
 </li>
-<li><p class="first">Uncomment the 3 indicated lines in <code class="docutils literal notranslate"><span class="pre">main()</span></code>, then run the program several
+<li><p>Uncomment the 3 indicated lines in <code class="docutils literal notranslate"><span class="pre">main()</span></code>, then run the program several
 times and examine the output. Change the prices in <code class="docutils literal notranslate"><span class="pre">flavors</span></code> after each
 run to make sure your function correctly identifies the most expensive ice
-cream flavor.</p>
-</li>
+cream flavor.</p></li>
 </ol>
 </div>
 <div class="section" id="part-b-keys-from-a-collection">
@@ -124,28 +122,26 @@ cream flavor.</p>
 <p>Fork the starter code on <a class="reference external" href="https://replit.com/&#64;launchcode/DictionaryExercises02#main.py" target="_blank">Replit<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 <p>Use the accumulator pattern to add new key/value pairs to an empty dictionary.</p>
 <ol class="arabic" id="dictionaries-exercises-b1">
-<li><p class="first">Write a function called <code class="docutils literal notranslate"><span class="pre">assign_tickets</span></code> that takes a list of names as a
+<li><p>Write a function called <code class="docutils literal notranslate"><span class="pre">assign_tickets</span></code> that takes a list of names as a
 parameter.</p>
 <p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-b1"><span class="std std-ref">Check your solution</span></a></p>
 </li>
-<li><p class="first">The function should take each name from the list and use it to create a key
-in the dictionary.</p>
-</li>
+<li><p>The function should take each name from the list and use it to create a key
+in the dictionary.</p></li>
 </ol>
 <ol class="arabic" id="dictionaries-exercises-b3">
-<li><p class="first">For the value of each key, assign a random integer from 100-500.</p>
+<li><p>For the value of each key, assign a random integer from 100-500.</p>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">We are not worried about giving two people the same ticket number in this
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>We are not worried about giving two people the same ticket number in this
 exercise. However, for a real event we would want to prevent this.</p>
 </div>
 <p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-b3"><span class="std std-ref">Check your solution</span></a></p>
 </li>
-<li><p class="first">Return the new dictionary.</p>
-</li>
+<li><p>Return the new dictionary.</p></li>
 </ol>
 <ol class="arabic" id="dictionaries-exercises-b5">
-<li><p class="first">In <code class="docutils literal notranslate"><span class="pre">main()</span></code>, call the <code class="docutils literal notranslate"><span class="pre">assign_tickets</span></code> function and assign the result to
+<li><p>In <code class="docutils literal notranslate"><span class="pre">main()</span></code>, call the <code class="docutils literal notranslate"><span class="pre">assign_tickets</span></code> function and assign the result to
 a <code class="docutils literal notranslate"><span class="pre">ticket_holders</span></code> variable.</p>
 <p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-b5"><span class="std std-ref">Check your solution</span></a></p>
 </li>
@@ -164,13 +160,13 @@ editor in part B as you update your code.</p>
 <p id="dictionaries-exercises-c">Call the function <code class="docutils literal notranslate"><span class="pre">fix_tickets</span></code>, and use <code class="docutils literal notranslate"><span class="pre">ticket_holders</span></code> as the argument.
 The <code class="docutils literal notranslate"><span class="pre">fix_tickets</span></code> function should:</p>
 <ol class="arabic simple">
-<li>Accept a dictionary as a parameter.</li>
-<li>Loop through the dictionary and check each ticket number to see if it is in
-the range 100-199 (including the end points).</li>
-<li>For a ticket within the range, increase its value by <code class="docutils literal notranslate"><span class="pre">500</span></code> and reassign it
-to the key.</li>
-<li>Unless you cloned the dictionary, there is no need to return the updated
-collection.</li>
+<li><p>Accept a dictionary as a parameter.</p></li>
+<li><p>Loop through the dictionary and check each ticket number to see if it is in
+the range 100-199 (including the end points).</p></li>
+<li><p>For a ticket within the range, increase its value by <code class="docutils literal notranslate"><span class="pre">500</span></code> and reassign it
+to the key.</p></li>
+<li><p>Unless you cloned the dictionary, there is no need to return the updated
+collection.</p></li>
 </ol>
 <p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-c"><span class="std std-ref">Check your solution</span></a></p>
 <p>To check your code, be sure to print <code class="docutils literal notranslate"><span class="pre">ticket_holders</span></code> before and after
@@ -188,28 +184,29 @@ After: {&#39;Caleb&#39;: 668, &#39;Naomi&#39;: 205, &#39;Owen&#39;: 693, &#39;Av
 character appears in a string.</p>
 <p>The function should:</p>
 <ol class="arabic simple">
-<li>Accept a string as a parameter.</li>
-<li>Create an empty dictionary called <code class="docutils literal notranslate"><span class="pre">counts</span></code>.</li>
-<li>Loop through the string and check each character.<ol class="loweralpha">
-<li>If the character does NOT exist in as a key in <code class="docutils literal notranslate"><span class="pre">counts</span></code>, add it and
-assign it a value of <code class="docutils literal notranslate"><span class="pre">1</span></code>.</li>
-<li>If the character DOES exist as a key in <code class="docutils literal notranslate"><span class="pre">counts</span></code>, increase its value by
-one.</li>
+<li><p>Accept a string as a parameter.</p></li>
+<li><p>Create an empty dictionary called <code class="docutils literal notranslate"><span class="pre">counts</span></code>.</p></li>
+<li><p>Loop through the string and check each character.</p>
+<ol class="loweralpha simple">
+<li><p>If the character does NOT exist in as a key in <code class="docutils literal notranslate"><span class="pre">counts</span></code>, add it and
+assign it a value of <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p></li>
+<li><p>If the character DOES exist as a key in <code class="docutils literal notranslate"><span class="pre">counts</span></code>, increase its value by
+one.</p></li>
 </ol>
 </li>
-<li>Return the completed <code class="docutils literal notranslate"><span class="pre">counts</span></code> dictionary and assign it to a <code class="docutils literal notranslate"><span class="pre">results</span></code>
-variable in <code class="docutils literal notranslate"><span class="pre">main()</span></code>.</li>
+<li><p>Return the completed <code class="docutils literal notranslate"><span class="pre">counts</span></code> dictionary and assign it to a <code class="docutils literal notranslate"><span class="pre">results</span></code>
+variable in <code class="docutils literal notranslate"><span class="pre">main()</span></code>.</p></li>
 </ol>
 <p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-d"><span class="std std-ref">Check your solution</span></a></p>
 <p>The counting should be <em>case-insensitive</em>. For example, <code class="docutils literal notranslate"><span class="pre">'a'</span></code> and <code class="docutils literal notranslate"><span class="pre">'A'</span></code>
 both count as the same letter.</p>
 <p>Be sure to print the returned dictionary to check your code.</p>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
 <p>Here are some test strings and their results:</p>
-<ol class="last arabic simple">
-<li><code class="docutils literal notranslate"><span class="pre">&quot;Python</span> <span class="pre">ROCKS!&quot;</span></code> returns <code class="docutils literal notranslate"><span class="pre">{'p':</span> <span class="pre">1,</span> <span class="pre">'y':</span> <span class="pre">1,</span> <span class="pre">'t':</span> <span class="pre">1,</span> <span class="pre">'h':</span> <span class="pre">1,</span> <span class="pre">'o':</span> <span class="pre">2,</span> <span class="pre">'n':</span> <span class="pre">1,</span> <span class="pre">'</span> <span class="pre">':</span> <span class="pre">1,</span> <span class="pre">'r':</span> <span class="pre">1,</span> <span class="pre">'c':</span> <span class="pre">1,</span> <span class="pre">'k':</span> <span class="pre">1,</span> <span class="pre">'s':</span> <span class="pre">1,</span> <span class="pre">'!':</span> <span class="pre">1}</span></code>.</li>
-<li><code class="docutils literal notranslate"><span class="pre">&quot;Balloons,</span> <span class="pre">bookkeepers,</span> <span class="pre">and</span> <span class="pre">bubbles.&quot;</span></code> returns <code class="docutils literal notranslate"><span class="pre">{'b':</span> <span class="pre">5,</span> <span class="pre">'a':</span> <span class="pre">2,</span> <span class="pre">'l':</span> <span class="pre">3,</span> <span class="pre">'o':</span> <span class="pre">4,</span> <span class="pre">'n':</span> <span class="pre">2,</span> <span class="pre">'s':</span> <span class="pre">3,</span> <span class="pre">',':</span> <span class="pre">2,</span> <span class="pre">'</span> <span class="pre">':</span> <span class="pre">3,</span> <span class="pre">'k':</span> <span class="pre">2,</span> <span class="pre">'e':</span> <span class="pre">4,</span> <span class="pre">'p':</span> <span class="pre">1,</span> <span class="pre">'r':</span> <span class="pre">1,</span> <span class="pre">'d':</span> <span class="pre">1,</span> <span class="pre">'u':</span> <span class="pre">1,</span> <span class="pre">'.':</span> <span class="pre">1}</span></code>.</li>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;Python</span> <span class="pre">ROCKS!&quot;</span></code> returns <code class="docutils literal notranslate"><span class="pre">{'p':</span> <span class="pre">1,</span> <span class="pre">'y':</span> <span class="pre">1,</span> <span class="pre">'t':</span> <span class="pre">1,</span> <span class="pre">'h':</span> <span class="pre">1,</span> <span class="pre">'o':</span> <span class="pre">2,</span> <span class="pre">'n':</span> <span class="pre">1,</span> <span class="pre">'</span> <span class="pre">':</span> <span class="pre">1,</span> <span class="pre">'r':</span> <span class="pre">1,</span> <span class="pre">'c':</span> <span class="pre">1,</span> <span class="pre">'k':</span> <span class="pre">1,</span> <span class="pre">'s':</span> <span class="pre">1,</span> <span class="pre">'!':</span> <span class="pre">1}</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;Balloons,</span> <span class="pre">bookkeepers,</span> <span class="pre">and</span> <span class="pre">bubbles.&quot;</span></code> returns <code class="docutils literal notranslate"><span class="pre">{'b':</span> <span class="pre">5,</span> <span class="pre">'a':</span> <span class="pre">2,</span> <span class="pre">'l':</span> <span class="pre">3,</span> <span class="pre">'o':</span> <span class="pre">4,</span> <span class="pre">'n':</span> <span class="pre">2,</span> <span class="pre">'s':</span> <span class="pre">3,</span> <span class="pre">',':</span> <span class="pre">2,</span> <span class="pre">'</span> <span class="pre">':</span> <span class="pre">3,</span> <span class="pre">'k':</span> <span class="pre">2,</span> <span class="pre">'e':</span> <span class="pre">4,</span> <span class="pre">'p':</span> <span class="pre">1,</span> <span class="pre">'r':</span> <span class="pre">1,</span> <span class="pre">'d':</span> <span class="pre">1,</span> <span class="pre">'u':</span> <span class="pre">1,</span> <span class="pre">'.':</span> <span class="pre">1}</span></code>.</p></li>
 </ol>
 </div>
 </div>
@@ -218,7 +215,7 @@ both count as the same letter.</p>
 <p>Now display the character count result in a cleaner way. Update your code in
 the part D editor.</p>
 <ol class="arabic" id="dictionaries-exercises-e1">
-<li><p class="first">In the <code class="docutils literal notranslate"><span class="pre">main()</span></code> function, loop through the <code class="docutils literal notranslate"><span class="pre">results</span></code> dictionary and
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">main()</span></code> function, loop through the <code class="docutils literal notranslate"><span class="pre">results</span></code> dictionary and
 print each key/value pair on its own line. For <code class="docutils literal notranslate"><span class="pre">&quot;B-A-L-L-O-O-N-S!&quot;</span></code>, the
 output would be:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The character counts for &#39;B-A-L-L-O-O-N-S!&#39; are:
@@ -235,18 +232,17 @@ s: 1
 <p>Be sure your output includes the introductory sentence.</p>
 <p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-e1"><span class="std std-ref">Check your solution</span></a></p>
 </li>
-<li><p class="first">Modify your code to print a key/value pair ONLY IF the character is a
-letter.</p>
-</li>
+<li><p>Modify your code to print a key/value pair ONLY IF the character is a
+letter.</p></li>
 </ol>
 <ol class="arabic" id="dictionaries-exercises-e3">
-<li><p class="first">Modify your code again, but this time display the character counts in
+<li><p>Modify your code again, but this time display the character counts in
 alphabetical order.</p>
 <ol class="loweralpha simple">
-<li>Use the <code class="docutils literal notranslate"><span class="pre">list</span></code> function to create a list of the keys from the
-<code class="docutils literal notranslate"><span class="pre">results</span></code> dictionary.</li>
-<li>Sort the list, then use a loop to print the key/value pairs, one pair
-per line.</li>
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">list</span></code> function to create a list of the keys from the
+<code class="docutils literal notranslate"><span class="pre">results</span></code> dictionary.</p></li>
+<li><p>Sort the list, then use a loop to print the key/value pairs, one pair
+per line.</p></li>
 </ol>
 <p><a class="reference internal" href="../../appendices/exercise-solutions/dictionaries.html#dictionaries-exercise-solutions-e3"><span class="std std-ref">Check your solution</span></a></p>
 </li>

@@ -106,8 +106,8 @@ that value inside the <code class="docutils literal notranslate"><span class="pr
 <code class="docutils literal notranslate"><span class="pre">range(start_value,</span> <span class="pre">stop_value)</span></code>. The starting value is included in the
 counting for the loop, but the stop value is NOT.</p>
 <div class="admonition-syntax-example-for-start-and-stop-values admonition">
-<p class="first admonition-title">Syntax Example for Start and Stop Values</p>
-<div class="last highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">start_value</span><span class="p">,</span> <span class="n">stop_value</span><span class="p">):</span>
+<p class="admonition-title">Syntax Example for Start and Stop Values</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">start_value</span><span class="p">,</span> <span class="n">stop_value</span><span class="p">):</span>
    <span class="c1"># do something...</span>
 </pre></div>
 </div>
@@ -115,7 +115,7 @@ counting for the loop, but the stop value is NOT.</p>
 <p>If we replaced line 1 in the code above with <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">num</span> <span class="pre">in</span> <span class="pre">range(1,</span> <span class="pre">5)</span></code>, then
 the loop variable <code class="docutils literal notranslate"><span class="pre">num</span></code> would take values of 1, 2, 3, and 4.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It</p>
 <p>Run the following code to see how using different start and stop values effects the output.</p>
 <div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -126,7 +126,7 @@ the loop variable <code class="docutils literal notranslate"><span class="pre">n
    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span> <span class="o">*</span> <span class="n">num</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/StartAndStop" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/StartAndStop" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
 <p>Now, what if we want to count DOWN from one value to another or change the
 loop variable by more than a single unit each iteration?</p>
@@ -139,14 +139,14 @@ by 2 units instead of 1.</p>
 <p>To make this happen, we need to add one more value inside <code class="docutils literal notranslate"><span class="pre">range</span></code>. This is
 called the <strong>step value</strong>.</p>
 <div class="admonition-syntax-example-for-adding-a-step-value admonition">
-<p class="first admonition-title">Syntax Example for Adding a Step Value</p>
-<div class="last highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start_value</span><span class="p">,</span> <span class="n">stop_value</span><span class="p">,</span> <span class="n">step_value</span><span class="p">):</span>
+<p class="admonition-title">Syntax Example for Adding a Step Value</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start_value</span><span class="p">,</span> <span class="n">stop_value</span><span class="p">,</span> <span class="n">step_value</span><span class="p">):</span>
    <span class="c1"># do something ...</span>
 </pre></div>
 </div>
 </div>
 <div class="admonition-examples admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Examples</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Examples</p>
 <p>To count from 0 to 20 by 2’s, use:</p>
 <div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
@@ -157,13 +157,13 @@ called the <strong>step value</strong>.</p>
 </div>
 <p>We can even count DOWN from a higher number to a lower one. The step value
 just needs to be negative:</p>
-<div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># Counts from 50 down to 40</span>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># Counts from 50 down to 40</span>
 </pre></div>
 </div>
 </div>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">For <code class="docutils literal notranslate"><span class="pre">range()</span></code>, the start and step values are OPTIONAL.</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>For <code class="docutils literal notranslate"><span class="pre">range()</span></code>, the start and step values are OPTIONAL.</p>
 </div>
 </div>
 <div class="section" id="try-it">
@@ -171,12 +171,12 @@ just needs to be negative:</p>
 <p>Change the values inside of <code class="docutils literal notranslate"><span class="pre">range</span></code> to accomplish the
 following:</p>
 <ol class="arabic simple">
-<li>Print the numbers 0 - 5.</li>
-<li>Print the numbers 33 - 45, including 45.</li>
-<li>Print only the <em>odd</em> numbers from 0 - 20.</li>
-<li>Print the numbers 25, 35, 45…95.</li>
-<li>Print the numbers from -3 to -10.</li>
-<li>Print by 3’s from 15 to -21.</li>
+<li><p>Print the numbers 0 - 5.</p></li>
+<li><p>Print the numbers 33 - 45, including 45.</p></li>
+<li><p>Print only the <em>odd</em> numbers from 0 - 20.</p></li>
+<li><p>Print the numbers 25, 35, 45…95.</p></li>
+<li><p>Print the numbers from -3 to -10.</p></li>
+<li><p>Print by 3’s from 15 to -21.</p></li>
 </ol>
 <div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -198,18 +198,18 @@ the loop body to repeat. However, sometimes this number changes each time the
 program runs. Variables to the rescue!
 Whenever possible, use <em>variables</em> instead of specific numbers inside <code class="docutils literal notranslate"><span class="pre">range()</span></code>.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It</p>
 <p>Let’s try printing a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop using the following variables to set the range.</p>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">start_value</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the FIRST number to print: &quot;</span><span class="p">))</span>
 <span class="n">stop_value</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the LAST number to print: &quot;</span><span class="p">))</span>
 <span class="n">step_value</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the step value for the loop: &quot;</span><span class="p">))</span>
 </pre></div>
 </div>
-<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/RangeAndVariables" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/RangeAndVariables" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
 <div class="admonition-warning admonition">
-<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
-<p class="last">A common mistake for new coders is to forget that the stop value in
+<p class="admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
+<p>A common mistake for new coders is to forget that the stop value in
 <code class="docutils literal notranslate"><span class="pre">range</span></code> is NOT assigned to the loop variable at any time.</p>
 </div>
 <p>After you pasted in the <code class="docutils literal notranslate"><span class="pre">input</span></code> statements and ran the program, did you have
@@ -223,11 +223,11 @@ using the variable in <code class="docutils literal notranslate"><span class="pr
 <p>Not only can we use variables inside <code class="docutils literal notranslate"><span class="pre">range</span></code>, we can also use <em>expressions</em>,
 which we practiced in the <a class="reference internal" href="../data-and-variables/expressions-and-evaluation.html#expressions"><span class="std std-ref">Data and Variables</span></a> chapter.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start_value</span><span class="p">,</span> <span class="n">stop_value</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">step_value</span><span class="p">):</span>
 </pre></div>
 </div>
-<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/RangeAndExpressions01" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/RangeAndExpressions01" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">stop_value</span></code> above, will add <code class="docutils literal notranslate"><span class="pre">1</span></code> to the inital <code class="docutils literal notranslate"><span class="pre">stop_value</span></code>.
 By adding to your <code class="docutils literal notranslate"><span class="pre">stop_value</span></code>, will increase loops that have a positive, or increasing, <code class="docutils literal notranslate"><span class="pre">step_value</span></code>.</p>
@@ -238,15 +238,15 @@ By reducing, or subtracting, from your <code class="docutils literal notranslate
 numbers or negative <code class="docutils literal notranslate"><span class="pre">step_values</span></code>.  In turn, this will shorten
 loops between positive numbers, or with positive <code class="docutils literal notranslate"><span class="pre">step_values</span></code>.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start_value</span><span class="p">,</span> <span class="n">stop_value</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">step_value</span><span class="p">):</span>
 </pre></div>
 </div>
-<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/RangeAndExpressions02" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/RangeAndExpressions02" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
 <p>Expressions are not limited to standard arithmetic operators.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It</p>
 <p>Run the following program. Enter different words to see how the behavior
 changes.</p>
 <div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -259,7 +259,7 @@ changes.</p>
 </pre></div>
 </td></tr></table></div>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/RangeExpressions" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
-<p class="last">When Python executes the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement, the expression <code class="docutils literal notranslate"><span class="pre">len(word)</span></code>
+<p>When Python executes the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement, the expression <code class="docutils literal notranslate"><span class="pre">len(word)</span></code>
 returns the length of the string. So if <code class="docutils literal notranslate"><span class="pre">word</span> <span class="pre">=</span> <span class="pre">&quot;Hi&quot;</span></code>, then
 <code class="docutils literal notranslate"><span class="pre">range(len(word))</span></code> acts just like <code class="docutils literal notranslate"><span class="pre">range(2)</span></code>.</p>
 </div>
@@ -267,34 +267,34 @@ returns the length of the string. So if <code class="docutils literal notranslat
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">7.3.6. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>In the command <code class="docutils literal notranslate"><span class="pre">range(3,</span> <span class="pre">10,</span> <span class="pre">2)</span></code>, the second argument (<code class="docutils literal notranslate"><span class="pre">10</span></code>) specifies that
 <code class="docutils literal notranslate"><span class="pre">range</span></code> should:</p>
-<ol class="last loweralpha simple">
-<li>generate a set of values that stops at 9 (including 9).</li>
-<li>generate a set of values that starts at 10 (including 10).</li>
-<li>generate a set of values starting at 3 that stops at 10 (including 10).</li>
-<li>generate a set of values using every 10th number between 3 and 10.</li>
+<ol class="loweralpha simple">
+<li><p>generate a set of values that stops at 9 (including 9).</p></li>
+<li><p>generate a set of values that starts at 10 (including 10).</p></li>
+<li><p>generate a set of values starting at 3 that stops at 10 (including 10).</p></li>
+<li><p>generate a set of values using every 10th number between 3 and 10.</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What command correctly generates the values <code class="docutils literal notranslate"><span class="pre">2,</span> <span class="pre">5,</span> <span class="pre">8</span></code> in that order?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">range(2,</span> <span class="pre">5,</span> <span class="pre">8)</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">range(2,</span> <span class="pre">8,</span> <span class="pre">3)</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">range(2,</span> <span class="pre">10,</span> <span class="pre">3)</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">range(8,</span> <span class="pre">1,</span> <span class="pre">-3)</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">range(2,</span> <span class="pre">5,</span> <span class="pre">8)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">range(2,</span> <span class="pre">8,</span> <span class="pre">3)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">range(2,</span> <span class="pre">10,</span> <span class="pre">3)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">range(8,</span> <span class="pre">1,</span> <span class="pre">-3)</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What happens if you give range only one argument, like <code class="docutils literal notranslate"><span class="pre">range(14)</span></code>?</p>
-<ol class="last loweralpha simple">
-<li>It will generate a set of values starting at 1 and ending with the number in the ().</li>
-<li>It will generate a set of values starting at 1 up to but NOT including the number in the ().</li>
-<li>It will generate a set of values starting at 0 and ending with the number in the ().</li>
-<li>It will generate a set of values starting at 0 up to but NOT including the number in the ().</li>
+<ol class="loweralpha simple">
+<li><p>It will generate a set of values starting at 1 and ending with the number in the ().</p></li>
+<li><p>It will generate a set of values starting at 1 up to but NOT including the number in the ().</p></li>
+<li><p>It will generate a set of values starting at 0 and ending with the number in the ().</p></li>
+<li><p>It will generate a set of values starting at 0 up to but NOT including the number in the ().</p></li>
 </ol>
 </div>
 </div>

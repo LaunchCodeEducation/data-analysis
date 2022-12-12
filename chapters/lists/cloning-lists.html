@@ -106,7 +106,7 @@ memory location, even though those locations store the same data.</p>
 location as <code class="docutils literal notranslate"><span class="pre">first_var</span></code>?</p>
 <p>Let’s perform a simple experiment to find out.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Examine the output from the following program. How does the value of
 <code class="docutils literal notranslate"><span class="pre">other_var</span></code> change when <code class="docutils literal notranslate"><span class="pre">first_var</span></code> gets assigned a new value?</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -127,11 +127,11 @@ location as <code class="docutils literal notranslate"><span class="pre">first_v
 hello 10
 </pre></div>
 </div>
-<ol class="last arabic simple">
-<li>Line 2 assigns the value of <code class="docutils literal notranslate"><span class="pre">first_var</span></code> to <code class="docutils literal notranslate"><span class="pre">other_var</span></code>.</li>
-<li>Line 3 confirms that the two variables have the same value.</li>
-<li>Line 5 assigns the new value <code class="docutils literal notranslate"><span class="pre">'hello'</span></code> to <code class="docutils literal notranslate"><span class="pre">first_var</span></code>.</li>
-<li>Line 6 confirms that changing <code class="docutils literal notranslate"><span class="pre">first_var</span></code> does NOT affect <code class="docutils literal notranslate"><span class="pre">other_var</span></code>.</li>
+<ol class="arabic simple">
+<li><p>Line 2 assigns the value of <code class="docutils literal notranslate"><span class="pre">first_var</span></code> to <code class="docutils literal notranslate"><span class="pre">other_var</span></code>.</p></li>
+<li><p>Line 3 confirms that the two variables have the same value.</p></li>
+<li><p>Line 5 assigns the new value <code class="docutils literal notranslate"><span class="pre">'hello'</span></code> to <code class="docutils literal notranslate"><span class="pre">first_var</span></code>.</p></li>
+<li><p>Line 6 confirms that changing <code class="docutils literal notranslate"><span class="pre">first_var</span></code> does NOT affect <code class="docutils literal notranslate"><span class="pre">other_var</span></code>.</p></li>
 </ol>
 </div>
 <p>In this example, even though we set <code class="docutils literal notranslate"><span class="pre">other_var</span> <span class="pre">=</span> <span class="pre">first_var</span></code>, each variable
@@ -140,7 +140,7 @@ with <code class="docutils literal notranslate"><span class="pre">'hello'</span>
 <p>Now let’s run the experiment again, but this time we will use a list as the
 data type.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Examine the output from the following program.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -162,7 +162,7 @@ data type.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[10, 33, 8, -2]   [10, 33, 8, -2]
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[10, 33, 8, -2]   [10, 33, 8, -2]
 [-2, 8, 10, 33]   [-2, 8, 10, 33]
 [-2, 8, 10, 33, &#39;hello&#39;]   [-2, 8, 10, 33, &#39;hello&#39;]
 </pre></div>
@@ -171,11 +171,11 @@ data type.</p>
 <p>The second set of results are quite different from the first. Any changes made
 with one variable affect the other!</p>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p>For the <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">str</span></code>, <code class="docutils literal notranslate"><span class="pre">bool</span></code>, and <code class="docutils literal notranslate"><span class="pre">float</span></code> data types, setting
 <code class="docutils literal notranslate"><span class="pre">other_var</span> <span class="pre">=</span> <span class="pre">first_var</span></code> creates separate values in two memory locations,
 one for each variable.</p>
-<p class="last">For lists, <code class="docutils literal notranslate"><span class="pre">list_b</span> <span class="pre">=</span> <span class="pre">list_a</span></code> creates two variables that point to the
+<p>For lists, <code class="docutils literal notranslate"><span class="pre">list_b</span> <span class="pre">=</span> <span class="pre">list_a</span></code> creates two variables that point to the
 <em>SAME</em> memory location. The same list has two different names.</p>
 </div>
 <p id="index-0">Because the same list has two different names, we say that it is <strong>aliased</strong>.
@@ -198,7 +198,7 @@ ways to do it:</p>
 it to the <code class="docutils literal notranslate"><span class="pre">list_clone</span></code> variable. The empty slice operator <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">:</span> <span class="pre">]</span></code> does the
 same thing, but it also allows us to clone a portion of the original list.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>Run the following program to confirm that, as written, changes made to
 either <code class="docutils literal notranslate"><span class="pre">list_a</span></code> or <code class="docutils literal notranslate"><span class="pre">list_b</span></code> affect the other.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -219,33 +219,33 @@ either <code class="docutils literal notranslate"><span class="pre">list_a</span
 </pre></div>
 </td></tr></table></div>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/CloningLists" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
-<ol class="last arabic simple">
-<li>In line 2, use the <code class="docutils literal notranslate"><span class="pre">copy()</span></code> method on <code class="docutils literal notranslate"><span class="pre">list_a</span></code>. Rerun the program to
-confirm that changes made to one list do NOT affect the other.</li>
-<li>Repeat step 1, but use the slice operator instead of <code class="docutils literal notranslate"><span class="pre">copy()</span></code>.</li>
+<ol class="arabic simple">
+<li><p>In line 2, use the <code class="docutils literal notranslate"><span class="pre">copy()</span></code> method on <code class="docutils literal notranslate"><span class="pre">list_a</span></code>. Rerun the program to
+confirm that changes made to one list do NOT affect the other.</p></li>
+<li><p>Repeat step 1, but use the slice operator instead of <code class="docutils literal notranslate"><span class="pre">copy()</span></code>.</p></li>
 </ol>
 </div>
 </div>
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">9.7.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>The syntax <code class="docutils literal notranslate"><span class="pre">list_a</span> <span class="pre">=</span> <span class="pre">list_b</span></code> creates a(n) ____.</p>
-<ol class="last loweralpha simple">
-<li>alias</li>
-<li>clone</li>
+<ol class="loweralpha simple">
+<li><p>alias</p></li>
+<li><p>clone</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Changes made to a(n) ____ will NOT affect the original.</p>
-<ol class="last loweralpha simple">
-<li>alias</li>
-<li>clone</li>
+<ol class="loweralpha simple">
+<li><p>alias</p></li>
+<li><p>clone</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What is printed by the following program?</p>
 <div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -256,16 +256,16 @@ confirm that changes made to one list do NOT affect the other.</li>
 <span class="nb">print</span><span class="p">(</span><span class="n">list_a</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li>[4, 2, 8, 6, 5]</li>
-<li>[4, 2, 8, 999, 5]</li>
+<ol class="loweralpha simple">
+<li><p>[4, 2, 8, 6, 5]</p></li>
+<li><p>[4, 2, 8, 999, 5]</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Describe a specific example or task where we would want to keep the original
 list intact.</p>
-<p class="last">Describe a specific example or task where it would not matter if we used an
+<p>Describe a specific example or task where it would not matter if we used an
 alias or a clone of the original list.</p>
 </div>
 </div>

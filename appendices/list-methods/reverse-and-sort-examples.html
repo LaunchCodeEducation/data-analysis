@@ -97,7 +97,7 @@ methods <em>mutate</em> (change) the original list.</p>
 <p><code class="docutils literal notranslate"><span class="pre">reverse</span></code> flips the order of the elements in a list. No arguments go inside
 the <code class="docutils literal notranslate"><span class="pre">()</span></code>.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -108,7 +108,7 @@ the <code class="docutils literal notranslate"><span class="pre">()</span></code
 </pre></div>
 </td></tr></table></div>
 <p><strong>Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;zoo&#39;, &#39;apple&#39;, &#39;orange&#39;, &#39;banana&#39;, &#39;At&#39;]
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;zoo&#39;, &#39;apple&#39;, &#39;orange&#39;, &#39;banana&#39;, &#39;At&#39;]
 </pre></div>
 </div>
 </div>
@@ -124,7 +124,7 @@ largest). However, all elements inside the list MUST be of the same data type.
 Numbers sort with other numbers, strings with other strings, booleans with
 other booleans, etc.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Numerical sorting:</p>
 <div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -142,7 +142,7 @@ other booleans, etc.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[2, 8, 10, 30, 45.5, 400]
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[2, 8, 10, 30, 45.5, 400]
 Line 11:
    mixed_types.sort()
 TypeError: &#39;&lt;&#39; not supported between instances of &#39;str&#39; and &#39;int&#39;
@@ -151,7 +151,7 @@ TypeError: &#39;&lt;&#39; not supported between instances of &#39;str&#39; and &
 </div>
 <p>For strings, <code class="docutils literal notranslate"><span class="pre">sort</span></code> arranges the elements in alphabetical order.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>When sorting strings, case matters!</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -176,14 +176,14 @@ TypeError: &#39;&lt;&#39; not supported between instances of &#39;str&#39; and &
 <p>From the alphabet song, we know that <code class="docutils literal notranslate"><span class="pre">'a'</span></code> comes before <code class="docutils literal notranslate"><span class="pre">'B'</span></code> (and
 certainly before <code class="docutils literal notranslate"><span class="pre">'X'</span></code>), but Python treats capital and lowercase letters
 differently. Capital letters get sorted before lowercase.</p>
-<p class="last">Note that <em>numerical strings</em> come before all letters.</p>
+<p>Note that <em>numerical strings</em> come before all letters.</p>
 </div>
 <div class="section" id="sorting-numerical-strings">
 <h3>Sorting Numerical Strings<a class="headerlink" href="#sorting-numerical-strings" title="Permalink to this headline">¶</a></h3>
 <p>Let’s take a look at sorting a list of strings when each element is a string
 of digits.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -198,7 +198,7 @@ of digits.</p>
 </pre></div>
 </div>
 <p>Wait… what? How is 8 larger than 400?</p>
-<p class="last">Note that even though we use digits, each element is still a <em>string</em>.
+<p>Note that even though we use digits, each element is still a <em>string</em>.
 Just like <code class="docutils literal notranslate"><span class="pre">'apple'</span></code> comes before <code class="docutils literal notranslate"><span class="pre">'pear'</span></code> because <code class="docutils literal notranslate"><span class="pre">'a'</span></code> comes
 before <code class="docutils literal notranslate"><span class="pre">'p'</span></code>, the string <code class="docutils literal notranslate"><span class="pre">'400'</span></code> begins with a <code class="docutils literal notranslate"><span class="pre">'4'</span></code>, which comes
 before any string starting with an <code class="docutils literal notranslate"><span class="pre">'8'</span></code>. Looking only at the first
@@ -212,7 +212,7 @@ digit in each string, we see the expected progression (1, 2, 3, 4, 8).</p>
 </pre></div>
 </div>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Sort in descending order:</p>
 <div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -230,7 +230,7 @@ digit in each string, we see the expected progression (1, 2, 3, 4, 8).</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>[400, 45.5, 30, 10, 8, 2]
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[400, 45.5, 30, 10, 8, 2]
 [&#39;f&#39;, &#39;c&#39;, &#39;a&#39;, &#39;X&#39;, &#39;B&#39;]
 </pre></div>
 </div>

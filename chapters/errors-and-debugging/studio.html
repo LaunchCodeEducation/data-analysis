@@ -90,17 +90,17 @@
 rocket for launch.</p>
 <p>Requirements:</p>
 <ol class="arabic simple">
-<li>Launch the rocket <em>only if</em> the fuel, crew and computer all check out OK.</li>
-<li>If a check fails, print that information to the console and scrub the
-launch.</li>
-<li>If all checks be successful, print a countdown to the console followed by
-“Liftoff!”</li>
+<li><p>Launch the rocket <em>only if</em> the fuel, crew and computer all check out OK.</p></li>
+<li><p>If a check fails, print that information to the console and scrub the
+launch.</p></li>
+<li><p>If all checks be successful, print a countdown to the console followed by
+“Liftoff!”</p></li>
 </ol>
 <div class="section" id="fix-syntax-errors-first">
 <h2><span class="section-number">10.8.1. </span>Fix Syntax Errors First<a class="headerlink" href="#fix-syntax-errors-first" title="Permalink to this headline">¶</a></h2>
 <p>Find this code at <a class="reference external" href="https://replit.com/&#64;launchcode/DebuggingStudio01" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 <ol class="arabic">
-<li><p class="first">Run the following code as-is and examine the error message. Fix the mistake,
+<li><p>Run the following code as-is and examine the error message. Fix the mistake,
 and then re-run the code to check it.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>launch_ready = False
 fuel_level = 17000
@@ -114,7 +114,7 @@ else:
 </pre></div>
 </div>
 </li>
-<li><p class="first">The next block of code hides two syntax errors. Run the code as-is to
+<li><p>The next block of code hides two syntax errors. Run the code as-is to
 find the mistakes.</p>
 <p><em>Tip</em>: Only ONE error gets flagged at a time. Fix that ONE problem, and then
 re-run the code to check your work. Avoid trying to fix multiple issues at
@@ -146,7 +146,7 @@ else:
 <h2><span class="section-number">10.8.2. </span>Fix Runtime Errors Next<a class="headerlink" href="#fix-runtime-errors-next" title="Permalink to this headline">¶</a></h2>
 <p>Fix this code at <a class="reference external" href="https://replit.com/&#64;launchcode/DebuggingStudio02" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 <ol class="arabic">
-<li><p class="first">Remember to examine the error message for clues about what went wrong. Pay
+<li><p>Remember to examine the error message for clues about what went wrong. Pay
 close attention to any line numbers given in the message—these will help
 you locate and repair the bug.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>launch_ready = False
@@ -161,7 +161,7 @@ else:
 </pre></div>
 </div>
 </li>
-<li><p class="first">Now find and fix the runtime error in a longer code block.</p>
+<li><p>Now find and fix the runtime error in a longer code block.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>launch_ready = False
 fuel_level = 27000
 
@@ -194,11 +194,11 @@ but the program still does not work right. (Refer to the
 review).</p>
 <p>Fix this code at <a class="reference external" href="https://replit.com/&#64;launchcode/DebuggingStudio03" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 <ol class="arabic">
-<li><p class="first">First, run this sample code as-is and examine the output. Should the rocket
+<li><p>First, run this sample code as-is and examine the output. Should the rocket
 have launched? Did it?</p>
 <p>Do not worry about fixing the code yet. You will do that in the next steps.</p>
 </li>
-<li><p class="first">Let’s break the code down into smaller chunks. Consider the first <code class="docutils literal notranslate"><span class="pre">if/else</span></code>
+<li><p>Let’s break the code down into smaller chunks. Consider the first <code class="docutils literal notranslate"><span class="pre">if/else</span></code>
 block below.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>if fuel_level &gt;= 20000:
    print(&#39;Fuel level cleared.&#39;)
@@ -209,14 +209,14 @@ else:
 </pre></div>
 </div>
 <ol class="loweralpha simple">
-<li>Comment out lines 14 - 25 in the code editor.</li>
-<li>Add <code class="docutils literal notranslate"><span class="pre">print(&quot;launch_ready</span> <span class="pre">=&quot;,</span> <span class="pre">launch_ready)</span></code> after the first block,
-then run the program.</li>
-<li>Given the <code class="docutils literal notranslate"><span class="pre">fuel_level</span></code> value, should <code class="docutils literal notranslate"><span class="pre">launch_ready</span></code> be <code class="docutils literal notranslate"><span class="pre">True</span></code> or
-<code class="docutils literal notranslate"><span class="pre">False</span></code> after the check? Is the program behaving as expected?</li>
+<li><p>Comment out lines 14 - 25 in the code editor.</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">print(&quot;launch_ready</span> <span class="pre">=&quot;,</span> <span class="pre">launch_ready)</span></code> after the first block,
+then run the program.</p></li>
+<li><p>Given the <code class="docutils literal notranslate"><span class="pre">fuel_level</span></code> value, should <code class="docutils literal notranslate"><span class="pre">launch_ready</span></code> be <code class="docutils literal notranslate"><span class="pre">True</span></code> or
+<code class="docutils literal notranslate"><span class="pre">False</span></code> after the check? Is the program behaving as expected?</p></li>
 </ol>
 </li>
-<li><p class="first">Now consider the second <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block. Add another
+<li><p>Now consider the second <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block. Add another
 <code class="docutils literal notranslate"><span class="pre">print(&quot;launch_ready</span> <span class="pre">=&quot;,</span> <span class="pre">launch_ready)</span></code> after this block and run the
 program.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>if crew_status and computer_status == &#39;green&#39;:
@@ -230,7 +230,7 @@ else:
 <p>Given <code class="docutils literal notranslate"><span class="pre">crew_status</span></code> and <code class="docutils literal notranslate"><span class="pre">computer_status</span></code>, should <code class="docutils literal notranslate"><span class="pre">launch_ready</span></code> be
 <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> after this check? Is the program behaving as expected?</p>
 </li>
-<li><p class="first">Now consider both <code class="docutils literal notranslate"><span class="pre">if/else</span></code> blocks together (keeping the added <code class="docutils literal notranslate"><span class="pre">print</span></code>
+<li><p>Now consider both <code class="docutils literal notranslate"><span class="pre">if/else</span></code> blocks together (keeping the added <code class="docutils literal notranslate"><span class="pre">print</span></code>
 lines). Run the code and examine the output.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>launch_ready = False
 fuel_level = 17000
@@ -260,7 +260,7 @@ print(&quot;launch_ready =&quot;, launch_ready)
 <code class="docutils literal notranslate"><span class="pre">computer_status</span></code>, should <code class="docutils literal notranslate"><span class="pre">launch_ready</span></code> be <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>? Is
 the program behaving as expected?</p>
 </li>
-<li><p class="first">Ah ha! The value of <code class="docutils literal notranslate"><span class="pre">launch_ready</span></code> assigned in the first <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block
+<li><p>Ah ha! The value of <code class="docutils literal notranslate"><span class="pre">launch_ready</span></code> assigned in the first <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block
 got changed in the second <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block. This is a common
 mistake—using the same variable to track the results of two separate
 conditionals.</p>
@@ -269,10 +269,9 @@ to use a different variable to store the fuel check result. Make your code
 do this, then check if your change works by updating the first <code class="docutils literal notranslate"><span class="pre">print</span></code>
 statement.</p>
 </li>
-<li><p class="first">Almost done! Modify the final <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block to print the countdown and
+<li><p>Almost done! Modify the final <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block to print the countdown and
 <code class="docutils literal notranslate"><span class="pre">&quot;Liftoff!&quot;</span></code> if both the fuel check and <code class="docutils literal notranslate"><span class="pre">launch_ready</span></code> variables are
-<code class="docutils literal notranslate"><span class="pre">True</span></code>. Print <code class="docutils literal notranslate"><span class="pre">&quot;Launch</span> <span class="pre">scrubbed&quot;</span></code> if either check fails.</p>
-</li>
+<code class="docutils literal notranslate"><span class="pre">True</span></code>. Print <code class="docutils literal notranslate"><span class="pre">&quot;Launch</span> <span class="pre">scrubbed&quot;</span></code> if either check fails.</p></li>
 </ol>
 </div>
 </div>

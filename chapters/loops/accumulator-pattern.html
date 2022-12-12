@@ -108,12 +108,12 @@ event occurs, the value of a running total gets updated.</p>
 <p>In programming, the accumulator pattern occurs VERY often. The key pieces to
 this pattern include:</p>
 <ol class="arabic simple">
-<li>A variable that starts at some basic value. For numbers, this value is
+<li><p>A variable that starts at some basic value. For numbers, this value is
 usually <code class="docutils literal notranslate"><span class="pre">0</span></code> or <code class="docutils literal notranslate"><span class="pre">1</span></code>. For the <code class="docutils literal notranslate"><span class="pre">str</span></code> data type, begin with the empty
-string, <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">''</span></code>.</li>
-<li>A loop.</li>
-<li>Inside the loop, the value of the variable steadily increases (or decreases)
-with each iteration.</li>
+string, <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">''</span></code>.</p></li>
+<li><p>A loop.</p></li>
+<li><p>Inside the loop, the value of the variable steadily increases (or decreases)
+with each iteration.</p></li>
 </ol>
 <p>Let’s look at some code to see how the accumulator pattern works.</p>
 <div class="section" id="adding-1-num">
@@ -136,7 +136,7 @@ from 1 to 3 to 6 etc.</p>
 <p>For larger values of <code class="docutils literal notranslate"><span class="pre">num</span></code>, solving by hand gets tedious really fast. Loops
 to the rescue!</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -156,19 +156,19 @@ to the rescue!</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>21
 </pre></div>
 </div>
-<ol class="last arabic simple">
-<li>In line 2, we assign a value of <code class="docutils literal notranslate"><span class="pre">0</span></code> to the variable <code class="docutils literal notranslate"><span class="pre">total</span></code>.</li>
-<li>Each time the loop repeats, the loop variable <code class="docutils literal notranslate"><span class="pre">integer</span></code> is assigned a
-new, higher value (1 to 6).</li>
-<li>Each time line 5 runs, the current value of <code class="docutils literal notranslate"><span class="pre">integer</span></code> is added to
-<code class="docutils literal notranslate"><span class="pre">total</span></code>.</li>
-<li>Once the loop ends, <code class="docutils literal notranslate"><span class="pre">total</span></code> contains the sum of all the individual
-values.</li>
+<ol class="arabic simple">
+<li><p>In line 2, we assign a value of <code class="docutils literal notranslate"><span class="pre">0</span></code> to the variable <code class="docutils literal notranslate"><span class="pre">total</span></code>.</p></li>
+<li><p>Each time the loop repeats, the loop variable <code class="docutils literal notranslate"><span class="pre">integer</span></code> is assigned a
+new, higher value (1 to 6).</p></li>
+<li><p>Each time line 5 runs, the current value of <code class="docutils literal notranslate"><span class="pre">integer</span></code> is added to
+<code class="docutils literal notranslate"><span class="pre">total</span></code>.</p></li>
+<li><p>Once the loop ends, <code class="docutils literal notranslate"><span class="pre">total</span></code> contains the sum of all the individual
+values.</p></li>
 </ol>
 </div>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">Recall that with <code class="docutils literal notranslate"><span class="pre">range(start,</span> <span class="pre">stop)</span></code>, the loop variable takes each value
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>Recall that with <code class="docutils literal notranslate"><span class="pre">range(start,</span> <span class="pre">stop)</span></code>, the loop variable takes each value
 from <code class="docutils literal notranslate"><span class="pre">start</span></code> up to but NOT including <code class="docutils literal notranslate"><span class="pre">stop</span></code>. This is why line 4 uses
 <code class="docutils literal notranslate"><span class="pre">range(1,</span> <span class="pre">num+1)</span></code>. We want to include the value of <code class="docutils literal notranslate"><span class="pre">num</span></code> as part of the
 iteration.</p>
@@ -180,8 +180,8 @@ however, we must store this total in a variable.</p>
 <span class="target" id="index-2"></span><p id="index-3">The variable <code class="docutils literal notranslate"><span class="pre">total</span></code> is called the <strong>accumulator</strong>, which is a fancy way of
 saying that it gathers up all the individual integers one by one.</p>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
-<p class="last">The key to using the accumulator pattern successfully is to define the
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>The key to using the accumulator pattern successfully is to define the
 accumulator variable <em>before</em> you start the loop. Once inside the loop,
 update the variable.</p>
 </div>
@@ -192,7 +192,7 @@ update the variable.</p>
 <p>The accumulator pattern can also be used to <em>reduce</em> the size of a running
 total.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Run the program below several times using different values for <code class="docutils literal notranslate"><span class="pre">total</span></code> and
 <code class="docutils literal notranslate"><span class="pre">decrease_by</span></code></p>
 <div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -212,13 +212,13 @@ total.</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/AccumulatorPattern02" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/AccumulatorPattern02" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
 <p>Any of the operators <code class="docutils literal notranslate"><span class="pre">+=,</span> <span class="pre">-=,</span> <span class="pre">*=,</span> <span class="pre">/=</span></code> can be used in the accumulator
 pattern to update the variable.</p>
-<p class="last">Which operator you choose depends on the problem you need to solve.</p>
+<p>Which operator you choose depends on the problem you need to solve.</p>
 </div>
 </div>
 <div class="section" id="check-your-understanding">
@@ -238,24 +238,24 @@ pattern to update the variable.</p>
 </pre></div>
 </td></tr></table></div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What does the program print?</p>
-<ol class="last loweralpha simple">
-<li>0</li>
-<li>2</li>
-<li>5</li>
-<li>10</li>
+<ol class="loweralpha simple">
+<li><p>0</p></li>
+<li><p>2</p></li>
+<li><p>5</p></li>
+<li><p>10</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What will print if you put <code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">=</span> <span class="pre">0</span></code> inside the for loop but before
 <code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">+=</span> <span class="pre">2</span></code>?</p>
-<ol class="last loweralpha simple">
-<li>0</li>
-<li>2</li>
-<li>5</li>
-<li>10</li>
+<ol class="loweralpha simple">
+<li><p>0</p></li>
+<li><p>2</p></li>
+<li><p>5</p></li>
+<li><p>10</p></li>
 </ol>
 </div>
 </div>

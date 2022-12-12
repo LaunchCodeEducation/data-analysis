@@ -91,7 +91,7 @@ immutable, which means we cannot change the individual characters within a
 string. While we can access individual characters using bracket notation,
 trying to change individual characters simply does not work.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;The princess Bride&#39;</span>
@@ -100,7 +100,7 @@ trying to change individual characters simply does not work.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
 line 3
 title[4] = &#39;P&#39;
 TypeError: &#39;str&#39; object does not support item assignment
@@ -115,7 +115,7 @@ the attempt caused an error and crashed the program.</p>
 <p>It is important to notice that immutability applies to string <em>values</em> and not
 string <em>variables</em>.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>We can assign a different value to a variable containing a string.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -129,7 +129,7 @@ string <em>variables</em>.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>The Princess Bride
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The Princess Bride
 </pre></div>
 </div>
 </div>
@@ -144,7 +144,7 @@ effect:</p>
 points to a new value, with the old value remaining unchanged.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p>Reassigning the value of a variable might look like we are changing the
 string, but we are not. Instead, we just replace the old, unchanged string
 with a different one.</p>
@@ -168,7 +168,7 @@ with a different one.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>dogs
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>dogs
 dog
 cat
 cats
@@ -179,8 +179,8 @@ cats
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">8.4.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p class="last">Given <code class="docutils literal notranslate"><span class="pre">pet</span> <span class="pre">=</span> <span class="pre">'cat'</span></code>, why do the statements <code class="docutils literal notranslate"><span class="pre">print(pet</span> <span class="pre">+</span> <span class="pre">'s')</span></code> and
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Given <code class="docutils literal notranslate"><span class="pre">pet</span> <span class="pre">=</span> <span class="pre">'cat'</span></code>, why do the statements <code class="docutils literal notranslate"><span class="pre">print(pet</span> <span class="pre">+</span> <span class="pre">'s')</span></code> and
 <code class="docutils literal notranslate"><span class="pre">pet</span> <span class="pre">+=</span> <span class="pre">'s'</span></code> NOT violate the immutability of strings?</p>
 </div>
 </div>

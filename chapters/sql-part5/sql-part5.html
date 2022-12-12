@@ -149,7 +149,7 @@ are almost never used.</p>
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">23.1.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Which of the following queries would you use to create a table called recipes, that holds name(up to 25 characters), description(up to 50 characters) and instructions (up to 500 characters).</p>
 <ol class="loweralpha simple">
 <li></li>
@@ -184,7 +184,7 @@ are almost never used.</p>
 <ol class="loweralpha simple" start="4">
 <li></li>
 </ol>
-<div class="last highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="k">schema_name</span><span class="p">.</span><span class="n">recipes</span><span class="p">(</span>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="k">schema_name</span><span class="p">.</span><span class="n">recipes</span><span class="p">(</span>
    <span class="n">name</span> <span class="p">(</span><span class="mi">25</span><span class="p">),</span>
    <span class="n">description</span> <span class="p">(</span><span class="mi">50</span><span class="p">),</span>
    <span class="n">instructions</span> <span class="p">(</span><span class="mi">500</span><span class="p">),</span>
@@ -193,7 +193,7 @@ are almost never used.</p>
 </div>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Which of the following queries would you use to create a new table called new_HR, from the HumanResources.Department table in the AdventureWorks2019 Database?</p>
 <ol class="loweralpha simple">
 <li></li>
@@ -221,33 +221,33 @@ are almost never used.</p>
 <ol class="loweralpha simple" start="4">
 <li></li>
 </ol>
-<div class="last highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="n">MAKE</span> <span class="k">TABLE</span> <span class="n">new_HR</span>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="n">MAKE</span> <span class="k">TABLE</span> <span class="n">new_HR</span>
 <span class="k">FROM</span> <span class="n">AdventureWorks2019</span><span class="p">.</span><span class="n">HumanResources</span><span class="p">.</span><span class="n">Department</span>
 </pre></div>
 </div>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p class="last">Write a query that creates a table called HRemployees from the HumanResources.Employee in the AdventureWorks2019 database that only includes the following columns(LoginID, JobTitle, VacationHours) and only includes records from employees with more than 80hrs of vacation.</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Write a query that creates a table called HRemployees from the HumanResources.Employee in the AdventureWorks2019 database that only includes the following columns(LoginID, JobTitle, VacationHours) and only includes records from employees with more than 80hrs of vacation.</p>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p class="last">What is a primary key?</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>What is a primary key?</p>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Can you add a primary key to an existing table?</p>
-<ol class="last loweralpha simple">
-<li>True</li>
-<li>False</li>
+<ol class="loweralpha simple">
+<li><p>True</p></li>
+<li><p>False</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p class="last">How does the syntax differ when you create a temp table?</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>How does the syntax differ when you create a temp table?</p>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Which of the following queries would add information into the Recipes table below.</p>
 <div class="figure align-default">
 <img alt="Recipes table with one row." src="../../_images/recipesTables1.png" />
@@ -276,33 +276,33 @@ are almost never used.</p>
 <ol class="loweralpha simple" start="4">
 <li></li>
 </ol>
-<div class="last highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">ADD</span> <span class="k">ROW</span> <span class="k">schema_name</span><span class="p">.</span><span class="n">Recipes</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">,</span> <span class="n">instructions</span><span class="p">)</span>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">ADD</span> <span class="k">ROW</span> <span class="k">schema_name</span><span class="p">.</span><span class="n">Recipes</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">,</span> <span class="n">instructions</span><span class="p">)</span>
 <span class="k">VALUES</span><span class="p">(</span><span class="s1">&#39;Pizza&#39;</span><span class="p">,</span> <span class="s1">&#39;To lazy to cook but hungry&#39;</span><span class="p">,</span> <span class="s1">&#39;Call ModPizza and order for delivery&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Write a query to update the second recipe’s  instructions to call Dominos instead in the Recipes table below.</p>
-<div class="last figure align-default">
+<div class="figure align-default">
 <img alt="Recipes table with three rows." src="../../_images/recipesTable2.png" />
 </div>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <div class="line-block">
 <div class="line">Write a query to delete any records with a Description of Frozen from the Recipes table below.</div>
 </div>
-<div class="last figure align-default">
+<div class="figure align-default">
 <img alt="Recipes table with four rows." src="../../_images/recipesTable3.png" />
 </div>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p class="last">Write a query to clear all the contents of the Recipes table.</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Write a query to clear all the contents of the Recipes table.</p>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Which of the following queries will Delete the entire Recipes table?</p>
 <ol class="loweralpha simple">
 <li></li>
@@ -326,7 +326,7 @@ are almost never used.</p>
 <ol class="loweralpha simple" start="4">
 <li></li>
 </ol>
-<div class="last highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">DELETE</span> <span class="k">TABLE</span> <span class="k">schema_name</span><span class="p">.</span><span class="n">Recipes</span><span class="p">;</span>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">DELETE</span> <span class="k">TABLE</span> <span class="k">schema_name</span><span class="p">.</span><span class="n">Recipes</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>

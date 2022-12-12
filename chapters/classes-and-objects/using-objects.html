@@ -104,7 +104,7 @@ object’s name and the property name.</p>
 <p>Note that <code class="docutils literal notranslate"><span class="pre">property_name</span></code> and <code class="docutils literal notranslate"><span class="pre">new_property</span></code> do NOT end with a set of
 parentheses <code class="docutils literal notranslate"><span class="pre">()</span></code>.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>In the program below, <code class="docutils literal notranslate"><span class="pre">dog</span></code> is an object with two properties—<code class="docutils literal notranslate"><span class="pre">name</span></code>
 and <code class="docutils literal notranslate"><span class="pre">age</span></code>. Follow the instructions below the editor to practice using dot
 notation with an object.</p>
@@ -148,33 +148,27 @@ notation with an object.</p>
 </pre></div>
 </td></tr></table></div>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/ObjectsIntro01" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
-<ol class="last arabic">
-<li><p class="first">Run the program as-is to see how the dot notation on lines 8 and 10
-accesses and <em>returns</em> the property values.</p>
-</li>
-<li><p class="first">On line 13, use dot notation to change the value of the <code class="docutils literal notranslate"><span class="pre">name</span></code>
-property to <code class="docutils literal notranslate"><span class="pre">'Fleas'</span></code>.</p>
-</li>
-<li><p class="first">On line 14, use the <code class="docutils literal notranslate"><span class="pre">+=</span></code> operator to increase the age of <code class="docutils literal notranslate"><span class="pre">dog</span></code> by 3
-years.</p>
-</li>
-<li><p class="first">Run the program again. Properly done, the output should look like:</p>
+<ol class="arabic">
+<li><p>Run the program as-is to see how the dot notation on lines 8 and 10
+accesses and <em>returns</em> the property values.</p></li>
+<li><p>On line 13, use dot notation to change the value of the <code class="docutils literal notranslate"><span class="pre">name</span></code>
+property to <code class="docutils literal notranslate"><span class="pre">'Fleas'</span></code>.</p></li>
+<li><p>On line 14, use the <code class="docutils literal notranslate"><span class="pre">+=</span></code> operator to increase the age of <code class="docutils literal notranslate"><span class="pre">dog</span></code> by 3
+years.</p></li>
+<li><p>Run the program again. Properly done, the output should look like:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Spot
 3
 Fleas 6
 </pre></div>
 </div>
 </li>
-<li><p class="first">Uncomment line 19 and run the program. You should see an error message
-because <code class="docutils literal notranslate"><span class="pre">dog</span></code> does not contain a property called <code class="docutils literal notranslate"><span class="pre">breed</span></code>.</p>
-</li>
-<li><p class="first">On the line 17, use dot notation to create a new property called
-<code class="docutils literal notranslate"><span class="pre">breed</span></code> and assign it a string value.</p>
-</li>
-<li><p class="first">On line 18, add the <code class="docutils literal notranslate"><span class="pre">is_cute</span></code> property to <code class="docutils literal notranslate"><span class="pre">dog</span></code>. Assign it a boolean
-value instead of a string.</p>
-</li>
-<li><p class="first">Run the program again. Properly done, the output should look similar to:</p>
+<li><p>Uncomment line 19 and run the program. You should see an error message
+because <code class="docutils literal notranslate"><span class="pre">dog</span></code> does not contain a property called <code class="docutils literal notranslate"><span class="pre">breed</span></code>.</p></li>
+<li><p>On the line 17, use dot notation to create a new property called
+<code class="docutils literal notranslate"><span class="pre">breed</span></code> and assign it a string value.</p></li>
+<li><p>On line 18, add the <code class="docutils literal notranslate"><span class="pre">is_cute</span></code> property to <code class="docutils literal notranslate"><span class="pre">dog</span></code>. Assign it a boolean
+value instead of a string.</p></li>
+<li><p>Run the program again. Properly done, the output should look similar to:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Spot
 3
 Fleas 6
@@ -185,8 +179,8 @@ mutt True
 </ol>
 </div>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
-<p class="last">Object properties work like the key/value pairs in a
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>Object properties work like the key/value pairs in a
 dictionary. Each property name acts as a label (key) that points to a specific
 piece of data (the value).</p>
 </div>
@@ -245,15 +239,15 @@ method on objects of a different type.</p>
 <p>In this example, the <code class="docutils literal notranslate"><span class="pre">dog</span></code> object includes three methods called <code class="docutils literal notranslate"><span class="pre">speak</span></code>,
 <code class="docutils literal notranslate"><span class="pre">fetch</span></code>, and <code class="docutils literal notranslate"><span class="pre">increase_age</span></code>.</p>
 <ol class="arabic simple">
-<li>On line 9, add a statement to call the <code class="docutils literal notranslate"><span class="pre">speak</span></code> method, then run the
+<li><p>On line 9, add a statement to call the <code class="docutils literal notranslate"><span class="pre">speak</span></code> method, then run the
 program. The method requires no argument, but including an integer
-changes the output. Try it!</li>
-<li>The <code class="docutils literal notranslate"><span class="pre">speak</span></code> method prints to the console, but the <code class="docutils literal notranslate"><span class="pre">fetch</span></code> method
-does not. On line 12, print the value <em>returned</em> by <code class="docutils literal notranslate"><span class="pre">fetch</span></code>.</li>
-<li>Try adding a string argument when you call the <code class="docutils literal notranslate"><span class="pre">fetch</span></code> method.</li>
-<li>On line 15, print the <code class="docutils literal notranslate"><span class="pre">age</span></code> property for <code class="docutils literal notranslate"><span class="pre">dog</span></code>.</li>
-<li>On line 16, call the <code class="docutils literal notranslate"><span class="pre">increase_age</span></code> method, which requires an integer
-as an argument. Print the <code class="docutils literal notranslate"><span class="pre">age</span></code> property again to check the result.</li>
+changes the output. Try it!</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">speak</span></code> method prints to the console, but the <code class="docutils literal notranslate"><span class="pre">fetch</span></code> method
+does not. On line 12, print the value <em>returned</em> by <code class="docutils literal notranslate"><span class="pre">fetch</span></code>.</p></li>
+<li><p>Try adding a string argument when you call the <code class="docutils literal notranslate"><span class="pre">fetch</span></code> method.</p></li>
+<li><p>On line 15, print the <code class="docutils literal notranslate"><span class="pre">age</span></code> property for <code class="docutils literal notranslate"><span class="pre">dog</span></code>.</p></li>
+<li><p>On line 16, call the <code class="docutils literal notranslate"><span class="pre">increase_age</span></code> method, which requires an integer
+as an argument. Print the <code class="docutils literal notranslate"><span class="pre">age</span></code> property again to check the result.</p></li>
 </ol>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2

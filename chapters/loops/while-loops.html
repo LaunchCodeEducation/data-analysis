@@ -107,9 +107,9 @@ and the loop stops.</p>
 <p>Just like with <code class="docutils literal notranslate"><span class="pre">for</span></code> loops, the body of a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop must be indented,
 and it may contain any number of statements.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>The following loop repeats until <code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">&lt;</span> <span class="pre">1000</span></code> returns <code class="docutils literal notranslate"><span class="pre">False</span></code>:</p>
-<div class="last highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -136,11 +136,11 @@ and it may contain any number of statements.</p>
 <p class="caption"><span class="caption-text">Flow of execution of a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 <ol class="arabic simple">
-<li>Python evaluates the condition, which returns a value of <code class="docutils literal notranslate"><span class="pre">True</span></code> or
-<code class="docutils literal notranslate"><span class="pre">False</span></code>.</li>
-<li>If the condition is <code class="docutils literal notranslate"><span class="pre">False</span></code>, exit the <code class="docutils literal notranslate"><span class="pre">while</span></code> loop and continue
-the program at the next statement after the loop body.</li>
-<li>If the condition is <code class="docutils literal notranslate"><span class="pre">True</span></code>, run the loop body and then go back to step 1.</li>
+<li><p>Python evaluates the condition, which returns a value of <code class="docutils literal notranslate"><span class="pre">True</span></code> or
+<code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p>If the condition is <code class="docutils literal notranslate"><span class="pre">False</span></code>, exit the <code class="docutils literal notranslate"><span class="pre">while</span></code> loop and continue
+the program at the next statement after the loop body.</p></li>
+<li><p>If the condition is <code class="docutils literal notranslate"><span class="pre">True</span></code>, run the loop body and then go back to step 1.</p></li>
 </ol>
 </div>
 <div class="section" id="for-loops-rewritten-as-while-loops">
@@ -177,8 +177,8 @@ differently.</p>
 <p>If we imagine giving instructions to someone, the <code class="docutils literal notranslate"><span class="pre">for</span></code> and <code class="docutils literal notranslate"><span class="pre">while</span></code>
 approaches might sound something like:</p>
 <ol class="arabic simple">
-<li><strong>For</strong>: Repeat this task for each number 0 - 20.</li>
-<li><strong>While</strong>: Repeat this task as long as the number is less than 21.</li>
+<li><p><strong>For</strong>: Repeat this task for each number 0 - 20.</p></li>
+<li><p><strong>While</strong>: Repeat this task as long as the number is less than 21.</p></li>
 </ol>
 <div class="section" id="try-it">
 <h3><span class="section-number">7.6.3.1. </span>Try It!<a class="headerlink" href="#try-it" title="Permalink to this headline">¶</a></h3>
@@ -202,18 +202,19 @@ approaches might sound something like:</p>
 </td></tr></table></div>
 <p>Do the following in the editor below:</p>
 <ol class="arabic simple">
-<li>On line 5, define a counter variable called <code class="docutils literal notranslate"><span class="pre">index</span></code>. Assign it a value of
-<code class="docutils literal notranslate"><span class="pre">0</span></code>.</li>
-<li>Next, code the <code class="docutils literal notranslate"><span class="pre">while</span></code> statement. Here are two possibilities:<ul>
-<li><code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">index</span> <span class="pre">&lt;</span> <span class="pre">num_letters:</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">len(while_string)</span> <span class="pre">&lt;</span> <span class="pre">num_letters:</span></code></li>
+<li><p>On line 5, define a counter variable called <code class="docutils literal notranslate"><span class="pre">index</span></code>. Assign it a value of
+<code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></li>
+<li><p>Next, code the <code class="docutils literal notranslate"><span class="pre">while</span></code> statement. Here are two possibilities:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">index</span> <span class="pre">&lt;</span> <span class="pre">num_letters:</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">len(while_string)</span> <span class="pre">&lt;</span> <span class="pre">num_letters:</span></code></p></li>
 </ul>
 </li>
-<li>Inside the loop, update <code class="docutils literal notranslate"><span class="pre">while_string</span></code>. Look at line 6 in the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop
-for a hint about how to do this.</li>
-<li>Also inside the loop, increase the value of <code class="docutils literal notranslate"><span class="pre">index</span></code> by 1.</li>
-<li>Run the program to verify that it prints <code class="docutils literal notranslate"><span class="pre">abcdefgh</span></code> when
-<code class="docutils literal notranslate"><span class="pre">num_letters</span> <span class="pre">=</span> <span class="pre">8</span></code>.</li>
+<li><p>Inside the loop, update <code class="docutils literal notranslate"><span class="pre">while_string</span></code>. Look at line 6 in the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop
+for a hint about how to do this.</p></li>
+<li><p>Also inside the loop, increase the value of <code class="docutils literal notranslate"><span class="pre">index</span></code> by 1.</p></li>
+<li><p>Run the program to verify that it prints <code class="docutils literal notranslate"><span class="pre">abcdefgh</span></code> when
+<code class="docutils literal notranslate"><span class="pre">num_letters</span> <span class="pre">=</span> <span class="pre">8</span></code>.</p></li>
 </ol>
 <div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -238,7 +239,7 @@ multiple times. However, <code class="docutils literal notranslate"><span class=
 If you don’t know how many times the loop needs to run, a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop is the
 best fit. Let’s look at one example of this.</p>
 <div class="admonition-try-it admonition" id="index-2">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>This program is an example of <strong>input validation</strong>, which checks what the
 user enters to make sure it won’t cause errors down the line.</p>
 <p>In this case, the computer prompts the user to enter a positive number. If
@@ -259,7 +260,7 @@ a valid number, the loop ends.</p>
       <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Invalid number&#39;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/InputValidation" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/InputValidation" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
 <p>This example shows the additional flexibility provided by <code class="docutils literal notranslate"><span class="pre">while</span></code> loops.
 <code class="docutils literal notranslate"><span class="pre">for</span></code> loops iterate a specific number of times, but in this case we have no
@@ -294,33 +295,33 @@ job done when we do not know how long it will take to meet a given condition.</p
 <div class="section" id="for-pros-and-cons">
 <h3><span class="section-number">7.6.5.1. </span><code class="docutils literal notranslate"><span class="pre">for</span></code> Pros and Cons<a class="headerlink" href="#for-pros-and-cons" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li>Easier to set up than <code class="docutils literal notranslate"><span class="pre">while</span></code> loops.</li>
-<li>Must have a definite start and end point, and these must be declared in the
-<code class="docutils literal notranslate"><span class="pre">for</span></code> statement.</li>
-<li>Can loop through strings and collections without using an index value (e.g.
-<code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">char</span> <span class="pre">in</span> <span class="pre">'hello':</span></code>).</li>
-<li>Automatically updates the loop variable.</li>
-<li>It is hard to accidentally create an infinite Python <code class="docutils literal notranslate"><span class="pre">for</span></code> loop.</li>
-<li>Can be used in place of some <code class="docutils literal notranslate"><span class="pre">while</span></code> loops, but not all.</li>
-<li>Do not work for input validation.</li>
+<li><p>Easier to set up than <code class="docutils literal notranslate"><span class="pre">while</span></code> loops.</p></li>
+<li><p>Must have a definite start and end point, and these must be declared in the
+<code class="docutils literal notranslate"><span class="pre">for</span></code> statement.</p></li>
+<li><p>Can loop through strings and collections without using an index value (e.g.
+<code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">char</span> <span class="pre">in</span> <span class="pre">'hello':</span></code>).</p></li>
+<li><p>Automatically updates the loop variable.</p></li>
+<li><p>It is hard to accidentally create an infinite Python <code class="docutils literal notranslate"><span class="pre">for</span></code> loop.</p></li>
+<li><p>Can be used in place of some <code class="docutils literal notranslate"><span class="pre">while</span></code> loops, but not all.</p></li>
+<li><p>Do not work for input validation.</p></li>
 </ol>
 </div>
 <div class="section" id="while-pros-and-cons">
 <h3><span class="section-number">7.6.5.2. </span><code class="docutils literal notranslate"><span class="pre">while</span></code> Pros and Cons<a class="headerlink" href="#while-pros-and-cons" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li>More flexible than <code class="docutils literal notranslate"><span class="pre">for</span></code> loops.</li>
-<li>ANY <code class="docutils literal notranslate"><span class="pre">for</span></code> loop can be re-written as a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop.</li>
-<li>Do not need to know beforehand how many times the loop needs to run.</li>
-<li>Can be used for input validation.</li>
-<li><code class="docutils literal notranslate"><span class="pre">while</span></code> loops require more work to build.</li>
-<li>Making an infinite <code class="docutils literal notranslate"><span class="pre">while</span></code> loop is easy.</li>
+<li><p>More flexible than <code class="docutils literal notranslate"><span class="pre">for</span></code> loops.</p></li>
+<li><p>ANY <code class="docutils literal notranslate"><span class="pre">for</span></code> loop can be re-written as a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop.</p></li>
+<li><p>Do not need to know beforehand how many times the loop needs to run.</p></li>
+<li><p>Can be used for input validation.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">while</span></code> loops require more work to build.</p></li>
+<li><p>Making an infinite <code class="docutils literal notranslate"><span class="pre">while</span></code> loop is easy.</p></li>
 </ol>
 </div>
 </div>
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">7.6.6. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Which of the following will cause this <code class="docutils literal notranslate"><span class="pre">while</span></code> loop to end? Select ALL
 that apply.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -332,44 +333,44 @@ that apply.</p>
    <span class="n">username</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a username: &quot;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li>“Bob3”</li>
-<li>“Anaconda”</li>
-<li>“Willmore Crane Hastings III”</li>
-<li>“Sally”</li>
-<li>“LaunchCode”</li>
+<ol class="loweralpha simple">
+<li><p>“Bob3”</p></li>
+<li><p>“Anaconda”</p></li>
+<li><p>“Willmore Crane Hastings III”</p></li>
+<li><p>“Sally”</p></li>
+<li><p>“LaunchCode”</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>If you know the maximum number of times you need a loop to repeat, either
 <code class="docutils literal notranslate"><span class="pre">for</span></code> or <code class="docutils literal notranslate"><span class="pre">while</span></code> will work, but which option is the <em>better</em> choice?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">while</span></code> loop</li>
-<li><code class="docutils literal notranslate"><span class="pre">for</span></code> loop</li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">while</span></code> loop</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">for</span></code> loop</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>You are asked to program a robot to move tennis balls from one box (Box #1)
 to another (Box #2), one-by-one. The robot should continue moving balls until
 Box #1 is empty. However, balls may be added to the box after the robot
 begins its work.</p>
 <p>Which type of loop should you use to write the program?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">while</span></code> loop</li>
-<li><code class="docutils literal notranslate"><span class="pre">for</span></code> loop</li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">while</span></code> loop</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">for</span></code> loop</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>You are asked to write a program similar to the one above, but a user gives
 the robot a specific number of balls to move from Box #1 to Box #2. (You can
 assume there will always be more than enough balls in the first box).</p>
 <p>Which type of loop should you use to write the program?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">while</span></code> loop</li>
-<li><code class="docutils literal notranslate"><span class="pre">for</span></code> loop</li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">while</span></code> loop</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">for</span></code> loop</p></li>
 </ol>
 </div>
 </div>

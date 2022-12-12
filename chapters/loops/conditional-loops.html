@@ -91,15 +91,15 @@ to decide which block of code to run. In this chapter, we use loops to repeat a
 set of statements multiple times.</p>
 <p>You might wonder:</p>
 <ol class="arabic simple">
-<li><em>Can I put a loop inside an if statement?</em></li>
-<li><em>Can I put a conditional inside a loop?</em></li>
+<li><p><em>Can I put a loop inside an if statement?</em></p></li>
+<li><p><em>Can I put a conditional inside a loop?</em></p></li>
 </ol>
 <p>The answer to both of these questions is a definite, <em>YES!</em></p>
 <div class="section" id="repeating-a-check">
 <h2><span class="section-number">7.4.1. </span>Repeating a Check<a class="headerlink" href="#repeating-a-check" title="Permalink to this headline">¶</a></h2>
 <p>Run the following code samples to see how each one behaves.</p>
 <div class="admonition-examples admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Examples</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Examples</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -135,7 +135,7 @@ divisible by 3, then line 5 runs. Otherwise, line 7 runs.</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="s2">&quot;contains&quot;</span><span class="p">,</span> <span class="n">num_vowels</span><span class="p">,</span> <span class="s2">&quot;lowercase vowels.&quot;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<p class="last">In the second loop, the condition <code class="docutils literal notranslate"><span class="pre">char</span> <span class="pre">in</span> <span class="pre">'aeiou'</span></code> returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if
+<p>In the second loop, the condition <code class="docutils literal notranslate"><span class="pre">char</span> <span class="pre">in</span> <span class="pre">'aeiou'</span></code> returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if
 the value of <code class="docutils literal notranslate"><span class="pre">char</span></code> matches any part of the string. When this happens,
 <code class="docutils literal notranslate"><span class="pre">num_vowels</span></code> gets increased by 1 (line 6). <code class="docutils literal notranslate"><span class="pre">Coding</span> <span class="pre">ROCKS!</span></code> contains 2
 lowercase vowels, so line 6 only runs 2 times. For every other character in
@@ -147,7 +147,7 @@ the string, the line gets skipped.</p>
 <p>We can also place a loop inside any of the code blocks of an <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code>
 statement.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -168,12 +168,12 @@ statement.</p>
 </pre></div>
 </td></tr></table></div>
 <p>Set up this way, only one of the three loops will run:</p>
-<ol class="last arabic simple">
-<li>IF <code class="docutils literal notranslate"><span class="pre">condition</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop starting on line 2 runs.</li>
-<li>IF <code class="docutils literal notranslate"><span class="pre">condition</span></code> is <code class="docutils literal notranslate"><span class="pre">False</span></code> and <code class="docutils literal notranslate"><span class="pre">other_condition</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, then
-the loop starting on line 5 runs.</li>
-<li>IF <code class="docutils literal notranslate"><span class="pre">condition</span></code> and <code class="docutils literal notranslate"><span class="pre">other_condition</span></code> both return <code class="docutils literal notranslate"><span class="pre">False</span></code>, then
-<code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">ROCKS!</span></code> gets printed 20 times by the last loop.</li>
+<ol class="arabic simple">
+<li><p>IF <code class="docutils literal notranslate"><span class="pre">condition</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop starting on line 2 runs.</p></li>
+<li><p>IF <code class="docutils literal notranslate"><span class="pre">condition</span></code> is <code class="docutils literal notranslate"><span class="pre">False</span></code> and <code class="docutils literal notranslate"><span class="pre">other_condition</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>, then
+the loop starting on line 5 runs.</p></li>
+<li><p>IF <code class="docutils literal notranslate"><span class="pre">condition</span></code> and <code class="docutils literal notranslate"><span class="pre">other_condition</span></code> both return <code class="docutils literal notranslate"><span class="pre">False</span></code>, then
+<code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">ROCKS!</span></code> gets printed 20 times by the last loop.</p></li>
 </ol>
 </div>
 <p>Placing a loop inside a conditional allows us to choose when the loop body

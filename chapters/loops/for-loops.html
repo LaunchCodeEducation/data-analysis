@@ -109,23 +109,23 @@ and its action is to print a value to the console.</p>
 <p>Let’s break down this syntax piece by piece, so we can begin to understand how <code class="docutils literal notranslate"><span class="pre">for</span></code>
 loops are structured.</p>
 <ol class="arabic simple" id="index-3">
-<li>In line 1, <code class="docutils literal notranslate"><span class="pre">num</span></code> is called the <strong>loop variable</strong>. Each time the loop
+<li><p>In line 1, <code class="docutils literal notranslate"><span class="pre">num</span></code> is called the <strong>loop variable</strong>. Each time the loop
 executes, <code class="docutils literal notranslate"><span class="pre">num</span></code> gets assigned a new value based on the number in the <code class="docutils literal notranslate"><span class="pre">range</span></code>.
 In this example, <code class="docutils literal notranslate"><span class="pre">num</span></code> will be assigned a value 51 times, starting with 0 and ending at 50.
-More on that later.</li>
-<li>Line 2 begins the loop body. The loop body is ALWAYS indented.
+More on that later.</p></li>
+<li><p>Line 2 begins the loop body. The loop body is ALWAYS indented.
 The indentation determines exactly what statements are “in the loop”.
-In this example, we are printing each value of <code class="docutils literal notranslate"><span class="pre">num</span></code> as we loop through the set range.</li>
-<li>The <em>first</em> unindented line after the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement marks the end of the
-loop body.  In this example, line 4 is not part of the loop.</li>
-<li>The loop body can contain any number of statements.</li>
-<li>The number of times the loop body runs depends on the value in <code class="docutils literal notranslate"><span class="pre">range()</span></code>.</li>
+In this example, we are printing each value of <code class="docutils literal notranslate"><span class="pre">num</span></code> as we loop through the set range.</p></li>
+<li><p>The <em>first</em> unindented line after the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement marks the end of the
+loop body.  In this example, line 4 is not part of the loop.</p></li>
+<li><p>The loop body can contain any number of statements.</p></li>
+<li><p>The number of times the loop body runs depends on the value in <code class="docutils literal notranslate"><span class="pre">range()</span></code>.</p></li>
 </ol>
 <div class="section" id="line-by-line">
 <h3><span class="section-number">7.2.1.1. </span>Line By Line<a class="headerlink" href="#line-by-line" title="Permalink to this headline">¶</a></h3>
 <p>Let’s modify the code just a little to follow the operation of a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -138,7 +138,7 @@ loop body.  In this example, line 4 is not part of the loop.</li>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>0
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>0
 
 1
 Hello
@@ -151,28 +151,28 @@ Done!
 </div>
 </div>
 <ol class="arabic simple">
-<li>The first time Python executes the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement in line 1, <code class="docutils literal notranslate"><span class="pre">num</span></code> is
-assigned a value of <code class="docutils literal notranslate"><span class="pre">0</span></code>.</li>
-<li>Next, Python checks if the value of <code class="docutils literal notranslate"><span class="pre">num</span></code> is less than the value inside
-<code class="docutils literal notranslate"><span class="pre">range</span></code>. Since <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&lt;</span> <span class="pre">4</span></code> evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code>, the loop body executes.</li>
-<li>Line 2 prints the current value of <code class="docutils literal notranslate"><span class="pre">num</span></code>.</li>
-<li>Line 3 prints the string <code class="docutils literal notranslate"><span class="pre">Hello</span></code> zero times.</li>
-<li>Python reaches the end of the loop body (the indented lines). At this point,
+<li><p>The first time Python executes the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement in line 1, <code class="docutils literal notranslate"><span class="pre">num</span></code> is
+assigned a value of <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></li>
+<li><p>Next, Python checks if the value of <code class="docutils literal notranslate"><span class="pre">num</span></code> is less than the value inside
+<code class="docutils literal notranslate"><span class="pre">range</span></code>. Since <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&lt;</span> <span class="pre">4</span></code> evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code>, the loop body executes.</p></li>
+<li><p>Line 2 prints the current value of <code class="docutils literal notranslate"><span class="pre">num</span></code>.</p></li>
+<li><p>Line 3 prints the string <code class="docutils literal notranslate"><span class="pre">Hello</span></code> zero times.</p></li>
+<li><p>Python reaches the end of the loop body (the indented lines). At this point,
 it increases the value of <code class="docutils literal notranslate"><span class="pre">num</span></code> by 1 and then MOVES BACK TO THE <code class="docutils literal notranslate"><span class="pre">for</span></code>
-STATEMENT (line 1).</li>
-<li>The new value of <code class="docutils literal notranslate"><span class="pre">num</span></code> (<code class="docutils literal notranslate"><span class="pre">1</span></code>) gets compared to the <code class="docutils literal notranslate"><span class="pre">range</span></code> value.
-Since <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&lt;</span> <span class="pre">4</span></code> still returns <code class="docutils literal notranslate"><span class="pre">True</span></code>, the loop body executes again.</li>
-<li>Lines 2 and 3 run with the new value of <code class="docutils literal notranslate"><span class="pre">num</span></code>, so we see <code class="docutils literal notranslate"><span class="pre">1</span></code> and
-<code class="docutils literal notranslate"><span class="pre">Hello</span></code> printed to the console.</li>
-<li>Python again reaches the end of the loop body, increases the value of
-<code class="docutils literal notranslate"><span class="pre">num</span></code> and moves back up to the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement.</li>
-<li>This process continues until the value of <code class="docutils literal notranslate"><span class="pre">num</span></code> reaches the end of the
+STATEMENT (line 1).</p></li>
+<li><p>The new value of <code class="docutils literal notranslate"><span class="pre">num</span></code> (<code class="docutils literal notranslate"><span class="pre">1</span></code>) gets compared to the <code class="docutils literal notranslate"><span class="pre">range</span></code> value.
+Since <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&lt;</span> <span class="pre">4</span></code> still returns <code class="docutils literal notranslate"><span class="pre">True</span></code>, the loop body executes again.</p></li>
+<li><p>Lines 2 and 3 run with the new value of <code class="docutils literal notranslate"><span class="pre">num</span></code>, so we see <code class="docutils literal notranslate"><span class="pre">1</span></code> and
+<code class="docutils literal notranslate"><span class="pre">Hello</span></code> printed to the console.</p></li>
+<li><p>Python again reaches the end of the loop body, increases the value of
+<code class="docutils literal notranslate"><span class="pre">num</span></code> and moves back up to the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement.</p></li>
+<li><p>This process continues until the value of <code class="docutils literal notranslate"><span class="pre">num</span></code> reaches the end of the
 specified <code class="docutils literal notranslate"><span class="pre">range</span></code>. Once the comparison <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&lt;</span> <span class="pre">4</span></code> returns <code class="docutils literal notranslate"><span class="pre">False</span></code>, the
 loop ends. Since Python adds 1 after each iteration, this occurs when
 <code class="docutils literal notranslate"><span class="pre">num</span></code> is 4 (so <code class="docutils literal notranslate"><span class="pre">4</span> <span class="pre">&lt;</span> <span class="pre">4</span></code> is <code class="docutils literal notranslate"><span class="pre">False</span></code>). At that point, the loop body will
-have run exactly 4 times, with <code class="docutils literal notranslate"><span class="pre">num</span></code> taking the values 0, 1, 2, and 3.</li>
-<li>Once the loop finishes, Python proceeds to line 5 and prints <code class="docutils literal notranslate"><span class="pre">Done!</span></code> one
-time.</li>
+have run exactly 4 times, with <code class="docutils literal notranslate"><span class="pre">num</span></code> taking the values 0, 1, 2, and 3.</p></li>
+<li><p>Once the loop finishes, Python proceeds to line 5 and prints <code class="docutils literal notranslate"><span class="pre">Done!</span></code> one
+time.</p></li>
 </ol>
 <p>We can use a picture to show the <em>flow of execution</em> of this <code class="docutils literal notranslate"><span class="pre">for</span></code> loop:</p>
 <div class="figure align-default" id="id1">
@@ -194,9 +194,9 @@ Likewise, <code class="docutils literal notranslate"><span class="pre">range(10)
 instead of at 1 is called <strong>zero-based indexing</strong> and is very common in
 computer programming.</p>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p>Programmers like to count from 0!</p>
-<p class="last">For <code class="docutils literal notranslate"><span class="pre">range(n)</span></code>, the loop variable will take each integer value from 0 up
+<p>For <code class="docutils literal notranslate"><span class="pre">range(n)</span></code>, the loop variable will take each integer value from 0 up
 to BUT NOT INCLUDING <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
 </div>
 </div>
@@ -204,49 +204,49 @@ to BUT NOT INCLUDING <code class="docutils literal notranslate"><span class="pre
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">7.2.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>How does Python know what lines are contained in the loop body?</p>
-<ol class="last loweralpha simple">
-<li>The lines are indented by the same amount from the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement.</li>
-<li>There is always exactly one line in the loop body.</li>
-<li>The loop body ends with an empty line.</li>
-<li>The loop body ends at the next <code class="docutils literal notranslate"><span class="pre">for</span></code> statement.</li>
+<ol class="loweralpha simple">
+<li><p>The lines are indented by the same amount from the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement.</p></li>
+<li><p>There is always exactly one line in the loop body.</p></li>
+<li><p>The loop body ends with an empty line.</p></li>
+<li><p>The loop body ends at the next <code class="docutils literal notranslate"><span class="pre">for</span></code> statement.</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>How many lines does the following code print?</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I have&quot;</span><span class="p">,</span> <span class="mi">12</span> <span class="o">-</span> <span class="n">number</span><span class="p">,</span> <span class="s2">&quot;cookies. I&#39;m going to eat one!&quot;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li>1</li>
-<li>9</li>
-<li>10</li>
-<li>12</li>
+<ol class="loweralpha simple">
+<li><p>1</p></li>
+<li><p>9</p></li>
+<li><p>10</p></li>
+<li><p>12</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>For the code above, what is the value of <code class="docutils literal notranslate"><span class="pre">number</span></code> the <em>third</em> time Python
 executes the loop?</p>
-<ol class="last loweralpha simple">
-<li>1</li>
-<li>2</li>
-<li>3</li>
-<li>4</li>
+<ol class="loweralpha simple">
+<li><p>1</p></li>
+<li><p>2</p></li>
+<li><p>3</p></li>
+<li><p>4</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>For the same code, what is the LAST line printed by the program?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">have</span> <span class="pre">2</span> <span class="pre">cookies.</span> <span class="pre">I'm</span> <span class="pre">going</span> <span class="pre">to</span> <span class="pre">eat</span> <span class="pre">one!</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">have</span> <span class="pre">3</span> <span class="pre">cookies.</span> <span class="pre">I'm</span> <span class="pre">going</span> <span class="pre">to</span> <span class="pre">eat</span> <span class="pre">one!</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">have</span> <span class="pre">10</span> <span class="pre">cookies.</span> <span class="pre">I'm</span> <span class="pre">going</span> <span class="pre">to</span> <span class="pre">eat</span> <span class="pre">one!</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">have</span> <span class="pre">12</span> <span class="pre">cookies.</span> <span class="pre">I'm</span> <span class="pre">going</span> <span class="pre">to</span> <span class="pre">eat</span> <span class="pre">one!</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">have</span> <span class="pre">2</span> <span class="pre">cookies.</span> <span class="pre">I'm</span> <span class="pre">going</span> <span class="pre">to</span> <span class="pre">eat</span> <span class="pre">one!</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">have</span> <span class="pre">3</span> <span class="pre">cookies.</span> <span class="pre">I'm</span> <span class="pre">going</span> <span class="pre">to</span> <span class="pre">eat</span> <span class="pre">one!</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">have</span> <span class="pre">10</span> <span class="pre">cookies.</span> <span class="pre">I'm</span> <span class="pre">going</span> <span class="pre">to</span> <span class="pre">eat</span> <span class="pre">one!</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">have</span> <span class="pre">12</span> <span class="pre">cookies.</span> <span class="pre">I'm</span> <span class="pre">going</span> <span class="pre">to</span> <span class="pre">eat</span> <span class="pre">one!</span></code></p></li>
 </ol>
 </div>
 </div>

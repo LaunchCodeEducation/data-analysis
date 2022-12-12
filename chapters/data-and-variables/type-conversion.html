@@ -94,14 +94,14 @@ In this situation, numeric data may be passed to the program as strings.</p>
 For example, if you add a variable of type <code class="docutils literal notranslate"><span class="pre">int</span></code> and a variable of type <code class="docutils literal notranslate"><span class="pre">float</span></code> together, the resulting sum is a float.
 With implicit type conversion, Python will always convert to a larger data type so no data is lost.</p>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">If you try to add an integer and a string together, you may notice that Python cannot convert the result to a data type.
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>If you try to add an integer and a string together, you may notice that Python cannot convert the result to a data type.
 While implicity type conversion is a handy trick, it doesn’t work in every scenario!</p>
 </div>
 <p>Explicit type conversion uses functions such as <code class="docutils literal notranslate"><span class="pre">int()</span></code>, <code class="docutils literal notranslate"><span class="pre">str()</span></code>, and <code class="docutils literal notranslate"><span class="pre">float()</span></code> to convert variables of one type to another.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">int()</span></code> function can take a string and turn it into an integer. Let us see this in action:</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="s2">&quot;2345&quot;</span><span class="p">))</span>
@@ -110,7 +110,7 @@ While implicity type conversion is a handy trick, it doesn’t work in every sce
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>2345
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>2345
 int
 17
 </pre></div>
@@ -118,12 +118,12 @@ int
 </div>
 <p>What happens if we attempt to convert a string to an integer, and the string doesn’t directly represent an integer?</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="s2">&quot;23bottles&quot;</span><span class="p">))</span>
 </pre></div>
 </div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>ValueError: invalid literal for int() with base 10: &#39;23bottles&#39;
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ValueError: invalid literal for int() with base 10: &#39;23bottles&#39;
 </pre></div>
 </div>
 </div>
@@ -134,7 +134,7 @@ If the value cannot be cleanly converted to a number then <code class="docutils 
 Remember that when we print a string, the quotes may be removed.
 However, if we print the type, we can see that it is definitely <code class="docutils literal notranslate"><span class="pre">'string'</span></code>.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="mi">17</span><span class="p">))</span>
@@ -143,7 +143,7 @@ However, if we print the type, we can see that it is definitely <code class="doc
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>17
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>17
 123.45
 string
 </pre></div>
@@ -152,13 +152,13 @@ string
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">5.2.1. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Which of the following strings result in <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> when passed to <code class="docutils literal notranslate"><span class="pre">int()</span></code>? (Feel free to try running each of the conversions.)</p>
-<ol class="last arabic simple">
-<li><code class="docutils literal notranslate"><span class="pre">'3'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'three'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'3</span> <span class="pre">3'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'33'</span></code></li>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">'3'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'three'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'3</span> <span class="pre">3'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'33'</span></code></p></li>
 </ol>
 </div>
 </div>

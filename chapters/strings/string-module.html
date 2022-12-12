@@ -112,11 +112,11 @@ lowercase letter. We could set up a conditional like so:</p>
 </td></tr></table></div>
 <p>Note what we did:</p>
 <ol class="arabic simple">
-<li>Line 1 checks if the character is any of the digits <code class="docutils literal notranslate"><span class="pre">0</span></code> - <code class="docutils literal notranslate"><span class="pre">9</span></code>,</li>
-<li>If not, line 3 checks if the character is any of the lowercase letters from
-<code class="docutils literal notranslate"><span class="pre">a</span></code> - <code class="docutils literal notranslate"><span class="pre">z</span></code>.</li>
-<li>We could easily expand the conditional to check for uppercase letters
-(<code class="docutils literal notranslate"><span class="pre">elif</span> <span class="pre">char</span> <span class="pre">in</span> <span class="pre">'ABC...'</span></code>), punctuation, etc.</li>
+<li><p>Line 1 checks if the character is any of the digits <code class="docutils literal notranslate"><span class="pre">0</span></code> - <code class="docutils literal notranslate"><span class="pre">9</span></code>,</p></li>
+<li><p>If not, line 3 checks if the character is any of the lowercase letters from
+<code class="docutils literal notranslate"><span class="pre">a</span></code> - <code class="docutils literal notranslate"><span class="pre">z</span></code>.</p></li>
+<li><p>We could easily expand the conditional to check for uppercase letters
+(<code class="docutils literal notranslate"><span class="pre">elif</span> <span class="pre">char</span> <span class="pre">in</span> <span class="pre">'ABC...'</span></code>), punctuation, etc.</p></li>
 </ol>
 <p>Although fairly straightforward, setting up the checks is tedious, since we need
 to hard-code the strings for the numbers, letters, and symbols. (Go ahead and
@@ -128,32 +128,32 @@ For example, <code class="docutils literal notranslate"><span class="pre">string
 <p>The table below summarizes several of the constants defined in the <code class="docutils literal notranslate"><span class="pre">string</span></code>
 module. For a complete list, refer to the
 <a class="reference external" href="https://docs.python.org/3/library/string.html" target="_blank">Python documentation<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
-<table border="1" class="docutils align-default" id="id1">
+<table class="docutils align-default" id="id1">
 <caption><span class="caption-text">Common String Methods</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col style="width: 50%" />
+<col style="width: 50%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Syntax</th>
-<th class="head">Description</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>Syntax</p></th>
+<th class="head"><p>Description</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">string.digits</span></code></td>
-<td>Returns the string <code class="docutils literal notranslate"><span class="pre">'0123456789'</span></code></td>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">string.digits</span></code></p></td>
+<td><p>Returns the string <code class="docutils literal notranslate"><span class="pre">'0123456789'</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">string.ascii_lowercase</span></code></td>
-<td>Returns the string <code class="docutils literal notranslate"><span class="pre">'abcdefghijklmnopqrstuvwxyz'</span></code></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">string.ascii_lowercase</span></code></p></td>
+<td><p>Returns the string <code class="docutils literal notranslate"><span class="pre">'abcdefghijklmnopqrstuvwxyz'</span></code></p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">string.ascii_uppercase</span></code></td>
-<td>Returns the string <code class="docutils literal notranslate"><span class="pre">'ABCDEFGHIJKLMNOPQRSTUVWXYZ'</span></code></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">string.ascii_uppercase</span></code></p></td>
+<td><p>Returns the string <code class="docutils literal notranslate"><span class="pre">'ABCDEFGHIJKLMNOPQRSTUVWXYZ'</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">string.ascii_letters</span></code></td>
-<td>Returns a string containing all of the uppercase and lowercase letters.</td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">string.ascii_letters</span></code></p></td>
+<td><p>Returns a string containing all of the uppercase and lowercase letters.</p></td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">string.punctuation</span></code></td>
-<td>Returns the string <code class="docutils literal notranslate"><span class="pre">'!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?&#64;[\]^_`{|}~'</span></code>.</td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">string.punctuation</span></code></p></td>
+<td><p>Returns the string <code class="docutils literal notranslate"><span class="pre">'!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?&#64;[\]^_`{|}~'</span></code>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -187,26 +187,26 @@ constant:</p>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/StringModuleIntro" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 <p>Now try this:</p>
 <ol class="arabic simple">
-<li>Add <code class="docutils literal notranslate"><span class="pre">elif</span></code> blocks to the code to check if <code class="docutils literal notranslate"><span class="pre">my_string</span></code> is an uppercase
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">elif</span></code> blocks to the code to check if <code class="docutils literal notranslate"><span class="pre">my_string</span></code> is an uppercase
 letter, a digit, or some type of punctuation. Your code should print a
-different message depending on the value of <code class="docutils literal notranslate"><span class="pre">my_string</span></code>.</li>
-<li>Add an <code class="docutils literal notranslate"><span class="pre">else</span></code> statement to deal with characters that are not letters,
-digits, or punctuation.</li>
-<li>Assign a longer string to <code class="docutils literal notranslate"><span class="pre">my_string</span></code>. Add a loop to your code so that it
-checks each character in <code class="docutils literal notranslate"><span class="pre">my_string</span></code> and reports the results.</li>
-<li>Note that <em>whitespace</em> characters are not included in any of these
+different message depending on the value of <code class="docutils literal notranslate"><span class="pre">my_string</span></code>.</p></li>
+<li><p>Add an <code class="docutils literal notranslate"><span class="pre">else</span></code> statement to deal with characters that are not letters,
+digits, or punctuation.</p></li>
+<li><p>Assign a longer string to <code class="docutils literal notranslate"><span class="pre">my_string</span></code>. Add a loop to your code so that it
+checks each character in <code class="docutils literal notranslate"><span class="pre">my_string</span></code> and reports the results.</p></li>
+<li><p>Note that <em>whitespace</em> characters are not included in any of these
 constants. Can you guess the name for the <code class="docutils literal notranslate"><span class="pre">string</span></code> module constant that
-contains <code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">',</span> <span class="pre">'\t'</span></code>, and <code class="docutils literal notranslate"><span class="pre">'\n'</span></code>?</li>
+contains <code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">',</span> <span class="pre">'\t'</span></code>, and <code class="docutils literal notranslate"><span class="pre">'\n'</span></code>?</p></li>
 </ol>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p>Python contains a number of methods that return <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> based
 on the characteristics of an <em>entire</em> string instead of a single character.
 These can be used as alternatives to the examples above.</p>
 <p>For example, the <code class="docutils literal notranslate"><span class="pre">isdigit()</span></code> method returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if ALL the characters
 in a string are digits. So <code class="docutils literal notranslate"><span class="pre">'21'.isdigit()</span></code> returns <code class="docutils literal notranslate"><span class="pre">True</span></code> while
 <code class="docutils literal notranslate"><span class="pre">'21'</span> <span class="pre">in</span> <span class="pre">string.digits</span></code> returns <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
-<p class="last">Check out <a class="reference external" href="https://www.w3schools.com/python/python_ref_string.asp" target="_blank">W3Schools<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+<p>Check out <a class="reference external" href="https://www.w3schools.com/python/python_ref_string.asp" target="_blank">W3Schools<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
 for more details about these methods.</p>
 </div>
 </div>
@@ -214,17 +214,17 @@ for more details about these methods.</p>
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">8.10.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Which of the following expressions evaluate to <code class="docutils literal notranslate"><span class="pre">True</span></code>? Click each option
 to check your prediction.</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">'a'</span> <span class="pre">in</span> <span class="pre">string.ascii_uppercase</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'Q'</span> <span class="pre">in</span> <span class="pre">string.ascii_letters</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'334'</span> <span class="pre">in</span> <span class="pre">string.digits</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span> <span class="pre">in</span> <span class="pre">string.punctuation</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'$'</span> <span class="pre">in</span> <span class="pre">string.punctuation</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'abc'</span> <span class="pre">in</span> <span class="pre">'abcdefghijklmnopqrstuvwxyz'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'eo'</span> <span class="pre">in</span> <span class="pre">'aeiou'</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">'a'</span> <span class="pre">in</span> <span class="pre">string.ascii_uppercase</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Q'</span> <span class="pre">in</span> <span class="pre">string.ascii_letters</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'334'</span> <span class="pre">in</span> <span class="pre">string.digits</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span> <span class="pre">in</span> <span class="pre">string.punctuation</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'$'</span> <span class="pre">in</span> <span class="pre">string.punctuation</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'abc'</span> <span class="pre">in</span> <span class="pre">'abcdefghijklmnopqrstuvwxyz'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'eo'</span> <span class="pre">in</span> <span class="pre">'aeiou'</span></code></p></li>
 </ol>
 </div>
 </div>

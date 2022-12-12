@@ -91,8 +91,8 @@
 <div class="section" id="add-properties-to-robot">
 <span id="add-properties"></span><h3>Add Properties to <code class="docutils literal notranslate"><span class="pre">Robot</span></code><a class="headerlink" href="#add-properties-to-robot" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li>Inside the class, define the <code class="docutils literal notranslate"><span class="pre">__init__</span></code> method. It should include
-parameters for <code class="docutils literal notranslate"><span class="pre">self</span></code>, <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">mass</span></code>, and <code class="docutils literal notranslate"><span class="pre">year</span></code>.</li>
+<li><p>Inside the class, define the <code class="docutils literal notranslate"><span class="pre">__init__</span></code> method. It should include
+parameters for <code class="docutils literal notranslate"><span class="pre">self</span></code>, <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">mass</span></code>, and <code class="docutils literal notranslate"><span class="pre">year</span></code>.</p></li>
 </ol>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Robot</span><span class="p">:</span>
    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">mass</span><span class="p">,</span> <span class="n">year</span> <span class="o">=</span> <span class="mi">1984</span><span class="p">):</span>
@@ -103,7 +103,7 @@ parameters for <code class="docutils literal notranslate"><span class="pre">self
 </pre></div>
 </div>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
 <p>Before you move on, test your new class!</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">main</span><span class="p">()</span>
 
@@ -113,7 +113,7 @@ parameters for <code class="docutils literal notranslate"><span class="pre">self
 </pre></div>
 </div>
 <p><strong>Output</strong></p>
-<div class="last highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Rosie</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Rosie</span>
 </pre></div>
 </div>
 </div>
@@ -122,27 +122,23 @@ parameters for <code class="docutils literal notranslate"><span class="pre">self
 <div class="section" id="add-methods-to-robot">
 <span id="add-methods"></span><h3>Add Methods to <code class="docutils literal notranslate"><span class="pre">Robot</span></code><a class="headerlink" href="#add-methods-to-robot" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
-<li><p class="first">Below <code class="docutils literal notranslate"><span class="pre">__init__</span></code>, define a second method called <code class="docutils literal notranslate"><span class="pre">move()</span></code>. This method
+<li><p>Below <code class="docutils literal notranslate"><span class="pre">__init__</span></code>, define a second method called <code class="docutils literal notranslate"><span class="pre">move()</span></code>. This method
 should:</p>
 <ol class="arabic">
-<li><p class="first">Only take the <code class="docutils literal notranslate"><span class="pre">self</span></code> parameter.</p>
-</li>
-<li><p class="first">Generate a random number of steps (1 - 10) for the object to take. The
+<li><p>Only take the <code class="docutils literal notranslate"><span class="pre">self</span></code> parameter.</p></li>
+<li><p>Generate a random number of steps (1 - 10) for the object to take. The
 range should include <code class="docutils literal notranslate"><span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">10</span></code> as options.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">move</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
    <span class="n">steps_taken</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Increase the <code class="docutils literal notranslate"><span class="pre">distance</span></code> property by the number of steps.</p>
-</li>
-<li><p class="first">Return the random number of steps.</p>
-</li>
+<li><p>Increase the <code class="docutils literal notranslate"><span class="pre">distance</span></code> property by the number of steps.</p></li>
+<li><p>Return the random number of steps.</p></li>
 </ol>
 </li>
-<li><p class="first">Add the <code class="docutils literal notranslate"><span class="pre">__str__</span></code> method to return a string of the object properties.
-<code class="docutils literal notranslate"><span class="pre">print(robot_name)</span></code> should produce something like:</p>
-</li>
+<li><p>Add the <code class="docutils literal notranslate"><span class="pre">__str__</span></code> method to return a string of the object properties.
+<code class="docutils literal notranslate"><span class="pre">print(robot_name)</span></code> should produce something like:</p></li>
 </ol>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Robot Info: </span><span class="se">\n</span><span class="s2">   Name: </span><span class="si">{0}</span><span class="se">\n</span><span class="s2">   Mass: </span><span class="si">{1}</span><span class="s2"> kg</span><span class="se">\n</span><span class="s2">   Year made: </span><span class="si">{2}</span><span class="se">\n</span><span class="s2">   Distance traveled: </span><span class="si">{3}</span><span class="s2">&quot;</span>
@@ -182,11 +178,9 @@ random value to the <code class="docutils literal notranslate"><span class="pre"
 <p>Between the class and <code class="docutils literal notranslate"><span class="pre">main()</span></code>, define a function called <code class="docutils literal notranslate"><span class="pre">oldest_robot</span></code>. It
 should:</p>
 <ol class="arabic">
-<li><p class="first">Accept a list of robots as a parameter.</p>
-</li>
-<li><p class="first">Use a loop to iterate through the list.</p>
-</li>
-<li><p class="first">Return the index value for the oldest robot in the list.</p>
+<li><p>Accept a list of robots as a parameter.</p></li>
+<li><p>Use a loop to iterate through the list.</p></li>
+<li><p>Return the index value for the oldest robot in the list.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">oldest_robot</span><span class="p">(</span><span class="n">robot_list</span><span class="p">):</span>
    <span class="n">robot_year</span> <span class="o">=</span> <span class="p">[]</span>
    <span class="k">for</span> <span class="n">robot</span> <span class="ow">in</span> <span class="n">robot_list</span><span class="p">:</span>
@@ -196,7 +190,7 @@ should:</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first">If two robots have the same <code class="docutils literal notranslate"><span class="pre">year</span></code> value, then the one with the largest
+<li><p>If two robots have the same <code class="docutils literal notranslate"><span class="pre">year</span></code> value, then the one with the largest
 <code class="docutils literal notranslate"><span class="pre">distance</span></code> will be older.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">oldest_robot_year</span> <span class="o">=</span> <span class="n">robot_year</span><span class="p">[</span><span class="n">oldest</span><span class="p">]</span>
 <span class="n">oldest_robot_distance</span> <span class="o">=</span> <span class="n">robot_list</span><span class="p">[</span><span class="n">oldest</span><span class="p">]</span><span class="o">.</span><span class="n">distance</span>
@@ -222,13 +216,10 @@ should:</p>
 <code class="docutils literal notranslate"><span class="pre">robot_race</span></code> function that takes a list of robots as a parameter.</p>
 <p>Within the function:</p>
 <ol class="arabic">
-<li><p class="first">Each robot takes a turn running a race.</p>
-</li>
-<li><p class="first">A robot runs the race by calling its <code class="docutils literal notranslate"><span class="pre">move()</span></code> method several times.</p>
-</li>
-<li><p class="first">A robot is done with the race when it moves 30 steps or more.</p>
-</li>
-<li><p class="first">Create a new list to store how many turns it takes each robot to complete
+<li><p>Each robot takes a turn running a race.</p></li>
+<li><p>A robot runs the race by calling its <code class="docutils literal notranslate"><span class="pre">move()</span></code> method several times.</p></li>
+<li><p>A robot is done with the race when it moves 30 steps or more.</p></li>
+<li><p>Create a new list to store how many turns it takes each robot to complete
 the race. Use the string: <code class="docutils literal notranslate"><span class="pre">'____</span> <span class="pre">took</span> <span class="pre">____</span> <span class="pre">turns</span> <span class="pre">to</span> <span class="pre">take</span> <span class="pre">30</span> <span class="pre">steps.'</span></code>
 Fill in the blanks with the robot’s name and race result.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">robot_race</span><span class="p">(</span><span class="n">robot_list</span><span class="p">):</span>

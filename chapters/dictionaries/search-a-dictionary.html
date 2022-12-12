@@ -90,7 +90,7 @@
 search for specific values. These expressions returned either <code class="docutils literal notranslate"><span class="pre">True</span></code> or
 <code class="docutils literal notranslate"><span class="pre">False</span></code> depending on if the value was found in the collection.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -111,7 +111,7 @@ search for specific values. These expressions returned either <code class="docut
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>True
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>True
 False
 False
 True
@@ -123,7 +123,7 @@ True
 <p>We practiced with the <code class="docutils literal notranslate"><span class="pre">keys()</span></code> and <code class="docutils literal notranslate"><span class="pre">values()</span></code> methods in the previous two
 sections, and we can use them in a similar way to search a dictionary.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -156,13 +156,13 @@ True
 False
 </pre></div>
 </div>
-<ol class="last arabic simple">
-<li>In line 8, <code class="docutils literal notranslate"><span class="pre">101</span> <span class="pre">in</span> <span class="pre">ticket_holders.keys()</span></code> returns <code class="docutils literal notranslate"><span class="pre">False</span></code>. Even
+<ol class="arabic simple">
+<li><p>In line 8, <code class="docutils literal notranslate"><span class="pre">101</span> <span class="pre">in</span> <span class="pre">ticket_holders.keys()</span></code> returns <code class="docutils literal notranslate"><span class="pre">False</span></code>. Even
 though <code class="docutils literal notranslate"><span class="pre">101</span></code> is in the dictionary, it is a <em>value</em>, and in this case we
-are searching through the <em>keys</em>.</li>
-<li>In line 9, <code class="docutils literal notranslate"><span class="pre">101</span> <span class="pre">in</span> <span class="pre">ticket_holders.values()</span></code> returns <code class="docutils literal notranslate"><span class="pre">True</span></code>.</li>
-<li>In lines 11 and 12, we search for the string <code class="docutils literal notranslate"><span class="pre">'Jessi'</span></code> first in the
-keys and then in the values.</li>
+are searching through the <em>keys</em>.</p></li>
+<li><p>In line 9, <code class="docutils literal notranslate"><span class="pre">101</span> <span class="pre">in</span> <span class="pre">ticket_holders.values()</span></code> returns <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
+<li><p>In lines 11 and 12, we search for the string <code class="docutils literal notranslate"><span class="pre">'Jessi'</span></code> first in the
+keys and then in the values.</p></li>
 </ol>
 </div>
 <div class="section" id="default-search-method">
@@ -183,20 +183,21 @@ name, Python searches the <em>keys</em> by default.</p>
 <p>Let’s build a quick search algorithm for a <code class="docutils literal notranslate"><span class="pre">phone_book</span></code> dictionary. In the
 code editor below, begin with the following:</p>
 <ol class="arabic simple">
-<li>Note how the input statement on line 12 modifies the name entered by the
+<li><p>Note how the input statement on line 12 modifies the name entered by the
 user. Attaching the <code class="docutils literal notranslate"><span class="pre">lower()</span></code> and <code class="docutils literal notranslate"><span class="pre">capitalize()</span></code> methods makes sure that
 the string matches the format of the keys in <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>. The entries
-<code class="docutils literal notranslate"><span class="pre">'john',</span> <span class="pre">'John',</span> <span class="pre">and</span> <span class="pre">'JOHN'</span></code> all get converted to <code class="docutils literal notranslate"><span class="pre">'John'</span></code>.</li>
-<li>On lines 15-18, add an <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block that does the following:<ol class="loweralpha">
-<li>Checks if <code class="docutils literal notranslate"><span class="pre">name</span></code> is one of the keys in <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>.</li>
-<li>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, print <code class="docutils literal notranslate"><span class="pre">&quot;The</span> <span class="pre">number</span> <span class="pre">for</span> <span class="pre">___</span> <span class="pre">is</span> <span class="pre">___.&quot;</span></code> Fill in the first
+<code class="docutils literal notranslate"><span class="pre">'john',</span> <span class="pre">'John',</span> <span class="pre">and</span> <span class="pre">'JOHN'</span></code> all get converted to <code class="docutils literal notranslate"><span class="pre">'John'</span></code>.</p></li>
+<li><p>On lines 15-18, add an <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block that does the following:</p>
+<ol class="loweralpha simple">
+<li><p>Checks if <code class="docutils literal notranslate"><span class="pre">name</span></code> is one of the keys in <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>.</p></li>
+<li><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, print <code class="docutils literal notranslate"><span class="pre">&quot;The</span> <span class="pre">number</span> <span class="pre">for</span> <span class="pre">___</span> <span class="pre">is</span> <span class="pre">___.&quot;</span></code> Fill in the first
 blank with the entered name (the key). Fill in the second blank with that
-person’s phone number (the value).</li>
-<li>If <code class="docutils literal notranslate"><span class="pre">False</span></code>, print <code class="docutils literal notranslate"><span class="pre">&quot;Sorry,</span> <span class="pre">___</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">your</span> <span class="pre">phone</span> <span class="pre">book.&quot;</span></code> Fill in
-the blank with the entered name.</li>
+person’s phone number (the value).</p></li>
+<li><p>If <code class="docutils literal notranslate"><span class="pre">False</span></code>, print <code class="docutils literal notranslate"><span class="pre">&quot;Sorry,</span> <span class="pre">___</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">your</span> <span class="pre">phone</span> <span class="pre">book.&quot;</span></code> Fill in
+the blank with the entered name.</p></li>
 </ol>
 </li>
-<li>Run the program several times to make sure it responds correctly.</li>
+<li><p>Run the program several times to make sure it responds correctly.</p></li>
 </ol>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -230,19 +231,17 @@ the blank with the entered name.</li>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/DictionarySearch" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 <p><strong>Now expand the program:</strong></p>
 <ol class="arabic">
-<li><p class="first">On line 20, paste a new input statement:</p>
+<li><p>On line 20, paste a new input statement:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ph_number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a phone number: &quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Add a second <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block that:</p>
+<li><p>Add a second <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block that:</p>
 <ol class="loweralpha">
-<li><p class="first">Checks if <code class="docutils literal notranslate"><span class="pre">ph_number</span></code> is NOT a value in the <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>.</p>
-</li>
-<li><p class="first">If <code class="docutils literal notranslate"><span class="pre">True</span></code>, prints <code class="docutils literal notranslate"><span class="pre">&quot;___</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">your</span> <span class="pre">phone</span> <span class="pre">book!&quot;</span></code>. Fill in the
-blank with the entered phone number.</p>
-</li>
-<li><p class="first">If <code class="docutils literal notranslate"><span class="pre">False</span></code>, runs the following loop. Be sure to indent it properly
+<li><p>Checks if <code class="docutils literal notranslate"><span class="pre">ph_number</span></code> is NOT a value in the <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>.</p></li>
+<li><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, prints <code class="docutils literal notranslate"><span class="pre">&quot;___</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">your</span> <span class="pre">phone</span> <span class="pre">book!&quot;</span></code>. Fill in the
+blank with the entered phone number.</p></li>
+<li><p>If <code class="docutils literal notranslate"><span class="pre">False</span></code>, runs the following loop. Be sure to indent it properly
 compared to the <code class="docutils literal notranslate"><span class="pre">else</span></code> keyword.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>26
 27

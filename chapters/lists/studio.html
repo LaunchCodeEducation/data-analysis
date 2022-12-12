@@ -99,14 +99,14 @@ perform some useful actions.</p>
 <h2><span class="section-number">9.11.1. </span>Part 1: String Modification<a class="headerlink" href="#part-1-string-modification" title="Permalink to this headline">¶</a></h2>
 <p>Use string methods to convert a word into pseudo-pig latin.</p>
 <ol class="loweralpha simple">
-<li>Remove the first three characters from a string and add them to the end.
+<li><p>Remove the first three characters from a string and add them to the end.
 Ex: <code class="docutils literal notranslate"><span class="pre">'LaunchCode'</span></code> becomes <code class="docutils literal notranslate"><span class="pre">'nchCodeLau'</span></code>. Use a template literal to
-print the original and modified string in a descriptive phrase.</li>
-<li>Modify your code to accept user input. Query the user to enter the
-number of letters that will be relocated.</li>
-<li>Add validation to your code to deal with user inputs that are longer than the
+print the original and modified string in a descriptive phrase.</p></li>
+<li><p>Modify your code to accept user input. Query the user to enter the
+number of letters that will be relocated.</p></li>
+<li><p>Add validation to your code to deal with user inputs that are longer than the
 word. In such cases, default to moving 3 characters. Also, the template
-literal should note the error.</li>
+literal should note the error.</p></li>
 </ol>
 <p><a class="reference external" href="https://replit.com/&#64;launchcode/StringAndListStudio01" target="_blank">Code it at repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
@@ -116,22 +116,22 @@ literal should note the error.</li>
 and lists. Use <strong>delimiters</strong> as reference points to split a string into an
 list, then modify the list and convert it back to a printable string.</p>
 <ol class="loweralpha simple">
-<li>For a given string, use the <code class="docutils literal notranslate"><span class="pre">in</span></code> method to check to see if the
-words are separated by commas (<code class="docutils literal notranslate"><span class="pre">,</span></code>), semicolons (<code class="docutils literal notranslate"><span class="pre">;</span></code>) or just spaces.</li>
-<li>If the string uses commas to separate the words, <code class="docutils literal notranslate"><span class="pre">split</span></code> it into an list,
+<li><p>For a given string, use the <code class="docutils literal notranslate"><span class="pre">in</span></code> method to check to see if the
+words are separated by commas (<code class="docutils literal notranslate"><span class="pre">,</span></code>), semicolons (<code class="docutils literal notranslate"><span class="pre">;</span></code>) or just spaces.</p></li>
+<li><p>If the string uses commas to separate the words, <code class="docutils literal notranslate"><span class="pre">split</span></code> it into an list,
 reverse the entries, and then <code class="docutils literal notranslate"><span class="pre">join</span></code> the list into a new comma separated
-string. For example, <code class="docutils literal notranslate"><span class="pre">&quot;up,to,code,fun&quot;</span></code> becomes <code class="docutils literal notranslate"><span class="pre">&quot;fun,code,to,up&quot;</span></code>.</li>
-<li>If the string uses semicolons to separate the words, <code class="docutils literal notranslate"><span class="pre">split</span></code> it into an
+string. For example, <code class="docutils literal notranslate"><span class="pre">&quot;up,to,code,fun&quot;</span></code> becomes <code class="docutils literal notranslate"><span class="pre">&quot;fun,code,to,up&quot;</span></code>.</p></li>
+<li><p>If the string uses semicolons to separate the words, <code class="docutils literal notranslate"><span class="pre">split</span></code> it into an
 list, alphabetize the entries, and then <code class="docutils literal notranslate"><span class="pre">join</span></code> the list into a new
 hyphen separated string. For example, <code class="docutils literal notranslate"><span class="pre">&quot;up;to;code;fun&quot;</span></code> becomes
-<code class="docutils literal notranslate"><span class="pre">&quot;code-fun-to-up&quot;</span></code>.</li>
-<li>If the string uses spaces to separate the words, <code class="docutils literal notranslate"><span class="pre">split</span></code> it into an list,
+<code class="docutils literal notranslate"><span class="pre">&quot;code-fun-to-up&quot;</span></code>.</p></li>
+<li><p>If the string uses spaces to separate the words, <code class="docutils literal notranslate"><span class="pre">split</span></code> it into an list,
 reverse alphabetize the entries, and then <code class="docutils literal notranslate"><span class="pre">join</span></code> the list into a new
 space separated string. For example, <code class="docutils literal notranslate"><span class="pre">&quot;to</span> <span class="pre">code</span> <span class="pre">up</span> <span class="pre">fun&quot;</span></code> becomes
-<code class="docutils literal notranslate"><span class="pre">&quot;up</span> <span class="pre">to</span> <span class="pre">fun</span> <span class="pre">code&quot;</span></code>.</li>
-<li><em>Consider</em>: What if the string uses ‘comma spaces’ (, ) to separate the
+<code class="docutils literal notranslate"><span class="pre">&quot;up</span> <span class="pre">to</span> <span class="pre">fun</span> <span class="pre">code&quot;</span></code>.</p></li>
+<li><p><em>Consider</em>: What if the string uses ‘comma spaces’ (, ) to separate the
 list? Modify your code to produce the same result as part “b”, making sure
-that the extra spaces are NOT part of the final string.</li>
+that the extra spaces are NOT part of the final string.</p></li>
 </ol>
 <p><a class="reference external" href="https://replit.com/&#64;launchcode/StringAndListStudio02" target="_blank">Code it at repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
@@ -139,25 +139,26 @@ that the extra spaces are NOT part of the final string.</li>
 <h2><span class="section-number">9.11.3. </span>Part 3: Optional Fun With Multi-dimensional Lists<a class="headerlink" href="#part-3-optional-fun-with-multi-dimensional-lists" title="Permalink to this headline">¶</a></h2>
 <p>Lists can store other lists!</p>
 <ol class="loweralpha simple">
-<li>The cargo hold in our shuttle contains several smaller storage spaces. Use
+<li><p>The cargo hold in our shuttle contains several smaller storage spaces. Use
 <code class="docutils literal notranslate"><span class="pre">split</span></code> to convert the following strings into four cabinet lists.
-Alphabetize the contents of each cabinet.<ol class="lowerroman">
-<li><code class="docutils literal notranslate"><span class="pre">&quot;water</span> <span class="pre">bottles,</span> <span class="pre">meal</span> <span class="pre">packs,</span> <span class="pre">snacks,</span> <span class="pre">chocolate&quot;</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">&quot;space</span> <span class="pre">suits,</span> <span class="pre">jet</span> <span class="pre">packs,</span> <span class="pre">tool</span> <span class="pre">belts,</span> <span class="pre">thermal</span> <span class="pre">detonators&quot;</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">&quot;parrots,</span> <span class="pre">cats,</span> <span class="pre">moose,</span> <span class="pre">alien</span> <span class="pre">eggs&quot;</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">&quot;blankets,</span> <span class="pre">pillows,</span> <span class="pre">eyepatches,</span> <span class="pre">alarm</span> <span class="pre">clocks&quot;</span></code></li>
+Alphabetize the contents of each cabinet.</p>
+<ol class="lowerroman simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;water</span> <span class="pre">bottles,</span> <span class="pre">meal</span> <span class="pre">packs,</span> <span class="pre">snacks,</span> <span class="pre">chocolate&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;space</span> <span class="pre">suits,</span> <span class="pre">jet</span> <span class="pre">packs,</span> <span class="pre">tool</span> <span class="pre">belts,</span> <span class="pre">thermal</span> <span class="pre">detonators&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;parrots,</span> <span class="pre">cats,</span> <span class="pre">moose,</span> <span class="pre">alien</span> <span class="pre">eggs&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;blankets,</span> <span class="pre">pillows,</span> <span class="pre">eyepatches,</span> <span class="pre">alarm</span> <span class="pre">clocks&quot;</span></code></p></li>
 </ol>
 </li>
-<li>Initialize a <code class="docutils literal notranslate"><span class="pre">cargoHold</span></code> list and add the cabinet lists to it. Print
-<code class="docutils literal notranslate"><span class="pre">cargoHold</span></code> to verify its structure.</li>
-<li>Query the user to select a cabinet (0-3) in the <code class="docutils literal notranslate"><span class="pre">cargoHold</span></code>.</li>
-<li>Use bracket notation and a template literal to display the contents of
+<li><p>Initialize a <code class="docutils literal notranslate"><span class="pre">cargoHold</span></code> list and add the cabinet lists to it. Print
+<code class="docutils literal notranslate"><span class="pre">cargoHold</span></code> to verify its structure.</p></li>
+<li><p>Query the user to select a cabinet (0-3) in the <code class="docutils literal notranslate"><span class="pre">cargoHold</span></code>.</p></li>
+<li><p>Use bracket notation and a template literal to display the contents of
 the selected cabinet. If the user entered an invalid number, print an
-error message instead.</li>
-<li><em>Bonus to the Bonus</em>: Modify the code to query the user for BOTH a cabinet in
+error message instead.</p></li>
+<li><p><em>Bonus to the Bonus</em>: Modify the code to query the user for BOTH a cabinet in
 <code class="docutils literal notranslate"><span class="pre">cargoHold</span></code> AND a particular item. Use the <code class="docutils literal notranslate"><span class="pre">includes</span></code> method to check
 if the cabinet contains the selected item, then print <code class="docutils literal notranslate"><span class="pre">&quot;Cabinet</span> <span class="pre">____</span>
-<span class="pre">DOES/DOES</span> <span class="pre">NOT</span> <span class="pre">contain</span> <span class="pre">____.&quot;</span></code></li>
+<span class="pre">DOES/DOES</span> <span class="pre">NOT</span> <span class="pre">contain</span> <span class="pre">____.&quot;</span></code></p></li>
 </ol>
 <p><a class="reference external" href="https://replit.com/&#64;launchcode/StringAndListStudio03" target="_blank">Code it at repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>

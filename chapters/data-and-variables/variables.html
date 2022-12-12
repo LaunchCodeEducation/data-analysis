@@ -108,8 +108,8 @@ refer to. The syntax for an assignment statement is:</p>
 <p>The assignment statement links a name, on the left hand side of the <code class="docutils literal notranslate"><span class="pre">=</span></code>, with
 the value on the right hand side. The <em>value</em> refers to any type of data.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
-<div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Python ROCKS!&quot;</span>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Python ROCKS!&quot;</span>
 <span class="n">num</span> <span class="o">=</span> <span class="mi">17</span>
 <span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14159</span>
 </pre></div>
@@ -120,8 +120,8 @@ the value on the right hand side. The <em>value</em> refers to any type of data.
 integer <code class="docutils literal notranslate"><span class="pre">17</span></code> to <code class="docutils literal notranslate"><span class="pre">num</span></code>, and the third assigns the float <code class="docutils literal notranslate"><span class="pre">3.14159</span></code> to a
 variable called <code class="docutils literal notranslate"><span class="pre">pi</span></code>.</p>
 <div class="admonition-warning admonition">
-<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
-<p class="last">The <code class="docutils literal notranslate"><span class="pre">=</span></code> sign does NOT work both ways. <code class="docutils literal notranslate"><span class="pre">17</span> <span class="pre">=</span> <span class="pre">num</span></code> causes an error. The
+<p class="admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">=</span></code> sign does NOT work both ways. <code class="docutils literal notranslate"><span class="pre">17</span> <span class="pre">=</span> <span class="pre">num</span></code> causes an error. The
 variable name MUST be on the left, and the value MUST be on the right.</p>
 </div>
 <p>One common mistake is to confuse the assignment operator <code class="docutils literal notranslate"><span class="pre">=</span></code> with the idea of
@@ -134,12 +134,12 @@ instead of <code class="docutils literal notranslate"><span class="pre">=</span>
 <h2><span class="section-number">5.3.2. </span>Evaluating Variables<a class="headerlink" href="#evaluating-variables" title="Permalink to this headline">¶</a></h2>
 <p id="index-2">Once we create a variable and assign it a value, we can use the variable name to refer to that value.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>These two examples give the exact same output.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="last highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello, World!&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
 </pre></div>
@@ -149,7 +149,7 @@ instead of <code class="docutils literal notranslate"><span class="pre">=</span>
 value <code class="docutils literal notranslate"><span class="pre">&quot;Hello,</span> <span class="pre">World&quot;</span></code>. <code class="docutils literal notranslate"><span class="pre">print(message)</span></code> means the same thing as <code class="docutils literal notranslate"><span class="pre">print(&quot;Hello,</span> <span class="pre">World!&quot;)</span></code>, so we
 say that <code class="docutils literal notranslate"><span class="pre">message</span></code> <strong>evaluates to</strong> <code class="docutils literal notranslate"><span class="pre">&quot;Hello,</span> <span class="pre">World!&quot;</span></code></p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -166,7 +166,7 @@ say that <code class="docutils literal notranslate"><span class="pre">message</s
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>Python ROCKS!
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Python ROCKS!
 17
 3.14159
 </pre></div>
@@ -175,7 +175,7 @@ say that <code class="docutils literal notranslate"><span class="pre">message</s
 <p>In each case, the printed result is the value of the variable.</p>
 <p>Like values, variables also have types. We determine the type of a variable the same way we determine the type of a value, using <code class="docutils literal notranslate"><span class="pre">type()</span></code>.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -192,7 +192,7 @@ say that <code class="docutils literal notranslate"><span class="pre">message</s
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;str&#39;&gt;
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;str&#39;&gt;
 &lt;class &#39;int&#39;&gt;
 &lt;class &#39;float&#39;&gt;
 </pre></div>
@@ -231,7 +231,7 @@ new total.</p>
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">5.3.4. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What is printed when the following code executes?</p>
 <div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -242,21 +242,21 @@ new total.</p>
  <span class="nb">print</span><span class="p">(</span><span class="n">day</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li>Nothing is printed. A runtime error occurs.</li>
-<li><code class="docutils literal notranslate"><span class="pre">Thursday</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">32.5</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">19</span></code></li>
+<ol class="loweralpha simple">
+<li><p>Nothing is printed. A runtime error occurs.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Thursday</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">32.5</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">19</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>How can you determine the type of a variable?</p>
-<ol class="last loweralpha simple">
-<li>Print out the value and determine the data type based on the value printed.</li>
-<li>Use <code class="docutils literal notranslate"><span class="pre">type()</span></code>.</li>
-<li>Use it in a known equation and print the result.</li>
-<li>Look at the declaration of the variable.</li>
+<ol class="loweralpha simple">
+<li><p>Print out the value and determine the data type based on the value printed.</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">type()</span></code>.</p></li>
+<li><p>Use it in a known equation and print the result.</p></li>
+<li><p>Look at the declaration of the variable.</p></li>
 </ol>
 </div>
 </div>

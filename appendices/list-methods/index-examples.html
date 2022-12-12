@@ -93,7 +93,7 @@
 <p><code class="docutils literal notranslate"><span class="pre">index</span></code> returns the index of the FIRST occurrence of <code class="docutils literal notranslate"><span class="pre">value</span></code> in the list.
 If the value is not in the list, Python throws an error.</p>
 <div class="admonition-examples admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Examples</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Examples</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -104,7 +104,7 @@ If the value is not in the list, Python throws an error.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>2
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>2
 ValueError: &#39;nope!&#39; is not in list
 </pre></div>
 </div>
@@ -114,7 +114,7 @@ ValueError: &#39;nope!&#39; is not in list
 <p>Often, we want to return all of the index values for a given search. One way to
 accomplish this is by using a loop:</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -135,12 +135,12 @@ accomplish this is by using a loop:</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>j has indexes of [2, 3, 8] in the list.
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>j has indexes of [2, 3, 8] in the list.
 </pre></div>
 </div>
 </div>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p>Returning all index values for a given search is such a common task that
 Python coders have found a short, elegant way to do it:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">index_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">index</span> <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">list_name</span><span class="p">))</span> <span class="k">if</span> <span class="n">list_name</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">==</span> <span class="n">search_value</span><span class="p">]</span>
@@ -148,7 +148,7 @@ Python coders have found a short, elegant way to do it:</p>
 </div>
 <p>This does the same thing as the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop shown in the example above.
 (Take a close look at the code to find the <code class="docutils literal notranslate"><span class="pre">for</span></code> and <code class="docutils literal notranslate"><span class="pre">if</span></code> statements).</p>
-<p class="last">We will not analyze the syntax here, but if you are curious, you can find
+<p>We will not analyze the syntax here, but if you are curious, you can find
 an explanation <a class="reference external" href="https://www.geeksforgeeks.org/python-ways-to-find-indices-of-value-in-list/" target="_blank">here<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 </div>
 </div>

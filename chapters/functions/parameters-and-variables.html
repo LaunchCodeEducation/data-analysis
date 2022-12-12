@@ -95,26 +95,24 @@ parameters is a bit more complicated.</p>
 program. Scope consists of all locations in a program where a variable can be
 used or modified.</p>
 <div class="admonition-warning admonition">
-<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
-<p class="last">A variable defined inside a function is NOT usable outside of that
+<p class="admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
+<p>A variable defined inside a function is NOT usable outside of that
 function.</p>
 </div>
 <p>Consider the following function, which takes a string as a parameter and
 returns a new string without hyphens, <code class="docutils literal notranslate"><span class="pre">-</span></code>.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <ol class="arabic">
-<li><p class="first">Run the program as-is, and examine the output.</p>
-</li>
-<li><p class="first">On line 3, add the following code to the function body. Re-run the
+<li><p>Run the program as-is, and examine the output.</p></li>
+<li><p>On line 3, add the following code to the function body. Re-run the
 program and examine the output.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>3</pre></div></td><td class="code"><div class="highlight"><pre><span></span>   <span class="nb">print</span><span class="p">(</span><span class="n">phone_number</span><span class="p">,</span> <span class="n">str_with_hyphens</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
 </li>
-<li><p class="first">On line 9, add <code class="docutils literal notranslate"><span class="pre">print(without_hyphens)</span></code> and run the program one more
-time. You should receive an error message.</p>
-</li>
+<li><p>On line 9, add <code class="docutils literal notranslate"><span class="pre">print(without_hyphens)</span></code> and run the program one more
+time. You should receive an error message.</p></li>
 </ol>
 <div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -133,7 +131,7 @@ time. You should receive an error message.</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">no_hyph_number</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/FunctionScope" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/FunctionScope" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
 <p>In <em>step 1</em>, the function <code class="docutils literal notranslate"><span class="pre">remove_hyphens</span></code> behaves as expected. It takes the
 argument <code class="docutils literal notranslate"><span class="pre">&quot;555-555-5555&quot;</span></code>, removes the <code class="docutils literal notranslate"><span class="pre">&quot;-&quot;</span></code> symbols, and returns the
@@ -143,12 +141,13 @@ result. Line 7 assigns that result to the variable <code class="docutils literal
 <code class="docutils literal notranslate"><span class="pre">phone_number</span></code> has been assigned to the parameter <code class="docutils literal notranslate"><span class="pre">str_with_hyphens</span></code>. Both
 variables are <em>visible</em> inside the function.</p>
 <div class="admonition-warning admonition">
-<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
+<p class="admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
 <p>Since the original variable and the parameter have the same values, you
 might be tempted to just use <code class="docutils literal notranslate"><span class="pre">phone_number</span></code> in the function.</p>
 <blockquote>
-<div>DON’T!</div></blockquote>
-<p class="last">We will explain why later, but it is important that you recognize this
+<div><p>DON’T!</p>
+</div></blockquote>
+<p>We will explain why later, but it is important that you recognize this
 warning now.</p>
 </div>
 <p>In <em>step 3</em>, we receive an error message (<code class="docutils literal notranslate"><span class="pre">NameError:</span> <span class="pre">name</span> <span class="pre">'without_hyphens'</span> <span class="pre">is</span>
@@ -162,8 +161,9 @@ named <code class="docutils literal notranslate"><span class="pre">without_hyphe
 usable throughout an entire program. Where it can be used depends on where it
 is defined.</p>
 <blockquote>
-<div>Parameters and variables defined inside a function are only visible within
-that function.</div></blockquote>
+<div><p>Parameters and variables defined inside a function are only visible within
+that function.</p>
+</div></blockquote>
 </div>
 <div class="section" id="variable-shadowing">
 <h2><span class="section-number">11.7.2. </span>Variable Shadowing<a class="headerlink" href="#variable-shadowing" title="Permalink to this headline">¶</a></h2>
@@ -173,12 +173,11 @@ that function.</div></blockquote>
 function <em>may</em> be visible within the function, but using it or trying to
 change its value creates problems.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>Let’s take another look at our <code class="docutils literal notranslate"><span class="pre">remove_hyphens</span></code> function.</p>
 <ol class="arabic">
-<li><p class="first">Run the program as-is, and examine the output.</p>
-</li>
-<li><p class="first">On line 3, add the following code to the function body. Re-run the
+<li><p>Run the program as-is, and examine the output.</p></li>
+<li><p>On line 3, add the following code to the function body. Re-run the
 program and examine the output.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>3</pre></div></td><td class="code"><div class="highlight"><pre><span></span>   <span class="n">phone_number</span> <span class="o">=</span> <span class="s1">&#39;1234&#39;</span>
 </pre></div>
@@ -206,7 +205,7 @@ program and examine the output.</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">phone_number</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/ScopeExample02" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/ScopeExample02" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
 <p>In <em>step 1</em>, even though <code class="docutils literal notranslate"><span class="pre">phone_number</span></code> is defined outside the function, it is
 still visible within the function. When <code class="docutils literal notranslate"><span class="pre">remove_hyphens</span></code> is called and
@@ -221,12 +220,12 @@ and this variable is <em>different</em> from the one outside of the function. Th
 situation confuses many new coders—we created two variables that have the
 same name but different values. Yuck!</p>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
-<p class="last">Do NOT define variables inside a function that use the same names found
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>Do NOT define variables inside a function that use the same names found
 outside of the function.</p>
 </div>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>What if we did something like this:</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -241,7 +240,7 @@ outside of the function.</p>
 <span class="n">no_hyph_number</span> <span class="o">=</span> <span class="n">remove_hyphens</span><span class="p">(</span><span class="s1">&#39;56-78&#39;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<p class="last">We don’t recommend doing this! Are you having trouble interpreting this code?
+<p>We don’t recommend doing this! Are you having trouble interpreting this code?
 When the function runs, does <code class="docutils literal notranslate"><span class="pre">phone_number</span></code> on line 2 have the value <code class="docutils literal notranslate"><span class="pre">&quot;614-555-5555&quot;</span></code> or
 <code class="docutils literal notranslate"><span class="pre">'56-78'</span></code>? Feel free to run this code in the editor above to find out.</p>
 </div>
@@ -256,15 +255,15 @@ name. When <code class="docutils literal notranslate"><span class="pre">remove_h
 parameter <em>casts a shadow</em> over a variable of the same name and hides it from
 view.</p>
 <div class="admonition-warning admonition">
-<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
+<p class="admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
 <p>There is NO good reason to allow variable shadowing in your programs!</p>
-<p class="last"><em>Avoid giving variables and function parameters the same name.</em></p>
+<p><em>Avoid giving variables and function parameters the same name.</em></p>
 </div>
 </div>
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">11.7.3. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What does the following code output?</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -277,9 +276,9 @@ view.</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">is_even</span><span class="p">(</span><span class="mi">43</span><span class="p">))</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">True</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">False</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ol>
 </div>
 </div>

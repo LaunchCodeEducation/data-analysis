@@ -91,230 +91,230 @@
 <p>Use the examples and links in the following tables to get familiar with the various SQL functions.</p>
 <div class="section" id="part-1-string-functions">
 <h3><span class="section-number">20.1.1.1. </span>Part 1: <a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/string-functions-transact-sql?view=sql-server-ver15" target="_blank">String Functions<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.<a class="headerlink" href="#part-1-string-functions" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils align-left">
+<table class="colwidths-given docutils align-left">
 <colgroup>
-<col width="15%" />
-<col width="30%" />
-<col width="35%" />
-<col width="20%" />
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 35%" />
+<col style="width: 20%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><strong>Function</strong></th>
-<th class="head"><strong>Definition</strong></th>
-<th class="head"><strong>Syntax</strong></th>
-<th class="head"><strong>Value Returned</strong></th>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Function</strong></p></th>
+<th class="head"><p><strong>Definition</strong></p></th>
+<th class="head"><p><strong>Syntax</strong></p></th>
+<th class="head"><p><strong>Value Returned</strong></p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/rtrim-transact-sql?view=sql-server-ver15" target="_blank">RTRIM<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Removes whitespaces from right of last character.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">RTRIM('Too</span> <span class="pre">many</span> <span class="pre">trailing</span> <span class="pre">spaces.</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">');</span></code></td>
-<td>Too many extra spaces.</td>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/rtrim-transact-sql?view=sql-server-ver15" target="_blank">RTRIM<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Removes whitespaces from right of last character.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">RTRIM('Too</span> <span class="pre">many</span> <span class="pre">trailing</span> <span class="pre">spaces.</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">');</span></code></p></td>
+<td><p>Too many extra spaces.</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/ltrim-transact-sql?view=sql-server-ver15" target="_blank">LTRIM<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Removes whitespaces from left of first character.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">LTRIM('</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Leading</span> <span class="pre">spaces');</span></code></td>
-<td>Leading spaces</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/ltrim-transact-sql?view=sql-server-ver15" target="_blank">LTRIM<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Removes whitespaces from left of first character.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">LTRIM('</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Leading</span> <span class="pre">spaces');</span></code></p></td>
+<td><p>Leading spaces</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/left-transact-sql?view=sql-server-ver15" target="_blank">LEFT<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Returns length of characters starting at provided character index and moving left.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">LEFT('hello</span> <span class="pre">there!',</span> <span class="pre">7);</span></code></td>
-<td>hello t</td>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/left-transact-sql?view=sql-server-ver15" target="_blank">LEFT<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns length of characters starting at provided character index and moving left.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">LEFT('hello</span> <span class="pre">there!',</span> <span class="pre">7);</span></code></p></td>
+<td><p>hello t</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/right-transact-sql?view=sql-server-ver15" target="_blank">RIGHT<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Returns length of characters starting at provided character index and moving right.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">RIGHT('hello</span> <span class="pre">there!',</span> <span class="pre">3);</span></code></td>
-<td>re!</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/right-transact-sql?view=sql-server-ver15" target="_blank">RIGHT<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns length of characters starting at provided character index and moving right.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">RIGHT('hello</span> <span class="pre">there!',</span> <span class="pre">3);</span></code></p></td>
+<td><p>re!</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/len-transact-sql?view=sql-server-ver15" target="_blank">LEN<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Returns the length of a string based on characters, not including trailing spaces.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">LEN('hello</span> <span class="pre">there!'');</span></code></td>
-<td>12</td>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/len-transact-sql?view=sql-server-ver15" target="_blank">LEN<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns the length of a string based on characters, not including trailing spaces.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">LEN('hello</span> <span class="pre">there!'');</span></code></p></td>
+<td><p>12</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/datalength-transact-sql?view=sql-server-ver15" target="_blank">DATALENGTH<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Returns the length of a string based on bytes, not including trailing spaces.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATALENGTH('hello</span> <span class="pre">there!'');</span></code></td>
-<td>12</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/datalength-transact-sql?view=sql-server-ver15" target="_blank">DATALENGTH<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns the length of a string based on bytes, not including trailing spaces.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATALENGTH('hello</span> <span class="pre">there!'');</span></code></p></td>
+<td><p>12</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/charindex-transact-sql?view=sql-server-ver15" target="_blank">CHARINDEX<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Can use to find specific character within a string. Returns the index location.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CHARINDEX('log',</span> <span class="pre">'catalogue');</span></code></td>
-<td>5</td>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/charindex-transact-sql?view=sql-server-ver15" target="_blank">CHARINDEX<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Can use to find specific character within a string. Returns the index location.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CHARINDEX('log',</span> <span class="pre">'catalogue');</span></code></p></td>
+<td><p>5</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/substring-transact-sql?view=sql-server-ver15" target="_blank">SUBSTRING<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Returns part of a string. First number is starting index location and second number is ending index location.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">SUBSTRING('Strings</span> <span class="pre">are</span> <span class="pre">fun!',</span> <span class="pre">4,</span> <span class="pre">9);</span></code></td>
-<td>ings are</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/substring-transact-sql?view=sql-server-ver15" target="_blank">SUBSTRING<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns part of a string. First number is starting index location and second number is ending index location.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">SUBSTRING('Strings</span> <span class="pre">are</span> <span class="pre">fun!',</span> <span class="pre">4,</span> <span class="pre">9);</span></code></p></td>
+<td><p>ings are</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/reverse-transact-sql?view=sql-server-ver15" target="_blank">REVERSE<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Returns the string backwards.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">REVERSE('Data</span> <span class="pre">Analysis');</span></code></td>
-<td>sisylanA ataD</td>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/reverse-transact-sql?view=sql-server-ver15" target="_blank">REVERSE<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns the string backwards.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">REVERSE('Data</span> <span class="pre">Analysis');</span></code></p></td>
+<td><p>sisylanA ataD</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/upper-transact-sql?view=sql-server-ver15" target="_blank">UPPER<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Returns a string either in all upper cases.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">UPPER('taco');</span></code></td>
-<td>TACO</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/upper-transact-sql?view=sql-server-ver15" target="_blank">UPPER<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns a string either in all upper cases.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">UPPER('taco');</span></code></p></td>
+<td><p>TACO</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/lower-transact-sql?view=sql-server-ver15" target="_blank">LOWER<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Returns a string either in all lower cases.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">LOWER('tACO');</span></code></td>
-<td>taco</td>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/lower-transact-sql?view=sql-server-ver15" target="_blank">LOWER<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns a string either in all lower cases.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">LOWER('tACO');</span></code></p></td>
+<td><p>taco</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/replace-transact-sql?view=sql-server-ver15" target="_blank">REPLACE<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Replaces part of a string using provided patterns.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">REPLACE('Beach</span> <span class="pre">Streat',</span> <span class="pre">'ea',</span> <span class="pre">'ee');</span></code></td>
-<td>Beech Street</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/replace-transact-sql?view=sql-server-ver15" target="_blank">REPLACE<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Replaces part of a string using provided patterns.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">REPLACE('Beach</span> <span class="pre">Streat',</span> <span class="pre">'ea',</span> <span class="pre">'ee');</span></code></p></td>
+<td><p>Beech Street</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td>In this example, the code replaces the ‘ea’ with ‘ee’ if the ‘ea’  pattern is present.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">REPLACE('Read',</span> <span class="pre">'ea',</span> <span class="pre">'ee');</span></code></td>
-<td>Reed</td>
+<tr class="row-even"><td></td>
+<td><p>In this example, the code replaces the ‘ea’ with ‘ee’ if the ‘ea’  pattern is present.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">REPLACE('Read',</span> <span class="pre">'ea',</span> <span class="pre">'ee');</span></code></p></td>
+<td><p>Reed</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/concat-transact-sql?view=sql-server-ver15" target="_blank">CONCAT<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Combine strings together.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CONCAT('Alyce','Cat',</span> <span class="pre">'Frey');</span></code></td>
-<td>AlyceCatFrey</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/concat-transact-sql?view=sql-server-ver15" target="_blank">CONCAT<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Combine strings together.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CONCAT('Alyce','Cat',</span> <span class="pre">'Frey');</span></code></p></td>
+<td><p>AlyceCatFrey</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td>Good for working with null values as seen in example 2.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CONCAT('Alyce',</span> <span class="pre">NULL,</span> <span class="pre">'Frey');</span></code></td>
-<td>AlyceFrey</td>
+<tr class="row-even"><td></td>
+<td><p>Good for working with null values as seen in example 2.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CONCAT('Alyce',</span> <span class="pre">NULL,</span> <span class="pre">'Frey');</span></code></p></td>
+<td><p>AlyceFrey</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/concat-ws-transact-sql?view=sql-server-ver15" target="_blank">CONCAT_WS<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Combines strings together with a specified separator value. The separator can be anything you want.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CONCAT_WS('</span> <span class="pre">=::=</span> <span class="pre">',</span>&#160; <span class="pre">'Alyce',</span> <span class="pre">'Frey');</span></code></td>
-<td>Alyce=::=Frey</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/concat-ws-transact-sql?view=sql-server-ver15" target="_blank">CONCAT_WS<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Combines strings together with a specified separator value. The separator can be anything you want.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CONCAT_WS('</span> <span class="pre">=::=</span> <span class="pre">',</span>&#160; <span class="pre">'Alyce',</span> <span class="pre">'Frey');</span></code></p></td>
+<td><p>Alyce=::=Frey</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td>Works with NULL values like <code class="docutils literal notranslate"><span class="pre">CONCAT</span></code>.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CONCAT_WS('</span>&#160; <span class="pre">-</span>&#160; <span class="pre">',</span>&#160; <span class="pre">'Alyce',</span> <span class="pre">NULL,</span> <span class="pre">'Frey');</span></code></td>
-<td>Alyce - Frey</td>
+<tr class="row-even"><td></td>
+<td><p>Works with NULL values like <code class="docutils literal notranslate"><span class="pre">CONCAT</span></code>.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CONCAT_WS('</span>&#160; <span class="pre">-</span>&#160; <span class="pre">',</span>&#160; <span class="pre">'Alyce',</span> <span class="pre">NULL,</span> <span class="pre">'Frey');</span></code></p></td>
+<td><p>Alyce - Frey</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/stuff-transact-sql?view=sql-server-ver15" target="_blank">STUFF<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Inserts string into another string. The first number indicates where to insert the new chars.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">STUFF('Pumpkin</span> <span class="pre">Pie',</span> <span class="pre">3,</span> <span class="pre">0,</span> <span class="pre">'Add</span> <span class="pre">Chars');</span></code></td>
-<td>PuAdd Charsmpkin Pie</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/stuff-transact-sql?view=sql-server-ver15" target="_blank">STUFF<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Inserts string into another string. The first number indicates where to insert the new chars.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">STUFF('Pumpkin</span> <span class="pre">Pie',</span> <span class="pre">3,</span> <span class="pre">0,</span> <span class="pre">'Add</span> <span class="pre">Chars');</span></code></p></td>
+<td><p>PuAdd Charsmpkin Pie</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td>The second number indicates how many original characters will be deleted upon insertion.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">STUFF('Pumpkin</span> <span class="pre">Pie',</span> <span class="pre">3,</span> <span class="pre">5,</span> <span class="pre">'Delete</span> <span class="pre">Chars');</span></code></td>
-<td>PuDelete Chars Pie</td>
+<tr class="row-even"><td></td>
+<td><p>The second number indicates how many original characters will be deleted upon insertion.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">STUFF('Pumpkin</span> <span class="pre">Pie',</span> <span class="pre">3,</span> <span class="pre">5,</span> <span class="pre">'Delete</span> <span class="pre">Chars');</span></code></p></td>
+<td><p>PuDelete Chars Pie</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="part-2-date-and-time-data-types-and-functions">
 <h3><span class="section-number">20.1.1.2. </span>Part 2: <a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql?view=sql-server-ver15" target="_blank">Date and Time Data Types and Functions<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.<a class="headerlink" href="#part-2-date-and-time-data-types-and-functions" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="colwidths-given docutils align-left">
+<table class="colwidths-given docutils align-left">
 <colgroup>
-<col width="15%" />
-<col width="30%" />
-<col width="35%" />
-<col width="20%" />
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 35%" />
+<col style="width: 20%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><strong>Function</strong></th>
-<th class="head"><strong>Definition</strong></th>
-<th class="head"><strong>Syntax</strong></th>
-<th class="head"><strong>Value Returned</strong></th>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Function</strong></p></th>
+<th class="head"><p><strong>Definition</strong></p></th>
+<th class="head"><p><strong>Syntax</strong></p></th>
+<th class="head"><p><strong>Value Returned</strong></p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/getdate-transact-sql?view=sql-server-ver15" target="_blank">GETDATE<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Returns a timestamp that includes the date and time of the server.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">GETDATE()</span></code></td>
-<td>2022-01-04 22:12:25.567</td>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/getdate-transact-sql?view=sql-server-ver15" target="_blank">GETDATE<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns a timestamp that includes the date and time of the server.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">GETDATE()</span></code></p></td>
+<td><p>2022-01-04 22:12:25.567</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/sysdatetime-transact-sql?view=sql-server-ver15" target="_blank">SYSDATETIME<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Returns a timestamp that includes the date and time of the server. <code class="docutils literal notranslate"><span class="pre">SYSDATETIME</span></code> is more precise with the seconds than <code class="docutils literal notranslate"><span class="pre">GETTIME</span></code>.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">SYSDATETIME()</span></code></td>
-<td>2022-01-04 22:12:25.5675908</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/sysdatetime-transact-sql?view=sql-server-ver15" target="_blank">SYSDATETIME<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns a timestamp that includes the date and time of the server. <code class="docutils literal notranslate"><span class="pre">SYSDATETIME</span></code> is more precise with the seconds than <code class="docutils literal notranslate"><span class="pre">GETTIME</span></code>.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">SYSDATETIME()</span></code></p></td>
+<td><p>2022-01-04 22:12:25.5675908</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/dateadd-transact-sql?view=sql-server-ver15" target="_blank">DATEADD<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Adds a time period to a date. In this example, we are increasing the month value from 02 (February) to 03(March).</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATEADD(month,</span> <span class="pre">1,</span> <span class="pre">'20220224');</span></code></td>
-<td>2022-03-24 00:00:00.000</td>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/dateadd-transact-sql?view=sql-server-ver15" target="_blank">DATEADD<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Adds a time period to a date. In this example, we are increasing the month value from 02 (February) to 03(March).</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATEADD(month,</span> <span class="pre">1,</span> <span class="pre">'20220224');</span></code></p></td>
+<td><p>2022-03-24 00:00:00.000</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/datediff-transact-sql?view=sql-server-ver15" target="_blank">DATEDIFF<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Calculates and returns the difference of a date part between an end date and a start date.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATEDIFF(day,</span> <span class="pre">'2022-11-13',</span> <span class="pre">'2022-12-12');</span></code></td>
-<td>29</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/datediff-transact-sql?view=sql-server-ver15" target="_blank">DATEDIFF<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Calculates and returns the difference of a date part between an end date and a start date.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATEDIFF(day,</span> <span class="pre">'2022-11-13',</span> <span class="pre">'2022-12-12');</span></code></p></td>
+<td><p>29</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td>The first example is comparing the difference between days while the second is comparing months.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATEDIFF(month,</span> <span class="pre">'2022-11-13',</span> <span class="pre">'2022-12-12');</span></code></td>
-<td>1</td>
+<tr class="row-even"><td></td>
+<td><p>The first example is comparing the difference between days while the second is comparing months.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATEDIFF(month,</span> <span class="pre">'2022-11-13',</span> <span class="pre">'2022-12-12');</span></code></p></td>
+<td><p>1</p></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td>The third example is comparing years.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATEDIFF(year,</span> <span class="pre">'1984-11-13',</span> <span class="pre">'2022-12-12');</span></code></td>
-<td>38</td>
+<tr class="row-odd"><td></td>
+<td><p>The third example is comparing years.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATEDIFF(year,</span> <span class="pre">'1984-11-13',</span> <span class="pre">'2022-12-12');</span></code></p></td>
+<td><p>38</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/datename-transact-sql?view=sql-server-ver15" target="_blank">DATENAME<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Returns a string representing the desired date part.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATENAME(day,</span> <span class="pre">'2022-07-25');</span></code></td>
-<td>25</td>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/datename-transact-sql?view=sql-server-ver15" target="_blank">DATENAME<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns a string representing the desired date part.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATENAME(day,</span> <span class="pre">'2022-07-25');</span></code></p></td>
+<td><p>25</p></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td>&#160;</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATENAME(month,</span> <span class="pre">'2022-07-25');</span></code></td>
-<td>July</td>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATENAME(month,</span> <span class="pre">'2022-07-25');</span></code></p></td>
+<td><p>July</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td>&#160;</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATENAME(year,</span> <span class="pre">'2022-07-25');</span></code></td>
-<td>2022</td>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATENAME(year,</span> <span class="pre">'2022-07-25');</span></code></p></td>
+<td><p>2022</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/datepart-transact-sql?view=sql-server-ver15" target="_blank">DATEPART<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Returns an integer representing the desired date part.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATEPART(day,</span> <span class="pre">'2022-08-21');</span></code></td>
-<td>21</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/datepart-transact-sql?view=sql-server-ver15" target="_blank">DATEPART<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns an integer representing the desired date part.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATEPART(day,</span> <span class="pre">'2022-08-21');</span></code></p></td>
+<td><p>21</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td>&#160;</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATEPART(month,</span> <span class="pre">'2022-08-21');</span></code></td>
-<td>08</td>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATEPART(month,</span> <span class="pre">'2022-08-21');</span></code></p></td>
+<td><p>08</p></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td>&#160;</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATEPART(year,</span> <span class="pre">'2022-08-21');</span></code></td>
-<td>2022</td>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATEPART(year,</span> <span class="pre">'2022-08-21');</span></code></p></td>
+<td><p>2022</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/month-transact-sql?view=sql-server-ver15" target="_blank">DAY, MONTH, YEAR<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Each part of a date.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DAY('2022-08-21');</span></code></td>
-<td>21</td>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/month-transact-sql?view=sql-server-ver15" target="_blank">DAY, MONTH, YEAR<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Each part of a date.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DAY('2022-08-21');</span></code></p></td>
+<td><p>21</p></td>
 </tr>
-<tr class="row-odd"><td>&#160;</td>
-<td>&#160;</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">MONTH('2022-08-21');</span></code></td>
-<td>8</td>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">MONTH('2022-08-21');</span></code></p></td>
+<td><p>8</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td>&#160;</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">YEAR('2022-08-21');</span></code></td>
-<td>2022</td>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">YEAR('2022-08-21');</span></code></p></td>
+<td><p>2022</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/cast-and-convert-transact-sql?view=sql-server-ver15#j-using-convert-with-datetime-data-in-different-formats" target="_blank">CONVERT<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Paired with GETDATE to <a class="reference external" href="https://learn.microsoft.com/en-us/sql/t-sql/data-types/date-transact-sql?view=sql-server-ver15#converting-date-to-other-date-and-time-types" target="_blank">convert other data types into dates and times<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> based on the desired format.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CONVERT(varchar,</span> <span class="pre">GETDATE());</span></code></td>
-<td>Jan  5 2022  7:25PM</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/cast-and-convert-transact-sql?view=sql-server-ver15#j-using-convert-with-datetime-data-in-different-formats" target="_blank">CONVERT<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Paired with GETDATE to <a class="reference external" href="https://learn.microsoft.com/en-us/sql/t-sql/data-types/date-transact-sql?view=sql-server-ver15#converting-date-to-other-date-and-time-types" target="_blank">convert other data types into dates and times<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> based on the desired format.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CONVERT(varchar,</span> <span class="pre">GETDATE());</span></code></p></td>
+<td><p>Jan  5 2022  7:25PM</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td>These examples convert the server date into various formats. The first example is the default format, the second example is format number 7.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CONVERT(varchar,</span> <span class="pre">GETDATE(),</span> <span class="pre">7);</span></code></td>
-<td>Jan 05, 22</td>
+<tr class="row-even"><td></td>
+<td><p>These examples convert the server date into various formats. The first example is the default format, the second example is format number 7.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CONVERT(varchar,</span> <span class="pre">GETDATE(),</span> <span class="pre">7);</span></code></p></td>
+<td><p>Jan 05, 22</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/format-transact-sql?view=sql-server-ver15" target="_blank">FORMAT<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Used to set the format or reformat dates. This example is using the following date information: Jan  5, 2022  7:38PM. The first example the server date is formatted date, month, year. The time is not requested, so it is not returned.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">FORMAT(GETDATE(),</span> <span class="pre">'dd/MM/yyyy');</span></code></td>
-<td>05/01/2022</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/format-transact-sql?view=sql-server-ver15" target="_blank">FORMAT<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Used to set the format or reformat dates. This example is using the following date information: Jan  5, 2022  7:38PM. The first example the server date is formatted date, month, year. The time is not requested, so it is not returned.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">FORMAT(GETDATE(),</span> <span class="pre">'dd/MM/yyyy');</span></code></p></td>
+<td><p>05/01/2022</p></td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td>The second example requests only the time in hours and minutes. Note that ‘MM’ is used for months and ‘mm’ is used for minutes.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">FORMAT(GETDATE(),</span> <span class="pre">'hh:mm');</span></code></td>
-<td>07:38</td>
+<tr class="row-even"><td></td>
+<td><p>The second example requests only the time in hours and minutes. Note that ‘MM’ is used for months and ‘mm’ is used for minutes.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">FORMAT(GETDATE(),</span> <span class="pre">'hh:mm');</span></code></p></td>
+<td><p>07:38</p></td>
 </tr>
 </tbody>
 </table>
@@ -324,46 +324,46 @@
 <div class="line-block">
 <div class="line">The following examples are using the BooksDB.</div>
 </div>
-<table border="1" class="colwidths-given docutils align-left">
+<table class="colwidths-given docutils align-left">
 <colgroup>
-<col width="15%" />
-<col width="30%" />
-<col width="35%" />
-<col width="20%" />
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 35%" />
+<col style="width: 20%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head"><strong>Function</strong></th>
-<th class="head"><strong>Definition</strong></th>
-<th class="head"><strong>Syntax</strong></th>
-<th class="head"><strong>Value Returned</strong></th>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Function</strong></p></th>
+<th class="head"><p><strong>Definition</strong></p></th>
+<th class="head"><p><strong>Syntax</strong></p></th>
+<th class="head"><p><strong>Value Returned</strong></p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/sum-transact-sql?view=sql-server-ver15" target="_blank">SUM<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Returns sum of all values or DISTINCT values.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">SUM(ratings_2)</span> <span class="pre">FROM</span> <span class="pre">BooksDB.dbo.books;</span></code></td>
-<td>31108850</td>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/sum-transact-sql?view=sql-server-ver15" target="_blank">SUM<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns sum of all values or DISTINCT values.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">SUM(ratings_2)</span> <span class="pre">FROM</span> <span class="pre">BooksDB.dbo.books;</span></code></p></td>
+<td><p>31108850</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/max-transact-sql?view=sql-server-ver15" target="_blank">MAX<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Returns the highest value.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">MAX(ratings_2)</span> <span class="pre">FROM</span> <span class="pre">BooksDB.dbo.books;</span></code></td>
-<td>436802</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/max-transact-sql?view=sql-server-ver15" target="_blank">MAX<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns the highest value.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">MAX(ratings_2)</span> <span class="pre">FROM</span> <span class="pre">BooksDB.dbo.books;</span></code></p></td>
+<td><p>436802</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/min-transact-sql?view=sql-server-ver15" target="_blank">MIN<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Returns the lowest value.</td>
-<td><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">MIN(ratings_2)</span> <span class="pre">FROM</span> <span class="pre">BooksDB.dbo.books;</span></code></td>
-<td>30</td>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/min-transact-sql?view=sql-server-ver15" target="_blank">MIN<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns the lowest value.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">MIN(ratings_2)</span> <span class="pre">FROM</span> <span class="pre">BooksDB.dbo.books;</span></code></p></td>
+<td><p>30</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/queries/is-null-transact-sql?view=sql-server-ver15" target="_blank">IS NULL<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Determines whether value is null, often used as a condition with <code class="docutils literal notranslate"><span class="pre">WHERE</span></code>.</td>
-<td>See examples below.</td>
-<td>&#160;</td>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/queries/is-null-transact-sql?view=sql-server-ver15" target="_blank">IS NULL<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Determines whether value is null, often used as a condition with <code class="docutils literal notranslate"><span class="pre">WHERE</span></code>.</p></td>
+<td><p>See examples below.</p></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">In example 1, we asked for the TOP 5 rows, but only 3 qualified and were returned.</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>In example 1, we asked for the TOP 5 rows, but only 3 qualified and were returned.</p>
 </div>
 <div class="line-block">
 <div class="line"><strong>Example 1</strong></div>
@@ -381,33 +381,33 @@
 <div class="line-block">
 <div class="line">(3 rows affected)</div>
 </div>
-<table border="1" class="colwidths-given docutils align-left">
+<table class="colwidths-given docutils align-left">
 <colgroup>
-<col width="5%" />
-<col width="40%" />
-<col width="15%" />
-<col width="40%" />
+<col style="width: 5%" />
+<col style="width: 40%" />
+<col style="width: 15%" />
+<col style="width: 40%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>&#160;</td>
-<td><em>title</em></td>
-<td><em>isbn</em></td>
-<td><em>original_publication_year</em></td>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><em>title</em></p></td>
+<td><p><em>isbn</em></p></td>
+<td><p><em>original_publication_year</em></p></td>
 </tr>
-<tr class="row-even"><td>1</td>
-<td>BookRags Summary:  A Storm of Swords</td>
-<td><em>NULL</em></td>
-<td><em>NULL</em></td>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>BookRags Summary:  A Storm of Swords</p></td>
+<td><p><em>NULL</em></p></td>
+<td><p><em>NULL</em></p></td>
 </tr>
-<tr class="row-odd"><td>2</td>
-<td>A Shade of Blood (A Shade of Vampire, #2)</td>
-<td><em>NULL</em></td>
-<td><em>NULL</em></td>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>A Shade of Blood (A Shade of Vampire, #2)</p></td>
+<td><p><em>NULL</em></p></td>
+<td><p><em>NULL</em></p></td>
 </tr>
-<tr class="row-even"><td>3</td>
-<td>زغازيغ</td>
-<td><em>NULL</em></td>
-<td><em>NULL</em></td>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>زغازيغ</p></td>
+<td><p><em>NULL</em></p></td>
+<td><p><em>NULL</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -424,40 +424,40 @@
 <div class="line-block">
 <div class="line"><strong>Value Returned</strong></div>
 </div>
-<table border="1" class="colwidths-given docutils align-left">
+<table class="colwidths-given docutils align-left">
 <colgroup>
-<col width="5%" />
-<col width="65%" />
-<col width="30%" />
+<col style="width: 5%" />
+<col style="width: 65%" />
+<col style="width: 30%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>&#160;</td>
-<td><em>title</em></td>
-<td><em>original_title</em></td>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><em>title</em></p></td>
+<td><p><em>original_title</em></p></td>
 </tr>
-<tr class="row-even"><td>1</td>
-<td>The Oedipus Cycle: Oedipus Rex/Oedipus at Colonus/Antigone (The Theban Plays, #1-3)NULL</td>
-<td><em>NULL</em></td>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>The Oedipus Cycle: Oedipus Rex/Oedipus at Colonus/Antigone (The Theban Plays, #1-3)NULL</p></td>
+<td><p><em>NULL</em></p></td>
 </tr>
 </tbody>
 </table>
-<table border="1" class="colwidths-given docutils align-left">
+<table class="colwidths-given docutils align-left">
 <colgroup>
-<col width="15%" />
-<col width="30%" />
-<col width="35%" />
-<col width="20%" />
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 35%" />
+<col style="width: 20%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><strong>Function</strong></td>
-<td><strong>Definition</strong></td>
-<td><strong>Syntax</strong></td>
-<td>&#160;</td>
+<tbody>
+<tr class="row-odd"><td><p><strong>Function</strong></p></td>
+<td><p><strong>Definition</strong></p></td>
+<td><p><strong>Syntax</strong></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/queries/is-null-transact-sql?view=sql-server-ver15" target="_blank">IS NOT NULL<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Determines whether value is not null, often used as a condition with <code class="docutils literal notranslate"><span class="pre">WHERE</span></code>.</td>
-<td>See examples below.</td>
-<td>&#160;</td>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/queries/is-null-transact-sql?view=sql-server-ver15" target="_blank">IS NOT NULL<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Determines whether value is not null, often used as a condition with <code class="docutils literal notranslate"><span class="pre">WHERE</span></code>.</p></td>
+<td><p>See examples below.</p></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -477,43 +477,43 @@
 <div class="line-block">
 <div class="line">(5 rows affected)</div>
 </div>
-<table border="1" class="colwidths-given docutils align-left">
+<table class="colwidths-given docutils align-left">
 <colgroup>
-<col width="5%" />
-<col width="55%" />
-<col width="20%" />
-<col width="20%" />
+<col style="width: 5%" />
+<col style="width: 55%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>&#160;</td>
-<td><em>title</em></td>
-<td><em>isbn</em></td>
-<td><em>original_publication_year</em></td>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><em>title</em></p></td>
+<td><p><em>isbn</em></p></td>
+<td><p><em>original_publication_year</em></p></td>
 </tr>
-<tr class="row-even"><td>1</td>
-<td>The Hunger Games (The Hunger Games, #1)</td>
-<td>439023483</td>
-<td>2008</td>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>The Hunger Games (The Hunger Games, #1)</p></td>
+<td><p>439023483</p></td>
+<td><p>2008</p></td>
 </tr>
-<tr class="row-odd"><td>2</td>
-<td>Harry Potter and the Sorcerer’s Stone (Harry Potter, #1)</td>
-<td>439554934</td>
-<td>1997</td>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Harry Potter and the Sorcerer’s Stone (Harry Potter, #1)</p></td>
+<td><p>439554934</p></td>
+<td><p>1997</p></td>
 </tr>
-<tr class="row-even"><td>3</td>
-<td>Twilight (Twilight, #1)</td>
-<td>316015849</td>
-<td>2005</td>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Twilight (Twilight, #1)</p></td>
+<td><p>316015849</p></td>
+<td><p>2005</p></td>
 </tr>
-<tr class="row-odd"><td>4</td>
-<td>To Kill a Mockingbird</td>
-<td>61120081</td>
-<td>1960</td>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>To Kill a Mockingbird</p></td>
+<td><p>61120081</p></td>
+<td><p>1960</p></td>
 </tr>
-<tr class="row-even"><td>5</td>
-<td>The Great Gatsby</td>
-<td>743273567</td>
-<td>1925</td>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>The Great Gatsby</p></td>
+<td><p>743273567</p></td>
+<td><p>1925</p></td>
 </tr>
 </tbody>
 </table>
@@ -530,50 +530,50 @@
 <div class="line-block">
 <div class="line"><strong>Value Returned</strong></div>
 </div>
-<table border="1" class="colwidths-given docutils align-left">
+<table class="colwidths-given docutils align-left">
 <colgroup>
-<col width="5%" />
-<col width="50%" />
-<col width="45%" />
+<col style="width: 5%" />
+<col style="width: 50%" />
+<col style="width: 45%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>&#160;</td>
-<td><em>title</em></td>
-<td><em>original_title</em></td>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><em>title</em></p></td>
+<td><p><em>original_title</em></p></td>
 </tr>
-<tr class="row-even"><td>1</td>
-<td>Oedipus Rex  (The Theban Plays, #1)</td>
-<td>Οἰδίπους Τύραννος</td>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Oedipus Rex  (The Theban Plays, #1)</p></td>
+<td><p>Οἰδίπους Τύραννος</p></td>
 </tr>
-<tr class="row-odd"><td>2</td>
-<td>Antigone (The Theban Plays, #3)</td>
-<td>Ἀντιγόνη</td>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Antigone (The Theban Plays, #3)</p></td>
+<td><p>Ἀντιγόνη</p></td>
 </tr>
 </tbody>
 </table>
-<table border="1" class="colwidths-given docutils align-left">
+<table class="colwidths-given docutils align-left">
 <colgroup>
-<col width="15%" />
-<col width="30%" />
-<col width="35%" />
-<col width="20%" />
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 35%" />
+<col style="width: 20%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><strong>Function</strong></td>
-<td><strong>Definition</strong></td>
-<td><strong>Syntax</strong></td>
-<td>&#160;</td>
+<tbody>
+<tr class="row-odd"><td><p><strong>Function</strong></p></td>
+<td><p><strong>Definition</strong></p></td>
+<td><p><strong>Syntax</strong></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/isnull-transact-sql?view=sql-server-ver15" target="_blank">ISNULL<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Replaces a specific null value.</td>
-<td>See example below.</td>
-<td>&#160;</td>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/isnull-transact-sql?view=sql-server-ver15" target="_blank">ISNULL<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Replaces a specific null value.</p></td>
+<td><p>See example below.</p></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">Note the use of an alias in the example below.</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>Note the use of an alias in the example below.</p>
 </div>
 <div class="highlight-SQL notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -585,48 +585,48 @@
 <div class="line-block">
 <div class="line"><strong>Value Returned</strong></div>
 </div>
-<table border="1" class="colwidths-given docutils align-left">
+<table class="colwidths-given docutils align-left">
 <colgroup>
-<col width="5%" />
-<col width="30%" />
-<col width="65%" />
+<col style="width: 5%" />
+<col style="width: 30%" />
+<col style="width: 65%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>&#160;</td>
-<td><em>original_title</em></td>
-<td><em>UpdatedOriginalTitle</em></td>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><em>original_title</em></p></td>
+<td><p><em>UpdatedOriginalTitle</em></p></td>
 </tr>
-<tr class="row-even"><td>1</td>
-<td>Οἰδίπους Τύραννος</td>
-<td>Οἰδίπους Τύραννος</td>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Οἰδίπους Τύραννος</p></td>
+<td><p>Οἰδίπους Τύραννος</p></td>
 </tr>
-<tr class="row-odd"><td>2</td>
-<td>Ἀντιγόνη</td>
-<td>Ἀντιγόνη</td>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Ἀντιγόνη</p></td>
+<td><p>Ἀντιγόνη</p></td>
 </tr>
-<tr class="row-even"><td>3</td>
-<td>NULL</td>
-<td>The Oedipus Cycle: Oedipus Rex/Oedipus at Colonus/Antigone (The Theban Plays, #1-3)</td>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>NULL</p></td>
+<td><p>The Oedipus Cycle: Oedipus Rex/Oedipus at Colonus/Antigone (The Theban Plays, #1-3)</p></td>
 </tr>
 </tbody>
 </table>
-<table border="1" class="colwidths-given docutils align-left">
+<table class="colwidths-given docutils align-left">
 <colgroup>
-<col width="15%" />
-<col width="30%" />
-<col width="35%" />
-<col width="20%" />
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 35%" />
+<col style="width: 20%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><strong>Function</strong></td>
-<td><strong>Definition</strong></td>
-<td><strong>Syntax</strong></td>
-<td>&#160;</td>
+<tbody>
+<tr class="row-odd"><td><p><strong>Function</strong></p></td>
+<td><p><strong>Definition</strong></p></td>
+<td><p><strong>Syntax</strong></p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/language-elements/coalesce-transact-sql?view=sql-server-ver15" target="_blank">COALESCE<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</td>
-<td>Returns the first value that is not null. Can also be used to test multiple expressions unlike <code class="docutils literal notranslate"><span class="pre">ISNULL</span></code>. Can be used to address null values when paired with string concatenation.</td>
-<td>See examples below.</td>
-<td>&#160;</td>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/language-elements/coalesce-transact-sql?view=sql-server-ver15" target="_blank">COALESCE<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns the first value that is not null. Can also be used to test multiple expressions unlike <code class="docutils literal notranslate"><span class="pre">ISNULL</span></code>. Can be used to address null values when paired with string concatenation.</p></td>
+<td><p>See examples below.</p></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -641,14 +641,14 @@
 <div class="line-block">
 <div class="line"><strong>Value Returned</strong></div>
 </div>
-<table border="1" class="docutils align-left">
+<table class="docutils align-left">
 <colgroup>
-<col width="100%" />
+<col style="width: 100%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><em>cat</em></td>
+<tbody>
+<tr class="row-odd"><td><p><em>cat</em></p></td>
 </tr>
-<tr class="row-even"><td><em>cat</em></td>
+<tr class="row-even"><td><p><em>cat</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -665,23 +665,23 @@
 <div class="line-block">
 <div class="line"><strong>Value Returned</strong></div>
 </div>
-<table border="1" class="colwidths-given docutils align-left">
+<table class="colwidths-given docutils align-left">
 <colgroup>
-<col width="5%" />
-<col width="95%" />
+<col style="width: 5%" />
+<col style="width: 95%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>&#160;</td>
-<td><em>Reading List</em></td>
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p><em>Reading List</em></p></td>
 </tr>
-<tr class="row-even"><td>1</td>
-<td>Οἰδίπους Τύραννος by Sophocles, J.E. Thomas</td>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Οἰδίπους Τύραννος by Sophocles, J.E. Thomas</p></td>
 </tr>
-<tr class="row-odd"><td>2</td>
-<td>Ἀντιγόνη by Sophocles, J.E. Thomas</td>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Ἀντιγόνη by Sophocles, J.E. Thomas</p></td>
 </tr>
-<tr class="row-even"><td>3</td>
-<td>The Oedipus Cycle: Oedipus Rex/Oedipus at Colonus/Antigone (The Theban Plays, #1–3) by Sophocles, Dudley Fitts, Elena Bono, Robert Fitzgerald</td>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>The Oedipus Cycle: Oedipus Rex/Oedipus at Colonus/Antigone (The Theban Plays, #1–3) by Sophocles, Dudley Fitts, Elena Bono, Robert Fitzgerald</p></td>
 </tr>
 </tbody>
 </table>
@@ -690,97 +690,97 @@
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">20.1.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Alyce is working with a dataset that contains information about local businesses.  They  want to create a query that returns titles of local businesses that contain <code class="docutils literal notranslate"><span class="pre">&amp;</span></code>.  Which string function should they use?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">LEN</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">STUFF</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">CHARINDEX</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">RTRIM</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">LEN</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">STUFF</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CHARINDEX</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">RTRIM</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Alyce wants to create consistency in the formatting of the state abbreviations of the local business addresses contained in their dataset.  What string function could help with this?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">REVERSE</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">UPPER</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">CONCAT</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">LEFT</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">REVERSE</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">UPPER</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CONCAT</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">LEFT</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Alyce’s dataset breaks down the addresses of local businesses into the following columns: Street, City, State, and Zipcode.  They would like to create a column that has all items joined to return a complete address in a single column.   Which function would best help with this?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">CONCAT</span></code> or <code class="docutils literal notranslate"><span class="pre">CONCAT_WS</span></code> or <code class="docutils literal notranslate"><span class="pre">STUFF</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">LOWER</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">REPLACE</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">LEFT</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CONCAT</span></code> or <code class="docutils literal notranslate"><span class="pre">CONCAT_WS</span></code> or <code class="docutils literal notranslate"><span class="pre">STUFF</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">LOWER</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">REPLACE</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">LEFT</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Alyce is working with a column of phone numbers.  They only need the 7 digit number, not the area code.  However, some of the numbers include the area code, some include the country code and area code, and some only include the seven-digit phone number.  Which function could help them select the 7 digits that she needs?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">CONCAT_WS</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">CHARINDEX</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">RIGHT</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">RTRIM</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CONCAT_WS</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CHARINDEX</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">RIGHT</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">RTRIM</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Willow has a column in her table containing dates the library branches opened.  She wants to compare them to today’s date. Which function would allow her to do that?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">DATEADD</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">MONTH</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">CONVERT</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">DATEDIFF</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">DATEADD</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">MONTH</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CONVERT</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DATEDIFF</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Willow has a table that contains dates library books are checked out.  She uses the following function in her query: <code class="docutils literal notranslate"><span class="pre">WHERE</span> <span class="pre">DATEPART(MONTH,</span> <span class="pre">BorrowDate)</span> <span class="pre">=</span> <span class="pre">05</span></code>.  What will this return?</p>
-<ol class="last loweralpha simple">
-<li>Rows of data where books were borrowed in the month of May</li>
-<li>Rows of data where books were borrowed on the 5th day of the month.</li>
-<li>Rows of data where books were borrowed in 2005.</li>
-<li>Rows of data where the same library user borrowed exactly 5 books.</li>
+<ol class="loweralpha simple">
+<li><p>Rows of data where books were borrowed in the month of May</p></li>
+<li><p>Rows of data where books were borrowed on the 5th day of the month.</p></li>
+<li><p>Rows of data where books were borrowed in 2005.</p></li>
+<li><p>Rows of data where the same library user borrowed exactly 5 books.</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p class="last">Willow wants to have all the dates in her database in the same format of ‘month-day-year’.  She used the following syntax: <code class="docutils literal notranslate"><span class="pre">FORMAT(ModifiedDate,</span> <span class="pre">'mm/dd/yyyy')</span></code> and received an error message.  Why?</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Willow wants to have all the dates in her database in the same format of ‘month-day-year’.  She used the following syntax: <code class="docutils literal notranslate"><span class="pre">FORMAT(ModifiedDate,</span> <span class="pre">'mm/dd/yyyy')</span></code> and received an error message.  Why?</p>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Francis has a database that contains information about car rentals.  She wants to create a query that would return the oldest car the company owns.  Which aggregation method would be a good fit for this query?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">AVG</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">MIN</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">COUNT</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">MAX</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">AVG</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">MIN</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">COUNT</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">MAX</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Francis wants to find the car with the highest mileage.  Which aggregation method would be a good option for this query?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">MAX</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">AVG</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">COUNT</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">MIN</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">MAX</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">AVG</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">COUNT</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">MIN</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Francis wants to create a column that contains a complete address for each car rental office in her database.  She has a column for street address, suite number, city, state, and zip code.  After some quick EDA, she has discovered that every rental office has a street address, city, state, and zip code.  She also discovered that only about 20% have suite numbers while the remaining 80% are null.  What function would let her still join these elements into addresses without worrying about the null elements affecting the final output?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">COALESCE</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">IS</span> <span class="pre">NOT</span> <span class="pre">NULL</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">ISNULL</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">IS</span> <span class="pre">NULL</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">COALESCE</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IS</span> <span class="pre">NOT</span> <span class="pre">NULL</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ISNULL</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">IS</span> <span class="pre">NULL</span></code></p></li>
 </ol>
 </div>
 </div>

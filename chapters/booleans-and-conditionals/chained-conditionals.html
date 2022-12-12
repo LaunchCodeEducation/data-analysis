@@ -97,7 +97,7 @@ an <strong>elif</strong> clause. <code class="docutils literal notranslate"><spa
 more conditions and code blocks. This leads to more branches for our code to
 follow.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -118,24 +118,24 @@ follow.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>10 is less than 20
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>10 is less than 20
 </pre></div>
 </div>
 </div>
 <p><strong>Summary:</strong></p>
 <ol class="arabic simple">
-<li>Line 4 begins the chained conditional. The boolean expression <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&gt;</span> <span class="pre">other_num</span></code>
+<li><p>Line 4 begins the chained conditional. The boolean expression <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&gt;</span> <span class="pre">other_num</span></code>
 returns <code class="docutils literal notranslate"><span class="pre">False</span></code>, since 10 is not greater than 20. This causes line 5 to be
-skipped.</li>
-<li>Line 6 contains the <code class="docutils literal notranslate"><span class="pre">elif</span></code> statement. The boolean expression
+skipped.</p></li>
+<li><p>Line 6 contains the <code class="docutils literal notranslate"><span class="pre">elif</span></code> statement. The boolean expression
 <code class="docutils literal notranslate"><span class="pre">num</span> <span class="pre">&lt;</span> <span class="pre">other_num</span></code> returns <code class="docutils literal notranslate"><span class="pre">True</span></code>, since 10 is less than 20. This
-triggers line 7.</li>
-<li>The code block for the <code class="docutils literal notranslate"><span class="pre">else</span></code> clause (line 9) is skipped, because one of
-the conditions above it was true.</li>
+triggers line 7.</p></li>
+<li><p>The code block for the <code class="docutils literal notranslate"><span class="pre">else</span></code> clause (line 9) is skipped, because one of
+the conditions above it was true.</p></li>
 </ol>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">Just like with a simple <code class="docutils literal notranslate"><span class="pre">if</span></code> statement, the <code class="docutils literal notranslate"><span class="pre">else</span></code> clause is also optional
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>Just like with a simple <code class="docutils literal notranslate"><span class="pre">if</span></code> statement, the <code class="docutils literal notranslate"><span class="pre">else</span></code> clause is also optional
 for <code class="docutils literal notranslate"><span class="pre">elif</span></code> statements. In the example above, removing lines 8 &amp; 9 will
 not break anything. However, the program will not print anything when
 <code class="docutils literal notranslate"><span class="pre">num</span></code> equals <code class="docutils literal notranslate"><span class="pre">other_num</span></code>, since the <code class="docutils literal notranslate"><span class="pre">if</span></code> and <code class="docutils literal notranslate"><span class="pre">elif</span></code> conditions both
@@ -147,8 +147,8 @@ return <code class="docutils literal notranslate"><span class="pre">False</span>
 example, the following code sample prints different messages depending on the
 first character in a string.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
-<div class="last highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -181,19 +181,19 @@ perform more checks. This gives us a huge amount of flexibility if we decide
 to modify the program later.</p>
 <p>Here are some rules for building <code class="docutils literal notranslate"><span class="pre">if/elif/else</span></code> statements:</p>
 <ol class="arabic simple">
-<li>Order is important. The <code class="docutils literal notranslate"><span class="pre">if</span></code> statement comes first, then the <code class="docutils literal notranslate"><span class="pre">elif</span></code>
-statements, and finally the <code class="docutils literal notranslate"><span class="pre">else</span></code>.</li>
-<li>The <code class="docutils literal notranslate"><span class="pre">if</span></code> statement and code block are required. The <code class="docutils literal notranslate"><span class="pre">elif</span></code> and <code class="docutils literal notranslate"><span class="pre">else</span></code>
-clauses are optional.</li>
-<li>Conditionals contain only ONE <code class="docutils literal notranslate"><span class="pre">if</span></code> statement and only ONE <code class="docutils literal notranslate"><span class="pre">else</span></code>
-(if used).</li>
-<li>Multiple <code class="docutils literal notranslate"><span class="pre">elif</span></code> statements are allowed after the <code class="docutils literal notranslate"><span class="pre">if</span></code> statement, but
-they must come before the <code class="docutils literal notranslate"><span class="pre">else</span></code> clause.</li>
+<li><p>Order is important. The <code class="docutils literal notranslate"><span class="pre">if</span></code> statement comes first, then the <code class="docutils literal notranslate"><span class="pre">elif</span></code>
+statements, and finally the <code class="docutils literal notranslate"><span class="pre">else</span></code>.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">if</span></code> statement and code block are required. The <code class="docutils literal notranslate"><span class="pre">elif</span></code> and <code class="docutils literal notranslate"><span class="pre">else</span></code>
+clauses are optional.</p></li>
+<li><p>Conditionals contain only ONE <code class="docutils literal notranslate"><span class="pre">if</span></code> statement and only ONE <code class="docutils literal notranslate"><span class="pre">else</span></code>
+(if used).</p></li>
+<li><p>Multiple <code class="docutils literal notranslate"><span class="pre">elif</span></code> statements are allowed after the <code class="docutils literal notranslate"><span class="pre">if</span></code> statement, but
+they must come before the <code class="docutils literal notranslate"><span class="pre">else</span></code> clause.</p></li>
 </ol>
 <p>No matter how long we make a chained conditional, <em>no more than one</em> of the
 code blocks will run.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -218,7 +218,7 @@ code blocks will run.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>10 is less than 20
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>10 is less than 20
 </pre></div>
 </div>
 </div>
@@ -233,7 +233,7 @@ first, the rest of the conditional is skipped.</p>
 based on the length of a word. We can accomplish the same result with a
 chained conditional.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Here is the nested conditional again:</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -255,7 +255,7 @@ chained conditional.</p>
 </pre></div>
 </td></tr></table></div>
 <p>The following chained conditional produces the same result:</p>
-<div class="last highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -278,10 +278,10 @@ same problem. Which one you choose depends on your personal preference, but
 you should always use the option that makes your code easier for others to
 read.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Nesting one conditional inside of another performs a <em>check within a check</em>,
 and we can do this any number of times.</p>
-<div class="last highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -325,7 +325,7 @@ operators in place of nested conditionals.</p>
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">6.9.3. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What does the following code print?</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -344,15 +344,15 @@ operators in place of nested conditionals.</p>
    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;LaunchCode&quot;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">Launch</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">Code</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">Launch</span> <span class="pre">Code</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">LaunchCode</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Launch</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Code</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Launch</span> <span class="pre">Code</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">LaunchCode</span></code></p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Examine this nested conditional:</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -372,8 +372,8 @@ operators in place of nested conditionals.</p>
 </pre></div>
 </td></tr></table></div>
 <p>Which of the following code blocks gives the same result?</p>
-<ol class="last loweralpha">
-<li><div class="first highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>2
+<ol class="loweralpha">
+<li><div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>2
 3
 4
 5
@@ -387,7 +387,7 @@ operators in place of nested conditionals.</p>
 </pre></div>
 </td></tr></table></div>
 </li>
-<li><div class="first highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>2
+<li><div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>2
 3
 4
 5
@@ -401,7 +401,7 @@ operators in place of nested conditionals.</p>
 </pre></div>
 </td></tr></table></div>
 </li>
-<li><div class="first highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>2
+<li><div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>2
 3
 4
 5

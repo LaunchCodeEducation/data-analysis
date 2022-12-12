@@ -97,25 +97,25 @@ Below the <code class="docutils literal notranslate"><span class="pre">import</s
 <div class="section" id="add-properties-to-robot">
 <h3>Add Properties to <code class="docutils literal notranslate"><span class="pre">Robot</span></code><a class="headerlink" href="#add-properties-to-robot" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li>Inside the class, define the constructor. It should include
-parameters for <code class="docutils literal notranslate"><span class="pre">self</span></code>, <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">mass</span></code>, and <code class="docutils literal notranslate"><span class="pre">year</span></code>.</li>
-<li>Give a default value to <code class="docutils literal notranslate"><span class="pre">year</span></code>.</li>
-<li>Assign the property values as described in the
-<a class="reference internal" href="creating-classes.html#set-property-values"><span class="std std-ref">Setting Property Values</span></a> section.</li>
-<li>Add one more property called <code class="docutils literal notranslate"><span class="pre">distance</span></code>.
+<li><p>Inside the class, define the constructor. It should include
+parameters for <code class="docutils literal notranslate"><span class="pre">self</span></code>, <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">mass</span></code>, and <code class="docutils literal notranslate"><span class="pre">year</span></code>.</p></li>
+<li><p>Give a default value to <code class="docutils literal notranslate"><span class="pre">year</span></code>.</p></li>
+<li><p>Assign the property values as described in the
+<a class="reference internal" href="creating-classes.html#set-property-values"><span class="std std-ref">Setting Property Values</span></a> section.</p></li>
+<li><p>Add one more property called <code class="docutils literal notranslate"><span class="pre">distance</span></code>.
 This will not need to be included in the constructor.
-Instead, every new <code class="docutils literal notranslate"><span class="pre">Robot</span></code> object will start with a <code class="docutils literal notranslate"><span class="pre">distance</span></code> value of <code class="docutils literal notranslate"><span class="pre">0</span></code>.</li>
+Instead, every new <code class="docutils literal notranslate"><span class="pre">Robot</span></code> object will start with a <code class="docutils literal notranslate"><span class="pre">distance</span></code> value of <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></li>
 </ol>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
 <p>Before you move on, test your new class!</p>
 <p>In <code class="docutils literal notranslate"><span class="pre">main()</span></code>:</p>
-<ol class="last loweralpha simple">
-<li>Call the <code class="docutils literal notranslate"><span class="pre">Robot</span></code> class to create a new object. Assign it to a
-variable.</li>
-<li>Use dot notation to <code class="docutils literal notranslate"><span class="pre">print</span></code> the values for each property.</li>
-<li>To check the default, call the class at least once WITHOUT including an
-argument for <code class="docutils literal notranslate"><span class="pre">year</span></code>.</li>
+<ol class="loweralpha simple">
+<li><p>Call the <code class="docutils literal notranslate"><span class="pre">Robot</span></code> class to create a new object. Assign it to a
+variable.</p></li>
+<li><p>Use dot notation to <code class="docutils literal notranslate"><span class="pre">print</span></code> the values for each property.</p></li>
+<li><p>To check the default, call the class at least once WITHOUT including an
+argument for <code class="docutils literal notranslate"><span class="pre">year</span></code>.</p></li>
 </ol>
 </div>
 <p><a class="reference internal" href="../../appendices/exercise-solutions/objects-and-classes.html#add-properties"><span class="std std-ref">Check Your Solutions</span></a></p>
@@ -123,15 +123,14 @@ argument for <code class="docutils literal notranslate"><span class="pre">year</
 <div class="section" id="add-methods-to-robot">
 <span id="objects-and-classes-exercises1b"></span><h3>Add Methods to <code class="docutils literal notranslate"><span class="pre">Robot</span></code><a class="headerlink" href="#add-methods-to-robot" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
-<li><p class="first">Below the constructor, define a method called <code class="docutils literal notranslate"><span class="pre">move()</span></code>. This method
+<li><p>Below the constructor, define a method called <code class="docutils literal notranslate"><span class="pre">move()</span></code>. This method
 should:</p>
 <ol class="arabic">
-<li><p class="first">Only take the <code class="docutils literal notranslate"><span class="pre">self</span></code> parameter.</p>
-</li>
-<li><p class="first">Generate a random number of steps (1 - 10) for the object to take. The
+<li><p>Only take the <code class="docutils literal notranslate"><span class="pre">self</span></code> parameter.</p></li>
+<li><p>Generate a random number of steps (1 - 10) for the object to take. The
 range should include <code class="docutils literal notranslate"><span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">10</span></code> as options.</p>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
 <p>We are going to use an built-in function from the <code class="docutils literal notranslate"><span class="pre">random</span></code> module called <code class="docutils literal notranslate"><span class="pre">randint()</span></code>.
 This function will select a value from a range that you provide.</p>
 <p>The general syntax for module usage looks like this:</p>
@@ -141,16 +140,14 @@ This function will select a value from a range that you provide.</p>
 <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">start_value</span><span class="p">,</span> <span class="n">end_value</span><span class="p">)</span>
 </pre></div>
 </div>
-<p class="last">We will explore modules more in future lessons.</p>
+<p>We will explore modules more in future lessons.</p>
 </div>
 </li>
-<li><p class="first">Increase the <code class="docutils literal notranslate"><span class="pre">distance</span></code> property by the number of steps.</p>
-</li>
-<li><p class="first">Return the random number of steps.</p>
-</li>
+<li><p>Increase the <code class="docutils literal notranslate"><span class="pre">distance</span></code> property by the number of steps.</p></li>
+<li><p>Return the random number of steps.</p></li>
 </ol>
 </li>
-<li><p class="first">Add the <code class="docutils literal notranslate"><span class="pre">__str__</span></code> method to return a string of the object properties.
+<li><p>Add the <code class="docutils literal notranslate"><span class="pre">__str__</span></code> method to return a string of the object properties.
 <code class="docutils literal notranslate"><span class="pre">print(robot_name)</span></code> should produce something like:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Robot information:
   Name: Bob
@@ -162,13 +159,13 @@ This function will select a value from a range that you provide.</p>
 </li>
 </ol>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
 <p>Test your methods!</p>
 <p>In <code class="docutils literal notranslate"><span class="pre">main()</span></code>:</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">print</span></code> the <code class="docutils literal notranslate"><span class="pre">Robot</span></code> object to check the output.</li>
-<li>Use a loop to call the <code class="docutils literal notranslate"><span class="pre">move()</span></code> method several times. Inside the loop,
-<code class="docutils literal notranslate"><span class="pre">print</span></code> the steps taken and the updated <code class="docutils literal notranslate"><span class="pre">robot_name.distance</span></code> value.</li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">print</span></code> the <code class="docutils literal notranslate"><span class="pre">Robot</span></code> object to check the output.</p></li>
+<li><p>Use a loop to call the <code class="docutils literal notranslate"><span class="pre">move()</span></code> method several times. Inside the loop,
+<code class="docutils literal notranslate"><span class="pre">print</span></code> the steps taken and the updated <code class="docutils literal notranslate"><span class="pre">robot_name.distance</span></code> value.</p></li>
 </ol>
 </div>
 <p><a class="reference internal" href="../../appendices/exercise-solutions/objects-and-classes.html#add-methods"><span class="std std-ref">Check Your Solutions</span></a></p>
@@ -179,11 +176,11 @@ This function will select a value from a range that you provide.</p>
 <p>In part 1, you defined a class and created one <code class="docutils literal notranslate"><span class="pre">Robot</span></code> object in <code class="docutils literal notranslate"><span class="pre">main()</span></code>.
 Now create three more objects:</p>
 <ol class="arabic simple">
-<li>Assign each <code class="docutils literal notranslate"><span class="pre">Robot</span></code> object to its own variable.</li>
-<li>Each object should have a different <code class="docutils literal notranslate"><span class="pre">name</span></code> value.</li>
-<li>Use a mass value from <code class="docutils literal notranslate"><span class="pre">25</span></code> to <code class="docutils literal notranslate"><span class="pre">40</span></code>. (<em>Bonus</em>: Use <code class="docutils literal notranslate"><span class="pre">randint</span></code> to
+<li><p>Assign each <code class="docutils literal notranslate"><span class="pre">Robot</span></code> object to its own variable.</p></li>
+<li><p>Each object should have a different <code class="docutils literal notranslate"><span class="pre">name</span></code> value.</p></li>
+<li><p>Use a mass value from <code class="docutils literal notranslate"><span class="pre">25</span></code> to <code class="docutils literal notranslate"><span class="pre">40</span></code>. (<em>Bonus</em>: Use <code class="docutils literal notranslate"><span class="pre">randint</span></code> to
 generate the mass value instead of hard-coding a number when you call the
-class).</li>
+class).</p></li>
 </ol>
 <p>You now have 4 total robots. Add another statement in <code class="docutils literal notranslate"><span class="pre">main()</span></code> where you
 place the objects inside a list. Assign the collection to a variable called
@@ -200,18 +197,18 @@ random value to the <code class="docutils literal notranslate"><span class="pre"
 <p>Between the class and <code class="docutils literal notranslate"><span class="pre">main()</span></code>, define a function called <code class="docutils literal notranslate"><span class="pre">oldest_robot</span></code>. It
 should:</p>
 <ol class="arabic simple">
-<li>Accept a list of robots as a parameter.</li>
-<li>Use a loop to iterate through the list.</li>
-<li>Return the index value for the oldest robot in the list. <em>Caution</em>: A robot
-made in 2020 is NOT older than one made in 2019!</li>
-<li>If two robots have the same <code class="docutils literal notranslate"><span class="pre">year</span></code> value, then the one with the largest
-<code class="docutils literal notranslate"><span class="pre">distance</span></code> will be older.</li>
+<li><p>Accept a list of robots as a parameter.</p></li>
+<li><p>Use a loop to iterate through the list.</p></li>
+<li><p>Return the index value for the oldest robot in the list. <em>Caution</em>: A robot
+made in 2020 is NOT older than one made in 2019!</p></li>
+<li><p>If two robots have the same <code class="docutils literal notranslate"><span class="pre">year</span></code> value, then the one with the largest
+<code class="docutils literal notranslate"><span class="pre">distance</span></code> will be older.</p></li>
 </ol>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p>The instructions assume that the list contains only one oldest robot. What
 if two old robots have the same <code class="docutils literal notranslate"><span class="pre">year</span></code> and <code class="docutils literal notranslate"><span class="pre">distance</span></code> values?</p>
-<p class="last">We won’t solve this problem here. However, add comments in your code
+<p>We won’t solve this problem here. However, add comments in your code
 describing how you would deal with multiple robots that are the same age.</p>
 </div>
 <p>In <code class="docutils literal notranslate"><span class="pre">main()</span></code>, call the <code class="docutils literal notranslate"><span class="pre">oldest_robot</span></code> function and use <code class="docutils literal notranslate"><span class="pre">robots</span></code> for the
@@ -230,19 +227,14 @@ current number of steps.</p>
 <code class="docutils literal notranslate"><span class="pre">robot_race</span></code> function that takes a list of robots as a parameter.</p>
 <p>Within the function:</p>
 <ol class="arabic">
-<li><p class="first">Each robot takes a turn running a race.</p>
-</li>
-<li><p class="first">A robot runs the race by calling its <code class="docutils literal notranslate"><span class="pre">move()</span></code> method several times.</p>
-</li>
-<li><p class="first">A robot is done with the race when it moves 30 steps or more.</p>
-</li>
-<li><p class="first">Create a new list to store how many turns it takes each robot to complete
+<li><p>Each robot takes a turn running a race.</p></li>
+<li><p>A robot runs the race by calling its <code class="docutils literal notranslate"><span class="pre">move()</span></code> method several times.</p></li>
+<li><p>A robot is done with the race when it moves 30 steps or more.</p></li>
+<li><p>Create a new list to store how many turns it takes each robot to complete
 the race. Use the string: <code class="docutils literal notranslate"><span class="pre">'____</span> <span class="pre">took</span> <span class="pre">____</span> <span class="pre">turns</span> <span class="pre">to</span> <span class="pre">take</span> <span class="pre">30</span> <span class="pre">steps.'</span></code>
-Fill in the blanks with the robot’s name and race result.</p>
-</li>
-<li><p class="first">Return the list from the function.</p>
-</li>
-<li><p class="first">Print the results to the console (one robot per line).</p>
+Fill in the blanks with the robot’s name and race result.</p></li>
+<li><p>Return the list from the function.</p></li>
+<li><p>Print the results to the console (one robot per line).</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Bob took 7 turns to take 30 steps.
 Jen took 5 turns to take 30 steps.
 Sal took 7 turns to take 30 steps.

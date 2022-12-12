@@ -98,7 +98,7 @@ collection.</p>
 exists, but it is empty.</p>
 <p>No arguments go inside the <code class="docutils literal notranslate"><span class="pre">()</span></code>.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -127,7 +127,7 @@ exists, but it is empty.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;Mom&#39;: &#39;555-5555&#39;, &#39;Work&#39;: &#39;555-5556&#39;, &#39;Home&#39;: &#39;123-456-7890&#39;, &#39;BFF&#39;: &#39;555-5557&#39;}
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;Mom&#39;: &#39;555-5555&#39;, &#39;Work&#39;: &#39;555-5556&#39;, &#39;Home&#39;: &#39;123-456-7890&#39;, &#39;BFF&#39;: &#39;555-5557&#39;}
 {}
 0
 </pre></div>
@@ -147,7 +147,7 @@ removed from the dictionary.</p>
 <em>returns</em> the value. This means <code class="docutils literal notranslate"><span class="pre">dictionary_name.pop(key)</span></code> can be printed or
 assigned to a variable.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -180,7 +180,7 @@ assigned to a variable.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;Mom&#39;: &#39;555-5555&#39;, &#39;Work&#39;: &#39;555-5556&#39;, &#39;BFF&#39;: &#39;555-5557&#39;}
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;Mom&#39;: &#39;555-5555&#39;, &#39;Work&#39;: &#39;555-5556&#39;, &#39;BFF&#39;: &#39;555-5557&#39;}
 555-5557
 {&#39;Mom&#39;: &#39;555-5555&#39;, &#39;Work&#39;: &#39;555-5556&#39;}
 </pre></div>
@@ -193,7 +193,7 @@ assigned to a variable.</p>
 call the method without a key, or if the key does not exist in the dictionary,
 Python throws an error message.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -213,11 +213,11 @@ Python throws an error message.</p>
 <span class="n">phone_book</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;Beyonce&#39;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last arabic simple">
-<li>Line 8 throws <code class="docutils literal notranslate"><span class="pre">TypeError:</span> <span class="pre">pop</span> <span class="pre">expected</span> <span class="pre">at</span> <span class="pre">least</span> <span class="pre">1</span> <span class="pre">argument,</span> <span class="pre">got</span> <span class="pre">0</span></code>.
-Python expected to find a key argument, but we did not provide one.</li>
-<li>Line 9 throws <code class="docutils literal notranslate"><span class="pre">KeyError:</span> <span class="pre">'Beyonce'</span></code>. The key <code class="docutils literal notranslate"><span class="pre">Beyonce</span></code> does not exist
-in <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>.</li>
+<ol class="arabic simple">
+<li><p>Line 8 throws <code class="docutils literal notranslate"><span class="pre">TypeError:</span> <span class="pre">pop</span> <span class="pre">expected</span> <span class="pre">at</span> <span class="pre">least</span> <span class="pre">1</span> <span class="pre">argument,</span> <span class="pre">got</span> <span class="pre">0</span></code>.
+Python expected to find a key argument, but we did not provide one.</p></li>
+<li><p>Line 9 throws <code class="docutils literal notranslate"><span class="pre">KeyError:</span> <span class="pre">'Beyonce'</span></code>. The key <code class="docutils literal notranslate"><span class="pre">Beyonce</span></code> does not exist
+in <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>.</p></li>
 </ol>
 </div>
 </div>
@@ -235,15 +235,15 @@ errors! The general syntax is:</p>
 <code class="docutils literal notranslate"><span class="pre">default_value</span></code> instead. The dictionary itself remains unchanged, but we do
 avoid crashing the program.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>Run the following program several times and enter different key names. Be
 sure to try:</p>
 <ol class="arabic simple">
-<li>A key that exists in <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>,</li>
-<li>A key that does NOT exist in <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>,</li>
-<li>Just hitting return to enter the empty string, <code class="docutils literal notranslate"><span class="pre">''</span></code>.</li>
+<li><p>A key that exists in <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>,</p></li>
+<li><p>A key that does NOT exist in <code class="docutils literal notranslate"><span class="pre">phone_book</span></code>,</p></li>
+<li><p>Just hitting return to enter the empty string, <code class="docutils literal notranslate"><span class="pre">''</span></code>.</p></li>
 </ol>
-<div class="last"><iframe src="https://trinket.io/embed/python3/56cf9e451f" width="100%" height="400" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe></div></div>
+<iframe src="https://trinket.io/embed/python3/56cf9e451f" width="100%" height="400" frameborder="1" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
 </div>
 </div>
 </div>

@@ -97,23 +97,23 @@ variables.</p>
 valid variable name. For example, if we try to declare a variable with a name
 containing a space, Python complains.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">application</span> <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Planning App&quot;</span>
 </pre></div>
 </div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>SyntaxError: Invalid syntax
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>SyntaxError: Invalid syntax
 </pre></div>
 </div>
 </div>
 <p>Python provides a broad set of rules for naming variables, but there is no
 reason to go beyond a few easy-to-remember guidelines:</p>
 <ol class="arabic simple" id="index-0">
-<li>Use only the characters 0-9, a-z, A-Z, and underscore. In other words, do
-not use special characters or whitespace (space, tab, and so on).</li>
-<li>Do not start a variable name with a number.</li>
-<li>Do not use <strong>keywords</strong>, which are words reserved by Python for use by
-the language itself. We’ll discuss these in detail in a moment.</li>
+<li><p>Use only the characters 0-9, a-z, A-Z, and underscore. In other words, do
+not use special characters or whitespace (space, tab, and so on).</p></li>
+<li><p>Do not start a variable name with a number.</p></li>
+<li><p>Do not use <strong>keywords</strong>, which are words reserved by Python for use by
+the language itself. We’ll discuss these in detail in a moment.</p></li>
 </ol>
 <p>Following these guidelines will prevent you from creating illegal variable
 names. While this is important, we should also strive to create good variable
@@ -143,7 +143,8 @@ least. The main problem is that the variable names <code class="docutils literal
 not descriptive. They don’t tell us anything about what they represent, or how
 they will be used.</p>
 <blockquote class="pull-quote">
-<div>Variable names should be descriptive, providing context about the data they contain and how they will be used.</div></blockquote>
+<div><p>Variable names should be descriptive, providing context about the data they contain and how they will be used.</p>
+</div></blockquote>
 <p>Let’s look at an improved version of this program.</p>
 <div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -156,8 +157,8 @@ they will be used.</p>
 </td></tr></table></div>
 <p>With improved variable names, it now becomes clear that the program is calculating the area of a circle of radius 5.</p>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
-<p class="last">When considering program readability, think about whether or not your code will make sense to another programmer. It is not enough for code to be readable by only the programmer that originally wrote it.</p>
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>When considering program readability, think about whether or not your code will make sense to another programmer. It is not enough for code to be readable by only the programmer that originally wrote it.</p>
 </div>
 </div>
 </div>
@@ -179,15 +180,15 @@ For now, we suggest being aware of your variable names so you don’t accidental
 <p id="index-1">Our last note on naming variables has to do with a collection of words that are reserved for use by the Python language itself. Such words are called <strong>keywords</strong>, or <strong>reserved words</strong>.
 Any word that is formally part of the Python language syntax is a keyword.</p>
 <div class="admonition-warning admonition">
-<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
-<p class="last">While <code class="docutils literal notranslate"><span class="pre">print()</span></code> may seem like a keyword, it is actually slightly different.
+<p class="admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
+<p>While <code class="docutils literal notranslate"><span class="pre">print()</span></code> may seem like a keyword, it is actually slightly different.
 It is actually a built-in name that is available by default in Python environments.
 Here is an <a class="reference external" href="http://python-history.blogspot.com/2013/11/story-of-none-true-false.html" target="_blank">article<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> by the Python language designer about the difference between built-in names and keywords if you are interested in learning more.</p>
 </div>
 <p>Attempting to use a keyword for anything other than it’s intended use will result in an error.</p>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
-<p class="last">Most code editors will highlight keywords in a different color than variables or other parts of your code. This serves as a visual cue that a given word is a keyword, and can help prevent mistakes.</p>
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p>Most code editors will highlight keywords in a different color than variables or other parts of your code. This serves as a visual cue that a given word is a keyword, and can help prevent mistakes.</p>
 </div>
 <p>We will not provide the full list of keywords at this time, but rather point them out as we learn about each of them. If you are curious, the <a class="reference external" href="https://www.w3schools.com/python/python_ref_keywords.asp" target="_blank">full list is available at W3Schools<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 </div>

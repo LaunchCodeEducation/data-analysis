@@ -92,7 +92,7 @@
 <p>Since a list is simply a sequence of separate data values, Python gives us a
 way to automatically iterate over those elements.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -105,7 +105,7 @@ way to automatically iterate over those elements.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>You need to buy:
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>You need to buy:
    apples
    oranges
    bananas
@@ -119,17 +119,17 @@ shopping_list_items, print a tab character plus the item</em>.</p>
 <p>Each time the loop repeats, Python assigns the next element in the list to the
 variable <code class="docutils literal notranslate"><span class="pre">item</span></code>. The elements may be of any data type.</p>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
 <p>To keep the meaning of your code clear, use plural names for your
 lists—like <code class="docutils literal notranslate"><span class="pre">fruits</span></code>, <code class="docutils literal notranslate"><span class="pre">cars</span></code>, <code class="docutils literal notranslate"><span class="pre">even_numbers</span></code>, etc.</p>
 <p>When you iterate through a list, use the singular name for the loop
 variable.</p>
 <ol class="arabic simple">
-<li><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">fruit</span> <span class="pre">in</span> <span class="pre">fruits:</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">car</span> <span class="pre">in</span> <span class="pre">cars:</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">even_number</span> <span class="pre">in</span> <span class="pre">even_numbers:</span></code></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">fruit</span> <span class="pre">in</span> <span class="pre">fruits:</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">car</span> <span class="pre">in</span> <span class="pre">cars:</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">even_number</span> <span class="pre">in</span> <span class="pre">even_numbers:</span></code></p></li>
 </ol>
-<p class="last">This helps you explain what your code is doing. For example, in step 2, you
+<p>This helps you explain what your code is doing. For example, in step 2, you
 can think to yourself, <em>Each time the loop repeats, my code takes one
 car element from the cars list</em>.</p>
 </div>
@@ -139,7 +139,7 @@ car element from the cars list</em>.</p>
 <p>We can also use the <code class="docutils literal notranslate"><span class="pre">range</span></code> command to generate index values, and then use
 bracket notation to access each element from the list:</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -150,7 +150,7 @@ bracket notation to access each element from the list:</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>1) apples
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1) apples
 2) oranges
 3) bananas
 4) bread
@@ -160,21 +160,22 @@ bracket notation to access each element from the list:</p>
 </div>
 <p>Note the following:</p>
 <ol class="arabic simple">
-<li>In this loop, <code class="docutils literal notranslate"><span class="pre">range(len(shopping_list_items))</span></code> generates a sequence of
+<li><p>In this loop, <code class="docutils literal notranslate"><span class="pre">range(len(shopping_list_items))</span></code> generates a sequence of
 integers up to but not including the length of the list. Since
 <code class="docutils literal notranslate"><span class="pre">len(shopping_list_items)</span></code> returns the value <code class="docutils literal notranslate"><span class="pre">5</span></code>, this list of integers
-will be <code class="docutils literal notranslate"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4</span></code>.</li>
-<li>Each time the loop repeats, Python assigns the next integer in the
-sequence to the variable <code class="docutils literal notranslate"><span class="pre">index</span></code>.</li>
-<li>In line 4, note how we use the <code class="docutils literal notranslate"><span class="pre">index</span></code> values to calculate the item
-numbers and access each element from the list.<ol class="loweralpha">
-<li>The <code class="docutils literal notranslate"><span class="pre">{0}</span></code> placeholder gets filled with the value of <code class="docutils literal notranslate"><span class="pre">index</span></code> plus
+will be <code class="docutils literal notranslate"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4</span></code>.</p></li>
+<li><p>Each time the loop repeats, Python assigns the next integer in the
+sequence to the variable <code class="docutils literal notranslate"><span class="pre">index</span></code>.</p></li>
+<li><p>In line 4, note how we use the <code class="docutils literal notranslate"><span class="pre">index</span></code> values to calculate the item
+numbers and access each element from the list.</p>
+<ol class="loweralpha simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">{0}</span></code> placeholder gets filled with the value of <code class="docutils literal notranslate"><span class="pre">index</span></code> plus
 one. Since <code class="docutils literal notranslate"><span class="pre">index</span></code> takes the values 0 - 4, the output shows the
-line numbers 1 - 5.</li>
-<li>The <code class="docutils literal notranslate"><span class="pre">{1}</span></code> placeholder gets filled with one element from the list.
+line numbers 1 - 5.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">{1}</span></code> placeholder gets filled with one element from the list.
 When <code class="docutils literal notranslate"><span class="pre">index</span></code> is <code class="docutils literal notranslate"><span class="pre">0</span></code>, <code class="docutils literal notranslate"><span class="pre">shopping_list_items[index]</span></code> returns
 <code class="docutils literal notranslate"><span class="pre">'apples'</span></code>. The next time the loop repeats, <code class="docutils literal notranslate"><span class="pre">index</span></code> is <code class="docutils literal notranslate"><span class="pre">1</span></code>, and
-<code class="docutils literal notranslate"><span class="pre">shopping_list_items[index]</span></code> returns <code class="docutils literal notranslate"><span class="pre">'oranges'</span></code>.</li>
+<code class="docutils literal notranslate"><span class="pre">shopping_list_items[index]</span></code> returns <code class="docutils literal notranslate"><span class="pre">'oranges'</span></code>.</p></li>
 </ol>
 </li>
 </ol>
@@ -185,10 +186,10 @@ When <code class="docutils literal notranslate"><span class="pre">index</span></
 down to personal preference. Sometimes, however, one option will be better than
 the other.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Given <code class="docutils literal notranslate"><span class="pre">scores</span> <span class="pre">=</span> <span class="pre">[10,</span> <span class="pre">25,</span> <span class="pre">8,</span> <span class="pre">33,</span> <span class="pre">0]</span></code>, the code shows two ways to add up all
 of the values from the list:</p>
-<div class="last highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -209,7 +210,7 @@ themselves. <code class="docutils literal notranslate"><span class="pre">print(s
 loop finishes.</p>
 <p>The next example shows a case where we change the values of some list elements:</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Given <code class="docutils literal notranslate"><span class="pre">scores</span> <span class="pre">=</span> <span class="pre">[10,</span> <span class="pre">25,</span> <span class="pre">8,</span> <span class="pre">33,</span> <span class="pre">0]</span></code>, the code below changes the points for
 some of the values:</p>
 <div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -234,19 +235,19 @@ some of the values:</p>
 </div>
 <p>Take a moment to think about what happens inside this loop. We change the
 value of an element based on its <em>position</em> in the list.</p>
-<ol class="last arabic simple">
-<li>Each time the loop runs, <code class="docutils literal notranslate"><span class="pre">index</span></code> gets assigned the next value in the
-sequence <code class="docutils literal notranslate"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4</span></code>.</li>
-<li>Line 4 checks if the element in the list is at index 2 or later. If
-<code class="docutils literal notranslate"><span class="pre">True</span></code>, we add 12 points to the value.</li>
-<li>We use the bracket notation in line 5 to change the value of the selected
-element.</li>
+<ol class="arabic simple">
+<li><p>Each time the loop runs, <code class="docutils literal notranslate"><span class="pre">index</span></code> gets assigned the next value in the
+sequence <code class="docutils literal notranslate"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4</span></code>.</p></li>
+<li><p>Line 4 checks if the element in the list is at index 2 or later. If
+<code class="docutils literal notranslate"><span class="pre">True</span></code>, we add 12 points to the value.</p></li>
+<li><p>We use the bracket notation in line 5 to change the value of the selected
+element.</p></li>
 </ol>
 </div>
 <p>We can also change list elements based on their values instead of their
 locations:</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-Python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -267,10 +268,10 @@ locations:</p>
 [20, 25, 16, 33, 0]
 </pre></div>
 </div>
-<ol class="last arabic simple">
-<li>Line 4 checks if the value for the current list element is even.</li>
-<li>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, line 5 doubles the value and reassigns it to the same
-index location in the list.</li>
+<ol class="arabic simple">
+<li><p>Line 4 checks if the value for the current list element is even.</p></li>
+<li><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, line 5 doubles the value and reassigns it to the same
+index location in the list.</p></li>
 </ol>
 </div>
 <p>Since lists are mutable, we can use a loop to change some or all of the
@@ -279,13 +280,13 @@ and this requires an index value.</p>
 <div class="section" id="take-home-ideas">
 <h3><span class="section-number">9.5.3.1. </span>Take Home Ideas<a class="headerlink" href="#take-home-ideas" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li>If we need to access the values inside a list without changing the list
-itself, then looping by element is the cleaner approach.</li>
-<li>Looping by element avoids <em>index out of range</em> errors.</li>
-<li>If we need to change one or more of the values in a list, then we MUST loop
-by index.</li>
-<li>If we need to access elements based on their position, then looping by index
-is the better choice.</li>
+<li><p>If we need to access the values inside a list without changing the list
+itself, then looping by element is the cleaner approach.</p></li>
+<li><p>Looping by element avoids <em>index out of range</em> errors.</p></li>
+<li><p>If we need to change one or more of the values in a list, then we MUST loop
+by index.</p></li>
+<li><p>If we need to access elements based on their position, then looping by index
+is the better choice.</p></li>
 </ol>
 </div>
 </div>

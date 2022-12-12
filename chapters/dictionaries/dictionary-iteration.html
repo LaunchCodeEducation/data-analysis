@@ -89,8 +89,8 @@
 <p>Many times in this book, we looped through the characters in a string or the
 elements in a list without using the index values.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
-<div class="last highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -133,12 +133,12 @@ variable the keys or the values from the collection. To do this, we use the
 <code class="docutils literal notranslate"><span class="pre">key</span></code> gets assigned one of the key names from the dictionary. In the second
 loop, the variable <code class="docutils literal notranslate"><span class="pre">value</span></code> gets assigned a new value each iteration.</p>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">We do not have to use the name <code class="docutils literal notranslate"><span class="pre">key</span></code> or <code class="docutils literal notranslate"><span class="pre">value</span></code> for the loop variable,
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>We do not have to use the name <code class="docutils literal notranslate"><span class="pre">key</span></code> or <code class="docutils literal notranslate"><span class="pre">value</span></code> for the loop variable,
 but doing so helps keep our code clear.</p>
 </div>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>Run the following program to see how iterating through a dictionary works.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -198,14 +198,14 @@ but doing so helps keep our code clear.</p>
 </pre></div>
 </td></tr></table></div>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/DictionaryIteration01" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
-<p class="last">Try adding or removing key/value pairs to change the output.</p>
+<p>Try adding or removing key/value pairs to change the output.</p>
 </div>
 <p>Note that on lines 21 and 26, we access each value in the dictionary by using
 bracket notation and the loop variable <code class="docutils literal notranslate"><span class="pre">key</span></code>. Each iteration, <code class="docutils literal notranslate"><span class="pre">key</span></code>
 represents a new label from <code class="docutils literal notranslate"><span class="pre">comics</span></code>, so <code class="docutils literal notranslate"><span class="pre">comics[key]</span></code> accesses a different
 value each time the loop repeats.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>What happens if we forget to attach the <code class="docutils literal notranslate"><span class="pre">keys()</span></code> or <code class="docutils literal notranslate"><span class="pre">values()</span></code> method in
 the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement?  Let’s find out!</p>
 <p>Run the following program to see how Python deals with a missing method.</p>
@@ -230,7 +230,7 @@ the <code class="docutils literal notranslate"><span class="pre">for</span></cod
    <span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/DictionaryIteration02" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/DictionaryIteration02" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
 <p>Aha! By default, Python iterates through a dictionary by using the key names.</p>
 <div class="section" id="loop-by-key-value-pairs">
@@ -245,7 +245,7 @@ general syntax for this is:</p>
 hold a key name and its linked value from the dictionary. Each iteration, these
 two variables represent a new key/value pair from the collection.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Compare the following two loops, which do exactly the same thing:</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -276,7 +276,7 @@ two variables represent a new key/value pair from the collection.</p>
    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<p class="last">By defining a pair of variables, we can access the values from the
+<p>By defining a pair of variables, we can access the values from the
 dictionary without needing to use bracket notation. On line 14, the variable
 <code class="docutils literal notranslate"><span class="pre">value</span></code> replaces <code class="docutils literal notranslate"><span class="pre">comics[key]</span></code> in our code.</p>
 </div>
@@ -291,27 +291,29 @@ key/value pairs in a particular order—like alphabetically by key name.</p>
 can use a work-around. We won’t change the order of the key/value pairs in the
 dictionary. Instead, we will use a list, which can be sorted.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>Let’s see how to print out the key/value pairs in a dictionary
 alphabetically by key name.</p>
 <ol class="arabic simple">
-<li>Run the program as-is. Notice that the loop prints the key/value pairs in
-the order they occur in the collection.</li>
-<li>On line 13, add the statement <code class="docutils literal notranslate"><span class="pre">keys_list</span> <span class="pre">=</span> <span class="pre">list(grocery_bill.keys())</span></code>.
-On line 14, print <code class="docutils literal notranslate"><span class="pre">keys_list</span></code> and run the program to see the result.<ul>
-<li>Line 13 does NOT change the dictionary. Instead, the <code class="docutils literal notranslate"><span class="pre">list()</span></code>
+<li><p>Run the program as-is. Notice that the loop prints the key/value pairs in
+the order they occur in the collection.</p></li>
+<li><p>On line 13, add the statement <code class="docutils literal notranslate"><span class="pre">keys_list</span> <span class="pre">=</span> <span class="pre">list(grocery_bill.keys())</span></code>.
+On line 14, print <code class="docutils literal notranslate"><span class="pre">keys_list</span></code> and run the program to see the result.</p>
+<ul class="simple">
+<li><p>Line 13 does NOT change the dictionary. Instead, the <code class="docutils literal notranslate"><span class="pre">list()</span></code>
 function creates a new list that contains copies of all the key names
-from <code class="docutils literal notranslate"><span class="pre">grocery_bill</span></code>.</li>
+from <code class="docutils literal notranslate"><span class="pre">grocery_bill</span></code>.</p></li>
 </ul>
 </li>
-<li>On line 14, replace the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement with <code class="docutils literal notranslate"><span class="pre">keys_list.sort()</span></code>,
-which alphabetizes the strings in the list.<ul>
-<li>Note that line 14 sorts the <em>list</em> and NOT the dictionary!</li>
+<li><p>On line 14, replace the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement with <code class="docutils literal notranslate"><span class="pre">keys_list.sort()</span></code>,
+which alphabetizes the strings in the list.</p>
+<ul class="simple">
+<li><p>Note that line 14 sorts the <em>list</em> and NOT the dictionary!</p></li>
 </ul>
 </li>
-<li>Change the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement to loop through <code class="docutils literal notranslate"><span class="pre">keys_list</span></code> instead of
+<li><p>Change the <code class="docutils literal notranslate"><span class="pre">for</span></code> statement to loop through <code class="docutils literal notranslate"><span class="pre">keys_list</span></code> instead of
 <code class="docutils literal notranslate"><span class="pre">grocery_bill.keys()</span></code>. Run the program again so see the alphabetical
-result.</li>
+result.</p></li>
 </ol>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -348,7 +350,7 @@ uses the loop variable <code class="docutils literal notranslate"><span class="p
 list we created in line 13 and sorted in line 14.</p>
 <p><code class="docutils literal notranslate"><span class="pre">grocery_bill[key]</span></code> still refers to a value from the dictionary, but now
 we access the values in a different (sorted) order!</p>
-<p class="last">If we print the <code class="docutils literal notranslate"><span class="pre">grocery_bill</span></code> dictionary at the end of the program, we
+<p>If we print the <code class="docutils literal notranslate"><span class="pre">grocery_bill</span></code> dictionary at the end of the program, we
 can prove that we did NOT alter the order of the key/value paris.</p>
 </div>
 <p>By adding copies of the key names to a separate list, we can sort the list to
@@ -358,7 +360,7 @@ access the values in the dictionary.</p>
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">12.4.3. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Given the code:</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -380,11 +382,11 @@ access the values in the dictionary.</p>
 </pre></div>
 </td></tr></table></div>
 <p>What is the value of <code class="docutils literal notranslate"><span class="pre">comics[key]</span></code> the <em>third</em> time through the loop?</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">'Wiley</span> <span class="pre">Miller'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'Bill</span> <span class="pre">Watterson'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'Non</span> <span class="pre">Sequitur'</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">'Calvin</span> <span class="pre">and</span> <span class="pre">Hobbs'</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">'Wiley</span> <span class="pre">Miller'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Bill</span> <span class="pre">Watterson'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Non</span> <span class="pre">Sequitur'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'Calvin</span> <span class="pre">and</span> <span class="pre">Hobbs'</span></code></p></li>
 </ol>
 </div>
 </div>

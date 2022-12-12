@@ -97,15 +97,15 @@ inside the class, but outside of constructor.</p>
 <code class="docutils literal notranslate"><span class="pre">Cat</span></code> class. We will repeat that process now, but this time we will record
 ideas about what a <code class="docutils literal notranslate"><span class="pre">Cat</span></code> object should <em>do</em>.</p>
 <div class="admonition-try-it admonition" id="brainstorm-methods">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>Let’s return to the <a class="reference internal" href="creating-classes.html#define-new-class"><span class="std std-ref">Cat class program we started desiging</span></a>.</p>
 <p>Now we are going to add a few methods to our class.
 Take a moment to think of some cat behaviors that we want our objects to
 have.</p>
-<ol class="last arabic simple">
-<li>Some ideas to include could be <code class="docutils literal notranslate"><span class="pre">make_noise()</span></code>, <code class="docutils literal notranslate"><span class="pre">increase_age()</span></code>, <code class="docutils literal notranslate"><span class="pre">eat()</span></code>, or <code class="docutils literal notranslate"><span class="pre">ignore_humans()</span></code>.</li>
-<li>Include parentheses <code class="docutils literal notranslate"><span class="pre">()</span></code> with each name, but don’t worry about setting
-parameters or coding anything yet.</li>
+<ol class="arabic simple">
+<li><p>Some ideas to include could be <code class="docutils literal notranslate"><span class="pre">make_noise()</span></code>, <code class="docutils literal notranslate"><span class="pre">increase_age()</span></code>, <code class="docutils literal notranslate"><span class="pre">eat()</span></code>, or <code class="docutils literal notranslate"><span class="pre">ignore_humans()</span></code>.</p></li>
+<li><p>Include parentheses <code class="docutils literal notranslate"><span class="pre">()</span></code> with each name, but don’t worry about setting
+parameters or coding anything yet.</p></li>
 </ol>
 </div>
 <p>Now that we have some possible <code class="docutils literal notranslate"><span class="pre">Cat</span></code> actions, let’s see how to turn them into code.</p>
@@ -128,14 +128,14 @@ parameters or coding anything yet.</li>
 </td></tr></table></div>
 <p>Note the following:</p>
 <ol class="arabic simple">
-<li>Methods are defined <em>within</em> the class, but are spearate from the properties.</li>
-<li>The <code class="docutils literal notranslate"><span class="pre">def</span></code> keyword is used to define the new method.</li>
-<li><code class="docutils literal notranslate"><span class="pre">method_name</span></code> follows the same
-<a class="reference internal" href="../functions/creating-functions.html#function-naming-rules"><span class="std std-ref">naming conventions</span></a> we use for functions.</li>
-<li>All methods must include the <code class="docutils literal notranslate"><span class="pre">self</span></code> parameter, which appears first in the
-parentheses <code class="docutils literal notranslate"><span class="pre">()</span></code>.</li>
-<li>Additional parameters may or may not be used, depending on what we need the
-method to do.</li>
+<li><p>Methods are defined <em>within</em> the class, but are spearate from the properties.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">def</span></code> keyword is used to define the new method.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">method_name</span></code> follows the same
+<a class="reference internal" href="../functions/creating-functions.html#function-naming-rules"><span class="std std-ref">naming conventions</span></a> we use for functions.</p></li>
+<li><p>All methods must include the <code class="docutils literal notranslate"><span class="pre">self</span></code> parameter, which appears first in the
+parentheses <code class="docutils literal notranslate"><span class="pre">()</span></code>.</p></li>
+<li><p>Additional parameters may or may not be used, depending on what we need the
+method to do.</p></li>
 </ol>
 </div>
 <div class="section" id="add-a-method-to-the-cat-class">
@@ -144,21 +144,21 @@ method to do.</li>
 Let’s update our <code class="docutils literal notranslate"><span class="pre">Cat</span></code> class to include <code class="docutils literal notranslate"><span class="pre">increase_age()</span></code>. This method will
 take the <code class="docutils literal notranslate"><span class="pre">age</span></code> property of a <code class="docutils literal notranslate"><span class="pre">Cat</span></code> object and make it larger.</p>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">This walkthrough is using a new replit codebase.
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>This walkthrough is using a new replit codebase.
 If you have your <code class="docutils literal notranslate"><span class="pre">Cat</span></code> program from before, you can make the same updates to your existing code.
 If using your own code, be aware that your line numbers won’t match up with the directions,
 but you should still be able to accomplish all the tasks in the directions.</p>
 </div>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>On line 6, we define a method to increase a cat’s age by 1 year. Note the
 following:</p>
 <ol class="arabic simple">
-<li>The method requires no parameters other than <code class="docutils literal notranslate"><span class="pre">self</span></code>.</li>
-<li>The statement <code class="docutils literal notranslate"><span class="pre">self.age</span> <span class="pre">+=</span> <span class="pre">1</span></code> updates the <code class="docutils literal notranslate"><span class="pre">age</span></code> property by 1 unit.</li>
-<li>No return statement is needed for this method. It takes the current value
-of the <code class="docutils literal notranslate"><span class="pre">age</span></code> property and increases it by 1.</li>
+<li><p>The method requires no parameters other than <code class="docutils literal notranslate"><span class="pre">self</span></code>.</p></li>
+<li><p>The statement <code class="docutils literal notranslate"><span class="pre">self.age</span> <span class="pre">+=</span> <span class="pre">1</span></code> updates the <code class="docutils literal notranslate"><span class="pre">age</span></code> property by 1 unit.</p></li>
+<li><p>No return statement is needed for this method. It takes the current value
+of the <code class="docutils literal notranslate"><span class="pre">age</span></code> property and increases it by 1.</p></li>
 </ol>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -177,25 +177,25 @@ of the <code class="docutils literal notranslate"><span class="pre">age</span></
 </td></tr></table></div>
 <p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/Creating_Classes-02-A" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 <p>Now do the following:</p>
-<ol class="last arabic simple">
-<li>On line 9, create a new cat object with the statement
-<code class="docutils literal notranslate"><span class="pre">cat_1</span> <span class="pre">=</span> <span class="pre">Cat('Whiskers',</span> <span class="pre">3)</span></code>.</li>
-<li>Print the value for <code class="docutils literal notranslate"><span class="pre">cat_1.age</span></code>.</li>
-<li>On line 12, call the method with the statement <code class="docutils literal notranslate"><span class="pre">cat_1.increase_age()</span></code>.
+<ol class="arabic simple">
+<li><p>On line 9, create a new cat object with the statement
+<code class="docutils literal notranslate"><span class="pre">cat_1</span> <span class="pre">=</span> <span class="pre">Cat('Whiskers',</span> <span class="pre">3)</span></code>.</p></li>
+<li><p>Print the value for <code class="docutils literal notranslate"><span class="pre">cat_1.age</span></code>.</p></li>
+<li><p>On line 12, call the method with the statement <code class="docutils literal notranslate"><span class="pre">cat_1.increase_age()</span></code>.
 No arguments are needed inside the parentheses <code class="docutils literal notranslate"><span class="pre">()</span></code>. The code
-automatically assigns <code class="docutils literal notranslate"><span class="pre">cat_1</span></code> to <code class="docutils literal notranslate"><span class="pre">self</span></code>.</li>
-<li>Print <code class="docutils literal notranslate"><span class="pre">cat_1.age</span></code> again to see its new value.</li>
+automatically assigns <code class="docutils literal notranslate"><span class="pre">cat_1</span></code> to <code class="docutils literal notranslate"><span class="pre">self</span></code>.</p></li>
+<li><p>Print <code class="docutils literal notranslate"><span class="pre">cat_1.age</span></code> again to see its new value.</p></li>
 </ol>
 </div>
 <p>As written, the <code class="docutils literal notranslate"><span class="pre">increase_age()</span></code> method only increases the value of <code class="docutils literal notranslate"><span class="pre">age</span></code>
 by 1 year. Let’s modify the method to add a user specified amount of years.</p>
 <ol class="arabic simple">
-<li>In the editor above, add another parameter in line 6. Call this variable
-<code class="docutils literal notranslate"><span class="pre">increase</span></code>, and assign it a default value of <code class="docutils literal notranslate"><span class="pre">1</span></code>.</li>
-<li>Change line 7 to be <code class="docutils literal notranslate"><span class="pre">self.age</span> <span class="pre">+=</span> <span class="pre">increase</span></code>.</li>
-<li>On line 12, include an argument inside the parentheses. Run the program
+<li><p>In the editor above, add another parameter in line 6. Call this variable
+<code class="docutils literal notranslate"><span class="pre">increase</span></code>, and assign it a default value of <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p></li>
+<li><p>Change line 7 to be <code class="docutils literal notranslate"><span class="pre">self.age</span> <span class="pre">+=</span> <span class="pre">increase</span></code>.</p></li>
+<li><p>On line 12, include an argument inside the parentheses. Run the program
 several times using different values to check your code. Also, try running
-the code without placing an argument in the method call.</li>
+the code without placing an argument in the method call.</p></li>
 </ol>
 <p>OK! The <code class="docutils literal notranslate"><span class="pre">Cat</span></code> class now has a method. All objects made from the class will be
 able to call <code class="docutils literal notranslate"><span class="pre">increase_age()</span></code>.</p>
@@ -206,7 +206,7 @@ able to call <code class="docutils literal notranslate"><span class="pre">increa
 <code class="docutils literal notranslate"><span class="pre">make_noise()</span></code>, and it will return the sound our cat makes based on its
 current mood.</p>
 <div class="admonition-try-it admonition" id="add-more-cat-methods">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>Examine the code below, then run the program.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -260,17 +260,17 @@ current mood.</p>
 is because the code contains no <code class="docutils literal notranslate"><span class="pre">print</span></code> statements! The <code class="docutils literal notranslate"><span class="pre">make_noise()</span></code>
 method <em>returns</em> a value. In order for us to see it, we need to tell the
 program to display the data.</p>
-<ol class="last arabic simple">
-<li>Put <code class="docutils literal notranslate"><span class="pre">cat_1.make_noise('hungry')</span></code> inside a <code class="docutils literal notranslate"><span class="pre">print</span></code> statement and then
-run the program. <code class="docutils literal notranslate"><span class="pre">Meow!</span></code> should appear in the console.</li>
-<li>On line 23, <code class="docutils literal notranslate"><span class="pre">cat_2.make_noise('happy')</span></code> returns a value. Assign that
+<ol class="arabic simple">
+<li><p>Put <code class="docutils literal notranslate"><span class="pre">cat_1.make_noise('hungry')</span></code> inside a <code class="docutils literal notranslate"><span class="pre">print</span></code> statement and then
+run the program. <code class="docutils literal notranslate"><span class="pre">Meow!</span></code> should appear in the console.</p></li>
+<li><p>On line 23, <code class="docutils literal notranslate"><span class="pre">cat_2.make_noise('happy')</span></code> returns a value. Assign that
 value to a new variable, then print the variable. <code class="docutils literal notranslate"><span class="pre">Purr!</span></code> should now
-show up in the console.</li>
-<li>Try changing the arguments inside the method calls. How does the method
-decide which noise to return?</li>
-<li>Add another <code class="docutils literal notranslate"><span class="pre">elif</span></code> block to the method code to deal with one more
+show up in the console.</p></li>
+<li><p>Try changing the arguments inside the method calls. How does the method
+decide which noise to return?</p></li>
+<li><p>Add another <code class="docutils literal notranslate"><span class="pre">elif</span></code> block to the method code to deal with one more
 option for <code class="docutils literal notranslate"><span class="pre">mood</span></code>. Test your code by running the program and sending the
-new mood value to the method.</li>
+new mood value to the method.</p></li>
 </ol>
 </div>
 <p>When Python comes to a method call, it evaluates that expression. If the method
@@ -282,10 +282,10 @@ returns a value, Python can then work with that result.</p>
 another look at <a class="reference internal" href="#brainstorm-methods"><span class="std std-ref">your list</span></a> and choose one item.</p>
 <p>In the editor from the <a class="reference internal" href="#add-more-cat-methods"><span class="std std-ref">Return Values section</span></a>:</p>
 <ol class="arabic simple">
-<li>Code your choice as the third method inside the <code class="docutils literal notranslate"><span class="pre">Cat</span></code> class. Your new
-method can either update a property value, return a value, or do both.</li>
-<li>At the bottom of the editor, call your new method on <code class="docutils literal notranslate"><span class="pre">cat_1</span></code> and <code class="docutils literal notranslate"><span class="pre">cat_2</span></code>
-to make sure it works as expected.</li>
+<li><p>Code your choice as the third method inside the <code class="docutils literal notranslate"><span class="pre">Cat</span></code> class. Your new
+method can either update a property value, return a value, or do both.</p></li>
+<li><p>At the bottom of the editor, call your new method on <code class="docutils literal notranslate"><span class="pre">cat_1</span></code> and <code class="docutils literal notranslate"><span class="pre">cat_2</span></code>
+to make sure it works as expected.</p></li>
 </ol>
 </div>
 <div class="section" id="improving-make-noise">
@@ -333,21 +333,21 @@ code instead of setting up a new parameter.</p>
 </pre></div>
 </td></tr></table></div>
 <ol class="arabic simple">
-<li>On line 5, we define the <code class="docutils literal notranslate"><span class="pre">mood</span></code> property and assign it a value when a new
+<li><p>On line 5, we define the <code class="docutils literal notranslate"><span class="pre">mood</span></code> property and assign it a value when a new
 <code class="docutils literal notranslate"><span class="pre">Cat</span></code> object is created. By including the <code class="docutils literal notranslate"><span class="pre">.lower()</span></code> string method here,
-we can remove it from the conditionals in <code class="docutils literal notranslate"><span class="pre">make_noise()</span></code>.</li>
-<li>Inside the <code class="docutils literal notranslate"><span class="pre">make_noise()</span></code> code block, <code class="docutils literal notranslate"><span class="pre">self.mood</span></code> accesses the current
-value of the property and compares it to the different options.</li>
-<li>If we change <code class="docutils literal notranslate"><span class="pre">mood</span></code> in a different part of our code (say, by feeding or
+we can remove it from the conditionals in <code class="docutils literal notranslate"><span class="pre">make_noise()</span></code>.</p></li>
+<li><p>Inside the <code class="docutils literal notranslate"><span class="pre">make_noise()</span></code> code block, <code class="docutils literal notranslate"><span class="pre">self.mood</span></code> accesses the current
+value of the property and compares it to the different options.</p></li>
+<li><p>If we change <code class="docutils literal notranslate"><span class="pre">mood</span></code> in a different part of our code (say, by feeding or
 petting our cat), we do not need to worry about sending in the new value
 when we call the method. Any changes to the property are immediately
-available inside the method.</li>
+available inside the method.</p></li>
 </ol>
 </div>
 <div class="section" id="check-your-understanding">
 <h2>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What is printed with this program runs?</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -396,15 +396,15 @@ available inside the method.</li>
 <span class="nb">print</span><span class="p">(</span><span class="n">fern</span><span class="o">.</span><span class="n">height</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li>5</li>
-<li>6</li>
-<li>Your plant is healthy.</li>
-<li>You’re killing your plant!</li>
+<ol class="loweralpha simple">
+<li><p>5</p></li>
+<li><p>6</p></li>
+<li><p>Your plant is healthy.</p></li>
+<li><p>You’re killing your plant!</p></li>
 </ol>
 </div>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Given <code class="docutils literal notranslate"><span class="pre">sticky</span> <span class="pre">=</span> <span class="pre">Plant('Bamboo',</span> <span class="pre">100,</span> <span class="pre">'dry')</span></code>, what would be the value for
 <code class="docutils literal notranslate"><span class="pre">height</span></code> after the following statements run?</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>22
@@ -416,11 +416,11 @@ available inside the method.</li>
 <span class="n">sticky</span><span class="o">.</span><span class="n">grow</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li>108</li>
-<li>106</li>
-<li>105</li>
-<li>104</li>
+<ol class="loweralpha simple">
+<li><p>108</p></li>
+<li><p>106</p></li>
+<li><p>105</p></li>
+<li><p>104</p></li>
 </ol>
 </div>
 </div>

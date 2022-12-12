@@ -98,7 +98,7 @@ function does its job).</p>
 <p>Seeing the difference between the two terms is tricky, and the easiest way to
 clear up the issue is with an example.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>The function <code class="docutils literal notranslate"><span class="pre">say_hello</span></code> takes a single value, which we expect to be a
 person’s name, and prints a greeting.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -113,7 +113,7 @@ person’s name, and prints a greeting.</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>Hello, Lamar!
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Hello, Lamar!
 Hello, rutabaga!
 </pre></div>
 </div>
@@ -137,10 +137,10 @@ a variable and a value. A variable <em>refers to</em> a specific value, just lik
 parameter <em>refers to</em> a specific argument when a function is called. Like a
 value, an argument is a concrete piece of data.</p>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p><strong>Arguments:</strong> Specific data values sent by the function call to a named
 function.</p>
-<p class="last"><strong>Parameters:</strong> Variables defined in a function that <em>receive</em> data. Python
+<p><strong>Parameters:</strong> Variables defined in a function that <em>receive</em> data. Python
 assigns data to these variables.</p>
 </div>
 </div>
@@ -150,14 +150,14 @@ assigns data to these variables.</p>
 that function, what happens if we provide two arguments? What if we call the function but give
 no arguments?</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">say_hello</span></code> function defines one parameter, <code class="docutils literal notranslate"><span class="pre">name</span></code>, which we expect
 to be a string value.</p>
 <ol class="arabic simple">
-<li>On line 4, call the function WITHOUT using any arguments:
-<code class="docutils literal notranslate"><span class="pre">say_hello()</span></code>.</li>
-<li>Next, try calling the function with two or more arguments:
-<code class="docutils literal notranslate"><span class="pre">say_hello('Soda',</span> <span class="pre">'Pop')</span></code>.</li>
+<li><p>On line 4, call the function WITHOUT using any arguments:
+<code class="docutils literal notranslate"><span class="pre">say_hello()</span></code>.</p></li>
+<li><p>Next, try calling the function with two or more arguments:
+<code class="docutils literal notranslate"><span class="pre">say_hello('Soda',</span> <span class="pre">'Pop')</span></code>.</p></li>
 </ol>
 <p>What error messages do you see?</p>
 <div class="highlight-py notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -171,7 +171,7 @@ to be a string value.</p>
 <span class="c1"># Try calling the say_hello function with either no arguments or more than one argument.</span>
 </pre></div>
 </td></tr></table></div>
-<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/ArgumentParameterMismatch" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/ArgumentParameterMismatch" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
 <p>In this example, we receive a <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> message each time we call the
 <code class="docutils literal notranslate"><span class="pre">say_hello</span></code> function with the wrong number of arguments. As defined in line
@@ -195,7 +195,7 @@ assign it the default value IF its argument is missing from the function call.</
 <p>Applied to the <code class="docutils literal notranslate"><span class="pre">say_hello</span></code> function from the previous example, this looks
 like:</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -208,7 +208,7 @@ like:</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>Hello, RBG!
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Hello, RBG!
 Hello, World!
 </pre></div>
 </div>
@@ -220,7 +220,7 @@ assigns the value <code class="docutils literal notranslate"><span class="pre">'
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">11.4.4. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What does the following code output?</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -233,11 +233,11 @@ assigns the value <code class="docutils literal notranslate"><span class="pre">'
 <span class="n">string_repeater</span><span class="p">(</span><span class="s1">&#39;Bob&#39;</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<ol class="last loweralpha simple">
-<li>“BobBob”</li>
-<li>Nothing (no output)</li>
-<li>repeated</li>
-<li>The value of a_string</li>
+<ol class="loweralpha simple">
+<li><p>“BobBob”</p></li>
+<li><p>Nothing (no output)</p></li>
+<li><p>repeated</p></li>
+<li><p>The value of a_string</p></li>
 </ol>
 </div>
 </div>

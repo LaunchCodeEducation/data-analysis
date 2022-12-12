@@ -90,7 +90,7 @@
 <a class="reference internal" href="../data-and-variables/other-operators.html#string-concatenation"><span class="std std-ref">combine strings and variables together</span></a> in order
 to create a specific output:</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -105,11 +105,11 @@ to create a specific output:</p>
 </pre></div>
 </div>
 <p>Note the following:</p>
-<ol class="last arabic simple">
-<li>We must include spaces inside each of the strings to make the output
-readable. Without the spaces, line 4 prints <code class="docutils literal notranslate"><span class="pre">Nextyear,Jackwillbe10.</span></code></li>
-<li>In order to concatenate, we must convert the <code class="docutils literal notranslate"><span class="pre">int</span></code> value from the
-expression <code class="docutils literal notranslate"><span class="pre">current_age</span> <span class="pre">+</span> <span class="pre">1</span></code> into the <code class="docutils literal notranslate"><span class="pre">str</span></code> data type.</li>
+<ol class="arabic simple">
+<li><p>We must include spaces inside each of the strings to make the output
+readable. Without the spaces, line 4 prints <code class="docutils literal notranslate"><span class="pre">Nextyear,Jackwillbe10.</span></code></p></li>
+<li><p>In order to concatenate, we must convert the <code class="docutils literal notranslate"><span class="pre">int</span></code> value from the
+expression <code class="docutils literal notranslate"><span class="pre">current_age</span> <span class="pre">+</span> <span class="pre">1</span></code> into the <code class="docutils literal notranslate"><span class="pre">str</span></code> data type.</p></li>
 </ol>
 </div>
 <p>While it does work, concatenation quickly gets tedious for any output that
@@ -140,9 +140,9 @@ conversions.</p>
 <p>Template literals allow us to insert variables and other expressions directly
 into strings. To accomplish this, we need:</p>
 <ol class="arabic simple">
-<li>A string that includes curly braces <code class="docutils literal notranslate"><span class="pre">{}</span></code>.</li>
-<li>The <code class="docutils literal notranslate"><span class="pre">.format()</span></code> method.</li>
-<li>A value to insert into each set of braces.</li>
+<li><p>A string that includes curly braces <code class="docutils literal notranslate"><span class="pre">{}</span></code>.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">.format()</span></code> method.</p></li>
+<li><p>A value to insert into each set of braces.</p></li>
 </ol>
 <p>The general syntax is:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">string_with_braces</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">value_1</span><span class="p">,</span> <span class="n">value_2</span><span class="p">,</span> <span class="n">etc</span><span class="o">.</span><span class="p">)</span>
@@ -150,7 +150,7 @@ into strings. To accomplish this, we need:</p>
 </div>
 <p>The values inside <code class="docutils literal notranslate"><span class="pre">format()</span></code> can be numbers, strings, variables, or expressions.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Compare the difference between printing <code class="docutils literal notranslate"><span class="pre">output</span></code> by itself vs. printing
 <code class="docutils literal notranslate"><span class="pre">output.format()</span></code>.</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -167,7 +167,7 @@ into strings. To accomplish this, we need:</p>
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>Next year, {} will be {}.
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Next year, {} will be {}.
 Next year, Jack will be 10.
 </pre></div>
 </div>
@@ -175,18 +175,18 @@ Next year, Jack will be 10.
 <p>Python works from left to right through the string, replacing each placeholder
 with the next value inside <code class="docutils literal notranslate"><span class="pre">format()</span></code>.</p>
 <div class="admonition-try-it admonition">
-<p class="first admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
+<p class="admonition-title"><i class="fas fa-puzzle-piece" aria-hidden="true"></i>Try It!</p>
 <p>Experiment with the <code class="docutils literal notranslate"><span class="pre">format()</span></code> string method.</p>
 <ol class="arabic simple">
-<li>Run the program several times with different values for <code class="docutils literal notranslate"><span class="pre">my_string</span></code> and
-<code class="docutils literal notranslate"><span class="pre">my_number</span></code>.</li>
-<li>Change the order of <code class="docutils literal notranslate"><span class="pre">my_number</span></code> and <code class="docutils literal notranslate"><span class="pre">my_string</span></code> inside the <code class="docutils literal notranslate"><span class="pre">format</span></code>
-parentheses. What happens?</li>
-<li>Change the location of one set of <code class="docutils literal notranslate"><span class="pre">{}</span></code> in <code class="docutils literal notranslate"><span class="pre">output</span></code>. What happens?</li>
-<li>Remove one set of <code class="docutils literal notranslate"><span class="pre">{}</span></code> from <code class="docutils literal notranslate"><span class="pre">output</span></code> and run the program. What
-happens?</li>
-<li>Use four or more <code class="docutils literal notranslate"><span class="pre">{}</span></code> inside <code class="docutils literal notranslate"><span class="pre">output</span></code> and run the program. What
-happens?</li>
+<li><p>Run the program several times with different values for <code class="docutils literal notranslate"><span class="pre">my_string</span></code> and
+<code class="docutils literal notranslate"><span class="pre">my_number</span></code>.</p></li>
+<li><p>Change the order of <code class="docutils literal notranslate"><span class="pre">my_number</span></code> and <code class="docutils literal notranslate"><span class="pre">my_string</span></code> inside the <code class="docutils literal notranslate"><span class="pre">format</span></code>
+parentheses. What happens?</p></li>
+<li><p>Change the location of one set of <code class="docutils literal notranslate"><span class="pre">{}</span></code> in <code class="docutils literal notranslate"><span class="pre">output</span></code>. What happens?</p></li>
+<li><p>Remove one set of <code class="docutils literal notranslate"><span class="pre">{}</span></code> from <code class="docutils literal notranslate"><span class="pre">output</span></code> and run the program. What
+happens?</p></li>
+<li><p>Use four or more <code class="docutils literal notranslate"><span class="pre">{}</span></code> inside <code class="docutils literal notranslate"><span class="pre">output</span></code> and run the program. What
+happens?</p></li>
 </ol>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -207,13 +207,13 @@ happens?</li>
 <span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">my_string</span><span class="p">,</span> <span class="n">my_number</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">my_expression</span><span class="p">)))</span>
 </pre></div>
 </td></tr></table></div>
-<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/FormatPractice" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/FormatPractice" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p>Python fills the empty braces <code class="docutils literal notranslate"><span class="pre">{}</span></code> from left to right through the string,
 and it uses the values given in <code class="docutils literal notranslate"><span class="pre">format</span></code> from left to right as well.</p>
-<p class="last">If you are missing a brace, any input you expected to see might be in an different spot.
+<p>If you are missing a brace, any input you expected to see might be in an different spot.
 With too many braces, an error will be thrown and a message will pop up.
 Either way, the output will not be what you expected.</p>
 </div>
@@ -221,7 +221,7 @@ Either way, the output will not be what you expected.</p>
 <h3><span class="section-number">8.7.1.1. </span>Index Values with <code class="docutils literal notranslate"><span class="pre">format()</span></code><a class="headerlink" href="#index-values-with-format" title="Permalink to this headline">¶</a></h3>
 <p>What if we want to use the same value multiple times in a string?</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Let’s take the case where we add a number to itself three times:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_num</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> + </span><span class="si">{}</span><span class="s1"> + </span><span class="si">{}</span><span class="s1"> = </span><span class="si">{}</span><span class="s1">&#39;</span>
@@ -230,7 +230,7 @@ Either way, the output will not be what you expected.</p>
 </pre></div>
 </div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>10 + 10 + 10 = 30
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>10 + 10 + 10 = 30
 </pre></div>
 </div>
 </div>
@@ -242,7 +242,7 @@ These <strong>indices</strong> (a plural of index)
 refer to the items inside <code class="docutils literal notranslate"><span class="pre">format()</span></code>, and the indexes begin with 0.
 Zero-based counting strikes again!</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Let’s add index values to the template literal:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_num</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">output</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{0}</span><span class="s1"> + </span><span class="si">{0}</span><span class="s1"> + </span><span class="si">{0}</span><span class="s1"> = </span><span class="si">{1}</span><span class="s1">&#39;</span>
@@ -251,7 +251,7 @@ Zero-based counting strikes again!</p>
 </pre></div>
 </div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>10 + 10 + 10 = 30
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>10 + 10 + 10 = 30
 </pre></div>
 </div>
 </div>
@@ -263,24 +263,24 @@ by adding <code class="docutils literal notranslate"><span class="pre">{2}</span
 <p>Index values in template literals are flexible. The order of the values in curly
 braces does not need to match the order of the values within <code class="docutils literal notranslate"><span class="pre">format()</span></code>.</p>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;Hello, </span><span class="si">{1}</span><span class="s2">. You turn </span><span class="si">{0}</span><span class="s2"> years old today. Happy birthday, </span><span class="si">{1}</span><span class="s2">!&quot;</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;Anna&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>Hello, Anna. You turn 5 years old today. Happy birthday, Anna!
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Hello, Anna. You turn 5 years old today. Happy birthday, Anna!
 </pre></div>
 </div>
 </div>
 <p>Notice how the string <code class="docutils literal notranslate"><span class="pre">'Anna'</span></code> is used first in the print statement, even though it
 comes second within <code class="docutils literal notranslate"><span class="pre">format()</span></code>.</p>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
 <p>Even if you do not think you will need indicies in a template literal, it is
 a good idea to use them anyway!</p>
-<p class="last">In this book, most of the template literals used in the examples and starter
+<p>In this book, most of the template literals used in the examples and starter
 code will contain index values.</p>
 </div>
 </div>
@@ -295,12 +295,12 @@ expressions into a string. The new format is called an <strong>f-string</strong>
 </div>
 <p>Items to note:</p>
 <ol class="arabic simple">
-<li>f-strings begin with the character <code class="docutils literal notranslate"><span class="pre">f</span></code>, followed by the string in quotes.</li>
-<li>Instead of index values, variable names or expressions are placed inside the
-curly braces <code class="docutils literal notranslate"><span class="pre">{}</span></code>.</li>
+<li><p>f-strings begin with the character <code class="docutils literal notranslate"><span class="pre">f</span></code>, followed by the string in quotes.</p></li>
+<li><p>Instead of index values, variable names or expressions are placed inside the
+curly braces <code class="docutils literal notranslate"><span class="pre">{}</span></code>.</p></li>
 </ol>
 <div class="admonition-example admonition">
-<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
 <p>Let’s refactor an earlier example to use an f-string:</p>
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
@@ -314,7 +314,7 @@ curly braces <code class="docutils literal notranslate"><span class="pre">{}</sp
 </pre></div>
 </td></tr></table></div>
 <p><strong>Console Output</strong></p>
-<div class="last highlight-none notranslate"><div class="highlight"><pre><span></span>Next year, Jack will be 10.
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Next year, Jack will be 10.
 </pre></div>
 </div>
 </div>
@@ -323,19 +323,19 @@ expressions inside the braces replaces the index values. When Python comes
 across an <code class="docutils literal notranslate"><span class="pre">f</span></code> in front of a string, it evaluates everything within the curly
 braces and inserts the results into the string.</p>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p>We won’t discuss f-strings further in this book. If you are interested in
 digging deeper, here are a couple of places to start:</p>
-<ol class="last arabic simple">
-<li><a class="reference external" href="https://realpython.com/python-string-formatting/" target="_blank">Python String Formatting Best Practices<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>,</li>
-<li><a class="reference external" href="https://realpython.com/python-f-strings/" target="_blank">Python 3’s f-Strings<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</li>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://realpython.com/python-string-formatting/" target="_blank">Python String Formatting Best Practices<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>,</p></li>
+<li><p><a class="reference external" href="https://realpython.com/python-f-strings/" target="_blank">Python 3’s f-Strings<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
 </ol>
 </div>
 </div>
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">8.7.3. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
-<p class="first admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Mad Libs are games where one player asks a group to supply random words
 (e.g. “Give me a verb,” or, “I need a color”). The words are substituted
 into blanks within a story, which is then read for everyone’s amusement.</p>
@@ -363,7 +363,7 @@ a template literal. Be sure to add your own choices for the variables!</p>
 <span class="nb">print</span><span class="p">(</span><span class="n">mad_lib</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<p class="repl-link last"><a class="reference external" href="https://repl.it/&#64;launchcode/MadLibConceptCheck" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p class="repl-link"><a class="reference external" href="https://repl.it/&#64;launchcode/MadLibConceptCheck" target="_blank">repl.it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 </div>
 </div>
 </div>

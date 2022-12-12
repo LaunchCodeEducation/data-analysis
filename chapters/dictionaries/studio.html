@@ -88,8 +88,8 @@
 <h1><span class="section-number">12.9. </span>Studio: Mad Dictionaries<a class="headerlink" href="#studio-mad-dictionaries" title="Permalink to this headline">¶</a></h1>
 <p>Let’s use dictionaries to play Mad-Libs!</p>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">If you are not familiar with Mad-Libs, you can learn about them
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>If you are not familiar with Mad-Libs, you can learn about them
 <a class="reference external" href="https://en.wikipedia.org/wiki/Mad_Libs#Format" target="_blank">here<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>, and then play a
 few <a class="reference external" href="http://www.madlibs.com/" target="_blank">short samples<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> with your friends.</p>
 </div>
@@ -157,29 +157,27 @@ to provide. For example, if they need to give a verb for the sentence, <code cla
 <p>Note the <code class="docutils literal notranslate"><span class="pre">_</span></code> and <code class="docutils literal notranslate"><span class="pre">/</span></code> symbols on each side of the label <code class="docutils literal notranslate"><span class="pre">verb1</span></code>. We will
 use this notation to indicate where the player needs to fill in a blank.</p>
 <ol class="arabic">
-<li><p class="first">In the starter code, find the <code class="docutils literal notranslate"><span class="pre">main()</span></code> function. Assign the <code class="docutils literal notranslate"><span class="pre">mad_lib</span></code>
-variable a short Mad-Lib type sentence.</p>
-</li>
-<li><p class="first">Your <code class="docutils literal notranslate"><span class="pre">mad_lib</span></code> text should contain two or three blanks where the player
+<li><p>In the starter code, find the <code class="docutils literal notranslate"><span class="pre">main()</span></code> function. Assign the <code class="docutils literal notranslate"><span class="pre">mad_lib</span></code>
+variable a short Mad-Lib type sentence.</p></li>
+<li><p>Your <code class="docutils literal notranslate"><span class="pre">mad_lib</span></code> text should contain two or three blanks where the player
 will need to suggest words. For example:</p>
 <p><code class="docutils literal notranslate"><span class="pre">&quot;My</span> <span class="pre">_noun1/</span> <span class="pre">colors</span> <span class="pre">are</span> <span class="pre">_color1/</span> <span class="pre">and</span> <span class="pre">_color2/.&quot;</span></code></p>
 <p>Here, the player would be asked to give one noun and two colors to complete
 the sentence.</p>
 </li>
-<li><p class="first">For now, keep the text simple. You can use more complicated Mad-Lib strings
-later.</p>
-</li>
+<li><p>For now, keep the text simple. You can use more complicated Mad-Lib strings
+later.</p></li>
 </ol>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p>You do not have to use <code class="docutils literal notranslate"><span class="pre">_</span></code> and <code class="docutils literal notranslate"><span class="pre">/</span></code> around a label, but you should use a
 different symbol on each side. Just choose symbols that are NOT usually used
 in normal text.</p>
 <p>Examples:</p>
-<ol class="last loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">{noun1}</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">*noun1_</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">^noun1|</span></code></li>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">{noun1}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*noun1_</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">^noun1|</span></code></p></li>
 </ol>
 </div>
 </div>
@@ -192,47 +190,40 @@ in as the argument.</p>
 them into keys for a new dictionary. The function then returns that dictionary.</p>
 <p>Code the <code class="docutils literal notranslate"><span class="pre">create_madlib_dict</span></code> function:</p>
 <ol class="arabic">
-<li><p class="first">Line 1 defines the function and takes a string as a parameter. Line 2 splits
-the <code class="docutils literal notranslate"><span class="pre">mlib_string</span></code> into a list of words.</p>
-</li>
-<li><p class="first">On line 3, print <code class="docutils literal notranslate"><span class="pre">words</span></code> to see what this list looks like (run the
+<li><p>Line 1 defines the function and takes a string as a parameter. Line 2 splits
+the <code class="docutils literal notranslate"><span class="pre">mlib_string</span></code> into a list of words.</p></li>
+<li><p>On line 3, print <code class="docutils literal notranslate"><span class="pre">words</span></code> to see what this list looks like (run the
 program). Note that the <code class="docutils literal notranslate"><span class="pre">_</span></code> and <code class="docutils literal notranslate"><span class="pre">/</span></code> symbols remain with the words we
 want the player to suggest.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;My&#39;, &#39;_noun1/&#39;, &#39;colors&#39;, &#39;are&#39;, &#39;_color1/&#39;, &#39;and&#39;, &#39;_color2/.&#39;]
 </pre></div>
 </div>
 </li>
-<li><p class="first">Replace the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement with <code class="docutils literal notranslate"><span class="pre">new_dict</span> <span class="pre">=</span> <span class="pre">{}</span></code>, to create an empty
-dictionary.</p>
-</li>
-<li><p class="first">Now add a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop. It should:</p>
+<li><p>Replace the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement with <code class="docutils literal notranslate"><span class="pre">new_dict</span> <span class="pre">=</span> <span class="pre">{}</span></code>, to create an empty
+dictionary.</p></li>
+<li><p>Now add a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop. It should:</p>
 <ol class="loweralpha">
-<li><p class="first">Iterate through the <code class="docutils literal notranslate"><span class="pre">words</span></code> list.</p>
-</li>
-<li><p class="first">Check each word to see if it contains the underscore <code class="docutils literal notranslate"><span class="pre">_</span></code> symbol.</p>
-</li>
-<li><p class="first">If <code class="docutils literal notranslate"><span class="pre">True</span></code>, take a <em>slice</em> from the word and assign it to a variable.
+<li><p>Iterate through the <code class="docutils literal notranslate"><span class="pre">words</span></code> list.</p></li>
+<li><p>Check each word to see if it contains the underscore <code class="docutils literal notranslate"><span class="pre">_</span></code> symbol.</p></li>
+<li><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, take a <em>slice</em> from the word and assign it to a variable.
 The slice should NOT include the symbols or any punctuation.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">key</span> <span class="o">=</span> <span class="n">word</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="n">word</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)]</span> <span class="c1"># Returns the characters between _ and /</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">If <code class="docutils literal notranslate"><span class="pre">True</span></code>, add a new key/value pair to <code class="docutils literal notranslate"><span class="pre">new_dict</span></code>. Use <code class="docutils literal notranslate"><span class="pre">key</span></code> for
-the key, and use the empty string as the value.</p>
-</li>
-<li><p class="first">No <code class="docutils literal notranslate"><span class="pre">else</span></code> statement is required for the <code class="docutils literal notranslate"><span class="pre">if</span></code>.</p>
-</li>
+<li><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, add a new key/value pair to <code class="docutils literal notranslate"><span class="pre">new_dict</span></code>. Use <code class="docutils literal notranslate"><span class="pre">key</span></code> for
+the key, and use the empty string as the value.</p></li>
+<li><p>No <code class="docutils literal notranslate"><span class="pre">else</span></code> statement is required for the <code class="docutils literal notranslate"><span class="pre">if</span></code>.</p></li>
 </ol>
 </li>
-<li><p class="first">Print <code class="docutils literal notranslate"><span class="pre">new_dict</span></code> after the loop to check your progress. Properly done,
+<li><p>Print <code class="docutils literal notranslate"><span class="pre">new_dict</span></code> after the loop to check your progress. Properly done,
 it should look something like:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;noun1&#39;: &#39;&#39;, &#39;color1&#39;: &#39;&#39;, &#39;color2&#39;: &#39;&#39;}
 </pre></div>
 </div>
 </li>
-<li><p class="first">Remove the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement and return <code class="docutils literal notranslate"><span class="pre">new_dict</span></code> from the function.
-This gets assigned to the <code class="docutils literal notranslate"><span class="pre">mlib_dict</span></code> variable in <code class="docutils literal notranslate"><span class="pre">main()</span></code>.</p>
-</li>
+<li><p>Remove the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement and return <code class="docutils literal notranslate"><span class="pre">new_dict</span></code> from the function.
+This gets assigned to the <code class="docutils literal notranslate"><span class="pre">mlib_dict</span></code> variable in <code class="docutils literal notranslate"><span class="pre">main()</span></code>.</p></li>
 </ol>
 </div>
 <div class="section" id="part-3-query-the-user">
@@ -250,17 +241,14 @@ player for each of the words needed in the Mad-Lib.</p>
 dictionary you built in part 2. You need to add a loop to replace the values in
 the collection with player-supplied words.</p>
 <ol class="arabic">
-<li><p class="first">Set up a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop to iterate through the keys in <code class="docutils literal notranslate"><span class="pre">answers_dict</span></code>.</p>
-</li>
-<li><p class="first">Each time the loop repeats, prompt the player to supply one of the missing
+<li><p>Set up a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop to iterate through the keys in <code class="docutils literal notranslate"><span class="pre">answers_dict</span></code>.</p></li>
+<li><p>Each time the loop repeats, prompt the player to supply one of the missing
 words. Use the key name as part of the prompt. Note that any numbers in the
 key name should NOT be displayed in the prompt, so <code class="docutils literal notranslate"><span class="pre">noun1</span></code> shows up as
-just <code class="docutils literal notranslate"><span class="pre">noun</span></code>.</p>
-</li>
-<li><p class="first">When the player enters a word, update the dictionary to link the current key
-to that word. The word should be all lowercase.</p>
-</li>
-<li><p class="first">Print <code class="docutils literal notranslate"><span class="pre">answers_dict</span></code> after the loop to check your progress. Properly done,
+just <code class="docutils literal notranslate"><span class="pre">noun</span></code>.</p></li>
+<li><p>When the player enters a word, update the dictionary to link the current key
+to that word. The word should be all lowercase.</p></li>
+<li><p>Print <code class="docutils literal notranslate"><span class="pre">answers_dict</span></code> after the loop to check your progress. Properly done,
 the output should look something like:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;noun1&#39;: &#39;school&#39;, &#39;color1&#39;: &#39;salmon&#39;, &#39;color2&#39;: &#39;brown&#39;}
 </pre></div>
@@ -268,9 +256,8 @@ the output should look something like:</p>
 <p><code class="docutils literal notranslate"><span class="pre">'school',</span> <span class="pre">'salmon'</span></code>, and <code class="docutils literal notranslate"><span class="pre">'brown'</span></code> were the words entered in the
 console.</p>
 </li>
-<li><p class="first">Remove the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement and return <code class="docutils literal notranslate"><span class="pre">answers_dict</span></code> from the
-function.</p>
-</li>
+<li><p>Remove the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement and return <code class="docutils literal notranslate"><span class="pre">answers_dict</span></code> from the
+function.</p></li>
 </ol>
 <p>Back in the <code class="docutils literal notranslate"><span class="pre">main()</span></code> function, the returned dictionary gets assigned to the
 <code class="docutils literal notranslate"><span class="pre">user_responses</span></code> variable.</p>
@@ -285,29 +272,26 @@ get assigned to the <code class="docutils literal notranslate"><span class="pre"
 <p>We want <code class="docutils literal notranslate"><span class="pre">create_output</span></code> to build and <em>return</em> the final message. The function
 will NOT print the message.</p>
 <div class="admonition-note admonition">
-<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
-<p class="last">Yep. It’s time to use the accumulator pattern again!</p>
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>Yep. It’s time to use the accumulator pattern again!</p>
 </div>
 <ol class="arabic">
-<li><p class="first">Instead of the empty string, the accumulator variable <code class="docutils literal notranslate"><span class="pre">new_text</span></code> is
+<li><p>Instead of the empty string, the accumulator variable <code class="docutils literal notranslate"><span class="pre">new_text</span></code> is
 assigned the original text. This is important, and you will see why soon.
-For now, just roll with it.</p>
-</li>
-<li><p class="first">Code a <code class="docutils literal notranslate"><span class="pre">for</span></code> statement to loop through <code class="docutils literal notranslate"><span class="pre">ml_dict.items()</span></code>. If you need to
+For now, just roll with it.</p></li>
+<li><p>Code a <code class="docutils literal notranslate"><span class="pre">for</span></code> statement to loop through <code class="docutils literal notranslate"><span class="pre">ml_dict.items()</span></code>. If you need to
 review this idea, look back at the
-<a class="reference internal" href="dictionary-iteration.html#key-value-iteration"><span class="std std-ref">Loop by Key/Value Pairs</span></a> section.</p>
-</li>
-<li><p class="first">Inside the loop, paste the following statements:</p>
+<a class="reference internal" href="dictionary-iteration.html#key-value-iteration"><span class="std std-ref">Loop by Key/Value Pairs</span></a> section.</p></li>
+<li><p>Inside the loop, paste the following statements:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;_&#39;</span> <span class="o">+</span> <span class="n">key</span> <span class="o">+</span> <span class="s1">&#39;/&#39;</span>
 <span class="n">new_text</span> <span class="o">=</span> <span class="n">new_text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">key</span></code> and <code class="docutils literal notranslate"><span class="pre">value</span></code> are the names of the two loop variables.</p>
 </li>
-<li><p class="first">Next, return <code class="docutils literal notranslate"><span class="pre">new_text</span></code>, which gets assigned to the <code class="docutils literal notranslate"><span class="pre">output</span></code> variable in
-<code class="docutils literal notranslate"><span class="pre">main()</span></code>.</p>
-</li>
-<li><p class="first">Now check to see if your function produces the expected Mad-Lib. In
+<li><p>Next, return <code class="docutils literal notranslate"><span class="pre">new_text</span></code>, which gets assigned to the <code class="docutils literal notranslate"><span class="pre">output</span></code> variable in
+<code class="docutils literal notranslate"><span class="pre">main()</span></code>.</p></li>
+<li><p>Now check to see if your function produces the expected Mad-Lib. In
 <code class="docutils literal notranslate"><span class="pre">main()</span></code>, add a <code class="docutils literal notranslate"><span class="pre">print</span></code> statement to display the value of <code class="docutils literal notranslate"><span class="pre">output</span></code> on
 the screen.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Choose a(n) noun:  School
@@ -319,14 +303,14 @@ My school colors are salmon and brown.
 </li>
 </ol>
 <div class="admonition-tip admonition">
-<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
+<p class="admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
 <p>Why <code class="docutils literal notranslate"><span class="pre">new_text</span> <span class="pre">=</span> <span class="pre">text</span></code> instead of <code class="docutils literal notranslate"><span class="pre">new_text</span> <span class="pre">=</span> <span class="pre">''</span></code>? This has to do with
 the <code class="docutils literal notranslate"><span class="pre">replace</span></code> statement in the loop.</p>
 <ol class="arabic simple">
-<li>Try running the program with <code class="docutils literal notranslate"><span class="pre">new_text</span> <span class="pre">=</span> <span class="pre">''</span></code>. What do you notice about
-the output?</li>
-<li>Try running the program with <code class="docutils literal notranslate"><span class="pre">new_text</span> <span class="pre">=</span> <span class="pre">text.replace(label,</span> <span class="pre">value)</span></code>
-inside the loop. What do you notice about the output?</li>
+<li><p>Try running the program with <code class="docutils literal notranslate"><span class="pre">new_text</span> <span class="pre">=</span> <span class="pre">''</span></code>. What do you notice about
+the output?</p></li>
+<li><p>Try running the program with <code class="docutils literal notranslate"><span class="pre">new_text</span> <span class="pre">=</span> <span class="pre">text.replace(label,</span> <span class="pre">value)</span></code>
+inside the loop. What do you notice about the output?</p></li>
 </ol>
 <p>The <code class="docutils literal notranslate"><span class="pre">replace</span></code> method creates a new string that swaps one of the labels
 (like <code class="docutils literal notranslate"><span class="pre">_noun1/</span></code>) with a different word. However, if <code class="docutils literal notranslate"><span class="pre">new_text</span> <span class="pre">=</span> <span class="pre">''</span></code>,
@@ -334,7 +318,7 @@ then the <code class="docutils literal notranslate"><span class="pre">replace</s
 becomes anything other than the empty string.</p>
 <p><code class="docutils literal notranslate"><span class="pre">new_text</span> <span class="pre">=</span> <span class="pre">text.replace(label,</span> <span class="pre">value)</span></code> always uses the <em>unchanged</em>
 <code class="docutils literal notranslate"><span class="pre">text</span></code> string as a starting point, so only the <em>last</em> trade gets saved.</p>
-<p class="last">To preserve <em>all</em> of the replacements, <code class="docutils literal notranslate"><span class="pre">new_text</span></code> needs to start with the
+<p>To preserve <em>all</em> of the replacements, <code class="docutils literal notranslate"><span class="pre">new_text</span></code> needs to start with the
 same labels as <code class="docutils literal notranslate"><span class="pre">text</span></code>, then get reassigned after each change is made.</p>
 </div>
 </div>
@@ -342,10 +326,10 @@ same labels as <code class="docutils literal notranslate"><span class="pre">text
 <h2><span class="section-number">12.9.5. </span>Part 5: Try Bigger Mad-Libs<a class="headerlink" href="#part-5-try-bigger-mad-libs" title="Permalink to this headline">¶</a></h2>
 <p>Now that your program runs, it’s time to play!</p>
 <ol class="arabic simple">
-<li>Try giving your program a Mad-Lib with more than 2 or 3 blanks to fill.</li>
-<li>What happens if you use a label with more than one word, like
-<code class="docutils literal notranslate"><span class="pre">_plural</span> <span class="pre">noun1/</span></code>? Is this a <em>code</em> issue, or a <em>label syntax</em> issue?</li>
-<li>Ask your teacher to play your Mad-Lib game!</li>
+<li><p>Try giving your program a Mad-Lib with more than 2 or 3 blanks to fill.</p></li>
+<li><p>What happens if you use a label with more than one word, like
+<code class="docutils literal notranslate"><span class="pre">_plural</span> <span class="pre">noun1/</span></code>? Is this a <em>code</em> issue, or a <em>label syntax</em> issue?</p></li>
+<li><p>Ask your teacher to play your Mad-Lib game!</p></li>
 </ol>
 </div>
 <div class="section" id="part-6-bonus-mission">
