@@ -4,7 +4,7 @@ Studio: Exploratory Data Analysis
 Getting Started
 ---------------
 
-Fork this `GitHub repository <https://github.com/speudusa/IMDB-Studio/blob/main/IMDB-Studio.ipynb>`__ and 
+Fork this `GitHub repository <https://github.com/launchcodeeducation/IMDB-Studio/blob/main/IMDB-Studio.ipynb>`__ and 
 clone to your computer.  If you need a refresher on how to do this 
 see :ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`.
 

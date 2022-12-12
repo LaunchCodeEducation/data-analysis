@@ -14,7 +14,7 @@ have to re-submit any previous checkpoints unless your mentor requests you do so
 Getting Started
 ---------------
 
-Fork `this GitHub repository <https://github.com/gildedgardenia/checkpoint-five>`__ and clone it to your 
+Fork `this GitHub repository <https://github.com/launchcodeeducation/checkpoint-five>`__ and clone it to your 
 computer. Follow the instructions within the notebook to create a linear regression model with your cleaned 
 dataset. If it doesn't work out very well, that is alright. The most important thing is that you train a 
 model and summarize the results.

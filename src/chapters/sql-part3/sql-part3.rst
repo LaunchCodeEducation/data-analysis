@@ -1,28 +1,26 @@
 SQL Part 3 - Joins
 ==================
 
-Reading
--------
-
 Read the following articles, and watch the videos.
 
-**Joins:**
+SQL Joins
+---------
+1. `SQL join types <https://www.metabase.com/learn/sql-questions/sql-join-types>`__.
 
-`SQL join types <https://www.metabase.com/learn/sql-questions/sql-join-types>`__.
+2. `SQL | Join (Inner, Left, Right and Full Joins) <https://www.geeksforgeeks.org/sql-join-set-1-inner-left-right-and-full-joins/>`__.
 
-`SQL | Join (Inner, Left, Right and Full Joins) <https://www.geeksforgeeks.org/sql-join-set-1-inner-left-right-and-full-joins/>`__.
+3. `SQL Joins Explained |¦| Joins in SQL |¦| SQL Tutorial Part 1 <https://www.youtube.com/watch?v=9yeOJ0ZMUYw>`__.
 
-`SQL Joins Explained |¦| Joins in SQL |¦| SQL Tutorial Part 1 <https://www.youtube.com/watch?v=9yeOJ0ZMUYw>`__.
+4. `SQL Joins Examples |¦| Joins in SQL |¦| SQL Tutorial Part 2 <https://www.youtube.com/watch?v=Jh_pvk48jHA>`__.
 
-`SQL Joins Examples |¦| Joins in SQL |¦| SQL Tutorial Part 2 <https://www.youtube.com/watch?v=Jh_pvk48jHA>`__.
-
-**HAVING clause:**
+HAVING clause
+-------------
 
 | The HAVING clause is very similar to a WHERE clause in that it is used to filter result sets. However, we cannot use the WHERE clause with aggregate functions. Instead, we have to use the HAVING clause. If you want to use an aggregate function with a join, then you need to make use of this new clause. The HAVING clause is often used with GROUP BY.
 
-`SQL HAVING <https://www.sqltutorial.org/sql-having/>`__.
+5. `SQL HAVING <https://www.sqltutorial.org/sql-having/>`__.
 
-`Intermediate SQL Tutorial | Having Clause <https://www.youtube.com/watch?v=tYBOMw7Ob8E>`__.
+6. `Intermediate SQL Tutorial | Having Clause <https://www.youtube.com/watch?v=tYBOMw7Ob8E>`__.
 
 Check Your Understanding
 ------------------------
