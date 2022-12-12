@@ -31,7 +31,7 @@ Download `FIE Fencing Womens Foil data set <https://www.kaggle.com/datasets/amic
 .. figure:: figures/download-multi-files.png
    :alt: An orange arrow points to the ``Download`` bubble, highlighting the ``Download`` option of kaggle.
 
-#. Open the csv file in Tableau Public.  
+#. Open the CSV file in Tableau Public.  
 #. When you open this data set, you may want to create a relationship between the CSV files.
 
    #. You will explore this in the EDA section below.
