@@ -86,6 +86,247 @@
     
   <div class="section" id="studio-tableau-part-2-data-preparation">
 <h1><span class="section-number">26.3. </span>Studio: Tableau Part 2 - Data Preparation<a class="headerlink" href="#studio-tableau-part-2-data-preparation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="getting-started">
+<h2><span class="section-number">26.3.1. </span>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="background">
+<h3><span class="section-number">26.3.1.1. </span>Background:<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h3>
+<p>This dataset used in this studio was created by the Institute of Museums and Library Services (IMLS).  We
+will be exploring data from the Fiscal Year 2014.  Documentation of this survey can be found <a class="reference external" href="https://www.imls.gov/sites/default/files/fy2014_pls_data_file_documentation.pdf" target="_blank">here<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> if you would like to learn more about the survey.  The survey collected data for each state and the District of Columbia.</p>
+</div>
+<div class="section" id="working-through-the-studio">
+<h3><span class="section-number">26.3.1.2. </span>Working Through the Studio:<a class="headerlink" href="#working-through-the-studio" title="Permalink to this headline">¶</a></h3>
+<p>You will be placed into one of eight groups.  The group number reflects the region you have been assigned in the table below.  As a team, one group member can be in charge of Tableau and screen share while other group members provide direction and suggestions.  At the end of the studio, you will present your favorite chart or final dashboard to the class as a whole.</p>
+<p>While this is a group assignment, for your own portfolio it is recommended that you make your own version of this studio.</p>
+</div>
+<div class="section" id="setting-up-the-studio">
+<h3><span class="section-number">26.3.1.3. </span>Setting Up the Studio:<a class="headerlink" href="#setting-up-the-studio" title="Permalink to this headline">¶</a></h3>
+<p id="tableau-part2-setup-studio">Download <a class="reference external" href="https://www.kaggle.com/imls/public-libraries?select=libraries.csv%C2%A0" target="_blank">library data set<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>. There are 2 CSV files. To download all CSV files at once, click on the “Download” bubble next to the “New Notebook” bubble.  An orange arrow is pointing to the “Download” bubble in the image below.</p>
+<div class="figure align-default">
+<img alt="An orange arrow points to the &quot;Download&quot; bubble, highlighting the Download option of kaggle." src="../../_images/download-multi-files.png" />
+</div>
+<ol class="arabic simple">
+<li><p>Open the CSV file in Tableau Public.</p>
+<ol class="arabic simple">
+<li><p>It is a larger file than we have previously used and may take a few minutes to open.</p></li>
+<li><p><a class="reference external" href="https://xkcd.com/303/" target="_blank">Use your downtime wisely<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
+</ol>
+</li>
+<li><p>When you open this data set, you will want to create a relationship between the <code class="docutils literal notranslate"><span class="pre">libraries.csv</span></code> file and the <code class="docutils literal notranslate"><span class="pre">states.csv</span></code> file using branch libraries.</p></li>
+<li><p><a class="reference internal" href="#tableau-part2-parta"><span class="std std-ref">Part A</span></a> invites you to briefly explore the data set.  You will explore all the regions of the US.</p></li>
+<li><p>In <a class="reference internal" href="#tableau-part2-partb"><span class="std std-ref">Part B</span></a>, using your assigned region, you will be asked to answer questions using the collection type of your choice: a set or group.</p></li>
+<li><p>In <a class="reference internal" href="#tableau-part2-partc"><span class="std std-ref">Part C</span></a>,  you will select 2 (or more) of your favorite charts and create a dashboard that highlights results from your selected region.</p></li>
+<li><p>Final outcome of this studio will include 9 worksheets (10 if you do the bonus) and 1 dashboard.</p></li>
+</ol>
+<table class="docutils align-left" id="id1">
+<caption><span class="caption-text">Regional Code Table:</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>US Regional Codes Table</strong></p></th>
+<th class="head"><p><strong>State Names and Abbreviations</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Region Code 1 - New England</p></td>
+<td><p>Maine (ME), New Hampshire (NH), Vermont (VT), Massachusetts (MA), Connecticut (CT), Rhode Island (RI)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Region Code 2 - Mideast</p></td>
+<td><p>New York (NY), Pennsylvania (PA), Maryland (MD), New Jersey (NJ), Delaware (DE), Washington DC (DC)</p></td>
+</tr>
+<tr class="row-even"><td><p>Region Code 3 - Great Lakes</p></td>
+<td><p>Wisconsin (WI), Illinois (IL), Indiana (IN), Michigan (MI), Ohio (OH)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Region Code 4 - Plains</p></td>
+<td><p>Missouri (MO), Kansas (KS), North Dakota (ND), South Dakota (SD), Minnesota (MN), Iowa (IA), Nebraska (NE)</p></td>
+</tr>
+<tr class="row-even"><td><p>Region Code 5 - Southeast</p></td>
+<td><p>Virginia (VA), West Virginia (WV), North Carolina (NC), South Carolina (SC), Georgia (GA), Florida (FL), Alabama (AL), Mississippi (MS), Louisiana (LA), Arkansas (AK), Tennessee (TN), Kentucky (KY)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Region Code 6 - Southwest</p></td>
+<td><p>Arizona (AZ), New Mexico (NM), Oklahoma (OK), Texas (TX)</p></td>
+</tr>
+<tr class="row-even"><td><p>Region Code 7 - Rocky Mountain</p></td>
+<td><p>Idaho (ID), Montana (MT), Wyoming (WY), Colorado (CO), Utah (UT)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Region Code 8 - Far West</p></td>
+<td><p>Alaska (AK), Washington (WI), Oregon (OR), California (CA), Nevada (NV), Hawaii (HI)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.bea.gov/news/2015/gross-domestic-product-state-advance-2014-and-revised-1997-2013/regional-maps" target="_blank">Source<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="part-a-eda">
+<span id="tableau-part2-parta"></span><h3><span class="section-number">26.3.1.4. </span>Part A: EDA<a class="headerlink" href="#part-a-eda" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Use data from the states.csv table unless otherwise noted.</div>
+</div>
+<div class="line-block">
+<div class="line">In this section, we are looking nation-wide.</div>
+</div>
+<div class="line-block">
+<div class="line">Create a viz for each of the following questions:</div>
+</div>
+<ol class="arabic simple">
+<li><p>How many visits occurred in each region?</p>
+<ol class="arabic simple">
+<li><p>How does that compare to circulation transactions?</p></li>
+</ol>
+</li>
+<li><p>Compare Library Programs against State Population.</p>
+<ol class="arabic simple">
+<li><p>Try something other than a bar chart.</p></li>
+<li><p>Explore the marks card.  Add at least one feature.</p></li>
+</ol>
+</li>
+<li><p>How many visits in each region compared to the End Date?</p>
+<ol class="arabic simple">
+<li><p>Hint: Use the End date from the <code class="docutils literal notranslate"><span class="pre">libraries.csv</span></code> file.</p>
+<ol class="loweralpha simple">
+<li><p>Pull other elements from the <code class="docutils literal notranslate"><span class="pre">states.csv</span></code> file.</p></li>
+<li><p>Hide the <code class="docutils literal notranslate"><span class="pre">Null</span></code> values in your final viz.</p></li>
+</ol>
+</li>
+<li><p>Use the US Regional Codes Table above to create aliases for each region.</p>
+<ol class="loweralpha simple">
+<li><p>Hint: Rename the Region only at this time.</p></li>
+<li><p>Don’t worry about states right now.</p></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p><a class="reference internal" href="#tableau-part2-setup-studio"><span class="std std-ref">Back to Setting Up Studio</span></a></p>
+</div>
+<div class="section" id="part-b-collect-your-data">
+<span id="tableau-part2-partb"></span><h3><span class="section-number">26.3.1.5. </span>Part B: Collect Your Data<a class="headerlink" href="#part-b-collect-your-data" title="Permalink to this headline">¶</a></h3>
+<p>Begin working with your assigned region. Remember to use the table above to help with managing and organizing your data and use data from the <code class="docutils literal notranslate"><span class="pre">states.csv</span></code> table unless otherwise noted.</p>
+<p>Create collections to hold your data:</p>
+<ol class="arabic simple">
+<li><p>Set Your Data.</p>
+<ol class="arabic simple">
+<li><p>Select your region as a set.</p>
+<ol class="loweralpha simple">
+<li><p>We are going to compare your region to the rest of the US.</p></li>
+<li><p>Give this set a name so that you can easily find and use it.</p></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>Group Your Data.</p>
+<ol class="arabic simple">
+<li><p>Group the states within your region as a whole.</p>
+<ol class="loweralpha simple">
+<li><p>Give this group a name.</p></li>
+<li><p>If you used the “State Code” field for your group, you will need to create aliases for the state number to either the name or abbreviation.</p></li>
+<li><p>For example, “51” becomes “Virginia” or “VA”.</p></li>
+<li><p>See <a class="reference external" href="https://www.imls.gov/sites/default/files/fy2014_pls_data_file_documentation.pdf" target="_blank">document page D-44<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> for the state codes.</p></li>
+</ol>
+</li>
+<li><p>Group the states individually.</p>
+<ol class="loweralpha simple">
+<li><p>Give this group a name.</p></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>Organizing Your Collections.</p>
+<ol class="arabic simple">
+<li><p>If you want to create a hierarchy to better organize your data or drill down at some point, this is your choice.</p>
+<ol class="loweralpha simple">
+<li><p>You can create vizzes with or without hierarchies.</p></li>
+<li><p>It is your choice.</p></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p><strong>Questions to Answer with a Viz</strong></p>
+<p>Now that you have organized your data, you are ready to explore your region.</p>
+<p>Create a new worksheet for each question using either your sets or groups.</p>
+<ol class="arabic simple">
+<li><p>How many Central Libraries vs Branch Libraries are in each state within your region?</p>
+<ol class="arabic simple">
+<li><p>How many bookmobiles?</p></li>
+<li><p>Add a tooltip or make an interactive filter card.</p></li>
+</ol>
+</li>
+<li><p>How many Young Adult (YA) library programs does each state in your region host and how many individuals attend?</p>
+<ol class="arabic simple">
+<li><p>Add a detail and a label to this viz.</p></li>
+</ol>
+</li>
+<li><p>Between Central Libraries and Branch Libraries in your region, how many employees are Librarians?</p>
+<ol class="arabic simple">
+<li><p>Use the marks card to show data about Librarians.</p></li>
+</ol>
+</li>
+<li><p>How many Librarians hold an MLS degree in your region compared to the rest of the US?</p>
+<ol class="arabic simple">
+<li><p>Compared to how many Total Staff?</p></li>
+<li><p>Use a new chart format (if possible).</p></li>
+</ol>
+</li>
+<li><p>How do circulation transactions compare between your region and the rest of the US over 2013-2014?</p>
+<ol class="arabic simple">
+<li><p>Hint: Use the End Date pill.  Hide any Null values, we only want reported values at this time.</p></li>
+<li><p>Add a label.</p></li>
+</ol>
+</li>
+</ol>
+<p><a class="reference internal" href="#tableau-part2-setup-studio"><span class="std std-ref">Back to Setting Up Studio</span></a></p>
+</div>
+<div class="section" id="part-c-create-a-dashboard">
+<span id="tableau-part2-partc"></span><h3><span class="section-number">26.3.1.6. </span>Part C: Create a Dashboard<a class="headerlink" href="#part-c-create-a-dashboard" title="Permalink to this headline">¶</a></h3>
+<p>Create a dashboard that highlights at least 2 of your favorite charts from the studio.  (The bonus can be one of these).</p>
+<p><a class="reference internal" href="#tableau-part2-setup-studio"><span class="std std-ref">Back to Setting Up Studio</span></a></p>
+</div>
+<div class="section" id="bonus-mission">
+<h3><span class="section-number">26.3.1.7. </span>Bonus Mission<a class="headerlink" href="#bonus-mission" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">Using the spacial files to create a map, create a viz to answer the following question:</div>
+</div>
+<ol class="arabic simple">
+<li><p>Within your region, how many children’s programs were distributed by a state by county?</p>
+<ol class="arabic simple">
+<li><p>Hint: Drag the State (<code class="docutils literal notranslate"><span class="pre">states.csv</span></code>) file into the central plane, and use the <code class="docutils literal notranslate"><span class="pre">Marks</span></code> card.</p>
+<ol class="loweralpha simple">
+<li><p>Be sure to filter.</p></li>
+</ol>
+</li>
+<li><p>Hint: County is a dimension found in the libraries.csv table.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="finishing-touches">
+<h3><span class="section-number">26.3.1.8. </span>Finishing Touches<a class="headerlink" href="#finishing-touches" title="Permalink to this headline">¶</a></h3>
+<p>Before you turn in your vizzes:</p>
+<ol class="arabic simple">
+<li><p>Make sure that they are easy to read.</p></li>
+<li><p>Review and edit any axes so that they don’t contain any file information.</p></li>
+<li><p>Make sure any filtering, group, or set information is easy to understand.</p>
+<ol class="arabic simple">
+<li><p>For example, when using a set the predefined labels may say “In” and “Out”. Would extra context make them easier to understand?</p></li>
+<li><p>Don’t forget to title your charts.</p></li>
+</ol>
+</li>
+<li><p>If you want to explore fonts and colors, go right ahead.</p>
+<ol class="arabic simple">
+<li><p>Feel free to change the colors of any/all of your charts.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="submitting-your-work">
+<h2><span class="section-number">26.3.2. </span>Submitting Your Work<a class="headerlink" href="#submitting-your-work" title="Permalink to this headline">¶</a></h2>
+<p>When finished make sure to save and publish your work to your Tableau Public account. Copy the URL to your published Tableau project and paste it into the submission box in
+Canvas for <strong>Studio: Visualization with Tableau Part 2</strong> and click <em>Submit</em>.</p>
+</div>
 </div>
 
 
