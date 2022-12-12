@@ -26,7 +26,7 @@ You are not limited to these topics.  If you discover something more interesting
 Setting Up the Studio:
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Download `FIE Fencing Womens Foil data set <https://www.kaggle.com/datasets/amichaelsen/fie-fencing-womens-foil-data>`__. There are 4 csv files. To download all csv files at once, click on the ``Download`` bubble next to the ``New Notebook`` bubble.  An orange arrow is pointing to the ``Download`` bubble in the image below.
+Download `FIE Fencing Womens Foil data set <https://www.kaggle.com/datasets/amichaelsen/fie-fencing-womens-foil-data>`__. There are 4 CSV files. To download all CSV files at once, click on the ``Download`` bubble next to the ``New Notebook`` bubble.  An orange arrow is pointing to the ``Download`` bubble in the image below.
 
 .. figure:: figures/download-multi-files.png
    :alt: An orange arrow points to the ``Download`` bubble, highlighting the ``Download`` option of kaggle.
