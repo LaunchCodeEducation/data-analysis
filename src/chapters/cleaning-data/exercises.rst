@@ -4,7 +4,7 @@ Exercises: Cleaning Data
 Getting Started
 ---------------
 
-Fork this `GitHub repository <https://github.com/gildedgardenia/cleaning-data/blob/main/Cleaning%20Data%20Exercises.ipynb>`__ and 
+Fork this `GitHub repository <https://github.com/launchcodeeducation/cleaning-data/blob/main/Cleaning%20Data%20Exercises.ipynb>`__ and 
 clone to your computer. If you need a refresher on how to do this 
 see :ref:`Instruction for Using GitHub w/Jupyter Notebooks<usingGitHubNotebooks>`.
 

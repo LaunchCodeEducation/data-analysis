@@ -4,7 +4,7 @@ Studio: EDA With Python Part 2
 Getting Started
 ---------------
 
-For this weeks studio fork this `GitHub repository <https://github.com/CarlyLanglois/EDA_pt2_studio>`__ and 
+For this weeks studio fork this `GitHub repository <https://github.com/launchcodeeducation/EDA_pt2_studio>`__ and 
 clone to your computer.  If you need a refresher on how to do this see :ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`.
 
 * This studio follows the univariate EDA practice you did for this week's prep work.

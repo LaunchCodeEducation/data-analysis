@@ -7,7 +7,7 @@ Your third graded assignment is due two weeks after the lesson 14, the fifth
 and final SQL lesson, and it is designed to be completed over several sessions. 
 Do NOT put it off until the day before it is due! 
 
-Fork `this GitHub repository <https://github.com/codinglikeagirl42/Assignment3_9to5>`__. 
+Fork `this GitHub repository <https://github.com/launchcodeeducation/Assignment3_9to5>`__. 
 and clone it to your computer. If you need a refresher on how to do this see 
 :ref:`Instruction for Using GitHub w/Jupyter Notebooks<usingGitHubNotebooks>`. 
 
