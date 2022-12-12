@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>27.2. Exercises: Tableau Part 3 - Dashboard Finesse, Calculations and Parameters &#8212; Data Analysis  documentation</title>
+    <title>27.2. Exercises: Tableau Part 3 &#8212; Data Analysis  documentation</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
@@ -17,8 +17,8 @@
     <script src="../../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="27.3. Studio: Tableau Part 3 - Dashboard Finesse, Calculations and Parameters" href="studio.html" />
-    <link rel="prev" title="27.1. Tableau Part 3 - Dashboard Finesse, Calculations and Parameters" href="tableau-part3.html" />
+    <link rel="next" title="27.3. Studio: Tableau Part 3" href="studio.html" />
+    <link rel="prev" title="27.1. Tableau Part 3" href="tableau-part3.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -73,8 +73,8 @@
 
 <ol class="breadcrumb container">
     <li><a href="../../index.html">Contents</a></li>
-    <li><a href="index.html"><span class="section-number">27. </span>Tableau Part 3 - Dashboard Finesse, Calculations and Parameters</a></li>
-    <li class="active"><span class="section-number">27.2. </span>Exercises: Tableau Part 3 - Dashboard Finesse, Calculations and Parameters</li>
+    <li><a href="index.html"><span class="section-number">27. </span>Tableau Part 3</a></li>
+    <li class="active"><span class="section-number">27.2. </span>Exercises: Tableau Part 3</li>
 </ol>
 
 
@@ -84,8 +84,144 @@
     <div class="col-md-10 col-md-offset-1 content " role="main">
 
     
-  <div class="section" id="exercises-tableau-part-3-dashboard-finesse-calculations-and-parameters">
-<h1><span class="section-number">27.2. </span>Exercises: Tableau Part 3 - Dashboard Finesse, Calculations and Parameters<a class="headerlink" href="#exercises-tableau-part-3-dashboard-finesse-calculations-and-parameters" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="exercises-tableau-part-3">
+<h1><span class="section-number">27.2. </span>Exercises: Tableau Part 3<a class="headerlink" href="#exercises-tableau-part-3" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="getting-started">
+<h2><span class="section-number">27.2.1. </span>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Download this <a class="reference external" href="https://www.kaggle.com/marklvl/bike-sharing-dataset" target="_blank">Bike Sharing in Washington D.C. Dataset<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<ol class="arabic simple">
+<li><p>2 CSV files total.</p></li>
+</ol>
+</li>
+<li><p>Be sure to read the context and content about this dataset to better understand how and why data was collected.</p></li>
+<li><p>Open the downloaded dataset in Tableau Public.</p>
+<ol class="arabic simple">
+<li><p>Create a relationship between the CSV files.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Dteday</span></code> is a shared column between the two tables.</p></li>
+</ol>
+</li>
+<li><p>Create a new Tableau Public project to answer the below questions.</p></li>
+<li><p>We are going to explore dates and create calculations and parameters with our data that answer our business issue.</p></li>
+<li><p>Your final output will be a dashboard with at least 3 of your charts that provides data useful to the business issue.</p></li>
+<li><p>Here are some <a class="reference external" href="https://en.wikipedia.org/wiki/Capital_Bikeshare" target="_blank">other fun facts about the DC Bike sharing program<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
+</ol>
+<div class="section" id="business-issue">
+<h3><span class="section-number">27.2.1.1. </span>Business Issue:<a class="headerlink" href="#business-issue" title="Permalink to this headline">¶</a></h3>
+<p>The Bike Sharing program did very well in DC and is still popular today.  Your city is interested in
+creating its own bike sharing program.  You have been tasked to see how the first 2 years went in DC to
+anticipate any factors that might affect usability such as weather, seasons, or holidays.</p>
+<p>A few questions have been provided to help guide your thoughts in this exercise.</p>
+</div>
+<div class="section" id="eda">
+<h3><span class="section-number">27.2.1.2. </span>EDA<a class="headerlink" href="#eda" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>What hours are these bikes most popular with casual riders?</p>
+<ol class="arabic simple">
+<li><p>What about registered riders?</p></li>
+</ol>
+</li>
+<li><p>What daily trends do you see between casual riders and registered riders from 2011-2012.</p>
+<ol class="arabic simple">
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">Dteday</span></code> and drill down.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="basic-calculation">
+<h3><span class="section-number">27.2.1.3. </span>Basic Calculation:<a class="headerlink" href="#basic-calculation" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Do holidays impact casual rentals?</p></li>
+<li><p>What about registered rentals?</p>
+<ol class="arabic simple">
+<li><p>Rename <code class="docutils literal notranslate"><span class="pre">Holidays</span></code> from 0 and 1 to “Holiday” and “Non-Holiday” using a calculated field.</p></li>
+</ol>
+</li>
+<li><p>Does the season increase or decrease usage?</p>
+<ol class="arabic simple">
+<li><p>How does that compare with weather?</p></li>
+</ol>
+</li>
+<li><p>Use a calculation to rename the <code class="docutils literal notranslate"><span class="pre">Seasons</span></code> that is more useful than a number.</p>
+<ol class="arabic simple">
+<li><p>1 = Spring</p></li>
+<li><p>2 = Summer</p></li>
+<li><p>3 = Fall</p></li>
+<li><p>4 = Winter</p></li>
+</ol>
+</li>
+<li><p>Use a calculation to rename the <code class="docutils literal notranslate"><span class="pre">Weather</span></code> so that it is useful to us humans.</p>
+<ol class="arabic simple">
+<li><p>1 = Clear</p></li>
+<li><p>2 = Fog or Mist</p></li>
+<li><p>3 = Light precipitation</p></li>
+<li><p>4 = Heavy precipitation</p></li>
+</ol>
+</li>
+<li><p>Does the average temp (°F) impact all riders?</p></li>
+<li><p>Use calculations to convert the <code class="docutils literal notranslate"><span class="pre">Temp</span></code> from a “Normalized” scale of 0-1, to °C then finally to °F.</p>
+<ol class="arabic simple">
+<li><p>Convert from 0-1 to Celsius using the following formula: <strong>temp = 47 * temp - 8</strong></p>
+<ol class="loweralpha simple">
+<li><p><a class="reference external" href="https://www.andrew.cmu.edu/user/achoulde/94842/homework/homework5.html" target="_blank">Formula source<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
+</ol>
+</li>
+<li><p>Next convert to F with the following formula: <strong>(°C * 1.8) + 32</strong></p>
+<ol class="loweralpha simple">
+<li><p>Quick Check:  The average temp of Jan 1, 2011 is 46.72°F and the average temp of Feb 1, 2011 is 33.86°F.</p></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="table-calculation">
+<h3><span class="section-number">27.2.1.4. </span>Table Calculation:<a class="headerlink" href="#table-calculation" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>How many total bike rentals occurred in the city between Jan 2011 to Dec 2012?</p>
+<ol class="arabic simple">
+<li><p>What are the running totals of bike rides between 2011-2012?</p>
+<ol class="loweralpha simple">
+<li><p>Hint: You can use a quick calculation for this.</p></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="parameter">
+<h3><span class="section-number">27.2.1.5. </span>Parameter:<a class="headerlink" href="#parameter" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Duplicate EDA question 1 and create a parameter that will allow a user to choose between hourly casual or registered user usage.</p>
+<ol class="arabic simple">
+<li><p>Hint: You are changing a field with a parameter.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="dashboard-finesse">
+<h3><span class="section-number">27.2.1.6. </span>Dashboard &amp; Finesse:<a class="headerlink" href="#dashboard-finesse" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Make sure your final dashboard has:</p>
+<ol class="arabic simple">
+<li><p>Informative titles, axes, and other text elements.</p></li>
+</ol>
+</li>
+<li><p>Before submitting your work, reflect on these questions. You don’t need to submit any answers for these questions.</p>
+<ol class="arabic simple">
+<li><p>Would there be any other data that you wish you had as you worked with this data?</p></li>
+<li><p>Are you happy with your data visualizations?</p></li>
+<li><p>Is there anything you would like to learn more about for your future projects?</p></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="submitting-your-work">
+<h2><span class="section-number">27.2.2. </span>Submitting Your Work<a class="headerlink" href="#submitting-your-work" title="Permalink to this headline">¶</a></h2>
+<p>When finished make sure to save and publish your work to your Tableau Public account. Copy the URL to your published Tableau project and paste it into the submission box in
+Canvas for <strong>Exercises: Visualization with Tableau Part 3</strong> and click <em>Submit</em>.</p>
+</div>
 </div>
 
 
@@ -94,10 +230,10 @@
     <nav aria-label="Next and Previous Pages">
       <ul class="pager">
         
-        <li class="previous"><a href="tableau-part3.html"><span aria-hidden="true">&larr;</span> <span class="section-number">27.1. </span>Tableau Part 3 - Dashboard Finesse, Calculations and Parameters</a></li>
+        <li class="previous"><a href="tableau-part3.html"><span aria-hidden="true">&larr;</span> <span class="section-number">27.1. </span>Tableau Part 3</a></li>
         
         
-        <li class="next"><a href="studio.html"><span class="section-number">27.3. </span>Studio: Tableau Part 3 - Dashboard Finesse, Calculations and Parameters <span aria-hidden="true">&rarr;</span></a></li>
+        <li class="next"><a href="studio.html"><span class="section-number">27.3. </span>Studio: Tableau Part 3 <span aria-hidden="true">&rarr;</span></a></li>
         
       </ul>
     </nav>

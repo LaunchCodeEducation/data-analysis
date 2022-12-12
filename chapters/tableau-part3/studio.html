@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>27.3. Studio: Tableau Part 3 - Dashboard Finesse, Calculations and Parameters &#8212; Data Analysis  documentation</title>
+    <title>27.3. Studio: Tableau Part 3 &#8212; Data Analysis  documentation</title>
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
@@ -18,7 +18,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="28. Tableau Part 4 - Stories and Dates" href="../tableau-part4/index.html" />
-    <link rel="prev" title="27.2. Exercises: Tableau Part 3 - Dashboard Finesse, Calculations and Parameters" href="exercises.html" />
+    <link rel="prev" title="27.2. Exercises: Tableau Part 3" href="exercises.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -73,8 +73,8 @@
 
 <ol class="breadcrumb container">
     <li><a href="../../index.html">Contents</a></li>
-    <li><a href="index.html"><span class="section-number">27. </span>Tableau Part 3 - Dashboard Finesse, Calculations and Parameters</a></li>
-    <li class="active"><span class="section-number">27.3. </span>Studio: Tableau Part 3 - Dashboard Finesse, Calculations and Parameters</li>
+    <li><a href="index.html"><span class="section-number">27. </span>Tableau Part 3</a></li>
+    <li class="active"><span class="section-number">27.3. </span>Studio: Tableau Part 3</li>
 </ol>
 
 
@@ -84,8 +84,138 @@
     <div class="col-md-10 col-md-offset-1 content " role="main">
 
     
-  <div class="section" id="studio-tableau-part-3-dashboard-finesse-calculations-and-parameters">
-<h1><span class="section-number">27.3. </span>Studio: Tableau Part 3 - Dashboard Finesse, Calculations and Parameters<a class="headerlink" href="#studio-tableau-part-3-dashboard-finesse-calculations-and-parameters" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="studio-tableau-part-3">
+<h1><span class="section-number">27.3. </span>Studio: Tableau Part 3<a class="headerlink" href="#studio-tableau-part-3" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="getting-started">
+<h2><span class="section-number">27.3.1. </span>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="business-issue">
+<h3><span class="section-number">27.3.1.1. </span>Business Issue:<a class="headerlink" href="#business-issue" title="Permalink to this headline">¶</a></h3>
+<p>You work for TarMart corporate. TarMart has 45 department stores across the country, of various
+sizes. Between 2010 and 2013, TarMart has tracked weekly sales of each store by department. Your
+supervisors want some insights on which stores and departments are performing the best in weekly
+sales.</p>
+</div>
+<div class="section" id="setting-up-the-studio">
+<h3><span class="section-number">27.3.1.2. </span>Setting Up the Studio:<a class="headerlink" href="#setting-up-the-studio" title="Permalink to this headline">¶</a></h3>
+<p>Download <a class="reference external" href="https://www.kaggle.com/datasets/manjeetsingh/retaildataset?select=Features+data+set.csv" target="_blank">Retail Data Analytics data set<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>. There are 3 CSV files. To download all CSV files at once, click on the <code class="docutils literal notranslate"><span class="pre">Download</span></code> bubble next to the <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Notebook</span></code> bubble.  An orange arrow is pointing to the <code class="docutils literal notranslate"><span class="pre">Download</span></code> bubble in the image below.</p>
+<div class="figure align-default">
+<img alt="An orange arrow points to the ``Download`` bubble, highlighting the Download option of kaggle." src="../../_images/download-multi-files1.png" />
+</div>
+<ol class="arabic simple">
+<li><p>Open the CSV file in Tableau Public.</p></li>
+<li><p>When you open this data set, you will want to create a relationship between the 3 CSV files.</p>
+<ol class="arabic simple">
+<li><p>Each CSV has a <code class="docutils literal notranslate"><span class="pre">Store</span></code> column.</p></li>
+<li><p>Here’s some more context for working with relationships in Tableau:</p>
+<ol class="loweralpha simple">
+<li><p><a class="reference external" href="Here'ssomemorecontextforworkingwithrelationshipsinTableau:" target="_blank">Relationships vs Joins<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
+<li><p><a class="reference external" href="https://help.tableau.com/current/pro/desktop/en-us/datasource_dont_be_scared.htm" target="_blank">Don’t Be Scared of Relationships<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<div class="admonition-note admonition">
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>This dataset has a large amount of rows that Tableau Public might have trouble querying at times. To
+mitigate this, try using only aggregated measures when dropping <code class="docutils literal notranslate"><span class="pre">Weekly</span> <span class="pre">Sale</span></code> into a sheet.</p>
+</div>
+</div>
+<div class="section" id="eda">
+<h3><span class="section-number">27.3.1.3. </span>EDA<a class="headerlink" href="#eda" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>What do weekly sales over time look like?</p></li>
+<li><p>Weekly sales by store type?</p></li>
+<li><p>Weekly sales by store?</p></li>
+<li><p>Weekly sales by department?</p></li>
+<li><p>How do sales by store and department change by quarter?</p></li>
+</ol>
+</div>
+<div class="section" id="calculations">
+<h3><span class="section-number">27.3.1.4. </span>Calculations<a class="headerlink" href="#calculations" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Determine a cutoff for constituting a high sale amount.</p>
+<ol class="arabic simple">
+<li><p>Use your discretion from what you observe in your vizzes.</p></li>
+<li><p>Use a basic calculation to create a new field indicating your measure for high sales.</p>
+<ol class="loweralpha simple">
+<li><p>Use this field in a new chart to display which stores return higher sales than others.</p></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>TarMart wants to know which of the stores included in this dataset have contributed the most to overall sales in the company.</p>
+<ol class="arabic simple">
+<li><p>Create a viz that uses the Quick Table Calculation <code class="docutils literal notranslate"><span class="pre">Percent</span> <span class="pre">of</span> <span class="pre">Total</span></code> to accomplish this.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="parameters">
+<h3><span class="section-number">27.3.1.5. </span>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Use a filter and parameter to change the number of stores displayed in the viz you created for Calculations Question 2.</p>
+<ol class="arabic simple">
+<li><p>Make a copy of your viz by right clicking on the sheet tab and selecting <code class="docutils literal notranslate"><span class="pre">Duplicate</span></code>.</p></li>
+<li><p>Add the <code class="docutils literal notranslate"><span class="pre">Stores</span></code> pill to the filter tab in your new viz. Create a <code class="docutils literal notranslate"><span class="pre">Top</span></code> filter from your filter type choices. Note that <code class="docutils literal notranslate"><span class="pre">Stores</span></code> may initially be pulled in as a continuous measure due to its data type. Change it to a discrete dimension.</p></li>
+<li><p>Create a parameter that shows the <code class="docutils literal notranslate"><span class="pre">Top</span> <span class="pre">Stores</span></code>.</p>
+<ol class="loweralpha simple">
+<li><p>Make the data type an integer.</p></li>
+<li><p>Make the allowable values a range.</p></li>
+<li><p>Set the range to a fixed, setting values from the <code class="docutils literal notranslate"><span class="pre">Store</span></code> column.</p></li>
+</ol>
+</li>
+<li><p>Return to your Store filter and edit the Top options to use the <code class="docutils literal notranslate"><span class="pre">Top</span> <span class="pre">Store</span></code> parameter you have created.</p></li>
+<li><p>Add your filter parameter to the sheet.</p>
+<ol class="arabic simple">
+<li><p>Right click on the <code class="docutils literal notranslate"><span class="pre">Top</span> <span class="pre">Store</span></code> parameter from the left hand Data pane, select <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Parameter</span></code>.</p></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>Return to your viz that displays the average weekly sales by department to use a parameter to display the top department marks in a distinct color.</p>
+<ol class="arabic simple">
+<li><p>Right click on the <code class="docutils literal notranslate"><span class="pre">Dept</span></code> field to convert it to a dimension.</p></li>
+<li><p>Create a set of top departments using the <code class="docutils literal notranslate"><span class="pre">Top</span> <span class="pre">Stores</span></code> parameter.</p></li>
+<li><p>Drag the department set to the color option in the marks pane.</p></li>
+<li><p>Right click on the <code class="docutils literal notranslate"><span class="pre">Top</span> <span class="pre">Stores</span></code> parameter to show the parameter control in the viz.</p></li>
+<li><p>Rename the <code class="docutils literal notranslate"><span class="pre">Top</span> <span class="pre">Store</span></code> parameter to account for the fact that it’s now being used for both store and department dimensions.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="dashboard-and-finesse">
+<h3><span class="section-number">27.3.1.6. </span>Dashboard and Finesse<a class="headerlink" href="#dashboard-and-finesse" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Present your charts in a dashboard that summarizes your findings.</p></li>
+<li><p>Now is a good time to update labels and colors for an easily digestible report.</p></li>
+</ol>
+</div>
+<div class="section" id="finishing-touches">
+<h3><span class="section-number">27.3.1.7. </span>Finishing Touches<a class="headerlink" href="#finishing-touches" title="Permalink to this headline">¶</a></h3>
+<p>Before you turn in your vizzes:</p>
+<ol class="arabic simple">
+<li><p>Make sure that they are easy to read.</p></li>
+<li><p>Review and edit any axes so that they don’t contain any file information.</p></li>
+<li><p>Make sure any filtering, group, or set information is easy to understand.</p>
+<ol class="arabic simple">
+<li><p>For example, when using a set the predefined labels may say “In” and “Out”. Would extra context make them easier to understand?</p></li>
+<li><p>Don’t forget to title your charts.</p></li>
+</ol>
+</li>
+<li><p>If you want to explore fonts and colors, go right ahead.</p>
+<ol class="arabic simple">
+<li><p>Feel free to change the colors of any/all of your charts.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="submitting-your-work">
+<h2><span class="section-number">27.3.2. </span>Submitting Your Work<a class="headerlink" href="#submitting-your-work" title="Permalink to this headline">¶</a></h2>
+<p>When finished make sure to save and publish your work to your Tableau Public account. Copy the URL to your published Tableau project and paste it into the submission box in
+Canvas for <strong>Studio: Visualization with Tableau Part 3</strong> and click <em>Submit</em>.</p>
+</div>
 </div>
 
 
@@ -94,7 +224,7 @@
     <nav aria-label="Next and Previous Pages">
       <ul class="pager">
         
-        <li class="previous"><a href="exercises.html"><span aria-hidden="true">&larr;</span> <span class="section-number">27.2. </span>Exercises: Tableau Part 3 - Dashboard Finesse, Calculations and Parameters</a></li>
+        <li class="previous"><a href="exercises.html"><span aria-hidden="true">&larr;</span> <span class="section-number">27.2. </span>Exercises: Tableau Part 3</a></li>
         
         
         <li class="next"><a href="../tableau-part4/index.html"><span class="section-number">28. </span>Tableau Part 4 - Stories and Dates <span aria-hidden="true">&rarr;</span></a></li>
