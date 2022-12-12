@@ -4,7 +4,7 @@ Studio: Cleaning Data
 Getting Started
 ---------------
 
-For this weeks studio you will be working with a partner.  Each of you should fork this `GitHub repository <https://github.com/speudusa/DataCleaning-Pumpkin-Sales>`__ and 
+For this weeks studio you will be working with a partner.  Each of you should fork this `GitHub repository <https://github.com/launchcodeeducation/DataCleaning-Pumpkin-Sales>`__ and 
 clone to your computer.  If you need a refresher on how to do this see :ref:`Instruction for Using GitHub w/Jupyter Notebooks<usingGitHubNotebooks>`.
 
 | The notebook poses questions for partners to discuss and answer about data cleaning.

@@ -14,17 +14,17 @@ yourselves time to put together a small presentation reviewing your discussion f
 
 In your presentation, make sure to include:
 
-* The problem the business owner is trying to solve?
+#. The problem the business owner is trying to solve.
 
-* Available data sources? What kind of information do we need?
+#. Available data sources? What kind of information do we need?
 
-* What would you need/do to prepare the data? Problems with the data?
+#. What would you need/do to prepare the data? Problems with the data?
 
-* Talk about exploratory analysis and KPIs.
+#. Talk about exploratory analysis and KPIs.
 
-* Discuss what would make your results valid/invalid.
+#. Discuss what would make your results valid/invalid.
 
-* Who are the stakeholders and how would you present your findings?
+#. Who are the stakeholders and how would you present your findings?
 
 Scenarios
 ---------
@@ -37,30 +37,25 @@ Cierra is a young woman in her 20s. She has over 250,000 followers on her knitti
 Data Sets
 ^^^^^^^^^
 
-| **Yarn Stash**
+#. Yarn Stash:
+        a. ``Columns:`` Brand, Yarn name, Color Name, Dye Lot, Credit
+        b. ``Example:`` Red Heart, Super Saver,  Pool, NULL, Gifted By Red Heart
 
-* Columns: Brand, Yarn name, Color Name, Dye Lot, Credit
-* Example: Red Heart, Super Saver,  Pool, NULL, Gifted By Red Heart
+#. Patterns Written
+        a. ``Columns:`` Name, Category, Published, Downloads, Location, Yarn Used, Quantity Used, Total Profit
+        b. ``Example:`` Fall Afternoon, Scarf, 9/24/2020, 5001, Ravelry, Caron Simply Soft, 2 balls, $25,000
 
-| **Patterns Written**
+#. Sponsors
+        a. ``Columns:`` Name, Relationship Start Date, Relationship End Date, Total Income
+        b. ``Example:`` Yarniverse, 5/6/2018, N/A, $10,000
 
-* Columns: Name, Category, Published, Downloads, Location, Yarn Used, Quantity Used, Total Profit
-* Example: Fall Afternoon, Scarf, 9/24/2020, 5001, Ravelry, Caron Simply Soft, 2 balls, $25,000
+#. Knitting Log
+        a. ``Columns:`` Project Name, Type, Yarn Used, Start Date, End Date, Notes
+        b. ``Example:`` Funky Sweater, Sweater, Lost the label :(, 6/8/2019, 6/19/2019, Still mad that I lost the yarn label
 
-| **Sponsors**
-
-* Columns: Name, Relationship Start Date, Relationship End Date, Total Income
-* Example: Yarniverse, 5/6/2018, N/A, $10,000
-
-| **Knitting Log**
-
-* Columns: Project Name, Type, Yarn Used, Start Date, End Date, Notes
-* Example: Funky Sweater, Sweater, Lost the label :(, 6/8/2019, 6/19/2019, Still mad that I lost the yarn label
-
-| **Posts**
-
-* Columns: Post Number, Sponsored?, Current Likes, Current Comments, Notes
-* Example: 256, Yes, 67890, 720, This post did really well! Posted at 8 AM and got tons of activity in the first hour
+#. Posts
+        a. ``Columns:`` Post Number, Sponsored?, Current Likes, Current Comments, Notes
+        b. ``Example:`` 256, Yes, 67890, 720, This post did really well! Posted at 8 AM and got tons of activity in the first hour
 
 Scenario 2: Farmer's Market
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -70,30 +65,25 @@ Shelley is in her mid-50s and owns a stall at her local farmer's market selling 
 Data Sets
 ^^^^^^^^^
 
-| **Sales**
+#. Sales
+        a. ``Columns:`` Date, Customer Name, Items Sold, Total Sale
+        b. ``Example:`` 7/28/2021, Bill, 6, $14.75
 
-* Columns: Date, Customer Name, Items Sold, Total Sale
-* Example: 7/28/2021, Bill, 6, $14.75
+#. Seed Log
+        a. ``Columns:`` Company, Crop, Variety, Quantity, Notes
+        b. ``Example:`` Heirloom Seeds Co, Tomatoes, Red, 6, This grew really well last year
 
-| **Seed Log**
+#. Time to Grow
+        a. ``Columns:``  Crop, Variety, Time to Grow
+        b. ``Example:`` Tomatoes, Red, 3 months
 
-* Columns: Company, Crop, Variety, Quantity, Notes
-* Example: Heirloom Seeds Co, Tomatoes, Red, 6, This grew really well last year
+#. Resources Used
+        a. ``Columns:`` Crop, Variety, Water Used, Fertilizer Used
+        b. ``Example:`` Tomatoes, Red, 10 gallons, 2 oz.
 
-| **Time to Grow**
-
-* Columns:  Crop, Variety, Time to Grow
-* Example: Tomatoes, Red, 3 months
-
-| **Resources Used**
-
-* Columns: Crop, Variety, Water Used, Fertilizer Used
-* Example: Tomatoes, Red, 10 gallons, 2 oz.
-
-| **Yield per Year**
-
-* Columns: Crop, Variety, Year, Crop Yield
-* Example: Tomatoes, Red, 2020, 10 lbs
+#. Yield per Year
+        a. ``Columns:`` Crop, Variety, Year, Crop Yield
+        b. ``Example:`` Tomatoes, Red, 2020, 10 lbs
 
 Scenario 3: Department Chair
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -103,20 +93,17 @@ Dr. Jacobsen recently became the head of her department at a prestigious univers
 Data Sets
 ^^^^^^^^^
 
-| **Past Enrollments**
+#. Past Enrollments
+        a. ``Columns:`` Course Name, Section Number, Professor, TA, Students Enrolled, Students Withdrawn, Students Dropped, Students Completed
+        b. ``Example:`` Ecosystems, 2, Dr. Crispin, Ms. Moon, 54, 3, 2, 49
 
-* Columns: Course Name, Section Number, Professor, TA, Students Enrolled, Students Withdrawn, Students Dropped, Students Completed
-* Example: Ecosystems, 2, Dr. Crispin, Ms. Moon, 54, 3, 2, 49
+#. Past Course Offerings
+        a. ``Columns:`` Course Name, Sections Offered, Notes 
+        b. ``Example:`` Agriculture, 1, Students did not enroll when offered at 8 AM
 
-| **Past Course Offerings**
-
-* Columns: Course Name, Sections Offered, Notes 
-* Example: Agriculture, 1, Students did not enroll when offered at 8 AM
-
-| **Current Staff**
-
-* Columns: Name, Level, Specialty
-* Example: James Crispin, Tenured Professor, Ecology
+#. Current Staff
+        a. ``Columns:`` Name, Level, Specialty
+        b. ``Example:`` James Crispin, Tenured Professor, Ecology
 
 Scenario 4: Local Zoo and Utility Company
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -126,20 +113,17 @@ Dan is a representative for a local utility company who has been working with Er
 Data Sets 
 ^^^^^^^^^
 
-| **Elephants** 
+#. Elephants 
+        a. ``Columns:`` Name, Age, Weight, Height, Sex, Species, Dietary Notes
+        b. ``Example:`` Ruthie, 1, 13,000 lbs, 10 ft., F, Loxodonta africana, Loves tree boughs!
 
-* Columns: Name, Age, Weight, Height, Sex, Species, Dietary Notes
-* Example: Ruthie, 1, 13,000 lbs, 10 ft., F, Loxodonta africana, Loves tree boughs!
+#. Vegetation removed per year
+        a. ``Columns:`` Species, Quantity Removed
+        b. ``Example:`` C. illinoinensis, 500 lbs.
 
-| **Vegetation removed per year**
-
-* Columns: Species, Quantity Removed
-* Example: C. illinoinensis, 500 lbs.
-
-| **Utility Tree Trimmers**
-
-* Columns: Name, Time at Company, Vegetation Removed each Year
-* Example: Cynthia, 5 years, 300 lbs.
+#. Utility Tree Trimmers
+        a. ``Columns:`` Name, Time at Company, Vegetation Removed each Year
+        b. ``Example:`` Cynthia, 5 years, 300 lbs.
 
 Scenario 5: Butterfly Gardens
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -149,30 +133,25 @@ Butterfly garden activist, Summer, took over leadership of a small nonprofit dur
 Data Sets
 ^^^^^^^^^
 
-| **Butterfly Species**
+#. Butterfly Species
+        a. ``Columns:`` Name, Lifespan, Seen Last Year?, Season, Notes
+        b. ``Example:`` Monarch Butterfly, 2-6 weeks, Yes, August, Loves milkweed!
 
-* Columns: Name, Lifespan, Seen Last Year?, Season, Notes
-* Example: Monarch Butterfly, 2-6 weeks, Yes, August, Loves milkweed!
+#. Flowers
+        a. ``Columns:`` Name, Did Well Last Year?, Notes
+        b. ``Example:`` Milkweed, Yes, Didn't grow as well at the 5th avenue location
 
-| **Flowers**
+#. Current Garden Locations
+        a. ``Columns:`` Address, Flowers, Butterflies Seen, Notes
+        b. ``Example:`` 123 5th avenue, Milkweed and Daisies, Monarchs, Renting the space from current landowner
 
-* Columns: Name, Did Well Last Year?, Notes
-* Example: Milkweed, Yes, Didn't grow as well at the 5th avenue location
+#. Potential locations
+        a. ``Columns:`` Address, Site Notes
+        b. ``Example:`` 123 4th avenue, Would be a great spot for more milkweed!
 
-| **Current garden locations**
-
-* Columns: Address, Flowers, Butterflies Seen, Notes
-* Example: 123 5th avenue, Milkweed and Daisies, Monarchs, Renting the space from current landowner
-
-| **Potential locations**
-
-* Columns: Address, Site Notes
-* Example: 123 4th avenue, Would be a great spot for more milkweed!
-
-| **Volunteers/staff**
-
-* Columns: Name, Time Spent, Level, Hours Worked
-* Example: Juanita Rodriguez, 6 years, senior volunteer, 500 hours
+#. Volunteers/staff
+        a. ``Columns:`` Name, Time Spent, Level, Hours Worked
+        b. ``Example:`` Juanita Rodriguez, 6 years, senior volunteer, 500 hours
 
 Submitting Your Work
 --------------------

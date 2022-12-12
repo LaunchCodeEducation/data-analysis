@@ -4,7 +4,7 @@ Studio: Data Visualization with Python
 Getting Started
 ---------------
 
-For this weeks studio fork this `GitHub repository <https://github.com/gildedgardenia/data-viz-with-python>`__ and 
+For this weeks studio fork this `GitHub repository <https://github.com/launchcodeeducation/data-viz-with-python>`__ and 
 clone to your computer.  If you need a refresher on how to do this see :ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`.
 
 
@@ -21,8 +21,10 @@ visualize. The options are:
 
 #. Number of books published per year.
 #. Number of books published by each publisher.
-
-   * Some publishers' names are in non-Latin scripts, such as Japanese and Russian.  Matplotlib may not know how to display these names; that is okay!
+ 
+   .. admonition:: Note
+   
+      Some publishers' names are in non-Latin scripts, such as Japanese and Russian.  Matplotlib may not know how to display these names; that is okay!
 
 #. Text ratings count versus reviews count.
 
