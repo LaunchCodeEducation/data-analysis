@@ -1,22 +1,22 @@
 SQL Part 1 - Introduction and Azure Data Studio
 ===============================================
 
-Readings
---------
-
 Read the following articles, follow along where instructed:
 
-`What is SQL? <https://www.youtube.com/watch?v=27axs9dO7AE>`__
+Introduction to SQL
+-------------------
 
-`What Is a Database? <https://www.oracle.com/database/what-is-database/>`__
+1. `What is SQL? <https://www.youtube.com/watch?v=27axs9dO7AE>`__
 
-`Learn to write SQL queries in 5 minutes! <https://medium.com/geekculture/writing-your-first-sql-query-610da7a5afea>`__
+2. `What Is a Database? <https://www.oracle.com/database/what-is-database/>`__
 
-`Learn to write basic SQL Queries. <https://www.sqlshack.com/learn-to-write-basic-sql-queries/>`__
+3. `Learn to write SQL queries in 5 minutes! <https://medium.com/geekculture/writing-your-first-sql-query-610da7a5afea>`__
+
+4. `Learn to write basic SQL Queries. <https://www.sqlshack.com/learn-to-write-basic-sql-queries/>`__
 
 Read the following article, skipping the installation and set up section and stopping at the Join section.  We are just looking for comprehension to help guide when completing the exercises.  As they are using SQLite, some of the terminology may be slightly different.  We are using T-SQL which uses TOP instead of LIMIT.
 
-| `SQL Basics — Hands-On Beginner SQL Tutorial Analyzing Bike-Sharing <https://www.dataquest.io/blog/sql-basics/>`__
+5. `SQL Basics — Hands-On Beginner SQL Tutorial Analyzing Bike-Sharing <https://www.dataquest.io/blog/sql-basics/>`__
 
 .. admonition:: note
 
@@ -24,9 +24,9 @@ Read the following article, skipping the installation and set up section and sto
 
 **Additional Resources**
 
-| `Glossary: Databases and SQL <https://swcarpentry.github.io/sql-novice-survey/reference.html>`__
+1. `Glossary: Databases and SQL <https://swcarpentry.github.io/sql-novice-survey/reference.html>`__
 
-| `SQL Tutorial: Essential SQL For The Beginners <https://www.sqltutorial.org/>`__
+2. `SQL Tutorial: Essential SQL For The Beginners <https://www.sqltutorial.org/>`__
 
 Check Your Understanding
 ------------------------

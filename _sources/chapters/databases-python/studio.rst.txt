@@ -6,7 +6,7 @@ Getting Started
 
 | Before getting started with the coding, create a watchlist of 10 TV shows/movies that you, personally, are interested in watching. 
 
-For this weeks studio fork this `GitHub repository <https://github.com/gildedgardenia/databases-and-py-studio>`__ and 
+For this weeks studio fork this `GitHub repository <https://github.com/launchcodeeducation/databases-and-py-studio>`__ and 
 clone to your computer.  If you need a refresher on how to do this see :ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`.
 
 We will be using the `TV Shows dataset <https://www.kaggle.com/datasets/ruchi798/tv-shows-on-netflix-prime-video-hulu-and-disney>`__ from Kaggle. We have included the CSV for you in the repository you just cloned.

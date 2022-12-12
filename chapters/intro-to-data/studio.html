@@ -95,14 +95,14 @@ discuss it so that everyone is on the same page. Don’t hesitate to ask course 
 may have about your scenario! Use the Exercises as a guide for the discussion and make sure to leave
 yourselves time to put together a small presentation reviewing your discussion for the class.</p>
 <p>In your presentation, make sure to include:</p>
-<ul class="simple">
-<li><p>The problem the business owner is trying to solve?</p></li>
+<ol class="arabic simple">
+<li><p>The problem the business owner is trying to solve.</p></li>
 <li><p>Available data sources? What kind of information do we need?</p></li>
 <li><p>What would you need/do to prepare the data? Problems with the data?</p></li>
 <li><p>Talk about exploratory analysis and KPIs.</p></li>
 <li><p>Discuss what would make your results valid/invalid.</p></li>
 <li><p>Who are the stakeholders and how would you present your findings?</p></li>
-</ul>
+</ol>
 </div>
 <div class="section" id="scenarios">
 <h2><span class="section-number">13.3.2. </span>Scenarios<a class="headerlink" href="#scenarios" title="Permalink to this headline">¶</a></h2>
@@ -111,41 +111,48 @@ yourselves time to put together a small presentation reviewing your discussion f
 <p>Cierra is a young woman in her 20s. She has over 250,000 followers on her knitting instagram, &#64;cierraknits. She and her manager want to take a closer look at where she is earning money and how much. They are tasking you with figuring out if Cierra makes more money writing and selling her knitting patterns herself on Ravelry or writing knitting patterns for sponsors, such as Yarniverse, which are offered through their site. Cierra and her manager are also wondering if factors such as time it takes her to finish a project and whether or not a sponsor gifts her the yarn have an impact. At the end of the project, you will be presenting your findings to Cierra and her manager.</p>
 <div class="section" id="data-sets">
 <h4><span class="section-number">13.3.2.1.1. </span>Data Sets<a class="headerlink" href="#data-sets" title="Permalink to this headline">¶</a></h4>
-<div class="line-block">
-<div class="line"><strong>Yarn Stash</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Brand, Yarn name, Color Name, Dye Lot, Credit</p></li>
-<li><p>Example: Red Heart, Super Saver,  Pool, NULL, Gifted By Red Heart</p></li>
-</ul>
-<div class="line-block">
-<div class="line"><strong>Patterns Written</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Name, Category, Published, Downloads, Location, Yarn Used, Quantity Used, Total Profit</p></li>
-<li><p>Example: Fall Afternoon, Scarf, 9/24/2020, 5001, Ravelry, Caron Simply Soft, 2 balls, $25,000</p></li>
-</ul>
-<div class="line-block">
-<div class="line"><strong>Sponsors</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Name, Relationship Start Date, Relationship End Date, Total Income</p></li>
-<li><p>Example: Yarniverse, 5/6/2018, N/A, $10,000</p></li>
-</ul>
-<div class="line-block">
-<div class="line"><strong>Knitting Log</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Project Name, Type, Yarn Used, Start Date, End Date, Notes</p></li>
-<li><p>Example: Funky Sweater, Sweater, Lost the label :(, 6/8/2019, 6/19/2019, Still mad that I lost the yarn label</p></li>
-</ul>
-<div class="line-block">
-<div class="line"><strong>Posts</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Post Number, Sponsored?, Current Likes, Current Comments, Notes</p></li>
-<li><p>Example: 256, Yes, 67890, 720, This post did really well! Posted at 8 AM and got tons of activity in the first hour</p></li>
-</ul>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>Yarn Stash:</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Brand, Yarn name, Color Name, Dye Lot, Credit</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> Red Heart, Super Saver,  Pool, NULL, Gifted By Red Heart</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Patterns Written</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Name, Category, Published, Downloads, Location, Yarn Used, Quantity Used, Total Profit</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> Fall Afternoon, Scarf, 9/24/2020, 5001, Ravelry, Caron Simply Soft, 2 balls, $25,000</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Sponsors</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Name, Relationship Start Date, Relationship End Date, Total Income</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> Yarniverse, 5/6/2018, N/A, $10,000</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Knitting Log</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Project Name, Type, Yarn Used, Start Date, End Date, Notes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> Funky Sweater, Sweater, Lost the label :(, 6/8/2019, 6/19/2019, Still mad that I lost the yarn label</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Posts</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Post Number, Sponsored?, Current Likes, Current Comments, Notes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> 256, Yes, 67890, 720, This post did really well! Posted at 8 AM and got tons of activity in the first hour</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+</ol>
 </div>
 </div>
 <div class="section" id="scenario-2-farmer-s-market">
@@ -153,41 +160,48 @@ yourselves time to put together a small presentation reviewing your discussion f
 <p>Shelley is in her mid-50s and owns a stall at her local farmer’s market selling produce. Beng a small business owner, Shelley is handling everything herself and is hoping to better allocate her remaining resources this year to make the most profit. She is enlisting you to help predict the demand for next year’s crops so she knows what to expect. At the end of the project, you will be presenting to Shelley.</p>
 <div class="section" id="id1">
 <h4><span class="section-number">13.3.2.2.1. </span>Data Sets<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
-<div class="line-block">
-<div class="line"><strong>Sales</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Date, Customer Name, Items Sold, Total Sale</p></li>
-<li><p>Example: 7/28/2021, Bill, 6, $14.75</p></li>
-</ul>
-<div class="line-block">
-<div class="line"><strong>Seed Log</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Company, Crop, Variety, Quantity, Notes</p></li>
-<li><p>Example: Heirloom Seeds Co, Tomatoes, Red, 6, This grew really well last year</p></li>
-</ul>
-<div class="line-block">
-<div class="line"><strong>Time to Grow</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns:  Crop, Variety, Time to Grow</p></li>
-<li><p>Example: Tomatoes, Red, 3 months</p></li>
-</ul>
-<div class="line-block">
-<div class="line"><strong>Resources Used</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Crop, Variety, Water Used, Fertilizer Used</p></li>
-<li><p>Example: Tomatoes, Red, 10 gallons, 2 oz.</p></li>
-</ul>
-<div class="line-block">
-<div class="line"><strong>Yield per Year</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Crop, Variety, Year, Crop Yield</p></li>
-<li><p>Example: Tomatoes, Red, 2020, 10 lbs</p></li>
-</ul>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>Sales</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Date, Customer Name, Items Sold, Total Sale</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> 7/28/2021, Bill, 6, $14.75</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Seed Log</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Company, Crop, Variety, Quantity, Notes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> Heirloom Seeds Co, Tomatoes, Red, 6, This grew really well last year</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Time to Grow</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code>  Crop, Variety, Time to Grow</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> Tomatoes, Red, 3 months</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Resources Used</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Crop, Variety, Water Used, Fertilizer Used</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> Tomatoes, Red, 10 gallons, 2 oz.</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Yield per Year</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Crop, Variety, Year, Crop Yield</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> Tomatoes, Red, 2020, 10 lbs</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+</ol>
 </div>
 </div>
 <div class="section" id="scenario-3-department-chair">
@@ -195,27 +209,32 @@ yourselves time to put together a small presentation reviewing your discussion f
 <p>Dr. Jacobsen recently became the head of her department at a prestigious university. She is trying to get more students interested in her department and has asked you to run the numbers so she can figure out what courses to offer next year. At the end of the project, you will be presenting to Dr. Jacobsen and her department.</p>
 <div class="section" id="id2">
 <h4><span class="section-number">13.3.2.3.1. </span>Data Sets<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
-<div class="line-block">
-<div class="line"><strong>Past Enrollments</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Course Name, Section Number, Professor, TA, Students Enrolled, Students Withdrawn, Students Dropped, Students Completed</p></li>
-<li><p>Example: Ecosystems, 2, Dr. Crispin, Ms. Moon, 54, 3, 2, 49</p></li>
-</ul>
-<div class="line-block">
-<div class="line"><strong>Past Course Offerings</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Course Name, Sections Offered, Notes</p></li>
-<li><p>Example: Agriculture, 1, Students did not enroll when offered at 8 AM</p></li>
-</ul>
-<div class="line-block">
-<div class="line"><strong>Current Staff</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Name, Level, Specialty</p></li>
-<li><p>Example: James Crispin, Tenured Professor, Ecology</p></li>
-</ul>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>Past Enrollments</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Course Name, Section Number, Professor, TA, Students Enrolled, Students Withdrawn, Students Dropped, Students Completed</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> Ecosystems, 2, Dr. Crispin, Ms. Moon, 54, 3, 2, 49</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Past Course Offerings</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Course Name, Sections Offered, Notes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> Agriculture, 1, Students did not enroll when offered at 8 AM</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Current Staff</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Name, Level, Specialty</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> James Crispin, Tenured Professor, Ecology</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+</ol>
 </div>
 </div>
 <div class="section" id="scenario-4-local-zoo-and-utility-company">
@@ -223,27 +242,32 @@ yourselves time to put together a small presentation reviewing your discussion f
 <p>Dan is a representative for a local utility company who has been working with Erin at the local zoo. Erin is head of the elephant department and has been giving the elephants tree boughs removed by Dan and their team. The elephants love the treats and it has helped the zoo save a few dollars! Dan and Erin are trying to plan for next year so Erin can begin to put together her budget for elephant care. They have asked you to assist! At the end of the project, you will be presenting to Erin, Dan, and the boards of both the utility company and the zoo.</p>
 <div class="section" id="id3">
 <h4><span class="section-number">13.3.2.4.1. </span>Data Sets<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
-<div class="line-block">
-<div class="line"><strong>Elephants</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Name, Age, Weight, Height, Sex, Species, Dietary Notes</p></li>
-<li><p>Example: Ruthie, 1, 13,000 lbs, 10 ft., F, Loxodonta africana, Loves tree boughs!</p></li>
-</ul>
-<div class="line-block">
-<div class="line"><strong>Vegetation removed per year</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Species, Quantity Removed</p></li>
-<li><p>Example: C. illinoinensis, 500 lbs.</p></li>
-</ul>
-<div class="line-block">
-<div class="line"><strong>Utility Tree Trimmers</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Name, Time at Company, Vegetation Removed each Year</p></li>
-<li><p>Example: Cynthia, 5 years, 300 lbs.</p></li>
-</ul>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>Elephants</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Name, Age, Weight, Height, Sex, Species, Dietary Notes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> Ruthie, 1, 13,000 lbs, 10 ft., F, Loxodonta africana, Loves tree boughs!</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Vegetation removed per year</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Species, Quantity Removed</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> C. illinoinensis, 500 lbs.</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Utility Tree Trimmers</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Name, Time at Company, Vegetation Removed each Year</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> Cynthia, 5 years, 300 lbs.</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+</ol>
 </div>
 </div>
 <div class="section" id="scenario-5-butterfly-gardens">
@@ -251,41 +275,48 @@ yourselves time to put together a small presentation reviewing your discussion f
 <p>Butterfly garden activist, Summer, took over leadership of a small nonprofit during her retirement. She and her staff are hoping to encourage the migration of 3 endangered butterfly species through the area by planting and maintaining gardens on the migratory path. At the end of your work, you will be presenting to Summer and her staff.</p>
 <div class="section" id="id4">
 <h4><span class="section-number">13.3.2.5.1. </span>Data Sets<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
-<div class="line-block">
-<div class="line"><strong>Butterfly Species</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Name, Lifespan, Seen Last Year?, Season, Notes</p></li>
-<li><p>Example: Monarch Butterfly, 2-6 weeks, Yes, August, Loves milkweed!</p></li>
-</ul>
-<div class="line-block">
-<div class="line"><strong>Flowers</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Name, Did Well Last Year?, Notes</p></li>
-<li><p>Example: Milkweed, Yes, Didn’t grow as well at the 5th avenue location</p></li>
-</ul>
-<div class="line-block">
-<div class="line"><strong>Current garden locations</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Address, Flowers, Butterflies Seen, Notes</p></li>
-<li><p>Example: 123 5th avenue, Milkweed and Daisies, Monarchs, Renting the space from current landowner</p></li>
-</ul>
-<div class="line-block">
-<div class="line"><strong>Potential locations</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Address, Site Notes</p></li>
-<li><p>Example: 123 4th avenue, Would be a great spot for more milkweed!</p></li>
-</ul>
-<div class="line-block">
-<div class="line"><strong>Volunteers/staff</strong></div>
-</div>
-<ul class="simple">
-<li><p>Columns: Name, Time Spent, Level, Hours Worked</p></li>
-<li><p>Example: Juanita Rodriguez, 6 years, senior volunteer, 500 hours</p></li>
-</ul>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>Butterfly Species</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Name, Lifespan, Seen Last Year?, Season, Notes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> Monarch Butterfly, 2-6 weeks, Yes, August, Loves milkweed!</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Flowers</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Name, Did Well Last Year?, Notes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> Milkweed, Yes, Didn’t grow as well at the 5th avenue location</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Current Garden Locations</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Address, Flowers, Butterflies Seen, Notes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> 123 5th avenue, Milkweed and Daisies, Monarchs, Renting the space from current landowner</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Potential locations</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Address, Site Notes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> 123 4th avenue, Would be a great spot for more milkweed!</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Volunteers/staff</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Columns:</span></code> Name, Time Spent, Level, Hours Worked</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Example:</span></code> Juanita Rodriguez, 6 years, senior volunteer, 500 hours</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+</ol>
 </div>
 </div>
 </div>

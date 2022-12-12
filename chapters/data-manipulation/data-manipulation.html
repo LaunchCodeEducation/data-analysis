@@ -86,17 +86,14 @@
     
   <div class="section" id="data-manipulation">
 <h1><span class="section-number">17.1. </span>Data Manipulation<a class="headerlink" href="#data-manipulation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="readings">
-<span id="readingdatamanipulation"></span><h2><span class="section-number">17.1.1. </span>Readings<a class="headerlink" href="#readings" title="Permalink to this headline">¶</a></h2>
-<p>The readings and exercises are a little different for this chapter.  Both have been combined into a GitHub repository containing two
+<p id="readingdatamanipulation">The readings and exercises are a little different for this chapter.  Both have been combined into a GitHub repository containing two
 jupyter notebooks. The link can be found <a class="reference internal" href="exercises.html#datamanipulationnotebook"><span class="std std-ref">here</span></a>.</p>
 <div class="admonition-note admonition">
 <p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p>You will find all the assigned reading within each notebook in the GitHub repository you forked for this week’s exercises.</p>
 </div>
-</div>
 <div class="section" id="check-your-understanding">
-<span id="cyudatamanipulation"></span><h2><span class="section-number">17.1.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<span id="cyudatamanipulation"></span><h2><span class="section-number">17.1.1. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>What is the syntax for multiple aggregation functions across a single column, such as ‘age’?</p>
@@ -178,28 +175,13 @@ jupyter notebooks. The link can be found <a class="reference internal" href="exe
 <p>Using our flowers and garden_supply tables, write the syntax to merge a subset of columns,
 where flowers is the right table, and garden_supply on the left. This subset should only look
 at “Flower” and “Sold_As” only in the garden_supply table, and “Name” in the flowers table.</p>
-<ol class="loweralpha simple">
-<li></li>
-</ol>
-<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">garden_supply</span><span class="p">[[</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span><span class="s2">&quot;Sold_As&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">flowers</span><span class="p">[[</span><span class="s2">&quot;Name&quot;</span><span class="p">]],</span><span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Name&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<ol class="loweralpha simple" start="2">
-<li></li>
-</ol>
-<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">flowers</span><span class="p">[[</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span> <span class="s2">&quot;Sold_As&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">garden_supply</span><span class="p">[[</span><span class="s2">&quot;Name&quot;</span><span class="p">]],</span> <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Name&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<ol class="loweralpha simple" start="3">
-<li></li>
-</ol>
-<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">garden_supply</span><span class="p">[[</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span> <span class="s2">&quot;Sold_As&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">flowers</span><span class="p">[[</span><span class="s2">&quot;Name&quot;</span><span class="p">]],</span> <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Name&quot;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Flowers&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<ol class="loweralpha simple" start="4">
-<li></li>
-</ol>
-<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">garden_supply</span><span class="p">[[</span><span class="s2">&quot;Name&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">flowers</span><span class="p">[[</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span> <span class="s2">&quot;Sold_As&quot;</span><span class="p">]],</span> <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Name&quot;</span><span class="p">)</span>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">.</span> <span class="n">garden_supply</span><span class="p">[[</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span><span class="s2">&quot;Sold_As&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">flowers</span><span class="p">[[</span><span class="s2">&quot;Name&quot;</span><span class="p">]],</span><span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Name&quot;</span><span class="p">)</span>
+
+<span class="n">b</span><span class="o">.</span> <span class="n">flowers</span><span class="p">[[</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span> <span class="s2">&quot;Sold_As&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">garden_supply</span><span class="p">[[</span><span class="s2">&quot;Name&quot;</span><span class="p">]],</span> <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Name&quot;</span><span class="p">)</span>
+
+<span class="n">c</span><span class="o">.</span> <span class="n">garden_supply</span><span class="p">[[</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span> <span class="s2">&quot;Sold_As&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">flowers</span><span class="p">[[</span><span class="s2">&quot;Name&quot;</span><span class="p">]],</span> <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Name&quot;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Flowers&quot;</span><span class="p">)</span>
+
+<span class="n">d</span><span class="o">.</span> <span class="n">garden_supply</span><span class="p">[[</span><span class="s2">&quot;Name&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">flowers</span><span class="p">[[</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span> <span class="s2">&quot;Sold_As&quot;</span><span class="p">]],</span> <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;Flower&quot;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;Name&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

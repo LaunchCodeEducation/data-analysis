@@ -1,24 +1,24 @@
 SQL Part 4 - Subqueries, UNION, INTERSECT, EXCEPT
 =================================================
 
-Reading
--------
-
 The articles below share how to use subqueries in queries that go beyond a SELECT statement. We will go more in-depth on these other types of statements in the next lesson. For now, focus on the rules of subqueries.
 
-**Subqueries**
+Subqueries
+----------
 
-`Subqueries (SQL Server) <https://docs.microsoft.com/en-us/sql/relational-databases/performance/subqueries?view=sql-server-ver15>`__.
+1. `Subqueries (SQL Server) <https://docs.microsoft.com/en-us/sql/relational-databases/performance/subqueries?view=sql-server-ver15>`__.
 
-`SQL - Sub Queries <https://www.tutorialspoint.com/sql/sql-sub-queries.htm>`__.
+2. `SQL - Sub Queries <https://www.tutorialspoint.com/sql/sql-sub-queries.htm>`__.
 
-**UNION, INTERSECT, EXCEPT**
+UNION, INTERSECT, EXCEPT
+------------------------
 
-`SQL Union, Intersect, and Except – The Ultimate Guide <https://www.essentialsql.com/sql-union-intersect-except>`__.
+1. `SQL Union, Intersect, and Except – The Ultimate Guide <https://www.essentialsql.com/sql-union-intersect-except>`__.
 
-**Correlated Subqueries**
+Correlated Subqueries
+---------------------
 
-`SQL Correlated Subqueries <https://www.geeksforgeeks.org/sql-correlated-subqueries>`__.
+1. `SQL Correlated Subqueries <https://www.geeksforgeeks.org/sql-correlated-subqueries>`__.
 
 
 Check Your Understanding
