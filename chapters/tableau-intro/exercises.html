@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -86,6 +86,104 @@
     
   <div class="section" id="exercises-tableau-part-1-introduction-to-visualization">
 <h1><span class="section-number">25.3. </span>Exercises: Tableau Part 1 - Introduction to Visualization<a class="headerlink" href="#exercises-tableau-part-1-introduction-to-visualization" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="getting-started">
+<h2><span class="section-number">25.3.1. </span>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Work through <a class="reference external" href="https://towardsdatascience.com/world-happiness-dashboard-in-tableau-4dc504212288" target="_blank">World Happiness Dashboard<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> in Tableau to create your own dashboard. This walkthrough uses the <a class="reference external" href="https://www.kaggle.com/unsdsn/world-happiness?select=2019.csv" target="_blank">World Happiness Dataset<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> on Kaggle.</div>
+</div>
+</div>
+<div class="section" id="step-by-step-guide-for-this-walkthrough">
+<h2><span class="section-number">25.3.2. </span>Step-by-step Guide for this Walkthrough<a class="headerlink" href="#step-by-step-guide-for-this-walkthrough" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">As you read through the article, don’t hesitate to try out what the videos demonstrate or just experiment with Tableau to figure things out. We have outlined the steps from the article below so you don’t lose your place!</div>
+</div>
+<div class="section" id="download-the-dataset">
+<h3><span class="section-number">25.3.2.1. </span>Download the Dataset<a class="headerlink" href="#download-the-dataset" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Download the <code class="docutils literal notranslate"><span class="pre">2019.csv</span></code> file from the Kaggle dataset.</p></li>
+</ol>
+</div>
+<div class="section" id="viz-1-happiness-score-of-countries-2019">
+<h3><span class="section-number">25.3.2.2. </span>Viz 1: Happiness Score of Countries — 2019<a class="headerlink" href="#viz-1-happiness-score-of-countries-2019" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Create the Map.</p>
+<ol class="arabic simple">
+<li><p>Drop the <strong>Latitude</strong> pill into the <em>Rows</em> shelf.</p></li>
+<li><p>Drop <strong>Longitude</strong> pill into <em>Columns</em> shelf.</p></li>
+<li><p>Drop <strong>Country or region</strong> onto the <em>Marks Card</em>.</p>
+<ol class="upperalpha simple">
+<li><p>This is added as a <em>Detail</em>. Look at the icons to verify.</p></li>
+</ol>
+</li>
+<li><p>Select <strong>Score</strong> and drag it onto the <em>Color</em> box contained in the <em>Marks</em> card.</p></li>
+<li><p>Rename your sheet: either double click on “Sheet 1” in the View or right click on the Sheet tab to update the name.</p>
+<ol class="upperalpha simple">
+<li><p>If only updating the view, the sheet tab name will not change.</p></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="viz-2-happiness-score-vs-gdp-and-healthy-life-expectancy">
+<h3><span class="section-number">25.3.2.3. </span>Viz 2: Happiness Score vs GDP and Healthy Life Expectancy<a class="headerlink" href="#viz-2-happiness-score-vs-gdp-and-healthy-life-expectancy" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Drag <strong>Score</strong> onto the <em>Row</em> shelf.</p>
+<ol class="arabic simple">
+<li><p>It will automatically aggregate as a SUM of Score.</p></li>
+<li><p>To remove that, find the drop down menu on the right side of the pill and select “Dimension”.</p></li>
+</ol>
+</li>
+<li><p>Drag <strong>GDP per capita</strong> onto the <em>Columns</em> shelf.</p>
+<ol class="arabic simple">
+<li><p>Convert this into a “Dimension”, too.</p></li>
+</ol>
+</li>
+<li><p>Drag the <strong>Healthy Life Expectancy</strong> into the <em>Color</em> box found in the <em>Marks</em> card.</p></li>
+<li><p>Rename your sheet.</p></li>
+</ol>
+</div>
+<div class="section" id="viz-3-freedom-and-social-support-vs-score">
+<h3><span class="section-number">25.3.2.4. </span>Viz 3: Freedom and Social Support vs Score<a class="headerlink" href="#viz-3-freedom-and-social-support-vs-score" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Drop <strong>Score</strong> into the <em>Columns</em> shelf.</p>
+<ol class="arabic simple">
+<li><p>Within the <strong>Score</strong> pill, find the drop down menu and select “Dimension”.</p></li>
+</ol>
+</li>
+<li><p>Drag the <strong>Freedom to make life choices</strong> pill onto the <em>Rows</em> shelf.</p>
+<ol class="arabic simple">
+<li><p>Notice that it changed to a SUM - keep it this way.</p></li>
+</ol>
+</li>
+<li><p>Drag the <strong>Social Support</strong> pill onto the <em>Row</em> shelf.</p>
+<ol class="arabic simple">
+<li><p>Notice that is also now a SUM - keep it this way.</p></li>
+</ol>
+</li>
+<li><p>To rename an axis, double-click on it and make the changes desired.</p></li>
+<li><p>Rename your sheet.</p></li>
+</ol>
+</div>
+<div class="section" id="make-a-dashboard">
+<h3><span class="section-number">25.3.2.5. </span>Make a Dashboard<a class="headerlink" href="#make-a-dashboard" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p>Use the tab to create a new dashboard.</p></li>
+<li><p>Drag your sheets onto the dashboard.</p>
+<div class="admonition-note admonition">
+<p class="admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p>If you only renamed the sheets within your view, the tabs will not have changed.  This is okay.  You can either update the tab names now or work with Sheet 1, Sheet 2, and Sheet 3.</p>
+</div>
+</li>
+<li><p>You may make it identical to the dashboard in the article, or design it yourself.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="submitting-your-work">
+<h2><span class="section-number">25.3.3. </span>Submitting Your Work<a class="headerlink" href="#submitting-your-work" title="Permalink to this headline">¶</a></h2>
+<p>When finished make sure to save and publish your work to your Tableau Public account. Copy the URL to your published Tableau project and paste it into the submission box in
+Canvas for <strong>Exercises: Visualization with Tableau Part 1</strong> and click <em>Submit</em>.</p>
+</div>
 </div>
 
 
