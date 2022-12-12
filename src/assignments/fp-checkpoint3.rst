@@ -16,7 +16,7 @@ not have to re-submit any previous checkpoints unless your mentor requests you d
 Getting Started
 ---------------
 
-Fork `this GitHub repository <https://github.com/gildedgardenia/cleaning-data-checkpoint>`__ and 
+Fork `this GitHub repository <https://github.com/launchcodeeducation/cleaning-data-checkpoint>`__ and 
 clone it to your computer. Follow the instructions within the notebook using your chosen dataset. 
 Add notes about your process where directed to. 
 

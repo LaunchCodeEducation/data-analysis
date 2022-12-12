@@ -6,11 +6,9 @@ Reading
 
 Read the following articles:
 
-`Working with database using Pandas <https://www.geeksforgeeks.org/working-with-database-using-pandas/>`__.
-
-`How to Use Pandas to Access Databases <https://medium.com/jbennetcodes/how-to-use-pandas-to-access-databases-e4e74e6a329e>`__.
-
-`Python - Databases and SQL <https://www.tutorialspoint.com/python_network_programming/python_databases_and_sql.htm>`__.
+#. `Working with database using Pandas <https://www.geeksforgeeks.org/working-with-database-using-pandas/>`__.
+#. `How to Use Pandas to Access Databases <https://medium.com/jbennetcodes/how-to-use-pandas-to-access-databases-e4e74e6a329e>`__.
+#. `Python - Databases and SQL <https://www.tutorialspoint.com/python_network_programming/python_databases_and_sql.htm>`__.
 
 Check Your Understanding
 ------------------------
