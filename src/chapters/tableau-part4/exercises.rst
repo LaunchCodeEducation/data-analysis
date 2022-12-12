@@ -7,7 +7,7 @@ Getting Started
 Create Your Own Interactive Resume
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-| Now that you are almost done with CoderGirl, let’s create an interactive resume that will show off your skills using Tableau.  Since this resume will be all about you, you are going to be creating and editing the data.   You can choose to create a dashboard for your resume or a story.   Since we are using Tableau Public for this resume, you should not share any contact information for this project.  
+| Now that you are almost done with Women+, let's create an interactive resume that will show off your skills using Tableau.  Since this resume will be all about you, you are going to be creating and editing the data.   You can choose to create a dashboard for your resume or a story.   Since we are using Tableau Public for this resume, you should not share any contact information for this project.  
 
 .. admonition:: Note
    
@@ -15,7 +15,7 @@ Create Your Own Interactive Resume
 
 | Your interactive resume should contain:
 
-1. At least one gantt chart that displays a relevant timeline for your resume.  
+1. At least one Gantt chart that displays a relevant timeline for your resume.  
 #. And at least one other type of visualization that is relevant to your resume.
 
 .. _part1-how-to:
@@ -35,7 +35,7 @@ Part 1: How to Create a Resume In Tableau Public
    #. `5 Tips on Creating an Interactive Resume using Tableau <https://www.tableau.com/blog/5-tips-creating-visual-resume-using-tableau-40558>`__.
    #. `How to make an interactive resume in Tableau (50 min) <https://www.tableau.com/learn/webinars/how-make-interactive-resume-tableau?ssologin=true#video>`__.
 
-      A. This video will teach you how to make a gantt chart and a lollipop chart. 
+      A. This video will teach you how to make a Gantt chart and a Lollipop chart. 
    
    #. `Create Your Interactive Resume in Tableau Public? Video (48 min) <https://www.youtube.com/watch?v=YlyO_InVI-E>`__.
 
@@ -44,9 +44,9 @@ Part 1: How to Create a Resume In Tableau Public
 Part 2: Creating the Data
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-| You are creating the data for this project, as it is your resume.  In order to do this, you will need to use a spreadsheet program that will allow you to save and download csv files.  This could be Excel, Google Sheets, or Numbers.  Tableau likes columnar formats, meaning you organize your data by columns.  For example, you make a spreadsheet about volunteer work that has a column for the name of the organization/activity, the start date and end date, and a description.  
+You are creating the data for this project, as it is your resume.  In order to do this, you will need to use a spreadsheet program that will allow you to save and download CSV files.  This could be Excel, Google Sheets, or Numbers.  Tableau likes columnar formats, meaning you organize your data by columns.  For example, you make a spreadsheet about volunteer work that has a column for the name of the organization/activity, the start date and end date, and a description.  
 
-| Once your data has been entered, you will need to save and download your file.  Make sure you download it as a csv file.  We suggest creating a folder for your spreadsheets and remembering its location as you might be adding to it as you work on this exercise.
+Once your data has been entered, you will need to save and download your file.  Make sure you download it as a csv file.  We suggest creating a folder for your spreadsheets and remembering its location as you might be adding to it as you work on this exercise.
 
 **A few notes on your data:**
 

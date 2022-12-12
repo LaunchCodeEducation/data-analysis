@@ -4,9 +4,9 @@ Studio: Tableau Part 4 - Stories and Dates
 Getting Started
 ---------------
 
-| This is a group studio.  Your group has been asked to create a visual for the International Fencing Federation (FIE).   Work through the data analysis steps that you have been learning in this program to create your final viz. 
+This is a group studio.  Your group has been asked to create a visual for the International Fencing Federation (FIE).   Work through the data analysis steps that you have been learning in this program to create your final viz. 
 
-| As a group, explore your data and decide upon: 
+As a group, explore your data and decide upon: 
 
 1. A business issue or a question you want to explore further.  
 #. Next clean, and manipulate the data to create vizzes that provide insight to your business issue or question.  
@@ -21,7 +21,7 @@ Getting Started
    #. Location and/or Time Zone
    #. What factors predict wins? 
    
-| You are not limited to these topics.  If you discover something more interesting, explore away!  
+You are not limited to these topics.  If you discover something more interesting, explore away!  
 
 Setting Up the Studio:
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -32,7 +32,7 @@ Download `FIE Fencing Womens Foil data set <https://www.kaggle.com/datasets/amic
    :alt: An orange arrow points to the ``Download`` bubble, highlighting the ``Download`` option of kaggle.
 
 #. Open the csv file in Tableau Public.  
-#. When you open this data set, you may want to create a relationship between the csv files.
+#. When you open this data set, you may want to create a relationship between the CSV files.
 
    #. You will explore this in the EDA section below.
 
