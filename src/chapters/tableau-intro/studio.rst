@@ -14,7 +14,7 @@ Please use your best judgement on the type of chart, layout, and interpretation 
    #. How many different habitats were mushrooms collected from?
    #. How many Mushroom habitats compared to class?
    #. How many Mushrooms sorted by class and cap-color?
-   #. `Create aliases <https://help.tableau.com/current/pro/desktop/en-us/datafields_fieldproperties_aliases_ex1editing.htm>`__ for each letter in chart d.
+   #. `Create aliases <https://help.tableau.com/current/pro/desktop/en-us/datafields_fieldproperties_aliases_ex1editing.htm>`__ for each letter in the chart from #4 above.
       
       a. Use the context provided in the dataset for what each letter represents.
       #. Explore the “Marks” card to add color or size to chart d based on the chart design you have chosen.
