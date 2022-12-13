@@ -21,50 +21,15 @@ Read the following articles, and watch the videos.
 
 * This is a great video explaining descriptive statistics and visualization, however there are commercials at various points.  Just ignore or skip ahead.
 
-.. list-table:: Commercials
-   :align: center
-   :header-rows: 1
-   :widths:  10 10 80
-   
-   * - **Start**
-     - **Stop**
-     - 
-   * - 3:44
-     - 4:08
-     - 
-   * - 6:16
-     - 7:26
-     - 
-   * - 14:00
-     - end
-     - 
-
 `An introduction to inferential statistics <https://www.scribbr.com/statistics/inferential-statistics/>`__.
 
 * We are looking for a general understanding of the terminology and thinking around inferential statistics.
   
 `Statistics Made Easy! <https://www.youtube.com/watch?v=I10q6fjPxJ0>`__.
  
-
 * This is a great video offering a simplified overview of inferential statistical terms. However there are commercials, ignore and skip ahead.
 
-.. list-table:: Commercials
-   :align: center
-   :header-rows: 1
-   :widths:  10 10 80
-   
-   * - **Start**
-     - **Stop**
-     - 
-   * - 4:57
-     - 5:30
-     - 
-   * - 12:10
-     - end
-     - 
-
-
-Additional resource:
+Additional resources:
 
 `Seeing Theory: A visual introduction to probability and statistics. <https://seeing-theory.brown.edu>`__.
 

@@ -8,7 +8,7 @@ Fork this `GitHub repository <https://github.com/LaunchCodeEducation/IntroToStat
 clone to your computer.  If you need a refresher on how to do this 
 see :ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`.
 
-The kaggle dataset we will be using can be found `here <https://www.kaggle.com/datasets/andrewmvd/heart-failure-clinical-data>`__, and has been included in the repo for you already.
+The Kaggle dataset we will be using can be found `here <https://www.kaggle.com/datasets/andrewmvd/heart-failure-clinical-data>`__, and has been included in the repo for you already.
 
 #. Break into small groups.
 #. With each group choosing a different variable from group A and one from group B.  
