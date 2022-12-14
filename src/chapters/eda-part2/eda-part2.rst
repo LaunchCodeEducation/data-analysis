@@ -7,6 +7,7 @@ EDA With Python Part 2
 Read the following article:
 
 #. `20 Must-Know Pandas Function for Exploratory Data Analysis <https://www.analyticsvidhya.com/blog/2021/04/20-must-known-pandas-function-for-exploratory-data-analysis-eda/>`__.
+
 Outlier Detection
 -----------------
 
