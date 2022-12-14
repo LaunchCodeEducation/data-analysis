@@ -61,7 +61,7 @@ Check Your Understanding
 
 .. admonition:: Question
 
-   Which method do you use to create a "Wide-to-Long" table?
+   Which method do you use to create a ``Wide-to-Long`` table?
 
 .. admonition:: Question
 
@@ -111,19 +111,16 @@ Check Your Understanding
 
 .. admonition:: Question
 
-   Which merge combines ALL of the rows of the merged DataFrames, filling in ``NaN`` if values are missing?
+   Which ``merge()`` combines ALL of the rows of the merged DataFrames, filling in ``NaN`` if values are missing?
 
 .. admonition:: Question
    
-   ``merge()`` **question 1 of 2**
+   The ``merge()`` function contains the following parameters: ``on``, ``left_on``, and ``right_on``. 
    
-   In the ``merge()`` function, there are the following parameters: ``on``, ``left_on``, and ``right_on``. 
-   When would you use them?
+   When would you use each of these parameters?
 
 .. admonition:: Question
-
-  ``merge()`` **question 2 of 2**
-
+   
    What is the difference between ``on`` and ``left_on`` in the ``merge()`` function?
 
 .. admonition:: Question

@@ -20,6 +20,6 @@ You are more than welcome to also pull up your notebook from the last lesson to 
 Submitting Your Work
 --------------------
 
-When finished make sure to push your changes up to GitHub. Copy the link to your GitHub 
-repository and paste it into the submission box in Canvas for **Studio: Data Manipulation** 
-and click *Submit*.
+When finished make sure to push your changes up to GitHub. 
+
+Copy the link to your GitHub repository and paste it into the submission box in Canvas for **Studio: Data Manipulation** and click *Submit*.

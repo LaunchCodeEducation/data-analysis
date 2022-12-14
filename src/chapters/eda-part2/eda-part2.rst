@@ -29,7 +29,7 @@ Read the following articles:
 Univariate and Multivariate Charts
 ----------------------------------
 
-Code along with the article below using the `DataCleaning-Heart-Data <https://github.com/speudusa/DataCleaning-Heart-Data>`__ repo:
+Code along with the article below using the `DataCleaning-Heart-Data <https://github.com/LaunchCodeEducation/DataCleaning-Heart-Data>`__ repo:
 
 #. `Understand the Data With Univariate And Multivariate Charts and Plots in Python <https://towardsdatascience.com/understand-the-data-with-univariate-and-multivariate-charts-and-plots-in-python-3b9fcd68cd8>`__.
 
