@@ -18,6 +18,7 @@ Code along with the  `How to calculate summary statistics <https://pandas.pydata
 Submitting Your Work
 --------------------
 
-When finished make sure to push your changes up to GitHub. Copy the link to your GitHub 
-repository and paste it into the submission box in Canvas for **Exercises: EDA Part 2**
+When finished make sure to push your changes up to GitHub. 
+
+Copy the link to your GitHub repository and paste it into the submission box in Canvas for **Exercises: EDA Part 2**
 and click *Submit*.
