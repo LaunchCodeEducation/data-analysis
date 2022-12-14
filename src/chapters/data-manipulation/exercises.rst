@@ -6,7 +6,7 @@ Exercises: Data Manipulation
 Getting Started
 --------------- 
 
-Fork this `GitHub repository <https://github.com/speudusa/DataManipulation>`__
+Fork this `GitHub repository <https://github.com/launchcodeeducation/DataManipulation>`__
 into your own GitHub account and clone to your computer.  If you need a refresher on how to do this 
 see :ref:`Instruction for Using GitHub w/Jupyter Notebooks<usingGitHubNotebooks>`.
 

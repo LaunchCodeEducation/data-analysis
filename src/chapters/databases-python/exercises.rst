@@ -4,7 +4,7 @@ Exercises: Working with Databases in Python
 Getting Started
 ---------------
 
-Fork this `GitHub repository <https://github.com/gildedgardenia/databases-and-py-exercises>`__ and 
+Fork this `GitHub repository <https://github.com/launchcodeeducation/databases-and-py-exercises>`__ and 
 clone to your computer. If you need a refresher on how to do this 
 see :ref:`Instruction for Using GitHub w/Jupyter Notebooks<usingGitHubNotebooks>`.
  

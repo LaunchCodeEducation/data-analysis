@@ -4,7 +4,7 @@ Exercises: SQL Part 5 - Schemas and CRUD Operations
 Getting Started
 ---------------
 
-Fork this `GitHub repository <https://github.com/gildedgardenia/sql-part5-exercises>`__ and 
+Fork this `GitHub repository <https://github.com/launchcodeeducation/sql-part5-exercises>`__ and 
 clone to your computer. If you need a refresher on how to do this 
 see :ref:`Instruction for Using GitHub w/Jupyter Notebooks<usingGitHubNotebooks>`.
 

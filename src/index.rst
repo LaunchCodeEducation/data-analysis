@@ -113,3 +113,4 @@ Appendices
    index-full
    chapters/classes-and-objects/index
    chapters/class-relationships/index
+   assignments/call-center-cleanup
