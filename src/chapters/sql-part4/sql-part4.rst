@@ -1,7 +1,7 @@
 SQL Part 4 - Subqueries, UNION, INTERSECT, EXCEPT
 =================================================
 
-The articles below share how to use subqueries in queries that go beyond a SELECT statement. We will go more in-depth on these other types of statements in the next lesson. For now, focus on the rules of subqueries.
+The articles below share how to use subqueries in queries that go beyond a ``SELECT`` statement. We will go more in-depth on these other types of statements in the next lesson. For now, focus on the rules of subqueries.
 
 Subqueries
 ----------
