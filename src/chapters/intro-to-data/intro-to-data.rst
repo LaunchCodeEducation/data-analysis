@@ -1,25 +1,21 @@
 Introduction To Data
 ====================
 
+Read the following articles:
+
 Methods and Techniques
 ----------------------
-
-Read the following article.
 
 #. `Data Analysis Methods & Techniques <https://www.datapine.com/blog/data-analysis-methods-and-techniques/>`__.
 
 Data Analytics in Python
 ------------------------
 
-Read the following article.
-
 #. `A Beginner's Guide to Data Analysis in Python <https://towardsdatascience.com/a-beginners-guide-to-data-analysis-in-python-188706df5447>`__.
 
 
 Data Project Life Cycle
 -----------------------
-
-Read the following articles.
 
 #. `Data project life cycle <https://www.northeastern.edu/graduate/blog/data-analysis-project-lifecycle/>`__.  
 
@@ -28,7 +24,7 @@ Read the following articles.
 What is a Dataset?
 ------------------
 
-Think back to when you are working on a :ref:`monthly budget<monthly-budget>`. Let's say you have a singular spreadsheet 
+Think back to when you are working on a monthly budget. Let's say you have a singular spreadsheet 
 tracking your monthly automatic payments for May that includes info such as the company name, the 
 amount, and the date. Now just this one spreadsheet alone could be a dataset. It would be small and 
 you may not be able to gain many insights from just one month of automatic payments, but it is still 
