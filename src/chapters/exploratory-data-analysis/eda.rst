@@ -1,7 +1,11 @@
 Exploratory Data Analysis
 =========================
 
-Read the following articles, follow along where instructed.  You do not need to install ``pandas``, it comes with ``Anaconda``.  
+Read the following articles, follow along where instructed.  
+
+.. admonition:: Note
+    
+  You do not need to install ``pandas``, it comes with ``Anaconda``.  
 
 .. admonition:: Tip
   
@@ -12,19 +16,13 @@ Exploring Data with Python
 
 Code along with this article.  
 
-Stop at Step #8 "Detecting Outliers".
-
 #. `Exploratory data analysis in Python <https://towardsdatascience.com/exploratory-data-analysis-in-python-c9a77dfa39ce>`_.
-
-
+#. Stop at Step #8 "Detecting Outliers".
 
 Get to Know Your Data
 ---------------------
 
-Read the following articles.
-
 #. `Getting to know your data <https://medium.com/@shanegary/getting-to-know-your-data-9e42935e7f60>`_.
-
 #. `Data Types in Statistics <https://towardsdatascience.com/data-types-in-statistics-347e152e8bee>`_.
 
 
@@ -33,14 +31,11 @@ Python ``pandas``
 
 Code along with this article.  
 
-Stop at "Handling Duplicates".
-
 #. `Python Pandas Tutorial: A Complete Introduction for Beginners <https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/>`_
+#. Stop at "Handling Duplicates".
 
 Statistics in ``pandas``
 ------------------------
-
-Read the following article.
 
 #. `Basic statistics in pandas DataFrame <https://medium.com/@kasiarachuta/basic-statistics-in-pandas-dataframe-594208074f85>`__.
   
