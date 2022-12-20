@@ -1,10 +1,10 @@
 EDA With Python Part 2
 ======================
 
+Read the following articles:
+
 ``pandas`` Function
 -------------------
-
-Read the following article:
 
 #. `20 Must-Know Pandas Function for Exploratory Data Analysis <https://www.analyticsvidhya.com/blog/2021/04/20-must-known-pandas-function-for-exploratory-data-analysis-eda/>`__.
 
@@ -16,15 +16,11 @@ Outlier Detection
 Missing Data
 ------------
 
-Read the following articles:
-
 #. `NULL values: When Missing Data is Valuable <https://www.rapidinsight.com/blog/null-missing-data-valuable/>`__.
 
 #. `The best way to handle missing data <https://seleritysas.com/blog/2020/03/03/the-best-way-to-handle-missing-data/>`__.
 
-.. admonition:: Note
-  
-  No need to know the details of the techniques described here for handling missing data. Read to get introduced to some advanced methods of systematically handling missing values
+.. _univariate-practice:
 
 Univariate and Multivariate Charts
 ----------------------------------

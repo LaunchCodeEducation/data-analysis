@@ -1,5 +1,3 @@
-.. _monthly-budget:
-
 Why Learn Data Analysis?
 ========================
 

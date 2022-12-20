@@ -11,7 +11,8 @@ If you need a refresher on how to do this see :ref:`Instruction for Using Github
 Code Along
 ----------
 
-This studio follows the univariate EDA practice you did for this Lesson's :ref:`exercises <eda2-exercises>` using the IMDb popular movies from 2006 to 2016 dataset.
+This studio follows the univariate EDA practice you did for this lesson's :ref:`reading <univariate-practice>`.  
+For the studio, use the IMDb popular movies from 2006 to 2016 dataset as you work through the notebook.
 
 Submitting Your Work
 --------------------
