@@ -1,7 +1,7 @@
 SQL Part 3 - Joins
 ==================
 
-Read the following articles, and watch the videos.
+Read the following articles, and watch the videos:
 
 SQL ``JOINS``
 -------------
