@@ -19,7 +19,9 @@ Code Along
 #. Download and add to your Jupyter Notebook.
 #. Work through the exercise notebook using the dataset you have choose from above.
 
-Don't hesitate to reach out to course staff and your fellow students if you want to talk through the data set or a potential spot that needs to be cleaned!
+.. admonition:: Note
+
+   Don't hesitate to reach out to course staff and your fellow students if you want to talk through the data set or a potential spot that needs to be cleaned!
 
 Submitting Your Work
 --------------------

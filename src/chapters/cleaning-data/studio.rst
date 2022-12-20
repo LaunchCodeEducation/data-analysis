@@ -15,9 +15,9 @@ In Your Notebook
 
 The notebook poses questions for partners to discuss and answer about data cleaning.
 
-Code has been provided so that discussion can be the primary focus of the studio
+Code has been provided so that discussion can be the primary focus of the studio.
 
-Spaces for notes and answers to questions provided in the notebook
+Spaces for notes and answers to questions provided in the notebook.
 
 Submitting Your Work
 --------------------
