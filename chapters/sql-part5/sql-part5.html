@@ -86,58 +86,71 @@
     
   <div class="section" id="sql-part-5-schemas-and-crud-operations">
 <h1><span class="section-number">23.1. </span>SQL Part 5 - Schemas and CRUD Operations<a class="headerlink" href="#sql-part-5-schemas-and-crud-operations" title="Permalink to this headline">¶</a></h1>
-<p>In order to give you more advanced SQL practice, a schema has been created for each of you for the exercises and studio for this lesson. Consider it your own personal sandbox, as you are the only one who has access to it.</p>
-<p>A schema is a way to group database objects(tables, views, ect) into a logical collection. Let’s look at the AdventureWorks 2019 database in Azure Data Studio. In the Object Explorer if you expand the tables you will see something like this:</p>
+<p>In order to give you more advanced SQL practice, a schema has been created for each of you for the exercises and studio for this lesson.
+Consider it your own personal sandbox, as you are the only one who has access to it.</p>
+<p>As you read the articles below, experiment with what you’ve learned in your practice schemas.</p>
+<div class="section" id="what-is-a-schema">
+<h2><span class="section-number">23.1.1. </span>What is a Schema?<a class="headerlink" href="#what-is-a-schema" title="Permalink to this headline">¶</a></h2>
+<p>A <strong>schema</strong> is a way to group database objects(tables, views, ect) into a logical collection.
+Let’s look at the <code class="docutils literal notranslate"><span class="pre">AdventureWorks2019</span></code> database in Azure Data Studio.</p>
+<p>In the Object Explorer if you expand the tables you will see something like this:</p>
 <div class="figure align-default">
 <img alt="File Tree, Tables Folder with Human Resources schemes highlighted." src="../../_images/TableSchemas.png" />
 </div>
-<p>Notice how the tables are grouped together. The syntax is <strong>schema_name.table_name</strong>. You wouldn’t want someone accidentally deleting a table or being able to view sensitive information. Schemas allow companies to easily control who has access to specific tables and how they have access.</p>
-<p>Another way to think of schemas is that they are like using folders on your google drive. You can group together like-documents and control who has access by granting different permissions to different people. At any time you can also change permissions or remove someone from having access. You can also move documents from one folder to another. Multiple people can work together in each folder. The creator of the folder or document is the owner. But, you can easily reassign the ownership to another person. The same is true of Schemas.</p>
-<p>For more information about schemes visit <a class="reference external" href="https://www.c-sharpcorner.com/UploadFile/ff2f08/schema-in-sql-server/" target="_blank">here<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+<p>Notice how the tables are grouped together. The syntax is <code class="docutils literal notranslate"><span class="pre">schema_name.table_name</span></code>.
+You wouldn’t want someone accidentally deleting a table or being able to view sensitive information.
+Schemas allow companies to easily control who has access to specific tables and how they have access.</p>
+<p>Another way to think of schemas is that they are like using folders on your google drive.
+You can group together like-documents and control who has access by granting different permissions to different people.
+At any time you can also change permissions or remove someone from having access. You can also move documents from one folder to another.
+Multiple people can work together in each folder. The creator of the folder or document is the owner.
+But, you can easily reassign the ownership to another person. The same is true of Schemas.</p>
+<p>For more information about schemas visit <a class="reference external" href="https://www.c-sharpcorner.com/UploadFile/ff2f08/schema-in-sql-server/" target="_blank">here<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
+</div>
 <div class="section" id="how-to-create-tables">
-<h2><span class="section-number">23.1.1. </span>How To Create Tables<a class="headerlink" href="#how-to-create-tables" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">23.1.2. </span>How To Create Tables<a class="headerlink" href="#how-to-create-tables" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://www.sqlservertutorial.net/sql-server-basics/sql-server-create-table" target="_blank">From Scratch<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
 <li><p><a class="reference external" href="https://www.techonthenet.com/sql/tables/create_table2.php" target="_blank">From Other Tables<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
 </ol>
 </div>
 <div class="section" id="more-on-primary-keys">
-<h2><span class="section-number">23.1.2. </span>More on primary keys<a class="headerlink" href="#more-on-primary-keys" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">23.1.3. </span>More on primary keys<a class="headerlink" href="#more-on-primary-keys" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://www.sqlservertutorial.net/sql-server-basics/sql-server-primary-key/" target="_blank">SQL Server PRIMARY KEY<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
 </ol>
 </div>
 <div class="section" id="temp-tables">
-<h2><span class="section-number">23.1.3. </span>Temp Tables<a class="headerlink" href="#temp-tables" title="Permalink to this headline">¶</a></h2>
-<p>Are often used when you may not have certain permissions on a database but need to run queries in your
-everyday work. Only you can see the temp table you create in the connection you created it in. You can not
-access the temp table from another workspace/ window / notebook. When you close the connection the table
-has been created in, it’s automatically deleted. While the article below mentions Global Temp Tables they
-are almost never used.</p>
+<h2><span class="section-number">23.1.4. </span>Temp Tables<a class="headerlink" href="#temp-tables" title="Permalink to this headline">¶</a></h2>
+<p>Are often used when you may not have certain permissions on a database but need to run queries in your everyday work.
+Only you can see the <strong>temp table</strong> you create in the connection you created it in.
+You can not access the temp table from another workspace/window/notebook.
+When you close the connection the table has been created in, it’s automatically deleted.
+While the article below mentions Global Temp Tables they are almost never used.</p>
 <ol class="arabic simple">
-<li><p>Introduction to Temporary Tables in SQL Server &lt;<a class="reference external" href="https://codingsight.com/introduction-to-temporary-tables-in-sql-server/" target="_blank">https://codingsight.com/introduction-to-temporary-tables-in-sql-server/<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>&gt;`__.</p></li>
+<li><p><a class="reference external" href="https://codingsight.com/introduction-to-temporary-tables-in-sql-server/" target="_blank">Introduction to Temporary Tables in SQL Server<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
 </ol>
 </div>
 <div class="section" id="adding-records">
-<h2><span class="section-number">23.1.4. </span>Adding Records<a class="headerlink" href="#adding-records" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">23.1.5. </span>Adding Records<a class="headerlink" href="#adding-records" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://www.w3schools.com/sql/sql_insert.asp" target="_blank">SQL INSERT INTO Statement<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
 </ol>
 </div>
 <div class="section" id="updating-existing-records">
-<h2><span class="section-number">23.1.5. </span>Updating Existing Records<a class="headerlink" href="#updating-existing-records" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">23.1.6. </span>Updating Existing Records<a class="headerlink" href="#updating-existing-records" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://www.sqltutorial.org/sql-update/" target="_blank">SQL UPDATE<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
 </ol>
 </div>
 <div class="section" id="deleting-records">
-<h2><span class="section-number">23.1.6. </span>Deleting Records<a class="headerlink" href="#deleting-records" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">23.1.7. </span>Deleting Records<a class="headerlink" href="#deleting-records" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://www.zentut.com/sql-tutorial/sql-delete/" target="_blank">SQL DELETE<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
 </ol>
 </div>
 <div class="section" id="deleting-tables">
-<h2><span class="section-number">23.1.7. </span>Deleting Tables<a class="headerlink" href="#deleting-tables" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">23.1.8. </span>Deleting Tables<a class="headerlink" href="#deleting-tables" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://www.w3schools.com/sql/sql_drop_table.asp" target="_blank">SQL DROP TABLE Statement<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
 </ol>
@@ -148,7 +161,7 @@ are almost never used.</p>
 </ol>
 </div>
 <div class="section" id="check-your-understanding">
-<h2><span class="section-number">23.1.8. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">23.1.9. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Which of the following queries would you use to create a table called recipes, that holds name(up to 25 characters), description(up to 50 characters) and instructions (up to 500 characters).</p>
@@ -180,7 +193,7 @@ are almost never used.</p>
 </div>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p>Which of the following queries would you use to create a new table called new_HR, from the HumanResources.Department table in the AdventureWorks2019 Database?</p>
+<p>Which of the following queries would you use to create a new table called <code class="docutils literal notranslate"><span class="pre">new_HR</span></code>, from the <code class="docutils literal notranslate"><span class="pre">HumanResources.Department</span></code> table in the <code class="docutils literal notranslate"><span class="pre">AdventureWorks2019</span></code> Database?</p>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">.</span> <span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">new_HR</span>
       <span class="k">AS</span><span class="p">(</span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">AdventureWorks2019</span><span class="p">.</span><span class="n">HumanResources</span><span class="p">.</span><span class="n">Department</span><span class="p">);</span>
 
@@ -197,15 +210,15 @@ are almost never used.</p>
 </div>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p>Write a query that creates a table called HRemployees from the HumanResources.Employee in the AdventureWorks2019 database that only includes the following columns(LoginID, JobTitle, VacationHours) and only includes records from employees with more than 80hrs of vacation.</p>
+<p>Write a query that creates a table called <code class="docutils literal notranslate"><span class="pre">HRemployees</span></code> from the <code class="docutils literal notranslate"><span class="pre">HumanResources.Employee</span></code> in the <code class="docutils literal notranslate"><span class="pre">AdventureWorks2019</span></code> database that only includes the following columns(<code class="docutils literal notranslate"><span class="pre">LoginID</span></code>, <code class="docutils literal notranslate"><span class="pre">JobTitle</span></code>, <code class="docutils literal notranslate"><span class="pre">VacationHours</span></code>) and only includes records from employees with more than 80hrs of vacation.</p>
 </div>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p>What is a primary key?</p>
+<p>What is a <strong>primary key</strong>?</p>
 </div>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p>Can you add a primary key to an existing table?</p>
+<p>Can you add a <strong>primary key</strong> to an existing table?</p>
 <ol class="loweralpha simple">
 <li><p>True</p></li>
 <li><p>False</p></li>
@@ -217,7 +230,7 @@ are almost never used.</p>
 </div>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p>Which of the following queries would add information into the Recipes table below.</p>
+<p>Which of the following queries would add information into the <code class="docutils literal notranslate"><span class="pre">Recipes</span></code> table below.</p>
 <div class="figure align-default">
 <img alt="Recipes table with one row." src="../../_images/recipesTables1.png" />
 </div>
@@ -237,7 +250,7 @@ are almost never used.</p>
 </div>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p>Write a query to update the second recipe’s  instructions to call Dominos instead in the Recipes table below.</p>
+<p>Write a query to update the second recipe’s <code class="docutils literal notranslate"><span class="pre">Instructions</span></code> to call Dominos instead in the <code class="docutils literal notranslate"><span class="pre">Recipes</span></code> table below.</p>
 <div class="figure align-default">
 <img alt="Recipes table with three rows." src="../../_images/recipesTable2.png" />
 </div>
@@ -245,7 +258,7 @@ are almost never used.</p>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <div class="line-block">
-<div class="line">Write a query to delete any records with a Description of Frozen from the Recipes table below.</div>
+<div class="line">Write a query to delete any records with a <code class="docutils literal notranslate"><span class="pre">Description</span></code> of Frozen from the <code class="docutils literal notranslate"><span class="pre">Recipes</span></code> table below.</div>
 </div>
 <div class="figure align-default">
 <img alt="Recipes table with four rows." src="../../_images/recipesTable3.png" />
@@ -253,11 +266,11 @@ are almost never used.</p>
 </div>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p>Write a query to clear all the contents of the Recipes table.</p>
+<p>Write a query to clear all the contents of the <code class="docutils literal notranslate"><span class="pre">Recipes</span></code> table.</p>
 </div>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p>Which of the following queries will Delete the entire Recipes table?</p>
+<p>Which of the following queries will delete the entire <code class="docutils literal notranslate"><span class="pre">Recipes</span></code> table?</p>
 <div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="p">.</span> <span class="k">DROP</span> <span class="k">TABLE</span> <span class="k">schema_name</span><span class="p">.</span><span class="n">Recipes</span><span class="p">;</span>
 
 <span class="mi">2</span><span class="p">.</span> <span class="n">REMOVE</span> <span class="k">TABLE</span> <span class="k">schema_name</span><span class="p">.</span><span class="n">Recipes</span><span class="p">;</span>

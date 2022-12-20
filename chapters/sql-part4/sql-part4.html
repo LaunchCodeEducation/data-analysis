@@ -86,7 +86,7 @@
     
   <div class="section" id="sql-part-4-subqueries-union-intersect-except">
 <h1><span class="section-number">22.1. </span>SQL Part 4 - Subqueries, UNION, INTERSECT, EXCEPT<a class="headerlink" href="#sql-part-4-subqueries-union-intersect-except" title="Permalink to this headline">¶</a></h1>
-<p>The articles below share how to use subqueries in queries that go beyond a SELECT statement. We will go more in-depth on these other types of statements in the next lesson. For now, focus on the rules of subqueries.</p>
+<p>Read the following articles:</p>
 <div class="section" id="subqueries">
 <h2><span class="section-number">22.1.1. </span>Subqueries<a class="headerlink" href="#subqueries" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
@@ -95,7 +95,7 @@
 </ol>
 </div>
 <div class="section" id="union-intersect-except">
-<h2><span class="section-number">22.1.2. </span>UNION, INTERSECT, EXCEPT<a class="headerlink" href="#union-intersect-except" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">22.1.2. </span><code class="docutils literal notranslate"><span class="pre">UNION</span></code>, <code class="docutils literal notranslate"><span class="pre">INTERSECT</span></code>, <code class="docutils literal notranslate"><span class="pre">EXCEPT</span></code><a class="headerlink" href="#union-intersect-except" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://www.essentialsql.com/sql-union-intersect-except" target="_blank">SQL Union, Intersect, and Except – The Ultimate Guide<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
 </ol>
@@ -110,7 +110,7 @@
 <h2><span class="section-number">22.1.4. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p>Every statement that uses a subquery can be re-written as a join.</p>
+<p>Every statement that uses a subquery can be re-written as a <code class="docutils literal notranslate"><span class="pre">JOIN</span></code>.</p>
 <ol class="loweralpha simple">
 <li><p>True</p></li>
 <li><p>False</p></li>
@@ -118,7 +118,7 @@
 </div>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p>A subquery cannot use <strong>ORDER BY</strong>, but the main query can.</p>
+<p>A subquery cannot use <code class="docutils literal notranslate"><span class="pre">ORDER</span> <span class="pre">BY</span></code>, but the main query can.</p>
 <ol class="loweralpha simple">
 <li><p>True</p></li>
 <li><p>False</p></li>
@@ -133,13 +133,13 @@
 <col style="width: 50%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><strong>INTERSECT</strong></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">INTERSECT</span></code></p></td>
 <td><p>Combined rows from both queries.</p></td>
 </tr>
-<tr class="row-even"><td><p><strong>EXCEPT</strong></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">EXCEPT</span></code></p></td>
 <td><p>Only keeps rows in common with both queries.</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>UNION</strong></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">UNION</span></code></p></td>
 <td><p>Keeps rows from left query that aren’t in common with right query.</p></td>
 </tr>
 </tbody>
@@ -147,7 +147,7 @@
 </div>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p><strong>UNION</strong> combines columns and joins combine rows.</p>
+<p><code class="docutils literal notranslate"><span class="pre">UNION</span></code> combines columns and <code class="docutils literal notranslate"><span class="pre">JOINS</span></code> combine rows.</p>
 <ol class="loweralpha simple">
 <li><p>True</p></li>
 <li><p>False</p></li>

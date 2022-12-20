@@ -86,67 +86,63 @@
     
   <div class="section" id="eda-with-python-part-2">
 <h1><span class="section-number">15.1. </span>EDA With Python Part 2<a class="headerlink" href="#eda-with-python-part-2" title="Permalink to this headline">¶</a></h1>
-<p>Read the following articles, follow along where instructed:</p>
+<p>Read the following articles:</p>
 <div class="section" id="pandas-function">
-<h2><span class="section-number">15.1.1. </span>Pandas Function<a class="headerlink" href="#pandas-function" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">15.1.1. </span><code class="docutils literal notranslate"><span class="pre">pandas</span></code> Function<a class="headerlink" href="#pandas-function" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://www.analyticsvidhya.com/blog/2021/04/20-must-known-pandas-function-for-exploratory-data-analysis-eda/" target="_blank">20 Must-Know Pandas Function for Exploratory Data Analysis<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
 </ol>
-<ul class="simple">
-<li><p>Key takeaway: Reference list of common Pandas methods for EDA (some are review from last week).</p></li>
-</ul>
 </div>
 <div class="section" id="outlier-detection">
 <h2><span class="section-number">15.1.2. </span>Outlier Detection<a class="headerlink" href="#outlier-detection" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple" start="2">
+<ol class="arabic simple">
 <li><p><a class="reference external" href="https://www.anodot.com/blog/quick-guide-different-types-outliers/" target="_blank">A Quick Guide to the Different Types of Outliers<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
 </ol>
-<ul class="simple">
-<li><p>Key takeaway: Defines global, contextual, and collective outliers. Article and 5 min video.</p></li>
-</ul>
 </div>
 <div class="section" id="missing-data">
 <h2><span class="section-number">15.1.3. </span>Missing Data<a class="headerlink" href="#missing-data" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple" start="3">
+<ol class="arabic simple">
 <li><p><a class="reference external" href="https://www.rapidinsight.com/blog/null-missing-data-valuable/" target="_blank">NULL values: When Missing Data is Valuable<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
 <li><p><a class="reference external" href="https://seleritysas.com/blog/2020/03/03/the-best-way-to-handle-missing-data/" target="_blank">The best way to handle missing data<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
 </ol>
-<ul class="simple">
-<li><p>Note: no need to know the details of the techniques described here for handling missing data. Read to get introduced to some advanced methods of systematically handling missing values</p></li>
-</ul>
 </div>
-<div class="section" id="unvariate-and-multivariate-charts">
-<h2><span class="section-number">15.1.4. </span>Unvariate and Multivariate Charts<a class="headerlink" href="#unvariate-and-multivariate-charts" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple" start="5">
+<div class="section" id="univariate-and-multivariate-charts">
+<span id="univariate-practice"></span><h2><span class="section-number">15.1.4. </span>Univariate and Multivariate Charts<a class="headerlink" href="#univariate-and-multivariate-charts" title="Permalink to this headline">¶</a></h2>
+<p>Code along with the article below using the <a class="reference external" href="https://github.com/LaunchCodeEducation/DataCleaning-Heart-Data" target="_blank">DataCleaning-Heart-Data<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> repo:</p>
+<ol class="arabic simple">
 <li><p><a class="reference external" href="https://towardsdatascience.com/understand-the-data-with-univariate-and-multivariate-charts-and-plots-in-python-3b9fcd68cd8" target="_blank">Understand the Data With Univariate And Multivariate Charts and Plots in Python<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></li>
 </ol>
-<ul class="simple">
-<li><p>Read the above article and work along using the notebook and dataset found in <a class="reference external" href="https://github.com/speudusa/DataCleaning-Heart-Data" target="_blank">this Git Hub repository<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
-<ul>
-<li><p>This walkthrough will have you write code and answer questions.</p></li>
-</ul>
-</li>
-</ul>
 </div>
 <div class="section" id="check-your-understanding">
 <h2><span class="section-number">15.1.5. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>The following plot graphs a user’s Spotify recommended song length (in milliseconds) with a
-song’s energy score (a perceptual measure of intensity and activity between 0 and 1). What,
-if any, outliers are present?</p>
+song’s energy score (a perceptual measure of intensity and activity between 0 and 1).</p>
 <div class="figure align-default">
 <img alt="Plot graph with dots representing length of song and energy score." src="../../_images/outliers.png" />
 </div>
+<p><strong>True or False:</strong>  This graph contains no outliers.</p>
+<ol class="arabic simple">
+<li><p>True</p></li>
+<li><p>False</p></li>
+</ol>
 </div>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p>The National Park Service records the number of visitors to the Gateway Arch in St Louis every day. Occasionally, concerts are held on the park grounds and the number of visitors soars. On concert days, what type of figures is the NPS seeing?</p>
+<p>The National Park Service records the number of visitors to the Gateway Arch in St Louis every day.
+Occasionally, concerts are held on the park grounds and the number of visitors soars.
+On concert days, what type of anomaly is the NPS see in their visitor data?</p>
+<ol class="arabic simple">
+<li><p>Global anomaly</p></li>
+<li><p>Contextual anomaly</p></li>
+<li><p>Collective anomaly</p></li>
+</ol>
 </div>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
-<p>Do missing values in a dataset provide no analytical use?</p>
-<ol class="loweralpha simple">
+<p>If a dataset is missing values, it is absolutely useless.</p>
+<ol class="arabic simple">
 <li><p>True</p></li>
 <li><p>False</p></li>
 </ol>
@@ -154,7 +150,7 @@ if any, outliers are present?</p>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>How can data analysts leverage the presence of null values in a data set?</p>
-<ol class="loweralpha simple">
+<ol class="arabic simple">
 <li><p>We can create an additional column with a binary type, indicating if any information is missing in the column in question</p></li>
 <li><p>We can clean the data by removing any missing entries.</p></li>
 <li><p>We can clean the data by removing any columns with missing entries.</p></li>
@@ -164,7 +160,7 @@ if any, outliers are present?</p>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>Data sets with missing values have been improperly assembled and are rare to encounter in the professional field of data analysis.</p>
-<ol class="loweralpha simple">
+<ol class="arabic simple">
 <li><p>True</p></li>
 <li><p>False</p></li>
 </ol>
@@ -172,7 +168,7 @@ if any, outliers are present?</p>
 <div class="admonition-question admonition">
 <p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
 <p>There is no best method for addressing missing data.</p>
-<ol class="loweralpha simple">
+<ol class="arabic simple">
 <li><p>True</p></li>
 <li><p>False</p></li>
 </ol>

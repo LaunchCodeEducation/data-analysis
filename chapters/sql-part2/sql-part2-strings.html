@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20.1. SQL Part 2 - String Functions &#8212; Data Analysis  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/launchcode.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/site.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="20.2. SQL Part 2 - Date and Time Functions" href="sql-part2-dates.html" />
+    <link rel="prev" title="20. SQL Part 2 - String and Date Functions" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
+
+  </head><body class="body-bc">
+
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="navbar-header">
+       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="../../index.html"><span><img src="../../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
+       </a>
+       <span class="navbar-text navbar-version pull-left"><b></b></span>
+     </div>
+
+       <div class="collapse navbar-collapse nav-collapse">
+         <ul class="nav navbar-nav">
+           
+           
+             
+           
+           
+           
+           
+           
+         </ul>
+
+         
+           
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+         
+       </div>
+   </div>
+ </div>
+
+<ol class="breadcrumb container">
+    <li><a href="../../index.html">Contents</a></li>
+    <li><a href="index.html"><span class="section-number">20. </span>SQL Part 2 - String and Date Functions</a></li>
+    <li class="active"><span class="section-number">20.1. </span>SQL Part 2 - String Functions</li>
+</ol>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1 content " role="main">
+
+    
+  <div class="section" id="sql-part-2-string-functions">
+<h1><span class="section-number">20.1. </span>SQL Part 2 - String Functions<a class="headerlink" href="#sql-part-2-string-functions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="string-functions">
+<h2><span class="section-number">20.1.1. </span><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/string-functions-transact-sql?view=sql-server-ver15" target="_blank">String Functions<i class="fas fa-external-link-alt" aria-hidden="true"></i></a><a class="headerlink" href="#string-functions" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given docutils align-left">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 30%" />
+<col style="width: 35%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Function</strong></p></th>
+<th class="head"><p><strong>Definition</strong></p></th>
+<th class="head"><p><strong>Syntax</strong></p></th>
+<th class="head"><p><strong>Value Returned</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/rtrim-transact-sql?view=sql-server-ver15" target="_blank">RTRIM<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Removes whitespaces from right of last character.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">RTRIM('Too</span> <span class="pre">many</span> <span class="pre">trailing</span> <span class="pre">spaces.</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">');</span></code></p></td>
+<td><p>Too many extra spaces.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/ltrim-transact-sql?view=sql-server-ver15" target="_blank">LTRIM<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Removes whitespaces from left of first character.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">LTRIM('</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Leading</span> <span class="pre">spaces');</span></code></p></td>
+<td><p>Leading spaces</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/left-transact-sql?view=sql-server-ver15" target="_blank">LEFT<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns length of characters starting at provided character index and moving left.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">LEFT('hello</span> <span class="pre">there!',</span> <span class="pre">7);</span></code></p></td>
+<td><p>hello t</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/right-transact-sql?view=sql-server-ver15" target="_blank">RIGHT<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns length of characters starting at provided character index and moving right.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">RIGHT('hello</span> <span class="pre">there!',</span> <span class="pre">3);</span></code></p></td>
+<td><p>re!</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/len-transact-sql?view=sql-server-ver15" target="_blank">LEN<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns the length of a string based on characters, not including trailing spaces.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">LEN('hello</span> <span class="pre">there!'');</span></code></p></td>
+<td><p>12</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/datalength-transact-sql?view=sql-server-ver15" target="_blank">DATALENGTH<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns the length of a string based on bytes, not including trailing spaces.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">DATALENGTH('hello</span> <span class="pre">there!'');</span></code></p></td>
+<td><p>12</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/charindex-transact-sql?view=sql-server-ver15" target="_blank">CHARINDEX<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Can use to find specific character within a string. Returns the index location.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CHARINDEX('log',</span> <span class="pre">'catalogue');</span></code></p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/substring-transact-sql?view=sql-server-ver15" target="_blank">SUBSTRING<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns part of a string. First number is starting index location and second number is ending index location.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">SUBSTRING('Strings</span> <span class="pre">are</span> <span class="pre">fun!',</span> <span class="pre">4,</span> <span class="pre">9);</span></code></p></td>
+<td><p>ings are</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/reverse-transact-sql?view=sql-server-ver15" target="_blank">REVERSE<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns the string backwards.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">REVERSE('Data</span> <span class="pre">Analysis');</span></code></p></td>
+<td><p>sisylanA ataD</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/upper-transact-sql?view=sql-server-ver15" target="_blank">UPPER<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns a string either in all upper cases.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">UPPER('taco');</span></code></p></td>
+<td><p>TACO</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/lower-transact-sql?view=sql-server-ver15" target="_blank">LOWER<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Returns a string either in all lower cases.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">LOWER('tACO');</span></code></p></td>
+<td><p>taco</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/replace-transact-sql?view=sql-server-ver15" target="_blank">REPLACE<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Replaces part of a string using provided patterns.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">REPLACE('Beach</span> <span class="pre">Streat',</span> <span class="pre">'ea',</span> <span class="pre">'ee');</span></code></p></td>
+<td><p>Beech Street</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>In this example, the code replaces the ‘ea’ with ‘ee’ if the ‘ea’  pattern is present.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">REPLACE('Read',</span> <span class="pre">'ea',</span> <span class="pre">'ee');</span></code></p></td>
+<td><p>Reed</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/concat-transact-sql?view=sql-server-ver15" target="_blank">CONCAT<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Combine strings together.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CONCAT('Alyce','Cat',</span> <span class="pre">'Frey');</span></code></p></td>
+<td><p>AlyceCatFrey</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Good for working with null values as seen in example 2.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CONCAT('Alyce',</span> <span class="pre">NULL,</span> <span class="pre">'Frey');</span></code></p></td>
+<td><p>AlyceFrey</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/concat-ws-transact-sql?view=sql-server-ver15" target="_blank">CONCAT_WS<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Combines strings together with a specified separator value. The separator can be anything you want.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CONCAT_WS('</span> <span class="pre">=::=</span> <span class="pre">',</span>&#160; <span class="pre">'Alyce',</span> <span class="pre">'Frey');</span></code></p></td>
+<td><p>Alyce=::=Frey</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Works with NULL values like <code class="docutils literal notranslate"><span class="pre">CONCAT</span></code>.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">CONCAT_WS('</span>&#160; <span class="pre">-</span>&#160; <span class="pre">',</span>&#160; <span class="pre">'Alyce',</span> <span class="pre">NULL,</span> <span class="pre">'Frey');</span></code></p></td>
+<td><p>Alyce - Frey</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.microsoft.com/en-us/sql/t-sql/functions/stuff-transact-sql?view=sql-server-ver15" target="_blank">STUFF<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p></td>
+<td><p>Inserts string into another string. The first number indicates where to insert the new chars.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">STUFF('Pumpkin</span> <span class="pre">Pie',</span> <span class="pre">3,</span> <span class="pre">0,</span> <span class="pre">'Add</span> <span class="pre">Chars');</span></code></p></td>
+<td><p>PuAdd Charsmpkin Pie</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>The second number indicates how many original characters will be deleted upon insertion.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">STUFF('Pumpkin</span> <span class="pre">Pie',</span> <span class="pre">3,</span> <span class="pre">5,</span> <span class="pre">'Delete</span> <span class="pre">Chars');</span></code></p></td>
+<td><p>PuDelete Chars Pie</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="check-your-understanding">
+<h2><span class="section-number">20.1.2. </span>Check Your Understanding<a class="headerlink" href="#check-your-understanding" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-question admonition">
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Alyce is working with a dataset that contains information about local businesses.  They  want to create a query that returns titles of local businesses that contain “&amp;”.  Which string function should they use?</p>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">LEN</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">STUFF</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CHARINDEX</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">RTRIM</span></code></p></li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Alyce wants to create consistency in the formatting of the state abbreviations of the local business addresses contained in their dataset.  What string function could help with this?</p>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">REVERSE</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">UPPER</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CONCAT</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">LEFT</span></code></p></li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Alyce’s dataset breaks down the addresses of local businesses into the following columns: <code class="docutils literal notranslate"><span class="pre">&quot;Street&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;City&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;State&quot;</span></code>, and <code class="docutils literal notranslate"><span class="pre">&quot;Zipcode&quot;</span></code>.  They would like to create a column that has all items joined to return a complete address in a single column.   Which function would best help with this?</p>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CONCAT</span></code> or <code class="docutils literal notranslate"><span class="pre">CONCAT_WS</span></code> or <code class="docutils literal notranslate"><span class="pre">STUFF</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">LOWER</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">REPLACE</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">LEFT</span></code></p></li>
+</ol>
+</div>
+<div class="admonition-question admonition">
+<p class="admonition-title"><i class="fas fa-question" aria-hidden="true"></i>Question</p>
+<p>Alyce is working with a column of phone numbers.  They only need the 7 digit number, not the area code.  However, some of the numbers include the area code, some include the country code and area code, and some only include the seven-digit phone number.  Which function could help them select the 7 digits that she needs?</p>
+<ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CONCAT_WS</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CHARINDEX</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">RIGHT</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">RTRIM</span></code></p></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+    
+    <nav aria-label="Next and Previous Pages">
+      <ul class="pager">
+        
+        <li class="previous"><a href="index.html"><span aria-hidden="true">&larr;</span> <span class="section-number">20. </span>SQL Part 2 - String and Date Functions</a></li>
+        
+        
+        <li class="next"><a href="sql-part2-dates.html"><span class="section-number">20.2. </span>SQL Part 2 - Date and Time Functions <span aria-hidden="true">&rarr;</span></a></li>
+        
+      </ul>
+    </nav>
+    
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
