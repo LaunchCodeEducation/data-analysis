@@ -4,6 +4,11 @@ SQL Part 5 - Schemas and CRUD Operations
 In order to give you more advanced SQL practice, a schema has been created for each of you for the exercises and studio for this lesson. 
 Consider it your own personal sandbox, as you are the only one who has access to it.
 
+As you read the articles below, experiment with what you've learned in your practice schemas.
+
+What is a Schema?
+-----------------
+
 A **schema** is a way to group database objects(tables, views, ect) into a logical collection. 
 Let's look at the ``AdventureWorks2019`` database in Azure Data Studio. 
 
@@ -22,7 +27,7 @@ At any time you can also change permissions or remove someone from having access
 Multiple people can work together in each folder. The creator of the folder or document is the owner. 
 But, you can easily reassign the ownership to another person. The same is true of Schemas.
 
-For more information about schemes visit `here <https://www.c-sharpcorner.com/UploadFile/ff2f08/schema-in-sql-server/>`__.
+For more information about schemas visit `here <https://www.c-sharpcorner.com/UploadFile/ff2f08/schema-in-sql-server/>`__.
 
 How To Create Tables
 --------------------
