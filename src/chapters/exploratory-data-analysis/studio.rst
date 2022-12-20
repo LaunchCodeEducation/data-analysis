@@ -4,22 +4,21 @@ Studio: Exploratory Data Analysis
 Getting Started
 ---------------
 
-Fork this `GitHub repository <https://github.com/launchcodeeducation/IMDB-Studio/blob/main/IMDB-Studio.ipynb>`__ and 
-clone to your computer.  If you need a refresher on how to do this 
-see :ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`.
+Fork this `GitHub repository <https://github.com/launchcodeeducation/IMDB-Studio/blob/main/IMDB-Studio.ipynb>`__ and clone to your computer.  
 
-Code along with this `tutorial <https://www.analyticsvidhya.com/blog/2021/05/a-comprehensive-guide-to-data-analysis-using-pandas-hands-on-data-analysis-on-imdb-movies-data/>`__ 
+If you need a refresher on how to do this see :ref:`Instruction for Using Github w/Jupyter Notebooks<usingGitHubNotebooks>`.
 
-.. admonition:: note
-   
-   The tutorial is the same article from the exercises  
+Code Along
+----------
 
-   * Start at “Create a dataframe by importing data from File”
-   * Work through steps 1-5.  Do not do step “6. Groupby operation”
+Continue coding along with the `A Comprehensive Guide to Data Analysis using Pandas: Hands-On Data Analysis on IMDB movies data tutorial <https://www.analyticsvidhya.com/blog/2021/05/a-comprehensive-guide-to-data-analysis-using-pandas-hands-on-data-analysis-on-imdb-movies-data/>`__ you started in the :ref:`Exercises<eda1-exercises>`. 
+
+#. Start at “Create a dataframe by importing data from File”.
+#. Stop at “6. Groupby operation”.
 
 Submitting Your Work
 --------------------
 
-When finished make sure to push your changes up to GitHub. Copy the link to your GitHub 
-repository and paste it into the submission box in Canvas for **Studio: EDA Part 1** 
-and click *Submit*.
+When finished make sure to push your changes up to GitHub. 
+
+Copy the link to your GitHub repository and paste it into the submission box in Canvas for **Studio: EDA Part 1** and click *Submit*.

@@ -19,56 +19,56 @@ Check Your Understanding
 
    a.
    
-   .. code-block:: python3
-      
-      con = sl.connect('database.db')
+      .. sourcecode:: python3
+         
+         con = sl.connect('database.db')
 
    b.
    
-   .. code-block:: python3
-      
-      con = sl.connection('database.db')
+      .. sourcecode:: python3
+         
+         con = sl.connection('database.db')
   
    c.
    
-   .. code-block:: python3
-    
-      con = sl.connect(database.db)
+      .. sourcecode:: python3
+      
+         con = sl.connect(database.db)
 
    d.
    
-   .. code-block:: python3
-      
-      con = pd.connect('database.db')
+      .. sourcecode:: python3
+         
+         con = pd.connect('database.db')
 
 .. admonition:: Question
 
-   **read_sql_query()** has 2 arguments. What are they?
+   ``read_sql_query()`` has 2 arguments. What are they?
 
 .. admonition:: Question
 
-   Is it a good practice to attempt to first explore a database with a database client or Pandas? Why?
+   Is it a good practice to attempt to first explore a database with a database client or ``pandas``? Why?
 
 .. admonition:: Question
 
-   Is it good practice to limit the fields and/or records to retrieve when setting up a dataframe from a database table?
+   Is it good practice to limit the fields and/or records to retrieve when setting up a DataFrame from a database table?
 
 .. admonition:: Question
 
-   Should the database server handle joins or Pandas? Why?
+   Should the database server handle ``JOINS`` or ``pandas``? Why?
 
 .. admonition:: Queston
 
-   If your connection is named **con**, and you want to add a new record to the table, **costco_finds**, what would your code look like?
+   If your connection is named ``con``, and you want to add a new record to the table, ``costco_finds``, what would your code look like?
 
 .. admonition:: Question
 
-   If you wanted to print the records in the **costco_finds** table, what would your code look like?
+   If you wanted to print the records in the ``costco_finds`` table, what would your code look like?
 
 .. admonition:: Question
 
-   If you wanted to change the name of one of your **costco finds**, what would your code look like?
+   If you wanted to change the name of one of your ``costco_finds``, what would your code look like?
 
 .. admonition:: Question
 
-   If you wanted to remove a record from **costco_finds**, what would your code look like?
+   If you wanted to remove a record from ``costco_finds``, what would your code look like?

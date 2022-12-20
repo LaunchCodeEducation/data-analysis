@@ -1,67 +1,80 @@
 SQL Part 5 - Schemas and CRUD Operations
 ========================================
 
-In order to give you more advanced SQL practice, a schema has been created for each of you for the exercises and studio for this lesson. Consider it your own personal sandbox, as you are the only one who has access to it.
+In order to give you more advanced SQL practice, a schema has been created for each of you for the exercises and studio for this lesson. 
+Consider it your own personal sandbox, as you are the only one who has access to it.
 
-A schema is a way to group database objects(tables, views, ect) into a logical collection. Let's look at the AdventureWorks 2019 database in Azure Data Studio. In the Object Explorer if you expand the tables you will see something like this:
+As you read the articles below, experiment with what you've learned in your practice schemas.
+
+What is a Schema?
+-----------------
+
+A **schema** is a way to group database objects(tables, views, ect) into a logical collection. 
+Let's look at the ``AdventureWorks2019`` database in Azure Data Studio. 
+
+In the Object Explorer if you expand the tables you will see something like this:
 
 .. figure:: figures/TableSchemas.png
       :alt: File Tree, Tables Folder with Human Resources schemes highlighted.
 
-Notice how the tables are grouped together. The syntax is **schema_name.table_name**. You wouldn't want someone accidentally deleting a table or being able to view sensitive information. Schemas allow companies to easily control who has access to specific tables and how they have access.
+Notice how the tables are grouped together. The syntax is ``schema_name.table_name``. 
+You wouldn't want someone accidentally deleting a table or being able to view sensitive information. 
+Schemas allow companies to easily control who has access to specific tables and how they have access.
 
-Another way to think of schemas is that they are like using folders on your google drive. You can group together like-documents and control who has access by granting different permissions to different people. At any time you can also change permissions or remove someone from having access. You can also move documents from one folder to another. Multiple people can work together in each folder. The creator of the folder or document is the owner. But, you can easily reassign the ownership to another person. The same is true of Schemas.
+Another way to think of schemas is that they are like using folders on your google drive. 
+You can group together like-documents and control who has access by granting different permissions to different people. 
+At any time you can also change permissions or remove someone from having access. You can also move documents from one folder to another. 
+Multiple people can work together in each folder. The creator of the folder or document is the owner. 
+But, you can easily reassign the ownership to another person. The same is true of Schemas.
 
-For more information about schemes visit `here <https://www.c-sharpcorner.com/UploadFile/ff2f08/schema-in-sql-server/>`__.
+For more information about schemas visit `here <https://www.c-sharpcorner.com/UploadFile/ff2f08/schema-in-sql-server/>`__.
 
 How To Create Tables
 --------------------
 
-1. `From Scratch <https://www.sqlservertutorial.net/sql-server-basics/sql-server-create-table>`__.
-
-2. `From Other Tables <https://www.techonthenet.com/sql/tables/create_table2.php>`__.
+#. `From Scratch <https://www.sqlservertutorial.net/sql-server-basics/sql-server-create-table>`__.
+#. `From Other Tables <https://www.techonthenet.com/sql/tables/create_table2.php>`__.
 
 More on primary keys
 --------------------
 
-1. `SQL Server PRIMARY KEY <https://www.sqlservertutorial.net/sql-server-basics/sql-server-primary-key/>`__.
+#. `SQL Server PRIMARY KEY <https://www.sqlservertutorial.net/sql-server-basics/sql-server-primary-key/>`__.
 
 Temp Tables
 -----------
 
-Are often used when you may not have certain permissions on a database but need to run queries in your 
-everyday work. Only you can see the temp table you create in the connection you created it in. You can not 
-access the temp table from another workspace/ window / notebook. When you close the connection the table 
-has been created in, it's automatically deleted. While the article below mentions Global Temp Tables they 
-are almost never used.
+Are often used when you may not have certain permissions on a database but need to run queries in your everyday work. 
+Only you can see the **temp table** you create in the connection you created it in. 
+You can not access the temp table from another workspace/window/notebook. 
+When you close the connection the table has been created in, it's automatically deleted.
+While the article below mentions Global Temp Tables they are almost never used.
 
-1. Introduction to Temporary Tables in SQL Server <https://codingsight.com/introduction-to-temporary-tables-in-sql-server/>`__.
+#. `Introduction to Temporary Tables in SQL Server <https://codingsight.com/introduction-to-temporary-tables-in-sql-server/>`__.
 
 Adding Records
 --------------
 
-1. `SQL INSERT INTO Statement <https://www.w3schools.com/sql/sql_insert.asp>`__.
+#. `SQL INSERT INTO Statement <https://www.w3schools.com/sql/sql_insert.asp>`__.
 
 Updating Existing Records
 -------------------------
 
-1. `SQL UPDATE <https://www.sqltutorial.org/sql-update/>`__.
+#. `SQL UPDATE <https://www.sqltutorial.org/sql-update/>`__.
 
 Deleting Records
 ----------------
 
-1. `SQL DELETE <https://www.zentut.com/sql-tutorial/sql-delete/>`__.
+#. `SQL DELETE <https://www.zentut.com/sql-tutorial/sql-delete/>`__.
 
 Deleting Tables
 ---------------
 
-1. `SQL DROP TABLE Statement <https://www.w3schools.com/sql/sql_drop_table.asp>`__.
+#. `SQL DROP TABLE Statement <https://www.w3schools.com/sql/sql_drop_table.asp>`__.
 
 **Additional Resources (Optional Reading)**
 
-1. `You Are Not My Data Type: A quick intro into SQL data types <https://towardsdatascience.com/you-are-not-my-data-type-3ba3d3dec258>`__.
-
-2. `SQL Server Data Types <https://www.sqlservertutorial.net/sql-server-basics/sql-server-data-types/>`__.
+#. `You Are Not My Data Type: A quick intro into SQL data types <https://towardsdatascience.com/you-are-not-my-data-type-3ba3d3dec258>`__.
+#. `SQL Server Data Types <https://www.sqlservertutorial.net/sql-server-basics/sql-server-data-types/>`__.
 
 Check Your Understanding
 ------------------------
@@ -98,7 +111,7 @@ Check Your Understanding
 
 .. admonition:: Question
 
-   Which of the following queries would you use to create a new table called new_HR, from the HumanResources.Department table in the AdventureWorks2019 Database?
+   Which of the following queries would you use to create a new table called ``new_HR``, from the ``HumanResources.Department`` table in the ``AdventureWorks2019`` Database?
 
    .. code-block:: sql
 
@@ -116,15 +129,15 @@ Check Your Understanding
 
 .. admonition:: Question
 
-   Write a query that creates a table called HRemployees from the HumanResources.Employee in the AdventureWorks2019 database that only includes the following columns(LoginID, JobTitle, VacationHours) and only includes records from employees with more than 80hrs of vacation.
+   Write a query that creates a table called ``HRemployees`` from the ``HumanResources.Employee`` in the ``AdventureWorks2019`` database that only includes the following columns(``LoginID``, ``JobTitle``, ``VacationHours``) and only includes records from employees with more than 80hrs of vacation.
 
 .. admonition:: Question
 
-   What is a primary key?
+   What is a **primary key**?
 
 .. admonition:: Question
 
-   Can you add a primary key to an existing table? 
+   Can you add a **primary key** to an existing table? 
 
    a. True 
    b. False
@@ -135,7 +148,7 @@ Check Your Understanding
 
 .. admonition:: Question
 
-   Which of the following queries would add information into the Recipes table below.
+   Which of the following queries would add information into the ``Recipes`` table below.
 
    .. figure:: figures/recipesTables1.png
       :alt: Recipes table with one row.
@@ -157,14 +170,14 @@ Check Your Understanding
 
 .. admonition:: Question
 
-   Write a query to update the second recipe's  instructions to call Dominos instead in the Recipes table below.
+   Write a query to update the second recipe's ``Instructions`` to call Dominos instead in the ``Recipes`` table below.
 
    .. figure:: figures/recipesTable2.png
       :alt: Recipes table with three rows.
 
 .. admonition:: Question
 
-   | Write a query to delete any records with a Description of Frozen from the Recipes table below.
+   | Write a query to delete any records with a ``Description`` of Frozen from the ``Recipes`` table below.
 
    .. figure:: figures/recipesTable3.png
       :alt: Recipes table with four rows.
@@ -172,11 +185,11 @@ Check Your Understanding
 
 .. admonition:: Question
 
-   Write a query to clear all the contents of the Recipes table.
+   Write a query to clear all the contents of the ``Recipes`` table.
 
 .. admonition:: Question
 
-   Which of the following queries will Delete the entire Recipes table?
+   Which of the following queries will delete the entire ``Recipes`` table?
 
    .. code-block:: sql
 

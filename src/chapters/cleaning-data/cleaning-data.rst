@@ -1,22 +1,14 @@
 Cleaning Data 
 =============
 
-Read the following articles, follow along where instructed:
-
 Intro to Data Cleaning
 ----------------------
 
-1. `Data Cleaning in Python: the Ultimate Guide <https://towardsdatascience.com/data-cleaning-in-python-the-ultimate-guide-2020-c63b88bf0a0d>`__.
+Read the following articles:
 
-* Key takeaway: More in-depth techniques on what to clean and how.
-
-2. `Data Cleaning for Beginners- Why and How ? <https://www.analyticsvidhya.com/blog/2021/04/data-cleaning-for-beginners-why-and-how/>`__.
-
-* Key takeaway: Brief Introduction of why and how to clean your data
-
-3. `Guide To Data Cleaning: Definition, Benefits, Components, And How To Clean Your Data <https://www.tableau.com/learn/articles/what-is-data-cleaning>`__.
-
-* Key takeaway: Theory behind cleaning.
+#. `Data Cleaning in Python: the Ultimate Guide <https://towardsdatascience.com/data-cleaning-in-python-the-ultimate-guide-2020-c63b88bf0a0d>`__.
+#. `Data Cleaning for Beginners- Why and How ? <https://www.analyticsvidhya.com/blog/2021/04/data-cleaning-for-beginners-why-and-how/>`__.
+#. `Guide To Data Cleaning: Definition, Benefits, Components, And How To Clean Your Data <https://www.tableau.com/learn/articles/what-is-data-cleaning>`__.
 
 Check Your Understanding
 ------------------------
@@ -31,8 +23,8 @@ Check Your Understanding
 
 .. admonition:: Question
 
-   Your data set “local_plants_df” has the following column names: ['flora_sci_name', 'tall', 
-   'growing_zone', 'avg_rainfall'].  We want to rename our 'tall' column to 'avg_height'.  
+   Your data set ``local_plants_df`` has the following column names: ``['flora_sci_name', 'tall', 
+   'growing_zone', 'avg_rainfall']``.  We want to rename our ``tall`` column to ``avg_height``.  
    What syntax would we use?
 
 .. admonition:: Question
@@ -42,7 +34,7 @@ Check Your Understanding
    beneficial to this project to delete this duplicated row?
 
    .. figure:: figures/parkVisitorUsage.png
-      :alt: Dataframe showing name of park, location, week of, and number of guests. There are multiple rows with some duplication.
+      :alt: DataFrame showing name of park, location, week of, and number of guests. There are multiple rows with some duplication.
 
 .. admonition:: Question
 
