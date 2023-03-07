@@ -14,7 +14,7 @@ explain what the program is doing. These notes are called *comments*.
 A **comment** is text within a program intended only for a human reader---it is
 completely ignored by the compiler or interpreter. In Python, the ``#``
 token starts a comment, and the rest of the line gets ignored. For comments
-that stretch over multiple lines, each line must beging with a ``#``.
+that stretch over multiple lines, each line must begin with a ``#``.
 
 .. admonition:: Try It
 
