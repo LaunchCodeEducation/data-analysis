@@ -16,7 +16,7 @@ Outlier Detection
 Missing Data
 ------------
 
-#. `NULL values: When Missing Data is Valuable <https://www.rapidinsight.com/blog/null-missing-data-valuable/>`__.
+#. `How to… deal with Nulls <https://www.preppindata.com/howto/how-to-deal-with-nulls/>`__.
 
 #. `The best way to handle missing data <https://seleritysas.com/blog/2020/03/03/the-best-way-to-handle-missing-data/>`__.
 
